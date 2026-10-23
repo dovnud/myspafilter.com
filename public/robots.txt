@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://myspafilter.com/sitemap-index.xml

@@ -1,0 +1,25 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { filters, slug, type Filter } from '../../../lib/data';
+export function getStaticPaths(){ return filters.map(f=>({params:{brand:f.brandSlug,model:f.modelSlug},props:{f}})); }
+const { f } = Astro.props as { f: Filter };
+const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
+const eq = f.equivalents||{}; const d = f.dimensions;
+const shops = [['FiltersFast',f.buy?.filtersfast],['Amazon',f.buy?.amazon],["Doheny's",f.buy?.dohenys]].filter(s=>s[1]);
+const ld = [{"@context":"https://schema.org","@type":"Product",name:`${f.brand} ${f.model} spa filter`,mpn:f.oem,brand:{"@type":"Brand",name:f.brand},url,
+  description:`Replacement hot tub filter for ${f.brand} ${f.model}. OEM ${f.oem}.`},
+ {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[
+  {"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:f.brand,item:site},{"@type":"ListItem",position:3,name:f.model,item:url}]}];
+---
+<Base title={`${f.brand} ${f.model} Spa Filter (${f.oem}) – Hot Tub Filter Replacement`} description={`Replacement spa filter / hot tub filter for ${f.brand} ${f.model}: OEM ${f.oem}, Unicel, Pleatco & Filbur equivalents, and dimensions.`} jsonld={ld}>
+<p class="crumbs"><a href="/">Home</a> › {f.brand} › {f.model}</p>
+<h1>{f.brand} {f.model} spa filter</h1>
+<section class="card answer"><p>Your hot tub filter is:</p><p class="big"><a href={`/filter/${slug(f.oem)}/`}>{f.oem}</a> (OEM)</p>
+<table><tr><th>Unicel</th><td>{eq.unicel ? <a href={`/filter/${slug(eq.unicel)}/`}>{eq.unicel}</a> : '—'}</td></tr>
+<tr><th>Pleatco</th><td>{eq.pleatco ? <a href={`/filter/${slug(eq.pleatco)}/`}>{eq.pleatco}</a> : '—'}</td></tr>
+<tr><th>Filbur</th><td>{eq.filbur ? <a href={`/filter/${slug(eq.filbur)}/`}>{eq.filbur}</a> : '—'}</td></tr>
+<tr><th>Dimensions</th><td>{d.diameterIn}" dia × {d.lengthIn}" long{d.topCore && `, top: ${d.topCore}`}{d.bottomCore && `, bottom: ${d.bottomCore}`}{d.sqft ? `, ${d.sqft} sq ft` : ''}</td></tr></table>
+<div>{shops.map(([n,u])=><a class="btn" href={u} rel="sponsored nofollow" target="_blank">Buy at {n}</a>)}</div>
+<p><small>Affiliate links — see <a href="/affiliate-disclosure/">disclosure</a>. Verify dimensions before ordering.</small></p></section>
+{f.notes && <p>{f.notes}</p>}
+</Base>

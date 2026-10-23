@@ -1,0 +1,35 @@
+---
+import { isExample } from '../lib/data';
+interface Props { title:string; description:string; jsonld?: object[] }
+const { title, description, jsonld = [] } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title><meta name="description" content={description}>
+<link rel="canonical" href={canonical}>
+<meta property="og:title" content={title}><meta property="og:description" content={description}><meta property="og:url" content={canonical}>
+{jsonld.map(j => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
+<style is:global>
+:root{--fg:#1b2430;--mut:#5b6675;--bg:#f7f9fb;--card:#fff;--ac:#0a6eb4;--bd:#dde3ea}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+a{color:var(--ac)}.wrap{max-width:960px;margin:0 auto;padding:0 1rem}
+header{background:#fff;border-bottom:1px solid var(--bd)}header .wrap{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.8rem 1rem}
+.logo{font-weight:700;text-decoration:none;color:var(--fg)}nav a{margin-left:1rem;text-decoration:none}
+main{padding:1.5rem 0}.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:1.2rem;margin:1rem 0}
+.answer{border-left:5px solid var(--ac)}.big{font-size:1.6rem;font-weight:700}
+table{border-collapse:collapse;width:100%}td,th{padding:.4rem;border-bottom:1px solid var(--bd);text-align:left}
+.btn{display:inline-block;padding:.6rem 1rem;margin:.3rem .3rem 0 0;border-radius:8px;background:var(--ac);color:#fff;text-decoration:none;font-weight:600}
+.warn{background:#fff4d6;border:1px solid #f0c94b;padding:.6rem 1rem;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem;padding:0;list-style:none}
+footer{border-top:1px solid var(--bd);color:var(--mut);font-size:.9rem;padding:1.5rem 0}footer a{margin-right:1rem}
+.crumbs{font-size:.9rem;color:var(--mut)}input{padding:.5rem;border:1px solid var(--bd);border-radius:6px;width:7rem}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="/">MySpaFilter</a><nav><a href="/size/">Lookup by size</a><a href="/about/">About</a></nav></div></header>
+<main class="wrap">
+{isExample && <p class="warn">⚠️ This site currently shows EXAMPLE placeholder data only. Do not use for purchasing.</p>}
+<slot /></main>
+<footer><div class="wrap"><p><a href="/about/">About</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a></p>
+<p>We earn commissions from qualifying purchases. MySpaFilter is independent and not affiliated with any spa/hot tub manufacturer or filter brand. Always verify dimensions before buying.</p>
+<p>© {new Date().getFullYear()} myspafilter.com</p></div></footer>
+</body></html>

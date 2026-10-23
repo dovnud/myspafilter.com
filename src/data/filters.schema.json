@@ -1,0 +1,11 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"myspafilter data",
+"type":"object","required":["example","filters"],
+"properties":{"example":{"type":"boolean","description":"true = placeholder data, not real"},
+"filters":{"type":"array","items":{"type":"object",
+"required":["brand","brandSlug","model","modelSlug","oem","dimensions"],
+"properties":{"brand":{"type":"string"},"brandSlug":{"type":"string"},"model":{"type":"string"},"modelSlug":{"type":"string"},
+"oem":{"type":"string","description":"OEM part number"},
+"equivalents":{"type":"object","properties":{"unicel":{"type":"string"},"pleatco":{"type":"string"},"filbur":{"type":"string"}}},
+"dimensions":{"type":"object","required":["diameterIn","lengthIn"],"properties":{"diameterIn":{"type":"number"},"lengthIn":{"type":"number"},"topCore":{"type":"string"},"bottomCore":{"type":"string"},"sqft":{"type":"number"}}},
+"buy":{"type":"object","properties":{"filtersfast":{"type":"string","format":"uri"},"amazon":{"type":"string","format":"uri"},"dohenys":{"type":"string","format":"uri"}}},
+"notes":{"type":"string"}}}}}}

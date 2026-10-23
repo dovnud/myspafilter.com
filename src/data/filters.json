@@ -1,0 +1,14 @@
+{"example": true,
+ "_note": "EXAMPLE PLACEHOLDER DATA ONLY. Replace with real data from /workspace/spafilter/data.",
+ "filters": [
+  {"brand":"Example Brand A","brandSlug":"example-brand-a","model":"Example Model 1","modelSlug":"example-model-1",
+   "oem":"EXAMPLE-001","equivalents":{"unicel":"EXAMPLE-U-001","pleatco":"EXAMPLE-P-001","filbur":"EXAMPLE-F-001"},
+   "dimensions":{"diameterIn":0,"lengthIn":0,"topCore":"EXAMPLE","bottomCore":"EXAMPLE","sqft":0},
+   "buy":{"filtersfast":"https://www.filtersfast.com/","amazon":"https://www.amazon.com/","dohenys":"https://www.doheny.com/"},
+   "notes":"Example entry — not a real filter."},
+  {"brand":"Example Brand B","brandSlug":"example-brand-b","model":"Example Model 2","modelSlug":"example-model-2",
+   "oem":"EXAMPLE-002","equivalents":{"unicel":"EXAMPLE-U-002","pleatco":"EXAMPLE-P-002"},
+   "dimensions":{"diameterIn":0,"lengthIn":0},
+   "buy":{"amazon":"https://www.amazon.com/"},
+   "notes":"Example entry — not a real filter."}
+ ]}

@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { brands, filters } from '../lib/data';
+const site = Astro.site!.href;
+---
+<Base title="Spa Filter & Hot Tub Filter Finder | MySpaFilter" description="Find the right spa filter or hot tub filter by brand, model, part number, or size. Unicel, Pleatco and Filbur cross-references."
+ jsonld={[{"@context":"https://schema.org","@type":"WebSite",name:"MySpaFilter",url:site}]}>
+<h1>Find your spa filter / hot tub filter</h1>
+<p>Pick your hot tub brand, search by part number, or look up by size.</p>
+<section class="card"><h2>Lookup by size</h2><p>Know the diameter and length? <a href="/size/">Use the size lookup →</a></p></section>
+<section><h2>Brands</h2><ul class="grid">{brands().map(b=>(<li class="card"><strong>{b.name}</strong><ul>{filters.filter(f=>f.brandSlug===b.slug).map(f=><li><a href={`/${b.slug}/${f.modelSlug}/`}>{f.model}</a></li>)}</ul></li>))}</ul></section>
+</Base>
