@@ -1,25 +1,36 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Sources from '../../../components/Sources.astro';
 import { filters, slug, type Filter } from '../../../lib/data';
 export function getStaticPaths(){ return filters.map(f=>({params:{brand:f.brandSlug,model:f.modelSlug},props:{f}})); }
 const { f } = Astro.props as { f: Filter };
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
-const eq = f.equivalents||{}; const d = f.dimensions;
+const eq = f.equivalents||{}; const d:any = f.dimensions;
+const oems = (f.oemAll||f.oem).split(';').map(s=>s.trim());
 const shops = [['FiltersFast',f.buy?.filtersfast],['Amazon',f.buy?.amazon],["Doheny's",f.buy?.dohenys]].filter(s=>s[1]);
+const siblings = filters.filter(x=>x.brandSlug===f.brandSlug && x!==f && Math.abs(x.dimensions.diameterIn-d.diameterIn)<=0.25);
 const ld = [{"@context":"https://schema.org","@type":"Product",name:`${f.brand} ${f.model} spa filter`,mpn:f.oem,brand:{"@type":"Brand",name:f.brand},url,
-  description:`Replacement hot tub filter for ${f.brand} ${f.model}. OEM ${f.oem}.`},
+  description:`Replacement hot tub filter for ${f.brand}: OEM ${f.oemAll}, Unicel ${eq.unicel}.`},
  {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[
-  {"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:f.brand,item:site},{"@type":"ListItem",position:3,name:f.model,item:url}]}];
+  {"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:f.brand,item:new URL(`/${f.brandSlug}/`,site).href},{"@type":"ListItem",position:3,name:f.model,item:url}]}];
 ---
-<Base title={`${f.brand} ${f.model} Spa Filter (${f.oem}) – Hot Tub Filter Replacement`} description={`Replacement spa filter / hot tub filter for ${f.brand} ${f.model}: OEM ${f.oem}, Unicel, Pleatco & Filbur equivalents, and dimensions.`} jsonld={ld}>
-<p class="crumbs"><a href="/">Home</a> › {f.brand} › {f.model}</p>
-<h1>{f.brand} {f.model} spa filter</h1>
-<section class="card answer"><p>Your hot tub filter is:</p><p class="big"><a href={`/filter/${slug(f.oem)}/`}>{f.oem}</a> (OEM)</p>
-<table><tr><th>Unicel</th><td>{eq.unicel ? <a href={`/filter/${slug(eq.unicel)}/`}>{eq.unicel}</a> : '—'}</td></tr>
-<tr><th>Pleatco</th><td>{eq.pleatco ? <a href={`/filter/${slug(eq.pleatco)}/`}>{eq.pleatco}</a> : '—'}</td></tr>
-<tr><th>Filbur</th><td>{eq.filbur ? <a href={`/filter/${slug(eq.filbur)}/`}>{eq.filbur}</a> : '—'}</td></tr>
-<tr><th>Dimensions</th><td>{d.diameterIn}" dia × {d.lengthIn}" long{d.topCore && `, top: ${d.topCore}`}{d.bottomCore && `, bottom: ${d.bottomCore}`}{d.sqft ? `, ${d.sqft} sq ft` : ''}</td></tr></table>
-<div>{shops.map(([n,u])=><a class="btn" href={u} rel="sponsored nofollow" target="_blank">Buy at {n}</a>)}</div>
-<p><small>Affiliate links — see <a href="/affiliate-disclosure/">disclosure</a>. Verify dimensions before ordering.</small></p></section>
-{f.notes && <p>{f.notes}</p>}
+<Base title={`${f.brand} ${f.oem} Spa Filter – ${eq.unicel}${eq.pleatco?` / ${eq.pleatco}`:''} Replacement`} description={`${f.brand} OEM ${f.oemAll} hot tub filter cross-reference: Unicel ${eq.unicel}${eq.pleatco?`, Pleatco ${eq.pleatco}`:''}. ${d.diameterText} × ${d.lengthText}, ${d.sqft} sq ft, with cited sources.`} jsonld={ld}>
+<p class="crumbs"><a href="/">Home</a> › <a href={`/${f.brandSlug}/`}>{f.brand}</a> › {f.model}</p>
+<h1>{f.brand} OEM {f.oem} spa filter ({eq.unicel})</h1>
+<p>Listed for: {f.series}{f.status!=='verified' && <strong> — unverified</strong>}</p>
+<section class="card answer">
+<table><tr><th>OEM part no.</th><td>{oems.map((o,i)=><>{i>0&&', '}{o}</>)}</td></tr>
+<tr><th>Unicel</th><td><a href={`/filter/${slug(eq.unicel!)}/`}>{eq.unicel}</a></td></tr>
+<tr><th>Pleatco</th><td>{eq.pleatco ? <a href={`/filter/${slug(eq.pleatco)}/`}>{eq.pleatco}</a> : 'not found in source'}</td></tr>
+<tr><th>Filbur</th><td>{eq.filbur || 'not sourced'}</td></tr>
+<tr><th>Diameter</th><td>{d.diameterText}</td></tr><tr><th>Length</th><td>{d.lengthText}</td></tr>
+<tr><th>Top</th><td>{d.topCore||'—'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore||'—'}</td></tr><tr><th>Filter area</th><td>{d.sqft} sq ft</td></tr></table>
+<div>{shops.map(([n,u])=><a class="btn" href={u} rel="sponsored nofollow" target="_blank">Search {n}</a>)}</div>
+<p><small>Retailer search links — see <a href="/affiliate-disclosure/">disclosure</a>. Verify dimensions before ordering.</small></p></section>
+{f.notes && <p><strong>Source note:</strong> {f.notes}</p>}
+<h2>How to confirm this is your filter</h2>
+<p>Pull your current cartridge and measure it end to end, including any handle, and across the widest point of the pleats. This cartridge measures {d.diameterText} in diameter and {d.lengthText} long{d.topCore ? `, with a ${d.topCore} on top` : ''}{d.bottomCore ? ` and a ${d.bottomCore} on the bottom` : ''}. The bottom fitting matters most: a cartridge with the right diameter but the wrong thread or open-end size will not seal in the filter housing, letting unfiltered water bypass the media.</p>
+<p>The {d.sqft} sq ft rating describes the pleated media area. {f.brand} housings are designed around a particular cartridge, so choose a replacement with the same size and fittings rather than a larger area rating. {eq.pleatco ? `Unicel ${eq.unicel} and Pleatco ${eq.pleatco} are cross-referenced to each other in the Pleatco 2023 catalog, so either should fit the same housing.` : `We did not find a Pleatco equivalent for ${eq.unicel} in the Pleatco 2023 cross-reference, so search by the Unicel or OEM number.`}{oems.length>1 ? ` ${f.brand} has used ${oems.length} OEM numbers for this cartridge; any of them should map to the same replacement.` : ''}</p>
+{siblings.length>0 && <><h2>Similar-diameter {f.brand} cartridges</h2><ul>{siblings.map(x=><li><a href={`/${x.brandSlug}/${x.modelSlug}/`}>{x.model}</a> — {(x.dimensions as any).diameterText} × {(x.dimensions as any).lengthText}</li>)}</ul></>}
+<Sources f={f} />
 </Base>

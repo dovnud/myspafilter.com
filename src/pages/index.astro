@@ -8,5 +8,5 @@ const site = Astro.site!.href;
 <h1>Find your spa filter / hot tub filter</h1>
 <p>Pick your hot tub brand, search by part number, or look up by size.</p>
 <section class="card"><h2>Lookup by size</h2><p>Know the diameter and length? <a href="/size/">Use the size lookup →</a></p></section>
-<section><h2>Brands</h2><ul class="grid">{brands().map(b=>(<li class="card"><strong>{b.name}</strong><ul>{filters.filter(f=>f.brandSlug===b.slug).map(f=><li><a href={`/${b.slug}/${f.modelSlug}/`}>{f.model}</a></li>)}</ul></li>))}</ul></section>
+<section><h2>Brands</h2><ul class="grid">{brands().map(b=>(<li class="card"><strong><a href={`/${b.slug}/`}>{b.name}</a></strong><ul>{filters.filter(f=>f.brandSlug===b.slug).map(f=><li><a href={`/${b.slug}/${f.modelSlug}/`}>{f.model}</a></li>)}</ul></li>))}</ul></section>
 </Base>
