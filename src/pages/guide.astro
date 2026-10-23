@@ -1,0 +1,21 @@
+---
+import Page from '../components/Page.astro';
+import { filters } from '../lib/data';
+const ver = filters.filter(f=>f.status==='verified').length;
+---
+<Page title="How to Find & Replace Your Hot Tub Filter – Measuring Guide" description="How to identify a spa filter cartridge by part number or measurements, read OEM/Unicel/Pleatco cross-references, and know when to replace it.">
+<h1>How to identify and replace a hot tub filter</h1>
+<h2>1. Look for the part number first</h2>
+<p>Most cartridges have a part number printed or molded on the end cap. It might be an OEM number from the spa maker (for example a Sundance 6540-xxx number), a Unicel number (C-xxxx, 4CH-xx), or a Pleatco number (Pxxxx). Search for any of them here: each part page lists every equivalent number we found in the source catalogs.</p>
+<h2>2. Measure if there's no number</h2>
+<ul><li><strong>Diameter:</strong> measure across the widest point of the pleats, not the end cap's lip.</li>
+<li><strong>Length:</strong> measure the overall length, including any handle or threaded fitting.</li>
+<li><strong>Top and bottom:</strong> note whether each end is open, closed, has a handle, or is threaded, and measure any opening.</li></ul>
+<p>Then use the <a href="/size/">size lookup</a>. Two cartridges can share a diameter and length but have different fittings, so always compare the top and bottom too.</p>
+<h2>3. Understand square footage</h2>
+<p>The sq ft rating is the total pleated media area. Within the same size and fittings, more area can mean longer intervals between cleanings. A cartridge that is physically different won't seal in your housing, whatever its rating.</p>
+<h2>4. When to clean and replace</h2>
+<p>Rinse cartridges regularly and soak them in a filter cleaner periodically, following your spa maker's schedule. Replace a cartridge when the pleats are torn, flattened, or permanently discolored, when the end caps crack, or when flow stays weak after cleaning.</p>
+<h2>About our data</h2>
+<p>We list {filters.length} cartridges, {ver} of them fully cited. The rest are clearly labeled unverified. Sources are the Unicel 2026 Replacement Guide and the Pleatco 2023 catalog, with page numbers on every cartridge page.</p>
+</Page>

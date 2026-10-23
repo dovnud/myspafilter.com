@@ -1,35 +1,51 @@
 ---
-import { isExample } from '../lib/data';
+import { brands, filters } from '../lib/data';
 interface Props { title:string; description:string; jsonld?: object[] }
 const { title, description, jsonld = [] } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const path = Astro.url.pathname;
+const nav = [['/','Home'],['/size/','Size lookup'],['/guide/','Filter guide'],['/about/','About'],['/contact/','Contact']];
 ---
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content={description}>
-<link rel="canonical" href={canonical}>
-<meta property="og:title" content={title}><meta property="og:description" content={description}><meta property="og:url" content={canonical}>
+<link rel="canonical" href={canonical}><meta name="theme-color" content="#0b5f8a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>">
+<meta property="og:title" content={title}><meta property="og:description" content={description}><meta property="og:url" content={canonical}><meta property="og:type" content="website">
 {jsonld.map(j => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
 <style is:global>
-:root{--fg:#1b2430;--mut:#5b6675;--bg:#f7f9fb;--card:#fff;--ac:#0a6eb4;--bd:#dde3ea}
-*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
-a{color:var(--ac)}.wrap{max-width:960px;margin:0 auto;padding:0 1rem}
-header{background:#fff;border-bottom:1px solid var(--bd)}header .wrap{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.8rem 1rem}
-.logo{font-weight:700;text-decoration:none;color:var(--fg)}nav a{margin-left:1rem;text-decoration:none}
-main{padding:1.5rem 0}.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:1.2rem;margin:1rem 0}
-.answer{border-left:5px solid var(--ac)}.big{font-size:1.6rem;font-weight:700}
-table{border-collapse:collapse;width:100%}td,th{padding:.4rem;border-bottom:1px solid var(--bd);text-align:left}
-.btn{display:inline-block;padding:.6rem 1rem;margin:.3rem .3rem 0 0;border-radius:8px;background:var(--ac);color:#fff;text-decoration:none;font-weight:600}
-.warn{background:#fff4d6;border:1px solid #f0c94b;padding:.6rem 1rem;border-radius:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem;padding:0;list-style:none}
-footer{border-top:1px solid var(--bd);color:var(--mut);font-size:.9rem;padding:1.5rem 0}footer a{margin-right:1rem}
-.crumbs{font-size:.9rem;color:var(--mut)}input{padding:.5rem;border:1px solid var(--bd);border-radius:6px;width:7rem}
+:root{--fg:#14202e;--mut:#5a6878;--bg:#f4f8fb;--card:#fff;--ac:#0b6fa4;--ac2:#13a3a0;--bd:#dfe7ee;--r:14px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:16.5px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+a{color:var(--ac);text-underline-offset:2px}a:hover{color:#084f75}
+h1{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.2;letter-spacing:-.02em;margin:.4rem 0 .8rem}h2{font-size:1.3rem;margin-top:2rem;letter-spacing:-.01em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.1rem}
+header{background:linear-gradient(90deg,#0b5f8a,#13a3a0);color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0002}
+header .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1rem;align-items:center;justify-content:space-between;padding:.7rem 1.1rem}
+.logo{font-weight:800;font-size:1.2rem;color:#fff;text-decoration:none;letter-spacing:-.02em}.logo span{opacity:.75;font-weight:600}
+nav{display:flex;flex-wrap:wrap;gap:.2rem}nav a{color:#e9f7ff;text-decoration:none;padding:.35rem .7rem;border-radius:999px;font-size:.95rem;font-weight:500}
+nav a:hover,nav a[aria-current]{background:#ffffff26;color:#fff}
+.disc{background:#fffbea;border-bottom:1px solid #f1e3a6;font-size:.86rem;color:#6b5a14}.disc .wrap{padding:.45rem 1.1rem}.disc a{color:#6b5a14}
+main{padding:1.4rem 0 3rem;min-height:60vh}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:1.25rem 1.4rem;margin:1rem 0;box-shadow:0 1px 3px #0b2a4010}
+.answer{border-top:4px solid var(--ac)}.big{font-size:1.6rem;font-weight:700}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}td,th{padding:.55rem .6rem;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600;white-space:nowrap}
+.btn{display:inline-block;padding:.65rem 1.1rem;margin:.4rem .4rem 0 0;border-radius:10px;background:var(--ac);color:#fff!important;text-decoration:none;font-weight:600;transition:transform .1s}.btn:hover{transform:translateY(-1px);background:#095c88}
+.hero{background:radial-gradient(circle at 80% 0,#d7f3f2,transparent 60%),#fff;border:1px solid var(--bd);border-radius:20px;padding:2rem 1.6rem;margin:.5rem 0 1.5rem}
+.hero p{font-size:1.1rem;color:var(--mut);max-width:42rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;padding:0;list-style:none}
+.grid .card{margin:0;transition:box-shadow .15s}.grid .card:hover{box-shadow:0 6px 20px #0b2a4018}
+.badge{display:inline-block;font-size:.75rem;font-weight:700;padding:.1rem .5rem;border-radius:999px;background:#e3f6ee;color:#11704a}.badge.u{background:#fff1dc;color:#9a5a00}
+footer{background:#0f2233;color:#b7c6d4;font-size:.9rem;padding:2rem 0}footer a{color:#e2eef8;margin-right:1rem;display:inline-block;margin-bottom:.3rem}
+.crumbs{font-size:.88rem;color:var(--mut)}.crumbs a{color:var(--mut)}
+input{padding:.6rem .7rem;border:1px solid var(--bd);border-radius:10px;font-size:1rem;width:8rem}input.wide{width:100%;max-width:26rem}
+@media (max-width:600px){nav a{padding:.3rem .5rem;font-size:.88rem}.hero{padding:1.4rem 1.1rem}}
 </style></head><body>
-<header><div class="wrap"><a class="logo" href="/">MySpaFilter</a><nav><a href="/size/">Lookup by size</a><a href="/about/">About</a></nav></div></header>
-<main class="wrap">
-{isExample && <p class="warn">⚠️ This site currently shows EXAMPLE placeholder data only. Do not use for purchasing.</p>}
-<slot /></main>
-<footer><div class="wrap"><p><a href="/about/">About</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a></p>
-<p>We earn commissions from qualifying purchases. MySpaFilter is independent and not affiliated with any spa/hot tub manufacturer or filter brand. Always verify dimensions before buying.</p>
+<header><div class="wrap"><a class="logo" href="/">MySpaFilter<span>.com</span></a><nav>{nav.map(([h,l])=><a href={h} aria-current={path===h?'page':undefined}>{l}</a>)}</nav></div></header>
+<div class="disc"><div class="wrap">Disclosure: we may earn a commission from qualifying purchases made through retailer links on this site, at no extra cost to you. As an Amazon Associate we earn from qualifying purchases. <a href="/affiliate-disclosure/">Learn more</a>.</div></div>
+<main class="wrap"><slot /></main>
+<footer><div class="wrap"><p><strong style="color:#fff">Brands:</strong> {brands().map(b=><a href={`/${b.slug}/`}>{b.name}</a>)}</p>
+<p><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/guide/">Filter guide</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>MySpaFilter is independent and not affiliated with any hot tub manufacturer or filter brand. Cross-reference data comes from the Unicel 2026 Replacement Guide and Pleatco 2023 catalog ({filters.length} cartridges). Always check dimensions before buying.</p>
 <p>© {new Date().getFullYear()} myspafilter.com</p></div></footer>
 </body></html>

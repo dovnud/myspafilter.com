@@ -6,8 +6,8 @@ const rows = filters.map(f=>({d:f.dimensions.diameterIn,l:f.dimensions.lengthIn,
 <Base title="Spa Filter Size Lookup – Find a Hot Tub Filter by Dimensions" description="Look up a spa filter or hot tub filter by diameter and length.">
 <h1>Find a spa / hot tub filter by size</h1>
 <div class="card"><label>Diameter (in) <input id="d" type="number" step="0.01"></label> <label>Length (in) <input id="l" type="number" step="0.01"></label> <small>±0.25″ tolerance</small></div>
-<table id="t"><thead><tr><th>Filter</th><th>OEM</th><th>Dia</th><th>Length</th></tr></thead><tbody>
-{rows.map(r=><tr data-d={r.d} data-l={r.l}><td><a href={r.href}>{r.name}</a></td><td>{r.oem}</td><td>{r.dt}</td><td>{r.lt}</td></tr>)}</tbody></table>
+<div class="tbl"><table id="t"><thead><tr><th>Filter</th><th>OEM</th><th>Dia</th><th>Length</th></tr></thead><tbody>
+{rows.map(r=><tr data-d={r.d} data-l={r.l}><td><a href={r.href}>{r.name}</a></td><td>{r.oem}</td><td>{r.dt}</td><td>{r.lt}</td></tr>)}</tbody></table></div></div>
 <script>
 const d=document.getElementById('d') as HTMLInputElement, l=document.getElementById('l') as HTMLInputElement;
 const f=()=>document.querySelectorAll<HTMLTableRowElement>('#t tbody tr').forEach(r=>{const ok=(i:HTMLInputElement,v:string)=>!i.value||Math.abs(+i.value-+v)<=0.25;r.hidden=!(ok(d,r.dataset.d!)&&ok(l,r.dataset.l!));});

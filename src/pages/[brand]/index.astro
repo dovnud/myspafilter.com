@@ -7,6 +7,6 @@ const { b } = Astro.props as any; const list = filters.filter(f=>f.brandSlug===b
 <Base title={`${b.name} Spa Filter Cross Reference – OEM to Unicel & Pleatco`} description={`All ${list.length} ${b.name} hot tub filter cartridges we have cited: OEM part numbers, Unicel and Pleatco equivalents, sizes.`}>
 <p class="crumbs"><a href="/">Home</a> › {b.name}</p><h1>{b.name} spa filters</h1>
 <p>{list.length} {b.name} replacement cartridges from the Unicel 2026 Replacement Guide and Pleatco 2023 catalog. Model-year fitment is not published in these sources, so find your cartridge by its OEM part number (printed on the end cap) or by measuring it.</p>
-<table><thead><tr><th>OEM</th><th>Unicel</th><th>Pleatco</th><th>Size</th><th>Status</th></tr></thead><tbody>
-{list.map((f:any)=><tr><td><a href={`/${f.brandSlug}/${f.modelSlug}/`}>{f.oemAll}</a></td><td>{f.equivalents.unicel}</td><td>{f.equivalents.pleatco||'—'}</td><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}</td><td>{f.status==='verified'?'✓ cited':'⚠ unverified'}</td></tr>)}</tbody></table>
+<div class="tbl"><table><thead><tr><th>OEM</th><th>Unicel</th><th>Pleatco</th><th>Size</th><th>Status</th></tr></thead><tbody>
+{list.map((f:any)=><tr><td><a href={`/${f.brandSlug}/${f.modelSlug}/`}>{f.oemAll}</a></td><td>{f.equivalents.unicel}</td><td>{f.equivalents.pleatco||'—'}</td><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}</td><td>{f.status==='verified'?<span class="badge">cited</span>:<span class="badge u">unverified</span>}</td></tr>)}</tbody></table></div>
 </Base>
