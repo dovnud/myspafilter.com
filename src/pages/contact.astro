@@ -4,6 +4,17 @@ import Page from '../components/Page.astro';
 <Page title="Contact MySpaFilter" description="Report a cross-reference error or ask a question about MySpaFilter.">
 <h1>Contact</h1>
 <p>Found a wrong part number, a dimension that doesn't match your cartridge, or a filter we should add? We want to hear about it. Please include the OEM number printed on your cartridge, your measured diameter and length, and the page URL.</p>
-<p class="card">Open a public report on GitHub: <a href="https://github.com/dovnud/myspafilter.com/issues/new" rel="nofollow">github.com/dovnud/myspafilter.com/issues</a></p>
+<p class="card">Email us: <a href="mailto:contact@myspafilter.com">contact@myspafilter.com</a></p>
+<h2>Send a message</h2>
+<form id="contact-form" class="card" action="mailto:contact@myspafilter.com" method="get" enctype="text/plain">
+<p><label>Your name<br><input name="name" required style="width:100%"></label></p>
+<p><label>Subject<br><input name="subject" required style="width:100%" placeholder="e.g. Wrong dimension for C-4326"></label></p>
+<p><label>Message<br><textarea name="message" rows="6" required style="width:100%" placeholder="OEM number, measured diameter and length, page URL"></textarea></label></p>
+<p><button type="submit">Open in my email app</button></p>
+<p><small>This opens your email app with the message filled in, addressed to contact@myspafilter.com. Nothing is sent until you press send there.</small></p>
+</form>
+<script is:inline>
+document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var f=e.target;var body=f.message.value+'\n\n— '+f.name.value;location.href='mailto:contact@myspafilter.com?subject='+encodeURIComponent(f.subject.value)+'&body='+encodeURIComponent(body);});
+</script>
 <p>We read every correction, and when a source confirms the change we update the data and the page's source citation.</p>
 </Page>
