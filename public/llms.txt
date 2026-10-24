@@ -1,0 +1,25 @@
+# MySpaFilter
+
+> Independent hot tub / spa filter cross-reference. Look up a cartridge by OEM, Unicel or Pleatco part number and get equivalents, dimensions, fittings and the catalog page each match comes from (Unicel 2026 Replacement Guide, Pleatco 2023 catalog). Unconfirmed rows are flagged as unverified. Affiliate retailer links are disclosed.
+
+## Key pages
+- [Home / part-number search](https://myspafilter.com/)
+- [Find a filter by size](https://myspafilter.com/size/)
+- [Measuring guide](https://myspafilter.com/guide/)
+- [Guides index](https://myspafilter.com/guides/)
+- Brands: [Caldera](https://myspafilter.com/caldera/), [Hot Spot](https://myspafilter.com/hot-spot/), [Hot Spring](https://myspafilter.com/hot-spring/), [Jacuzzi](https://myspafilter.com/jacuzzi/), [Sundance](https://myspafilter.com/sundance/)
+
+## Guides
+- [How often should you replace a hot tub filter?](https://myspafilter.com/guides/how-often-to-replace-hot-tub-filter/)
+- [How to clean a hot tub filter (step by step)](https://myspafilter.com/guides/how-to-clean-a-hot-tub-filter/)
+- [How often should you clean a hot tub filter?](https://myspafilter.com/guides/how-often-to-clean-hot-tub-filter/)
+- [How to find your spa filter size](https://myspafilter.com/guides/how-to-find-your-spa-filter-size/)
+- [OEM vs Unicel vs Pleatco spa filters: what's the difference?](https://myspafilter.com/guides/oem-vs-unicel-vs-pleatco-spa-filters/)
+- [Signs your hot tub filter is bad (and needs replacing)](https://myspafilter.com/guides/signs-your-hot-tub-filter-is-bad/)
+- [Spa filter cleaner vs DIY soaks (TSP, dishwasher detergent, vinegar, bleach)](https://myspafilter.com/guides/spa-filter-cleaner-vs-diy-soak/)
+- [Should you acid wash a spa filter?](https://myspafilter.com/guides/should-you-acid-wash-a-spa-filter/)
+- [Can you put a hot tub filter in the dishwasher or use a pressure washer?](https://myspafilter.com/guides/can-you-put-a-hot-tub-filter-in-the-dishwasher/)
+
+## Policies
+- [About](https://myspafilter.com/about/) · [Affiliate disclosure](https://myspafilter.com/affiliate-disclosure/) · [Disclaimer](https://myspafilter.com/disclaimer/)
+- Sitemap: https://myspafilter.com/sitemap-index.xml

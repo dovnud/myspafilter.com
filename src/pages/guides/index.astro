@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import { guides } from '../../lib/guides';
+---
+<Base title="Hot Tub Filter Guides – Cleaning, Replacing & Sizing | MySpaFilter" description="Evergreen, cited answers to common hot tub filter questions: how often to clean or replace, how to find your size, OEM vs Unicel vs Pleatco.">
+<p class="crumbs"><a href="/">Home</a> › Guides</p><h1>Hot tub filter guides</h1>
+<p>Direct, sourced answers to the questions spa owners ask most. Every claim links to the manufacturer, Unicel, Pleatco or CDC source.</p>
+<ul class="grid">{guides.map(g=><li class="card"><a href={`/guides/${g.slug}/`} style="font-weight:750;font-size:1.08rem">{g.title}</a><p class="crumbs">{g.desc}</p></li>)}</ul>
+</Base>

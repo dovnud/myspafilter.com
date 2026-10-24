@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { brands, filters, allParts } from '../lib/data';
+import { guides } from '../lib/guides';
 const site = Astro.site!.href;
 const parts = [...allParts().keys()];
 const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
@@ -15,6 +16,8 @@ const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 <svg class="wave" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c150-30 300 30 450 10s300-40 450-10 225 30 300 10v50H0z" fill="#7fd6d0" opacity=".35"/><path d="M0 60c200-25 350 25 550 5s350-30 650 5v20H0z" fill="#f7f3ec"/></svg></section>
 <h2>Browse by brand</h2>
 <ul class="grid">{brands().map((b,i)=>{const l=filters.filter(f=>f.brandSlug===b.slug);const c=['#0a6b74','#127f9e','#c56b3e','#2f7d5b','#7a5aa6','#b0892f'][i%6];return <li><a class="card tile" style={`--c:${c}`} href={`/${b.slug}/`}><b>{b.name}</b><small>{l.length} cartridges · {l.filter(f=>f.status==='verified').length} fully cited</small><svg width="110" height="110" viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5C9 7 6 10 6 14a6 6 0 0 0 12 0c0-4-3-7-6-11.5Z"/></svg></a></li>})}</ul>
+<h2>Popular guides</h2>
+<ul class="grid">{guides.slice(0,6).map(g=><li class="card"><a href={`/guides/${g.slug}/`} style="font-weight:750">{g.title}</a></li>)}</ul><p><a href="/guides/">All guides →</a></p>
 <h2>How this works</h2>
 <div class="feat">
 <div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg><h3>Cross-referenced</h3><p>Spa makers, Unicel and Pleatco number the same cartridge differently. We match them using the published tables.</p></div>
