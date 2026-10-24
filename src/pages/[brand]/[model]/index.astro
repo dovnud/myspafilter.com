@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Cartridge from '../../../components/Cartridge.astro';
 import Sources from '../../../components/Sources.astro';
 import { filters, slug, type Filter } from '../../../lib/data';
 export function getStaticPaths(){ return filters.map(f=>({params:{brand:f.brandSlug,model:f.modelSlug},props:{f}})); }
@@ -18,15 +19,18 @@ const ld = [{"@context":"https://schema.org","@type":"Product",name:`${f.brand} 
 <p class="crumbs"><a href="/">Home</a> › <a href={`/${f.brandSlug}/`}>{f.brand}</a> › {f.model}</p>
 <h1>{f.brand} OEM {f.oem} spa filter ({eq.unicel})</h1>
 <p>Listed for: {f.series}{f.status!=='verified' && <strong> — unverified</strong>}</p>
-<section class="card answer">
-<table><tr><th>OEM part no.</th><td>{oems.map((o,i)=><>{i>0&&', '}{o}</>)}</td></tr>
-<tr><th>Unicel</th><td><a href={`/filter/${slug(eq.unicel!)}/`}>{eq.unicel}</a></td></tr>
+<section class="card answer"><div class="cols"><div>
+<div class="kicker">Your replacement</div>
+<div class="big">Unicel {eq.unicel}{eq.pleatco && <> · Pleatco {eq.pleatco}</>}</div>
+<p style="margin:.2rem 0 .6rem">Fits {f.brand} OEM {oems.join(', ')} {f.status==='verified'?<span class="badge">cited</span>:<span class="badge u">unverified</span>}</p>
+<span class="pill">Ø {d.diameterText}</span><span class="pill">L {d.lengthText}</span><span class="pill">{d.sqft} sq ft</span>
+<table style="margin-top:1rem"><tr><th>Unicel</th><td><a href={`/filter/${slug(eq.unicel!)}/`}>{eq.unicel}</a></td></tr>
 <tr><th>Pleatco</th><td>{eq.pleatco ? <a href={`/filter/${slug(eq.pleatco)}/`}>{eq.pleatco}</a> : 'not found in source'}</td></tr>
 <tr><th>Filbur</th><td>{eq.filbur || 'not sourced'}</td></tr>
-<tr><th>Diameter</th><td>{d.diameterText}</td></tr><tr><th>Length</th><td>{d.lengthText}</td></tr>
-<tr><th>Top</th><td>{d.topCore||'—'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore||'—'}</td></tr><tr><th>Filter area</th><td>{d.sqft} sq ft</td></tr></table>
-<div>{shops.map(([n,u])=><a class="btn" href={u} rel="sponsored nofollow" target="_blank">Search {n}</a>)}</div>
-<p><small>Retailer search links — see <a href="/affiliate-disclosure/">disclosure</a>. Verify dimensions before ordering.</small></p></section>
+<tr><th>Top</th><td>{d.topCore||'—'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore||'—'}</td></tr></table>
+<div class="buy">{shops.map(([n,u])=><a class="btn" href={u} rel="sponsored nofollow" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 4h2l2.4 11h11l2-8H6.2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>Check {n}</a>)}</div>
+<p><small>Retailer search links — see <a href="/affiliate-disclosure/">disclosure</a>. Verify dimensions before ordering.</small></p>
+</div><Cartridge d={d} /></div></section>
 {f.notes && <p><strong>Source note:</strong> {f.notes}</p>}
 <h2>How to confirm this is your filter</h2>
 <p>Pull your current cartridge and measure it end to end, including any handle, and across the widest point of the pleats. This cartridge measures {d.diameterText} in diameter and {d.lengthText} long{d.topCore ? `, with a ${d.topCore} on top` : ''}{d.bottomCore ? ` and a ${d.bottomCore} on the bottom` : ''}. The bottom fitting matters most: a cartridge with the right diameter but the wrong thread or open-end size will not seal in the filter housing, letting unfiltered water bypass the media.</p>
