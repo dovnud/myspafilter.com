@@ -16,7 +16,7 @@ const others = guides.filter((x:any)=>x.slug!==g.slug).slice(0,4);
 <p class="crumbs">By MySpaFilter Editorial Team · Last reviewed <time datetime={REVIEWED}>October 23, 2026</time></p>
 <section class="card answer"><div class="kicker">Short answer</div><p style="font-size:1.12rem;margin:.4rem 0 0" set:html={g.answer} /></section>
 <Fragment set:html={g.body} />
-<h2>FAQ</h2>{g.faq.map(([q,a]:any)=><details class="card"><summary><strong>{q}</strong></summary><p>{a}</p></details>)}
+<h2 data-reveal>FAQ</h2>{g.faq.map(([q,a]:any)=><details class="card"><summary><strong>{q}</strong></summary><p>{a}</p></details>)}
 <h2>Sources</h2><ol>{keys.map(k=>g.src.includes(k)||g.answer.includes(`#src-${k}`)||g.body.includes(`#src-${k}`)?<li id={`src-${k}`} value={keys.indexOf(k)+1}><a href={SRC[k].u} rel="nofollow">{SRC[k].t}</a></li>:null)}</ol>
 <p><small>This guide summarizes published manufacturer guidance; always follow your own spa’s owner’s manual. See our <a href="/disclaimer/">disclaimer</a>.</small></p>
 </article>

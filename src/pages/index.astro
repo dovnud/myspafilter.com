@@ -2,31 +2,40 @@
 import Base from '../layouts/Base.astro';
 import { brands, filters, allParts } from '../lib/data';
 import { guides } from '../lib/guides';
+import SpotlightCard from '../components/rb/SpotlightCard.jsx';
+import Magnet from '../components/rb/Magnet.jsx';
 const site = Astro.site!.href;
+const spokes = Array.from({length:24},(_,i)=>{const a=i/24*Math.PI*2;return [120+Math.cos(a)*40,75+Math.sin(a)*25,120+Math.cos(a)*92,75+Math.sin(a)*57].map(n=>+n.toFixed(1))});
 const parts = [...allParts().keys()];
 const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 ---
 <Base title="Spa Filter & Hot Tub Filter Cross Reference | MySpaFilter" description="Find the right hot tub filter: OEM part numbers cross-referenced to Unicel and Pleatco equivalents for Sundance, Jacuzzi, Hot Spring and Caldera, with cited sources."
  jsonld={[{"@context":"https://schema.org","@type":"WebSite",name:"MySpaFilter",url:site}]}>
-<section class="hero"><h1>Find the exact hot tub filter. With receipts.</h1>
-<p>Type the number on your old cartridge's end cap — OEM, Unicel, or Pleatco — and get the matching equivalents, size, fittings and the catalog page it came from.</p>
-<form class="search" id="f" role="search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="Part number or brand, e.g. 6540-476, C-8326" autocomplete="off" aria-label="Part number or brand"><button class="btn" id="go">Find filter</button></form>
-<p id="msg"></p>
-<div class="stats"><span><b>{filters.length}</b>cartridges</span><span><b>{brands().length}</b>spa brands</span><span><b>{parts.length}</b>part numbers</span><span><a class="btn ghost" href="/size/">Look up by size →</a></span></div>
-<svg class="wave" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c150-30 300 30 450 10s300-40 450-10 225 30 300 10v50H0z" fill="#7fd6d0" opacity=".35"/><path d="M0 60c200-25 350 25 550 5s350-30 650 5v20H0z" fill="#f7f3ec"/></svg></section>
-<h2>Browse by brand</h2>
-<ul class="grid">{brands().map((b,i)=>{const l=filters.filter(f=>f.brandSlug===b.slug);const c=['#0a6b74','#127f9e','#c56b3e','#2f7d5b','#7a5aa6','#b0892f'][i%6];return <li><a class="card tile" style={`--c:${c}`} href={`/${b.slug}/`}><b>{b.name}</b><small>{l.length} cartridges · {l.filter(f=>f.status==='verified').length} fully cited</small><svg width="110" height="110" viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5C9 7 6 10 6 14a6 6 0 0 0 12 0c0-4-3-7-6-11.5Z"/></svg></a></li>})}</ul>
-<h2>Popular guides</h2>
-<ul class="grid">{guides.slice(0,6).map(g=><li class="card"><a href={`/guides/${g.slug}/`} style="font-weight:750">{g.title}</a></li>)}</ul><p><a href="/guides/">All guides →</a></p>
-<h2>How this works</h2>
-<div class="feat">
-<div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg><h3>Cross-referenced</h3><p>Spa makers, Unicel and Pleatco number the same cartridge differently. We match them using the published tables.</p></div>
-<div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5"/></svg><h3>Cited sources</h3><p>Every row links the catalog page, and anything unconfirmed is clearly flagged so you can check it yourself.</p></div>
-<div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17 17 3l4 4L7 21H3z"/><path d="m7 13 2 2m2-6 2 2m2-6 2 2"/></svg><h3>Measure to confirm</h3><p>No readable number? Use the <a href="/guide/">measuring guide</a> or <a href="/size/">size lookup</a>.</p></div>
+<section class="hero">
+<svg class="ripples" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#8fb9b0" stroke-opacity=".16">{[60,110,170,240,320,410].map(r=><ellipse cx="690" cy="40" rx={r*1.25} ry={r*.8}/>)}</svg>
+<div>
+<p class="eyebrow">Spa &amp; hot tub filter cross-reference</p>
+<h1>Read the end cap.<br><em>We'll find the cartridge.</em></h1>
+<p class="lede">Type the number molded into your old filter — a Sundance <code>6540-476</code>, a Unicel <code>C-8326</code>, a Pleatco <code>PTL47W</code> — or a spa brand. You get the matching OEM, Unicel and Pleatco numbers plus diameter, length and fittings to check against a tape measure.</p>
+<form class="search" id="f" role="search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="e.g. 6540-476, C-8326, Jacuzzi" autocomplete="off" aria-label="Part number or spa brand"><button class="btn" id="go">Find filter</button></form>
+<p id="msg" aria-live="polite"></p>
+<div class="stats"><span><b>{filters.length}</b>cartridges</span><span><b>{parts.length}</b>part numbers</span><span><b>{brands().length}</b>spa brands</span><Magnet client:visible padding={40} magnetStrength={6} maxOffset={6}><a class="btn ghost" href="/size/">No number? Search by size →</a></Magnet></div>
+</div>
+<figure class="endcap" aria-hidden="true"><svg viewBox="0 0 240 150" fill="none" stroke="#e8d6b5" stroke-width="1.4"><ellipse cx="120" cy="75" rx="100" ry="62"/><ellipse cx="120" cy="75" rx="34" ry="21" stroke-opacity=".6"/>{spokes.map(([a,b,c,d])=><line x1={a} y1={b} x2={c} y2={d} stroke-opacity=".28"/>)}<text x="120" y="80" fill="#fff" stroke="none" font-family="ui-monospace,monospace" font-size="13" text-anchor="middle">C-8326</text></svg><p>The part number is usually stamped or printed on the top end cap, or on a label inside the pleats.</p></figure>
+</section>
+<h2 class="rule" data-reveal>Browse by spa brand</h2>
+<ul class="grid">{brands().map((b,i)=>{const l=filters.filter(f=>f.brandSlug===b.slug);const c=['#135e63','#9c4b22','#4f7f6e','#2c5d7c','#b38a3e','#0b3c40'][i%6];return <li data-reveal><SpotlightCard client:visible className="card" theme="light" spotlightColor="#135e63" intensity={0.5} proximity={0}><a class="tile" style={`--c:${c}`} href={`/${b.slug}/`}><b>{b.name}</b><small>{l.length} cartridge{l.length===1?"":"s"} · {l.filter(f=>f.status==='verified').length} with cited sources</small><span class="go">See {b.name} filters →</span></a></SpotlightCard></li>})}</ul>
+<h2 class="rule" data-reveal>Guides worth reading first</h2>
+<ul class="grid">{guides.slice(0,6).map(g=><li class="card" data-reveal><a href={`/guides/${g.slug}/`} style="font-weight:650">{g.title}</a></li>)}</ul><p><a href="/guides/">All filter guides →</a></p>
+<h2 class="rule" data-reveal>How we match a cartridge</h2>
+<div class="feat" data-reveal>
+<div class="card"><span class="n">01</span><h3>Cross-referenced</h3><p>Spa makers, Unicel and Pleatco number the same cartridge differently. We match them using the published tables.</p></div>
+<div class="card"><span class="n">02</span><h3>Cited sources</h3><p>Every row links the catalog page, and anything unconfirmed is clearly flagged so you can check it yourself.</p></div>
+<div class="card"><span class="n">03</span><h3>Measure to confirm</h3><p>No readable number? Use the <a href="/guide/">measuring guide</a> or <a href="/size/">size lookup</a>.</p></div>
 </div>
 <script define:vars={{parts,bl}}>
 const q=document.getElementById('q'),m=document.getElementById('msg');const s=v=>v.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const go=e=>{e&&e.preventDefault();const k=s(q.value);if(!k)return;const br=bl.find(([sl,n])=>sl===k||n===q.value.trim().toLowerCase());if(br){location.href='/'+br[0]+'/';return}if(parts.includes(k))location.href='/filter/'+k+'/';else{const h=parts.filter(p=>p.includes(k)).slice(0,6);m.innerHTML=h.length?'Did you mean: '+h.map(p=>`<a href="/filter/${p}/">${p.toUpperCase()}</a>`).join(', '):'No match. Try the size lookup.';}};
+const go=e=>{e&&e.preventDefault();const k=s(q.value);if(!k)return;const br=bl.find(([sl,n])=>sl===k||n===q.value.trim().toLowerCase());if(br){location.href='/'+br[0]+'/';return}if(parts.includes(k))location.href='/filter/'+k+'/';else{const h=parts.filter(p=>p.includes(k)).slice(0,6);m.innerHTML=h.length?'Did you mean: '+h.map(p=>`<a href="/filter/${p}/">${p.toUpperCase()}</a>`).join(', '):'No match for that number. Try the size lookup.';}};
 document.getElementById('f').onsubmit=go;
 </script>
 </Base>
