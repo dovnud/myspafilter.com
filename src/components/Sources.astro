@@ -2,5 +2,5 @@
 const { f } = Astro.props as any;
 ---
 {f.status!=='verified' && <p class="card" style="border-left:4px solid #d97706;background:#fff7ed"><strong>⚠ Unverified / possible conflict:</strong> this row has not been fully confirmed against a second source. Gaps: {f.gaps}. Measure your old cartridge before ordering.</p>}
-<h2>Sources</h2><ul>{(f.sources||[]).map((s:any)=><li>{s.source} — {s.where} (<a href={s.url} rel="nofollow">PDF</a>)</li>)}</ul>
+<h2>Sources</h2><ul>{(f.sources||[]).map((s:any)=><li>{s.source} — {s.where} (<a href={s.url} rel="nofollow">{/\.pdf$/i.test(s.url)?'PDF':'web page'}</a>)</li>)}</ul>
 {f.status==='verified' && f.gaps && <p><small>Not in sources: {f.gaps}.</small></p>}

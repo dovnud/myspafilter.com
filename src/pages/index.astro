@@ -12,14 +12,14 @@ const armsB=Array.from({length:6},(_,i)=>arm(i/6*Math.PI*2+.3,46,84,-1.1));
 const parts = [...allParts().keys()];
 const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 ---
-<Base title="Spa Filter & Hot Tub Filter Cross Reference | MySpaFilter" description="Find the right hot tub filter: OEM part numbers cross-referenced to Unicel and Pleatco equivalents for Sundance, Jacuzzi, Hot Spring and Caldera, with cited sources."
+<Base title="Spa Filter & Hot Tub Filter Cross Reference | MySpaFilter" description="Find the right hot tub filter: OEM part numbers cross-referenced to Unicel, Pleatco and Filbur equivalents for Hot Spring, Caldera, Hot Spot, Solana, Sundance, Jacuzzi, Bullfrog, Cal Spas and Master Spas, with cited sources."
  jsonld={[{"@context":"https://schema.org","@type":"WebSite",name:"MySpaFilter",url:site}]}>
 <section class="hero">
 <svg class="ripples" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#8fb9b0" stroke-opacity=".16">{[60,110,170,240,320,410].map(r=><ellipse cx="690" cy="40" rx={r*1.25} ry={r*.8}/>)}</svg>
 <div>
 <p class="eyebrow">Spa &amp; hot tub filter cross-reference</p>
 <h1>Read the end cap.<br><em>We'll find the cartridge.</em></h1>
-<p class="lede">Type the number molded into your old filter — a Sundance <code>6540-476</code>, a Unicel <code>C-8326</code>, a Pleatco <code>PTL47W</code> — or a spa brand. You get the matching OEM, Unicel and Pleatco numbers plus diameter, length and fittings to check against a tape measure.</p>
+<p class="lede">Type the number molded into your old filter — a Sundance <code>6540-476</code>, a Unicel <code>C-8326</code>, a Pleatco <code>PTL47W</code> — or a spa brand. You get the matching OEM, Unicel, Pleatco and Filbur numbers plus diameter, length and fittings to check against a tape measure.</p>
 <form class="search" id="f" role="search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="e.g. 6540-476, C-8326, Jacuzzi" autocomplete="off" aria-label="Part number or spa brand"><button class="btn" id="go">Find filter</button></form>
 <p id="msg" aria-live="polite"></p>
 <div class="stats"><span><b>{filters.length}</b>cartridges</span><span><b>{parts.length}</b>part numbers</span><span><b>{brands().length}</b>spa brands</span><Magnet client:visible padding={40} magnetStrength={6} maxOffset={6}><a class="btn ghost" href="/size/">No number? Search by size →</a></Magnet></div>
@@ -54,7 +54,7 @@ const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 <ul class="grid">{guides.slice(0,6).map(g=><li class="card" data-reveal><a href={`/guides/${g.slug}/`} style="font-weight:650">{g.title}</a></li>)}</ul><p><a href="/guides/">All filter guides →</a></p>
 <h2 class="rule" data-reveal>How we match a cartridge</h2>
 <div class="feat" data-reveal>
-<div class="card"><span class="n">01</span><h3>Cross-referenced</h3><p>Spa makers, Unicel and Pleatco number the same cartridge differently. We match them using the published tables.</p></div>
+<div class="card"><span class="n">01</span><h3>Cross-referenced</h3><p>Spa makers, Unicel, Pleatco and Filbur number the same cartridge differently. We match them using the published tables.</p></div>
 <div class="card"><span class="n">02</span><h3>Cited sources</h3><p>Every row links the catalog page, and anything unconfirmed is clearly flagged so you can check it yourself.</p></div>
 <div class="card"><span class="n">03</span><h3>Measure to confirm</h3><p>No readable number? Use the <a href="/guide/">measuring guide</a> or <a href="/size/">size lookup</a>.</p></div>
 </div>

@@ -10,7 +10,9 @@
    "oem": "31382",
    "oemAll": "31382 (formerly 31116)",
    "equivalents": {
-    "unicel": "4CH-35"
+    "unicel": "4CH-35",
+    "pleatco": "PTL35-4",
+    "filbur": "FC-0161"
    },
    "dimensions": {
     "diameterIn": 4.625,
@@ -27,13 +29,22 @@
     "dohenys": "https://www.doheny.com/search?q=4CH-35+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Hot Springs section (printed p.38); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.6"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
     }
    ]
   },
@@ -47,7 +58,8 @@
    "oemAll": "303279",
    "equivalents": {
     "unicel": "5CH-37",
-    "pleatco": "PFF42TC-P4"
+    "pleatco": "PFF42TC-P4",
+    "filbur": "FC-2402"
    },
    "dimensions": {
     "diameterIn": 5.3125,
@@ -65,17 +77,31 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "Pleatco Filbur-to-Pleatco cross reference, PDF p.48 (FC-2402 = PFF42TC-P4); Leisure Time Inc. 5CH-37 page",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.10"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.11 (printed p.7)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Leisure Time Inc.",
+     "url": "https://leisuretimeinc.com/products/unicel-5ch-37-filter-cartridge",
+     "where": "Unicel 5CH-37 product page: replaces OEM 303279; Filbur FC-2402; Pleatco PFF42TC-P4"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Filbur-to-Pleatco cross reference, PDF p.48"
     }
    ]
   },
@@ -89,7 +115,8 @@
    "oemAll": "33521",
    "equivalents": {
     "unicel": "C-4326",
-    "pleatco": "PRB25-IN"
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
    },
    "dimensions": {
     "diameterIn": 4.9375,
@@ -107,17 +134,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.8"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.9 (printed p.5)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
     }
    ]
   },
@@ -126,12 +162,13 @@
    "brandSlug": "hot-spot",
    "model": "C-4326 cartridge (OEM 33521)",
    "modelSlug": "c-4326",
-   "series": "Hot Spot (see also Hot Springs Spas)",
+   "series": "Hot Spot (Unicel: see also Hot Springs Spas)",
    "oem": "33521",
    "oemAll": "33521",
    "equivalents": {
     "unicel": "C-4326",
-    "pleatco": "PRB25-IN"
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
    },
    "dimensions": {
     "diameterIn": 4.9375,
@@ -149,17 +186,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.8"
+     "where": "OEM cross reference (Hot Springs Spas section), PDF p.39 (printed p.35); spec table PDF p.9 (printed p.5)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
     }
    ]
   },
@@ -172,7 +218,9 @@
    "oem": "31233",
    "oemAll": "31233",
    "equivalents": {
-    "unicel": "C-5431"
+    "unicel": "C-5431",
+    "pleatco": "PKW30V",
+    "filbur": "FC-3910"
    },
    "dimensions": {
     "diameterIn": 5.125,
@@ -189,13 +237,22 @@
     "dohenys": "https://www.doheny.com/search?q=C-5431+spa+filter"
    },
    "notes": "Unicel spec: Model FH/IH (220 volt)",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Hot Springs section (printed p.38); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.9"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
     }
    ]
   },
@@ -225,19 +282,23 @@
     "amazon": "https://www.amazon.com/s?k=C-6330+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-6330+spa+filter"
    },
-   "notes": "",
+   "notes": "Unicel lists both C-6330 (3 oz media) and C-6430 (4 oz media, 'models dated after 1990') against these OEM numbers",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.11"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.12 (printed p.8)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
     }
    ]
   },
@@ -246,12 +307,13 @@
    "brandSlug": "hot-spring",
    "model": "C-6430 cartridge (OEM 31489)",
    "modelSlug": "c-6430",
-   "series": "Hot Spring (Watkins)",
+   "series": "Hot Spring Highlife (Watkins)",
    "oem": "31489",
    "oemAll": "31489; 71825; 71826",
    "equivalents": {
     "unicel": "C-6430",
-    "pleatco": "PWK30-4"
+    "pleatco": "PWK30-4",
+    "filbur": "FC-3915"
    },
    "dimensions": {
     "diameterIn": 6,
@@ -267,19 +329,432 @@
     "amazon": "https://www.amazon.com/s?k=C-6430+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-6430+spa+filter"
    },
-   "notes": "4 oz media; Unicel: model dated after 1990",
+   "notes": "4 oz media; Unicel: models dated after 1990. Leisure Time Inc. notes many models take three cartridges and that some use a Tri-X ceramic cartridge with the same footprint instead; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Highlife Classic F",
+     "years": "1990–2000",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Classic FH",
+     "years": "1990–1996",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Grandee G",
+     "years": "1990–2007",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife ILE",
+     "years": "2003",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife K",
+     "years": "1990–1996",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Jetsetter J",
+     "years": "1990–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Jetsetter JJ",
+     "years": "2006–2018",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Jetsetter JJN",
+     "years": "2019–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Landmark S",
+     "years": "1995–2003",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Prodigy HN",
+     "years": "2019–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Prodigy H",
+     "years": "1990–2018",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Sovereign ILE",
+     "years": "2002",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Sovereign I",
+     "years": "1990–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Sovereign IH",
+     "years": "1994–1996",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Sovereign II",
+     "years": "2004–2013",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Summit R",
+     "years": "1995–1996",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Triumph TRHN",
+     "years": "2019–2022",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Vanguard V",
+     "years": "2001–2007",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highlife Vanguard VV",
+     "years": "2005–2013",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.11"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.12 (printed p.8)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/hot-spring-highlife-71825-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-6430-replacement-filter",
+     "where": "Compatibility section: model and model-year list"
+    }
+   ]
+  },
+  {
+   "brand": "Hot Spot",
+   "brandSlug": "hot-spot",
+   "model": "C-6430 cartridge (OEM 31489)",
+   "modelSlug": "c-6430",
+   "series": "Hot Spot (Hot Spring family)",
+   "oem": "31489",
+   "oemAll": "31489; 71825; 71826",
+   "equivalents": {
+    "unicel": "C-6430",
+    "pleatco": "PWK30-4",
+    "filbur": "FC-3915"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 10.5,
+    "diameterText": "6\"",
+    "lengthText": "10-1/2\"",
+    "topCore": "1-15/16\" / open",
+    "bottomCore": "1-15/16\" / open",
+    "sqft": 30.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-6430+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-6430+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-6430+spa+filter"
+   },
+   "notes": "Unicel lists these OEM numbers under Hot Springs Spas and directs Hot Spot owners there; Hot Spot model fitment is from Leisure Time Inc.; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Hot Spot Pace",
+     "years": "2020–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot RE Z",
+     "years": "1998–2002",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot RLX Z",
+     "years": "1998–2002",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot SE",
+     "years": "1998–2000",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot SLX",
+     "years": "1998–2002",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot SLXtra",
+     "years": "2001–2002",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot Stride",
+     "years": "2019–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot SX",
+     "years": "2011–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot TX",
+     "years": "2011–2026",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Hot Springs Spas section), PDF p.39 (printed p.35); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/hot-spring-highlife-71825-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-6430-replacement-filter",
+     "where": "Compatibility section: model and model-year list"
+    }
+   ]
+  },
+  {
+   "brand": "Solana",
+   "brandSlug": "solana",
+   "model": "C-6430 cartridge (OEM 31489)",
+   "modelSlug": "c-6430",
+   "series": "Solana (Hot Spring family)",
+   "oem": "31489",
+   "oemAll": "31489; 71825; 71826",
+   "equivalents": {
+    "unicel": "C-6430",
+    "pleatco": "PWK30-4",
+    "filbur": "FC-3915"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 10.5,
+    "diameterText": "6\"",
+    "lengthText": "10-1/2\"",
+    "topCore": "1-15/16\" / open",
+    "bottomCore": "1-15/16\" / open",
+    "sqft": 30.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-6430+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-6430+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-6430+spa+filter"
+   },
+   "notes": "Unicel does not list Solana separately; Solana model fitment for OEM 71825 is from Leisure Time Inc. Some Hot Spring-family spas use a Tri-X ceramic cartridge with the same footprint instead; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Solana RX",
+     "years": "2003–2009",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Solana SX",
+     "years": "2003–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Solana TX",
+     "years": "2003–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Solana Tx X",
+     "years": "2000–2002",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Hot Springs Spas section), PDF p.39 (printed p.35); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/hot-spring-highlife-71825-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-6430-replacement-filter",
+     "where": "Compatibility section: model and model-year list"
+    }
+   ]
+  },
+  {
+   "brand": "Caldera",
+   "brandSlug": "caldera",
+   "model": "C-6430 cartridge (OEM 31489)",
+   "modelSlug": "c-6430",
+   "series": "Caldera Vacanza (Watkins)",
+   "oem": "31489",
+   "oemAll": "31489; 71825; 71826",
+   "equivalents": {
+    "unicel": "C-6430",
+    "pleatco": "PWK30-4",
+    "filbur": "FC-3915"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 10.5,
+    "diameterText": "6\"",
+    "lengthText": "10-1/2\"",
+    "topCore": "1-15/16\" / open",
+    "bottomCore": "1-15/16\" / open",
+    "sqft": 30.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-6430+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-6430+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-6430+spa+filter"
+   },
+   "notes": "Unicel lists OEM 31489 under Hot Springs Spas; the Caldera Vacanza fitment for 31489 is from Leisure Time Inc.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Vacanza Celio",
+     "years": "2019–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Vacanza Tarino",
+     "years": "2013–2026",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Caldera section), PDF p.39 (printed p.35); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/caldera-31489-filter-cartridge-30sqft",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-6430-replacement-filter",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
@@ -308,14 +783,54 @@
     "amazon": "https://www.amazon.com/s?k=C-6350+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-6350+spa+filter"
    },
-   "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source; CONFLICT/related: Pleatco catalog p.26 lists OEM 1642301-1 as PWK35B (6-3/8\" x 14\", 35 sq ft) and PWK70B (70 sq ft) - not cross-referenced to Unicel; verify",
+   "notes": "Pleatco 2023 lists OEM 1642301-1 as PWK35B (6-3/8\" x 14\", 35 sq ft), which does not match Unicel's 6\" OD / 50 sq ft, so no Pleatco equivalent is shown",
+   "status": "verified",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog",
+   "fitment": [
+    {
+     "model": "Limelight Beam BMI",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Beam BMII",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Flair",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Flash",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Pulse",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.11"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring dealer)",
+     "url": "https://leisuretimeinc.com/products/hotspring-limelight-78161-filter-cartridge",
+     "where": "OEM 78161 product page: lists Unicel C-6350 as the aftermarket alternative"
     }
    ]
   },
@@ -346,12 +861,52 @@
    },
    "notes": "Unicel spec note: original is 6-3/8\" OD",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source; CONFLICT/related: Pleatco catalog p.26 lists OEM 1642301-1 as PWK35B (6-3/8\" x 14\", 35 sq ft) and PWK70B (70 sq ft) - not cross-referenced to Unicel; verify",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; only Unicel lists C-6355 for this OEM; no second source",
+   "fitment": [
+    {
+     "model": "Limelight Beam BMI",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Beam BMII",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Flair",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Flash",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Pulse",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.11"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/hotspring-limelight-78161-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
@@ -364,7 +919,9 @@
    "oem": "31250",
    "oemAll": "31250",
    "equivalents": {
-    "unicel": "C-6433"
+    "unicel": "C-6433",
+    "pleatco": "PWK35",
+    "filbur": "FC-3920"
    },
    "dimensions": {
     "diameterIn": 6,
@@ -381,13 +938,22 @@
     "dohenys": "https://www.doheny.com/search?q=C-6433+spa+filter"
    },
    "notes": "C-6433 discontinued by Unicel",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; C-6433 discontinued by Unicel; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Hot Springs section (printed p.38); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.11"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
     }
    ]
   },
@@ -400,7 +966,9 @@
    "oem": "31115",
    "oemAll": "31115",
    "equivalents": {
-    "unicel": "C-6600"
+    "unicel": "C-6600",
+    "pleatco": "PWK25-4/PWK40",
+    "filbur": "FC-3930"
    },
    "dimensions": {
     "diameterIn": 6.375,
@@ -417,13 +985,22 @@
     "dohenys": "https://www.doheny.com/search?q=C-6600+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Hot Springs section (printed p.38); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.12"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.13 (printed p.9)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
     }
    ]
   },
@@ -432,12 +1009,13 @@
    "brandSlug": "hot-spring",
    "model": "C-8465 cartridge (OEM 31114)",
    "modelSlug": "c-8465",
-   "series": "Hot Spring (Watkins)",
+   "series": "Hot Spring Limelight / Tiger River (Watkins)",
    "oem": "31114",
    "oemAll": "31114; 71827; 71828",
    "equivalents": {
     "unicel": "C-8465",
-    "pleatco": "PWK65"
+    "pleatco": "PWK65",
+    "filbur": "FC-3960"
    },
    "dimensions": {
     "diameterIn": 8.5,
@@ -455,115 +1033,235 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Limelight Bolt",
+     "years": "2012–2017",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Flair",
+     "years": "2008–2017",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Glow",
+     "years": "2008–2017",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Limelight Pulse",
+     "years": "2008–2017",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Bengal M",
+     "years": "1997–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Bengal MM",
+     "years": "2005–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Caspian CHP",
+     "years": "2004–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Caspian CPN",
+     "years": "2003",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Khyber L",
+     "years": "1994–1996",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Manora MH",
+     "years": "1996",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Manora M",
+     "years": "1992–1996",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Siberian L",
+     "years": "1997–2004",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Sumatran N",
+     "years": "1997–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Tondi N",
+     "years": "1992–1994",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Tondi PH",
+     "years": "1996",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Tiger River Tondi P",
+     "years": "1995–1996",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.38; spec table PDF p.20"
+     "where": "OEM cross reference (Hot Spring section), PDF p.39 (printed p.35); spec table PDF p.21 (printed p.17)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/hot-spring-71827-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-8465-replacement-filter",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
   {
-   "brand": "Caldera",
-   "brandSlug": "caldera",
-   "model": "C-4335 cartridge (OEM 74148)",
-   "modelSlug": "c-4335",
-   "series": "Caldera (Watkins)",
-   "oem": "74148",
-   "oemAll": "74148",
+   "brand": "Hot Spot",
+   "brandSlug": "hot-spot",
+   "model": "C-8465 cartridge (OEM 31114)",
+   "modelSlug": "c-8465",
+   "series": "Hot Spot (Hot Spring family)",
+   "oem": "31114",
+   "oemAll": "31114; 71827; 71828",
    "equivalents": {
-    "unicel": "C-4335",
-    "pleatco": "PRB35-IN"
+    "unicel": "C-8465",
+    "pleatco": "PWK65",
+    "filbur": "FC-3960"
    },
    "dimensions": {
-    "diameterIn": 4.9375,
-    "lengthIn": 9.25,
-    "diameterText": "4-15/16\"",
-    "lengthText": "9-1/4\"",
-    "topCore": "2-1/8\" / open",
-    "bottomCore": "2-1/8\" / open",
-    "sqft": 35.0
+    "diameterIn": 8.5,
+    "lengthIn": 10.5,
+    "diameterText": "8-1/2\"",
+    "lengthText": "10-1/2\"",
+    "topCore": "3\" / open",
+    "bottomCore": "3\" / open",
+    "sqft": 65.0
    },
    "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4335+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4335+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4335+spa+filter"
+    "filtersfast": "https://www.filtersfast.com/search?q=C-8465+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-8465+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-8465+spa+filter"
    },
-   "notes": "",
+   "notes": "Unicel lists these OEM numbers under Hot Springs Spas; Hot Spot model fitment is from Leisure Time Inc.",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Hot Spot La Palma",
+     "years": "2008–2009",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot Relay",
+     "years": "2010–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot Rhythm",
+     "years": "2011–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Hot Spot Tempo",
+     "years": "2010–2019",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.7"
+     "where": "OEM cross reference (Hot Springs Spas section), PDF p.39 (printed p.35); spec table PDF p.21 (printed p.17)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
-    }
-   ]
-  },
-  {
-   "brand": "Caldera",
-   "brandSlug": "caldera",
-   "model": "C-4950 cartridge (OEM 302005)",
-   "modelSlug": "c-4950",
-   "series": "Caldera (Watkins)",
-   "oem": "302005",
-   "oemAll": "302005; 73533; 76076",
-   "equivalents": {
-    "unicel": "C-4950",
-    "pleatco": "PRB50-IN"
-   },
-   "dimensions": {
-    "diameterIn": 4.9375,
-    "lengthIn": 13.3125,
-    "diameterText": "4-15/16\"",
-    "lengthText": "13-5/16\"",
-    "topCore": "2-1/8\" / open",
-    "bottomCore": "2-1/8\" / open",
-    "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
-   },
-   "notes": "OEM list ambiguous across lines",
-   "status": "needs_verification",
-   "gaps": "OEM list ambiguous across lines; no Filbur equivalent sourced; no model-year range in source",
-   "sources": [
-    {
-     "source": "Unicel 2026 Replacement Guide",
-     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.8"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
     },
     {
-     "source": "Pleatco 2023 Catalog",
-     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Hot Springs, printed p.38 (PDF p.20)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/hot-spring-71827-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-8465-replacement-filter",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
   {
-   "brand": "Caldera",
-   "brandSlug": "caldera",
+   "brand": "Hot Spot",
+   "brandSlug": "hot-spot",
    "model": "C-7350 cartridge (OEM 1019401)",
    "modelSlug": "c-7350",
-   "series": "Caldera (Watkins) new style",
+   "series": "Hot Spot (Hot Spring family)",
    "oem": "1019401",
    "oemAll": "1019401; 73532",
    "equivalents": {
     "unicel": "C-7350",
-    "pleatco": "PCD50N"
+    "pleatco": "PCD50N",
+    "filbur": "FC-3963"
    },
    "dimensions": {
     "diameterIn": 7,
@@ -579,33 +1277,55 @@
     "amazon": "https://www.amazon.com/s?k=C-7350+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-7350+spa+filter"
    },
-   "notes": "",
+   "notes": "Unicel lists these OEM numbers under Caldera Spas; the Hot Spot Sorrento fitment is from Leisure Time Inc.; Leisure Time Inc.: For a 2024 Makena, confirm the spa serial number before ordering. Other Makena years use a different cartridge.",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Hot Spot Sorrento",
+     "years": "2003–2009",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.14"
+     "where": "OEM cross reference (Hot Springs Spas section), PDF p.30 (printed p.26); spec table PDF p.15 (printed p.11)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Caldera, printed p.30 (PDF p.16)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-7350-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
   {
-   "brand": "Caldera",
-   "brandSlug": "caldera",
+   "brand": "Hot Spot",
+   "brandSlug": "hot-spot",
    "model": "C-7375 cartridge (OEM 1019301)",
    "modelSlug": "c-7375",
-   "series": "Caldera (Watkins) new style",
+   "series": "Hot Spot (Hot Spring family)",
    "oem": "1019301",
    "oemAll": "1019301; 73531",
    "equivalents": {
     "unicel": "C-7375",
-    "pleatco": "PCD75N"
+    "pleatco": "PCD75N",
+    "filbur": "FC-3964"
    },
    "dimensions": {
     "diameterIn": 7,
@@ -621,19 +1341,480 @@
     "amazon": "https://www.amazon.com/s?k=C-7375+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-7375+spa+filter"
    },
-   "notes": "Unicel lists 75/100 sq ft against this OEM",
+   "notes": "Unicel lists these OEM numbers under Caldera Spas; the Hot Spot Mallorca fitment is from Leisure Time Inc.; Leisure Time Inc.: For a 2004 Hawaiian HAA or a 2024 Makena, check the spa serial number before ordering.",
    "status": "verified",
-   "gaps": "Unicel lists 75/100 sq ft against this OEM; no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Hot Spot Mallorca",
+     "years": "2003–2009",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.15"
+     "where": "OEM cross reference (Hot Springs Spas section), PDF p.30 (printed p.26); spec table PDF p.16 (printed p.12)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Caldera, printed p.30 (PDF p.16)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-7375-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    }
+   ]
+  },
+  {
+   "brand": "Caldera",
+   "brandSlug": "caldera",
+   "model": "C-4335 cartridge (OEM 74148)",
+   "modelSlug": "c-4335",
+   "series": "Caldera (Watkins)",
+   "oem": "74148",
+   "oemAll": "74148",
+   "equivalents": {
+    "unicel": "C-4335",
+    "pleatco": "PRB35-IN",
+    "filbur": "FC-2385"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 9.25,
+    "diameterText": "4-15/16\"",
+    "lengthText": "9-1/4\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 35.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-4335+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-4335+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-4335+spa+filter"
+   },
+   "notes": "Leisure Time Inc.: For a 2019 Aventine, check the spa serial number to confirm the filter.",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Vacanza Aventine",
+     "years": "2010–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland Aventine AVH",
+     "years": "2006–2009",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.8 (printed p.4)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.64 (PDF p.33)"
+    },
+    {
+     "source": "Leisure Time Inc. (Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/caldera-74148-filter-cartridge",
+     "where": "OEM 74148 product page: cross-reference C-4335"
+    }
+   ]
+  },
+  {
+   "brand": "Caldera",
+   "brandSlug": "caldera",
+   "model": "C-4950 cartridge (OEM 302005)",
+   "modelSlug": "c-4950",
+   "series": "Caldera (Watkins)",
+   "oem": "302005",
+   "oemAll": "302005; 73533; 76076",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
+   },
+   "notes": "In the Unicel layout, 73533 and 76076 sit on the lines below 302005 with no Unicel number beside them; we read them as belonging to C-4950 but have no second source",
+   "status": "needs_verification",
+   "gaps": "no model/model-year fitment in sources; OEM number assignment ambiguous in Unicel layout; no second source",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.64 (PDF p.33)"
+    }
+   ]
+  },
+  {
+   "brand": "Caldera",
+   "brandSlug": "caldera",
+   "model": "C-7350 cartridge (OEM 1019401)",
+   "modelSlug": "c-7350",
+   "series": "Caldera (Watkins) new style",
+   "oem": "1019401",
+   "oemAll": "1019401; 73532",
+   "equivalents": {
+    "unicel": "C-7350",
+    "pleatco": "PCD50N",
+    "filbur": "FC-3963"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 10.75,
+    "diameterText": "7\"",
+    "lengthText": "10-3/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2-11/16\" / open",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-7350+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-7350+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-7350+spa+filter"
+   },
+   "notes": "Leisure Time Inc.: For a 2024 Makena, confirm the spa serial number before ordering. Other Makena years use a different cartridge.",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Utopia Ravello",
+     "years": "2022–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Kauai",
+     "years": "2000–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Martinique",
+     "years": "2000–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Makena",
+     "years": "2024",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland Cascade",
+     "years": "2000",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland Cumberland",
+     "years": "2002–2009",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland San Gabriel",
+     "years": "2008–2009",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland Teton",
+     "years": "2000",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.15 (printed p.11)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Caldera, printed p.30 (PDF p.16)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/caldera-73532-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-7350-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    }
+   ]
+  },
+  {
+   "brand": "Caldera",
+   "brandSlug": "caldera",
+   "model": "C-7375 cartridge (OEM 1019301)",
+   "modelSlug": "c-7375",
+   "series": "Caldera (Watkins) new style",
+   "oem": "1019301",
+   "oemAll": "1019301; 73531",
+   "equivalents": {
+    "unicel": "C-7375",
+    "pleatco": "PCD75N",
+    "filbur": "FC-3964"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 14.75,
+    "diameterText": "7\"",
+    "lengthText": "14-3/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2-11/16\" / open",
+    "sqft": 75.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-7375+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-7375+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-7375+spa+filter"
+   },
+   "notes": "Unicel lists 75/100 sq ft against this OEM; Leisure Time Inc.: For a 2004 Hawaiian HAA or a 2024 Makena, check the spa serial number before ordering.",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Utopia Geneva GEB",
+     "years": "2000–2004",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Hawaiian HAB",
+     "years": "2001–2002",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Niagara NIB",
+     "years": "2000–2004",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Provence",
+     "years": "2018–2021",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Tahitian",
+     "years": "2000–2004",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Geneva GEA",
+     "years": "2000–2004",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Hawaiian HAA",
+     "years": "2000–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Makena MAA",
+     "years": "2013–2023, 2025–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Moorea",
+     "years": "2006–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Niagara NIA",
+     "years": "2000–2002",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Reunion",
+     "years": "2019–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Salina",
+     "years": "2011–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Seychelles",
+     "years": "2019–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Paradise Tahitian TAA",
+     "years": "2000–2005",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland Cascade",
+     "years": "2001–2003",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland Olympia",
+     "years": "2000–2009",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland Palomar",
+     "years": "2004–2005",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Highland Teton",
+     "years": "2001",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Aquatic Melodies Aspire",
+     "years": "2004",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Aquatic Melodies Elation",
+     "years": "2003–2004",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "C-Series C30",
+     "years": "2006–2009",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "C-Series C30S",
+     "years": "2006–2009",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "C-Series C45",
+     "years": "2006–2009",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "C-Series C45S",
+     "years": "2006–2009",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.16 (printed p.12)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Caldera, printed p.30 (PDF p.16)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/caldera-77813-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-7375-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
@@ -647,7 +1828,8 @@
    "oemAll": "033016",
    "equivalents": {
     "unicel": "C-7451",
-    "pleatco": "PCD50"
+    "pleatco": "PCD50",
+    "filbur": "FC-3084"
    },
    "dimensions": {
     "diameterIn": 7,
@@ -663,19 +1845,28 @@
     "amazon": "https://www.amazon.com/s?k=C-7451+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-7451+spa+filter"
    },
-   "notes": "C-7350 can also be used",
+   "notes": "Unicel: C-7350 can also be used",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.14"
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.15 (printed p.11)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Caldera, printed p.30 (PDF p.16)"
     }
    ]
   },
@@ -689,7 +1880,8 @@
    "oemAll": "033017",
    "equivalents": {
     "unicel": "C-7479",
-    "pleatco": "PCD75"
+    "pleatco": "PCD75",
+    "filbur": "FC-3085"
    },
    "dimensions": {
     "diameterIn": 7,
@@ -705,19 +1897,33 @@
     "amazon": "https://www.amazon.com/s?k=C-7479+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-7479+spa+filter"
    },
-   "notes": "C-7375 can also be used",
+   "notes": "Unicel: C-7375 can also be used",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.14"
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.15 (printed p.11)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Caldera, printed p.30 (PDF p.16)"
+    },
+    {
+     "source": "Leisure Time Inc.",
+     "url": "https://leisuretimeinc.com/products/unicel-c-7479-filter-cartridge",
+     "where": "Unicel C-7479 product page: replaces OEM 033017; Pleatco PCD75; Filbur FC-3085"
     }
    ]
   },
@@ -726,11 +1932,12 @@
    "brandSlug": "caldera",
    "model": "C-8300 cartridge (OEM 74817)",
    "modelSlug": "c-8300",
-   "series": "Caldera (Watkins)",
+   "series": "Caldera Utopia (Watkins)",
    "oem": "74817",
    "oemAll": "74817",
    "equivalents": {
-    "unicel": "C-8300"
+    "unicel": "C-8300",
+    "filbur": "FC-3966"
    },
    "dimensions": {
     "diameterIn": 8,
@@ -746,14 +1953,40 @@
     "amazon": "https://www.amazon.com/s?k=C-8300+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-8300+spa+filter"
    },
-   "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "notes": "Leisure Time Inc. also lists Hot Spring 77004 and Pleatco PWK100 for this cartridge; PWK100 is not in the Pleatco 2023 spec tables, so it is not shown as an equivalent; Leisure Time Inc.: For 2014 Cantabria spas, confirm the production quarter. Q3–Q4 production uses 73722.",
+   "status": "verified",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference",
+   "fitment": [
+    {
+     "model": "Utopia Cantabria",
+     "years": "2009–Q2 2014",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "Leisure Time Inc. C-8300 page; Filbur catalog Caldera section, printed p.30 (PDF p.16), lists FC-3966 at 8\" x 16-1/2\", 100 sq ft with no OEM number",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.19"
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.20 (printed p.16)"
+    },
+    {
+     "source": "Leisure Time Inc. (Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-8300-filter-cartridge",
+     "where": "Unicel C-8300 product page: replaces Caldera 74817; Filbur FC-3966"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Caldera section, printed p.30 (PDF p.16), lists FC-3966 at 8\" x 16-1/2\", 100 sq ft with no OEM number"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/caldera-74817-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
@@ -767,7 +2000,8 @@
    "oemAll": "1039607; 73722",
    "equivalents": {
     "unicel": "C-8399",
-    "pleatco": "PCD100W"
+    "pleatco": "PCD100W",
+    "filbur": "FC-3965"
    },
    "dimensions": {
     "diameterIn": 8,
@@ -783,19 +2017,87 @@
     "amazon": "https://www.amazon.com/s?k=C-8399+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-8399+spa+filter"
    },
-   "notes": "",
+   "notes": "Leisure Time Inc.: For 2014 Cantabria spas, confirm the production quarter. This cartridge is for Q3–Q4 production; Q1–Q2 uses 74817.",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Utopia Cantabria",
+     "years": "Q3 2014–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Elation",
+     "years": "2009–2010",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Florence",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Geneva GEB",
+     "years": "2005–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Niagara NIB",
+     "years": "2005–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Utopia Tahitian",
+     "years": "2005–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Aquatic Melodies Aspire",
+     "years": "2005–2008",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Aquatic Melodies Elation",
+     "years": "2005–2008",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.19"
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.20 (printed p.16)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Caldera, printed p.30 (PDF p.16)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/caldera-73722-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-8399-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
@@ -804,12 +2106,13 @@
    "brandSlug": "caldera",
    "model": "C-8465 cartridge (OEM 76136)",
    "modelSlug": "c-8465",
-   "series": "Caldera (Watkins)",
+   "series": "Caldera Vacanza (Watkins)",
    "oem": "76136",
    "oemAll": "76136",
    "equivalents": {
     "unicel": "C-8465",
-    "pleatco": "PWK65"
+    "pleatco": "PWK65",
+    "filbur": "FC-3960"
    },
    "dimensions": {
     "diameterIn": 8.5,
@@ -827,17 +2130,55 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Vacanza Marino",
+     "years": "2010–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Vacanza Palatino",
+     "years": "2010–2026",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Vacanza Vanto",
+     "years": "2011–2026",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.29; spec table PDF p.20"
+     "where": "OEM cross reference (Caldera section), PDF p.30 (printed p.26); spec table PDF p.21 (printed p.17)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.65 (PDF p.33)"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/caldera-77815-filter-cartridge",
+     "where": "Compatibility section: model and model-year list"
+    },
+    {
+     "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-8465-replacement-filter",
+     "where": "Compatibility section: model and model-year list"
     }
    ]
   },
@@ -851,7 +2192,8 @@
    "oemAll": "42-2891-08-R (formerly 42-2763-03)",
    "equivalents": {
     "unicel": "C-5625",
-    "pleatco": "PJ25-IN-4"
+    "pleatco": "PJ25-IN-4",
+    "filbur": "FC-1425"
    },
    "dimensions": {
     "diameterIn": 5,
@@ -869,17 +2211,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.40; spec table PDF p.9"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.41 (printed p.37); spec table PDF p.10 (printed p.6)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Whirlpool Spas, printed p.39 (PDF p.20)"
     }
    ]
   },
@@ -892,7 +2243,9 @@
    "oem": "42-3533-00-R",
    "oemAll": "42-3533-00-R",
    "equivalents": {
-    "unicel": "C-5635"
+    "unicel": "C-5635",
+    "pleatco": "PJ37-IN-4",
+    "filbur": "FC-1437"
    },
    "dimensions": {
     "diameterIn": 5,
@@ -909,13 +2262,22 @@
     "dohenys": "https://www.doheny.com/search?q=C-5635+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Jacuzzi Whirlpool Spas section (printed p.39); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.40; spec table PDF p.9"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.41 (printed p.37); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Whirlpool Spas, printed p.39 (PDF p.20)"
     }
    ]
   },
@@ -928,7 +2290,9 @@
    "oem": "42-3724-09",
    "oemAll": "42-3724-09",
    "equivalents": {
-    "unicel": "C-7304"
+    "unicel": "C-7304",
+    "pleatco": "PJB40",
+    "filbur": "FC-1450"
    },
    "dimensions": {
     "diameterIn": 7,
@@ -945,13 +2309,22 @@
     "dohenys": "https://www.doheny.com/search?q=C-7304+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Jacuzzi Whirlpool Spas section (printed p.39); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.40; spec table PDF p.14"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.41 (printed p.37); spec table PDF p.15 (printed p.11)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Whirlpool Spas, printed p.39 (PDF p.20)"
     }
    ]
   },
@@ -965,7 +2338,8 @@
    "oemAll": "42-3725-08",
    "equivalents": {
     "unicel": "C-7306",
-    "pleatco": "PJB60"
+    "pleatco": "PJB60",
+    "filbur": "FC-1455"
    },
    "dimensions": {
     "diameterIn": 7,
@@ -981,19 +2355,28 @@
     "amazon": "https://www.amazon.com/s?k=C-7306+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-7306+spa+filter"
    },
-   "notes": "OEM P/N from Pleatco p.27 (PJB60); Unicel line truncated in extract",
-   "status": "needs_verification",
-   "gaps": "OEM P/N from Pleatco p.27 (PJB60); Unicel line truncated in extract; no Filbur equivalent sourced; no model-year range in source",
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.40; spec table PDF p.15"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.41 (printed p.37); spec table PDF p.16 (printed p.12)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Whirlpool Spas, printed p.39 (PDF p.20)"
     }
    ]
   },
@@ -1006,7 +2389,8 @@
    "oem": "2540-387",
    "oemAll": "2540-387",
    "equivalents": {
-    "unicel": "4CH-934"
+    "unicel": "4CH-934",
+    "filbur": "FC-2761"
    },
    "dimensions": {
     "diameterIn": 4.625,
@@ -1022,14 +2406,23 @@
     "amazon": "https://www.amazon.com/s?k=4CH-934+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=4CH-934+spa+filter"
    },
-   "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "notes": "Filbur lists OEM 2540-387 as FC-2761 (4-5/8\" x 12-1/2\") but prints \"3\" in its sq ft column and gives no Unicel/Pleatco cross-reference",
+   "status": "verified",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.41; spec table PDF p.6"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.42 (printed p.38); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Sundance (J-400 Cartridge 12.5\"), printed p.51 (PDF p.26)"
     }
    ]
   },
@@ -1043,7 +2436,8 @@
    "oemAll": "6540-723",
    "equivalents": {
     "unicel": "5CH-402",
-    "pleatco": "PJW40SC-F2M"
+    "pleatco": "PJW40SC-F2M",
+    "filbur": "FC-2811"
    },
    "dimensions": {
     "diameterIn": 5.1875,
@@ -1061,17 +2455,26 @@
    },
    "notes": "OEM original 11\" OAL, 5-1/2\" OD",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.41; spec table PDF p.9"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.42 (printed p.38); spec table PDF p.10 (printed p.6)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Premium Spas, printed p.40 (PDF p.21)"
     }
    ]
   },
@@ -1084,7 +2487,9 @@
    "oem": "6540-498",
    "oemAll": "6540-498",
    "equivalents": {
-    "unicel": "6CH-945"
+    "unicel": "6CH-945",
+    "pleatco": "PJP45-F2S",
+    "filbur": "FC-2717"
    },
    "dimensions": {
     "diameterIn": 6,
@@ -1100,14 +2505,35 @@
     "amazon": "https://www.amazon.com/s?k=6CH-945+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=6CH-945+spa+filter"
    },
-   "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "notes": "Leisure Time Inc. warns that J-460 spas used several non-interchangeable cartridges; confirm size and thread against your old filter",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "J460 Series",
+     "years": "",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "per Leisure Time Inc. (see source list); also listed as a current part in the Pleatco 2023 catalog",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.41; spec table PDF p.11"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.42 (printed p.38); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Premium Spas, printed p.40 (PDF p.21)"
+    },
+    {
+     "source": "Leisure Time Inc.",
+     "url": "https://leisuretimeinc.com/products/unicel-6ch-945-filter-cartridge",
+     "where": "Unicel 6CH-945 product page: replaces 6540-498; Pleatco PJP45-F2S; Filbur FC-2717; fits J-460 2006 and later"
     }
    ]
   },
@@ -1120,7 +2546,8 @@
    "oem": "2000-286",
    "oemAll": "2000-286; 20086-001; 2540-383",
    "equivalents": {
-    "unicel": "6CH-959"
+    "unicel": "6CH-959",
+    "filbur": "FC-2716"
    },
    "dimensions": {
     "diameterIn": 6,
@@ -1137,13 +2564,29 @@
     "dohenys": "https://www.doheny.com/search?q=6CH-959+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference",
+   "fitment": [
+    {
+     "model": "J400 Series",
+     "years": "",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.41; spec table PDF p.12"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.42 (printed p.38); spec table PDF p.13 (printed p.9)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Premium Spas, printed p.40 (PDF p.21)"
     }
    ]
   },
@@ -1157,7 +2600,8 @@
    "oemAll": "6540-164; 6540-476; 6541-383",
    "equivalents": {
     "unicel": "6CH-960",
-    "pleatco": "PJW60TL-F2S"
+    "pleatco": "PJW60TL-F2S",
+    "filbur": "FC-2800"
    },
    "dimensions": {
     "diameterIn": 6.75,
@@ -1175,17 +2619,26 @@
    },
    "notes": "sq ft 75/60 by OEM P/N",
    "status": "verified",
-   "gaps": "sq ft 75/60 by OEM P/N; no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.41; spec table PDF p.12"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.42 (printed p.38); spec table PDF p.13 (printed p.9)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Premium Spas, printed p.40 (PDF p.21)"
     }
    ]
   },
@@ -1199,7 +2652,8 @@
    "oemAll": "6540-164; 6540-476; 6541-383",
    "equivalents": {
     "unicel": "6CH-961",
-    "pleatco": "PJW60TL-OT-F2S"
+    "pleatco": "PJW60TL-OT-F2S",
+    "filbur": "FC-2715"
    },
    "dimensions": {
     "diameterIn": 6.75,
@@ -1217,17 +2671,26 @@
    },
    "notes": "Requires injection molded semi-circular handle (not furnished)",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.41; spec table PDF p.12"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.42 (printed p.38); spec table PDF p.13 (printed p.9)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Premium Spas, printed p.40 (PDF p.21)"
     }
    ]
   },
@@ -1241,7 +2704,8 @@
    "oemAll": "373045",
    "equivalents": {
     "unicel": "C-4326",
-    "pleatco": "PRB25-IN"
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
    },
    "dimensions": {
     "diameterIn": 4.9375,
@@ -1259,17 +2723,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.41; spec table PDF p.8"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.42 (printed p.38); spec table PDF p.9 (printed p.5)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.64 (PDF p.33)"
     }
    ]
   },
@@ -1283,7 +2756,8 @@
    "oemAll": "373045",
    "equivalents": {
     "unicel": "C-4950",
-    "pleatco": "PRB50-IN"
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
    },
    "dimensions": {
     "diameterIn": 4.9375,
@@ -1301,17 +2775,26 @@
    },
    "notes": "Same OEM P/N listed for 25 and 50 sq ft",
    "status": "verified",
-   "gaps": "Same OEM P/N listed for 25 and 50 sq ft; no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.41; spec table PDF p.8"
+     "where": "OEM cross reference (Jacuzzi section), PDF p.42 (printed p.38); spec table PDF p.9 (printed p.5)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Jacuzzi Premium Spas, printed p.40 (PDF p.21)"
     }
    ]
   },
@@ -1324,7 +2807,9 @@
    "oem": "6540-484",
    "oemAll": "6540-484",
    "equivalents": {
-    "unicel": "4CH-30"
+    "unicel": "4CH-30",
+    "pleatco": "PTL25P-4",
+    "filbur": "FC-0141"
    },
    "dimensions": {
     "diameterIn": 4.625,
@@ -1341,13 +2826,22 @@
     "dohenys": "https://www.doheny.com/search?q=4CH-30+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Sundance section (printed p.51); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.6"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Sundance, printed p.51 (PDF p.26)"
     }
    ]
   },
@@ -1360,7 +2854,9 @@
    "oem": "6540-486",
    "oemAll": "6540-486",
    "equivalents": {
-    "unicel": "4CH-35"
+    "unicel": "4CH-35",
+    "pleatco": "PTL35-4",
+    "filbur": "FC-0161"
    },
    "dimensions": {
     "diameterIn": 4.625,
@@ -1377,13 +2873,22 @@
     "dohenys": "https://www.doheny.com/search?q=4CH-35+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Sundance section (printed p.51); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.6"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Sundance, printed p.51 (PDF p.26)"
     }
    ]
   },
@@ -1397,7 +2902,8 @@
    "oemAll": "6540-723",
    "equivalents": {
     "unicel": "5CH-402",
-    "pleatco": "PJW40SC-F2M"
+    "pleatco": "PJW40SC-F2M",
+    "filbur": "FC-2811"
    },
    "dimensions": {
     "diameterIn": 5.1875,
@@ -1415,17 +2921,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.9"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.10 (printed p.6)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.66 (PDF p.34)"
     }
    ]
   },
@@ -1439,7 +2954,8 @@
    "oemAll": "373043",
    "equivalents": {
     "unicel": "6CH-47",
-    "pleatco": "PTL47W-P4"
+    "pleatco": "PTL47W-P4",
+    "filbur": "FC-0315"
    },
    "dimensions": {
     "diameterIn": 6,
@@ -1457,17 +2973,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.11"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.12 (printed p.8)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.66 (PDF p.34)"
     }
    ]
   },
@@ -1480,7 +3005,9 @@
    "oem": "6540-487",
    "oemAll": "6540-487",
    "equivalents": {
-    "unicel": "7CH-90"
+    "unicel": "7CH-90",
+    "pleatco": "PSD90P",
+    "filbur": "FC-2770"
    },
    "dimensions": {
     "diameterIn": 7,
@@ -1497,13 +3024,22 @@
     "dohenys": "https://www.doheny.com/search?q=7CH-90+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Sundance section (printed p.52); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.15"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.16 (printed p.12)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Sundance, printed p.52 (PDF p.27)"
     }
    ]
   },
@@ -1517,7 +3053,8 @@
    "oemAll": "2540-381",
    "equivalents": {
     "unicel": "8CH-102",
-    "pleatco": "PSD95-F2L"
+    "pleatco": "PSD95-F2L",
+    "filbur": "FC-2781"
    },
    "dimensions": {
     "diameterIn": 8,
@@ -1535,17 +3072,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.19"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.20 (printed p.16)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.66 (PDF p.34)"
     }
    ]
   },
@@ -1559,7 +3105,8 @@
    "oemAll": "6540-497",
    "equivalents": {
     "unicel": "C-4305",
-    "pleatco": "PMT50"
+    "pleatco": "PMT50",
+    "filbur": "FC-1630"
    },
    "dimensions": {
     "diameterIn": 4.9375,
@@ -1577,17 +3124,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.8"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.9 (printed p.5)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Sundance, printed p.52 (PDF p.27)"
     }
    ]
   },
@@ -1601,7 +3157,8 @@
    "oemAll": "6000-136",
    "equivalents": {
     "unicel": "C-4335",
-    "pleatco": "PRB35-IN"
+    "pleatco": "PRB35-IN",
+    "filbur": "FC-2385"
    },
    "dimensions": {
     "diameterIn": 4.9375,
@@ -1619,17 +3176,33 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Tacoma 680",
+     "years": "",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.7"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.8 (printed p.4)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.64 (PDF p.33)"
     }
    ]
   },
@@ -1642,7 +3215,9 @@
    "oem": "6540-495",
    "oemAll": "6540-495",
    "equivalents": {
-    "unicel": "C-4440"
+    "unicel": "C-4440",
+    "pleatco": "PSD40-4",
+    "filbur": "FC-2710"
    },
    "dimensions": {
     "diameterIn": 4.625,
@@ -1659,13 +3234,22 @@
     "dohenys": "https://www.doheny.com/search?q=C-4440+spa+filter"
    },
    "notes": "",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Sundance section (printed p.51); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.6"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Sundance, printed p.51 (PDF p.26)"
     }
    ]
   },
@@ -1679,7 +3263,8 @@
    "oemAll": "6540-471",
    "equivalents": {
     "unicel": "C-4950",
-    "pleatco": "PRB50-IN"
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
    },
    "dimensions": {
     "diameterIn": 4.9375,
@@ -1697,17 +3282,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.8"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.9 (printed p.5)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Sundance, printed p.52 (PDF p.27)"
     }
    ]
   },
@@ -1721,7 +3315,8 @@
    "oemAll": "6540-483",
    "equivalents": {
     "unicel": "C-7370",
-    "pleatco": "PSD75"
+    "pleatco": "PSD75",
+    "filbur": "FC-2760"
    },
    "dimensions": {
     "diameterIn": 7.5,
@@ -1739,17 +3334,26 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.18"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.19 (printed p.15)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.64 (PDF p.33)"
     }
    ]
   },
@@ -1762,7 +3366,9 @@
    "oem": "6540-480",
    "oemAll": "6540-480",
    "equivalents": {
-    "unicel": "C-7465"
+    "unicel": "C-7465",
+    "pleatco": "PSD65",
+    "filbur": "FC-2730"
    },
    "dimensions": {
     "diameterIn": 7.5,
@@ -1779,13 +3385,22 @@
     "dohenys": "https://www.doheny.com/search?q=C-7465+spa+filter"
    },
    "notes": "2-1/16\" bottom ID",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced; no model-year range in source",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Sundance section (printed p.52); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.18"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.19 (printed p.15)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Sundance, printed p.52 (PDF p.27)"
     }
    ]
   },
@@ -1799,7 +3414,8 @@
    "oemAll": "6540-481",
    "equivalents": {
     "unicel": "C-7466",
-    "pleatco": "PSD65-2"
+    "pleatco": "PSD65-2",
+    "filbur": "FC-2740"
    },
    "dimensions": {
     "diameterIn": 7.5,
@@ -1817,17 +3433,26 @@
    },
    "notes": "2-5/8\" bottom ID",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.18"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.19 (printed p.15)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.65 (PDF p.33)"
     }
    ]
   },
@@ -1841,7 +3466,8 @@
    "oemAll": "6540-490",
    "equivalents": {
     "unicel": "C-8325",
-    "pleatco": "PSD125U"
+    "pleatco": "PSD125U",
+    "filbur": "FC-2790"
    },
    "dimensions": {
     "diameterIn": 8.4375,
@@ -1859,17 +3485,26 @@
    },
    "notes": "Replaces 18\"-18-1/2\" OAL; also replaces discontinued C-8320 (OEM 6540-482)",
    "status": "verified",
-   "gaps": "Replaces 18\"-18-1/2\" OAL; also replaces discontinued C-8320 (OEM 6540-482); no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.19"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.20 (printed p.16)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.65 (PDF p.33)"
     }
    ]
   },
@@ -1878,12 +3513,13 @@
    "brandSlug": "sundance",
    "model": "C-8326 cartridge (OEM 6540-488)",
    "modelSlug": "c-8326",
-   "series": "Sundance",
+   "series": "Sundance (before 2006)",
    "oem": "6540-488",
    "oemAll": "6540-488",
    "equivalents": {
     "unicel": "C-8326",
-    "pleatco": "PSD125-2000"
+    "pleatco": "PSD125-2000",
+    "filbur": "FC-2780"
    },
    "dimensions": {
     "diameterIn": 8.4375,
@@ -1901,17 +3537,33 @@
    },
    "notes": "Contains core block/plug",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Sundance spas",
+     "years": "before 2006",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.19"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.20 (printed p.16)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.65 (PDF p.33)"
     }
    ]
   },
@@ -1920,11 +3572,13 @@
    "brandSlug": "sundance",
    "model": "C-8327 cartridge (OEM 6540-488)",
    "modelSlug": "c-8327",
-   "series": "Sundance",
+   "series": "Sundance (after 2005)",
    "oem": "6540-488",
    "oemAll": "6540-488; 6540-507",
    "equivalents": {
-    "unicel": "C-8327"
+    "unicel": "C-8327",
+    "pleatco": "PSD125-2000",
+    "filbur": "FC-2780"
    },
    "dimensions": {
     "diameterIn": 8.4375,
@@ -1940,14 +3594,40 @@
     "amazon": "https://www.amazon.com/s?k=C-8327+spa+filter",
     "dohenys": "https://www.doheny.com/search?q=C-8327+spa+filter"
    },
-   "notes": "No core block/plug",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent found in Pleatco 2023 xref p.43; no Filbur equivalent sourced",
+   "notes": "Unicel: no core block/plug. Leisure Time Inc. describes C-8326 and C-8327 as the same cartridge; Unicel distinguishes them by the core plug",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Sundance spas",
+     "years": "after 2005",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "per Leisure Time Inc. (see source list); Pleatco 2023 spec table PDF p.35 lists PSD125-2000 for OEM 6540-488",
+   "filburNote": "Leisure Time Inc. C-8327 page; Filbur catalog Sundance section, printed p.52 (PDF p.27), lists FC-2780 for OEM 6540-488",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.19"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.20 (printed p.16)"
+    },
+    {
+     "source": "Leisure Time Inc.",
+     "url": "https://leisuretimeinc.com/products/unicel-c-8327-filter-cartridge",
+     "where": "Unicel C-8327 product page: replaces 6540-488; Pleatco PSD125-2000; Filbur FC-2780"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Sundance section, printed p.52 (PDF p.27), lists FC-2780 for OEM 6540-488"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "spec table, PDF p.35 (PSD125-2000, OEM 6540-488)"
     }
    ]
   },
@@ -1961,7 +3641,8 @@
    "oemAll": "6540-501",
    "equivalents": {
     "unicel": "C-8380",
-    "pleatco": "PSD85-2002"
+    "pleatco": "PSD85-2002",
+    "filbur": "FC-2810"
    },
    "dimensions": {
     "diameterIn": 8.4375,
@@ -1979,17 +3660,1547 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no Filbur equivalent sourced; no model-year range in source",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM Cross Reference, PDF p.58; spec table PDF p.19"
+     "where": "OEM cross reference (Sundance section), PDF p.59 (printed p.55); spec table PDF p.20 (printed p.16)"
     },
     {
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
-     "where": "Unicel-to-Pleatco cross reference, PDF p.43"
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.65 (PDF p.33)"
+    }
+   ]
+  },
+  {
+   "brand": "Bullfrog",
+   "brandSlug": "bullfrog",
+   "model": "6CH-940 cartridge",
+   "modelSlug": "6ch-940",
+   "series": "Bullfrog Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "6CH-940",
+    "pleatco": "PWW50P3",
+    "filbur": "FC-0359"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 8.25,
+    "diameterText": "6\"",
+    "lengthText": "8-1/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "injection molded 1-1/2\" SAE thread",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=6CH-940+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=6CH-940+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=6CH-940+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Bullfrog section), PDF p.30 (printed p.26); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Bullfrog, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Bullfrog",
+   "brandSlug": "bullfrog",
+   "model": "8CH-950 cartridge (OEM 10-1035)",
+   "modelSlug": "8ch-950",
+   "series": "Bullfrog Spas",
+   "oem": "10-1035",
+   "oemAll": "10-1035",
+   "equivalents": {
+    "unicel": "8CH-950",
+    "pleatco": "PBF35",
+    "filbur": "FC-0536"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 6,
+    "diameterText": "8\"",
+    "lengthText": "6\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2\" SAE thread",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=8CH-950+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=8CH-950+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=8CH-950+spa+filter"
+   },
+   "notes": "Unicel: 8CH-950 discontinued, use 8CH-951. Pleatco 2023 cross-references 8CH-950 to PBF35, whose spec row lists OEM 10-2785 (Bullfrog 35, 2003-2012, short thread) rather than 10-1035",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Bullfrog section), PDF p.30 (printed p.26); spec table PDF p.20 (printed p.16)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Bullfrog, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Bullfrog",
+   "brandSlug": "bullfrog",
+   "model": "8CH-951 cartridge (OEM 10-2870)",
+   "modelSlug": "8ch-951",
+   "series": "Bullfrog Spas",
+   "oem": "10-2870",
+   "oemAll": "10-2870",
+   "equivalents": {
+    "unicel": "8CH-951",
+    "pleatco": "PBF36"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 5.75,
+    "diameterText": "8\"",
+    "lengthText": "5-3/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2\" SAE thread",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=8CH-951+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=8CH-951+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=8CH-951+spa+filter"
+   },
+   "notes": "Unicel: filtration area of the original cartridge is 35 sq ft; also replaces the Bullfrog 6\" OAL element with shorter threaded end. Unicel's spec table rates 8CH-951 at 40 sq ft",
+   "status": "verified",
+   "gaps": "no Filbur equivalent found in Filbur catalog",
+   "fitment": [
+    {
+     "model": "Bullfrog 35 filter (long thread)",
+     "years": "2013–2017",
+     "note": "",
+     "src": "pleatco"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Bullfrog section), PDF p.30 (printed p.26); spec table PDF p.20 (printed p.16)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "spec table, PDF p.35 (PBF36: OEM 10-2870, Bullfrog 35, 2013-2017, long thread)"
+    }
+   ]
+  },
+  {
+   "brand": "Bullfrog",
+   "brandSlug": "bullfrog",
+   "model": "C-4335 cartridge",
+   "modelSlug": "c-4335",
+   "series": "Bullfrog Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4335",
+    "pleatco": "PRB35-IN",
+    "filbur": "FC-2385"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 9.25,
+    "diameterText": "4-15/16\"",
+    "lengthText": "9-1/4\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 35.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-4335+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-4335+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-4335+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Bullfrog section), PDF p.30 (printed p.26); spec table PDF p.8 (printed p.4)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Bullfrog, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Bullfrog",
+   "brandSlug": "bullfrog",
+   "model": "C-4950 cartridge",
+   "modelSlug": "c-4950",
+   "series": "Bullfrog Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Bullfrog section), PDF p.30 (printed p.26); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Bullfrog, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "4CH-19 cartridge (OEM FIL11100305)",
+   "modelSlug": "4ch-19",
+   "series": "Cal Spas",
+   "oem": "FIL11100305",
+   "oemAll": "FIL11100305",
+   "equivalents": {
+    "unicel": "4CH-19",
+    "pleatco": "PSG13.5P4",
+    "filbur": "FC-0122"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 4.625,
+    "diameterText": "4-5/8\"",
+    "lengthText": "4-5/8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2” male thread/MPT",
+    "sqft": 13.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=4CH-19+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=4CH-19+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=4CH-19+spa+filter"
+   },
+   "notes": "Unicel: verify thread diameter",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.6 (printed p.2)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.65 (PDF p.33)"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "4CH-252 cartridge (OEM FIL11100303)",
+   "modelSlug": "4ch-252",
+   "series": "Cal Spas",
+   "oem": "FIL11100303",
+   "oemAll": "FIL11100303",
+   "equivalents": {
+    "unicel": "4CH-252",
+    "pleatco": "PMA20-F2M"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 8,
+    "diameterText": "4-5/8\"",
+    "lengthText": "8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 25.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=4CH-252+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=4CH-252+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=4CH-252+spa+filter"
+   },
+   "notes": "Unicel: Cal Spa original has 4-3/4\" OD",
+   "status": "verified",
+   "gaps": "no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "5CH-502 cartridge",
+   "modelSlug": "5ch-502",
+   "series": "Cal Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "5CH-502",
+    "pleatco": "PPM50SC-F2M",
+    "filbur": "FC-0195"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 12.5,
+    "diameterText": "5-3/16\"",
+    "lengthText": "12-1/2\"",
+    "topCore": "bar handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=5CH-502+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=5CH-502+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=5CH-502+spa+filter"
+   },
+   "notes": "Unicel prints OEM FIL11100202 on its own line between 5CH-502 and 5CH-752, so it is not assigned to either row here",
+   "status": "needs_verification",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry; OEM number ambiguous in Unicel layout",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Cal Spas, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "5CH-752 cartridge",
+   "modelSlug": "5ch-752",
+   "series": "Cal Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "5CH-752",
+    "pleatco": "PCAL60-F2M",
+    "filbur": "FC-0202"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 16.125,
+    "diameterText": "5-3/16\"",
+    "lengthText": "16-1/8\"",
+    "topCore": "bar handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 75.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=5CH-752+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=5CH-752+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=5CH-752+spa+filter"
+   },
+   "notes": "Leisure Time Inc. lists Cal Spas OEM 50753 for 5CH-752 (single retailer source, not shown as OEM). Filbur's catalog prints the Unicel number beside FC-0202 as \"5CH-702\"",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "Pleatco Filbur-to-Pleatco cross reference, PDF p.48 (FC-0202 = PCAL60-F2M, the same Pleatco number Pleatco p.47 gives for 5CH-752); Leisure Time Inc. 5CH-752 page",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Leisure Time Inc.",
+     "url": "https://leisuretimeinc.com/products/unicel-5ch-752-filter-cartridge",
+     "where": "Unicel 5CH-752 product page: Filbur FC-0202; Pleatco PCAL60-F2M"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Filbur-to-Pleatco cross reference, PDF p.48"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "6CH-975 cartridge (OEM FIL11700016)",
+   "modelSlug": "6ch-975",
+   "series": "Cal Spas",
+   "oem": "FIL11700016",
+   "oemAll": "FIL11700016",
+   "equivalents": {
+    "unicel": "6CH-975"
+   },
+   "dimensions": {
+    "diameterIn": 6.75,
+    "lengthIn": 15.5,
+    "diameterText": "6-3/4\"",
+    "lengthText": "15-1/2\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2\" SAE thread",
+    "sqft": 75.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=6CH-975+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=6CH-975+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=6CH-975+spa+filter"
+   },
+   "notes": "",
+   "status": "needs_verification",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.13 (printed p.9)"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "C-4305 cartridge",
+   "modelSlug": "c-4305",
+   "series": "Cal Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4305",
+    "pleatco": "PMT50",
+    "filbur": "FC-1630"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 14.875,
+    "diameterText": "4-15/16\"",
+    "lengthText": "14-7/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-4305+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-4305+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-4305+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Cal Spas, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "C-4950 cartridge",
+   "modelSlug": "c-4950",
+   "series": "Cal Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Cal Spas, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "C-4995 cartridge",
+   "modelSlug": "c-4995",
+   "series": "Cal Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4995",
+    "pleatco": "PCAL100",
+    "filbur": "FC-2940"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 23.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "23-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 100.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-4995+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-4995+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-4995+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Cal Spas, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Cal Spas",
+   "brandSlug": "cal-spas",
+   "model": "C-5374 cartridge",
+   "modelSlug": "c-5374",
+   "series": "Cal Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-5374",
+    "pleatco": "PLBS75",
+    "filbur": "FC-2971"
+   },
+   "dimensions": {
+    "diameterIn": 5.3125,
+    "lengthIn": 14.8125,
+    "diameterText": "5-5/16\"",
+    "lengthText": "14-13/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 75.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-5374+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-5374+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-5374+spa+filter"
+   },
+   "notes": "Filbur lists its FC-2971 equivalent at 5-5/16\" x 14-11/16\", 65 sq ft",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.11 (printed p.7)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Cal Spas, printed p.29 (PDF p.15)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "4CH-20 cartridge",
+   "modelSlug": "4ch-20",
+   "series": "Master Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-20",
+    "pleatco": "PHC25",
+    "filbur": "FC-0125"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 6.75,
+    "diameterText": "4-5/8\"",
+    "lengthText": "6-3/4\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2” male thread/MPT",
+    "sqft": 20.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=4CH-20+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=4CH-20+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=4CH-20+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Master Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Master Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "4CH-252 cartridge (OEM X268521)",
+   "modelSlug": "4ch-252",
+   "series": "Master Spas Contractor Series 415 / Clarity Spas 415",
+   "oem": "X268521",
+   "oemAll": "X268521",
+   "equivalents": {
+    "unicel": "4CH-252",
+    "pleatco": "PMA20-F2M"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 8,
+    "diameterText": "4-5/8\"",
+    "lengthText": "8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 25.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=4CH-252+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=4CH-252+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=4CH-252+spa+filter"
+   },
+   "notes": "Unicel: Master Spas original has 4-3/4\" OD",
+   "status": "verified",
+   "gaps": "no Filbur equivalent found in Filbur catalog",
+   "fitment": [
+    {
+     "model": "Contractor Series 415",
+     "years": "",
+     "note": "",
+     "src": "unicel"
+    },
+    {
+     "model": "Clarity Spas 415",
+     "years": "",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "4CH-935 cartridge",
+   "modelSlug": "4ch-935",
+   "series": "Master Spas Eco-Pur (5\" OD)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-935",
+    "pleatco": "PWW35L"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 9.25,
+    "diameterText": "4-15/16\"",
+    "lengthText": "9-1/4\"",
+    "topCore": "v-groove semi-circular handle",
+    "bottomCore": "2\" female SAE thread",
+    "sqft": 35.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=4CH-935+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=4CH-935+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=4CH-935+spa+filter"
+   },
+   "notes": "Unicel: replacement for 5\" OD Eco-Pur systems; must verify OAL",
+   "status": "verified",
+   "gaps": "no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.8 (printed p.4)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "4CH-949 cartridge",
+   "modelSlug": "4ch-949",
+   "series": "Master Spas Eco-Pur (5\" OD)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-949",
+    "pleatco": "PWW50L",
+    "filbur": "FC-0172"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.5,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-1/2\"",
+    "topCore": "v-groove semi-circular handle",
+    "bottomCore": "2\" female SAE thread",
+    "sqft": 50.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=4CH-949+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=4CH-949+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=4CH-949+spa+filter"
+   },
+   "notes": "Unicel: replacement for 5\" OD Eco-Pur systems; must verify OAL",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.66 (PDF p.34)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "6CH-352 cartridge (OEM PMA-R1)",
+   "modelSlug": "6ch-352",
+   "series": "Master Spas Eco-Pur (6\" OD)",
+   "oem": "PMA-R1",
+   "oemAll": "PMA-R1",
+   "equivalents": {
+    "unicel": "6CH-352",
+    "pleatco": "PAS40-F2M",
+    "filbur": "FC-0312"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 8,
+    "diameterText": "6\"",
+    "lengthText": "8\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 35.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=6CH-352+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=6CH-352+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=6CH-352+spa+filter"
+   },
+   "notes": "Unicel: must remove black stand pipe. Filbur cross-references 6CH-352 to FC-0312 but lists FC-0312 at 6\" x 7\"",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.66 (PDF p.34)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "6CH-402 cartridge (OEM PMA40L-F2M)",
+   "modelSlug": "6ch-402",
+   "series": "Master Spas Twilight Series",
+   "oem": "PMA40L-F2M",
+   "oemAll": "PMA40L-F2M",
+   "equivalents": {
+    "unicel": "6CH-402",
+    "pleatco": "PMA40L-F2M",
+    "filbur": "FC-0317"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 9.5,
+    "diameterText": "6\"",
+    "lengthText": "9-1/2\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 40.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=6CH-402+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=6CH-402+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=6CH-402+spa+filter"
+   },
+   "notes": "Unicel prints PMA40L-F2M (a Pleatco number) in its OEM column; Pleatco lists Master Spas Twilight OEM X268365 for PMA40L-F2M. Unicel: must remove black stand pipe",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Twilight Series",
+     "years": "",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "as printed in the Filbur catalog Master Spas (Twilight) section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Master Spas (Twilight), printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "6CH-45 cartridge",
+   "modelSlug": "6ch-45",
+   "series": "Master Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "6CH-45",
+    "pleatco": "PTL45W-P-4",
+    "filbur": "FC-0330"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 12.375,
+    "diameterText": "6\"",
+    "lengthText": "12-3/8\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2” male thread/MPT",
+    "sqft": 45.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=6CH-45+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=6CH-45+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=6CH-45+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Master Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Master Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "6CH-940 cartridge",
+   "modelSlug": "6ch-940",
+   "series": "Master Spas swim spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "6CH-940",
+    "pleatco": "PWW50P3",
+    "filbur": "FC-0359"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 8.25,
+    "diameterText": "6\"",
+    "lengthText": "8-1/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "injection molded 1-1/2\" SAE thread",
+    "sqft": 45.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=6CH-940+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=6CH-940+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=6CH-940+spa+filter"
+   },
+   "notes": "Unicel: for use in Master Spas swim spas",
+   "status": "verified",
+   "gaps": "Unicel lists no OEM part number for this brand entry",
+   "fitment": [
+    {
+     "model": "Master Spas swim spas",
+     "years": "",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.66 (PDF p.34)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "7CH-322 cartridge",
+   "modelSlug": "7ch-322",
+   "series": "Master Spas Eco-Pur (7\"/8\" OD)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "7CH-322",
+    "pleatco": "PAS35-F2M",
+    "filbur": "FC-0420"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 8,
+    "diameterText": "7\"",
+    "lengthText": "8\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 32.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=7CH-322+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=7CH-322+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=7CH-322+spa+filter"
+   },
+   "notes": "Unicel: replacement for 7\" or 8\" OD Eco-Pur systems; remove black stand pipe for 8\" OD",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.14 (printed p.10)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Unicel-to-Filbur reverse cross reference, printed p.66 (PDF p.34)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "8CH-66 cartridge",
+   "modelSlug": "8ch-66",
+   "series": "Master Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "8CH-66",
+    "pleatco": "PMA60-F2M",
+    "filbur": "FC-0515"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 9.25,
+    "diameterText": "8\"",
+    "lengthText": "9-1/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 60.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=8CH-66+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=8CH-66+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=8CH-66+spa+filter"
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.20 (printed p.16)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Master Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "C-3310AM cartridge",
+   "modelSlug": "c-3310am",
+   "series": "Master Spas Eco-Pur (inner)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-3310AM",
+    "pleatco": "PMA10"
+   },
+   "dimensions": {
+    "diameterIn": 3.875,
+    "lengthIn": 7,
+    "diameterText": "3-7/8\"",
+    "lengthText": "7\"",
+    "topCore": "2-3/16\" / open",
+    "bottomCore": "2-3/16\" / open",
+    "sqft": 8.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-3310AM+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-3310AM+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-3310AM+spa+filter"
+   },
+   "notes": "Unicel: antimicrobial media; used with a C-7330 or C-8341 outer cartridge in Eco-Pur systems",
+   "status": "verified",
+   "gaps": "no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.6 (printed p.2)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "C-7330 cartridge",
+   "modelSlug": "c-7330",
+   "series": "Master Spas Eco-Pur Micro Filter (2002-2005)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-7330",
+    "pleatco": "PMA30-2002-R",
+    "filbur": "FC-1003"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 7.25,
+    "diameterText": "7\"",
+    "lengthText": "7-1/4\"",
+    "topCore": "4-1/8\" / open",
+    "bottomCore": "4-1/8\" / open",
+    "sqft": 30.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-7330+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-7330+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-7330+spa+filter"
+   },
+   "notes": "Unicel: part of Eco-Pur filtration system, 2002 to 2005",
+   "status": "verified",
+   "gaps": "Unicel lists no OEM part number for this brand entry",
+   "fitment": [
+    {
+     "model": "Eco-Pur filtration system",
+     "years": "2002–2005",
+     "note": "",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.14 (printed p.10)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Master Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Master Spas",
+   "brandSlug": "master-spas",
+   "model": "C-8341 cartridge",
+   "modelSlug": "c-8341",
+   "series": "Master Spas Eco-Pur Micro Filter (2006-present)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-8341",
+    "pleatco": "PMA45-2004-R",
+    "filbur": "FC-1007"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 6.75,
+    "diameterText": "8\"",
+    "lengthText": "6-3/4\"",
+    "topCore": "4\" / open w/ raised ring",
+    "bottomCore": "4\" / open w/ raised ring",
+    "sqft": 40.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=C-8341+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=C-8341+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=C-8341+spa+filter"
+   },
+   "notes": "Unicel: part of Eco-Pur filtration system, 2006 to present; two 40 sq ft cartridges required",
+   "status": "verified",
+   "gaps": "Unicel lists no OEM part number for this brand entry",
+   "fitment": [
+    {
+     "model": "Eco-Pur filtration system",
+     "years": "2006–present",
+     "note": "two cartridges required",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Master Spas section), PDF p.45 (printed p.41); spec table PDF p.20 (printed p.16)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Master Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Bullfrog",
+   "brandSlug": "bullfrog",
+   "model": "PBF17 cartridge (OEM 10-00281)",
+   "modelSlug": "pbf17",
+   "series": "Bullfrog STIL Series (coreless)",
+   "oem": "10-00281",
+   "oemAll": "10-00281",
+   "equivalents": {
+    "pleatco": "PBF17"
+   },
+   "dimensions": {
+    "diameterIn": 6.625,
+    "lengthIn": 6.25,
+    "diameterText": "6-5/8\"",
+    "lengthText": "6-1/4\"",
+    "topCore": "3-3/8\" open (coreless)",
+    "bottomCore": "4-1/2\" open (coreless)",
+    "sqft": 18.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=PBF17+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=PBF17+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=PBF17+spa+filter"
+   },
+   "notes": "Pleatco: Bullfrog 18 coreless, 2017-current. Leisure Time Inc. rates the OEM 10-00281 cartridge at approximately 27 sq ft and notes 2015-2017 STIL spas need Filter Core Cage & Cap Assembly 10-00417; Leisure Time Inc.: Coreless cartridge; the correct filter cage and cap must be installed.",
+   "status": "verified",
+   "gaps": "no Unicel equivalent in Unicel 2026 guide; no Filbur equivalent found; sq ft rating differs between Pleatco and Leisure Time",
+   "fitment": [
+    {
+     "model": "Bullfrog STIL Series",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "spec table, PDF p.33 (OEM 10-00281)"
+    },
+    {
+     "source": "Leisure Time Inc.",
+     "url": "https://leisuretimeinc.com/products/bullfrog-stil-series-10-00281-filter-cartridges",
+     "where": "Product page: OEM number, model list and years"
+    }
+   ]
+  },
+  {
+   "brand": "Bullfrog",
+   "brandSlug": "bullfrog",
+   "model": "PBF40 cartridge (OEM 10-00282)",
+   "modelSlug": "pbf40",
+   "series": "Bullfrog A / R / X Series (coreless)",
+   "oem": "10-00282",
+   "oemAll": "10-00282",
+   "equivalents": {
+    "pleatco": "PBF40"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 6.25,
+    "diameterText": "8\"",
+    "lengthText": "6-1/4\"",
+    "topCore": "3-3/8\" open (coreless)",
+    "bottomCore": "4-1/2\" open (coreless)",
+    "sqft": 30.0
+   },
+   "buy": {
+    "filtersfast": "https://www.filtersfast.com/search?q=PBF40+spa+filter",
+    "amazon": "https://www.amazon.com/s?k=PBF40+spa+filter",
+    "dohenys": "https://www.doheny.com/search?q=PBF40+spa+filter"
+   },
+   "notes": "Pleatco: Bullfrog 30 coreless, 2017-current. Leisure Time Inc. rates the OEM 10-00282 cartridge at 50 sq ft and notes 2013-2017 A/R/X spas need the Filter Core Cage & Cap Assembly; 2023-and-newer A Series use Simplicity flat filters; Leisure Time Inc.: Coreless cartridge; the correct filter cage and cap must be installed. 2023-and-newer A Series models use Simplicity flat filters.",
+   "status": "verified",
+   "gaps": "no Unicel equivalent in Unicel 2026 guide; no Filbur equivalent found; sq ft rating differs between Pleatco and Leisure Time",
+   "fitment": [
+    {
+     "model": "Bullfrog A Series",
+     "years": "2018–2022",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Bullfrog R Series",
+     "years": "2018–2022",
+     "note": "",
+     "src": "lt"
+    },
+    {
+     "model": "Bullfrog X Series",
+     "years": "2018–2026",
+     "note": "",
+     "src": "lt"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "spec table, PDF p.35 (OEM 10-00282)"
+    },
+    {
+     "source": "Leisure Time Inc.",
+     "url": "https://leisuretimeinc.com/products/bullfrog-a-r-x-series-10-00282-filter-cartridges",
+     "where": "Product page: OEM number, model list and years"
     }
    ]
   }

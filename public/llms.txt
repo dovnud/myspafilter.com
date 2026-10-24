@@ -1,13 +1,13 @@
 # MySpaFilter
 
-> Independent hot tub / spa filter cross-reference. Look up a cartridge by OEM, Unicel or Pleatco part number and get equivalents, dimensions, fittings and the catalog page each match comes from (Unicel 2026 Replacement Guide, Pleatco 2023 catalog). Unconfirmed rows are flagged as unverified. Affiliate retailer links are disclosed.
+> Independent hot tub / spa filter cross-reference. Look up a cartridge by OEM, Unicel, Pleatco or Filbur part number and get equivalents, dimensions, fittings and the catalog page each match comes from (Unicel 2026 Replacement Guide, Pleatco 2023 catalog, Filbur catalog; model-year fitment from cited dealer listings). Unconfirmed rows are flagged as unverified. Affiliate retailer links are disclosed.
 
 ## Key pages
 - [Home / part-number search](https://myspafilter.com/)
 - [Find a filter by size](https://myspafilter.com/size/)
 - [Measuring guide](https://myspafilter.com/guide/)
 - [Guides index](https://myspafilter.com/guides/)
-- Brands: [Caldera](https://myspafilter.com/caldera/), [Hot Spot](https://myspafilter.com/hot-spot/), [Hot Spring](https://myspafilter.com/hot-spring/), [Jacuzzi](https://myspafilter.com/jacuzzi/), [Sundance](https://myspafilter.com/sundance/)
+- Brands: [Bullfrog](https://myspafilter.com/bullfrog/), [Cal Spas](https://myspafilter.com/cal-spas/), [Caldera](https://myspafilter.com/caldera/), [Hot Spot](https://myspafilter.com/hot-spot/), [Hot Spring](https://myspafilter.com/hot-spring/), [Jacuzzi](https://myspafilter.com/jacuzzi/), [Master Spas](https://myspafilter.com/master-spas/), [Solana](https://myspafilter.com/solana/), [Sundance](https://myspafilter.com/sundance/)
 
 ## Guides
 - [How often should you replace a hot tub filter?](https://myspafilter.com/guides/how-often-to-replace-hot-tub-filter/)
