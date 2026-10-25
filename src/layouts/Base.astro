@@ -5,7 +5,7 @@ const { title, description, jsonld = [], noindex = false, ogType = 'website', og
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const path = Astro.url.pathname;
 // Default share image, with a section variant by URL (all 1200x630 PNG in /public/og/, made by scripts/gen-og.py)
-const section = path.startsWith('/guides/') ? 'guides' : path.startsWith('/supplies/') ? 'supplies' : path.startsWith('/data/') ? 'data' : brands().some(b=>path.startsWith(`/${b.slug}/`)) ? 'brands' : 'default';
+const section = path.startsWith('/guides/') ? 'guides' : path.startsWith('/supplies/') ? 'supplies' : path.startsWith('/data/') ? 'data' : (path.startsWith('/fitment/') || brands().some(b=>path.startsWith(`/${b.slug}/`))) ? 'brands' : 'default';
 const ogAlt: Record<string,string> = { default:'MySpaFilter.com: spa and hot tub filter cross-reference by part number', guides:'MySpaFilter.com guides: cited hot tub filter and water-care answers', supplies:'MySpaFilter.com hot tub supplies guides', data:'MySpaFilter.com spa filter cartridge dataset: download CSV or JSON', brands:'MySpaFilter.com spa brand filter cross-reference' };
 const image = new URL(ogImage || `/og/${section}.png`, Astro.site).href;
 const imageAlt = ogImageAlt || ogAlt[section];

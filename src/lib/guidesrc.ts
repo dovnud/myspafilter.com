@@ -23,5 +23,9 @@ export const SRC: Record<string,{t:string;u:string}> = {
   hsLifters:{t:'Hot Spring — Hot Tub Cover Lifters',u:'https://www.hotspring.com/shop/accessories/cover-lifters'},
   hsQuick:{t:'Hot Spring — Hot Spot Collection Quick Start Guide (2024)',u:'https://www.hotspring.com/wp-content/uploads/2024/07/hot-spring-hot-spot-quick-start-guide.pdf'},
   hsManualUK:{t:'Hot Spring Hot Spot Collection Owner’s Manual, 50 Hz (2024) — cover care',u:'https://www.hotspring.co.uk/wp-content/uploads/2024/04/2024-Hot-Spot-50Hz-Owners-Manual-Rev-A-English.pdf'},
+  ltGuide:{t:'Leisure Time Inc. — Hot Tub Filter Fitment Guide (Hot Spring and Caldera model-year tables)',u:'https://leisuretimeinc.com/pages/filter-guide'},
+  lt78161:{t:'Leisure Time Inc. — Hot Spring Limelight 78161 filter cartridge (specifications)',u:'https://leisuretimeinc.com/products/hotspring-limelight-78161-filter-cartridge'},
+  lt73531:{t:'Leisure Time Inc. — Caldera 73531 filter cartridge (specifications and compatibility)',u:'https://leisuretimeinc.com/products/caldera-77813-filter-cartridge'},
+  spastore73531:{t:'SpaStore.com — Caldera 73531 / PCD75N filter listing (model years)',u:'https://www.spastore.com/7-x-14-3-4-caldera-paradise-utopia-series-spa-filter-73531-pcd75n-years-2003/'},
 };
 export const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');

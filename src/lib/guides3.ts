@@ -1,0 +1,54 @@
+import { c } from './guidesrc';
+import type { Guide } from './guides';
+const D = '2026-10-25';
+/** Guides published 2026-10-25 under the "few links, real data" rule: no retailer links; every number below is from the cited tables. */
+export const newGuides: Guide[] = [
+{slug:'why-same-size-spa-filters-have-different-square-feet',published:D,reviewed:D,
+title:'Why do two spa filters the same size have different square-foot ratings?',
+desc:'Same diameter, same length, but 25, 37 or 50 sq ft? Unicel’s 2026 spec table shows it is the pleat count, and what that means when you replace a cartridge.',
+answer:`The square-foot number is the total area of filter media folded into the cartridge, not its outside size. Two cartridges with the <strong>same diameter, length and end caps</strong> can hold different amounts of media because one has more pleats: in Unicel’s 2026 table, 106, 158 and 212 pleats in the same 4-15/16" × 13-5/16" body are rated 25, 37 and 50 sq ft${c('unicel26')}. So size alone cannot tell you the rating; the part number, or the pleat count, can.`,
+body:`<h2>How the number is calculated</h2>
+<p>Unicel publishes its method for computing a cartridge’s area: count the pleats and measure the pleat height (the “amplitude”), measure the usable length of the media (excluding end caps and handles), then <strong>multiply the pleats by 2, by the pleat height, and by the usable length, and divide by 144</strong>. Its worked example is a cartridge with 75 pleats of 0.625" height and 9-1/4" of usable length: (75 × 2 × 0.625 × 9.25) ÷ 144 = 6.02 sq ft${c('unicel26')}. So area depends on three things: how many pleats, how tall each pleat is, and how long the media is. The outside diameter and overall length you can measure with a tape do not by themselves fix any of the three, which is how two cartridges that look identical can carry different amounts of media.</p>
+<h2>The same-size pairs in Unicel’s spec table</h2>
+<p>Unicel’s 2026 Replacement Guide lists each cartridge’s outside diameter (OD), length, end-cap openings, pleat count, media weight and rated area${c('unicel26')}. Where several cartridges share the same OD, length and openings, the pleat count is what separates them. These are the groups in the table (Unicel’s own figures, quoted as printed from the 4000, 5000 and 6000 Series pages, printed pp. 5, 6 and 8; the area method is on p. 74):</p>
+<div class="tbl"><table><thead><tr><th>OD × length</th><th>Unicel P/N</th><th>Pleats</th><th>Media</th><th>Rated area</th><th>Listed for</th></tr></thead><tbody>
+<tr><td rowspan="4">4-15/16" × 13-5/16"<br><small>2-1/8" open both ends</small></td><td>C-4326</td><td>106</td><td>3 oz</td><td>25 sq ft</td><td>Rainbow, Waterway Plastics, Custom Molded Products</td></tr>
+<tr><td>C-4625</td><td>106</td><td>4 oz</td><td>25 sq ft</td><td>same brands as C-4326</td></tr>
+<tr><td>C-4637</td><td>158</td><td>4 oz</td><td>37 sq ft</td><td>Rainbow, Waterway Plastics, Morgan Spas, Leisure Bay Spas, Custom Molded Products</td></tr>
+<tr><td>C-4950</td><td>212</td><td>3 oz</td><td>50 sq ft</td><td>Rainbow, Waterway Plastics, Custom Molded Products</td></tr>
+<tr><td rowspan="2">4-15/16" × 14-7/8"<br><small>2-1/8" open both ends</small></td><td>C-4301</td><td>106</td><td>3 oz</td><td>28 sq ft</td><td>Martec, Sonfarrel</td></tr>
+<tr><td>C-4305</td><td>193</td><td>3 oz</td><td>50 sq ft</td><td>Cal Spas, Martec, Sonfarrel, Advantage Mfg.</td></tr>
+<tr><td rowspan="2">5" × 13-5/16"<br><small>2-3/8" open both ends, no center core</small></td><td>C-5625</td><td>103</td><td>4 oz</td><td>25 sq ft</td><td>Jacuzzi CFR-25 (in-line)</td></tr>
+<tr><td>C-5635</td><td>158</td><td>4 oz</td><td>37 sq ft</td><td>Jacuzzi CFR-37 (in-line)</td></tr>
+<tr><td rowspan="2">5-3/16" × 12-1/2"<br><small>bar handle, 2" male thread</small></td><td>5CH-352</td><td>151</td><td>3 oz</td><td>35 sq ft</td><td>Marquis Spas (new style)</td></tr>
+<tr><td>5CH-502</td><td>197</td><td>3 oz</td><td>50 sq ft</td><td>Marquis Spas (new style), Cal Spas</td></tr>
+<tr><td rowspan="2">6" × 8-1/4"<br><small>handle top, injection-molded 1-1/2" SAE thread</small></td><td>6CH-925</td><td>132</td><td>3 oz</td><td>25 sq ft</td><td>top load</td></tr>
+<tr><td>6CH-940</td><td>225</td><td>3 oz</td><td>45 sq ft</td><td>top load</td></tr>
+<tr><td rowspan="2">6" × 14"<br><small>1-15/16" open both ends</small></td><td><a href="/hot-spring/c-6350/">C-6350</a></td><td>142</td><td>3 oz</td><td>50 sq ft</td><td>Hot Springs Spas / Watkins (Limelight)</td></tr>
+<tr><td><a href="/hot-spring/c-6355/">C-6355</a></td><td>229</td><td>3 oz</td><td>75 sq ft</td><td>Hot Springs Spas / Watkins (Limelight)</td></tr>
+</tbody></table></div>
+<p>Within each group, more pleats means a larger rated area. (The table does not list pleat height, so we cannot show the full calculation for these rows.) In the first group, Unicel prints all four cartridges in one block of its table, and its guide says that cartridges listed between horizontal lines are interchangeable${c('unicel26')}. Two rows also show that <strong>media weight is a separate spec</strong>: C-4326 and C-4625 both have 106 pleats and 25 sq ft, but one uses 3 oz media and the other 4 oz${c('unicel26')}. Matching the square footage alone does not mean you are matching the cartridge.</p>
+
+<h2>What Unicel says about the “upgrade” cartridges</h2>
+<p>Unicel’s maintenance page tells dealers to check its guide for an “upgraded surface area” cartridge when selling a replacement; as its example it names C-4637 as an upgrade for C-4625, with 12 more square feet and “all other dimensions the same”${c('unicel')}. The guide marks the same relationship in its notes: C-4637 and C-4950 are listed as upgrades to the 25 sq ft C-4326 and C-4625${c('unicel26')}. Two Marquis replacements are described the same way: C-5423 (“the original was 25 sq. ft. (115 pleats). This replacement has been upgraded to 35 sq. ft.”) and C-5434 (original 40 sq ft, 109 pleats; upgraded to 60 sq ft)${c('unicel26')}.</p>
+<p>Unicel’s stated reason is flow per square foot: “cartridge filters can work at any flow rate. In fact, the lower the flow per square foot, the more efficient the system works”${c('unicel')}. In a spa, where the pump moves a fixed amount of water, a cartridge with more media spreads that flow over more area. That is arithmetic from Unicel’s statement, not a test result we ran.</p>
+<p><strong>What we could not find:</strong> a spa manufacturer statement that says a higher-area cartridge of identical outside dimensions is approved, or not approved, for a particular spa. Unicel’s “upgrade” notes apply to cartridges whose other dimensions are the same, so check the end-cap openings and length as well as the area, and ask your spa dealer if your spa is under warranty.</p>
+
+<h2>A real example where the sources disagree: Hot Spring Limelight (2018 and newer)</h2>
+<p>Unicel’s Hot Spring cross-reference ties both C-6350 (50 sq ft, 142 pleats) and C-6355 (75 sq ft, 229 pleats) to the Limelight cartridge, OEM 1642301-1 / 78161, and notes that the original is 6-3/8" OD while its replacements are 6"${c('unicel26')}. A Hot Spring dealer’s product page for 78161 gives 50 sq ft, 14" long, about 6-1/4" OD with open 2" ends${c('lt78161')}. Pleatco’s 2023 catalog lists the same OEM number as PWK35B at 6-3/8" × 14" and 35 sq ft${c('pleatco23')}. That is three different ratings (75, 50 and 35 sq ft) for what the sources treat as one factory part.</p>
+<p>We cannot tell from these documents which number is “right”, and we are not going to pick one. Dealer listings are not a reliable tie-breaker either: the same dealer’s pages list 260 pleats for both the Limelight 78161 (50 sq ft) and the Caldera 73531 (75 sq ft)${c('lt78161','lt73531')}, so we use pleat counts only from Unicel’s table. For a Limelight, order by the OEM number (78161 or 1642301-1) and compare the cartridge’s OD, length and end caps, rather than by the square-foot figure.</p>
+
+<h2>How to tell which one you have</h2>
+<ol>
+<li><strong>Read the part number</strong> on the end cap or label. It beats every other method.</li>
+<li><strong>If it has worn off,</strong> measure the OD, the length and the size of the top and bottom openings, and note whether the top has a handle or thread. Our <a href="/guides/how-to-find-your-spa-filter-size/">how to find your spa filter size</a> guide and the <a href="/size/">size lookup</a> do this step.</li>
+<li><strong>Count the pleats</strong> if two candidates share the same body: mark one fold with tape and count every fold around the circumference. Unicel’s own lookup instructions include counting the pleats (±2) and noting whether there is a center core${c('unicel26')}, so a count within two of a listed number is a match.</li>
+<li><strong>Use square footage last.</strong> Look at it only after the dimensions and end caps agree, and expect different catalogs to round it differently.</li></ol>
+<p>Once you know the cartridge, <a href="/guides/oem-vs-unicel-vs-pleatco-spa-filters/">OEM vs Unicel vs Pleatco</a> explains how the brands’ numbers line up.</p>
+<p><small>Affiliate disclosure: this guide contains no retailer links. Some cartridge pages it links to do, and we may earn a commission from qualifying purchases made through them at no cost to you. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</small></p>`,
+faq:[['Can I use a 75 sq ft filter where my spa takes a 50 sq ft one?','Only if it is the same cartridge body. Unicel’s “upgrade” notes, such as C-4637 for C-4625, describe cartridges whose other dimensions are the same and that carry more media, and its guide says cartridges listed between the same horizontal lines are interchangeable. If the diameter, length or end caps differ, it will not seat correctly. We found no spa-maker statement approving or rejecting an upgrade for a specific spa, so ask your dealer if the spa is under warranty.'],
+['Does a higher square-foot rating always mean a bigger cartridge?','No. In Unicel’s 2026 table, C-4326, C-4637 and C-4950 all measure 4-15/16" × 13-5/16" with 2-1/8" open ends, but they are rated 25, 37 and 50 sq ft because they have 106, 158 and 212 pleats.'],
+['Why does one catalog list my Hot Spring Limelight filter as 35 sq ft and another as 75?','The catalogs genuinely disagree. Pleatco 2023 lists OEM 1642301-1 as PWK35B at 35 sq ft, a Hot Spring dealer lists 78161 at 50 sq ft, and Unicel offers both a 50 sq ft (C-6350) and a 75 sq ft (C-6355) replacement for it. Order by the OEM part number and check the dimensions.'],
+['Is a thicker media weight the same as more surface area?','No. Media weight (3 oz or 4 oz in Unicel’s table) is listed separately from area. C-4326 and C-4625 both have 106 pleats and 25 sq ft but differ in media weight.']],
+src:['unicel26','unicel','pleatco23','lt78161','lt73531']}
+];

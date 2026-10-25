@@ -1,0 +1,650 @@
+[
+ {
+  "brand": "Caldera Spas",
+  "title": "Caldera 73722 Filter Cartridge",
+  "models": [
+   {
+    "name": "Utopia Cantabria",
+    "years": "Q3 2014–2026"
+   },
+   {
+    "name": "Utopia Elation",
+    "years": "2009–2010"
+   },
+   {
+    "name": "Utopia Florence",
+    "years": "2018–2026"
+   },
+   {
+    "name": "Utopia Geneva GEB",
+    "years": "2005–2026"
+   },
+   {
+    "name": "Utopia Niagara NIB",
+    "years": "2005–2026"
+   },
+   {
+    "name": "Utopia Tahitian",
+    "years": "2005–2026"
+   },
+   {
+    "name": "Aquatic Melodies Aspire",
+    "years": "2005–2008"
+   },
+   {
+    "name": "Aquatic Melodies Elation",
+    "years": "2005–2008"
+   }
+  ],
+  "notes": [
+   "For 2014 Cantabria spas, confirm the production quarter. This cartridge is for Q3–Q4 production; Q1–Q2 uses 74817."
+  ],
+  "oem": "73722"
+ },
+ {
+  "brand": "Caldera Spas",
+  "title": "Caldera Aventine 74148 Filter Cartridge",
+  "models": [
+   {
+    "name": "Vacanza Aventine",
+    "years": "2010–2026"
+   },
+   {
+    "name": "Highland Aventine AVH",
+    "years": "2006–2009"
+   }
+  ],
+  "notes": [
+   "For a 2019 Aventine, contact us with the spa serial number to confirm the filter."
+  ],
+  "oem": "74148"
+ },
+ {
+  "brand": "Caldera Spas",
+  "title": "Caldera Cantabria 74817 Filter Cartridge",
+  "models": [
+   {
+    "name": "Utopia Cantabria",
+    "years": "2009–Q2 2014"
+   }
+  ],
+  "notes": [
+   "For 2014 Cantabria spas, confirm the production quarter. Q3–Q4 production uses 73722."
+  ],
+  "oem": "74817"
+ },
+ {
+  "brand": "Caldera Spas",
+  "title": "Caldera Paradise 73532 Filter Cartridge",
+  "models": [
+   {
+    "name": "Utopia Ravello",
+    "years": "2022–2026"
+   },
+   {
+    "name": "Paradise Kauai",
+    "years": "2000–2026"
+   },
+   {
+    "name": "Paradise Martinique",
+    "years": "2000–2026"
+   },
+   {
+    "name": "Paradise Makena",
+    "years": "2024"
+   },
+   {
+    "name": "Highland Cascade",
+    "years": "2000"
+   },
+   {
+    "name": "Highland Cumberland",
+    "years": "2002–2009"
+   },
+   {
+    "name": "Highland San Gabriel",
+    "years": "2008–2009"
+   },
+   {
+    "name": "Highland Teton",
+    "years": "2000"
+   }
+  ],
+  "notes": [
+   "For a 2024 Makena, confirm the spa serial number before ordering. Other Makena years use a different cartridge."
+  ],
+  "oem": "73532"
+ },
+ {
+  "brand": "Caldera Spas",
+  "title": "Caldera Utopia 73531 Filter Cartridge",
+  "models": [
+   {
+    "name": "Utopia Geneva GEB",
+    "years": "2000–2004"
+   },
+   {
+    "name": "Utopia Hawaiian HAB",
+    "years": "2001–2002"
+   },
+   {
+    "name": "Utopia Niagara NIB",
+    "years": "2000–2004"
+   },
+   {
+    "name": "Utopia Provence",
+    "years": "2018–2021"
+   },
+   {
+    "name": "Utopia Tahitian",
+    "years": "2000–2004"
+   },
+   {
+    "name": "Paradise Geneva GEA",
+    "years": "2000–2004"
+   },
+   {
+    "name": "Paradise Hawaiian HAA",
+    "years": "2000–2010"
+   },
+   {
+    "name": "Paradise Makena MAA",
+    "years": "2013–2023, 2025–2026"
+   },
+   {
+    "name": "Paradise Moorea",
+    "years": "2006–2010"
+   },
+   {
+    "name": "Paradise Niagara NIA",
+    "years": "2000–2002"
+   },
+   {
+    "name": "Paradise Reunion",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Paradise Salina",
+    "years": "2011–2026"
+   },
+   {
+    "name": "Paradise Seychelles",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Paradise Tahitian TAA",
+    "years": "2000–2005"
+   },
+   {
+    "name": "Highland Cascade",
+    "years": "2001–2003"
+   },
+   {
+    "name": "Highland Olympia",
+    "years": "2000–2009"
+   },
+   {
+    "name": "Highland Palomar",
+    "years": "2004–2005"
+   },
+   {
+    "name": "Highland Teton",
+    "years": "2001"
+   },
+   {
+    "name": "Aquatic Melodies Aspire",
+    "years": "2004"
+   },
+   {
+    "name": "Aquatic Melodies Elation",
+    "years": "2003–2004"
+   },
+   {
+    "name": "C-Series C30",
+    "years": "2006–2009"
+   },
+   {
+    "name": "C-Series C30S",
+    "years": "2006–2009"
+   },
+   {
+    "name": "C-Series C45",
+    "years": "2006–2009"
+   },
+   {
+    "name": "C-Series C45S",
+    "years": "2006–2009"
+   }
+  ],
+  "notes": [
+   "For a 2004 Hawaiian HAA or a 2024 Makena, contact us with the spa serial number before ordering."
+  ],
+  "oem": "73531"
+ },
+ {
+  "brand": "Caldera Spas",
+  "title": "Caldera Vacanza 76136 Filter Cartridge",
+  "models": [
+   {
+    "name": "Vacanza Marino",
+    "years": "2010–2026"
+   },
+   {
+    "name": "Vacanza Palatino",
+    "years": "2010–2026"
+   },
+   {
+    "name": "Vacanza Vanto",
+    "years": "2011–2026"
+   }
+  ],
+  "notes": [],
+  "oem": "76136"
+ },
+ {
+  "brand": "Caldera Spas",
+  "title": "Caldera 31489 Filter Cartridge",
+  "models": [
+   {
+    "name": "Vacanza Celio",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Vacanza Tarino",
+    "years": "2013–2026"
+   }
+  ],
+  "notes": [],
+  "oem": "31489"
+ },
+ {
+  "brand": "Hot Spring Spas",
+  "title": "Hot Spring 71827 Filter Cartridge",
+  "models": [
+   {
+    "name": "Limelight Bolt",
+    "years": "2012–2017"
+   },
+   {
+    "name": "Limelight Flair",
+    "years": "2008–2017"
+   },
+   {
+    "name": "Limelight Glow",
+    "years": "2008–2017"
+   },
+   {
+    "name": "Limelight Pulse",
+    "years": "2008–2017"
+   },
+   {
+    "name": "Tiger River Bengal M",
+    "years": "1997–2010"
+   },
+   {
+    "name": "Tiger River Bengal MM",
+    "years": "2005–2010"
+   },
+   {
+    "name": "Tiger River Caspian CHP",
+    "years": "2004–2010"
+   },
+   {
+    "name": "Tiger River Caspian CPN",
+    "years": "2003"
+   },
+   {
+    "name": "Tiger River Khyber L",
+    "years": "1994–1996"
+   },
+   {
+    "name": "Tiger River Manora MH",
+    "years": "1996"
+   },
+   {
+    "name": "Tiger River Manora M",
+    "years": "1992–1996"
+   },
+   {
+    "name": "Tiger River Siberian L",
+    "years": "1997–2004"
+   },
+   {
+    "name": "Tiger River Sumatran N",
+    "years": "1997–2010"
+   },
+   {
+    "name": "Tiger River Tondi N",
+    "years": "1992–1994"
+   },
+   {
+    "name": "Tiger River Tondi PH",
+    "years": "1996"
+   },
+   {
+    "name": "Tiger River Tondi P",
+    "years": "1995–1996"
+   },
+   {
+    "name": "Hot Spot La Palma",
+    "years": "2008–2009"
+   },
+   {
+    "name": "Hot Spot Relay",
+    "years": "2010–2026"
+   },
+   {
+    "name": "Hot Spot Rhythm",
+    "years": "2011–2026"
+   },
+   {
+    "name": "Hot Spot Tempo",
+    "years": "2010–2019"
+   }
+  ],
+  "notes": [],
+  "oem": "71827"
+ },
+ {
+  "brand": "Hot Spring Spas",
+  "title": "Hot Spring Gleam 77004 Filter Cartridge",
+  "models": [
+   {
+    "name": "Limelight Gleam",
+    "years": "2013–2017"
+   }
+  ],
+  "notes": [],
+  "oem": "77004"
+ },
+ {
+  "brand": "Hot Spring Spas",
+  "title": "Hot Spring Highlife 71825 Filter Cartridge",
+  "models": [
+   {
+    "name": "Highlife Classic F",
+    "years": "1990–2000"
+   },
+   {
+    "name": "Highlife Classic FH",
+    "years": "1990–1996"
+   },
+   {
+    "name": "Highlife Grandee G",
+    "years": "1990–2007"
+   },
+   {
+    "name": "Highlife ILE",
+    "years": "2003"
+   },
+   {
+    "name": "Highlife K",
+    "years": "1990–1996"
+   },
+   {
+    "name": "Highlife Jetsetter J",
+    "years": "1990–2010"
+   },
+   {
+    "name": "Highlife Jetsetter JJ",
+    "years": "2006–2018"
+   },
+   {
+    "name": "Highlife Jetsetter JJN",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Highlife Landmark S",
+    "years": "1995–2003"
+   },
+   {
+    "name": "Highlife Prodigy HN",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Highlife Prodigy H",
+    "years": "1990–2018"
+   },
+   {
+    "name": "Highlife Sovereign ILE",
+    "years": "2002"
+   },
+   {
+    "name": "Highlife Sovereign I",
+    "years": "1990–2010"
+   },
+   {
+    "name": "Highlife Sovereign IH",
+    "years": "1994–1996"
+   },
+   {
+    "name": "Highlife Sovereign II",
+    "years": "2004–2013"
+   },
+   {
+    "name": "Highlife Summit R",
+    "years": "1995–1996"
+   },
+   {
+    "name": "Highlife Triumph TRHN",
+    "years": "2019–2022"
+   },
+   {
+    "name": "Highlife Vanguard V",
+    "years": "2001–2007"
+   },
+   {
+    "name": "Highlife Vanguard VV",
+    "years": "2005–2013"
+   },
+   {
+    "name": "Hot Spot Pace",
+    "years": "2020–2026"
+   },
+   {
+    "name": "Hot Spot RE Z",
+    "years": "1998–2002"
+   },
+   {
+    "name": "Hot Spot RLX Z",
+    "years": "1998–2002"
+   },
+   {
+    "name": "Hot Spot SE",
+    "years": "1998–2000"
+   },
+   {
+    "name": "Hot Spot SLX",
+    "years": "1998–2002"
+   },
+   {
+    "name": "Hot Spot SLXtra",
+    "years": "2001–2002"
+   },
+   {
+    "name": "Hot Spot Stride",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Hot Spot SX",
+    "years": "2011–2026"
+   },
+   {
+    "name": "Hot Spot TX",
+    "years": "2011–2026"
+   },
+   {
+    "name": "Solana RX",
+    "years": "2003–2009"
+   },
+   {
+    "name": "Solana SX",
+    "years": "2003–2010"
+   },
+   {
+    "name": "Solana TX",
+    "years": "2003–2010"
+   },
+   {
+    "name": "Solana Tx X",
+    "years": "2000–2002"
+   }
+  ],
+  "notes": [
+   "Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter."
+  ],
+  "oem": "71825"
+ },
+ {
+  "brand": "Hot Spring Spas",
+  "title": "Hot Spring Limelight 78161 Filter Cartridge",
+  "models": [
+   {
+    "name": "Limelight Beam BMI",
+    "years": "2018–2026"
+   },
+   {
+    "name": "Limelight Beam BMII",
+    "years": "2018–2026"
+   },
+   {
+    "name": "Limelight Flair",
+    "years": "2018–2026"
+   },
+   {
+    "name": "Limelight Flash",
+    "years": "2018–2026"
+   },
+   {
+    "name": "Limelight Pulse",
+    "years": "2018–2026"
+   }
+  ],
+  "notes": [],
+  "oem": "78161"
+ },
+ {
+  "brand": "Hot Spring Spas",
+  "title": "Hot Spring Prism 78286 Filter Cartridge",
+  "models": [
+   {
+    "name": "Limelight Prism",
+    "years": "2018–2026"
+   }
+  ],
+  "notes": [],
+  "oem": "78286"
+ },
+ {
+  "brand": "Hot Spring Spas",
+  "title": "Hot Springs Tri-X 79435 Filter Cartridge",
+  "models": [
+   {
+    "name": "Highlife Accolade",
+    "years": "2005–2006"
+   },
+   {
+    "name": "Highlife Aria AR",
+    "years": "2007–2018"
+   },
+   {
+    "name": "Highlife Aria NXT",
+    "years": "2017–2026"
+   },
+   {
+    "name": "Highlife Classic F",
+    "years": "1990–2000"
+   },
+   {
+    "name": "Highlife Envoy KK",
+    "years": "2004–2018"
+   },
+   {
+    "name": "Highlife Envoy NXT",
+    "years": "2014–2026"
+   },
+   {
+    "name": "Highlife Grandee G",
+    "years": "1990–2007"
+   },
+   {
+    "name": "Highlife Grandee GG",
+    "years": "2005–2018"
+   },
+   {
+    "name": "Highlife Grandee NXT",
+    "years": "2014–2026"
+   },
+   {
+    "name": "Highlife ILE",
+    "years": "2003"
+   },
+   {
+    "name": "Highlife Jetsetter J",
+    "years": "1990–2010"
+   },
+   {
+    "name": "Highlife Jetsetter JJ",
+    "years": "2006–2018"
+   },
+   {
+    "name": "Highlife Jetsetter JJN",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Highlife Jetsetter LX JTN",
+    "years": "2014–2026"
+   },
+   {
+    "name": "Highlife Landmark S",
+    "years": "1995–2003"
+   },
+   {
+    "name": "Highlife Prodigy HN",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Highlife Prodigy H",
+    "years": "1990–2018"
+   },
+   {
+    "name": "Highlife Sovereign IIN",
+    "years": "2019–2026"
+   },
+   {
+    "name": "Highlife Sovereign ILE",
+    "years": "2002"
+   },
+   {
+    "name": "Highlife Sovereign I",
+    "years": "1990–2010"
+   },
+   {
+    "name": "Highlife Sovereign II",
+    "years": "2004–2018"
+   },
+   {
+    "name": "Highlife Triumph TRHN",
+    "years": "2019–2022"
+   },
+   {
+    "name": "Highlife Vanguard NXT",
+    "years": "2017–2026"
+   },
+   {
+    "name": "Highlife Vanguard V",
+    "years": "2001–2007"
+   },
+   {
+    "name": "Highlife Vanguard VV",
+    "years": "2005–2018"
+   },
+   {
+    "name": "Highlife Vista / Summit SS",
+    "years": "2004–2013"
+   }
+  ],
+  "notes": [],
+  "oem": "79435"
+ }
+]
