@@ -788,7 +788,8 @@
    "oem": "1642301-1",
    "oemAll": "1642301-1; 78161",
    "equivalents": {
-    "unicel": "C-6355"
+    "unicel": "C-6355",
+    "pleatco": "PWK35B"
    },
    "dimensions": {
     "diameterIn": 6,
@@ -799,9 +800,9 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 75.0
    },
-   "notes": "Unicel spec note: original is 6-3/8\" OD",
-   "status": "needs_verification",
-   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; only Unicel lists C-6355 for this OEM; no second source",
+   "notes": "Unicel spec note: original is 6-3/8\" OD (Unicel's replacement measures 6\"). Pleatco lists the same OEM number, 1642301-1, for PWK35B at 6-3/8\" x 14\" with 1-15/16\" openings, and the Leisure Time dealer listing for Hot Spring part 78161 gives 1642301-1 as the alternate part number, 14\" long, about 6-1/4\" OD, open 2\" top and bottom. The area ratings differ: Unicel rates C-6355 at 75 sq ft, the dealer lists the factory 78161 at 50 sq ft and Pleatco rates PWK35B at 35 sq ft.",
+   "status": "verified",
+   "gaps": "sq ft rating differs between Unicel (75), the dealer listing for 78161 (50) and Pleatco PWK35B (35); no Filbur equivalent found in Filbur catalog",
    "fitment": [
     {
      "model": "Limelight Beam BMI",
@@ -834,7 +835,7 @@
      "src": "lt"
     }
    ],
-   "pleatcoNote": "",
+   "pleatcoNote": "matched by OEM 1642301-1 in the Pleatco 2023 spec table (PDF p.33: 6-3/8\" x 14\", 1-15/16\" open both ends, 35 sq ft, Watkins Hot Spring Spas); not in the Pleatco Unicel cross reference",
    "filburNote": "",
    "index": true,
    "sources": [
@@ -846,7 +847,12 @@
     {
      "source": "Leisure Time Inc. (Hot Spring/Caldera dealer)",
      "url": "https://leisuretimeinc.com/products/hotspring-limelight-78161-filter-cartridge",
-     "where": "Compatibility section: model and model-year list"
+     "where": "Compatibility section: model and model-year list; Specifications: part 78161, alternate part number 1642301-1, 50 sq ft, length 14 in, OD approx. 6-1/4 in, open 2 in top and bottom"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "spec table PDF p.33 (Watkins Hot Spring Spas, 6 3/8 x 14, 1-15/16 / 1-15/16, 35 sq ft, OEM 1642301-1 = PWK35B)"
     }
    ]
   },
@@ -1360,7 +1366,7 @@
    "modelSlug": "c-4950",
    "series": "Caldera (Watkins)",
    "oem": "302005",
-   "oemAll": "302005; 73533; 76076",
+   "oemAll": "302005; 73533",
    "equivalents": {
     "unicel": "C-4950",
     "pleatco": "PRB50-IN",
@@ -1375,10 +1381,29 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
    },
-   "notes": "In the Unicel layout, 73533 and 76076 sit on the lines below 302005 with no Unicel number beside them; we read them as belonging to C-4950 but have no second source",
-   "status": "needs_verification",
-   "gaps": "no model/model-year fitment in sources; OEM number assignment ambiguous in Unicel layout; no second source",
-   "fitment": [],
+   "notes": "In the Unicel layout, 73533 and 76076 sit on the lines below 302005. A Spa Parts Depot listing confirms Caldera 73533 as a 4-15/16\" x 13-5/16\" 50 sq ft cartridge with a 2-1/8\" hole top and bottom that “also replaces C-4950”, for the Caldera Oasis, Oasis II and San Gabriel. 76076 is a different cartridge: a Watkins dealer lists it as 10\" tall and 5-1/4\" across with a 2-1/8\" centre hole (Hot Spot Sprint/Dash and Caldera Vacanza Lina/Cima), so it is not shown as an OEM number for C-4950.",
+   "status": "verified",
+   "gaps": "302005 is listed only by Unicel; no model-year fitment in sources",
+   "fitment": [
+    {
+     "model": "Caldera Oasis",
+     "years": "",
+     "note": "",
+     "src": "spd"
+    },
+    {
+     "model": "Caldera Oasis II",
+     "years": "",
+     "note": "",
+     "src": "spd"
+    },
+    {
+     "model": "Caldera San Gabriel",
+     "years": "",
+     "note": "",
+     "src": "spd"
+    }
+   ],
    "pleatcoNote": "",
    "filburNote": "",
    "index": true,
@@ -1397,6 +1422,16 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Unicel-to-Filbur reverse cross reference, printed p.64 (PDF p.33)"
+    },
+    {
+     "source": "Spa Parts Depot (retailer)",
+     "url": "https://spapartsdepot.com/caldera-oasis-oasis-ii-san-gabriel-50-sq-ft-filter-73533/",
+     "where": "Caldera 73533: 4-15/16\" dia x 13-5/16\" tall, 2-1/8\" hole top and bottom, 50 sq ft, “Also Replaces C-4950”; for Caldera Oasis, Oasis II, San Gabriel"
+    },
+    {
+     "source": "Spring Dance Hot Tubs (Watkins dealer)",
+     "url": "https://store.springdancehottubs.com/products/76076-caldera-hot-spring-50-sq-ft-filter",
+     "where": "76076: 10\" tall, 5-1/4\" diameter, 2-1/8\" centre hole; Hot Spot Sprint/Dash, Caldera Vacanza Lina/Cima (a different cartridge)"
     }
    ]
   },
@@ -3735,11 +3770,11 @@
   {
    "brand": "Cal Spas",
    "brandSlug": "cal-spas",
-   "model": "5CH-502 cartridge",
+   "model": "5CH-502 cartridge (OEM FIL11100202)",
    "modelSlug": "5ch-502",
    "series": "Cal Spas",
-   "oem": "",
-   "oemAll": "",
+   "oem": "FIL11100202",
+   "oemAll": "FIL11100202; FIL11100200; FIL11100201",
    "equivalents": {
     "unicel": "5CH-502",
     "pleatco": "PPM50SC-F2M",
@@ -3754,9 +3789,9 @@
     "bottomCore": "2” male thread/MPT",
     "sqft": 50.0
    },
-   "notes": "Unicel prints OEM FIL11100202 on its own line between 5CH-502 and 5CH-752, so it is not assigned to either row here",
-   "status": "needs_verification",
-   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry; OEM number ambiguous in Unicel layout",
+   "notes": "Unicel prints OEM FIL11100202 on its own line between 5CH-502 and 5CH-752. Two Cal Spas parts retailers resolve it: Hot Tub Outpost lists Cal Spas FIL11100202 as a 50 sq ft cartridge, 12-1/2\" long with a handle top and 2\" MPT bottom, that replaces FIL11100200 and FIL11100201 and crosses to Unicel 5CH-502 and Pleatco PPM50SC-F2M; Wizard of Spas lists FIL11100202 (and FIL11100201) as the Cal Spas 50 sq ft cartridge with Filbur FC-0195M. Hot Tub Outpost prints the diameter as 5-1/8\" (Unicel and Filbur: 5-3/16\") and gives the Filbur number as FC-0196, which the Filbur catalog assigns to the 35 sq ft 5CH-352; the Filbur match shown here is the catalog's own FC-0195.",
+   "status": "verified",
+   "gaps": "FIL11100202 is tied to 5CH-502 by retailer listings, not by a manufacturer page; no model/model-year fitment in sources",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -3776,6 +3811,16 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Cal Spas, printed p.29 (PDF p.15)"
+    },
+    {
+     "source": "Hot Tub Outpost (Cal Spas parts retailer)",
+     "url": "https://www.hottuboutpost.com/cal-spa-50-square-foot-filter-calfil11100202/",
+     "where": "Cal Spa 50 Square Foot Filter, MPN FIL11100202: 5-1/8\" OD, 12-1/2\" long, handle top, 2\" MPT bottom; replaces FIL11100200 and FIL11100201; Unicel 5CH-502, Pleatco PPM50SC-F2M"
+    },
+    {
+     "source": "Wizard of Spas (Cal Spas parts retailer)",
+     "url": "https://wizardofspas.com/products/fil11100201",
+     "where": "FIL11100202 Cal Spas 50 sq ft cartridge; lists FC-0195M, FIL11100201, FIL11100202"
     }
    ]
   },
@@ -5007,7 +5052,7 @@
    },
    "notes": "Closed-top cartridge, old style. Unicel lists OEM 20044 and 370-0236 for it, but Filbur prints a different Marquis number, 370-217, for the same 5-3/16\" x 14-1/8\" closed-top size (FC-3638, PPM50TC), so the OEM mapping needs checking.",
    "status": "needs_verification",
-   "gaps": "OEM number differs between Unicel (370-0236) and Filbur (370-217); no model/model-year fitment in sources",
+   "gaps": "OEM number differs between Unicel (370-0236) and Filbur (370-217); Filbur prints Marquis numbers in short form elsewhere (370-215, 370-216 where Unicel prints 370-0215, 370-0216), so 370-217 is probably 370-0217, still a different number; no second source found; no model/model-year fitment in sources",
    "fitment": [],
    "pleatcoNote": "as printed in the Filbur catalog Marquis Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
@@ -5925,7 +5970,8 @@
    "oemAll": "90-802",
    "equivalents": {
     "unicel": "6CH-25",
-    "pleatco": "PTL20W-SV-P4"
+    "pleatco": "PTL20W-SV-P4",
+    "filbur": "FC-0305"
    },
    "dimensions": {
     "diameterIn": 6,
@@ -5936,9 +5982,9 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 25.0
    },
-   "notes": "Unicel rates 6CH-25 at 25 sq ft; Pleatco rates PTL20W-SV-P4 (same OEM 90-802, 6\" x 5-1/2\", handle, 1-1/2\" MPT) at 20 sq ft, so the area rating differs between the two catalogs. Size, OEM number and fitting agree.",
-   "status": "needs_verification",
-   "gaps": "sq ft rating differs between Unicel (25) and Pleatco (20); no Filbur equivalent found; no model-year fitment in sources",
+   "notes": "Unicel rates 6CH-25 at 25 sq ft; Pleatco rates PTL20W-SV-P4 (same OEM 90-802, 6\" x 5-1/2\", handle, 1-1/2\" MPT) at 20 sq ft. The Filbur catalog lists FC-0305 against the same OEM 90-802 at 6\" x 5-1/2\", handle top, 1-1/2\" MPT, 25 sq ft, and cross-references it to PTL20W-SV-P-4 and 6CH-25. Size, OEM number and fitting agree across all three catalogs.",
+   "status": "verified",
+   "gaps": "sq ft rating differs between Unicel/Filbur (25) and Pleatco (20); Filbur files OEM 90-802 under Softsider Spas rather than Softub; no model-year fitment in sources",
    "fitment": [
     {
      "model": "Softub; Leisure Bay (6 x 5-1/2, TSC)",
@@ -5948,7 +5994,7 @@
     }
    ],
    "pleatcoNote": "",
-   "filburNote": "",
+   "filburNote": "Filbur lists FC-0305 under Softsider Spas with the same OEM 90-802 (printed p.50, PDF p.26); Filbur does not name Softub",
    "index": true,
    "sources": [
     {
@@ -5960,6 +6006,11 @@
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
      "where": "Unicel-to-Pleatco cross reference, PDF p.47 (6CH-25 = PTL20W-SV-P4); spec table PDF p.33 (Softub; Leisure Bay; 6 x 5-1/2, OEM 90-802)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Softsider Spas (continued), printed p.50 (PDF p.26): FC-0305, 6 x 5-1/2, handle, OEM 90-802, PTL20W-SV-P-4, 6CH-25, 25 sq ft"
     }
    ]
   },
@@ -6005,7 +6056,7 @@
    "modelSlug": "c-4317",
    "series": "Intex PureSpa Type S1 (inflatable spa)",
    "oem": "29001E",
-   "oemAll": "29001E; 29001; 11692",
+   "oemAll": "29001E; 29011E; 29001; 11692",
    "equivalents": {
     "unicel": "C-4317",
     "pleatco": "PIN4PAIR"
@@ -6019,51 +6070,153 @@
     "bottomCore": "2-1/16\" / open",
     "sqft": 4.0
    },
-   "notes": "Intex sells this cartridge as SKU 29001E (Type S1) for PureSpa inflatable hot tubs. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees.",
+   "notes": "Intex sells this cartridge as Type S1: 29001E (twin pack), 29011E (six-pack) and single replacement part 11692. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees. The model list is Intex's own compatible-item list for part 11692 (Intex marks four 2019 sets with the year). A Home Depot listing for 29001E also names 28413E, 28423E and 28443E, which are not on Intex's list. The EG/EH versions of 28425, 28427, 28439 and 28441 take the newer Type S2 cartridge instead.",
    "status": "needs_verification",
-   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); model list is from a retailer listing, not Intex's own page; no Filbur equivalent found; no model-year fitment in sources",
+   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found",
    "fitment": [
     {
      "model": "Intex PureSpa 28403E",
-     "years": "",
+     "years": "2019",
      "note": "",
-     "src": "hd"
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28405E",
+     "years": "2019",
+     "note": "",
+     "src": "intex"
     },
     {
      "model": "Intex PureSpa 28407E",
-     "years": "",
+     "years": "2019",
      "note": "",
-     "src": "hd"
+     "src": "intex"
     },
     {
-     "model": "Intex PureSpa 28413E",
+     "model": "Intex PureSpa 28409E",
+     "years": "2019",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28413WL",
      "years": "",
      "note": "",
-     "src": "hd"
+     "src": "intex"
     },
     {
      "model": "Intex PureSpa 28421E",
      "years": "",
      "note": "",
-     "src": "hd"
+     "src": "intex"
     },
     {
-     "model": "Intex PureSpa 28423E",
+     "model": "Intex PureSpa 28425E",
      "years": "",
      "note": "",
-     "src": "hd"
+     "src": "intex"
     },
     {
-     "model": "Intex PureSpa 28443E",
+     "model": "Intex PureSpa 28427E",
      "years": "",
      "note": "",
-     "src": "hd"
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28429E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28431E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28433EP",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28433WL",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28435E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28439E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28441E",
+     "years": "",
+     "note": "",
+     "src": "intex"
     },
     {
      "model": "Intex PureSpa 28453E",
+     "years": "2019",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28455E",
      "years": "",
      "note": "",
-     "src": "hd"
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28457E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28457EP",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28461E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28473E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28475E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex SimpleSpa 28481E",
+     "years": "",
+     "note": "",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28491E",
+     "years": "",
+     "note": "",
+     "src": "intex"
     }
    ],
    "pleatcoNote": "matched by OEM 29001E in the Pleatco 2023 spec table (PDF p.31); the Intex part is not in the Pleatco Unicel cross reference",
@@ -6071,9 +6224,19 @@
    "index": true,
    "sources": [
     {
+     "source": "Intex (manufacturer replacement-part page)",
+     "url": "https://intexcorp.com/replacement-parts/purespa/purespa-bubble-massage/77in-x-28in/11692-spa-s1-filter-cartridge/",
+     "where": "11692, Spa Cartridge (S1): Compatible Item List of 24 PureSpa/SimpleSpa set numbers"
+    },
+    {
      "source": "Intex (manufacturer product page)",
      "url": "https://intexcorp.com/products/spas/spa-accessories/filter-cartridge-s1-twin-pack/",
      "where": "Type S1 Hot Tub Filter Cartridge, SKU 29001E, described as the PureSpa replacement filter"
+    },
+    {
+     "source": "Intex (manufacturer product page)",
+     "url": "https://intexcorp.com/products/spas/spa-accessories/filter-cartridge-s1-six-pack/",
+     "where": "Type S1 filter cartridge six-pack, SKU 29011E"
     },
     {
      "source": "Unicel 2026 Replacement Guide",
@@ -6088,10 +6251,165 @@
     {
      "source": "Home Depot listing for Intex 29001E (retailer)",
      "url": "https://www.homedepot.com/p/Intex-4-25-in-Dia-Type-S1-Pool-Replacement-Filter-Cartridge-4-Pack-2-x-29001E/310718769",
-     "where": "Compatible-models list: PureSpa 28403E, 28407E, 28443E, 28453E, 28421E, 28423E, 28413E"
+     "where": "Compatible-models list: PureSpa 28403E, 28407E, 28443E, 28453E, 28421E, 28423E, 28413E (28413E, 28423E and 28443E are not on Intex's own list)"
     }
    ],
-   "searchTerm": "Intex 29001E"
+   "searchTerm": "Intex 29001E",
+   "label": "Type S1"
+  },
+  {
+   "brand": "Bestway",
+   "brandSlug": "bestway",
+   "label": "Type VI",
+   "model": "Type VI cartridge (Bestway 58323)",
+   "modelSlug": "58323",
+   "series": "Bestway Lay-Z-Spa and SaluSpa inflatable hot tubs",
+   "oem": "58323",
+   "oemAll": "58323; 58323E",
+   "equivalents": {},
+   "dimensions": {
+    "diameterIn": 4.2,
+    "lengthIn": 3.1,
+    "diameterText": "4.2\"",
+    "lengthText": "3.1\"",
+    "topCore": "",
+    "bottomCore": ""
+   },
+   "notes": "Bestway's US site gives the Type VI cartridge as Ø4.2\" x 3.1\" for its SaluSpa line, and the Lay-Z-Spa UK site sells the same Type VI cartridge as compatible with all Lay-Z-Spa hot tubs except the Monte Carlo, which takes its own rigid-spa cartridge. Neither Bestway page prints the part number; the Home Depot listing for the Bestway two-pack names it as 58323E-BW (4.2\" x 4.2\" x 3.1\"). The Unicel, Pleatco and Filbur catalogs do not list a Bestway Type VI equivalent, and no source gives an end-cap opening size or a sq ft rating.",
+   "status": "verified",
+   "gaps": "no Unicel, Pleatco or Filbur equivalent; no end-cap opening size or sq ft rating; part number 58323 is printed on a retailer listing, not on Bestway's own pages; no model-year fitment",
+   "fitment": [
+    {
+     "model": "Lay-Z-Spa hot tubs (all models except Monte Carlo)",
+     "years": "",
+     "note": "",
+     "src": "layzspa"
+    },
+    {
+     "model": "Bestway SaluSpa inflatable hot tubs",
+     "years": "",
+     "note": "Bestway USA: “Bestway's line of SaluSpas”",
+     "src": "bestway"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "searchTerm": "Bestway 58323 Type VI",
+   "sources": [
+    {
+     "source": "Bestway USA (manufacturer product page)",
+     "url": "https://bestwayusa.com/products/saluspa-type-vi-filter-cartridge-2-pack-1060311usx21",
+     "where": "SaluSpa Type VI Filter Cartridge 2-pack: size Ø4.2” x 3.1”, for Bestway's line of SaluSpas"
+    },
+    {
+     "source": "Lay-Z-Spa UK (Bestway brand site)",
+     "url": "https://www.lay-z-spa.co.uk/products/filter-cartridge-lay-z-spa-vi",
+     "where": "Filter Cartridge VI: “Compatible with all Lay-Z-Spa hot tubs (Except Monte Carlo)”"
+    },
+    {
+     "source": "Lay-Z-Spa UK (Bestway brand site)",
+     "url": "https://www.lay-z-spa.co.uk/products/rigid-spa-filter-cartridge",
+     "where": "Separate rigid-spa filter cartridge sold for the Monte Carlo (no part number or size printed)"
+    },
+    {
+     "source": "Home Depot listing for Bestway Type VI (retailer)",
+     "url": "https://www.homedepot.com/p/Bestway-4-2-in-Dia-Type-VI-SaluSpa-Hot-Tub-Replacement-Pool-Filter-Cartridge-2-Pack-2-x-58323E-BW/310718619",
+     "where": "Bestway Type VI SaluSpa filter cartridge 2-pack, model 2 x 58323E-BW; 4.2 in W x 4.2 in D x 3.1 in H"
+    }
+   ]
+  },
+  {
+   "brand": "Intex",
+   "brandSlug": "intex",
+   "label": "Type S2",
+   "model": "Type S2 cartridge (Intex 29012E)",
+   "modelSlug": "29012e",
+   "series": "Intex PureSpa Type S2 (newer PureSpa sets with the cartridge housed in the control unit)",
+   "oem": "29012E",
+   "oemAll": "29012E; 13435",
+   "equivalents": {},
+   "dimensions": {
+    "diameterIn": 3.375,
+    "lengthIn": 5.125,
+    "diameterText": "3-3/8\"",
+    "lengthText": "5-1/8\"",
+    "topCore": "",
+    "bottomCore": ""
+   },
+   "notes": "Intex sells the Type S2 cartridge as 29012E (twin pack) and as single replacement part 13435. Intex gives the size as 3.375\" x 5.125\" and says the S2 is only for PureSpa models with the cartridge built into the control unit. Intex Italia describes it as having 65% more filter surface than the S1 and fitting only the newer models. A Target listing for 29012E prints 3.5\" x 6.25\" per filter, which does not match Intex's figure; the size shown here is Intex's. Note the suffix: Intex lists 28425E, 28427E, 28439E and 28441E under the S1 cartridge, but the EG/EH versions of those sets under S2.",
+   "status": "verified",
+   "gaps": "no Unicel, Pleatco or Filbur equivalent; no sq ft rating or end-cap sizes; a Target listing prints a different size (3.5\" x 6.25\"); no model-year fitment",
+   "fitment": [
+    {
+     "model": "Intex PureSpa 28425EG",
+     "years": "",
+     "note": "Olive Green Round Bubble, 4-person",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28425EH",
+     "years": "",
+     "note": "Sahara Tan Round Bubble, 4-person",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28427EG",
+     "years": "",
+     "note": "Olive Green Round Bubble, 6-person",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28427EH",
+     "years": "",
+     "note": "Sahara Tan Round Bubble, 6-person",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28439EH",
+     "years": "",
+     "note": "Greywood Deluxe Round Bubble, 4-person",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28441EH",
+     "years": "",
+     "note": "Greywood Deluxe Round Bubble, 6-person",
+     "src": "intex"
+    },
+    {
+     "model": "Intex PureSpa 28449EH",
+     "years": "",
+     "note": "Greystone Deluxe Square Bubble, 4-person",
+     "src": "intex"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "searchTerm": "Intex 29012E",
+   "sources": [
+    {
+     "source": "Intex (manufacturer product page)",
+     "url": "https://intexcorp.com/spa-accessories/filter-cartridge-s2-twin-pack-for-spa/",
+     "where": "Filter Cartridge S2 Twin Pack, SKU 29012E: 3.375\" x 5.125\"; “Only for PureSpa models with control unit cartridge integration”"
+    },
+    {
+     "source": "Intex (manufacturer replacement-part page)",
+     "url": "https://intexcorp.com/replacement-parts/13435-spa-cartridge-s2/",
+     "where": "13435, Spa Cartridge (S2): Compatible Item List 28425EG, 28425EH, 28427EG, 28427EH, 28439EH, 28441EH, 28449EH"
+    },
+    {
+     "source": "Intex Italia (manufacturer distributor page)",
+     "url": "https://www.intexitalia.com/spa-idromassaggio/accessori-purespa/cartuccia-purespa-modello-s1-2-pezzi-29012/",
+     "where": "S2 cartridge: 65% more filter surface than S1; compatible only with new models with the cartridge housed in the motor unit"
+    },
+    {
+     "source": "Target listing for Intex 29012E (retailer)",
+     "url": "https://www.target.com/p/intex-29012e-purespa-filter-cartridge-type-s2-for-various-purespa-models-2-pack/-/A-1001846352",
+     "where": "Specifications: each filter 3.5 in x 6.25 in (differs from Intex's 3.375\" x 5.125\")"
+    }
+   ]
   }
  ]
 }

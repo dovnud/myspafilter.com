@@ -22,4 +22,4 @@ const pleats = Math.max(8, Math.round(W/9));
 <g font-family="Public Sans Variable,system-ui" font-size="15" fill="#4f6466">
 <text x={x-8} y={y-2} text-anchor="end">Top: {d.topCore||'—'}</text>
 <text x={x-8} y={y+H+12} text-anchor="end">Bottom: {d.bottomCore||'—'}</text></g>
-</svg><figcaption class="crumbs" style="text-align:center">Diagram drawn to scale from catalog dimensions · {d.sqft} sq ft media</figcaption></figure>
+</svg><figcaption class="crumbs" style="text-align:center">Diagram drawn to scale from the listed dimensions{d.sqft!=null ? ` · ${d.sqft} sq ft media` : ''}</figcaption></figure>

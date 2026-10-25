@@ -2,7 +2,7 @@ import raw from '../data/filters.json';
 export type Filter = { brand:string; brandSlug:string; model:string; modelSlug:string; oem:string;
   equivalents?: { unicel?:string; pleatco?:string; filbur?:string };
   dimensions: { diameterIn:number; lengthIn:number; topCore?:string; bottomCore?:string; sqft?:number };
-  notes?:string; searchTerm?:string;
+  notes?:string; searchTerm?:string; label?:string;
   series?:string; oemAll?:string; status?:string; gaps?:string; sources?:{source:string;url:string;where:string}[];
   fitment?:{model:string;years:string;note:string;src:string}[]; pleatcoNote?:string; filburNote?:string; index?:boolean;
   dimensions2?:never };
@@ -15,7 +15,9 @@ export const allParts = () => { const m = new Map<string,Filter[]>();
   for (const f of filters) for (const p of [f.oem, ...Object.values(f.equivalents||{}).flatMap(v=>String(v).split('/'))]) if (p && p.trim()) { const k=slug(p); m.set(k,[...(m.get(k)||[]),f]); }
   return m; };
 export const partLabel = (f:Filter) => f.equivalents?.unicel || f.equivalents?.pleatco || f.oem;
-export const fitSrc: Record<string,string> = { lt:'Leisure Time Inc. dealer listing', unicel:'Unicel 2026 Replacement Guide', pleatco:'Pleatco 2023 Catalog', hd:'Home Depot listing for Intex 29001E' };
+export const fitSrc: Record<string,string> = { lt:'Leisure Time Inc. dealer listing', unicel:'Unicel 2026 Replacement Guide', pleatco:'Pleatco 2023 Catalog', hd:'Home Depot listing for Intex 29001E', intex:'Intex compatible-item list', bestway:'Bestway USA product page', layzspa:'Lay-Z-Spa UK (Bestway) product page', spd:'Spa Parts Depot listing' };
+/** Sq ft text, or empty when no source gives a media area. */
+export const sqftText = (d:{sqft?:number}) => d.sqft!=null ? `${d.sqft} sq ft` : '';
 
 /** A page is indexable unless its row is flagged index:false (thin or single-source rows stay noindex). */
 export const isIndexable = (f:Filter) => f.index !== false;
