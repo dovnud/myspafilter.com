@@ -23,11 +23,6 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 35.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-35+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-35+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-35+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -69,11 +64,6 @@
     "topCore": "bar handle",
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 38.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=5CH-37+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=5CH-37+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=5CH-37+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -127,11 +117,6 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 25.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4326+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4326+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4326+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -178,11 +163,6 @@
     "topCore": "2-1/8\" / open",
     "bottomCore": "2-1/8\" / open",
     "sqft": 25.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4326+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4326+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4326+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -231,11 +211,6 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-5431+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-5431+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-5431+spa+filter"
-   },
    "notes": "Unicel spec: Model FH/IH (220 volt)",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -276,11 +251,6 @@
     "topCore": "1-15/16\" / open",
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6330+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6330+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6330+spa+filter"
    },
    "notes": "Unicel lists both C-6330 (3 oz media) and C-6430 (4 oz media, 'models dated after 1990') against these OEM numbers",
    "status": "verified",
@@ -323,11 +293,6 @@
     "topCore": "1-15/16\" / open",
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6430+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6430+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6430+spa+filter"
    },
    "notes": "4 oz media; Unicel: models dated after 1990. Leisure Time Inc. notes many models take three cartridges and that some use a Tri-X ceramic cartridge with the same footprint instead; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
    "status": "verified",
@@ -501,11 +466,6 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6430+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6430+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6430+spa+filter"
-   },
    "notes": "Unicel lists these OEM numbers under Hot Springs Spas and directs Hot Spot owners there; Hot Spot model fitment is from Leisure Time Inc.; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
    "status": "verified",
    "gaps": "",
@@ -618,11 +578,6 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6430+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6430+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6430+spa+filter"
-   },
    "notes": "Unicel does not list Solana separately; Solana model fitment for OEM 71825 is from Leisure Time Inc. Some Hot Spring-family spas use a Tri-X ceramic cartridge with the same footprint instead; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
    "status": "verified",
    "gaps": "",
@@ -705,11 +660,6 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6430+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6430+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6430+spa+filter"
-   },
    "notes": "Unicel lists OEM 31489 under Hot Springs Spas; the Caldera Vacanza fitment for 31489 is from Leisure Time Inc.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
    "status": "verified",
    "gaps": "",
@@ -777,11 +727,6 @@
     "topCore": "1-15/16\" / open",
     "bottomCore": "1-15/16\" / open",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6350+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6350+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6350+spa+filter"
    },
    "notes": "Pleatco 2023 lists OEM 1642301-1 as PWK35B (6-3/8\" x 14\", 35 sq ft), which does not match Unicel's 6\" OD / 50 sq ft, so no Pleatco equivalent is shown",
    "status": "verified",
@@ -853,11 +798,6 @@
     "topCore": "1-15/16\" / open",
     "bottomCore": "1-15/16\" / open",
     "sqft": 75.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6355+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6355+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6355+spa+filter"
    },
    "notes": "Unicel spec note: original is 6-3/8\" OD",
    "status": "needs_verification",
@@ -932,11 +872,6 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 33.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6433+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6433+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6433+spa+filter"
-   },
    "notes": "C-6433 discontinued by Unicel",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -979,11 +914,6 @@
     "bottomCore": "3\" / open",
     "sqft": 45.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-6600+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-6600+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-6600+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -1025,11 +955,6 @@
     "topCore": "3\" / open",
     "bottomCore": "3\" / open",
     "sqft": 65.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8465+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8465+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8465+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -1185,11 +1110,6 @@
     "bottomCore": "3\" / open",
     "sqft": 65.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8465+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8465+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8465+spa+filter"
-   },
    "notes": "Unicel lists these OEM numbers under Hot Springs Spas; Hot Spot model fitment is from Leisure Time Inc.",
    "status": "verified",
    "gaps": "",
@@ -1272,11 +1192,6 @@
     "bottomCore": "2-11/16\" / open",
     "sqft": 50.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7350+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7350+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7350+spa+filter"
-   },
    "notes": "Unicel lists these OEM numbers under Caldera Spas; the Hot Spot Sorrento fitment is from Leisure Time Inc.; Leisure Time Inc.: For a 2024 Makena, confirm the spa serial number before ordering. Other Makena years use a different cartridge.",
    "status": "verified",
    "gaps": "",
@@ -1336,11 +1251,6 @@
     "bottomCore": "2-11/16\" / open",
     "sqft": 75.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7375+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7375+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7375+spa+filter"
-   },
    "notes": "Unicel lists these OEM numbers under Caldera Spas; the Hot Spot Mallorca fitment is from Leisure Time Inc.; Leisure Time Inc.: For a 2004 Hawaiian HAA or a 2024 Makena, check the spa serial number before ordering.",
    "status": "verified",
    "gaps": "",
@@ -1399,11 +1309,6 @@
     "topCore": "2-1/8\" / open",
     "bottomCore": "2-1/8\" / open",
     "sqft": 35.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4335+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4335+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4335+spa+filter"
    },
    "notes": "Leisure Time Inc.: For a 2019 Aventine, check the spa serial number to confirm the filter.",
    "status": "verified",
@@ -1470,11 +1375,6 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
-   },
    "notes": "In the Unicel layout, 73533 and 76076 sit on the lines below 302005 with no Unicel number beside them; we read them as belonging to C-4950 but have no second source",
    "status": "needs_verification",
    "gaps": "no model/model-year fitment in sources; OEM number assignment ambiguous in Unicel layout; no second source",
@@ -1521,11 +1421,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "2-11/16\" / open",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7350+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7350+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7350+spa+filter"
    },
    "notes": "Leisure Time Inc.: For a 2024 Makena, confirm the spa serial number before ordering. Other Makena years use a different cartridge.",
    "status": "verified",
@@ -1632,11 +1527,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "2-11/16\" / open",
     "sqft": 75.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7375+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7375+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7375+spa+filter"
    },
    "notes": "Unicel lists 75/100 sq ft against this OEM; Leisure Time Inc.: For a 2004 Hawaiian HAA or a 2024 Makena, check the spa serial number before ordering.",
    "status": "verified",
@@ -1840,11 +1730,6 @@
     "bottomCore": "2” male slip fitting",
     "sqft": 50.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7451+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7451+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7451+spa+filter"
-   },
    "notes": "Unicel: C-7350 can also be used",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -1891,11 +1776,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "2” male slip fitting",
     "sqft": 75.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7479+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7479+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7479+spa+filter"
    },
    "notes": "Unicel: C-7375 can also be used",
    "status": "verified",
@@ -1947,11 +1827,6 @@
     "topCore": "3-1/8\" / open w/ molded gasket",
     "bottomCore": "3-1/8\" / open w/ molded gasket",
     "sqft": 100.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8300+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8300+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8300+spa+filter"
    },
    "notes": "Leisure Time Inc. also lists Hot Spring 77004 and Pleatco PWK100 for this cartridge; PWK100 is not in the Pleatco 2023 spec tables, so it is not shown as an equivalent; Leisure Time Inc.: For 2014 Cantabria spas, confirm the production quarter. Q3–Q4 production uses 73722.",
    "status": "verified",
@@ -2011,11 +1886,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "3-5/8\" / open w/ lip seal",
     "sqft": 100.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8399+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8399+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8399+spa+filter"
    },
    "notes": "Leisure Time Inc.: For 2014 Cantabria spas, confirm the production quarter. This cartridge is for Q3–Q4 production; Q1–Q2 uses 74817.",
    "status": "verified",
@@ -2123,11 +1993,6 @@
     "bottomCore": "3\" / open",
     "sqft": 65.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8465+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8465+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8465+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "",
@@ -2204,11 +2069,6 @@
     "bottomCore": "2-3/8\" / open",
     "sqft": 25.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-5625+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-5625+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-5625+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -2256,11 +2116,6 @@
     "bottomCore": "2-3/8\" / open",
     "sqft": 37.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-5635+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-5635+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-5635+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -2303,11 +2158,6 @@
     "bottomCore": "3\" / open w/ step",
     "sqft": 40.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7304+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7304+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7304+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -2349,11 +2199,6 @@
     "topCore": "3\" / open w/ step",
     "bottomCore": "3\" / open w/ step",
     "sqft": 60.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7306+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7306+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7306+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -2401,11 +2246,6 @@
     "bottomCore": "2\" SAE thread",
     "sqft": 35.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-934+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-934+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-934+spa+filter"
-   },
    "notes": "Filbur lists OEM 2540-387 as FC-2761 (4-5/8\" x 12-1/2\") but prints \"3\" in its sq ft column and gives no Unicel/Pleatco cross-reference",
    "status": "verified",
    "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no model/model-year fitment in sources",
@@ -2447,11 +2287,6 @@
     "topCore": "bar handle",
     "bottomCore": "2” male thread/MPT",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=5CH-402+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=5CH-402+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=5CH-402+spa+filter"
    },
    "notes": "OEM original 11\" OAL, 5-1/2\" OD",
    "status": "verified",
@@ -2499,11 +2334,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "2\" SAE thread",
     "sqft": 45.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-945+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-945+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-945+spa+filter"
    },
    "notes": "Leisure Time Inc. warns that J-460 spas used several non-interchangeable cartridges; confirm size and thread against your old filter",
    "status": "verified",
@@ -2558,11 +2388,6 @@
     "bottomCore": "2\" SAE thread",
     "sqft": 60.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-959+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-959+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-959+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference",
@@ -2612,11 +2437,6 @@
     "bottomCore": "2\" SAE thread",
     "sqft": 75.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-960+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-960+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-960+spa+filter"
-   },
    "notes": "sq ft 75/60 by OEM P/N",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -2663,11 +2483,6 @@
     "topCore": "open w/ slots",
     "bottomCore": "2\" SAE thread",
     "sqft": 75.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-961+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-961+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-961+spa+filter"
    },
    "notes": "Requires injection molded semi-circular handle (not furnished)",
    "status": "verified",
@@ -2716,11 +2531,6 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 25.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4326+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4326+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4326+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -2767,11 +2577,6 @@
     "topCore": "2-1/8\" / open",
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
    },
    "notes": "Same OEM P/N listed for 25 and 50 sq ft",
    "status": "verified",
@@ -2820,11 +2625,6 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 25.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-30+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-30+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-30+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -2867,11 +2667,6 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 40.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-35+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-35+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-35+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -2913,11 +2708,6 @@
     "topCore": "bar handle",
     "bottomCore": "2” male thread/MPT",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=5CH-402+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=5CH-402+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=5CH-402+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -2966,11 +2756,6 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 45.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-47+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-47+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-47+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3018,11 +2803,6 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 90.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=7CH-90+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=7CH-90+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=7CH-90+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3064,11 +2844,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "2” male thread/MPT",
     "sqft": 95.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=8CH-102+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=8CH-102+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=8CH-102+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -3117,11 +2892,6 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4305+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4305+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4305+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3168,11 +2938,6 @@
     "topCore": "2-1/8\" / open",
     "bottomCore": "2-1/8\" / open",
     "sqft": 35.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4335+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4335+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4335+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -3228,11 +2993,6 @@
     "bottomCore": "2-1/16\" / open",
     "sqft": 40.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4440+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4440+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4440+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3274,11 +3034,6 @@
     "topCore": "2-1/8\" / open",
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -3327,11 +3082,6 @@
     "bottomCore": "2-1/2\" / open w/ beveled edge",
     "sqft": 75.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7370+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7370+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7370+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3379,11 +3129,6 @@
     "bottomCore": "2-1/16\" / open",
     "sqft": 65.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7465+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7465+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7465+spa+filter"
-   },
    "notes": "2-1/16\" bottom ID",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3425,11 +3170,6 @@
     "topCore": "castle",
     "bottomCore": "2-5/8\" / open",
     "sqft": 65.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7466+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7466+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7466+spa+filter"
    },
    "notes": "2-5/8\" bottom ID",
    "status": "verified",
@@ -3478,11 +3218,6 @@
     "bottomCore": "2-1/2\" / open w/ beveled edge",
     "sqft": 125.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8325+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8325+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8325+spa+filter"
-   },
    "notes": "Replaces 18\"-18-1/2\" OAL; also replaces discontinued C-8320 (OEM 6540-482)",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3529,11 +3264,6 @@
     "topCore": "1-1/2\" male slip fitting",
     "bottomCore": "2-1/2\" / open w/ beveled edge",
     "sqft": 125.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8326+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8326+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8326+spa+filter"
    },
    "notes": "Contains core block/plug",
    "status": "verified",
@@ -3588,11 +3318,6 @@
     "topCore": "1-1/2\" male slip fitting",
     "bottomCore": "2-1/2\" / open w/ beveled edge",
     "sqft": 125.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8327+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8327+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8327+spa+filter"
    },
    "notes": "Unicel: no core block/plug. Leisure Time Inc. describes C-8326 and C-8327 as the same cartridge; Unicel distinguishes them by the core plug",
    "status": "verified",
@@ -3653,11 +3378,6 @@
     "bottomCore": "2-1/2\" / open w/ beveled edge",
     "sqft": 80.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8380+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8380+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8380+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3704,11 +3424,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "injection molded 1-1/2\" SAE thread",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-940+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-940+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-940+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -3757,11 +3472,6 @@
     "bottomCore": "2\" SAE thread",
     "sqft": 50.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=8CH-950+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=8CH-950+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=8CH-950+spa+filter"
-   },
    "notes": "Unicel: 8CH-950 discontinued, use 8CH-951. Pleatco 2023 cross-references 8CH-950 to PBF35, whose spec row lists OEM 10-2785 (Bullfrog 35, 2003-2012, short thread) rather than 10-1035",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -3807,11 +3517,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "2\" SAE thread",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=8CH-951+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=8CH-951+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=8CH-951+spa+filter"
    },
    "notes": "Unicel: filtration area of the original cartridge is 35 sq ft; also replaces the Bullfrog 6\" OAL element with shorter threaded end. Unicel's spec table rates 8CH-951 at 40 sq ft",
    "status": "verified",
@@ -3867,11 +3572,6 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 35.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4335+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4335+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4335+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -3918,11 +3618,6 @@
     "topCore": "2-1/8\" / open",
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -3971,11 +3666,6 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 13.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-19+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-19+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-19+spa+filter"
-   },
    "notes": "Unicel: verify thread diameter",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -4022,11 +3712,6 @@
     "bottomCore": "2” male thread/MPT",
     "sqft": 25.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-252+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-252+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-252+spa+filter"
-   },
    "notes": "Unicel: Cal Spa original has 4-3/4\" OD",
    "status": "verified",
    "gaps": "no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources",
@@ -4068,11 +3753,6 @@
     "topCore": "bar handle",
     "bottomCore": "2” male thread/MPT",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=5CH-502+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=5CH-502+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=5CH-502+spa+filter"
    },
    "notes": "Unicel prints OEM FIL11100202 on its own line between 5CH-502 and 5CH-752, so it is not assigned to either row here",
    "status": "needs_verification",
@@ -4120,11 +3800,6 @@
     "topCore": "bar handle",
     "bottomCore": "2” male thread/MPT",
     "sqft": 75.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=5CH-752+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=5CH-752+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=5CH-752+spa+filter"
    },
    "notes": "Leisure Time Inc. lists Cal Spas OEM 50753 for 5CH-752 (single retailer source, not shown as OEM). Filbur's catalog prints the Unicel number beside FC-0202 as \"5CH-702\"",
    "status": "verified",
@@ -4176,11 +3851,6 @@
     "bottomCore": "2\" SAE thread",
     "sqft": 75.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-975+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-975+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-975+spa+filter"
-   },
    "notes": "",
    "status": "needs_verification",
    "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources",
@@ -4217,11 +3887,6 @@
     "topCore": "2-1/8\" / open",
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4305+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4305+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4305+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -4270,11 +3935,6 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4950+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4950+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4950+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -4321,11 +3981,6 @@
     "topCore": "2-1/8\" / open",
     "bottomCore": "2-1/8\" / open",
     "sqft": 100.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-4995+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-4995+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-4995+spa+filter"
    },
    "notes": "",
    "status": "verified",
@@ -4374,11 +4029,6 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 75.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-5374+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-5374+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-5374+spa+filter"
-   },
    "notes": "Filbur lists its FC-2971 equivalent at 5-5/16\" x 14-11/16\", 65 sq ft",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -4426,11 +4076,6 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 20.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-20+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-20+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-20+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -4471,11 +4116,6 @@
     "topCore": "molded cone handle",
     "bottomCore": "2” male thread/MPT",
     "sqft": 25.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-252+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-252+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-252+spa+filter"
    },
    "notes": "Unicel: Master Spas original has 4-3/4\" OD",
    "status": "verified",
@@ -4531,11 +4171,6 @@
     "bottomCore": "2\" female SAE thread",
     "sqft": 35.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-935+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-935+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-935+spa+filter"
-   },
    "notes": "Unicel: replacement for 5\" OD Eco-Pur systems; must verify OAL",
    "status": "verified",
    "gaps": "no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -4577,11 +4212,6 @@
     "topCore": "v-groove semi-circular handle",
     "bottomCore": "2\" female SAE thread",
     "sqft": 50.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=4CH-949+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=4CH-949+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=4CH-949+spa+filter"
    },
    "notes": "Unicel: replacement for 5\" OD Eco-Pur systems; must verify OAL",
    "status": "verified",
@@ -4630,11 +4260,6 @@
     "bottomCore": "2” male thread/MPT",
     "sqft": 35.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-352+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-352+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-352+spa+filter"
-   },
    "notes": "Unicel: must remove black stand pipe. Filbur cross-references 6CH-352 to FC-0312 but lists FC-0312 at 6\" x 7\"",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources",
@@ -4681,11 +4306,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "2” male thread/MPT",
     "sqft": 40.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-402+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-402+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-402+spa+filter"
    },
    "notes": "Unicel prints PMA40L-F2M (a Pleatco number) in its OEM column; Pleatco lists Master Spas Twilight OEM X268365 for PMA40L-F2M. Unicel: must remove black stand pipe",
    "status": "verified",
@@ -4736,11 +4356,6 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 45.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-45+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-45+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-45+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -4782,11 +4397,6 @@
     "topCore": "semi-circular handle",
     "bottomCore": "injection molded 1-1/2\" SAE thread",
     "sqft": 45.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=6CH-940+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=6CH-940+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=6CH-940+spa+filter"
    },
    "notes": "Unicel: for use in Master Spas swim spas",
    "status": "verified",
@@ -4842,11 +4452,6 @@
     "bottomCore": "2” male thread/MPT",
     "sqft": 32.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=7CH-322+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=7CH-322+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=7CH-322+spa+filter"
-   },
    "notes": "Unicel: replacement for 7\" or 8\" OD Eco-Pur systems; remove black stand pipe for 8\" OD",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -4894,11 +4499,6 @@
     "bottomCore": "2” male thread/MPT",
     "sqft": 60.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=8CH-66+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=8CH-66+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=8CH-66+spa+filter"
-   },
    "notes": "",
    "status": "verified",
    "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -4945,11 +4545,6 @@
     "bottomCore": "2-3/16\" / open",
     "sqft": 8.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-3310AM+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-3310AM+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-3310AM+spa+filter"
-   },
    "notes": "Unicel: antimicrobial media; used with a C-7330 or C-8341 outer cartridge in Eco-Pur systems",
    "status": "verified",
    "gaps": "no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
@@ -4991,11 +4586,6 @@
     "topCore": "4-1/8\" / open",
     "bottomCore": "4-1/8\" / open",
     "sqft": 30.0
-   },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-7330+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-7330+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-7330+spa+filter"
    },
    "notes": "Unicel: part of Eco-Pur filtration system, 2002 to 2005",
    "status": "verified",
@@ -5051,11 +4641,6 @@
     "bottomCore": "4\" / open w/ raised ring",
     "sqft": 40.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=C-8341+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=C-8341+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=C-8341+spa+filter"
-   },
    "notes": "Unicel: part of Eco-Pur filtration system, 2006 to present; two 40 sq ft cartridges required",
    "status": "verified",
    "gaps": "Unicel lists no OEM part number for this brand entry",
@@ -5108,11 +4693,6 @@
     "bottomCore": "4-1/2\" open (coreless)",
     "sqft": 18.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=PBF17+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=PBF17+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=PBF17+spa+filter"
-   },
    "notes": "Pleatco: Bullfrog 18 coreless, 2017-current. Leisure Time Inc. rates the OEM 10-00281 cartridge at approximately 27 sq ft and notes 2015-2017 STIL spas need Filter Core Cage & Cap Assembly 10-00417; Leisure Time Inc.: Coreless cartridge; the correct filter cage and cap must be installed.",
    "status": "verified",
    "gaps": "no Unicel equivalent in Unicel 2026 guide; no Filbur equivalent found; sq ft rating differs between Pleatco and Leisure Time",
@@ -5160,11 +4740,6 @@
     "bottomCore": "4-1/2\" open (coreless)",
     "sqft": 30.0
    },
-   "buy": {
-    "filtersfast": "https://www.filtersfast.com/search?q=PBF40+spa+filter",
-    "amazon": "https://www.amazon.com/s?k=PBF40+spa+filter",
-    "dohenys": "https://www.doheny.com/search?q=PBF40+spa+filter"
-   },
    "notes": "Pleatco: Bullfrog 30 coreless, 2017-current. Leisure Time Inc. rates the OEM 10-00282 cartridge at 50 sq ft and notes 2013-2017 A/R/X spas need the Filter Core Cage & Cap Assembly; 2023-and-newer A Series use Simplicity flat filters; Leisure Time Inc.: Coreless cartridge; the correct filter cage and cap must be installed. 2023-and-newer A Series models use Simplicity flat filters.",
    "status": "verified",
    "gaps": "no Unicel equivalent in Unicel 2026 guide; no Filbur equivalent found; sq ft rating differs between Pleatco and Leisure Time",
@@ -5203,6 +4778,1320 @@
      "where": "Product page: OEM number, model list and years"
     }
    ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "5CH-352 cartridge (OEM 20042)",
+   "modelSlug": "5ch-352",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "20042",
+   "oemAll": "20042; 20092; 370-0240; 370-0242; 370-0243; 370-0683; 370-0698",
+   "equivalents": {
+    "unicel": "5CH-352",
+    "pleatco": "PPM35SC-F2M",
+    "filbur": "FC-0196"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 12.5,
+    "diameterText": "5-3/16\"",
+    "lengthText": "12-1/2\"",
+    "topCore": "bar handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 35.0
+   },
+   "notes": "Pleatco 2023 lists OEM 20042, 370-0242 and 370-0243 for PPM35SC-F2M; Filbur lists OEM 370-0242 for FC-0196 and prints N/A in its Pleatco column.",
+   "status": "verified",
+   "gaps": "no model-year fitment in sources",
+   "fitment": [
+    {
+     "model": "Pacific Marquis Spas",
+     "years": "",
+     "note": "Pleatco spec table, OEM 20042 / 370-0242 / 370-0243",
+     "src": "pleatco"
+    },
+    {
+     "model": "Cal Spas Low Flow Recirc 36SF",
+     "years": "",
+     "note": "same Pleatco row",
+     "src": "pleatco"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (5CH-352 = PPM35SC-F2M); spec table PDF p.32 (OEM 20042, 370-0242, 370-0243)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.42 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "5CH-502 cartridge (OEM 20041)",
+   "modelSlug": "5ch-502",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "20041",
+   "oemAll": "20041; 20091; 370-0237",
+   "equivalents": {
+    "unicel": "5CH-502",
+    "pleatco": "PPM50SC-F2M",
+    "filbur": "FC-0195"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 12.5,
+    "diameterText": "5-3/16\"",
+    "lengthText": "12-1/2\"",
+    "topCore": "bar handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 50.0
+   },
+   "notes": "Unicel notes this part number was formerly C-5303, and also lists the cartridge under Cal Spas. Filbur prints the Pleatco number as PPM350SC-F2M; Pleatco's own catalog and its Filbur-to-Pleatco table give PPM50SC-F2M, which is what is shown here.",
+   "status": "verified",
+   "gaps": "no model-year fitment in sources",
+   "fitment": [
+    {
+     "model": "Pacific Marquis Spas",
+     "years": "",
+     "note": "Pleatco spec table, OEM 20041 / 370-0237",
+     "src": "pleatco"
+    },
+    {
+     "model": "Cal Spas Low Flow Recirc 48SF",
+     "years": "",
+     "note": "same Pleatco row",
+     "src": "pleatco"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (5CH-502 = PPM50SC-F2M); Filbur-to-Pleatco PDF p.48 (FC-0195 = PPM50SC-F2M); spec table PDF p.32 (OEM 20041, 370-0237)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.42 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "C-5423 cartridge (OEM 20045)",
+   "modelSlug": "c-5423",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "20045",
+   "oemAll": "20045; 370-0215",
+   "equivalents": {
+    "unicel": "C-5423",
+    "pleatco": "PPM35TC",
+    "filbur": "FC-3623"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 11.9375,
+    "diameterText": "5-3/16\"",
+    "lengthText": "11-15/16\"",
+    "topCore": "closed",
+    "bottomCore": "1-5/8\" / open",
+    "sqft": 35.0
+   },
+   "notes": "Closed-top cartridge. Unicel's spec table rates it 34 sq ft and notes the original was 25 sq ft (115 pleats), upgraded to 35 sq ft in the replacement. Unicel lists OEM 370-0215; Filbur prints 370-215.",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Marquis Spas section (printed p.42); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.42 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "C-5434 cartridge (OEM 20043)",
+   "modelSlug": "c-5434",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "20043",
+   "oemAll": "20043; 370-0216",
+   "equivalents": {
+    "unicel": "C-5434",
+    "pleatco": "PPM60TC",
+    "filbur": "FC-3634"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 19.625,
+    "diameterText": "5-3/16\"",
+    "lengthText": "19-5/8\"",
+    "topCore": "closed",
+    "bottomCore": "1-5/8\" / open",
+    "sqft": 60.0
+   },
+   "notes": "Closed-top cartridge, listed by Unicel as Pacific Marquis (new). Unicel's spec table rates it 58 sq ft and notes the original was 40 sq ft (109 pleats), upgraded to 60 sq ft in the replacement. Unicel lists OEM 370-0216; Filbur prints 370-216.",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Marquis Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "C-5346 cartridge (OEM 20044)",
+   "modelSlug": "c-5346",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "20044",
+   "oemAll": "20044; 370-0236",
+   "equivalents": {
+    "unicel": "C-5346",
+    "pleatco": "PPM50TC",
+    "filbur": "FC-3638"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 14.125,
+    "diameterText": "5-3/16\"",
+    "lengthText": "14-1/8\"",
+    "topCore": "closed",
+    "bottomCore": "1-5/8\" / open",
+    "sqft": 50.0
+   },
+   "notes": "Closed-top cartridge, old style. Unicel lists OEM 20044 and 370-0236 for it, but Filbur prints a different Marquis number, 370-217, for the same 5-3/16\" x 14-1/8\" closed-top size (FC-3638, PPM50TC), so the OEM mapping needs checking.",
+   "status": "needs_verification",
+   "gaps": "OEM number differs between Unicel (370-0236) and Filbur (370-217); no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Marquis Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "5CH-512 cartridge (OEM 20690)",
+   "modelSlug": "5ch-512",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "20690",
+   "oemAll": "20690; 370-0699",
+   "equivalents": {
+    "unicel": "5CH-512"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 16,
+    "diameterText": "5-3/16\"",
+    "lengthText": "16\"",
+    "topCore": "bar handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 50.0
+   },
+   "notes": "Only the Unicel 2026 guide lists this cartridge for Marquis; no Pleatco or Filbur entry was found.",
+   "status": "needs_verification",
+   "gaps": "single source (Unicel only); no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    }
+   ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "5CH-902AM cartridge (OEM 20499)",
+   "modelSlug": "5ch-902am",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "20499",
+   "oemAll": "20499; 370-0694",
+   "equivalents": {
+    "unicel": "5CH-902AM"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 30,
+    "diameterText": "5-3/16\"",
+    "lengthText": "30\"",
+    "topCore": "bar handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 90.0
+   },
+   "notes": "Made with antimicrobial filter media (Unicel spec note). Only the Unicel 2026 guide lists it for Marquis.",
+   "status": "needs_verification",
+   "gaps": "single source (Unicel only); no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    }
+   ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "C-5626 cartridge",
+   "modelSlug": "c-5626",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-5626",
+    "pleatco": "PPM25-4",
+    "filbur": "FC-3626"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 11.875,
+    "diameterText": "5-3/16\"",
+    "lengthText": "11-7/8\"",
+    "topCore": "1-1/16\" / open",
+    "bottomCore": "1-5/8\" / open",
+    "sqft": 25.0
+   },
+   "notes": "Old design (Unicel); Filbur lists it as Pacific Marquis 25. Neither source gives an OEM number.",
+   "status": "verified",
+   "gaps": "no OEM part number in sources; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Marquis Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Marquis Spas",
+   "brandSlug": "marquis-spas",
+   "model": "C-5637 cartridge",
+   "modelSlug": "c-5637",
+   "series": "Marquis Spas (listed as Pacific Marquis in the Filbur catalog)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-5637",
+    "pleatco": "PPM40-4",
+    "filbur": "FC-3637"
+   },
+   "dimensions": {
+    "diameterIn": 5.1875,
+    "lengthIn": 19.625,
+    "diameterText": "5-3/16\"",
+    "lengthText": "19-5/8\"",
+    "topCore": "1-1/16\" / open",
+    "bottomCore": "1-5/8\" / open",
+    "sqft": 40.0
+   },
+   "notes": "Old design (Unicel); Filbur lists it as Pacific Marquis 40. Neither source gives an OEM number.",
+   "status": "verified",
+   "gaps": "no OEM part number in sources; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Marquis Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.43 (PDF p.22)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "4CH-30 cartridge (OEM 1561-14)",
+   "modelSlug": "4ch-30",
+   "series": "Dimension One Spas",
+   "oem": "1561-14",
+   "oemAll": "1561-14",
+   "equivalents": {
+    "unicel": "4CH-30",
+    "pleatco": "PTL25P-4",
+    "filbur": "FC-0141"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 11.875,
+    "diameterText": "4-5/8\"",
+    "lengthText": "11-7/8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2” male thread/MPT",
+    "sqft": 25.0
+   },
+   "notes": "Unicel's spec table rates 4CH-30 at 30 sq ft (4 oz media); its OEM cross reference and Filbur both give 25 sq ft for the Dimension One part, which is the figure shown.",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "4CH-50 cartridge (OEM 1561-05)",
+   "modelSlug": "4ch-50",
+   "series": "Dimension One Spas",
+   "oem": "1561-05",
+   "oemAll": "1561-05",
+   "equivalents": {
+    "unicel": "4CH-50",
+    "pleatco": "PTL50P-4",
+    "filbur": "FC-0151"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 14.75,
+    "diameterText": "4-5/8\"",
+    "lengthText": "14-3/4\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2” male thread/MPT",
+    "sqft": 50.0
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "4CH-65 cartridge (OEM 1561-06)",
+   "modelSlug": "4ch-65",
+   "series": "Dimension One Spas",
+   "oem": "1561-06",
+   "oemAll": "1561-06; 1561-07",
+   "equivalents": {
+    "unicel": "4CH-65"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 19.625,
+    "diameterText": "4-5/8\"",
+    "lengthText": "19-5/8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2” male thread/MPT",
+    "sqft": 65.0
+   },
+   "notes": "Unicel lists this one cartridge against OEM 1561-06 (65 sq ft) and 1561-07 (80 sq ft) and notes the original was 23-3/4\" overall length. Only Unicel lists it for Dimension One.",
+   "status": "needs_verification",
+   "gaps": "single source (Unicel only); no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.7 (printed p.3)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "4CH-940 cartridge (OEM 1561-13)",
+   "modelSlug": "4ch-940",
+   "series": "Dimension One Spas (1-1/4\" SAE thread)",
+   "oem": "1561-13",
+   "oemAll": "1561-13",
+   "equivalents": {
+    "unicel": "4CH-940",
+    "pleatco": "PDO-UF40P2",
+    "filbur": "FC-0177"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 15,
+    "diameterText": "4-5/8\"",
+    "lengthText": "15\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/4\" SAE thread",
+    "sqft": 40.0
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "4CH-950 cartridge (OEM 1561-04)",
+   "modelSlug": "4ch-950",
+   "series": "Dimension One Spas (1-1/4\" SAE thread)",
+   "oem": "1561-04",
+   "oemAll": "1561-04",
+   "equivalents": {
+    "unicel": "4CH-950",
+    "pleatco": "PDO-UF25P2",
+    "filbur": "FC-0173"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 12,
+    "diameterText": "4-5/8\"",
+    "lengthText": "12\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/4\" SAE thread",
+    "sqft": 25.0
+   },
+   "notes": "Unicel gives the length as 12\"; Filbur's table prints 11-7/8\" (and \"4-5/8 x 12\" in its description) for FC-0173.",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "7CH-552 cartridge (OEM 1561-10)",
+   "modelSlug": "7ch-552",
+   "series": "Dimension One Spas",
+   "oem": "1561-10",
+   "oemAll": "1561-10",
+   "equivalents": {
+    "unicel": "7CH-552"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 10.5,
+    "diameterText": "7\"",
+    "lengthText": "10-1/2\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 75.0
+   },
+   "notes": "Only the Unicel 2026 guide lists this cartridge for Dimension One (2\" male thread / MPT bottom).",
+   "status": "needs_verification",
+   "gaps": "single source (Unicel only); no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.15 (printed p.11)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "7CH-752 cartridge (OEM 1561-02)",
+   "modelSlug": "7ch-752",
+   "series": "Dimension One Spas",
+   "oem": "1561-02",
+   "oemAll": "1561-02",
+   "equivalents": {
+    "unicel": "7CH-752",
+    "pleatco": "PTL75XW-F2M",
+    "filbur": "FC-0470"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 14.75,
+    "diameterText": "7\"",
+    "lengthText": "14-3/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2” male thread/MPT",
+    "sqft": 75.0
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.15 (printed p.11)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "7CH-975 cartridge (OEM 1561-12)",
+   "modelSlug": "7ch-975",
+   "series": "Dimension One Spas (1-1/2\" SAE thread)",
+   "oem": "1561-12",
+   "oemAll": "1561-12",
+   "equivalents": {
+    "unicel": "7CH-975",
+    "pleatco": "PDO75P3",
+    "filbur": "FC-0475"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 10.5,
+    "diameterText": "7\"",
+    "lengthText": "10-1/2\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\" SAE thread",
+    "sqft": 75.0
+   },
+   "notes": "",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.15 (printed p.11)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "C-4340 cartridge (OEM 1561-03)",
+   "modelSlug": "c-4340",
+   "series": "Dimension One Spas",
+   "oem": "1561-03",
+   "oemAll": "1561-03",
+   "equivalents": {
+    "unicel": "C-4340",
+    "pleatco": "PMT40",
+    "filbur": "FC-3081"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 11.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "11-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 40.0
+   },
+   "notes": "Discontinued by Dimension One Spas (noted in both the Unicel guide and the Filbur catalog); the replacement cartridge is still made.",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.8 (printed p.4)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "C-5404 cartridge (OEM 1561-09)",
+   "modelSlug": "c-5404",
+   "series": "Dimension One Spas (ozone cartridge)",
+   "oem": "1561-09",
+   "oemAll": "1561-09",
+   "equivalents": {
+    "unicel": "C-5404",
+    "pleatco": "PDO40-4",
+    "filbur": "FC-3097"
+   },
+   "dimensions": {
+    "diameterIn": 5.5,
+    "lengthIn": 17,
+    "diameterText": "5-1/2\"",
+    "lengthText": "17\"",
+    "topCore": "1-15/16\" / open w/ 12 concentric holes",
+    "bottomCore": "2-7/8\" / open",
+    "sqft": 40.0
+   },
+   "notes": "Ozone cartridge with 12 concentric holes in the top cap (Unicel and Filbur).",
+   "status": "verified",
+   "gaps": "no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.34 (printed p.30); spec table PDF p.11 (printed p.7)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "C-7367 cartridge (OEM 1561-00)",
+   "modelSlug": "c-7367",
+   "series": "Dimension One Spas (SpaBerry)",
+   "oem": "1561-00",
+   "oemAll": "1561-00",
+   "equivalents": {
+    "unicel": "C-7367",
+    "pleatco": "PDO75-2000",
+    "filbur": "FC-3059"
+   },
+   "dimensions": {
+    "diameterIn": 7.125,
+    "lengthIn": 10.5,
+    "diameterText": "7-1/8\"",
+    "lengthText": "10-1/2\"",
+    "topCore": "closed w/ Y stand-offs",
+    "bottomCore": "2\" / open w/ twist lock",
+    "sqft": 75.0
+   },
+   "notes": "Unicel and Filbur both flag this for Dimension One 75 models dated after 2000. Pleatco prints the size as 7-1/4\" x 10-5/8\" (castle top, open with twist lock) against Unicel's 7-1/8\" x 10-1/2\".",
+   "status": "verified",
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Dimension One 75 (SpaBerry)",
+     "years": "models dated after 2000",
+     "note": "Unicel and Filbur",
+     "src": "unicel"
+    },
+    {
+     "model": "Dimension One 75; @Home Hot Tubs",
+     "years": "",
+     "note": "Pleatco spec table, OEM 1561-00",
+     "src": "pleatco"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.34 (printed p.30); spec table PDF p.18 (printed p.14)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (C-7367 = PDO75-2000); spec table PDF p.34 (OEM 1561-00, Dimension One 75, @Home Hot Tubs)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Dimension One Spas",
+   "brandSlug": "dimension-one-spas",
+   "model": "C-7335 cartridge",
+   "modelSlug": "c-7335",
+   "series": "Dimension One Spas (SpaBerry)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-7335",
+    "filbur": "FC-3058"
+   },
+   "dimensions": {
+    "diameterIn": 7.125,
+    "lengthIn": 5.875,
+    "diameterText": "7-1/8\"",
+    "lengthText": "5-7/8\"",
+    "topCore": "closed w/ Y stand-offs",
+    "bottomCore": "2\" / open w/ twist lock",
+    "sqft": 35.0
+   },
+   "notes": "Filbur calls FC-3058 \"SpaBerry 25\" while its sq ft column and Unicel both say 35 sq ft; neither source gives an OEM number and Filbur prints N/A for Pleatco.",
+   "status": "needs_verification",
+   "gaps": "no OEM part number in sources; no Pleatco equivalent; name/size-rating mismatch (SpaBerry 25 vs 35 sq ft); no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.34 (printed p.30); spec table PDF p.18 (printed p.14)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    }
+   ]
+  },
+  {
+   "brand": "Nordic Hot Tubs",
+   "brandSlug": "nordic-hot-tubs",
+   "model": "C-4301 cartridge",
+   "modelSlug": "c-4301",
+   "series": "Nordic Hot Tubs (models dated before 7/99)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4301",
+    "pleatco": "PMT27.5",
+    "filbur": "FC-1610"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 14.875,
+    "diameterText": "4-15/16\"",
+    "lengthText": "14-7/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 28.0
+   },
+   "notes": "Unicel and Filbur both say this is for Nordic models dated before 7/99. Neither source gives an OEM number.",
+   "status": "verified",
+   "gaps": "no OEM part number in sources; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Nordic Hot Tubs section), PDF p.46 (printed p.42); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (C-4301 = PMT27.5)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Nordic Hot Tubs, printed p.44 (PDF p.23)"
+    }
+   ]
+  },
+  {
+   "brand": "Nordic Hot Tubs",
+   "brandSlug": "nordic-hot-tubs",
+   "model": "C-4326 cartridge",
+   "modelSlug": "c-4326",
+   "series": "Nordic Hot Tubs (models dated after 7/99)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4326",
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 25.0
+   },
+   "notes": "Unicel and Filbur both say this is for Nordic models dated after 7/99. Neither source gives an OEM number.",
+   "status": "verified",
+   "gaps": "no OEM part number in sources; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Nordic Hot Tubs section), PDF p.46 (printed p.42); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (C-4326 = PRB25-IN)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Nordic Hot Tubs, printed p.44 (PDF p.23)"
+    }
+   ]
+  },
+  {
+   "brand": "Nordic Hot Tubs",
+   "brandSlug": "nordic-hot-tubs",
+   "model": "4CH-935 cartridge",
+   "modelSlug": "4ch-935",
+   "series": "Nordic Hot Tubs",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-935",
+    "pleatco": "PWW35L"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 9.25,
+    "diameterText": "4-15/16\"",
+    "lengthText": "9-1/4\"",
+    "topCore": "v-groove semi-circular handle",
+    "bottomCore": "2\" female SAE thread",
+    "sqft": 35.0
+   },
+   "notes": "Unicel lists this 2\" female SAE thread cartridge for Nordic and its spec table notes it is for use on a 1-1/2\" male SAE stand pipe. Pleatco maps it to PWW35L in its Unicel cross reference but does not mention Nordic.",
+   "status": "needs_verification",
+   "gaps": "Nordic assignment from Unicel only; no OEM part number; no Filbur equivalent; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Nordic Hot Tubs section), PDF p.46 (printed p.42); spec table PDF p.8 (printed p.4)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (4CH-935 = PWW35L)"
+    }
+   ]
+  },
+  {
+   "brand": "Arctic Spas",
+   "brandSlug": "arctic-spas",
+   "model": "C-4326 cartridge",
+   "modelSlug": "c-4326",
+   "series": "Arctic Spas (Unicel lists Arctic under Blue Falls Mfg. Ltd., Canada)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4326",
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 25.0
+   },
+   "notes": "Unicel has no Arctic table of its own and says \"see Blue Falls Mfg. Ltd. (Canada)\"; Filbur lists this part under both Arctic Spas and Blue Falls Mfg. Neither source gives an OEM number.",
+   "status": "verified",
+   "gaps": "no OEM part number in sources; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference: Arctic Spas entry (PDF p.28, printed p.24) points to Blue Falls Mfg. Ltd. (Canada), PDF p.29 (printed p.25); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (C-4326 = PRB25-IN)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Arctic Spas, printed p.27 (PDF p.14)"
+    }
+   ]
+  },
+  {
+   "brand": "Arctic Spas",
+   "brandSlug": "arctic-spas",
+   "model": "C-4950 cartridge",
+   "modelSlug": "c-4950",
+   "series": "Arctic Spas (Unicel lists Arctic under Blue Falls Mfg. Ltd., Canada)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "notes": "Unicel has no Arctic table of its own and says \"see Blue Falls Mfg. Ltd. (Canada)\"; Filbur lists this part under both Arctic Spas and Blue Falls Mfg. Neither source gives an OEM number.",
+   "status": "verified",
+   "gaps": "no OEM part number in sources; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference: Arctic Spas entry (PDF p.28, printed p.24) points to Blue Falls Mfg. Ltd. (Canada), PDF p.29 (printed p.25); spec table PDF p.9 (printed p.5)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (C-4950 = PRB50-IN); Filbur prints this as PRB50-/-MIN"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Product by Pool/Spa Manufacturer (OEM), Arctic Spas, printed p.27 (PDF p.14)"
+    }
+   ]
+  },
+  {
+   "brand": "Softub",
+   "brandSlug": "softub",
+   "model": "6CH-25 cartridge (OEM 90-802)",
+   "modelSlug": "6ch-25",
+   "series": "Softub (also listed for Leisure Bay by Pleatco)",
+   "oem": "90-802",
+   "oemAll": "90-802",
+   "equivalents": {
+    "unicel": "6CH-25",
+    "pleatco": "PTL20W-SV-P4"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 5.5,
+    "diameterText": "6\"",
+    "lengthText": "5-1/2\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2” male thread/MPT",
+    "sqft": 25.0
+   },
+   "notes": "Unicel rates 6CH-25 at 25 sq ft; Pleatco rates PTL20W-SV-P4 (same OEM 90-802, 6\" x 5-1/2\", handle, 1-1/2\" MPT) at 20 sq ft, so the area rating differs between the two catalogs. Size, OEM number and fitting agree.",
+   "status": "needs_verification",
+   "gaps": "sq ft rating differs between Unicel (25) and Pleatco (20); no Filbur equivalent found; no model-year fitment in sources",
+   "fitment": [
+    {
+     "model": "Softub; Leisure Bay (6 x 5-1/2, TSC)",
+     "years": "",
+     "note": "Pleatco spec table, OEM 90-802",
+     "src": "pleatco"
+    }
+   ],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Softub section), PDF p.55 (printed p.51); spec table PDF p.12 (printed p.8)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (6CH-25 = PTL20W-SV-P4); spec table PDF p.33 (Softub; Leisure Bay; 6 x 5-1/2, OEM 90-802)"
+    }
+   ]
+  },
+  {
+   "brand": "Softub",
+   "brandSlug": "softub",
+   "model": "4CH-20 cartridge",
+   "modelSlug": "4ch-20",
+   "series": "Softub",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-20"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 6.75,
+    "diameterText": "4-5/8\"",
+    "lengthText": "6-3/4\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2” male thread/MPT",
+    "sqft": 20.0
+   },
+   "notes": "Unicel lists this 4-5/8\" x 6-3/4\" top-load cartridge for Softub. No OEM number is given, and neither Pleatco nor Filbur mentions Softub for it.",
+   "status": "needs_verification",
+   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Softub section), PDF p.55 (printed p.51); spec table PDF p.7 (printed p.3)"
+    }
+   ]
+  },
+  {
+   "brand": "Intex",
+   "brandSlug": "intex",
+   "model": "C-4317 cartridge (OEM 29001E)",
+   "modelSlug": "c-4317",
+   "series": "Intex PureSpa Type S1 (inflatable spa)",
+   "oem": "29001E",
+   "oemAll": "29001E; 29001; 11692",
+   "equivalents": {
+    "unicel": "C-4317",
+    "pleatco": "PIN4PAIR"
+   },
+   "dimensions": {
+    "diameterIn": 4.25,
+    "lengthIn": 2.9375,
+    "diameterText": "4-1/4\"",
+    "lengthText": "2-15/16\"",
+    "topCore": "2-1/16\" / open",
+    "bottomCore": "2-1/16\" / open",
+    "sqft": 4.0
+   },
+   "notes": "Intex sells this cartridge as SKU 29001E (Type S1) for PureSpa inflatable hot tubs. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees.",
+   "status": "needs_verification",
+   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); model list is from a retailer listing, not Intex's own page; no Filbur equivalent found; no model-year fitment in sources",
+   "fitment": [
+    {
+     "model": "Intex PureSpa 28403E",
+     "years": "",
+     "note": "",
+     "src": "hd"
+    },
+    {
+     "model": "Intex PureSpa 28407E",
+     "years": "",
+     "note": "",
+     "src": "hd"
+    },
+    {
+     "model": "Intex PureSpa 28413E",
+     "years": "",
+     "note": "",
+     "src": "hd"
+    },
+    {
+     "model": "Intex PureSpa 28421E",
+     "years": "",
+     "note": "",
+     "src": "hd"
+    },
+    {
+     "model": "Intex PureSpa 28423E",
+     "years": "",
+     "note": "",
+     "src": "hd"
+    },
+    {
+     "model": "Intex PureSpa 28443E",
+     "years": "",
+     "note": "",
+     "src": "hd"
+    },
+    {
+     "model": "Intex PureSpa 28453E",
+     "years": "",
+     "note": "",
+     "src": "hd"
+    }
+   ],
+   "pleatcoNote": "matched by OEM 29001E in the Pleatco 2023 spec table (PDF p.31); the Intex part is not in the Pleatco Unicel cross reference",
+   "filburNote": "",
+   "index": true,
+   "sources": [
+    {
+     "source": "Intex (manufacturer product page)",
+     "url": "https://intexcorp.com/products/spas/spa-accessories/filter-cartridge-s1-twin-pack/",
+     "where": "Type S1 Hot Tub Filter Cartridge, SKU 29001E, described as the PureSpa replacement filter"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "OEM cross reference (Intex section), PDF p.40 (printed p.36)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "spec table PDF p.31 (Intex EZ Set Pure Spa S1, OEM 29001E = PIN4PAIR)"
+    },
+    {
+     "source": "Home Depot listing for Intex 29001E (retailer)",
+     "url": "https://www.homedepot.com/p/Intex-4-25-in-Dia-Type-S1-Pool-Replacement-Filter-Cartridge-4-Pack-2-x-29001E/310718769",
+     "where": "Compatible-models list: PureSpa 28403E, 28407E, 28443E, 28453E, 28421E, 28423E, 28413E"
+    }
+   ],
+   "searchTerm": "Intex 29001E"
   }
  ]
 }

@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { brands, filters, partLabel } from '../../lib/data';
+import { brands, filters, partLabel, brandIndexable, relatedBrands, isIndexable, modelHref } from '../../lib/data';
 import { brandCopy } from '../../lib/brandcopy';
 export function getStaticPaths(){ return brands().map(b=>({params:{brand:b.slug},props:{b}})); }
 const { b } = Astro.props as any; const list = filters.filter(f=>f.brandSlug===b.slug);
@@ -8,13 +8,17 @@ const nFit = list.filter(f=>(f.fitment||[]).length).length; const nFb = list.fil
 const models = new Set(list.flatMap(f=>(f.fitment||[]).map(x=>x.model)));
 const thin = list.filter(f=>f.index===false);
 const copy = brandCopy[b.slug]||[];
+const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
+const related = relatedBrands(b.slug);
+const ld = [{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:`${b.name} spa filters`,item:url}]}];
 ---
-<Base title={`${b.name} Spa Filter Cross Reference – OEM to Unicel, Pleatco & Filbur`} description={`${list.length} ${b.name} hot tub filter cartridges with OEM part numbers, Unicel, Pleatco and Filbur equivalents, sizes${nFit?` and model-year fitment for ${models.size} models`:''}, each with cited sources.`}>
-<p class="crumbs"><a href="/">Home</a> › {b.name}</p><h1>{b.name} spa filters</h1>
+<Base title={`${b.name} Spa Filter Cross Reference – OEM to Unicel, Pleatco & Filbur`} description={`${list.length} ${b.name} hot tub filter cartridges with OEM part numbers, Unicel, Pleatco and Filbur equivalents, sizes${nFit?` and model-year fitment for ${models.size} models`:''}, each with cited sources.`} jsonld={ld} noindex={!brandIndexable(b.slug)}>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">{b.name}</span></nav><h1>{b.name} spa filters</h1>
 {copy.map(p=><p>{p}</p>)}
 <p>This page lists {list.length} {b.name} replacement cartridges from the Unicel 2026 Replacement Guide, the Pleatco 2023 catalog and the Filbur catalog{nFit?`, plus model and model-year fitment for ${nFit} of them (${models.size} hot tub models in total)`:''}. {nFb} have a Filbur number. Find your spa filter by the OEM part number on the end cap, or measure it and compare sizes below.</p>
 <div class="tbl"><table><thead><tr><th>Cartridge</th><th>Unicel</th><th>Pleatco</th><th>Filbur</th><th>Size</th><th>Fits</th><th>Status</th></tr></thead><tbody>
-{list.map((f:any)=><tr><td><a href={`/${f.brandSlug}/${f.modelSlug}/`}>{f.oemAll||partLabel(f)}</a>{!f.oemAll && <small> ({f.series})</small>}</td><td>{f.equivalents.unicel||'—'}</td><td>{f.equivalents.pleatco||'—'}</td><td>{f.equivalents.filbur||'—'}</td><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}, {f.dimensions.sqft} sq ft</td><td>{(f.fitment||[]).length?`${f.fitment.length} model${f.fitment.length>1?'s':''}`:'—'}</td><td>{f.status==='verified'?<span class="badge">cited</span>:<span class="badge u">unverified</span>}</td></tr>)}</tbody></table></div>
+{list.map((f:any)=><tr><td><a href={modelHref(f)}>{f.oemAll||partLabel(f)}</a>{!f.oemAll && <small> ({f.series})</small>}</td><td>{f.equivalents.unicel||'—'}</td><td>{f.equivalents.pleatco||'—'}</td><td>{f.equivalents.filbur||'—'}</td><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}, {f.dimensions.sqft} sq ft</td><td>{(f.fitment||[]).length?`${f.fitment.length} model${f.fitment.length>1?'s':''}`:'—'}</td><td>{f.status==='verified'?<span class="badge">cited</span>:<span class="badge u">unverified</span>}</td></tr>)}</tbody></table></div>
 {thin.length>0 && <p><small>{thin.length} of these rows have too little sourced detail for a stand-alone page (for example, no OEM number or no second cross-reference), so their pages are kept out of search results and this table is the main reference for them.</small></p>}
+{related.length>0 && <><h2>Brands that share cartridges with {b.name}</h2><ul>{related.map(r=><li><a href={`/${r.slug}/`}>{r.name}</a> — same part number{r.parts.length>1?'s':''} {r.parts.slice(0,4).join(', ')}{r.parts.length>4?' and more':''}</li>)}</ul></>}
 <p><small>Model-year fitment comes only from the sources named on each cartridge page. Where no source lists models or years, we say so rather than guess.</small></p>
 </Base>

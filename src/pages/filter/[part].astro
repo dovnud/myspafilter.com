@@ -8,8 +8,8 @@ const label = part!.toUpperCase(); const site = Astro.site!.href; const url = ne
 const ld=[{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:label,item:url}]}];
 ---
 <Base title={`${label} Spa Filter Equivalents – Hot Tub Filter Cross Reference`} description={`Cross-reference for spa filter / hot tub filter part ${label}: OEM, Unicel, Pleatco and Filbur equivalents.`} jsonld={ld} noindex>
-<p class="crumbs"><a href="/">Home</a> › {label}</p><h1>{label} spa filter equivalents</h1><p>Part number {label} appears in {list.length} cited cross-reference row{list.length>1?'s':''} below. Each row lists the OEM, Unicel and Pleatco numbers that the source documents treat as interchangeable, plus the cartridge size so you can confirm against your old filter.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">{label}</span></nav><h1>{label} spa filter equivalents</h1><p>Part number {label} appears in {list.length} cited cross-reference row{list.length>1?'s':''} below. Each row lists the OEM, Unicel and Pleatco numbers that the source documents treat as interchangeable, plus the cartridge size so you can confirm against your old filter.</p>
 {list.map((f:any)=>(<section class="card answer"><p><strong>{f.brand} {f.model}</strong></p><table>
 <tr><th>OEM</th><td>{f.oem}</td></tr><tr><th>Unicel</th><td>{f.equivalents?.unicel||'—'}</td></tr><tr><th>Pleatco</th><td>{f.equivalents?.pleatco||'—'}</td></tr><tr><th>Filbur</th><td>{f.equivalents?.filbur||'—'}</td></tr>
-<tr><th>Size</th><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}, {f.dimensions.sqft} sq ft</td></tr></table><Sources f={f} /><a href={`/${f.brandSlug}/${f.modelSlug}/`}>Full details & buy options →</a></section>))}
+<tr><th>Size</th><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}, {f.dimensions.sqft} sq ft</td></tr></table><Sources f={f} /><p><a href={`/${f.brandSlug}/${f.modelSlug}/`}>Full details & buy options →</a> · <a href={`/${f.brandSlug}/`}>All {f.brand} spa filters</a></p></section>))}
 </Base>
