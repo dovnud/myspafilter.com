@@ -1,17 +1,25 @@
 ---
 import { brands, filters } from '../lib/data';
-interface Props { title:string; description:string; jsonld?: object[]; noindex?: boolean }
-const { title, description, jsonld = [], noindex = false } = Astro.props;
+interface Props { title:string; description:string; jsonld?: object[]; noindex?: boolean; ogType?: 'website'|'article'; ogImage?: string; ogImageAlt?: string; modified?: string; canonical?: boolean }
+const { title, description, jsonld = [], noindex = false, ogType = 'website', ogImage, ogImageAlt, modified, canonical: withCanonical = true } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const path = Astro.url.pathname;
-const nav = [['/','Home'],['/size/','Size lookup'],['/guides/','Guides'],['/supplies/','Supplies'],['/about/','About'],['/contact/','Contact']];
+// Default share image, with a section variant by URL (all 1200x630 PNG in /public/og/, made by scripts/gen-og.py)
+const section = path.startsWith('/guides/') ? 'guides' : path.startsWith('/supplies/') ? 'supplies' : path.startsWith('/data/') ? 'data' : brands().some(b=>path.startsWith(`/${b.slug}/`)) ? 'brands' : 'default';
+const ogAlt: Record<string,string> = { default:'MySpaFilter.com: spa and hot tub filter cross-reference by part number', guides:'MySpaFilter.com guides: cited hot tub filter and water-care answers', supplies:'MySpaFilter.com hot tub supplies guides', data:'MySpaFilter.com spa filter cartridge dataset: download CSV or JSON', brands:'MySpaFilter.com spa brand filter cross-reference' };
+const image = new URL(ogImage || `/og/${section}.png`, Astro.site).href;
+const imageAlt = ogImageAlt || ogAlt[section];
+const nav = [['/','Home'],['/size/','Size lookup'],['/guides/','Guides'],['/supplies/','Supplies'],['/data/','Data'],['/about/','About'],['/contact/','Contact']];
 ---
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><link rel="preload" href="/fonts/young-serif-latin.woff2" as="font" type="font/woff2" crossorigin><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content={description}>
-<meta name="robots" content={noindex?"noindex,follow":"index,follow"}><link rel="canonical" href={canonical}><meta name="theme-color" content="#0b3c40">
+<meta name="robots" content={noindex?"noindex,follow":"index,follow"}>{withCanonical && <link rel="canonical" href={canonical}>}<meta name="theme-color" content="#0b3c40">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230b3c40'/%3E%3Cpath d='M12 4C10 7 8 9.5 8 13a4 4 0 0 0 8 0c0-3.5-2-6-4-9Z' fill='%23e8d6b5'/%3E%3C/svg%3E">
-<meta property="og:title" content={title}><meta property="og:description" content={description}><meta property="og:url" content={canonical}><meta property="og:type" content="website">
+<meta property="og:site_name" content="MySpaFilter"><meta property="og:locale" content="en_US"><meta property="og:title" content={title}><meta property="og:description" content={description}>{withCanonical && <meta property="og:url" content={canonical}>}<meta property="og:type" content={ogType}>
+<meta property="og:image" content={image}><meta property="og:image:secure_url" content={image}><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content={imageAlt}>
+{ogType==='article' && <><meta property="article:author" content="MySpaFilter Editorial Team">{modified && <meta property="article:modified_time" content={modified}>}</>}
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content={title}><meta name="twitter:description" content={description}><meta name="twitter:image" content={image}><meta name="twitter:image:alt" content={imageAlt}>
 {jsonld.map(j => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
 <style is:global>
 @font-face{font-family:"Young Serif";src:url(/fonts/young-serif-latin.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -86,7 +94,7 @@ input{padding:.65rem .8rem;border:1px solid var(--bd);border-radius:4px;font-siz
 <div class="disc"><div class="wrap">Disclosure: we may earn a commission from qualifying purchases made through retailer links on this site, at no extra cost to you. As an Amazon Associate I earn from qualifying purchases. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</div></div>
 <main class="wrap"><slot /></main>
 <footer><div class="wrap"><p><strong style="color:#fff">Brands:</strong> {brands().map(b=><a href={`/${b.slug}/`}>{b.name}</a>)}</p>
-<p><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/guides/">Guides</a><a href="/supplies/">Supplies</a><a href="/guide/">Measuring guide</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/guides/">Guides</a><a href="/supplies/">Supplies</a><a href="/data/">Dataset (CSV/JSON)</a><a href="/guide/">Measuring guide</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
 <p>MySpaFilter is independent and not affiliated with any hot tub manufacturer or filter brand. Cross-reference data comes from the Unicel 2026 Replacement Guide and Pleatco 2023 catalog ({filters.length} cartridges). Always check dimensions before buying.</p>
 <p>© {new Date().getFullYear()} myspafilter.com</p></div></footer>
 <script>

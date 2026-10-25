@@ -5,9 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npm run check:amazon",
+    "build": "node scripts/gen-lastmod.mjs && astro build && npm run check:amazon && npm run check:seo",
     "preview": "astro preview",
-    "check:amazon": "node scripts/check-amazon.mjs"
+    "check:amazon": "node scripts/check-amazon.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",

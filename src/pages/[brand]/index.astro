@@ -2,6 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import { brands, filters, partLabel, brandIndexable, relatedBrands, isIndexable, modelHref } from '../../lib/data';
 import { brandCopy } from '../../lib/brandcopy';
+import { brandDate } from '../../lib/lastmod';
+import { SITE, publisherRef } from '../../lib/schema';
 export function getStaticPaths(){ return brands().map(b=>({params:{brand:b.slug},props:{b}})); }
 const { b } = Astro.props as any; const list = filters.filter(f=>f.brandSlug===b.slug);
 const nFit = list.filter(f=>(f.fitment||[]).length).length; const nFb = list.filter(f=>f.equivalents?.filbur).length;
@@ -17,7 +19,12 @@ const web = [...srcNames].some(n=>!/^(Unicel|Pleatco|Filbur)/.test(n));
 const srcList = [...cats, ...(web?['manufacturer and retailer pages']:[])];
 const srcTxt = srcList.length>1 ? `${srcList.slice(0,-1).join(', ')} and ${srcList.at(-1)}` : srcList[0]||'cited sources';
 const hasCat = cats.length>0;
-const ld = [{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:`${b.name} spa filters`,item:url}]}];
+const indexed = list.filter(isIndexable);
+const ld = [{"@context":"https://schema.org","@type":"CollectionPage","@id":`${url}#webpage`,name:`${b.name} spa filter cross reference`,url,inLanguage:"en-US",dateModified:brandDate(b.slug),
+  description:`${list.length} ${b.name} hot tub filter cartridge${list.length>1?'s':''} with part numbers, sizes and cited sources.`,
+  isPartOf:{"@type":"WebSite",name:"MySpaFilter",url:SITE},publisher:publisherRef,breadcrumb:{"@id":`${url}#breadcrumb`},
+  mainEntity:{"@type":"ItemList",name:`${b.name} spa filter cartridges`,numberOfItems:indexed.length,itemListElement:indexed.map((f,i)=>({"@type":"ListItem",position:i+1,name:`${f.brand} ${f.model}`,url:new URL(modelHref(f),site).href}))}},
+ {"@context":"https://schema.org","@type":"BreadcrumbList","@id":`${url}#breadcrumb`,itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:`${b.name} spa filters`,item:url}]}];
 ---
 <Base title={hasCat ? `${b.name} Spa Filter Cross Reference – OEM to Unicel, Pleatco & Filbur` : `${b.name} Spa Filter Guide – Part Numbers, Sizes & Compatible Hot Tubs`} description={`${list.length} ${b.name} hot tub filter cartridge${list.length>1?'s':''} with ${hasCat?'OEM part numbers, Unicel, Pleatco and Filbur equivalents, sizes':'part numbers, sizes'}${nFit?` and model-year fitment for ${models.size} models`:''}, each with cited sources.`} jsonld={ld} noindex={!brandIndexable(b.slug)}>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">{b.name}</span></nav><h1>{b.name} spa filters</h1>

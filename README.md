@@ -60,3 +60,13 @@ export const affiliate = {
 - `productLink(key)` and `searchLink(query)` in `src/config/affiliate.ts` build the tagged URLs. Use the `ProductPicks` component (`src/components/ProductPicks.astro`) for any list of products: it renders the visible Associates disclosure first and uses `rel="sponsored nofollow"`.
 - Guides live in `src/lib/guides.ts` (original filter guides) and `src/lib/guides2.ts` (supplies and water-care guides). Safety and number claims must cite a source from `src/lib/guidesrc.ts`.
 - `/supplies/` is the hub for the supplies guides. `npm run check:amazon` also validates `amazon-products.json` and reports distinct /dp/ vs search link counts and tagged-link totals.
+
+
+## SEO and trust (build-time pieces)
+
+- **404**: `src/pages/404.astro` builds `dist/404.html`. Cloudflare Pages serves unknown URLs with a real HTTP 404 only when a top-level `404.html` exists; without it Pages treats the site as a SPA and returns `index.html` with 200 (soft 404). Do not delete it. It is `noindex`.
+- **Sitemap lastmod**: `scripts/gen-lastmod.mjs` (run first by `npm run build`) writes `src/data/lastmod.json` from git history (per-row change dates for `filters.json`, last commit of content files). In a shallow clone it leaves the committed file alone. `astro.config.mjs` uses it via `src/lib/lastmod.ts`. Guide pages use their `reviewed` date.
+- **Open Graph / Twitter**: `Base.astro` adds og:* and twitter:* tags on every page with the 1200x630 images in `public/og/` (default, guides, brands, supplies, data). Regenerate with `python3 scripts/gen-og.py` (Pillow + fonttools).
+- **Structured data**: shared entities in `src/lib/schema.ts`. There is no `Product`, `Offer`, `Review` or `AggregateRating` anywhere (we have no prices or ratings); `npm run check:seo` fails the build if one appears. Guides use `Article` with the `MySpaFilter Editorial Team` Organization as author. `sameAs` lists only profiles that exist (the GitHub repo).
+- **Dataset**: `/data/` (HTML table + Dataset JSON-LD + cite snippet), `/data/spa-filters.csv` and `/data/spa-filters.json`, generated from `filters.json` by `src/lib/dataset.ts`.
+- `npm run check:seo` validates all of the above on `dist/`.

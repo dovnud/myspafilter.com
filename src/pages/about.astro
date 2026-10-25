@@ -1,13 +1,57 @@
 ---
-import Page from '../components/Page.astro';
+import Base from '../layouts/Base.astro';
+import { filters, brands } from '../lib/data';
+import { guides } from '../lib/guides';
+import { organization, editorialTeam, CONTACT_EMAIL, SAME_AS, SITE } from '../lib/schema';
+import { fileDate, dataDate } from '../lib/lastmod';
+const url = `${SITE}about/`;
+const mod = [fileDate('src/pages/about.astro'), dataDate()].sort().at(-1);
+const nVerified = filters.filter(f=>f.status==='verified').length;
+const ld = [
+ { '@context':'https://schema.org', '@type':'AboutPage', '@id':`${url}#webpage`, url, name:'About MySpaFilter', inLanguage:'en-US', dateModified:mod, isPartOf:{ '@type':'WebSite', name:'MySpaFilter', url:SITE }, mainEntity:{ '@id':organization['@id'] }, about:{ '@id':organization['@id'] } },
+ { '@context':'https://schema.org', ...organization, contactPoint:{ '@type':'ContactPoint', contactType:'corrections and general questions', email:CONTACT_EMAIL, url:`${SITE}contact/` }, member:{ '@id':editorialTeam['@id'] } },
+ { '@context':'https://schema.org', ...editorialTeam },
+ { '@context':'https://schema.org', '@type':'BreadcrumbList', itemListElement:[{ '@type':'ListItem', position:1, name:'Home', item:SITE },{ '@type':'ListItem', position:2, name:'About', item:url }] },
+];
 ---
-<Page title="About MySpaFilter – Spa Filter & Hot Tub Filter Lookup" description="Who runs MySpaFilter, where the cross-reference data comes from, and how we mark unverified entries.">
+<Base title="About MySpaFilter – Who We Are, Methodology, Sources & Corrections" description="MySpaFilter is run by an independent editorial team. How we research and review spa filter data, where it comes from, how we mark unverified rows, and how to send a correction." jsonld={ld} modified={mod}>
+<article class="card">
 <h1>About MySpaFilter</h1>
-<p>MySpaFilter is an independent reference for matching a hot tub filter cartridge to its replacement. Spa owners usually know their tub's brand and can read a part number off the old cartridge, but retailers list the same cartridge under several different numbers. This site puts the manufacturer (OEM) part number next to its Unicel and Pleatco equivalents, along with the measurements you need to confirm fit.</p>
-<h2>Where the data comes from</h2>
-<p>Each cartridge page lists the publications it is based on, with page numbers: the <strong>Unicel 2026 Replacement Guide</strong> (OEM cross-reference and spec tables) and the <strong>Pleatco 2023 catalog</strong> (Unicel-to-Pleatco cross-reference). We don't make up part numbers or model years. When the sources don't give a model-year range or a Filbur equivalent, the page says so instead of guessing.</p>
-<h2>Verified vs. unverified entries</h2>
-<p>An entry is marked verified when its numbers and dimensions come straight from the cited pages. Entries we couldn't fully confirm, for example because no second source was found or the source listing is ambiguous, still appear but carry a visible <span class="badge u">unverified</span> label. Measure your old cartridge before you buy one of those.</p>
-<h2>How the site is funded</h2>
-<p>Retailer links can earn us a commission. That never changes the cross-reference data. See the <a href="/affiliate-disclosure/">affiliate disclosure</a>. Questions or corrections: <a href="/contact/">contact us</a>.</p>
-</Page>
+<p>MySpaFilter is an independent reference for matching a hot tub filter cartridge to its replacement. Spa owners usually know their tub's brand and can read a part number off the old cartridge, but retailers list the same cartridge under several different numbers. This site puts the manufacturer (OEM) part number next to its Unicel, Pleatco and Filbur equivalents, along with the measurements you need to confirm fit. It currently covers {filters.length} cartridges from {brands().length} spa brands and {guides.length} guides.</p>
+
+<h2 id="who">Who runs the site</h2>
+<p>MySpaFilter is run by the <strong>MySpaFilter Editorial Team</strong>, an independent team that builds the data set, writes the guides and answers reader corrections. The pages are published under the team name, not under an individual's name, and we do not claim professional credentials for the team: we are not a spa manufacturer, filter maker or licensed technician, and we are not affiliated with Unicel, Pleatco, Filbur or any spa brand. What we do is read the published catalogs and manufacturer guidance, line them up, and show our work.</p>
+<p>The site's source and data are public: the <a href="https://github.com/dovnud/myspafilter.com" rel="me noopener">myspafilter.com repository on GitHub</a>.</p>
+
+<h2 id="methodology">How we research and review</h2>
+<ol>
+<li><strong>Start from published catalogs.</strong> Part numbers, dimensions, fittings and media area come from the cited pages of the Unicel 2026 Replacement Guide, the Pleatco 2023 catalog and the Filbur Catalog &amp; Reference Guide. We never type in a number that is not in a cited source.</li>
+<li><strong>Cross-check with a second source.</strong> Where possible we match a row against another catalog or a manufacturer or dealer listing, mainly to confirm model and model-year fitment. A row counts as <span class="badge">verified</span> when its numbers and dimensions come straight from the cited pages ({nVerified} of {filters.length} rows today).</li>
+<li><strong>Flag what we could not confirm.</strong> Rows with a single source, conflicting numbers or ambiguous listings still appear, but carry a visible <span class="badge u">unverified</span> label and say what is missing. Thin or single-source pages are kept out of search results.</li>
+<li><strong>Say what the sources do not say.</strong> If a source gives no model-year range, no Filbur equivalent or no square footage, the page says so rather than guessing.</li>
+<li><strong>Write guides from primary guidance.</strong> Guides summarize manufacturer, CDC and CPSC guidance. Each claim links to the source it comes from, and each guide shows the date it was last reviewed. Guides are re-read when a source changes or a reader reports a problem.</li>
+<li><strong>Keep dates honest.</strong> Page dates in our sitemap come from when the data or text last actually changed, not from when the site was last built.</li>
+</ol>
+
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf" rel="nofollow">Unicel 2026 Replacement Guide</a> (OEM cross reference and spec tables)</li>
+<li><a href="https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf" rel="nofollow">Pleatco 2023 catalog</a> (Unicel-to-Pleatco cross reference)</li>
+<li><a href="https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf" rel="nofollow">Filbur Catalog &amp; Reference Guide</a></li>
+<li>Manufacturer and dealer product pages for model and model-year fitment (for example Intex, Bestway and Lay-Z-Spa product pages and spa-parts dealer listings). Each is named, with its link, on the cartridge page that uses it.</li>
+<li>Manufacturer, CDC and CPSC guidance for the guides, linked from each guide's Sources list.</li>
+</ul>
+<p>The whole table, with a source for every row, is on the <a href="/data/">dataset page</a> and can be downloaded as <a href="/data/spa-filters.csv">CSV</a> or <a href="/data/spa-filters.json">JSON</a>. Please cite it as shown there.</p>
+
+<h2 id="corrections">Corrections policy</h2>
+<p>If you find a wrong part number, a dimension that does not match your cartridge, or a claim in a guide that its source does not support, email <a href="mailto:contact@myspafilter.com">{CONTACT_EMAIL}</a> or use the <a href="/contact/">contact page</a>. Please include the page URL and, for a cartridge, the number printed on your old filter and your measured diameter and length.</p>
+<p>We check the report against the cited source (or find one). When the source confirms the problem we correct the data and the page, and the row's date changes. If a number cannot be confirmed we mark the row unverified rather than leave it looking certain. Changes follow the sources.</p>
+
+<h2 id="funding">How the site is funded</h2>
+<p>Retailer links, including Amazon links, can earn us a commission at no extra cost to you. That never changes the cross-reference data. See the <a href="/affiliate-disclosure/">affiliate disclosure</a>. Our guidance is general information, not a substitute for your spa owner's manual; see the <a href="/disclaimer/">disclaimer</a>.</p>
+
+<h2 id="contact">Contact</h2>
+<p><a href="mailto:contact@myspafilter.com">{CONTACT_EMAIL}</a> · <a href="/contact/">Contact page</a></p>
+<p class="crumbs">Last updated <time datetime={mod}>{new Date(mod+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'})}</time></p>
+</article>
+</Base>

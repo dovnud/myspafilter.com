@@ -7,6 +7,7 @@
 - [Find a filter by size](https://myspafilter.com/size/)
 - [Measuring guide](https://myspafilter.com/guide/)
 - [Guides index](https://myspafilter.com/guides/)
+- [Dataset: all cartridges as an HTML table, with CSV and JSON downloads and a citation snippet](https://myspafilter.com/data/) ([CSV](https://myspafilter.com/data/spa-filters.csv), [JSON](https://myspafilter.com/data/spa-filters.json))
 - Brands: [Bullfrog](https://myspafilter.com/bullfrog/), [Cal Spas](https://myspafilter.com/cal-spas/), [Caldera](https://myspafilter.com/caldera/), [Dimension One Spas](https://myspafilter.com/dimension-one-spas/), [Hot Spot](https://myspafilter.com/hot-spot/), [Hot Spring](https://myspafilter.com/hot-spring/), [Intex](https://myspafilter.com/intex/), [Jacuzzi](https://myspafilter.com/jacuzzi/), [Marquis Spas](https://myspafilter.com/marquis-spas/), [Master Spas](https://myspafilter.com/master-spas/), [Softub](https://myspafilter.com/softub/), [Solana](https://myspafilter.com/solana/), [Sundance](https://myspafilter.com/sundance/)
 
 ## Guides
@@ -36,5 +37,5 @@
 - [Hot tub chemical safety and storage: what CDC says](https://myspafilter.com/guides/hot-tub-chemical-safety-and-storage/)
 
 ## Policies
-- [About](https://myspafilter.com/about/) · [Affiliate disclosure](https://myspafilter.com/affiliate-disclosure/) · [Disclaimer](https://myspafilter.com/disclaimer/)
+- [About: who runs the site, methodology, sources, corrections policy](https://myspafilter.com/about/) · [Affiliate disclosure](https://myspafilter.com/affiliate-disclosure/) · [Disclaimer](https://myspafilter.com/disclaimer/)
 - Sitemap: https://myspafilter.com/sitemap-index.xml

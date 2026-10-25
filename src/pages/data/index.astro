@@ -1,0 +1,70 @@
+---
+import Base from '../../layouts/Base.astro';
+import { filters, modelHref, sqftText } from '../../lib/data';
+import { dataDate, dataFirstDate, fileDate } from '../../lib/lastmod';
+import { distinctSources } from '../../lib/dataset';
+import { SITE, citeAs, DATASET_KEYWORDS, editorialTeam, publisherRef } from '../../lib/schema';
+const url = `${SITE}data/`;
+const updated = [dataDate(), fileDate('src/pages/data/index.astro')].sort().at(-1) as string;
+const dataUpdated = dataDate();
+const nice = (d:string) => new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'});
+const cite = citeAs(dataUpdated);
+const bibtex = `@misc{myspafilter_spa_filters,\n  author       = {{MySpaFilter Editorial Team}},\n  title        = {Spa filter cartridge cross-reference dataset},\n  year         = {${dataUpdated.slice(0,4)}},\n  howpublished = {\\url{${url}}},\n  note         = {MySpaFilter.com, updated ${dataUpdated}}\n}`;
+const sorted = [...filters].sort((a,b)=>a.brand.localeCompare(b.brand)||a.model.localeCompare(b.model,'en',{numeric:true}));
+const nVer = filters.filter(f=>f.status==='verified').length;
+const nBrands = new Set(filters.map(f=>f.brandSlug)).size;
+const srcs = distinctSources();
+const short = (s:string) => s.replace(/\s*\(.*$/,'');
+const title = 'Spa Filter Cartridge Dataset – OEM, Unicel, Pleatco & Filbur Part Numbers (CSV, JSON)';
+const desc = `All ${filters.length} spa and hot tub filter cartridges we track from ${nBrands} brands: OEM, Unicel, Pleatco and Filbur part numbers, diameter, length, fittings, square feet, status and sources. Download CSV or JSON. Updated ${dataUpdated}.`;
+const ld = [
+ { '@context':'https://schema.org', '@type':'Dataset', '@id':`${url}#dataset`, name:'MySpaFilter spa filter cartridge cross-reference dataset', url, mainEntityOfPage:url, inLanguage:'en-US',
+   description:`A table of ${filters.length} replacement spa and hot tub filter cartridges from ${nBrands} spa brands. Each row gives the OEM part number(s) with the Unicel, Pleatco and Filbur equivalents, diameter and length in inches, top and bottom fittings, filter media area in square feet where a source gives one, a verified or unverified status, and the catalog or listing pages the row comes from. Compiled by hand from the Unicel 2026 Replacement Guide, the Pleatco 2023 catalog, the Filbur Catalog & Reference Guide and cited manufacturer and dealer pages.`,
+   keywords:DATASET_KEYWORDS, creator:editorialTeam, publisher:publisherRef, isAccessibleForFree:true, creditText:'MySpaFilter Editorial Team, myspafilter.com',
+   datePublished:dataFirstDate(), dateModified:dataUpdated, temporalCoverage:'2023/2026',
+   measurementTechnique:'Transcribed from published catalog pages and cited listings; rows marked unverified lack a second source or contain a conflict.',
+   variableMeasured:['Brand','Model','OEM part number','Unicel part number','Pleatco part number','Filbur part number','Diameter (in)','Length (in)','Top fitting','Bottom fitting','Filter media area (sq ft)','Status'],
+   isBasedOn:srcs.map(s=>({ '@type':'CreativeWork', name:s.source, url:s.url })),
+   distribution:[{ '@type':'DataDownload', encodingFormat:'text/csv', contentUrl:`${SITE}data/spa-filters.csv`, name:'spa-filters.csv' },{ '@type':'DataDownload', encodingFormat:'application/json', contentUrl:`${SITE}data/spa-filters.json`, name:'spa-filters.json' }] },
+ { '@context':'https://schema.org', '@type':'BreadcrumbList', itemListElement:[{ '@type':'ListItem', position:1, name:'Home', item:SITE },{ '@type':'ListItem', position:2, name:'Dataset', item:url }] },
+];
+---
+<Base title={title} description={desc} jsonld={ld}>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">Dataset</span></nav>
+<h1>Spa filter cartridge dataset</h1>
+<p>Every cartridge on MySpaFilter in one table: <strong>{filters.length}</strong> rows from <strong>{nBrands}</strong> spa brands, with OEM, Unicel, Pleatco and Filbur part numbers, diameter, length, fittings, filter area and the sources each row comes from. <strong>{nVer}</strong> rows are verified against the cited pages; the rest are marked unverified. Data last changed <time datetime={dataUpdated}>{nice(dataUpdated)}</time>.</p>
+<p>
+<a class="btn" href="/data/spa-filters.csv" download>Download CSV</a><a class="btn sand" href="/data/spa-filters.json" download>Download JSON</a></p>
+<p class="crumbs">Both files are generated from the same data as this table (<code>spa-filters.csv</code> and <code>spa-filters.json</code>), and include full source citations and the date each row last changed.</p>
+
+<h2 id="cite">Cite this</h2>
+<div class="card">
+<p style="margin-top:0">Please cite as:</p>
+<pre id="cite-text" style="white-space:pre-wrap;margin:.2rem 0 .6rem;font:inherit">{cite}</pre>
+<details><summary>BibTeX</summary><pre id="cite-bib" style="overflow-x:auto;font-size:.85rem">{bibtex}</pre></details>
+<p><button class="btn" id="copy-cite" type="button">Copy citation</button> <small id="copy-msg" aria-live="polite"></small></p>
+<p class="crumbs" style="margin-bottom:0">We have not attached a license to this compilation. The underlying catalogs belong to their publishers (linked below and on each row). When you reuse a number, please also cite the original catalog page shown in the row's sources.</p>
+</div>
+
+<h2 id="table">All cartridges</h2>
+<div class="tbl"><table class="dataset"><caption class="crumbs" style="text-align:left;padding:.6rem .75rem">{filters.length} cartridges, sorted by brand then model. Click a model for its page with the full citations.</caption>
+<thead><tr><th>Brand</th><th>Model</th><th>OEM part no.</th><th>Unicel</th><th>Pleatco</th><th>Filbur</th><th>Diameter</th><th>Length</th><th>Top fitting</th><th>Bottom fitting</th><th>Sq ft</th><th>Status</th><th>Sources</th></tr></thead>
+<tbody>{sorted.map(f=>{const d:any=f.dimensions;return <tr>
+<td>{f.brand}</td><td><a href={modelHref(f)}>{f.model}</a></td><td>{f.oemAll||f.oem||'—'}</td><td>{f.equivalents?.unicel||'—'}</td><td>{f.equivalents?.pleatco||'—'}</td><td>{f.equivalents?.filbur||'—'}</td>
+<td>{d.diameterText||'—'}</td><td>{d.lengthText||'—'}</td><td>{d.topCore||'—'}</td><td>{d.bottomCore||'—'}</td><td>{d.sqft!=null?d.sqft:'—'}</td>
+<td>{f.status==='verified'?<span class="badge">verified</span>:<span class="badge u">unverified</span>}</td>
+<td>{(f.sources||[]).map((s,i)=><>{i>0?'; ':''}<a href={s.url} rel="nofollow" title={s.where}>{short(s.source)}</a></>)} · <a href={modelHref(f)}>citations</a></td></tr>})}</tbody></table></div>
+
+<h2 id="columns">Columns and notes</h2>
+<ul>
+<li><strong>OEM part no.</strong> is the spa maker's number; where the sources list older numbers they are shown together.</li>
+<li><strong>Unicel, Pleatco, Filbur</strong> are the equivalents given by those catalogs. A dash means the catalog does not list one; we do not guess.</li>
+<li><strong>Diameter and length</strong> are in inches as printed in the sources; the CSV and JSON also carry numeric inch values.</li>
+<li><strong>Sq ft</strong> is the filter media area where a source gives it; blank when none does.</li>
+<li><strong>Status:</strong> verified means the numbers come straight from the cited pages; unverified rows lack a second source or have a conflict. See our <a href="/about/#methodology">methodology</a>. Measure your old cartridge before ordering.</li>
+</ul>
+<p>Spotted an error? Email <a href="mailto:contact@myspafilter.com">contact@myspafilter.com</a> or see the <a href="/about/#corrections">corrections policy</a>.</p>
+<script is:inline>
+document.getElementById('copy-cite').addEventListener('click',function(){var t=document.getElementById('cite-text').textContent,m=document.getElementById('copy-msg');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){m.textContent='Copied.'},function(){var r=document.createRange();r.selectNodeContents(document.getElementById('cite-text'));var s=getSelection();s.removeAllRanges();s.addRange(r);m.textContent='Press Ctrl/Cmd+C to copy.'})});
+</script>
+</Base>

@@ -5,6 +5,8 @@ import Sources from '../../../components/Sources.astro';
 import ProductPicks from '../../../components/ProductPicks.astro';
 import { filters, slug, partLabel, fitSrc, sqftText, isIndexable, modelHref, type Filter } from '../../../lib/data';
 import { retailerLinks, outboundRel } from '../../../config/affiliate';
+import { rowDate } from '../../../lib/lastmod';
+import { SITE, publisherRef } from '../../../lib/schema';
 export function getStaticPaths(){ return filters.map(f=>({params:{brand:f.brandSlug,model:f.modelSlug},props:{f}})); }
 const { f } = Astro.props as { f: Filter };
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
@@ -30,12 +32,26 @@ const shortNames = names.length ? names.map(n=>n.split(' ')[1]) : (f.label ? [f.
 if (!names.length && f.label) names.push(`${f.brand} ${f.label}`);
 const sq = sqftText(d);
 const oemTxt = oems.length ? `OEM ${oems.join(', ')}` : `the ${f.series} cartridge`;
-const ld = [{"@context":"https://schema.org","@type":"Product",name:`${f.brand} ${f.model} spa filter`,...(f.oem?{mpn:f.oem}:{}),brand:{"@type":"Brand",name:f.brand},url,
-  description:`Replacement hot tub filter for ${f.brand}: ${oemTxt}, ${names.join(', ')}.`},
- {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[
+const pageTitle = `${f.brand} ${f.oem||pk} Spa Filter – ${shortNames.slice(0,2).join(' / ')} Replacement`;
+const dim = `${d.diameterText} diameter × ${d.lengthText} long${d.topCore?`, top: ${d.topCore}`:''}${d.bottomCore?`, bottom: ${d.bottomCore}`:''}${sq?`, ${sq}`:''}`;
+// Cross-reference entries: one per part number the cited catalogs treat as interchangeable. No offers, prices, ratings or reviews.
+const partItems = [
+  ...oems.map(o=>`${f.brand} OEM ${o}`),
+  ...(eq.unicel?[`Unicel ${eq.unicel}`]:[]), ...(eq.pleatco?[`Pleatco ${eq.pleatco}`]:[]), ...(eq.filbur?[`Filbur ${eq.filbur}`]:[]),
+];
+const cites = (f.sources||[]).map(s=>({"@type":"CreativeWork",name:`${s.source}, ${s.where}`,url:s.url}));
+const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#webpage`,name:pageTitle,url,
+  description:`Cross-reference of ${f.brand} ${oemTxt} to ${names.join(', ')}. ${dim}.`,inLanguage:"en-US",dateModified:rowDate(f),
+  isPartOf:{"@type":"WebSite",name:"MySpaFilter",url:SITE},publisher:publisherRef,
+  about:{"@type":"Thing",name:`${f.brand} ${f.model}`,description:dim,...(partItems.length?{alternateName:partItems}:{})},
+  mainEntity:{"@type":"ItemList",name:`Part numbers cross-referenced for ${f.brand} ${f.model}`,numberOfItems:partItems.length,itemListOrder:"https://schema.org/ItemListUnordered",
+    itemListElement:partItems.map((name,i)=>({"@type":"ListItem",position:i+1,name}))},
+  ...(cites.length?{citation:cites}:{}),
+  breadcrumb:{"@id":`${url}#breadcrumb`}},
+ {"@context":"https://schema.org","@type":"BreadcrumbList","@id":`${url}#breadcrumb`,itemListElement:[
   {"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:f.brand,item:new URL(`/${f.brandSlug}/`,site).href},{"@type":"ListItem",position:3,name:f.model,item:url}]}];
 ---
-<Base title={`${f.brand} ${f.oem||pk} Spa Filter – ${shortNames.slice(0,2).join(' / ')} Replacement`} description={`${f.brand} ${oemTxt} hot tub filter cross-reference: ${names.join(', ')}. ${d.diameterText} × ${d.lengthText}${sq?`, ${sq}`:''}${fit.length?`, fits ${fit.length} listed model${fit.length>1?'s':''}`:''}, with cited sources.`} jsonld={ld} noindex={f.index===false}>
+<Base title={pageTitle} description={`${f.brand} ${oemTxt} hot tub filter cross-reference: ${names.join(', ')}. ${d.diameterText} × ${d.lengthText}${sq?`, ${sq}`:''}${fit.length?`, fits ${fit.length} listed model${fit.length>1?'s':''}`:''}, with cited sources.`} jsonld={ld} noindex={f.index===false}>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href={`/${f.brandSlug}/`}>{f.brand}</a> › <span aria-current="page">{f.model}</span></nav>
 <h1>{f.brand} {f.oem?`OEM ${f.oem} `:''}spa filter ({pk!==f.oem ? pk : (f.label||pk)})</h1>
 <p>Listed for: {f.series}{f.status!=='verified' && <strong> — unverified</strong>}</p>
