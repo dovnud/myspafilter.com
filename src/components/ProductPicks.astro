@@ -1,0 +1,38 @@
+---
+import { products, productLink, searchLink, outboundRel } from '../config/affiliate';
+export type PickGroup = { h: string; intro?: string; keys?: string[]; search?: [label: string, query: string, why?: string][] };
+interface Props { groups: PickGroup[]; heading?: string; lead?: string; level?: 2 | 3; disclose?: boolean }
+const { groups, heading, lead, disclose = true } = Astro.props as Props;
+---
+<section class="picks" data-picks>
+  {heading && <h2>{heading}</h2>}
+  {lead && <p set:html={lead} />}
+  {disclose && <p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. Links in this section go to Amazon.com and are affiliate links; they never change what we write, and the list is not ranked by commission. Each “View on Amazon” link opens a specific listing whose title we checked, and the description under each name repeats only what that listing title says. Check size, quantity and your spa maker’s guidance on the listing before you buy. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</small></p>}
+  {groups.map((g) => (
+    <div class="pickgroup">
+      <h3>{g.h}</h3>
+      {g.intro && <p set:html={g.intro} />}
+      {g.keys && g.keys.length > 0 && (
+        <ul class="pickgrid">{g.keys.map((k) => { const p = products[k]; return (
+          <li class="card pick">
+            <strong>{p.name}</strong>
+            <p>{p.says}</p>
+            <a class="btn" href={productLink(k)} rel={outboundRel} target="_blank">View on Amazon<span class="sr"> — {p.name}</span></a>
+          </li>); })}</ul>
+      )}
+      {g.search && g.search.length > 0 && (
+        <ul class="pickgrid">{g.search.map(([label, query, why]) => (
+          <li class="card pick">
+            <strong>{label}</strong>
+            {why && <p>{why}</p>}
+            <a class="btn" href={searchLink(query)} rel={outboundRel} target="_blank">Search Amazon<span class="sr"> — {label}</span></a>
+          </li>))}</ul>
+      )}
+    </div>
+  ))}
+</section>
+<style>
+.picks{margin:1.6rem 0}.pickgrid{list-style:none;padding:0;margin:.6rem 0 1.2rem;display:grid;gap:.7rem;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr))}
+.pick{display:flex;flex-direction:column;gap:.35rem}.pick p{margin:0;font-size:.92rem;flex:1}.pick .btn{align-self:flex-start;margin-top:.3rem}
+.sr{position:absolute;left:-9999px}
+</style>

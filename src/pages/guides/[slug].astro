@@ -1,24 +1,26 @@
 ---
 import Base from '../../layouts/Base.astro';
+import ProductPicks from '../../components/ProductPicks.astro';
 import { guides, SRC, REVIEWED } from '../../lib/guides';
 export function getStaticPaths(){ return guides.map(g=>({params:{slug:g.slug},props:{g}})); }
-const { g } = Astro.props as any; const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
+const { g } = Astro.props as any; const rev = g.reviewed || REVIEWED; const revText = new Date(rev+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}); const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
 const strip=(s:string)=>s.replace(/<[^>]+>/g,'').replace(/\[\d+\]/g,'');
 const keys = Object.keys(SRC);
-const ld=[{"@context":"https://schema.org","@type":"Article",headline:g.title,description:g.desc,url,dateModified:REVIEWED,datePublished:REVIEWED,author:{"@type":"Organization",name:"MySpaFilter Editorial Team",url:site},publisher:{"@type":"Organization",name:"MySpaFilter",url:site},mainEntityOfPage:url},
+const ld=[{"@context":"https://schema.org","@type":"Article",headline:g.title,description:g.desc,url,dateModified:rev,datePublished:rev,author:{"@type":"Organization",name:"MySpaFilter Editorial Team",url:site},publisher:{"@type":"Organization",name:"MySpaFilter",url:site},mainEntityOfPage:url},
 {"@context":"https://schema.org","@type":"FAQPage",mainEntity:g.faq.map(([q,a]:any)=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:strip(a)}}))},
 {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:"Guides",item:new URL('/guides/',site).href},{"@type":"ListItem",position:3,name:g.title,item:url}]}];
-const others = guides.filter((x:any)=>x.slug!==g.slug).slice(0,4);
+const others = guides.filter((x:any)=>x.slug!==g.slug).sort((a:any,b:any)=>(b.picks?1:0)-(a.picks?1:0)).slice(0,6);
 ---
 <Base title={`${g.title} | MySpaFilter`} description={g.desc} jsonld={ld}>
 <p class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a></p>
 <article><h1>{g.title}</h1>
-<p class="crumbs">By MySpaFilter Editorial Team · Last reviewed <time datetime={REVIEWED}>October 23, 2026</time></p>
+<p class="crumbs">By MySpaFilter Editorial Team · Last reviewed <time datetime={rev}>{revText}</time></p>
 <section class="card answer"><div class="kicker">Short answer</div><p style="font-size:1.12rem;margin:.4rem 0 0" set:html={g.answer} /></section>
 <Fragment set:html={g.body} />
+{g.picks && <ProductPicks groups={g.picks} heading={g.pickHeading || 'Products worth considering'} />}
 <h2 data-reveal>FAQ</h2>{g.faq.map(([q,a]:any)=><details class="card"><summary><strong>{q}</strong></summary><p>{a}</p></details>)}
 <h2>Sources</h2><ol>{keys.map(k=>g.src.includes(k)||g.answer.includes(`#src-${k}`)||g.body.includes(`#src-${k}`)?<li id={`src-${k}`} value={keys.indexOf(k)+1}><a href={SRC[k].u} rel="nofollow">{SRC[k].t}</a></li>:null)}</ol>
-<p><small>This guide summarizes published manufacturer guidance; always follow your own spa’s owner’s manual. See our <a href="/disclaimer/">disclaimer</a>.</small></p>
+<p><small>This guide summarizes published manufacturer and public-health guidance; always follow your own spa’s owner’s manual. See our <a href="/disclaimer/">disclaimer</a>.</small></p>
 </article>
 <h2>More guides</h2><ul>{others.map((x:any)=><li><a href={`/guides/${x.slug}/`}>{x.title}</a></li>)}</ul>
 </Base>

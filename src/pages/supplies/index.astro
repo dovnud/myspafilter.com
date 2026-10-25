@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import { guides } from '../../lib/guides';
+const by = (slug: string) => guides.find((g) => g.slug === slug)!;
+const sections: { h: string; blurb: string; slugs: string[] }[] = [
+  { h: 'Test and balance your water', blurb: 'Start here. Know your numbers before you add anything: strips or kits, then pH, alkalinity and calcium in the order your spa maker gives.', slugs: ['best-hot-tub-test-strips', 'how-to-balance-hot-tub-ph-and-alkalinity'] },
+  { h: 'Sanitize and shock', blurb: 'Bromine, chlorine and mineral systems compared against CDC and Hot Spring guidance, and how shocking works.', slugs: ['best-hot-tub-sanitizer-bromine-chlorine-mineral', 'hot-tub-shock-chlorine-vs-non-chlorine'] },
+  { h: 'Fix water problems', blurb: 'Foam, cloudy water, stains and scale, with the causes Hot Spring lists before you reach for a bottle.', slugs: ['hot-tub-foam-cloudy-water-and-jet-cleaners', 'hot-tub-stain-scale-and-metal-control'] },
+  { h: 'Filter care', blurb: 'Cleaners, tools and the cleaning routine that Unicel and Pleatco publish. Then find your replacement cartridge by part number.', slugs: ['best-hot-tub-filter-cleaners', 'how-to-clean-a-hot-tub-filter', 'how-often-to-clean-hot-tub-filter'] },
+  { h: 'Covers, steps, tools and parts', blurb: 'Cover lifters and cover care, steps and handrails, skimmers and vacuums, and how to match a replacement pillow.', slugs: ['hot-tub-cover-lifters-and-cover-care', 'hot-tub-steps-handrails-and-safe-entry', 'hot-tub-cleaning-tools-skimmers-and-vacuums', 'replacement-hot-tub-headrests-and-pillows'] },
+  { h: 'Safety', blurb: 'Chemical storage and handling from CDC, plus the CPSC safety tips for spas.', slugs: ['hot-tub-chemical-safety-and-storage'] },
+];
+---
+<Base title="Hot Tub Supplies: Chemicals, Test Strips, Covers & Accessories | MySpaFilter" description="Cited buying guides for hot tub test strips, sanitizer, shock, pH balance, filter cleaners, stain and scale control, cover lifters, steps and cleaning tools.">
+<p class="crumbs"><a href="/">Home</a> › Supplies</p>
+<h1>Hot tub supplies: how to choose, with sources</h1>
+<p>Our core job is matching your spa to the right filter cartridge. These guides cover the supplies around it. Each one explains what to look for first, cites the manufacturer or public-health guidance behind any number or safety statement, and only then lists a few products.</p>
+<section class="card"><strong>How we handle product links.</strong> We link to Amazon.com and earn a commission on qualifying purchases at no extra cost to you. Direct product links are only used after we open the listing and confirm its title; where the right item depends on your spa model, we link to a search instead. We do not show prices or star ratings, and we have not lab-tested products. <a href="/affiliate-disclosure/">Full affiliate disclosure</a>.</section>
+{sections.map((s) => (
+  <section><h2>{s.h}</h2><p>{s.blurb}</p>
+  <ul class="grid">{s.slugs.map((slug) => { const g = by(slug); return <li class="card"><a href={`/guides/${g.slug}/`} style="font-weight:750;font-size:1.08rem">{g.title}</a><p class="crumbs">{g.desc}</p></li>; })}</ul></section>
+))}
+<p>Looking for a replacement cartridge? <a href="/">Search by part number</a> or <a href="/size/">by size</a>.</p>
+</Base>

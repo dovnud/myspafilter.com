@@ -12,7 +12,7 @@ npm run build    # outputs dist/ (pushing to main auto-deploys)
 
 All retailer outbound links (FiltersFast, Amazon, Doheny's) are built in **one** file: [`src/config/affiliate.ts`](src/config/affiliate.ts). Pages never assemble retailer URLs themselves.
 
-The three IDs ship **empty**. While empty, every link is a plain search URL with no tracking parameter (for example `https://www.amazon.com/s?k=4CH-35+spa+filter`). Paste a real ID and rebuild:
+The Amazon tag is set to `myspafilter-20` (this tag belongs to myspafilter.com only and must never be reused on another site); the FiltersFast and Doheny's IDs may still be empty. While an ID is empty, While empty, every link is a plain search URL with no tracking parameter (for example `https://www.amazon.com/s?k=4CH-35+spa+filter`). Paste a real ID and rebuild:
 
 ```ts
 export const affiliate = {
@@ -52,3 +52,11 @@ export const affiliate = {
 
 - `public/robots.txt` points to `https://myspafilter.com/sitemap-index.xml`.
 - IndexNow key file: `public/93fc1b7ff9bd45e89e61434f5455a4de.txt`.
+
+
+## Product picks (non-cartridge Amazon links)
+
+- `src/data/amazon-products.json` holds verified product records (asin, name, brand, category, `says` = what the listing title states, `titleToken`, `titleSeen`, `verifiedDate`, `verifiedNote`). Add a record only after opening `amazon.com/dp/<ASIN>` and confirming the title; never guess an ASIN, never store prices or ratings.
+- `productLink(key)` and `searchLink(query)` in `src/config/affiliate.ts` build the tagged URLs. Use the `ProductPicks` component (`src/components/ProductPicks.astro`) for any list of products: it renders the visible Associates disclosure first and uses `rel="sponsored nofollow"`.
+- Guides live in `src/lib/guides.ts` (original filter guides) and `src/lib/guides2.ts` (supplies and water-care guides). Safety and number claims must cite a source from `src/lib/guidesrc.ts`.
+- `/supplies/` is the hub for the supplies guides. `npm run check:amazon` also validates `amazon-products.json` and reports distinct /dp/ vs search link counts and tagged-link totals.

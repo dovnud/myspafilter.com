@@ -8,7 +8,7 @@
  * Fails (exit 1) when:
  *  - amazonTag is set but malformed (expected like "yourname-20"),
  *  - an ASIN record is malformed, or its listing part is not one of the row's Unicel/Pleatco/OEM parts,
- *  - any built page links to amazon.com/dp/<ASIN> without a verified record in src/data/amazon-asins.json,
+ *  - any built page links to amazon.com/dp/<ASIN> without a verified record in src/data/amazon-asins.json or src/data/amazon-products.json (titleToken must appear in the verified title),
  *  - any built page with an Amazon link lacks the visible Associate disclosure text next to the buy buttons,
  *  - an Amazon link on a page lacks rel="sponsored nofollow", or carries a tag different from the configured one
  *    (so with an empty tag no tag may appear anywhere),
@@ -55,9 +55,27 @@ for (const [part, r] of Object.entries(records)) {
   asinSet.add(r.asin);
 }
 
+// ---- data: non-cartridge product records (src/data/amazon-products.json) ----
+const productFile = JSON.parse(readFileSync(join(root, 'src/data/amazon-products.json'), 'utf8'));
+const productRecords = productFile.products || {};
+const productAsins = new Set();
+for (const [key, r] of Object.entries(productRecords)) {
+  const where = `amazon-products.json "${key}"`;
+  if (!/^[A-Z0-9]{10}$/.test(r.asin || '')) fail(`${where}: asin "${r.asin}" is not a 10-character ASIN`);
+  for (const k of ['name', 'brand', 'category', 'says', 'titleToken', 'titleSeen', 'verifiedNote']) if (!r[k]) fail(`${where}: missing ${k}`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(r.verifiedDate || '')) fail(`${where}: missing/invalid verifiedDate`);
+  if (r.titleSeen && r.titleToken && !r.titleSeen.toLowerCase().includes(r.titleToken.toLowerCase())) fail(`${where}: titleSeen does not contain titleToken "${r.titleToken}"`);
+  if (r.verifiedNote && r.asin && !r.verifiedNote.includes(r.asin)) fail(`${where}: verifiedNote does not mention the ASIN`);
+  if (/\$\s?\d|\bstars?\b|\brating/i.test(`${r.name} ${r.says}`)) fail(`${where}: name/says must not contain prices or ratings`);
+  productAsins.add(r.asin);
+}
+for (const a of productAsins) asinSet.add(a);
+
 // ---- built pages ----
 const srcOnly = process.argv.includes('--src-only');
-const stats = { pages: 0, amazonPages: 0, dp: 0, search: 0 };
+const stats = { pages: 0, amazonPages: 0, dp: 0, search: 0, tagged: 0 };
+const distinctDp = new Set();
+const distinctSearch = new Set();
 if (!srcOnly) {
   const dist = join(root, 'dist');
   if (!existsSync(dist)) fail('dist/ not found: run `npm run build` first (or use --src-only)');
@@ -85,13 +103,16 @@ if (!srcOnly) {
         if (!/\bsponsored\b/.test(rel) || !/\bnofollow\b/.test(rel)) fail(`${page}: Amazon link missing rel="sponsored nofollow": ${href}`);
         const u = new URL(href);
         const t = u.searchParams.get('tag') || '';
+        if (t) stats.tagged++;
+        // a tag must sit at the END of the URL (?tag= on /dp/ links, &tag= on search links)
+        if (tag && !href.endsWith(`${u.pathname.startsWith('/dp/') ? '?' : '&'}tag=${tag}`)) fail(`${page}: Amazon link does not end with the expected tag parameter: ${href}`);
         if (t !== tag) fail(`${page}: Amazon link tag "${t}" does not match configured amazonTag "${tag}": ${href}`);
         const dp = u.pathname.match(/^\/dp\/([A-Z0-9]{10})\/?$/);
         if (dp) {
-          stats.dp++;
+          stats.dp++; distinctDp.add(dp[1]);
           if (!asinSet.has(dp[1])) fail(`${page}: /dp/${dp[1]} has no verified record in src/data/amazon-asins.json`);
         } else if (u.pathname.startsWith('/dp/') || u.pathname.includes('/dp/')) fail(`${page}: unsupported Amazon product URL ${href}`);
-        else if (u.pathname === '/s') stats.search++;
+        else if (u.pathname === '/s') { stats.search++; distinctSearch.add(u.searchParams.get('k')); }
         else fail(`${page}: unexpected Amazon URL ${href}`);
       }
     }
@@ -104,5 +125,5 @@ if (errors.length) {
   if (errors.length > 60) console.error(` ...and ${errors.length - 60} more`);
   process.exit(1);
 }
-console.log(`check:amazon OK. tag=${tag ? '"' + tag + '"' : '(none)'}; ${asinSet.size} verified ASIN records; ` +
-  (srcOnly ? 'dist not checked.' : `${stats.amazonPages}/${stats.pages} pages have Amazon links (${stats.dp} direct /dp/, ${stats.search} search).`));
+console.log(`check:amazon OK. tag=${tag ? '"' + tag + '"' : '(none)'}; ${asinSet.size} verified ASIN records (${Object.keys(records).length} cartridge + ${productAsins.size} product); ` +
+  (srcOnly ? 'dist not checked.' : `${stats.amazonPages}/${stats.pages} pages have Amazon links (${stats.dp} direct /dp/ links to ${distinctDp.size} distinct ASINs, ${stats.search} search links to ${distinctSearch.size} distinct queries; ${stats.tagged} links carry the tag).`));

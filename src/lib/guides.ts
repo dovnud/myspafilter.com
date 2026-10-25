@@ -1,23 +1,9 @@
-export const REVIEWED = '2026-10-23';
-export const SRC: Record<string,{t:string;u:string}> = {
-  pleatcoCat:{t:'Pleatco Catalog & Cross Reference Guide — filter care FAQ',u:'https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf'},
-  pleatco23:{t:'Pleatco 2023 Catalog (Pentair)',u:'https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf'},
-  pleatcoWash:{t:'Pleatco FilterWash information sheet',u:'https://lesl.a.bigcontent.io/v1/static/Pleatco-FilterWash-InfoSheet'},
-  unicel:{t:'Unicel — Maintenance & FAQ',u:'https://www.unicelfilters.com/maintenance-and-faq/'},
-  unicel26:{t:'Unicel 2026 Replacement Guide',u:'https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf'},
-  unicelReplace:{t:'Unicel — When to Replace a Cartridge Filter (PDF)',u:'https://waterlinetechnologies.com/content/Unicel/When%20to%20Replace%20A%20Cartridge%20Filter.pdf'},
-  hsMaint:{t:'Hot Spring Spas — Maintenance Tips',u:'https://www.hotspring.com/owners/maintenance-and-tips'},
-  hsBlog:{t:'Hot Spring Spas — How Do Hot Tub Filters Work?',u:'https://www.hotspring.com/blog/how-do-hot-tub-filters-work'},
-  hsManual:{t:'Hot Spring Hot Spot Collection Owner’s Manual (2026)',u:'https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf'},
-  jac:{t:'Jacuzzi — Hot Tub Filter Cleaning Made Easy',u:'https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html'},
-  sd680:{t:'Sundance Spas 680 Series Owner’s Manual (2024)',u:'https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf'},
-  sd780:{t:'Sundance Spas 780 Series Owner’s Manual (2024)',u:'https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf'},
-  cdcRash:{t:'CDC — Preventing Hot Tub Rash',u:'https://www.cdc.gov/healthy-swimming/prevention/preventing-hot-tub-rash.html'},
-  cdcLeg:{t:'CDC — Controlling Legionella in Hot Tubs',u:'https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html'},
-};
-const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');
-export type Guide={slug:string;title:string;desc:string;answer:string;body:string;faq:[string,string][];src:string[]};
-export const guides: Guide[] = [
+import { SRC, REVIEWED, REVIEWED_NEW, c } from './guidesrc';
+import type { PickGroup } from '../components/ProductPicks.astro';
+import { extraGuides } from './guides2';
+export { SRC, REVIEWED };
+export type Guide={slug:string;title:string;desc:string;answer:string;body:string;faq:[string,string][];src:string[];picks?:PickGroup[];reviewed?:string;intro?:string};
+const baseGuides: Guide[] = [
 {slug:'how-often-to-replace-hot-tub-filter',title:'How often should you replace a hot tub filter?',
 desc:'Replacement intervals for hot tub filter cartridges from Hot Spring, Jacuzzi, Sundance, Unicel and Pleatco, and why there is no single number.',
 answer:`Most pleated spa cartridges are replaced somewhere between <strong>12 months and 3 years</strong>, depending on the brand and how hard the tub is used. Jacuzzi says 12–24 months${c('jac')}, Hot Spring says 2–3 years for standard cartridges${c('hsBlog')}. Disposable inner filters (such as Sundance MicroClean inserts) are on a much shorter schedule of a few months${c('sd780')}.`,
@@ -164,3 +150,24 @@ faq:[['Will a dishwasher damage a hot tub filter?','Jacuzzi says high heat and a
 ['What about filter-cleaning wands?','Unicel and Pleatco describe a garden hose with a straight-flow nozzle. Jacuzzi warns against high-pressure tools that can tear fibers, so avoid anything aggressive on the media.']],
 src:['jac','unicel','pleatcoCat','sd680']},
 ];
+// Product picks attached to the original filter-care guides (all links built in src/config/affiliate.ts).
+const attach: Record<string, PickGroup[]> = {
+  'how-to-clean-a-hot-tub-filter': [
+    {h:'Filter cleaners for the soak step',intro:'Unicel and Pleatco describe a degreasing soak of at least an hour; these are purpose-made cartridge cleaners.',keys:['lt-filter-clean-o','spaguard-filter-cleaner','powersoak','aquadoc-filter-soak']},
+    {h:'Spray-on cleaner and tools',keys:['black-diamond-spray','filter-flosser']}],
+  'how-often-to-clean-hot-tub-filter': [
+    {h:'Cleaners to keep on hand',keys:['lt-filter-clean-o','spaguard-filter-cleaner','powersoak']}],
+  'spa-filter-cleaner-vs-diy-soak': [
+    {h:'Purpose-made filter cleaners',keys:['lt-filter-clean-o','spaguard-filter-cleaner','powersoak','aquadoc-filter-soak','black-diamond-spray']}],
+  'should-you-acid-wash-a-spa-filter': [
+    {h:'Degreasing cleaners (the step to do before any acid)',keys:['lt-filter-clean-o','spaguard-filter-cleaner','powersoak']}],
+  'can-you-put-a-hot-tub-filter-in-the-dishwasher': [
+    {h:'Safer ways to clean: filter cleaners',keys:['lt-filter-clean-o','spaguard-filter-cleaner','aquadoc-filter-soak']}],
+  'signs-your-hot-tub-filter-is-bad': [
+    {h:'Check the water too',intro:'Cloudy or foamy water can come from the filter or the chemistry; test before you replace anything.',keys:['aquachek-spa-6in1','aquachek-yellow-4way','lt-filter-clean-o']}],
+  'how-often-to-replace-hot-tub-filter': [
+    {h:'Care products that help a cartridge last',intro:'Unicel and Pleatco tie cartridge life to cleaning and chemistry; these are the basics.',keys:['lt-filter-clean-o','spaguard-filter-cleaner','aquachek-spa-6in1']}],
+};
+for (const g of baseGuides) if (attach[g.slug]) { g.picks = attach[g.slug]; g.reviewed = REVIEWED_NEW; }
+
+export const guides: Guide[] = [...baseGuides, ...extraGuides];

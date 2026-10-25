@@ -4,7 +4,7 @@ interface Props { title:string; description:string; jsonld?: object[]; noindex?:
 const { title, description, jsonld = [], noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const path = Astro.url.pathname;
-const nav = [['/','Home'],['/size/','Size lookup'],['/guides/','Guides'],['/about/','About'],['/contact/','Contact']];
+const nav = [['/','Home'],['/size/','Size lookup'],['/guides/','Guides'],['/supplies/','Supplies'],['/about/','About'],['/contact/','Contact']];
 ---
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><link rel="preload" href="/fonts/young-serif-latin.woff2" as="font" type="font/woff2" crossorigin><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -86,7 +86,7 @@ input{padding:.65rem .8rem;border:1px solid var(--bd);border-radius:4px;font-siz
 <div class="disc"><div class="wrap">Disclosure: we may earn a commission from qualifying purchases made through retailer links on this site, at no extra cost to you. As an Amazon Associate I earn from qualifying purchases. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</div></div>
 <main class="wrap"><slot /></main>
 <footer><div class="wrap"><p><strong style="color:#fff">Brands:</strong> {brands().map(b=><a href={`/${b.slug}/`}>{b.name}</a>)}</p>
-<p><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/guides/">Guides</a><a href="/guide/">Measuring guide</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/guides/">Guides</a><a href="/supplies/">Supplies</a><a href="/guide/">Measuring guide</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
 <p>MySpaFilter is independent and not affiliated with any hot tub manufacturer or filter brand. Cross-reference data comes from the Unicel 2026 Replacement Guide and Pleatco 2023 catalog ({filters.length} cartridges). Always check dimensions before buying.</p>
 <p>© {new Date().getFullYear()} myspafilter.com</p></div></footer>
 <script>

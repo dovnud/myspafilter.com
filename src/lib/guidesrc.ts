@@ -1,0 +1,27 @@
+export const REVIEWED = '2026-10-23';
+export const REVIEWED_NEW = '2026-10-25';
+export const SRC: Record<string,{t:string;u:string}> = {
+  pleatcoCat:{t:'Pleatco Catalog & Cross Reference Guide — filter care FAQ',u:'https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf'},
+  pleatco23:{t:'Pleatco 2023 Catalog (Pentair)',u:'https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf'},
+  pleatcoWash:{t:'Pleatco FilterWash information sheet',u:'https://lesl.a.bigcontent.io/v1/static/Pleatco-FilterWash-InfoSheet'},
+  unicel:{t:'Unicel — Maintenance & FAQ',u:'https://www.unicelfilters.com/maintenance-and-faq/'},
+  unicel26:{t:'Unicel 2026 Replacement Guide',u:'https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf'},
+  unicelReplace:{t:'Unicel — When to Replace a Cartridge Filter (PDF)',u:'https://waterlinetechnologies.com/content/Unicel/When%20to%20Replace%20A%20Cartridge%20Filter.pdf'},
+  hsMaint:{t:'Hot Spring Spas — Maintenance Tips',u:'https://www.hotspring.com/owners/maintenance-and-tips'},
+  hsBlog:{t:'Hot Spring Spas — How Do Hot Tub Filters Work?',u:'https://www.hotspring.com/blog/how-do-hot-tub-filters-work'},
+  hsManual:{t:'Hot Spring Hot Spot Collection Owner’s Manual (2026)',u:'https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf'},
+  jac:{t:'Jacuzzi — Hot Tub Filter Cleaning Made Easy',u:'https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html'},
+  sd680:{t:'Sundance Spas 680 Series Owner’s Manual (2024)',u:'https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf'},
+  sd780:{t:'Sundance Spas 780 Series Owner’s Manual (2024)',u:'https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf'},
+  cdcRash:{t:'CDC — Preventing Hot Tub Rash',u:'https://www.cdc.gov/healthy-swimming/prevention/preventing-hot-tub-rash.html'},
+  cdcLeg:{t:'CDC — Controlling Legionella in Hot Tubs',u:'https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html'},
+  cdcChem:{t:'CDC — Pool Chemical Safety (applies to pools, hot tubs and spas)',u:'https://www.cdc.gov/healthy-swimming/toolkit/pool-chemical-safety.html'},
+  cpsc96:{t:'CPSC — Warning for Pools, Spas and Hot Tubs (safety tips)',u:'https://www.cpsc.gov/Newsroom/News-Releases/1996/CPSC-Issues-Warning-for-Pools-Spas-and-Hot-Tubs'},
+  cpscHome:{t:'CPSC — Prevent Child In-Home Drowning Deaths (Pub. 5013)',u:'https://www.cpsc.gov/s3fs-public/PreventChildInHomeDrowningDeaths.pdf'},
+  hsChem:{t:'Hot Spring — How do I choose the right spa chemicals for my hot tub?',u:'https://www.hotspring.com/faq/how-do-i-choose-the-right-spa-chemicals-for-my-hot-tub'},
+  hsWater:{t:'Hot Spring — Hot Tub Water Care & Troubleshooting',u:'https://www.hotspring.com/owners/water-care-and-troubleshooting'},
+  hsLifters:{t:'Hot Spring — Hot Tub Cover Lifters',u:'https://www.hotspring.com/shop/accessories/cover-lifters'},
+  hsQuick:{t:'Hot Spring — Hot Spot Collection Quick Start Guide (2024)',u:'https://www.hotspring.com/wp-content/uploads/2024/07/hot-spring-hot-spot-quick-start-guide.pdf'},
+  hsManualUK:{t:'Hot Spring Hot Spot Collection Owner’s Manual, 50 Hz (2024) — cover care',u:'https://www.hotspring.co.uk/wp-content/uploads/2024/04/2024-Hot-Spot-50Hz-Owners-Manual-Rev-A-English.pdf'},
+};
+export const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');
