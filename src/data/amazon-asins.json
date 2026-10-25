@@ -1,0 +1,349 @@
+{
+ "_comment": "Verified Amazon ASINs keyed by the retail part label used on the page. Add a record only after opening amazon.com/dp/<asin> and confirming brand + part number in the listing title. Run `npm run check:amazon` after editing.",
+ "asins": {
+  "C-6430": {
+   "asin": "B000BNM27U",
+   "listingBrand": "Unicel",
+   "listingPart": "C-6430",
+   "titleSeen": "Unicel C-6430 Replacement Filter Cartridge for 30 Square Foot Hot Springs Spas/Watkins Mfg, White",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B000BNM27U (Unicel C-6430) on 2026-10-25: \"Unicel C-6430 Replacement Filter Cartridge for 30 Square Foot Hot Springs Spas/Watkins Mfg, White\""
+  },
+  "C-8465": {
+   "asin": "B01LPDBZJ0",
+   "listingBrand": "Unicel",
+   "listingPart": "C-8465",
+   "titleSeen": "Unicel C-8465 65 Square Foot Hot Tub and Spa Replacement Pool Filter Cartridge for Caldera 76136, Hot Springs 31114",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B01LPDBZJ0 (Unicel C-8465) on 2026-10-25: \"Unicel C-8465 65 Square Foot Hot Tub and Spa Replacement Pool Filter Cartridge for Caldera 76136, Hot Springs 31114\""
+  },
+  "C-7375": {
+   "asin": "B003A6U6R8",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7375",
+   "titleSeen": "Unicel C-7375 Replacement Filter Cartridge for 75 Square Foot Caldera Spa, New Style",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B003A6U6R8 (Unicel C-7375) on 2026-10-25: \"Unicel C-7375 Replacement Filter Cartridge for 75 Square Foot Caldera Spa, New Style\""
+  },
+  "C-7350": {
+   "asin": "B0039X2ZXU",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7350",
+   "titleSeen": "Unicel C-7350 50 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 200 Pleats, Compatible with Caldera Spas",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B0039X2ZXU (Unicel C-7350) on 2026-10-25: \"Unicel C-7350 50 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 200 Pleats, Compatible with Caldera Spas\""
+  },
+  "C-8399": {
+   "asin": "B0043W4B8S",
+   "listingBrand": "Unicel",
+   "listingPart": "C-8399",
+   "titleSeen": "Unicel C-8399 Replacement Filter Cartridge for 100 Square Foot Caldera, White",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B0043W4B8S (Unicel C-8399) on 2026-10-25: \"Unicel C-8399 Replacement Filter Cartridge for 100 Square Foot Caldera, White\""
+  },
+  "C-8326": {
+   "asin": "B007VLAXYE",
+   "listingBrand": "Unicel",
+   "listingPart": "C-8326",
+   "titleSeen": "Unicel C-8326 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Full amazon.com/dp/B007VLAXYE page fetched and Unicel C-8326 confirmed on 2026-10-25."
+  },
+  "C-4335": {
+   "asin": "B000BNPRAO",
+   "listingBrand": "Unicel",
+   "listingPart": "C-4335",
+   "titleSeen": "Unicel C-4335 35 Square Foot Media Replacement Pool Hot Tub Spa Filter Cartridge with 219 Pleats",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B000BNPRAO (Unicel C-4335) on 2026-10-25: \"Unicel C-4335 35 Square Foot Media Replacement Pool Hot Tub Spa Filter Cartridge with 219 Pleats\""
+  },
+  "6CH-945": {
+   "asin": "B00N0TTYHI",
+   "listingBrand": "Pleatco",
+   "listingPart": "PJP45-F2S",
+   "titleSeen": "Pleatco Filtration PJP45-F2S Spa Filter Cartridge Replacement for Unicel: 6CH-945",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B00N0TTYHI (Pleatco PJP45-F2S) on 2026-10-25: \"Pleatco Filtration PJP45-F2S Spa Filter Cartridge Replacement for Unicel: 6CH-945\""
+  },
+  "PBF40": {
+   "asin": "B09FYMPTNN",
+   "listingBrand": "Pleatco",
+   "listingPart": "PBF40",
+   "titleSeen": "Pleatco Filtration PBF40 Spa Filter Cartridge Replacement for Unicel, Filbur, Hayward 10-00282",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B09FYMPTNN (Pleatco PBF40) on 2026-10-25: \"Pleatco Filtration PBF40 Spa Filter Cartridge Replacement for Unicel, Filbur, Hayward 10-00282\""
+  },
+  "6CH-402": {
+   "asin": "B003DKEMB2",
+   "listingBrand": "Pleatco",
+   "listingPart": "PMA40L-F2M",
+   "titleSeen": "Pleatco PMA40L-F2M Replacement Cartridge for Master SPAS 40SF Long Cartridge, 1 Cartridge",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B003DKEMB2 (Pleatco PMA40L-F2M) on 2026-10-25: \"Pleatco PMA40L-F2M Replacement Cartridge for Master SPAS 40SF Long Cartridge, 1 Cartridge\""
+  },
+  "4CH-35": {
+   "asin": "B005DQU7IQ",
+   "listingBrand": "Unicel",
+   "listingPart": "4CH-35",
+   "titleSeen": "Unicel 4CH-35 Replacement Filter Cartridge for 35 Square Foot Top Load",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B005DQU7IQ (Unicel 4CH-35) on 2026-10-25: \"Unicel 4CH-35 Replacement Filter Cartridge for 35 Square Foot Top Load\""
+  },
+  "C-4326": {
+   "asin": "B000A4RKMM",
+   "listingBrand": "Unicel",
+   "listingPart": "C-4326",
+   "titleSeen": "Unicel C-4326 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B000A4RKMM (Unicel C-4326) on 2026-10-25; full title text not recorded."
+  },
+  "C-4950": {
+   "asin": "B000A4TDPO",
+   "listingBrand": "Unicel",
+   "listingPart": "C-4950",
+   "titleSeen": "Unicel C-4950 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B000A4TDPO (Unicel C-4950) on 2026-10-25; full title text not recorded."
+  },
+  "C-6433": {
+   "asin": "B005DQUWX6",
+   "listingBrand": "Unicel",
+   "listingPart": "C-6433",
+   "titleSeen": "Unicel C-6433 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B005DQUWX6 (Unicel C-6433) on 2026-10-25; full title text not recorded."
+  },
+  "C-6600": {
+   "asin": "B000BNQT38",
+   "listingBrand": "Unicel",
+   "listingPart": "C-6600",
+   "titleSeen": "Unicel C-6600 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B000BNQT38 (Unicel C-6600) on 2026-10-25; full title text not recorded."
+  },
+  "C-7451": {
+   "asin": "B0043W9JEY",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7451",
+   "titleSeen": "Unicel C-7451 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B0043W9JEY (Unicel C-7451) on 2026-10-25; full title text not recorded."
+  },
+  "C-7479": {
+   "asin": "B0039ZMQ8W",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7479",
+   "titleSeen": "Unicel C-7479 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B0039ZMQ8W (Unicel C-7479) on 2026-10-25; full title text not recorded."
+  },
+  "C-8300": {
+   "asin": "B00QB35RV2",
+   "listingBrand": "Unicel",
+   "listingPart": "C-8300",
+   "titleSeen": "Unicel C-8300 Pool Spa Filter Cartridge, White",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B00QB35RV2 (Unicel C-8300) on 2026-10-25: \"Unicel C-8300 Pool Spa Filter Cartridge, White\""
+  },
+  "C-5431": {
+   "asin": "B0043W8G5C",
+   "listingBrand": "Unicel",
+   "listingPart": "C-5431",
+   "titleSeen": "Unicel C-5431 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B0043W8G5C (Unicel C-5431) on 2026-10-25; full title text not recorded."
+  },
+  "7CH-90": {
+   "asin": "B005DQUF2O",
+   "listingBrand": "Unicel",
+   "listingPart": "7CH-90",
+   "titleSeen": "Unicel 7CH-90 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B005DQUF2O (Unicel 7CH-90) on 2026-10-25; full title text not recorded."
+  },
+  "4CH-30": {
+   "asin": "B000BNQSZW",
+   "listingBrand": "Unicel",
+   "listingPart": "4CH-30",
+   "titleSeen": "Unicel 4CH-30 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B000BNQSZW (Unicel 4CH-30) on 2026-10-25; full title text not recorded."
+  },
+  "8CH-102": {
+   "asin": "B005DQUF6K",
+   "listingBrand": "Unicel",
+   "listingPart": "8CH-102",
+   "titleSeen": "Unicel 8CH-102 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B005DQUF6K (Unicel 8CH-102) on 2026-10-25; full title text not recorded."
+  },
+  "C-7370": {
+   "asin": "B0039ZT9RS",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7370",
+   "titleSeen": "Unicel C-7370 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B0039ZT9RS (Unicel C-7370) on 2026-10-25; full title text not recorded."
+  },
+  "C-7465": {
+   "asin": "B000BNM28Y",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7465",
+   "titleSeen": "Unicel C-7465 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B000BNM28Y (Unicel C-7465) on 2026-10-25; full title text not recorded."
+  },
+  "C-8325": {
+   "asin": "B000BNO4QM",
+   "listingBrand": "Unicel",
+   "listingPart": "C-8325",
+   "titleSeen": "Unicel C-8325 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B000BNO4QM (Unicel C-8325) on 2026-10-25; full title text not recorded."
+  },
+  "C-8380": {
+   "asin": "B000BNPREK",
+   "listingBrand": "Unicel",
+   "listingPart": "C-8380",
+   "titleSeen": "Unicel C-8380 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B000BNPREK (Unicel C-8380) on 2026-10-25; full title text not recorded."
+  },
+  "C-5625": {
+   "asin": "B000BNQT2E",
+   "listingBrand": "Unicel",
+   "listingPart": "C-5625",
+   "titleSeen": "Unicel C-5625 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B000BNQT2E (Unicel C-5625) on 2026-10-25; full title text not recorded."
+  },
+  "C-5635": {
+   "asin": "B0043W6C8K",
+   "listingBrand": "Unicel",
+   "listingPart": "C-5635",
+   "titleSeen": "Unicel C-5635 ...",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Brand + part number confirmed in the title of amazon.com/dp/B0043W6C8K (Unicel C-5635) on 2026-10-25; full title text not recorded."
+  },
+  "C-7304": {
+   "asin": "B0043W9J1W",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7304",
+   "titleSeen": "Unicel C-7304 Replacement Filter Cartridge for 40 Square Foot Jacuzzi CE",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B0043W9J1W (Unicel C-7304) on 2026-10-25: \"Unicel C-7304 Replacement Filter Cartridge for 40 Square Foot Jacuzzi CE\""
+  },
+  "C-7306": {
+   "asin": "B0043WBDQG",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7306",
+   "titleSeen": "Unicel C-7306 Replacement Filter Cartridge for 60 Square Foot Jacuzzi CE",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B0043WBDQG (Unicel C-7306) on 2026-10-25: \"Unicel C-7306 Replacement Filter Cartridge for 60 Square Foot Jacuzzi CE\""
+  },
+  "6CH-960": {
+   "asin": "B0039ZFV0W",
+   "listingBrand": "Unicel",
+   "listingPart": "6CH-960",
+   "titleSeen": "Unicel 6CH-960 Hot Tub Filter Cartridge, 52 Sq Ft, 113 Pleats, for Jacuzzi",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B0039ZFV0W (Unicel 6CH-960) on 2026-10-25: \"Unicel 6CH-960 Hot Tub Filter Cartridge, 52 Sq Ft, 113 Pleats, for Jacuzzi\""
+  },
+  "5CH-402": {
+   "asin": "B0040T9OOU",
+   "listingBrand": "Unicel",
+   "listingPart": "5CH-402",
+   "titleSeen": "Unicel 5CH-402 40 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 204 Pleats",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B0040T9OOU (Unicel 5CH-402) on 2026-10-25: \"Unicel 5CH-402 40 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 204 Pleats\""
+  },
+  "C-4305": {
+   "asin": "B000BNPRA4",
+   "listingBrand": "Unicel",
+   "listingPart": "C-4305",
+   "titleSeen": "Unicel C-4305 Replacement Filter Cartridge for 50 Square Foot Cal Spas, Martec, Sonfarrel, Advantage Mfg, White",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B000BNPRA4 (Unicel C-4305) on 2026-10-25: \"Unicel C-4305 Replacement Filter Cartridge for 50 Square Foot Cal Spas, Martec, Sonfarrel, Advantage Mfg, White\""
+  },
+  "C-4440": {
+   "asin": "B000BNPRBS",
+   "listingBrand": "Unicel",
+   "listingPart": "C-4440",
+   "titleSeen": "Unicel C-4440 Replacement Filter Cartridge for 40 Square Foot Sundance Spas, White",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B000BNPRBS (Unicel C-4440) on 2026-10-25: \"Unicel C-4440 Replacement Filter Cartridge for 40 Square Foot Sundance Spas, White\""
+  },
+  "5CH-37": {
+   "asin": "B076FHY83K",
+   "listingBrand": "Unicel",
+   "listingPart": "5CH-37",
+   "titleSeen": "Unicel 5CH-37 37.5 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 221 Pleats",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B076FHY83K (Unicel 5CH-37) on 2026-10-25: \"Unicel 5CH-37 37.5 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 221 Pleats\""
+  },
+  "C-7466": {
+   "asin": "B000BNQT42",
+   "listingBrand": "Unicel",
+   "listingPart": "C-7466",
+   "titleSeen": "Unicel C-7466 Replacement Filter Cartridge for 65 Square Foot Sundance Spas, White",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B000BNQT42 (Unicel C-7466) on 2026-10-25: \"Unicel C-7466 Replacement Filter Cartridge for 65 Square Foot Sundance Spas, White\""
+  },
+  "6CH-940": {
+   "asin": "B000BNPR9K",
+   "listingBrand": "Unicel",
+   "listingPart": "6CH-940",
+   "titleSeen": "Unicel 6CH-940 45 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 225 Pleats",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B000BNPR9K (Unicel 6CH-940) on 2026-10-25: \"Unicel 6CH-940 45 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 225 Pleats\""
+  },
+  "5CH-502": {
+   "asin": "B0039W3UJO",
+   "listingBrand": "Unicel",
+   "listingPart": "5CH-502",
+   "titleSeen": "Unicel 5CH-502 50 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 197 Pleats",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B0039W3UJO (Unicel 5CH-502) on 2026-10-25: \"Unicel 5CH-502 50 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 197 Pleats\""
+  },
+  "4CH-935": {
+   "asin": "B005DQU8J4",
+   "listingBrand": "Unicel",
+   "listingPart": "4CH-935",
+   "titleSeen": "Unicel 4CH-935 35 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 219 Pleats",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B005DQU8J4 (Unicel 4CH-935) on 2026-10-25: \"Unicel 4CH-935 35 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 219 Pleats\""
+  },
+  "C-6330": {
+   "asin": "B00QB37GE8",
+   "listingBrand": "Unicel",
+   "listingPart": "C-6330",
+   "titleSeen": "Unicel C-6330 Pool Spa Filter Cartridge, White",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B00QB37GE8 (Unicel C-6330) on 2026-10-25: \"Unicel C-6330 Pool Spa Filter Cartridge, White\""
+  },
+  "6CH-47": {
+   "asin": "B000BNQT06",
+   "listingBrand": "Unicel",
+   "listingPart": "6CH-47",
+   "titleSeen": "Unicel 6CH-47 Top Load Replacement Spa Filter Cartridge 47 Sq Ft PTL47W FC-0315",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B000BNQT06 (Unicel 6CH-47) on 2026-10-25: \"Unicel 6CH-47 Top Load Replacement Spa Filter Cartridge 47 Sq Ft PTL47W FC-0315\""
+  },
+  "4CH-20": {
+   "asin": "B000BNQSZM",
+   "listingBrand": "Unicel",
+   "listingPart": "4CH-20",
+   "titleSeen": "Unicel 4CH-20 Replacement Filter Cartridge for 20 Square Foot Top Load",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B000BNQSZM (Unicel 4CH-20) on 2026-10-25: \"Unicel 4CH-20 Replacement Filter Cartridge for 20 Square Foot Top Load\""
+  },
+  "5CH-352": {
+   "asin": "B004KT2GJ0",
+   "listingBrand": "Unicel",
+   "listingPart": "5CH-352",
+   "titleSeen": "Unicel 5CH-352 35 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 151 Pleats",
+   "verifiedDate": "2026-10-25",
+   "verifiedNote": "Seen on amazon.com/dp/B004KT2GJ0 (Unicel 5CH-352) on 2026-10-25: \"Unicel 5CH-352 35 Square Foot Media Replacement Hot Tub Spa Filter Cartridge with 151 Pleats\""
+  }
+ }
+}

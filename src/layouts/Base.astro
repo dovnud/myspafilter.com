@@ -83,7 +83,7 @@ input{padding:.65rem .8rem;border:1px solid var(--bd);border-radius:4px;font-siz
 :focus-visible{outline:2px solid var(--cedar);outline-offset:2px}
 </style></head><body>
 <header><div class="wrap"><a class="logo" href="/"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5C9 7 6 10 6 14a6 6 0 0 0 12 0c0-4-3-7-6-11.5Z" fill="#e8d6b5"/><path d="M8.5 15.5c1.2 1 2.2 1 3.5 0s2.3-1 3.5 0" stroke="#0b3c40" stroke-width="1.6" stroke-linecap="round"/></svg><span style="color:#fff">MySpaFilter<span>.com</span></span></a><nav>{nav.map(([h,l])=><a href={h} aria-current={path===h?'page':undefined}>{l}</a>)}</nav></div></header>
-<div class="disc"><div class="wrap">Disclosure: we may earn a commission from qualifying purchases made through retailer links on this site, at no extra cost to you. As an Amazon Associate we earn from qualifying purchases. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</div></div>
+<div class="disc"><div class="wrap">Disclosure: we may earn a commission from qualifying purchases made through retailer links on this site, at no extra cost to you. As an Amazon Associate I earn from qualifying purchases. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</div></div>
 <main class="wrap"><slot /></main>
 <footer><div class="wrap"><p><strong style="color:#fff">Brands:</strong> {brands().map(b=><a href={`/${b.slug}/`}>{b.name}</a>)}</p>
 <p><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/guides/">Guides</a><a href="/guide/">Measuring guide</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
