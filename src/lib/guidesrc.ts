@@ -26,6 +26,10 @@ export const SRC: Record<string,{t:string;u:string}> = {
   ltGuide:{t:'Leisure Time Inc. — Hot Tub Filter Fitment Guide (Hot Spring and Caldera model-year tables)',u:'https://leisuretimeinc.com/pages/filter-guide'},
   lt78161:{t:'Leisure Time Inc. — Hot Spring Limelight 78161 filter cartridge (specifications)',u:'https://leisuretimeinc.com/products/hotspring-limelight-78161-filter-cartridge'},
   lt73531:{t:'Leisure Time Inc. — Caldera 73531 filter cartridge (specifications and compatibility)',u:'https://leisuretimeinc.com/products/caldera-77813-filter-cartridge'},
+  geckoTS:{t:'Gecko Alliance — Troubleshooting Guide, Y series and in.xe (rev. 07/2023): FLO and HL messages',u:'https://geckoalliance.com/wp-content/uploads/2023/04/9919-101313-D_Troubleshooting_Guide_YSERIES_XE_EN_REV_15_07_2023.pdf'},
+  balboaTP:{t:'Balboa Water Group — TP600 and TP400 User Guide (heater-related messages and flow-related checks)',u:'https://www.balboawater.com/wp-content/uploads/2024/12/TP600-and-TP400-USER-GUIDE_Standard-Menus_40940.pdf'},
+  balboaFault:{t:'Balboa fault codes sheet (copy hosted by UK dealer Allswim)',u:'https://www.allswimltd.com/pdf/balboa-fault-codes.pdf'},
+  hsHighlife:{t:'Hot Spring Highlife Collection Owner’s Manual (2023): service information and logo-light troubleshooting',u:'https://www.hotspring.com/wp-content/uploads/2023/07/highlife-owners-manual-en_us.pdf'},
   spastore73531:{t:'SpaStore.com — Caldera 73531 / PCD75N filter listing (model years)',u:'https://www.spastore.com/7-x-14-3-4-caldera-paradise-utopia-series-spa-filter-73531-pcd75n-years-2003/'},
 };
 export const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');

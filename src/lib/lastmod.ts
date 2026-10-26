@@ -3,7 +3,7 @@ import { filters, type Filter } from './data';
 import { guides } from './guides';
 import { extraGuides } from './guides2';
 import { REVIEWED } from './guidesrc';
-import { FITMENT_DATE } from './fitment';
+import { FITMENT_DATE, pages as fitPages } from './fitment';
 type LM = { rows: Record<string, string>; files: Record<string, string>; first: Record<string, string> };
 const L = lm as unknown as LM;
 const max = (xs: (string | undefined)[]) => xs.filter(Boolean).sort().at(-1) as string;
@@ -27,7 +27,7 @@ export function pageLastmod(pathname: string): string | undefined {
   const seg = pathname.split('/').filter(Boolean);
   if (seg.length === 0) return max([fileDate('src/pages/index.astro'), dataDate()]);
   if (seg[0] === 'guides') { if (seg.length === 1) return max([fileDate('src/pages/guides/index.astro'), guidesDate()]); const g = guides.find((x) => x.slug === seg[1]); return g ? guideDate(g) : undefined; }
-  if (seg[0] === 'fitment' && seg.length === 2) return FITMENT_DATE;
+  if (seg[0] === 'fitment' && seg.length === 2) return fitPages.find((x) => x.slug === seg[1])?.date || FITMENT_DATE;
   if (seg[0] === 'supplies') return max([fileDate('src/pages/supplies/index.astro'), ...guides.filter((g) => extra.has(g.slug)).map(guideDate)]);
   if (seg[0] === 'size') return max([fileDate('src/pages/size/index.astro'), dataDate()]);
   if (seg[0] === 'data') return max([fileDate('src/pages/data/index.astro'), dataDate()]);

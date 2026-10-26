@@ -5,9 +5,10 @@ import { SITE, publisherRef } from '../../lib/schema';
 export function getStaticPaths(){ return pages.map(p=>({params:{slug:p.slug},props:{p}})); }
 const { p } = Astro.props as any;
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
-const dt = new Date(FITMENT_DATE+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'});
+const D = p.date || FITMENT_DATE;
+const dt = new Date(D+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'});
 const strip=(s:string)=>s.replace(/<[^>]+>/g,'');
-const ld=[{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#webpage`,name:p.title,description:p.desc,url,inLanguage:"en-US",datePublished:FITMENT_DATE,dateModified:FITMENT_DATE,isPartOf:{"@type":"WebSite",name:"MySpaFilter",url:SITE},publisher:publisherRef,breadcrumb:{"@id":`${url}#breadcrumb`}},
+const ld=[{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#webpage`,name:p.title,description:p.desc,url,inLanguage:"en-US",datePublished:D,dateModified:D,isPartOf:{"@type":"WebSite",name:"MySpaFilter",url:SITE},publisher:publisherRef,breadcrumb:{"@id":`${url}#breadcrumb`}},
 {"@context":"https://schema.org","@type":"BreadcrumbList","@id":`${url}#breadcrumb`,itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:`${p.crumbBrand} filters`,item:new URL(`/${p.brandSlug}/`,site).href},{"@type":"ListItem",position:3,name:p.h1,item:url}]}];
 const notes=[...new Set(p.notes as string[])];
 const fmt=(r:any)=>r.fits.map((f:any)=>`${[...new Set(f.oems)].join(' or ')}: ${f.years}`);
@@ -16,17 +17,17 @@ const colls=(p.collections as string[]).filter(c=>p.rows.some((r:any)=>r.collect
 <Base title={`${p.title} | MySpaFilter`} description={p.desc} jsonld={ld} >
 <p class="crumbs"><a href="/">Home</a> › <a href={`/${p.brandSlug}/`}>{p.crumbBrand} filters</a></p>
 <article><h1>{p.h1}</h1>
-<p class="crumbs byline">Compiled by <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Reviewed <time datetime={FITMENT_DATE}>{dt}</time></p>
+<p class="crumbs byline">Compiled by <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Reviewed <time datetime={D}>{dt}</time></p>
 <section class="card answer"><div class="kicker">Short answer</div><p style="font-size:1.12rem;margin:.4rem 0 0" set:html={p.answer} /></section>
 <p><small>Affiliate disclosure: this page has no retailer links. Some cartridge pages it links to do, and we may earn a commission from qualifying purchases made through them at no cost to you. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</small></p>
 <h2>The cartridges, with equivalents</h2>
-<div class="tbl"><table><thead><tr><th>Factory part</th><th>What it is</th><th>Unicel equivalent</th><th>Rated area</th><th>Our page</th></tr></thead><tbody>
+<div class="tbl"><table><thead><tr><th>Factory part</th><th>What it is</th><th>{p.aftHead || 'Unicel equivalent'}</th><th>Rated area</th><th>Our page</th></tr></thead><tbody>
 {p.parts.map((x:any)=><tr><td><strong>{x.oem}</strong></td><td>{x.what}{x.note && <><br /><small>{x.note}</small></>}</td><td>{x.unicel}</td><td>{x.size}</td><td>{x.href ? x.href.map((h:string,i:number)=><Fragment>{i>0 && ', '}<a href={h}>{h.split('/')[2].toUpperCase()}</a></Fragment>) : '—'}</td></tr>)}
 </tbody></table></div>
-<p>Equivalents and sizes are from the Unicel 2026 Replacement Guide unless the table says otherwise. A part number in brackets is another factory number for the same cartridge in Unicel’s cross-reference.</p>
-<h2>Find your model</h2>
+<p set:html={p.partsNote || 'Equivalents and sizes are from the Unicel 2026 Replacement Guide unless the table says otherwise. A part number in brackets is another factory number for the same cartridge in Unicel’s cross-reference.'} />
+{colls.length>0 && <><h2>Find your model</h2>
 <p>Rows show the factory part number, then the model years it is listed for. Where two part numbers are joined by “or”, the dealer table lists both for those years. Years are from one dealer’s table and are the least certain part of this page; the part number on your old cartridge wins.</p>
-{colls.map(c=><Fragment><h3>{c}</h3><div class="tbl"><table><thead><tr><th>Model</th><th>Cartridge: model years</th></tr></thead><tbody>{p.rows.filter((r:any)=>r.collection===c).map((r:any)=><tr><td>{r.model}</td><td>{fmt(r).map((l:string,i:number)=><Fragment>{i>0 && <br />}{l}</Fragment>)}</td></tr>)}</tbody></table></div></Fragment>)}
+{colls.map(c=><Fragment><h3>{c}</h3><div class="tbl"><table><thead><tr><th>Model</th><th>Cartridge: model years</th></tr></thead><tbody>{p.rows.filter((r:any)=>r.collection===c).map((r:any)=><tr><td>{r.model}</td><td>{fmt(r).map((l:string,i:number)=><Fragment>{i>0 && <br />}{l}</Fragment>)}</td></tr>)}</tbody></table></div></Fragment>)}</>}
 {notes.length>0 && <><h2>Model-years the dealer flags for a double-check</h2><ul>{notes.map(n=><li>{n}</li>)}</ul></>}
 <Fragment set:html={p.extraHtml} />
 <p>Why one cartridge size can carry two different square-foot ratings: <a href="/guides/why-same-size-spa-filters-have-different-square-feet/">our explainer with Unicel’s pleat-count table</a>.</p>

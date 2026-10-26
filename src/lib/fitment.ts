@@ -1,4 +1,5 @@
 import lt from '../data/lt-fitment.json';
+import { pages2 } from './fitment2';
 /** Model-year lookup pages (/fitment/…). Model/year rows are parsed from the Leisure Time Inc. fitment guide (a single dealer table, fetched 2026-10-25);
  *  cross-references and sizes come from the Unicel 2026 Replacement Guide. Nothing here is estimated. */
 export const FITMENT_DATE = '2026-10-25';
@@ -8,7 +9,7 @@ export const UNICEL_URL = 'https://www.unicelfilters.com/wp-content/uploads/2026
 export const LT_URL = 'https://leisuretimeinc.com/pages/filter-guide';
 export type Part = { oem: string; what: string; unicel: string; size: string; href?: string[]; note?: string };
 export type Row = { collection: string; model: string; fits: { oems: string[]; years: string }[] };
-export type Page = { slug: string; brandSlug: string; brandName: string; title: string; h1: string; desc: string; answer: string; parts: Part[]; rows: Row[]; collections: string[]; notes: string[]; extraHtml: string; sources: { t: string; u: string }[]; crumbBrand: string };
+export type Page = { slug: string; brandSlug: string; brandName: string; title: string; h1: string; desc: string; answer: string; parts: Part[]; rows: Row[]; collections: string[]; notes: string[]; extraHtml: string; sources: { t: string; u: string }[]; crumbBrand: string; date?: string; aftHead?: string; partsNote?: string };
 
 const rowsFor = (brand: string, collections: string[]): Row[] => {
   const m = new Map<string, Row>();
@@ -84,5 +85,6 @@ export const pages: Page[] = [
     { t: 'Leisure Time Inc. — Caldera 73531 product page (specifications, model-year list, filter FAQ)', u: 'https://leisuretimeinc.com/products/caldera-77813-filter-cartridge' },
     { t: 'SpaStore.com — Caldera 73531 / PCD75N listing (model years; related 8" × 16-1/2" Utopia filter)', u: 'https://www.spastore.com/7-x-14-3-4-caldera-paradise-utopia-series-spa-filter-73531-pcd75n-years-2003/' },
   ] },
+...pages2,
 ];
 export const fitmentPage = (slug: string) => pages.find((p) => p.slug === slug);
