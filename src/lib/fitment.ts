@@ -1,5 +1,6 @@
 import lt from '../data/lt-fitment.json';
 import { pages2 } from './fitment2';
+import { pages3 } from './fitment3';
 /** Model-year lookup pages (/fitment/…). Model/year rows are parsed from the Leisure Time Inc. fitment guide (a single dealer table, fetched 2026-10-25);
  *  cross-references and sizes come from the Unicel 2026 Replacement Guide. Nothing here is estimated. */
 export const FITMENT_DATE = '2026-10-25';
@@ -86,5 +87,6 @@ export const pages: Page[] = [
     { t: 'SpaStore.com — Caldera 73531 / PCD75N listing (model years; related 8" × 16-1/2" Utopia filter)', u: 'https://www.spastore.com/7-x-14-3-4-caldera-paradise-utopia-series-spa-filter-73531-pcd75n-years-2003/' },
   ] },
 ...pages2,
+...pages3,
 ];
 export const fitmentPage = (slug: string) => pages.find((p) => p.slug === slug);
