@@ -20,5 +20,6 @@ const sections: { h: string; blurb: string; slugs: string[] }[] = [
   <section><h2>{s.h}</h2><p>{s.blurb}</p>
   <ul class="grid">{s.slugs.map((slug) => { const g = by(slug); return <li class="card"><a href={`/guides/${g.slug}/`} style="font-weight:750;font-size:1.08rem">{g.title}</a><p class="crumbs">{g.desc}</p></li>; })}</ul></section>
 ))}
-<p>Looking for a replacement cartridge? <a href="/">Search by part number</a> or <a href="/size/">by size</a>.</p>
+<h2>The cartridge itself</h2>
+<p>Supplies sit around the filter. The cartridge is a separate lookup. Fitment guides cover <a href="/guides/hot-spring-filter-sizes-by-collection/">Hot Spring sizes</a>, <a href="/guides/caldera-filter-bottom-fittings/">Caldera bottoms</a>, <a href="/guides/bullfrog-threaded-and-coreless-filters/">Bullfrog</a>, <a href="/guides/sundance-and-jacuzzi-look-alike-filters/">Sundance and Jacuzzi look-alikes</a>, <a href="/guides/master-spas-eco-pur-filters/">Master Spas Eco-Pur</a> and <a href="/guides/intex-and-bestway-inflatable-spa-filters/">Intex and Bestway</a>. Start from a part number on the <a href="/">homepage</a>, or from the <a href="/size/">size lookup</a>. Every guide is indexed on the <a href="/guides/">guides hub</a>.</p>
 </Base>

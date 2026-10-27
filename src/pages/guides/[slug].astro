@@ -12,7 +12,23 @@ const img = new URL('/og/guides.png', site).href;
 const ld=[{"@context":"https://schema.org","@type":"Article","@id":`${url}#article`,headline:g.title,description:g.desc,url,inLanguage:"en-US",image:img,datePublished:guidePublished(g),dateModified:rev,author:editorialTeam,publisher:publisherRef,mainEntityOfPage:url,isPartOf:{"@type":"WebSite",name:"MySpaFilter",url:site}},
 {"@context":"https://schema.org","@type":"FAQPage",mainEntity:g.faq.map(([q,a]:any)=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:strip(a)}}))},
 {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:"Guides",item:new URL('/guides/',site).href},{"@type":"ListItem",position:3,name:g.title,item:url}]}];
-const others = guides.filter((x:any)=>x.slug!==g.slug).sort((a:any,b:any)=>(b.picks?1:0)-(a.picks?1:0)).slice(0,6);
+const RELATED: Record<string, string[]> = {
+  'how-to-find-your-spa-filter-size': ['open-end-vs-threaded-hot-tub-filters','hot-spring-filter-sizes-by-collection','caldera-filter-bottom-fittings','why-same-size-spa-filters-have-different-square-feet'],
+  'oem-vs-unicel-vs-pleatco-spa-filters': ['how-filbur-unicel-and-pleatco-numbers-compare','sundance-and-jacuzzi-look-alike-filters','why-same-size-spa-filters-have-different-square-feet'],
+  'why-same-size-spa-filters-have-different-square-feet': ['open-end-vs-threaded-hot-tub-filters','how-filbur-unicel-and-pleatco-numbers-compare','sundance-and-jacuzzi-look-alike-filters'],
+  'how-to-clean-a-hot-tub-filter': ['how-to-install-a-hot-tub-filter','clogged-or-missing-hot-tub-filter','spas-that-use-more-than-one-filter'],
+  'how-often-to-replace-hot-tub-filter': ['clogged-or-missing-hot-tub-filter','signs-your-hot-tub-filter-is-bad','spas-that-use-more-than-one-filter'],
+  'signs-your-hot-tub-filter-is-bad': ['clogged-or-missing-hot-tub-filter','how-to-install-a-hot-tub-filter','hot-tub-flow-error-codes-and-your-filter'],
+  'hot-tub-flow-error-codes-and-your-filter': ['clogged-or-missing-hot-tub-filter','how-to-install-a-hot-tub-filter','how-to-clean-a-hot-tub-filter'],
+  'how-often-to-clean-hot-tub-filter': ['how-to-clean-a-hot-tub-filter','clogged-or-missing-hot-tub-filter','how-to-install-a-hot-tub-filter'],
+};
+const seen = new Set<string>([g.slug]);
+const others: typeof guides = [];
+for (const s of [...(g.related || []), ...(RELATED[g.slug] || [])]) {
+  const x = guides.find((y) => y.slug === s);
+  if (x && !seen.has(x.slug)) { others.push(x); seen.add(x.slug); }
+}
+for (const x of guides) { if (others.length >= 6) break; if (!seen.has(x.slug)) { others.push(x); seen.add(x.slug); } }
 ---
 <Base title={`${g.title} | MySpaFilter`} description={g.desc} jsonld={ld} ogType="article" modified={rev}>
 <p class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a></p>

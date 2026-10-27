@@ -3,11 +3,13 @@ import { products, productLink, searchLink, outboundRel } from '../config/affili
 export type PickGroup = { h: string; intro?: string; keys?: string[]; search?: [label: string, query: string, why?: string][] };
 interface Props { groups: PickGroup[]; heading?: string; lead?: string; level?: 2 | 3; disclose?: boolean }
 const { groups, heading, lead, disclose = true } = Astro.props as Props;
+const hasDirect = groups.some((g) => (g.keys?.length || 0) > 0);
+const hasSearch = groups.some((g) => (g.search?.length || 0) > 0);
 ---
 <section class="picks" data-picks>
   {heading && <h2>{heading}</h2>}
   {lead && <p set:html={lead} />}
-  {disclose && <p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. Links in this section go to Amazon.com and are affiliate links; they never change what we write, and the list is not ranked by commission. Each “View on Amazon” link opens a specific listing whose title we checked, and the description under each name repeats only what that listing title says. Check size, quantity and your spa maker’s guidance on the listing before you buy. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</small></p>}
+  {disclose && <p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. Links in this section go to Amazon.com and are affiliate links; they never change what we write, and the list is not ranked by commission. {hasDirect && <>Each “View on Amazon” link opens a specific listing whose title we checked, and the description under each name repeats only what that listing title says. </>}{hasSearch && <>Each “Search Amazon” link opens an Amazon search for the part or product name shown, not a single listing we pre-checked. </>}Check size, quantity and your spa maker’s guidance before you buy. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</small></p>}
   {groups.map((g) => (
     <div class="pickgroup">
       <h3>{g.h}</h3>

@@ -101,8 +101,8 @@ export function retailerLinks(part: string, cfg = affiliate): RetailerLink[] {
   ];
 }
 
-/** Attributes every outbound retailer link must carry. */
-export const outboundRel = 'sponsored nofollow';
+/** Attributes every outbound retailer link must carry. noopener because these open in a new tab. */
+export const outboundRel = 'sponsored nofollow noopener';
 
 
 // ---------------------------------------------------------------------------

@@ -39,6 +39,19 @@ const partItems = [
   ...oems.map(o=>`${f.brand} OEM ${o}`),
   ...(eq.unicel?[`Unicel ${eq.unicel}`]:[]), ...(eq.pleatco?[`Pleatco ${eq.pleatco}`]:[]), ...(eq.filbur?[`Filbur ${eq.filbur}`]:[]),
 ];
+const fitGuide: Record<string, [string, string]> = {
+  'hot-spring': ['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring filter sizes by collection'],
+  'hot-spot': ['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring filter sizes by collection'],
+  'solana': ['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring filter sizes by collection'],
+  'caldera': ['/guides/caldera-filter-bottom-fittings/','Caldera filter bottoms'],
+  'bullfrog': ['/guides/bullfrog-threaded-and-coreless-filters/','Bullfrog filters'],
+  'intex': ['/guides/intex-and-bestway-inflatable-spa-filters/','Intex and Bestway filters'],
+  'bestway': ['/guides/intex-and-bestway-inflatable-spa-filters/','Intex and Bestway filters'],
+  'sundance': ['/guides/sundance-and-jacuzzi-look-alike-filters/','Sundance and Jacuzzi look-alike filters'],
+  'jacuzzi': ['/guides/sundance-and-jacuzzi-look-alike-filters/','Sundance and Jacuzzi look-alike filters'],
+  'master-spas': ['/guides/master-spas-eco-pur-filters/','Master Spas Eco-Pur filters'],
+};
+const fg = fitGuide[f.brandSlug];
 const cites = (f.sources||[]).map(s=>({"@type":"CreativeWork",name:`${s.source}, ${s.where}`,url:s.url}));
 const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#webpage`,name:pageTitle,url,
   description:`Cross-reference of ${f.brand} ${oemTxt} to ${names.join(', ')}. ${dim}.`,inLanguage:"en-US",dateModified:rowDate(f),
@@ -81,5 +94,6 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
 {others.length>0 && <p>The same {pk} cartridge is also listed for {others.map((x,i)=><>{i>0?', ':''}<a href={modelHref(x)}>{x.brand}</a></>)}, so those pages are a handy second check on the part number.</p>}
 {moreBrand.length>0 && <><h2>Other {f.brand} cartridges</h2><ul>{moreBrand.map(x=><li><a href={modelHref(x)}>{x.model}</a> — {(x.dimensions as any).diameterText} × {(x.dimensions as any).lengthText}</li>)}</ul>
 <p><a href={`/${f.brandSlug}/`}>See all {sameBrand.length} {f.brand} spa filters →</a></p></>}
+<p>Match the top and bottom, not only the diameter. <a href="/guides/open-end-vs-threaded-hot-tub-filters/">Open-end vs threaded filters</a> explains those fittings, and <a href="/guides/how-to-install-a-hot-tub-filter/">how to install a cartridge</a> covers power-off, the retainer, and not running the spa with the filter removed.{fg && <> For this brand, see <a href={fg[0]}>{fg[1]}</a>.</>} Catalog numbers are compared in <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel and Pleatco numbers compare</a>.</p>
 <Sources f={f} />
 </Base>
