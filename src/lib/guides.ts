@@ -2,8 +2,10 @@ import { SRC, REVIEWED, REVIEWED_NEW, c } from './guidesrc';
 import type { PickGroup } from '../components/ProductPicks.astro';
 import { extraGuides } from './guides2';
 import { newGuides } from './guides3';
+import { batchGuides } from './guides4';
+import { moreGuides } from './guides5';
 export { SRC, REVIEWED };
-export type Guide={slug:string;title:string;desc:string;answer:string;body:string;faq:[string,string][];src:string[];picks?:PickGroup[];reviewed?:string;intro?:string;published?:string};
+export type Guide={slug:string;title:string;desc:string;answer:string;body:string;faq:[string,string][];src:string[];picks?:PickGroup[];pickHeading?:string;related?:string[];reviewed?:string;intro?:string;published?:string};
 const baseGuides: Guide[] = [
 {slug:'how-often-to-replace-hot-tub-filter',title:'How often should you replace a hot tub filter?',
 desc:'Replacement intervals for hot tub filter cartridges from Hot Spring, Jacuzzi, Sundance, Unicel and Pleatco, and why there is no single number.',
@@ -171,4 +173,4 @@ const attach: Record<string, PickGroup[]> = {
 };
 for (const g of baseGuides) if (attach[g.slug]) { g.picks = attach[g.slug]; g.reviewed = REVIEWED_NEW; }
 
-export const guides: Guide[] = [...baseGuides, ...extraGuides, ...newGuides];
+export const guides: Guide[] = [...baseGuides, ...extraGuides, ...newGuides, ...batchGuides, ...moreGuides];

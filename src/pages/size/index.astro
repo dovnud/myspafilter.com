@@ -1,13 +1,30 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { filters } from '../../lib/data';
+import ProductPicks from '../../components/ProductPicks.astro';
+import { filters, partLabel } from '../../lib/data';
 const rows = filters.map(f=>({d:f.dimensions.diameterIn,l:f.dimensions.lengthIn,name:`${f.brand} ${f.model}`,oem:f.oem,dt:(f.dimensions as any).diameterText,lt:(f.dimensions as any).lengthText,href:`/${f.brandSlug}/${f.modelSlug}/`}));
+const examples: [string, string, string][] = [];
+const seen = new Set<string>();
+for (const f of filters) {
+  const dt = (f.dimensions as any).diameterText as string, lt = (f.dimensions as any).lengthText as string;
+  const key = `${dt}|${lt}`;
+  if (seen.has(key)) continue;
+  const pk = partLabel(f);
+  if (!pk) continue;
+  seen.add(key);
+  examples.push([`${f.brand} ${pk}`, `${pk} spa filter`, `${dt} × ${lt}`]);
+  if (examples.length >= 4) break;
+}
 ---
-<Base title="Spa Filter Size Lookup – Find a Hot Tub Filter by Dimensions" description="Look up a spa filter or hot tub filter by diameter and length.">
+<Base title="Spa Filter Size Lookup – Find a Hot Tub Filter by Dimensions" description="Look up a spa filter or hot tub filter by diameter and length, then confirm the end fittings before you order.">
 <h1>Find a spa / hot tub filter by size</h1>
+<p>Use this table when the part number on the end cap is worn off. Measure the <strong>diameter</strong> across the widest point of the pleats and the <strong>overall length</strong> from end to end, including a handle or a threaded nipple. Type either number, or both. Rows stay visible when they are within 0.25 inches of what you typed, because catalog fractions (6", 10-1/2", 4-15/16") do not always match a tape to the hundredth.</p>
+<p>Diameter and length are not the whole match. Unicel and Pleatco also print the top and the bottom: an open hole, a handle, a male slip, or a thread. Two cartridges can share a size and not share those ends. Caldera’s 7" × 10-3/4" parts are the usual example. After a row appears, open it and read the fittings before you order. The <a href="/guide/">measuring guide</a> is the longer version of these steps, and <a href="/guides/open-end-vs-threaded-hot-tub-filters/">open-end vs threaded filters</a> shows the patterns. If you can read any number at all, <a href="/">search that number</a> instead. It is more reliable than a measurement.</p>
 <div class="card"><label>Diameter (in) <input id="d" type="number" step="0.01"></label> <label>Length (in) <input id="l" type="number" step="0.01"></label> <small>±0.25″ tolerance</small></div>
 <div class="tbl"><table id="t"><thead><tr><th>Filter</th><th>OEM</th><th>Dia</th><th>Length</th></tr></thead><tbody>
-{rows.map(r=><tr data-d={r.d} data-l={r.l}><td><a href={r.href}>{r.name}</a></td><td>{r.oem}</td><td>{r.dt}</td><td>{r.lt}</td></tr>)}</tbody></table></div></div>
+{rows.map(r=><tr data-d={r.d} data-l={r.l}><td><a href={r.href}>{r.name}</a></td><td>{r.oem}</td><td>{r.dt}</td><td>{r.lt}</td></tr>)}</tbody></table></div>
+<p>A match in the table is a shortlist. Open the cartridge page for the cited OEM, Unicel, Pleatco and Filbur numbers, and for the retailer buttons. Brand guides that explain the common mix-ups: <a href="/guides/hot-spring-filter-sizes-by-collection/">Hot Spring</a>, <a href="/guides/caldera-filter-bottom-fittings/">Caldera</a>, <a href="/guides/bullfrog-threaded-and-coreless-filters/">Bullfrog</a>, <a href="/guides/sundance-and-jacuzzi-look-alike-filters/">Sundance and Jacuzzi</a>, <a href="/guides/intex-and-bestway-inflatable-spa-filters/">Intex and Bestway</a>. The full cited table is the <a href="/data/">dataset</a>.</p>
+<ProductPicks heading="Search a few common sizes on Amazon" lead="These are examples of part numbers in this table, not a recommendation based on your measurement. Search only after the row you opened matches your diameter, length and ends." groups={[{h:'Part numbers from common sizes', search: examples}]} />
 <script>
 const d=document.getElementById('d') as HTMLInputElement, l=document.getElementById('l') as HTMLInputElement;
 const f=()=>document.querySelectorAll<HTMLTableRowElement>('#t tbody tr').forEach(r=>{const ok=(i:HTMLInputElement,v:string)=>!i.value||Math.abs(+i.value-+v)<=0.25;r.hidden=!(ok(d,r.dataset.d!)&&ok(l,r.dataset.l!));});

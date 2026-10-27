@@ -1,21 +1,55 @@
 ---
 import Page from '../components/Page.astro';
-import { filters } from '../lib/data';
+import ProductPicks from '../components/ProductPicks.astro';
+import { filters, partLabel } from '../lib/data';
 const ver = filters.filter(f=>f.status==='verified').length;
+const examples: [string, string, string][] = [];
+const seen = new Set<string>();
+for (const f of filters) {
+  const pk = partLabel(f);
+  if (!pk || seen.has(f.brandSlug)) continue;
+  seen.add(f.brandSlug);
+  examples.push([`${f.brand} ${pk}`, `${pk} spa filter`, `${(f.dimensions as any).diameterText} × ${(f.dimensions as any).lengthText}`]);
+  if (examples.length >= 4) break;
+}
 ---
-<Page title="How to Find & Replace Your Hot Tub Filter – Measuring Guide" description="How to identify a spa filter cartridge by part number or measurements, read OEM/Unicel/Pleatco cross-references, and know when to replace it.">
+<Page title="How to Find & Replace Your Hot Tub Filter – Measuring Guide" description="How to identify a spa filter cartridge by part number or by diameter, length and end fittings, and how to read an OEM, Unicel, Pleatco and Filbur cross-reference.">
 <h1>How to identify and replace a hot tub filter</h1>
+<p>Most failed orders come from matching a photo or a diameter and skipping the end caps. The catalogs we use — the Unicel 2026 Replacement Guide, the Pleatco 2023 catalog and the Filbur catalog — print five facts for a cartridge: outside diameter, overall length, the top fitting, the bottom fitting, and media area in square feet. This page is the order to collect those facts. The cartridge pages are where the cited numbers live. We list {filters.length} cartridges, {ver} of them fully cited. The rest are labeled unverified.</p>
+
 <h2>1. Look for the part number first</h2>
-<p>Most cartridges have a part number printed or molded on the end cap. It might be an OEM number from the spa maker (for example a Sundance 6540-xxx number), a Unicel number (C-xxxx, 4CH-xx), or a Pleatco number (Pxxxx). Search for any of them here: each part page lists every equivalent number we found in the source catalogs.</p>
+<p>Most cartridges have a part number printed or molded on an end cap, or on a band in the pleats. It might be an OEM number from the spa maker (a Sundance 6540-xxx number, a Hot Spring 71825, a Caldera 1019401, an Intex 29001E), a Unicel number (C-xxxx or 4CH-xx), a Pleatco number (PWK, PRB, PCD, PSD and similar), or a Filbur FC-number. Search any of them from the <a href="/">homepage</a>. Each hit lists the equivalents we found and the page of the catalog they came from.</p>
+<p>If several numbers are on the cap, search the one that is complete. A prefix without the rest (“6540”) is weaker than 6540-488. <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">How Filbur, Unicel and Pleatco numbers compare</a> explains why one cartridge has all four. <a href="/guides/oem-vs-unicel-vs-pleatco-spa-filters/">OEM vs Unicel vs Pleatco</a> is the shorter version. The number beats a measurement. Use the steps below only when the number is gone or the search returns two cartridges that share it.</p>
+
 <h2>2. Measure if there's no number</h2>
-<ul><li><strong>Diameter:</strong> measure across the widest point of the pleats, not the end cap's lip.</li>
-<li><strong>Length:</strong> measure the overall length, including any handle or threaded fitting.</li>
-<li><strong>Top and bottom:</strong> note whether each end is open, closed, has a handle, or is threaded, and measure any opening.</li></ul>
-<p>Then use the <a href="/size/">size lookup</a>. Two cartridges can share a diameter and length but have different fittings, so always compare the top and bottom too.</p>
+<ul>
+<li><strong>Diameter:</strong> across the widest point of the pleats, not the little lip on the end cap.</li>
+<li><strong>Length:</strong> overall, including any handle or threaded nipple. A 5-3/4" Bullfrog cartridge and a 6" one are easy to swap if you round both to “about six.”</li>
+<li><strong>Top:</strong> open hole (measure the inside if you can), handle, castle, or closed.</li>
+<li><strong>Bottom:</strong> open hole, male slip, or thread. Write the size the cap shows, such as 1-1/2" MPT or 2" SAE, instead of only “threaded.”</li>
+</ul>
+<p>Then use the <a href="/size/">size lookup</a>. The filter keeps rows within 0.25 inches of what you type. Two cartridges can share a diameter and a length and still have different fittings, so compare the top and bottom on the cartridge page before you treat a row as a match. Worked examples are in <a href="/guides/open-end-vs-threaded-hot-tub-filters/">open-end vs threaded hot tub filters</a> and <a href="/guides/how-to-find-your-spa-filter-size/">how to find your spa filter size</a>.</p>
+
 <h2>3. Understand square footage</h2>
-<p>The sq ft rating is the total pleated media area. Within the same size and fittings, more area can mean longer intervals between cleanings. A cartridge that is physically different won't seal in your housing, whatever its rating.</p>
-<h2>4. When to clean and replace</h2>
-<p>Rinse cartridges regularly and soak them in a filter cleaner periodically, following your spa maker's schedule. Replace a cartridge when the pleats are torn, flattened, or permanently discolored, when the end caps crack, or when flow stays weak after cleaning.</p>
+<p>The sq ft rating is the area of the pleated media, not the outside size of the cartridge. Unicel’s published method multiplies pleat count, pleat height and usable length. That is why two cartridges with the same can print 25 and 50 sq ft. Within the same size and the same fittings, a catalog may call the larger area an upgrade. A cartridge that is physically different will not seal in the housing, whatever its rating. Read <a href="/guides/why-same-size-spa-filters-have-different-square-feet/">why same-size filters have different square-foot ratings</a> before you shop by the area number alone. When two catalogs disagree, as they do on some Hot Spring, Softub and Bullfrog rows, the cartridge page shows both figures. We do not average them.</p>
+
+<h2>4. Check the brand’s known splits</h2>
+<p>A few brands reuse a model name across more than one cartridge. If you know the spa and not the part number, read the matching guide and then confirm against the old cartridge:</p>
+<ul>
+<li><a href="/guides/hot-spring-filter-sizes-by-collection/">Hot Spring</a> — 6" Highlife, 8-1/2" earlier Limelight and Tiger River, and the 2018-and-later Limelight part the catalogs rate differently. Model years: <a href="/fitment/hot-spring-filter-by-model-year/">Hot Spring by model and year</a>.</li>
+<li><a href="/guides/caldera-filter-bottom-fittings/">Caldera</a> — male slip versus open bottom, and the 2014 Cantabria quarter split. <a href="/fitment/caldera-filter-by-model-year/">Caldera by model and year</a>.</li>
+<li><a href="/guides/bullfrog-threaded-and-coreless-filters/">Bullfrog</a> — short thread, long thread, and coreless cartridges that need a cage. <a href="/fitment/bullfrog-filter-by-model-year/">Bullfrog by series and year</a>.</li>
+<li><a href="/guides/sundance-and-jacuzzi-look-alike-filters/">Sundance and Jacuzzi</a> — core plugs, bottom-hole sizes, and handles that are not included. <a href="/fitment/sundance-filter-by-model-year/">Sundance</a> and <a href="/fitment/jacuzzi-filter-by-model-year/">Jacuzzi</a> lookups.</li>
+<li><a href="/guides/master-spas-eco-pur-filters/">Master Spas Eco-Pur</a> — two outers on later systems, an inner element, and a stand-pipe note. <a href="/fitment/master-spas-filter-by-model-year/">Master Spas by series and year</a>.</li>
+<li><a href="/guides/intex-and-bestway-inflatable-spa-filters/">Intex and Bestway</a> — Type S1, Type S2, and Type VI. The letters on an Intex set number change the cartridge.</li>
+</ul>
+<p>If the well had more than one cartridge, count them. <a href="/guides/spas-that-use-more-than-one-filter/">Spas that use more than one filter</a> separates a housing that holds two or three from a spare set you keep on the shelf.</p>
+
+<h2>5. When to clean and when to replace</h2>
+<p>Rinse cartridges on the schedule in your manual and soak them in a filter cleaner when that manual, or Unicel and Pleatco’s general procedure, says to. Replace a cartridge when the pleats are torn, flattened, or no longer spring back, when the end caps crack, when the core collapses, or when flow stays weak after a real clean. Intervals differ: Jacuzzi publishes 12–24 months for pleated cartridges, Hot Spring publishes a longer range for standard polyester cartridges and a different one for TRI-X, and Sundance’s disposable inserts are measured in months. Those citations are in <a href="/guides/how-often-to-replace-hot-tub-filter/">how often to replace a hot tub filter</a>, <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean one</a>, and <a href="/guides/signs-your-hot-tub-filter-is-bad/">signs it is finished</a>.</p>
+<p>Turn the spa off before you install the replacement. Do not run it with the well empty, and do not overtighten the retainer. The steps, with the manual each one comes from, are in <a href="/guides/how-to-install-a-hot-tub-filter/">how to install a hot tub filter</a>. A flow code after the swap is covered in <a href="/guides/hot-tub-flow-error-codes-and-your-filter/">flow errors and the filter</a>.</p>
+
 <h2>About our data</h2>
-<p>We list {filters.length} cartridges, {ver} of them fully cited. The rest are clearly labeled unverified. Sources are the Unicel 2026 Replacement Guide and the Pleatco 2023 catalog, with page numbers on every cartridge page.</p>
+<p>Sources for the table are the Unicel 2026 Replacement Guide and the Pleatco 2023 catalog, with the Filbur catalog where we have an FC-number, and manufacturer or dealer pages for model-year fitment. Every cartridge page names the document and the location in it. Rows we could not confirm stay labeled unverified. The downloadable copy is the <a href="/data/">dataset</a>. If a dimension on your cartridge does not match the page, email contact@myspafilter.com with the page URL and your measurements. That is the only address we publish. See <a href="/contact/">Contact</a> and the <a href="/about/#corrections">corrections policy</a>.</p>
+<ProductPicks heading="Search a part number once you have it" lead="These buttons open an Amazon search for a part number in our table. They are examples. Use the number from your cartridge, or from the page the steps above landed on." groups={[{h:'Example searches', search: examples}]} />
 </Page>
