@@ -23,6 +23,7 @@ const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 <h1>Read the end cap.<br><em>We'll find the cartridge.</em></h1>
 <p class="lede">Type the number molded into your old filter — a Sundance <code>6540-476</code>, a Unicel <code>C-8326</code>, a Pleatco <code>PTL47W</code> — or a spa brand. You get the matching OEM, Unicel, Pleatco and Filbur numbers plus diameter, length and fittings to check against a tape measure.</p>
 <form class="search" id="f" role="search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="e.g. 6540-476, C-8326, Jacuzzi" autocomplete="off" aria-label="Part number or spa brand"><button class="btn" id="go">Find filter</button></form>
+<p class="try">Try <a href="/filter/6540-476/">6540-476</a>, <a href="/filter/c-8326/">C-8326</a>, or <a href="/filter/ptl47w-p4/">PTL47W-P4</a>.</p>
 <p id="msg" aria-live="polite"></p>
 <div class="stats"><span><b>{filters.length}</b>cartridges</span><span><b>{parts.length}</b>part numbers</span><span><b>{brands().length}</b>spa brands</span><Magnet client:visible padding={40} magnetStrength={6} maxOffset={6}><a class="btn ghost" href="/size/">No number? Search by size →</a></Magnet></div>
 </div>
@@ -48,6 +49,7 @@ const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 @keyframes wp-ccw{to{transform:rotate(-360deg)}}
 @keyframes wp-ripple{0%{transform:scale(.37);opacity:0}15%{opacity:.4}100%{transform:scale(1);opacity:0}}
 @media (prefers-reduced-motion:reduce){.endcap .wp-spin,.endcap .rp{animation:none;will-change:auto}.endcap .rp{opacity:.22}.endcap .rp1{transform:scale(.55)}.endcap .rp2{transform:scale(.75)}.endcap .rp3{transform:scale(.95)}}
+.try{margin:.85rem 0 0;color:#d6e9e4;font-size:.95rem}.try a{color:var(--sand);font-weight:700}
 </style>
 </section>
 <h2 class="rule" data-reveal>Browse by spa brand</h2>
@@ -62,7 +64,7 @@ const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 </div>
 <script define:vars={{parts,bl}}>
 const q=document.getElementById('q'),m=document.getElementById('msg');const s=v=>v.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const go=e=>{e&&e.preventDefault();const k=s(q.value);if(!k)return;const br=bl.find(([sl,n])=>sl===k||n===q.value.trim().toLowerCase());if(br){location.href='/'+br[0]+'/';return}if(parts.includes(k))location.href='/filter/'+k+'/';else{const h=parts.filter(p=>p.includes(k)).slice(0,6);m.innerHTML=h.length?'Did you mean: '+h.map(p=>`<a href="/filter/${p}/">${p.toUpperCase()}</a>`).join(', '):'No match for that number. Try the size lookup.';}};
+const go=e=>{e&&e.preventDefault();const k=s(q.value);if(!k)return;const br=bl.find(([sl,n])=>sl===k||n===q.value.trim().toLowerCase());if(br){location.href='/'+br[0]+'/';return}if(parts.includes(k)){location.href='/filter/'+k+'/';return}const h=parts.filter(p=>p.includes(k));if(h.length===1){location.href='/filter/'+h[0]+'/';return}m.innerHTML=h.length?'Did you mean: '+h.map(p=>`<a href="/filter/${p}/">${p.toUpperCase()}</a>`).join(', '):'No match for that number. Try the size lookup.';};
 document.getElementById('f').onsubmit=go;
 </script>
 </Base>

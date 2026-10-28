@@ -4,9 +4,9 @@
  * This is the ONLY place retailer outbound links are built. Pages call
  * `retailerLinks(partNumber)` from here and never assemble retailer URLs themselves.
  *
- * Everything below ships EMPTY on purpose. While a value is an empty string the
- * matching retailer link is a plain search URL with no tracking parameter.
- * Never put a made-up ID here: paste the real one from your affiliate dashboard.
+ * The Amazon tag below is this site's own Associates ID. Other retailer IDs ship
+ * empty on purpose: an empty ID renders no link (not a plain search, and not
+ * another site's ID). Never put a made-up ID here.
  */
 import asinData from '../data/amazon-asins.json';
 import productData from '../data/amazon-products.json';
@@ -18,9 +18,9 @@ export const affiliate = {
    * `npm run check:amazon` fails the build if the value is set but malformed.
    */
   amazonTag: 'myspafilter-20',
-  /** Awin publisher ID (the number after "awinaffid") for the FiltersFast program (Awin merchant 73760). Empty = plain filtersfast.com search link. */
+  /** Awin publisher ID (the number after "awinaffid") for the FiltersFast program (Awin merchant 73760). Empty = no FiltersFast link is rendered. */
   awinFiltersFast: '',
-  /** Doheny's tracking-link ID from Ascend (Pepperjam), the segment after "pjtra.com/t/". Empty = plain doheny.com search link. */
+  /** Doheny's tracking-link ID from Ascend (Pepperjam), the segment after "pjtra.com/t/". Empty = no Doheny's link is rendered. */
   dohenyId: '',
 };
 
@@ -91,14 +91,58 @@ function amazonButton(part: string, cfg: typeof affiliate): RetailerLink {
   };
 }
 
-/** All retailer buttons for a part number, in display order. */
+/** Retailer buttons for one part. Amazon first. FiltersFast and Doheny's only after this site's own ID is set. */
 export function retailerLinks(part: string, cfg = affiliate): RetailerLink[] {
   if (!part) return [];
-  return [
-    { id: 'filtersfast', name: 'FiltersFast', href: filtersFastLink(part, cfg) },
-    amazonButton(part, cfg),
-    { id: 'dohenys', name: "Doheny's", href: dohenysLink(part, cfg) },
-  ];
+  const links: RetailerLink[] = [amazonButton(part, cfg)];
+  if (cfg.awinFiltersFast) links.push({ id: 'filtersfast', name: 'FiltersFast', href: filtersFastLink(part, cfg) });
+  if (cfg.dohenyId) links.push({ id: 'dohenys', name: "Doheny's", href: dohenysLink(part, cfg) });
+  return links;
+}
+
+type CartridgeRef = {
+  searchTerm?: string;
+  oem?: string;
+  oemAll?: string;
+  equivalents?: { unicel?: string; pleatco?: string; filbur?: string };
+};
+
+const primaryPart = (f: CartridgeRef) => f.searchTerm || f.equivalents?.unicel || f.equivalents?.pleatco || f.oem || '';
+
+/**
+ * Amazon buttons for one cartridge row. A checked /dp/ link for every distinct
+ * verified ASIN already on file for this row's part numbers, then one search
+ * only when the primary part has no ASIN. No second button is invented.
+ * Unapproved retailers stay off the page until their ID is filled in above.
+ */
+export function cartridgeBuyLinks(f: CartridgeRef, cfg = affiliate): RetailerLink[] {
+  const primary = primaryPart(f);
+  const bits: string[] = [];
+  const pushBit = (raw?: string) => {
+    for (const bit of String(raw || '').split(/[;/]/)) {
+      const t = bit.trim();
+      if (t && !bits.includes(t)) bits.push(t);
+    }
+  };
+  pushBit(primary);
+  pushBit(f.oem);
+  pushBit(f.oemAll);
+  pushBit(f.equivalents?.unicel);
+  pushBit(f.equivalents?.pleatco);
+  pushBit(f.equivalents?.filbur);
+  const direct: RetailerLink[] = [];
+  const seenAsin = new Set<string>();
+  for (const part of bits) {
+    const rec = verifiedAsins[part];
+    if (!rec || seenAsin.has(rec.asin)) continue;
+    seenAsin.add(rec.asin);
+    direct.push(amazonButton(part, cfg));
+  }
+  const links = [...direct];
+  if (primary && !verifiedAsins[primary]) links.push(amazonButton(primary, cfg));
+  if (cfg.awinFiltersFast && primary) links.push({ id: 'filtersfast', name: 'FiltersFast', href: filtersFastLink(primary, cfg) });
+  if (cfg.dohenyId && primary) links.push({ id: 'dohenys', name: "Doheny's", href: dohenysLink(primary, cfg) });
+  return links;
 }
 
 /** Attributes every outbound retailer link must carry. noopener because these open in a new tab. */

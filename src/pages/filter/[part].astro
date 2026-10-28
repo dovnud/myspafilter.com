@@ -1,8 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Sources from '../../components/Sources.astro';
-import { allParts, partLabel } from '../../lib/data';
-import { retailerLinks, outboundRel } from '../../config/affiliate';
+import { allParts } from '../../lib/data';
+import BuyLinks from '../../components/BuyLinks.astro';
 export function getStaticPaths(){ return [...allParts().entries()].map(([part,list])=>({params:{part},props:{list}})); }
 const { list } = Astro.props; const { part } = Astro.params;
 const label = part!.toUpperCase(); const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
@@ -10,10 +10,10 @@ const ld=[{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElem
 ---
 <Base title={`${label} Spa Filter Equivalents – Hot Tub Filter Cross Reference`} description={`Cross-reference for spa filter / hot tub filter part ${label}: OEM, Unicel, Pleatco and Filbur equivalents.`} jsonld={ld} noindex>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">{label}</span></nav><h1>{label} spa filter equivalents</h1><p>Part number {label} appears in {list.length} cited cross-reference row{list.length>1?'s':''} below. Each row lists the OEM, Unicel and Pleatco numbers that the source documents treat as interchangeable, plus the cartridge size so you can confirm against your old filter.</p>
-{list.map((f:any)=>(<section class="card answer"><p><strong>{f.brand} {f.model}</strong></p><table>
+{list.map((f:any)=>(<section class="card answer"><p><strong>{f.brand} {f.model}</strong> — {f.dimensions.diameterText} × {f.dimensions.lengthText}{f.dimensions.sqft!=null ? `, ${f.dimensions.sqft} sq ft` : ''}. Unicel {f.equivalents?.unicel||'—'}, Pleatco {f.equivalents?.pleatco||'—'}.</p>
+<BuyLinks filter={f} />
+<table>
 <tr><th>OEM</th><td>{f.oem}</td></tr><tr><th>Unicel</th><td>{f.equivalents?.unicel||'—'}</td></tr><tr><th>Pleatco</th><td>{f.equivalents?.pleatco||'—'}</td></tr><tr><th>Filbur</th><td>{f.equivalents?.filbur||'—'}</td></tr>
 <tr><th>Size</th><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}{f.dimensions.sqft!=null ? `, ${f.dimensions.sqft} sq ft` : ''}</td></tr></table>
-<div class="buy">{retailerLinks(f.searchTerm || partLabel(f)).map((r)=><a class="btn" href={r.href} rel={outboundRel} target="_blank">Check {r.name}</a>)}</div>
-<p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. The Amazon button opens a search or a checked listing for this part number. FiltersFast and Doheny's buttons open retailer searches. These are affiliate links. See the <a href="/affiliate-disclosure/">disclosure</a>. Match the size and fittings on the cartridge page before you buy.</small></p>
 <Sources f={f} /><p><a href={`/${f.brandSlug}/${f.modelSlug}/`}>Full details →</a> · <a href={`/${f.brandSlug}/`}>All {f.brand} spa filters</a> · <a href="/guides/open-end-vs-threaded-hot-tub-filters/">Which fitting you need</a> · <a href="/guides/how-to-install-a-hot-tub-filter/">How to install it</a></p></section>))}
 </Base>

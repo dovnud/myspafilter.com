@@ -1,6 +1,21 @@
 # CRO audit — myspafilter.com
 
-Reviewed live on 27 Oct 2026 as a first-time visitor at 390px and 1280px (home, part lookup, cartridge page, brand hub, size lookup, a guide, supplies, contact, affiliate disclosure) and checked against the repo. Scores are expert estimates, not measured data. No traffic or revenue figures.
+## Implemented (28 Oct 2026)
+
+Shipped the affiliate and navigation items. Checked with `npm run build` (Amazon + SEO checks passed) and in the browser at 390px and 1280px.
+
+- Part search now includes every `oemAll` number. `6540-476` opens a page. A single partial match, such as `PTL47W`, goes straight to that page. Home chips: 6540-476, C-8326, PTL47W-P4.
+- Amazon is the accent button: **See on Amazon** for a checked listing, **Search on Amazon** when the link is a search. Tag remains `myspafilter-20`. The same block sits on the part page (above the spec table) and is repeated after the measuring section on the cartridge page.
+- A second Amazon button is coded only for another verified ASIN already on that row. No current row has two, so pages show one button.
+- Guides with product picks show one product under the short answer, with the disclosure beside it, and “Products we checked” jumps to the full list.
+- Brand hubs use a card list with “See replacement →” under 600px. The size table stays empty until a diameter or length is typed.
+- FiltersFast and Doheny’s are not rendered. Their ID fields stay empty placeholders.
+
+**Updated moneymaker score: 7/10** (expert estimate of the setup, not a forecast). Affiliate **7/10**. AdSense still **1/10** because no ad work was done. Leads still later.
+
+Skipped on purpose: every AdSense item (no slots, no `ads.txt`, no privacy edits); any new affiliate ID; the large pass that would retarget guide and fitment links onto cartridge URLs; a leads form.
+
+Reviewed live on 27 Oct 2026 as a first-time visitor at 390px and 1280px (home, part lookup, cartridge page, brand hub, size lookup, a guide, supplies, contact, affiliate disclosure) and checked against the repo. Scores below that line are the original estimates, not measured data. No traffic or revenue figures.
 
 ## 1. Conversion score
 
@@ -50,7 +65,7 @@ Include `oemAll` in `allParts()`. Order Amazon first and use the labels in secti
 
 ## 6. Moneymaker scale
 
-**Current moneymaker score: 4/10** (expert estimate of the setup, not a forecast).
+**Current moneymaker score at review: 4/10** (expert estimate of the setup then, not a forecast). The implemented score is 7/10, in the section at the top.
 
 | Channel | Score | Why |
 |---|---|---|

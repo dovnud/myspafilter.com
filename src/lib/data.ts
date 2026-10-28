@@ -12,7 +12,20 @@ export const filters: Filter[] = (raw as any).filters;
 export const slug = (s:string) => s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export const brands = () => [...new Map(filters.map(f=>[f.brandSlug,f.brand])).entries()].map(([slug,name])=>({slug,name}));
 export const allParts = () => { const m = new Map<string,Filter[]>();
-  for (const f of filters) for (const p of [f.oem, ...Object.values(f.equivalents||{}).flatMap(v=>String(v).split('/'))]) if (p && p.trim()) { const k=slug(p); m.set(k,[...(m.get(k)||[]),f]); }
+  const add = (f: Filter, raw?: string) => {
+    for (const p of String(raw || '').split(/[;/]/)) {
+      const t = p.trim(); if (!t) continue;
+      const k = slug(t); if (!k) continue;
+      const cur = m.get(k) || [];
+      if (!cur.includes(f)) cur.push(f);
+      m.set(k, cur);
+    }
+  };
+  for (const f of filters) {
+    add(f, f.oem);
+    add(f, f.oemAll);
+    for (const v of Object.values(f.equivalents || {})) add(f, String(v));
+  }
   return m; };
 export const partLabel = (f:Filter) => f.equivalents?.unicel || f.equivalents?.pleatco || f.oem;
 export const fitSrc: Record<string,string> = { lt:'Leisure Time Inc. dealer listing', unicel:'Unicel 2026 Replacement Guide', pleatco:'Pleatco 2023 Catalog', hd:'Home Depot listing for Intex 29001E', intex:'Intex compatible-item list', bestway:'Bestway USA product page', layzspa:'Lay-Z-Spa UK (Bestway) product page', spd:'Spa Parts Depot listing' };
