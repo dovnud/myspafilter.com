@@ -119,11 +119,11 @@
   "intex/29012e": "2026-10-25"
  },
  "files": {
-  "src/pages/index.astro": "2026-10-27",
+  "src/pages/index.astro": "2026-10-28",
   "src/pages/about.astro": "2026-10-25",
   "src/pages/contact.astro": "2026-10-23",
   "src/pages/guide.astro": "2026-10-27",
-  "src/pages/size/index.astro": "2026-10-27",
+  "src/pages/size/index.astro": "2026-10-28",
   "src/pages/supplies/index.astro": "2026-10-27",
   "src/pages/guides/index.astro": "2026-10-27",
   "src/pages/data/index.astro": "2026-10-25",
