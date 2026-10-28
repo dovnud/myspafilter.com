@@ -41,7 +41,6 @@ const leadPick = (() => {
 })();
 ---
 <Base title={`${g.title} | MySpaFilter`} description={g.desc} jsonld={ld} ogType="article" modified={rev}>
-<p class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a></p>
 <article><h1>{g.title}</h1>
 <p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={rev}>{revText}</time></p>
 <section class="card answer"><div class="kicker">Short answer</div><p style="font-size:1.12rem;margin:.4rem 0 0" set:html={g.answer} /></section>

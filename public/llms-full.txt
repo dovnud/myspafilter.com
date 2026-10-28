@@ -1,0 +1,2198 @@
+# MySpaFilter full text
+
+> Independent hot tub and spa filter cross-reference. The text below is the guide and fitment copy published on https://myspafilter.com/. Cartridge rows that are not confirmed in two sources are marked unverified. Retailer links are affiliate links.
+
+## Key pages
+- [Home](https://myspafilter.com/)
+- [Size lookup](https://myspafilter.com/size/)
+- [Measuring guide](https://myspafilter.com/guide/)
+- [Guides](https://myspafilter.com/guides/)
+- [Supplies](https://myspafilter.com/supplies/)
+- [Dataset](https://myspafilter.com/data/)
+- [About](https://myspafilter.com/about/)
+- [Affiliate disclosure](https://myspafilter.com/affiliate-disclosure/)
+
+## Guides
+
+## How often should you replace a hot tub filter?
+
+URL: https://myspafilter.com/guides/how-often-to-replace-hot-tub-filter/
+Last updated: 2026-10-25
+
+Replacement intervals for hot tub filter cartridges from Hot Spring, Jacuzzi, Sundance, Unicel and Pleatco, and why there is no single number.
+
+Most pleated spa cartridges are replaced somewhere between 12 months and 3 years, depending on the brand and how hard the tub is used. Jacuzzi says 12–24 months[10], Hot Spring says 2–3 years for standard cartridges[8]. Disposable inner filters (such as Sundance MicroClean inserts) are on a much shorter schedule of a few months[12].
+
+## What the manufacturers say
+
+SourceFilterReplace
+
+Jacuzzi[10]Pleated cartridgesEvery 12–24 months, sooner if torn, flattened or heavily stained
+
+Hot Spring[8]Polyester (“paper”) cartridgeEvery 2–3 years
+
+Hot Spring[8]TRI-X cartridgeEvery 4–6 years
+
+Hot Spring owner page[7]CartridgesEvery three years
+
+Sundance 680 (2024 manual)[11]MicroClean Mini pleated filter / insert12 months / 4 months
+
+Sundance 780 (2024 manual)[12]Small MicroClean disposable cartridgeEvery 3 months, or earlier
+
+Note that Hot Spring’s own pages give slightly different figures (“every three years” on the owner maintenance page versus “2–3 years” on its filter article), so treat any number as a starting point, not a deadline.
+
+## Why there is no fixed lifespan
+
+Unicel and Pleatco both make the same point: a cartridge has no moving parts, so it doesn’t “fail” on a date. The media gradually plugs with body oils, soaps, chemicals and very fine particles[6][1]. They tie the end of a cartridge’s life to three things: shorter and shorter intervals between cleanings, low flow / high pressure, or physical failure such as torn media or a collapsed core[1].
+
+## What makes a filter wear out faster
+
+- More bathers and more frequent use (Hot Spring notes that more use means more frequent cleaning)[8].
+- Unbalanced water chemistry[1].
+- Scrubbing with a stiff brush[1], or unnecessary acid washing — Unicel calls acid washing “perhaps the biggest single factor leading to premature cartridge failure”[4].
+
+## Stretch the life with two cartridges
+Unicel, Pleatco and Jacuzzi all recommend alternating two sets of cartridges so one can be soaked and dried fully while the other is in use[6][1][10]. Find your replacement by OEM number on the homepage search, or browse Hot Spring, Jacuzzi and Sundance cartridges.
+
+### Sources
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Hot Spring Spas — How Do Hot Tub Filters Work?: https://www.hotspring.com/blog/how-do-hot-tub-filters-work
+- Hot Spring Spas — Maintenance Tips: https://www.hotspring.com/owners/maintenance-and-tips
+- Sundance Spas 680 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf
+- Sundance Spas 780 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Unicel — When to Replace a Cartridge Filter (PDF): https://waterlinetechnologies.com/content/Unicel/When%20to%20Replace%20A%20Cartridge%20Filter.pdf
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+
+## How to clean a hot tub filter (step by step)
+
+URL: https://myspafilter.com/guides/how-to-clean-a-hot-tub-filter/
+Last updated: 2026-10-25
+
+The cartridge cleaning procedure Unicel and Pleatco publish: hose rinse, degreasing soak, optional acid soak, and rinse — plus what to avoid.
+
+Turn the spa off, remove the cartridge, hose it from the top down at about a 45° angle between every pleat, then soak it for at least an hour (overnight is better) in a filter cleaner, rinse thoroughly and reinstall. That is the procedure Unicel and Pleatco both publish[4][1].
+
+## The full procedure
+
+- Power off. Hot Spring and Jacuzzi both say to cut power before removing filters[9][10].
+
+- Remove the cartridge following your spa maker’s instructions[4].
+
+- Hose rinse. Use a straight-flow nozzle, work from the top down, hold it at about 45°, and focus between the pleats; rinse until all debris is gone[4][1].
+
+- Degreasing soak. For spa cartridges, soak at least one hour (overnight is most effective) in a commercial filter cleaner, or 1 cup trisodium phosphate (TSP) per 5 gallons of water, or 1 cup dishwasher detergent per 5 gallons[4][1].
+
+- Rinse again to remove oils and cleaner[4]. Jacuzzi warns that leftover residue can cause foaming once the jets run[10].
+
+- Acid soak only if needed for mineral scale — see should you acid wash a spa filter?
+
+- Reinstall and restart. Don’t overtighten the filter retainer[9].
+
+## Things to avoid
+
+- Stiff brushes on the media[1].
+- Pressure washers or high-pressure nozzles that can tear fibers[10] (some Sundance manuals do call for a high-pressure hose nozzle on the outer pleated filter — follow your own manual[11]).
+- Dishwashers and washing machines[10] — see dishwasher guide.
+- Any cleaner on disposable inner inserts — Sundance says never to use filter cleaners on them[11].
+
+## Using the spa while the filter soaks
+Jacuzzi advises against running the spa with no filter installed; keep a second clean cartridge to swap in[10]. Hot Spring’s manual also says not to use the spa with the cartridge removed[9]. Look up a spare by part number on the homepage.
+
+### Sources
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Pleatco FilterWash information sheet: https://lesl.a.bigcontent.io/v1/static/Pleatco-FilterWash-InfoSheet
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Sundance Spas 680 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf
+
+## How often should you clean a hot tub filter?
+
+URL: https://myspafilter.com/guides/how-often-to-clean-hot-tub-filter/
+Last updated: 2026-10-25
+
+Rinse and deep-clean schedules for spa filter cartridges according to Hot Spring, Jacuzzi, Sundance, Pleatco and Unicel.
+
+A common baseline is a quick hose rinse weekly and a deep clean with filter cleaner every 4–6 weeks (Jacuzzi)[10]. Hot Spring recommends cleaning monthly[7][9], and Pleatco notes most spa makers recommend monthly, every two weeks with heavy use, and after parties[3].
+
+## Schedules compared
+SourceRinseDeep clean
+
+Jacuzzi[10]Weekly (every 2–3 days with heavy use)Every 4–6 weeks (3–4 with heavy use; 6–8 with light use)
+
+Hot Spring[8][9]MonthlySoak whenever you drain the tub
+
+Pleatco[3]Monthly; every 2 weeks with heavy use; after heavy-use events
+
+Sundance 680/780 (2024)[11][12]Clean the pleated filter monthly
+
+Unicel[4]Set a routine based on how much the spa is used
+
+## Can you clean too often?
+Unicel notes cartridge filters use the debris they collect to improve filtration, so cleaning too often lowers efficiency while cleaning too rarely shortens cartridge life[4]. On systems with a pressure gauge (more common on pools), Unicel suggests cleaning when pressure rises 8 psi above the new-cartridge starting pressure[4].
+
+## Signs you are overdue
+Hot Spring warns a clogged filter can reduce jet performance, limit flow, and trip the high-limit thermostat[9]; Jacuzzi lists cloudy water, musty odor and FLO errors[10]. See signs your filter is bad.
+
+### Sources
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Hot Spring Spas — Maintenance Tips: https://www.hotspring.com/owners/maintenance-and-tips
+- Hot Spring Spas — How Do Hot Tub Filters Work?: https://www.hotspring.com/blog/how-do-hot-tub-filters-work
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Pleatco FilterWash information sheet: https://lesl.a.bigcontent.io/v1/static/Pleatco-FilterWash-InfoSheet
+- Sundance Spas 680 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf
+- Sundance Spas 780 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+
+## How to find your spa filter size
+
+URL: https://myspafilter.com/guides/how-to-find-your-spa-filter-size/
+
+Find the right replacement cartridge by its part number or by measuring diameter, length and end-cap fittings.
+
+First look for a part number printed on the end cap or label and search it here. If there is none, measure the diameter across the widest point, the overall length end to end, and note the top and bottom fittings (open hole size, thread, handle or closed cap), then match them on the size lookup. These are the same fields Unicel and Pleatco catalogs list for every cartridge[5][2].
+
+## Step 1: look for a number
+OEM, Unicel (e.g. C-xxxx) and Pleatco (e.g. Pxxx / PRBxx) numbers can all be looked up from the homepage search. Our cross-reference comes from the Unicel 2026 Replacement Guide and the Pleatco 2023 catalog[5][2]. If your spa is a Hot Spring, Caldera, Jacuzzi, Sundance, Bullfrog or Master Spas, you can also look up the part by model and year: Hot Spring, Caldera, Jacuzzi, Sundance, Bullfrog or Master Spas. Two cartridges of the same size can carry different square-foot ratings; here is why.
+
+## Step 2: measure
+MeasurementHowWhy it matters
+
+DiameterAcross the widest point of the pleats / end capMust fit the filter well or housing
+
+LengthEnd to end, including any handle or threaded nippleMust fit the housing height
+
+Top fittingOpen hole (measure inside), handle, or closedAffects how it is held in place
+
+Bottom fittingOpen hole size, or male/female thread sizeMust seal on the standpipe or the water bypasses the media
+
+Catalog tables list diameter, length, top and bottom fittings and media area (sq ft) for each cartridge[5][2]. See an example with a to-scale diagram: Caldera C-4335.
+
+## Square footage is not the deciding factor
+Media area (sq ft) helps distinguish two cartridges with the same dimensions, but match size and fittings first. Our measuring guide covers this in more detail.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+
+## OEM vs Unicel vs Pleatco spa filters: what’s the difference?
+
+URL: https://myspafilter.com/guides/oem-vs-unicel-vs-pleatco-spa-filters/
+
+Why the same hot tub cartridge has an OEM number, a Unicel number and a Pleatco number, and how cross-references work.
+
+Spa makers (OEMs such as Hot Spring, Jacuzzi or Sundance) assign their own part numbers; Unicel and Pleatco are aftermarket cartridge makers that publish cross-reference tables mapping those OEM numbers to their own replacements[5][2]. A cross-referenced replacement is listed as matching the original’s dimensions and fittings.
+
+## How the numbers relate
+Who makes itExample numbering
+
+OEMSold by or for the spa makerBrand-specific (e.g. Caldera 74148)
+
+UnicelUnicel (aftermarket)C-xxxx (e.g. C-4335)
+
+PleatcoPleatco (aftermarket)Pxxx / PRBxx (e.g. PRB35-IN)
+
+Example from our data: Caldera OEM 74148 ↔ Unicel C-4335 ↔ Pleatco PRB35-IN, cross-referenced in the Unicel 2026 guide and Pleatco 2023 catalog[5][2].
+
+## What spa makers recommend
+Spa makers generally recommend their own filters: Hot Spring says to replace with genuine Watkins filters[7], and Jacuzzi recommends filters designed for your specific spa model[10]. Check your spa’s warranty terms before switching.
+
+## Things to verify before buying
+
+- Diameter, length and both end fittings match.
+- Special designs (e.g. Hot Spring TRI-X, or Sundance two-stage assemblies with disposable inserts[12]) may not have a direct aftermarket equivalent.
+- We flag rows we could not confirm in two sources as unverified.
+Browse by brand: Caldera, Hot Spring, Hot Spot, Jacuzzi, Sundance.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Hot Spring Spas — Maintenance Tips: https://www.hotspring.com/owners/maintenance-and-tips
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Sundance Spas 780 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf
+
+## Signs your hot tub filter is bad (and needs replacing)
+
+URL: https://myspafilter.com/guides/signs-your-hot-tub-filter-is-bad/
+Last updated: 2026-10-25
+
+How to tell when a spa filter cartridge is worn out rather than just dirty, according to Unicel, Pleatco, Jacuzzi and Hot Spring.
+
+Replace a cartridge when cleaning no longer restores it: the time between cleanings keeps getting shorter, flow stays low, or the media is torn or the core collapsed[1][6]. Jacuzzi adds persistent cloudiness despite balanced water, limp pleats that don’t spring back, lasting odor after cleaning, cracked end caps, and flow errors right after cleaning[10].
+
+## Checklist
+SignSource
+
+Shorter cycles between cleaningsUnicel, Pleatco[6][1]
+
+Low flow / high differential pressureUnicel, Pleatco[6][1]
+
+Torn media or collapsed center coreUnicel, Pleatco[6][1]
+
+Limp or flattened pleats; cracked end capsJacuzzi[10]
+
+Cloudy water or odor that persists after cleaning and balancingJacuzzi[10]
+
+FLO / low-flow errors right after cleaningJacuzzi[10]
+
+Discolored or worn mediaHot Spring[8]
+
+## Discoloration alone isn’t proof
+Pleatco notes that “white does not indicate clean” and media can discolor over time, while faded end caps can come from chlorine and cyanuric acid — though it can also indicate an old cartridge[3].
+
+## Why it matters
+Hot Spring warns a clogged filter can trip the high-limit thermostat and shut the spa off[9]. CDC advises regular cartridge replacement per the manufacturer as part of controlling germs like Legionella in hot tubs[14]. Ready to replace? Search your part number.
+
+### Sources
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Unicel — When to Replace a Cartridge Filter (PDF): https://waterlinetechnologies.com/content/Unicel/When%20to%20Replace%20A%20Cartridge%20Filter.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Hot Spring Spas — How Do Hot Tub Filters Work?: https://www.hotspring.com/blog/how-do-hot-tub-filters-work
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Pleatco FilterWash information sheet: https://lesl.a.bigcontent.io/v1/static/Pleatco-FilterWash-InfoSheet
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+
+## Spa filter cleaner vs DIY soaks (TSP, dishwasher detergent, vinegar, bleach)
+
+URL: https://myspafilter.com/guides/spa-filter-cleaner-vs-diy-soak/
+Last updated: 2026-10-25
+
+Which cleaning solutions cartridge makers actually approve for hot tub filters, and which to avoid.
+
+Unicel and Pleatco approve three soaks: a commercial filter cleaner, 1 cup TSP per 5 gallons, or 1 cup dishwasher detergent per 5 gallons[4][1]. Jacuzzi prefers commercial non-foaming cleaners, allows a 1:3 white vinegar solution for light mineral scale, and says to avoid chlorine bleach, harsh degreasers, bathroom cleaners and abrasive powders[10].
+
+## Comparison
+OptionWhat sources say
+
+Commercial spa filter cleanerApproved by Unicel/Pleatco[4][1]; Jacuzzi’s preferred choice[10]; Hot Spring recommends a filter degreaser[9]
+
+Trisodium phosphate (TSP)1 cup per 5 gallons, soak ≥1 hour[4][1]
+
+Dishwasher detergent1 cup per 5 gallons[4][1]; Jacuzzi warns detergents can foam if not rinsed extremely well[10]
+
+White vinegar1 part to 3 parts water for light mineral scale; weak on oils[10]
+
+Chlorine bleachAvoid — can damage fibers[10]; Pleatco says bleaching agents can damage filtration fabric[3]
+
+Muriatic acidOnly for confirmed mineral scale, after degreasing — see guide
+
+## Special cases
+
+- Biguanide (Baquacil) users: Unicel and Pleatco say the cartridge must be cleaned with Baqua Clean before any cartridge cleaner[4][1].
+- Disposable inserts: Sundance says never use filter cleaners on its inner inserts[11].
+- Tablets: Pleatco FilterWash is meant for a 25–30 minute soak and the solution should not be saved[3].
+Always rinse thoroughly before reinstalling. Need a fresh cartridge instead? Find yours.
+
+### Sources
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Pleatco FilterWash information sheet: https://lesl.a.bigcontent.io/v1/static/Pleatco-FilterWash-InfoSheet
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Sundance Spas 680 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf
+
+## Should you acid wash a spa filter?
+
+URL: https://myspafilter.com/guides/should-you-acid-wash-a-spa-filter/
+Last updated: 2026-10-25
+
+When muriatic acid soaking is appropriate for a hot tub cartridge, Unicel’s bubble test, and the safety rules.
+
+Usually not. Unicel calls acid washing “perhaps the biggest single factor leading to premature cartridge failure” and says to acid wash only when required, and never without degreasing first[4]. If a drop of acid on clean, rinsed media bubbles, there’s mineral buildup and a mild soak of 1 part muriatic acid to 20 parts water is the published remedy[4].
+
+## Unicel’s bubble test
+
+- Degrease the cartridge thoroughly and rinse away all soap[4].
+- Put a few drops of acid on a small area of media.
+- Bubbling = calcium/mineral buildup → mild acid soak. No bubbling = no acid wash needed[4].
+
+## The soak
+1 part muriatic acid to 20 parts water until bubbling stops, then rinse[4][1]. Unicel warns that acid-soaking before removing all oils and cleaner causes a permanent flow restriction[4].
+
+## Safety
+
+- Wear rubber gloves and safety glasses; don’t add water to acid; never mix chlorine and acid[4].
+- Jacuzzi says strong acids like muriatic acid should only be used by professionals and never as a first-step cleaner[10].
+
+If the cartridge is old and scaled, a replacement may be the safer choice — search your part number.
+
+### Sources
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+
+## Can you put a hot tub filter in the dishwasher or use a pressure washer?
+
+URL: https://myspafilter.com/guides/can-you-put-a-hot-tub-filter-in-the-dishwasher/
+Last updated: 2026-10-25
+
+What Jacuzzi, Pleatco and Sundance say about dishwashers, washing machines, pressure washers and stiff brushes on spa filter cartridges.
+
+No to the dishwasher: Jacuzzi says dishwashers and washing machines aren’t recommended because high heat and aggressive spray can warp end caps and don’t clean deep between the pleats[10]. For rinsing, use a garden hose; Jacuzzi says to avoid pressure washers that can tear fibers[10].
+
+## Quick answers
+MethodVerdict
+
+Dishwasher / washing machineNot recommended[10]
+
+Pressure washerAvoid — can tear fibers or damage seams[10]
+
+Garden hose, top-down at ~45°Recommended[4][1]
+
+Stiff brushNever on the media[1]
+
+Dishwasher detergent as a bucket soakAllowed by Unicel/Pleatco (1 cup per 5 gal)[4][1]
+
+Note the difference: putting dishwasher detergent in a soaking bucket is a published option; running the cartridge through a dishwasher is not. Sundance’s 2024 680 manual specifies a high-pressure hose nozzle for its outer pleated filter but a low-pressure nozzle and no chemicals for the insert[11] — follow your own spa’s manual. Full steps in how to clean a hot tub filter.
+
+### Sources
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Sundance Spas 680 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf
+
+## Best hot tub test strips and test kits: how to choose
+
+URL: https://myspafilter.com/guides/best-hot-tub-test-strips/
+Last updated: 2026-10-25
+
+What test strips and kits actually measure, which readings matter for chlorine vs bromine tubs, and a short list of strips and DPD kits to consider.
+
+Pick strips that read your sanitizer (free chlorine or bromine), plus pH, total alkalinity and calcium hardness. CDC says to use test strips to check disinfectant and pH[13], and Hot Spring’s own recommended ranges are free chlorine 1–5 ppm, pH 7.2–7.8, total alkalinity 40–120 ppm and calcium hardness 75–150 ppm[18].
+
+## What you are testing for
+
+ReadingRange given by sourceSource
+
+Free chlorine1.0–5.0 ppm (Hot Spring owners) · at least 3 ppm (CDC hot tub rash page)[18][13]
+
+Bromine4–8 ppm[13][14]
+
+pH7.2–7.8 (Hot Spring, CDC Legionella toolkit) · 7.0–7.8 (CDC rash page)[18][14][13]
+
+Total alkalinity40–120 ppm (Hot Spring)[18]
+
+Calcium hardness75–150 ppm standard; 25–75 ppm with Hot Spring’s salt system[18]
+
+The ranges differ a little between sources, which is normal: CDC’s numbers are public-pool baselines, while a spa maker’s numbers are tuned to its own equipment. Follow your owner’s manual if it gives different numbers.
+
+## Strips vs liquid (DPD) kits
+
+Strips are quick: you dip, wait and compare the colors to the chart, which Hot Spring describes as giving “a working range” for pH, alkalinity, hardness and chlorine[18]. Liquid reagent kits (the DPD kits below) take more steps and are usually chosen when you want finer readings. CDC’s chemical-safety page also notes that if a reading is off the top of the scale you may need dilution or higher-range strips[15].
+
+## How to choose
+
+- Match the sanitizer. A strip made for bromine reads bromine; a chlorine strip reads chlorine. The AquaChek “Red” and “Yellow” listings below make this split in their titles.
+
+- Salt-system tubs need the right strip. Hot Spring warns that calcium tolerances are lower with its salt system, so use the strips made for your spa model[18].
+
+- Check the date and keep the bottle closed. Strips are color chemistry; follow the package instructions for timing and storage.
+
+- Test often. CDC’s toolkit tells public hot tub operators to test disinfectant and pH at least twice a day[14]; home owners usually test less often, but more frequent testing is better in heavy use. Check your own manual for its schedule.
+
+## Why bother
+CDC links hot tub rash to sitting in a poorly maintained tub and recommends checking disinfectant and pH with test strips[13]. Our pH and alkalinity guide covers what to do with the numbers.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- Hot Spring — How do I choose the right spa chemicals for my hot tub?: https://www.hotspring.com/faq/how-do-i-choose-the-right-spa-chemicals-for-my-hot-tub
+- CDC — Preventing Hot Tub Rash: https://www.cdc.gov/healthy-swimming/prevention/preventing-hot-tub-rash.html
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+- CDC — Pool Chemical Safety (applies to pools, hot tubs and spas): https://www.cdc.gov/healthy-swimming/toolkit/pool-chemical-safety.html
+
+## How to balance hot tub pH and alkalinity (in the right order)
+
+URL: https://myspafilter.com/guides/how-to-balance-hot-tub-ph-and-alkalinity/
+Last updated: 2026-10-25
+
+Total alkalinity first, then calcium, then pH: the order Hot Spring’s manual gives, target ranges, how to add chemicals, and pH/alkalinity products to consider.
+
+Hot Spring’s 2026 owner’s manual says to adjust total alkalinity first (target 80 ppm), then calcium hardness (target 100 ppm), then pH (target 7.4–7.8), because out-of-balance alkalinity affects your ability to adjust pH and keeps sanitizer from working effectively[9].
+
+## The order and the targets
+
+StepTargetAcceptable range
+
+1. Total alkalinity80 ppm40–120 ppm
+
+2. Calcium hardness100 ppm (50 ppm with salt system)75–150 ppm (25–75 ppm with salt system)
+
+3. pH7.4 (manual); 7.4–7.8 start-up instruction7.2–7.8
+
+Figures are from Hot Spring’s Hot Spot owner’s manual[9] and its chemical FAQ[18]. CDC’s Legionella toolkit also lists pH 7.2–7.8[14]. Your own spa’s manual is the controlling document.
+
+## How to add the chemicals
+
+- Test first with a strip or kit (see test strip guide).
+
+- Add through the filter compartment with the jets on high. Hot Spring says granulated pH increaser/decreaser and alkalinity increaser go directly into the filter compartment with the jet pump on high for at least ten minutes[9].
+
+- Measure carefully and avoid splashing on hands, eyes or the shell surface[9].
+
+- Retest, then adjust again in small steps rather than one big dose.
+
+## Which product for which problem
+
+- Alkalinity or pH too high: a pH/alkalinity decreaser (“down”). Hot Spring lists high total alkalinity/pH as a probable cause of scale and recommends pH/alkalinity down[19].
+
+- Alkalinity or pH too low: alkalinity increaser or pH increaser (“up”). Hot Spring lists low total alkalinity and/or pH as a probable cause of staining when source water also has iron or copper[19].
+
+- Calcium low: a calcium hardness increaser, mainly for soft fill water.
+
+## Safety
+
+- Read the label and safety data sheet and use protective equipment; CDC’s pool-chemical page says injuries happen when chemicals are mixed or protective equipment is not used[15].
+
+- Never combine two chemicals in one container or pour them together; add one at a time. CDC says to store each product separately, in its original labeled container[15].
+
+- Hot Spring’s manual says not to use chemicals other than those recommended by Watkins Wellness or its dealers[22]. If your tub is under warranty, ask your dealer before switching brands.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Hot Spring Hot Spot Collection Owner’s Manual, 50 Hz (2024) — cover care: https://www.hotspring.co.uk/wp-content/uploads/2024/04/2024-Hot-Spot-50Hz-Owners-Manual-Rev-A-English.pdf
+- Hot Spring — How do I choose the right spa chemicals for my hot tub?: https://www.hotspring.com/faq/how-do-i-choose-the-right-spa-chemicals-for-my-hot-tub
+- Hot Spring — Hot Tub Water Care & Troubleshooting: https://www.hotspring.com/owners/water-care-and-troubleshooting
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+- CDC — Pool Chemical Safety (applies to pools, hot tubs and spas): https://www.cdc.gov/healthy-swimming/toolkit/pool-chemical-safety.html
+
+## Hot tub sanitizer: bromine vs chlorine vs mineral systems
+
+URL: https://myspafilter.com/guides/best-hot-tub-sanitizer-bromine-chlorine-mineral/
+Last updated: 2026-10-25
+
+How the main hot tub sanitizers differ, what CDC and Hot Spring say about residual levels and stabilized chlorine, and a short list of tablets, floaters and granules.
+
+CDC’s target residuals for hot tubs are free chlorine 3–10 ppm or bromine 4–8 ppm with pH 7.2–7.8[14]; Hot Spring’s owner range for chlorine is 1–5 ppm[18]. Whichever you choose, you need a test kit that reads it. One caution: CDC’s toolkit says cyanuric acid / stabilized chlorine products should not be used in hot tubs because they slow disinfection[14], while Hot Spring’s own manual uses sodium dichlor (a stabilized chlorine) for superchlorinating[9]; follow your spa maker.
+
+## The three common approaches
+
+SystemHow you use itWhat to know
+
+BromineTablets in a floater or in-line feeder, with a sodium-bromide “bromine reserve” sometimes used to startCDC lists bromine 4–8 ppm for hot tubs[13][14]. Needs a strip or kit that reads bromine.
+
+Chlorine (granules)Measured doses of granules, added through the filter compartmentHot Spring’s range is 1–5 ppm free chlorine[18]; CDC says 3–10 ppm[14]. Check the label for “stabilized/dichlor” (see the CDC note above).
+
+Mineral / cartridge systemsA cartridge or floater that releases a sanitizer or mineral over weeksSome products pair with a conventional sanitizer, so read the label. Follow the product’s own instructions and still test the water; the listings below describe what each product says it is.
+
+## Choosing
+
+- Start from your owner’s manual. Hot Spring’s manual specifies adding chemicals through the filter compartment with the jets on high[9]; some spas ship with an in-line feeder instead.
+
+- Floaters: a floating dispenser holds tablets sized for it, so check the tablet size on the listing. The two floaters below say they fit 1-inch tablets (440) or chlorine and bromine tablets (U.S. Pool Supply).
+
+- Don’t switch sanitizers casually. Moving between bromine and chlorine is covered in your spa maker’s instructions; don’t guess.
+
+- Hot water changes things. CDC notes that hot tubs sit in the temperature range favorable to Legionella (77–113°F) and make aerosols and speed up disinfectant decay[14], which is why a steady, measured residual matters more than any brand.
+
+## Handling and storage
+CDC says to store pool chemicals below 95°F, away from sun and moisture, in their original labeled containers, with each product stored separately and incompatible chemicals kept apart[15]. See our chemical safety guide.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+- CDC — Preventing Hot Tub Rash: https://www.cdc.gov/healthy-swimming/prevention/preventing-hot-tub-rash.html
+- CDC — Pool Chemical Safety (applies to pools, hot tubs and spas): https://www.cdc.gov/healthy-swimming/toolkit/pool-chemical-safety.html
+- Hot Spring — How do I choose the right spa chemicals for my hot tub?: https://www.hotspring.com/faq/how-do-i-choose-the-right-spa-chemicals-for-my-hot-tub
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+
+## Hot tub shock: chlorine vs non-chlorine (and when to use it)
+
+URL: https://myspafilter.com/guides/hot-tub-shock-chlorine-vs-non-chlorine/
+Last updated: 2026-10-25
+
+What “shocking” a hot tub means, what Hot Spring and CDC say about superchlorinating, and non-chlorine oxidizers to consider.
+
+“Shock” is a higher-than-normal dose of oxidizer. Hot Spring’s manual superchlorinates new water with 1½ teaspoons of sodium dichlor per 250 gallons and lists MPS (non-chlorine shock) among the chemicals added through the filter compartment[9]. Hot Spring’s troubleshooting page repeatedly lists “shock spa with sanitizer” as a fix for water problems[19].
+
+## Two kinds of shock
+
+- Chlorine shock (such as dichlor granules) raises chlorine for a while. Hot Spring’s start-up routine uses it[9]. CDC’s toolkit footnote cautions against stabilized chlorine in hot tubs[14], so confirm what your spa maker recommends.
+
+- Non-chlorine shock (MPS or similar oxidizer) is sold to oxidize contaminants without raising chlorine; Hot Spring’s manual includes “MPS” in the list of chemicals it tells owners to add to the filter compartment[9]. Several listings below describe themselves as non-chlorine.
+
+## When to shock
+Hot Spring’s troubleshooting list includes shocking when water is affected by dirty filters, excessive oils or organic matter, improper sanitizing or overused water[19]. It also advises letting free chlorine fall below 5 ppm before using the spa when the level is above 5 ppm[19], so always wait and re-test after shocking.
+
+## How to do it safely
+
+- Cover off, jets on high, chemicals into the filter compartment, ten minutes minimum[9].
+
+- Measure the dose from the label for your water volume; don’t eyeball it.
+
+- Follow the label for how long to wait before anyone gets back in, then re-test and wait until chlorine is back in range (Hot Spring says below 5 ppm[19]).
+
+- Store leftover product dry, separate from other chemicals and sealed in its original container[15].
+
+When the water won’t clear after shocking, see our foam, cloudy water and jet cleaner guide; a clogged cartridge is a common reason, so clean the filter too.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Hot Spring — Hot Tub Water Care & Troubleshooting: https://www.hotspring.com/owners/water-care-and-troubleshooting
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+- CDC — Pool Chemical Safety (applies to pools, hot tubs and spas): https://www.cdc.gov/healthy-swimming/toolkit/pool-chemical-safety.html
+
+## Best hot tub filter cleaners: soaks, sprays and tools
+
+URL: https://myspafilter.com/guides/best-hot-tub-filter-cleaners/
+Last updated: 2026-10-25
+
+Soak vs spray vs DIY, what Unicel and Pleatco say about degreasing, and a short list of spa filter cleaners and cleaning tools.
+
+Unicel and Pleatco both say a spa cartridge needs a degreasing soak of at least one hour (overnight is best) in a commercial filter cleaner or a DIY alternative after a hose rinse[4][1]; a purpose-made cleaner saves the guesswork. Always rinse thoroughly afterward because leftover residue can cause foaming[10].
+
+## Soak, spray or DIY?
+MethodNotes
+
+Concentrated soak (liquid or powder)Dilute per label, submerge the cartridge, rinse. Matches the one-hour minimum Unicel and Pleatco describe[4][1].
+
+Spray-on cleanerSpray, wait per label, rinse. Convenient between full soaks; read the label for contact time.
+
+DIY soakUnicel/Pleatco list TSP or dishwasher detergent in a bucket; see cleaner vs DIY.
+
+## What to look for
+
+- Made for cartridge filters — look for “filter cleaner” or “cartridge cleaner” on the label.
+
+- Match your spa maker. Hot Spring names its own filter cleaners as the fix for dirty filters in its troubleshooting table[19], and its manual tells owners not to use cleaners other than those recommended by the maker or dealers[22]; check before using other brands on a warranty tub.
+
+- Quantity: a soak needs enough solution to submerge the cartridge, so bottle size matters more than price per ounce.
+
+- Don’t add an acid soak by habit. Unicel warns acid washing is a major cause of premature cartridge failure[4]; see our acid wash guide.
+
+## Tools
+The Filter Flosser listing describes itself as a cartridge filter cleaner for pools and hot tubs; Unicel and Pleatco tell you to use a straight-flow hose nozzle at about 45° and never a stiff brush on the media[4][1], and Jacuzzi warns against high-pressure tools[10], so judge any tool against those limits.
+
+Full step-by-step: how to clean a hot tub filter. Need a spare to swap in while one soaks? Search your part number.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Hot Spring — Hot Tub Water Care & Troubleshooting: https://www.hotspring.com/owners/water-care-and-troubleshooting
+- Hot Spring Hot Spot Collection Owner’s Manual, 50 Hz (2024) — cover care: https://www.hotspring.co.uk/wp-content/uploads/2024/04/2024-Hot-Spot-50Hz-Owners-Manual-Rev-A-English.pdf
+
+## Hot tub stain, scale and metal control: causes and products
+
+URL: https://myspafilter.com/guides/hot-tub-stain-scale-and-metal-control/
+Last updated: 2026-10-25
+
+What causes scale and metal staining according to Hot Spring’s troubleshooting guide, how stain-and-scale products are used, and options to consider.
+
+Hot Spring’s troubleshooting guide ties scale to total alkalinity and/or pH being too high and high calcium in the water, and staining to total alkalinity and/or pH being too low plus iron or copper in the source water; it recommends balancing the water and adding its Stain & Scale product to inhibit metals[19].
+
+## Two different problems
+ProblemProbable causes (Hot Spring)Fix (Hot Spring)
+
+ScaleTotal alkalinity and/or pH too high; high calcium content in the waterLower alkalinity and pH; if scale must be removed, drain, scrub it off, clean the shell, refill; add a stain-and-scale product and rebalance[19]
+
+Staining / discolorationTotal alkalinity and/or pH too low; high iron or copper in source waterRaise alkalinity/pH; use a stain-and-scale product to inhibit metals[19]
+
+## How the products are used
+Hot Spring’s manual lists “liquid stain and scale inhibitor” among the chemicals added directly into the filter compartment with the jet pump on high for ten minutes[9]. Metal-control products (such as the “metal gon” and “metal free” names below) are sold for the same fill-water problem; follow each label’s dose and timing.
+
+## Prevent it first
+
+- Keep alkalinity and pH in range; see the balancing guide and measure with good test strips.
+
+- CDC’s Legionella toolkit notes sediment and biofilm are key factors and recommends scrubbing surfaces each time the tub is drained[14].
+
+- If your fill water is hard or has metals, a hose-end pre-filter on the fill hose may help; search below because the right size depends on your hose.
+
+- Scale on the cartridge is a separate issue: see acid washing.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- Hot Spring — Hot Tub Water Care & Troubleshooting: https://www.hotspring.com/owners/water-care-and-troubleshooting
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+
+## Hot tub foam, cloudy water and jet cleaners: what to try
+
+URL: https://myspafilter.com/guides/hot-tub-foam-cloudy-water-and-jet-cleaners/
+Last updated: 2026-10-25
+
+Probable causes Hot Spring lists for cloudy water and other problems, when defoamers, clarifiers, enzymes and plumbing flushes are used, and a short list of products.
+
+Start with the cause, not the bottle. Hot Spring lists dirty filters, excessive oils or organic matter, improper sanitizing, suspended particles and overused or old water among probable causes of water problems, and its fixes run from cleaning filters and shocking to draining, cleaning and refilling[19]. Defoamers, clarifiers and enzymes are add-ons after that.
+
+## First checks
+
+- Clean the filter. It is the first fix on Hot Spring’s list[19]; see how to clean a hot tub filter. Jacuzzi warns that leftover cleaner can foam once jets start[10].
+
+- Test sanitizer and pH. Hot Spring pairs low pH or low sanitizer with several water problems[19].
+
+- Shock if needed (see the shock guide).
+
+- Consider the water’s age. CDC gives a formula for how often to replace hot tub water: (spa volume in gallons ÷ 3) ÷ average number of users per day, as days between changes[14]. A 400-gallon tub with 2 users a day works out to 400 ÷ 3 ÷ 2 ≈ 67 days.
+
+## What each product type is for
+TypeUse
+
+DefoamerKnocks down surface foam. Hot Spring lists liquid defoamer among chemicals added to the filter compartment[9]. Foam usually returns if the cause (oils, residue, old water) stays.
+
+ClarifierSold to help the filter catch fine particles; not a substitute for a clean cartridge.
+
+EnzymeSold to break down oils and lotions; the listings below describe this.
+
+Jet / plumbing cleaner or flushRun through the plumbing before a drain to loosen buildup. CDC’s toolkit recommends scrubbing surfaces and cleaning filters whenever the tub is drained[14].
+
+## When to drain
+Hot Spring’s last-resort fix for almost every problem is to drain, clean and refill[19]. If water is still cloudy after filter cleaning, shocking and balancing, plan a drain.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- Hot Spring — Hot Tub Water Care & Troubleshooting: https://www.hotspring.com/owners/water-care-and-troubleshooting
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+
+## Hot tub cover lifters and cover care: what to know before you buy
+
+URL: https://myspafilter.com/guides/hot-tub-cover-lifters-and-cover-care/
+Last updated: 2026-10-25
+
+How cover lifters differ by clearance, Hot Spring’s cover cleaning and handling rules, wind and snow cautions, and cover lifter options.
+
+Choose a lifter by the clearance behind your tub: Hot Spring’s own lifters need 24 inches (CoverCradle), 14 inches (Lift ’n Glide) or 7 inches (UpRite) behind the spa and 3 inches at the sides, and its manual says never to lift a cover by its skirting or lock straps[20][22]. Whatever you use, keep the cover locked when the tub isn’t in use[16].
+
+## Pick a lifter by clearance
+Hot Spring lifterBack clearanceSide
+
+CoverCradle / CoverCradle II24 in3 in
+Lift ’n Glide14 in3 in
+UpRite (also a privacy screen when open)7 in3 in
+
+[20] Hot Spring notes actual clearance varies by model and location, and that its lifters hide the cross bar inside the cover seam; not all lifters are built that way[20]. Third-party lifters like the two below are universal-style: check the listing’s dimensions against your cover and the space behind your tub. Hot Spring’s manual tells owners not to use lifting mechanisms other than those recommended by the maker or its dealers[22], so if you own a Hot Spring under warranty ask your dealer first.
+
+## Cover care (from Hot Spring’s manuals)
+
+- Clean monthly. Hose it, then use a very mild soap solution (1 teaspoon dish soap in 2 gallons of water for vinyl) with a soft brush and rinse so the soap film doesn’t dry on it[21][22].
+
+- Underside: water only, then wipe dry[21].
+
+- Vinyl only: Hot Spring’s Cover Shield conditioner is for vinyl covers and should not be used on polyester[21]. Other brands’ protectants: read the label for your cover material.
+
+- Don’t drag the cover by the flaps or lock straps, walk or sit on it, put metal or heat-transferring objects or a plastic tarp over it[22].
+
+- Snow: remove buildup to protect the foam core[22].
+
+- Wind: Hot Spring says its cover and retractable systems aren’t recommended in winds above 25 mph (40 km/h), and extra cover-lock straps can be added where wind is a problem[22].
+
+## Safety
+CPSC’s tips: always use a locked safety cover when the spa is not in use, and keep young children away unless there is constant adult supervision[16]. CPSC also warns that a solar cover can let a child slip into the water while the cover appears to stay in place[17]; a solar blanket is not a safety cover.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- Hot Spring — Hot Tub Cover Lifters: https://www.hotspring.com/shop/accessories/cover-lifters
+- Hot Spring — Hot Spot Collection Quick Start Guide (2024): https://www.hotspring.com/wp-content/uploads/2024/07/hot-spring-hot-spot-quick-start-guide.pdf
+- Hot Spring Hot Spot Collection Owner’s Manual, 50 Hz (2024) — cover care: https://www.hotspring.co.uk/wp-content/uploads/2024/04/2024-Hot-Spot-50Hz-Owners-Manual-Rev-A-English.pdf
+- CPSC — Warning for Pools, Spas and Hot Tubs (safety tips): https://www.cpsc.gov/Newsroom/News-Releases/1996/CPSC-Issues-Warning-for-Pools-Spas-and-Hot-Tubs
+- CPSC — Prevent Child In-Home Drowning Deaths (Pub. 5013): https://www.cpsc.gov/s3fs-public/PreventChildInHomeDrowningDeaths.pdf
+
+## Hot tub steps and handrails: sizing and safe-entry checklist
+
+URL: https://myspafilter.com/guides/hot-tub-steps-handrails-and-safe-entry/
+Last updated: 2026-10-25
+
+How to choose hot tub steps and a handrail by height and footprint, plus the CPSC safety tips that apply around any spa.
+
+Measure first: the step must reach from the ground to the tub’s rim height without a big gap, and fit the space beside the tub. CPSC’s spa tips also apply: use a locked cover when not in use, keep water at 104°F or below, and avoid alcohol while soaking[16].
+
+## Choosing steps (editorial advice)
+
+- Measure rim height from the ground (or deck) to the top of the shell, and compare it with the step’s stated dimensions on the listing; the listings below describe themselves as three- or four-step units or a two-tier storage step.
+
+- Footprint: the listing says 36 inches wide for the storage step. Check that your path to the tub isn’t blocked.
+
+- Non-skid surface: the storage-step listing says non-skid; look for the same on any step you buy.
+
+- Stable ground. Place steps on a flat, firm surface.
+
+## Handrails
+Handrails vary in how they attach: freestanding, clamp-on, or sliding under the cabinet. The Zelen listing says it adjusts from 39 to 60 inches and rotates 360°; confirm that it fits your spa’s cabinet and weight rating on the listing. Because attachment varies by spa, we also link a search so you can compare options.
+
+## Safety (from CPSC)
+
+- Always use a locked safety cover when the spa is not in use, and keep young children away unless there is constant adult supervision[16].
+
+- Know where the pump cut-off switch is, check that drain covers are in place and not cracked or missing, and keep the water at 104°F or below[16].
+
+- If a child is missing, look in the pool or spa first[17].
+
+- Whatever steps or rails you add, keep the cover locked when the tub is not in use[16].
+
+Also see cover lifters and cover care.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- CPSC — Warning for Pools, Spas and Hot Tubs (safety tips): https://www.cpsc.gov/Newsroom/News-Releases/1996/CPSC-Issues-Warning-for-Pools-Spas-and-Hot-Tubs
+- CPSC — Prevent Child In-Home Drowning Deaths (Pub. 5013): https://www.cpsc.gov/s3fs-public/PreventChildInHomeDrowningDeaths.pdf
+
+## Hot tub cleaning tools: skimmers, vacuums and scum absorbers
+
+URL: https://myspafilter.com/guides/hot-tub-cleaning-tools-skimmers-and-vacuums/
+Last updated: 2026-10-25
+
+What hand skimmers, mini spa vacuums and scum absorbers are for, with CDC guidance on scrubbing and draining, and a short list of tools.
+
+Tools handle what chemicals can’t: leaves, hair and debris, scum lines and the sediment on the floor. CDC’s toolkit says to scrub all surfaces each time the tub is drained[14], and Hot Spring says to wipe off scum with a clean rag and, if severe, drain and clean the spa[19].
+
+## What each tool does
+ToolGood for
+
+Hand skimmerLeaves, bugs and floating debris; take it out before they sink and decay.
+
+Mini spa vacuumSediment and grit on the seat and floor. Listings below range from manual to battery-powered or rechargeable.
+
+Scum absorberA sponge that floats to soak up surface oils.
+
+## Choosing
+
+- Soft contact with the shell. Hot Spring’s quick start says household chemicals are harmful to the shell and a soft rag removes most dirt[21]; avoid abrasive pads or stiff brushes.
+
+- Size. Compare the listing’s reach with the depth of your tub.
+
+- Power. Manual vacs need no charging; battery or rechargeable ones need to be kept dry between uses.
+
+- Electric safety: don’t use mains-powered tools in or beside the water.
+
+## Routine
+
+- Skim as needed; wipe the waterline with a clean rag[19].
+- Vacuum before shocking so loosened debris reaches the filter.
+- At each drain: scrub every surface[14] and clean the filter (how often?).
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+- Hot Spring — Hot Tub Water Care & Troubleshooting: https://www.hotspring.com/owners/water-care-and-troubleshooting
+- Hot Spring — Hot Spot Collection Quick Start Guide (2024): https://www.hotspring.com/wp-content/uploads/2024/07/hot-spring-hot-spot-quick-start-guide.pdf
+
+## Replacement hot tub headrests and pillows: how to get the right fit
+
+URL: https://myspafilter.com/guides/replacement-hot-tub-headrests-and-pillows/
+Last updated: 2026-10-25
+
+Why spa pillows are model-specific, how to measure and identify yours, and search links for pillows and headrests by brand.
+
+Spa pillows are model-specific: mounting style, size and shape differ by maker and often by model year, so we link brand-specific Amazon searches rather than a single product. Identify your spa’s make and model first, then match the pillow’s listing text against your old one.
+
+## Identify what you have
+
+- Find the make and model on the cabinet label, the manual or the control panel.
+
+- Look at the old pillow: does it clip, suction-cup, or use a pin or insert? Measure width, height and thickness.
+
+- Read the new listing’s model fitment and the part number if one is given; some listings name the spas they replace (for example, a pillow listing may name a specific brand and year range) — confirm the year range.
+
+## Material and care
+
+- Pillows sit in hot, chemical-laden water and will wear. Rinse them with fresh water and keep sanitizer in range[14].
+
+- Hot Spring’s quick start says most household chemicals are harmful to the spa shell[21]; use mild products on pillows too and rinse well.
+
+## New or generic?
+A manufacturer part usually matches the clips exactly; generic replacements can be cheaper but you must verify dimensions and mounting. Our Hot Spring, Jacuzzi, Sundance and Caldera pages cover your filters; for pillows, start from your model name on the searches below.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- Hot Spring — Hot Spot Collection Quick Start Guide (2024): https://www.hotspring.com/wp-content/uploads/2024/07/hot-spring-hot-spot-quick-start-guide.pdf
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+
+## Hot tub chemical safety and storage: what CDC says
+
+URL: https://myspafilter.com/guides/hot-tub-chemical-safety-and-storage/
+Last updated: 2026-10-25
+
+CDC’s pool-chemical storage and handling rules applied to a home hot tub: temperature, moisture, separation, labels, plus never-mix reminders.
+
+CDC says pool chemicals can injure people when mixed together or when protective equipment isn’t used, and to store each one separately in its original labeled container below 95°F, out of the sun and protected from getting wet[15].
+
+## Storage rules (CDC)
+
+- Store below 95°F (35°C), in low humidity and out of direct sunlight, or as the manufacturer directs[15].
+
+- Protect from getting wet[15].
+
+- Store each chemical separately; keep incompatible chemicals away from each other; keep chemicals in original, manufacturer-labeled containers[15].
+
+- Keep away from heat sources and flames; don’t store ignition sources such as gas-powered equipment with chemicals[15].
+
+- Store and consume food and drinks away from pool chemicals[15].
+
+- Limit access, especially to children and animals[15].
+
+- Dispose of old, unwanted or unlabeled chemicals safely: contact the manufacturer or your local hazardous-materials group[15].
+
+## Handling
+
+- Read the label and keep the safety data sheet and protective equipment available[15].
+
+- Never mix different chemicals together. Unicel specifically warns never to mix chlorine and acid[4].
+
+- Add chemicals only through the filter compartment with jets on high as Hot Spring directs, taking care not to splash hands, eyes or shell[9].
+
+- Water temperature: CPSC says 104°F or below[16].
+
+## A practical kit (editorial)
+A small bin that stays dry, a dedicated measuring scoop per product (never reused between chemicals), splash-resistant goggles and gloves, a good test kit and the product labels. See the product guides for sanitizer, shock and pH balance.
+Product lists below are picks, not rankings. We checked that each Amazon listing exists and what its title says; we have not lab-tested any product, and we do not publish prices or star ratings because they change. Match any product to your spa maker’s guidance, and keep the label directions as your final word.
+
+### Sources
+- CDC — Pool Chemical Safety (applies to pools, hot tubs and spas): https://www.cdc.gov/healthy-swimming/toolkit/pool-chemical-safety.html
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- CPSC — Warning for Pools, Spas and Hot Tubs (safety tips): https://www.cpsc.gov/Newsroom/News-Releases/1996/CPSC-Issues-Warning-for-Pools-Spas-and-Hot-Tubs
+
+## Why do two spa filters the same size have different square-foot ratings?
+
+URL: https://myspafilter.com/guides/why-same-size-spa-filters-have-different-square-feet/
+Last updated: 2026-10-25
+
+Same diameter, same length, but 25, 37 or 50 sq ft? Unicel’s 2026 spec table shows it is the pleat count, and what that means when you replace a cartridge.
+
+The square-foot number is the total area of filter media folded into the cartridge, not its outside size. Two cartridges with the same diameter, length and end caps can hold different amounts of media because one has more pleats: in Unicel’s 2026 table, 106, 158 and 212 pleats in the same 4-15/16" × 13-5/16" body are rated 25, 37 and 50 sq ft[5]. So size alone cannot tell you the rating; the part number, or the pleat count, can.
+
+## How the number is calculated
+
+Unicel publishes its method for computing a cartridge’s area: count the pleats and measure the pleat height (the “amplitude”), measure the usable length of the media (excluding end caps and handles), then multiply the pleats by 2, by the pleat height, and by the usable length, and divide by 144. Its worked example is a cartridge with 75 pleats of 0.625" height and 9-1/4" of usable length: (75 × 2 × 0.625 × 9.25) ÷ 144 = 6.02 sq ft[5]. So area depends on three things: how many pleats, how tall each pleat is, and how long the media is. The outside diameter and overall length you can measure with a tape do not by themselves fix any of the three, which is how two cartridges that look identical can carry different amounts of media.
+
+## The same-size pairs in Unicel’s spec table
+
+Unicel’s 2026 Replacement Guide lists each cartridge’s outside diameter (OD), length, end-cap openings, pleat count, media weight and rated area[5]. Where several cartridges share the same OD, length and openings, the pleat count is what separates them. These are the groups in the table (Unicel’s own figures, quoted as printed from the 4000, 5000 and 6000 Series pages, printed pp. 5, 6 and 8; the area method is on p. 74):
+
+OD × lengthUnicel P/NPleatsMediaRated areaListed for
+
+4-15/16" × 13-5/16"
+2-1/8" open both endsC-43261063 oz25 sq ftRainbow, Waterway Plastics, Custom Molded Products
+
+C-46251064 oz25 sq ftsame brands as C-4326
+
+C-46371584 oz37 sq ftRainbow, Waterway Plastics, Morgan Spas, Leisure Bay Spas, Custom Molded Products
+
+C-49502123 oz50 sq ftRainbow, Waterway Plastics, Custom Molded Products
+
+4-15/16" × 14-7/8"
+2-1/8" open both endsC-43011063 oz28 sq ftMartec, Sonfarrel
+
+C-43051933 oz50 sq ftCal Spas, Martec, Sonfarrel, Advantage Mfg.
+
+5" × 13-5/16"
+2-3/8" open both ends, no center coreC-56251034 oz25 sq ftJacuzzi CFR-25 (in-line)
+
+C-56351584 oz37 sq ftJacuzzi CFR-37 (in-line)
+
+5-3/16" × 12-1/2"
+bar handle, 2" male thread5CH-3521513 oz35 sq ftMarquis Spas (new style)
+
+5CH-5021973 oz50 sq ftMarquis Spas (new style), Cal Spas
+
+6" × 8-1/4"
+handle top, injection-molded 1-1/2" SAE thread6CH-9251323 oz25 sq fttop load
+
+6CH-9402253 oz45 sq fttop load
+
+6" × 14"
+1-15/16" open both endsC-63501423 oz50 sq ftHot Springs Spas / Watkins (Limelight)
+
+C-63552293 oz75 sq ftHot Springs Spas / Watkins (Limelight)
+
+Within each group, more pleats means a larger rated area. (The table does not list pleat height, so we cannot show the full calculation for these rows.) In the first group, Unicel prints all four cartridges in one block of its table, and its guide says that cartridges listed between horizontal lines are interchangeable[5]. Two rows also show that media weight is a separate spec: C-4326 and C-4625 both have 106 pleats and 25 sq ft, but one uses 3 oz media and the other 4 oz[5]. Matching the square footage alone does not mean you are matching the cartridge.
+
+## What Unicel says about the “upgrade” cartridges
+
+Unicel’s maintenance page tells dealers to check its guide for an “upgraded surface area” cartridge when selling a replacement; as its example it names C-4637 as an upgrade for C-4625, with 12 more square feet and “all other dimensions the same”[4]. The guide marks the same relationship in its notes: C-4637 and C-4950 are listed as upgrades to the 25 sq ft C-4326 and C-4625[5]. Two Marquis replacements are described the same way: C-5423 (“the original was 25 sq. ft. (115 pleats). This replacement has been upgraded to 35 sq. ft.”) and C-5434 (original 40 sq ft, 109 pleats; upgraded to 60 sq ft)[5].
+
+Unicel’s stated reason is flow per square foot: “cartridge filters can work at any flow rate. In fact, the lower the flow per square foot, the more efficient the system works”[4]. In a spa, where the pump moves a fixed amount of water, a cartridge with more media spreads that flow over more area. That is arithmetic from Unicel’s statement, not a test result we ran.
+
+What we could not find: a spa manufacturer statement that says a higher-area cartridge of identical outside dimensions is approved, or not approved, for a particular spa. Unicel’s “upgrade” notes apply to cartridges whose other dimensions are the same, so check the end-cap openings and length as well as the area, and ask your spa dealer if your spa is under warranty.
+
+## A real example where the sources disagree: Hot Spring Limelight (2018 and newer)
+
+Unicel’s Hot Spring cross-reference ties both C-6350 (50 sq ft, 142 pleats) and C-6355 (75 sq ft, 229 pleats) to the Limelight cartridge, OEM 1642301-1 / 78161, and notes that the original is 6-3/8" OD while its replacements are 6"[5]. A Hot Spring dealer’s product page for 78161 gives 50 sq ft, 14" long, about 6-1/4" OD with open 2" ends[24]. Pleatco’s 2023 catalog lists the same OEM number as PWK35B at 6-3/8" × 14" and 35 sq ft[2]. That is three different ratings (75, 50 and 35 sq ft) for what the sources treat as one factory part.
+
+We cannot tell from these documents which number is “right”, and we are not going to pick one. Dealer listings are not a reliable tie-breaker either: the same dealer’s pages list 260 pleats for both the Limelight 78161 (50 sq ft) and the Caldera 73531 (75 sq ft)[24][25], so we use pleat counts only from Unicel’s table. For a Limelight, order by the OEM number (78161 or 1642301-1) and compare the cartridge’s OD, length and end caps, rather than by the square-foot figure.
+
+## How to tell which one you have
+
+- Read the part number on the end cap or label. It beats every other method.
+
+- If it has worn off, measure the OD, the length and the size of the top and bottom openings, and note whether the top has a handle or thread. Our how to find your spa filter size guide and the size lookup do this step.
+
+- Count the pleats if two candidates share the same body: mark one fold with tape and count every fold around the circumference. Unicel’s own lookup instructions include counting the pleats (±2) and noting whether there is a center core[5], so a count within two of a listed number is a match.
+
+- Use square footage last. Look at it only after the dimensions and end caps agree, and expect different catalogs to round it differently.
+
+Once you know the cartridge, OEM vs Unicel vs Pleatco explains how the brands’ numbers line up.
+
+Affiliate disclosure: this guide contains no retailer links. Some cartridge pages it links to do, and we may earn a commission from qualifying purchases made through them at no cost to you. Read our affiliate disclosure.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Leisure Time Inc. — Hot Spring Limelight 78161 filter cartridge (specifications): https://leisuretimeinc.com/products/hotspring-limelight-78161-filter-cartridge
+- Leisure Time Inc. — Caldera 73531 filter cartridge (specifications and compatibility): https://leisuretimeinc.com/products/caldera-77813-filter-cartridge
+
+## Hot tub flow error (FLO, FL1, HFL, LF, dr): is it the filter?
+
+URL: https://myspafilter.com/guides/hot-tub-flow-error-codes-and-your-filter/
+Last updated: 2026-10-26
+
+What FLO, FL--1, HFL, LF, dr, HL and Hot Spring’s E2 No Flow mean, why a dirty filter is the first suspect, and the order to check things in, from Gecko, Balboa, Sundance, Hot Spring and Jacuzzi documents.
+
+A flow error means the control system is not seeing enough water moving through the heater, so it turns the heater off to protect it. Every manufacturer document we checked lists a dirty or blocked filter among the first causes, along with low water, an air lock, closed valves or jets, and a pump that isn’t running or primed[26][27][12][29]. With the power off, check the water level, take the filter out and rinse or replace it, purge any air, then restore power and reset. If the error comes back with a clean filter and full water, Jacuzzi and Sundance say to call a dealer or technician[10][12].
+
+## What each code means
+
+The code depends on who made your spa’s control system, not on the filter brand. These are the flow-related messages in the documents we checked:
+
+Code on the panelControl / brandWhat the manufacturer says it meansReset, per the document
+
+FLOGecko (in.ye, in.yt, in.yj, in.xe)No water flow detected while the main pump runs[26]Not stated; fix the cause first
+
+HLGeckoWater in the heater reached 119 °F (48 °C) and the system stopped; Gecko says to make sure nothing is blocking flow, such as closed valves or a dirty or clogged filter[26]Turn the spa off and on
+
+HFL (M016)BalboaHeater flow is reduced; the heater tries again after about 1 minute[27]Yes, it retries
+
+LF (M017)BalboaNot enough flow, heater disabled. Balboa’s fault sheet says LF follows HFL occurring 5 times in 24 hours[27][28]Press any button after fixing
+
+dr (M028)BalboaHeater may be dry; spa shuts down for 15 minutes[27]Press any button to reset
+
+dry / dY (M027)BalboaHeater is dry and the spa is shut down; the fault sheet says this follows dr 3 times in a row[27][28]Press any button after fixing
+
+OHH (M030)Balboa118 °F (47.8 °C) detected in the heater; spa shut down[27]Press a button once water is below 108 °F
+
+FL--1 “FLOW ERROR OPEN”Sundance 780 SeriesFlow switch open: the switch is faulty, the filter is excessively dirty, or there is an air lock at the circulation pump intake. The heater turns off and jets pump 1 may too[12]Not stated; dealer if it persists
+
+FL--2 “FLOW ERROR CLOSED”Sundance 780 SeriesFlow switch stuck closed[12]Not stated; contact the dealer
+
+FL--3 “FLOW ERROR TOGGLE”Sundance 780 SeriesFlow switch behaving erratically; Sundance says clean the filters and correct the water level before calling the dealer[12]Not stated
+
+E2: NO FLOW-CHECK FILTER, yellow status lightHot Spring Highlife (2023)No-flow / pressure-switch fault; heater off. Hot Spring says check and clean the filter, then call for service if needed[29]The pressure switch closes once flow is restored[29]
+
+Jacuzzi’s filter page describes FLO and low-flow messages the same way: the system isn’t detecting enough circulation[10].
+
+## Check these in order
+
+- Turn the power off before you open the filter compartment. Jacuzzi says this stops the pump starting unexpectedly and avoids drawing air into the plumbing[10].
+
+- Check the water level. Sundance’s fix for FL--1 and FL--2 starts with water above all the jets but below the lowest pillow[12]. Balboa’s flow checks start with low water too[27].
+
+- Take the filter out, rinse it and look at it. Sundance, Gecko, Hot Spring and Jacuzzi all name a dirty or clogged filter[12][26][29][10]. Jacuzzi says to inspect for damage while you rinse[10]. If it is torn, crushed or no longer recovers with cleaning, see signs your filter is bad.
+
+- Purge any air lock. Sundance’s method: with the filter out, hold a garden hose over the filter wall fitting with a rag sealing around the hose end, run the water for 30 seconds, then reinstall the filter[12]. Gecko’s method: with the pump running, slowly loosen one pump union nut to let trapped air out, then retighten it[26].
+
+- Open valves and jets. Gecko and Balboa list closed valves; Balboa adds too many closed jets[26][27].
+
+- Make sure the pump that feeds the heater is running. Gecko says to confirm the main pump runs; Sundance says to cycle power at the breaker if the circulation pump isn’t running[26][12].
+
+- Reset. Balboa LF, dr and dry need a button press after the fix[27]. Some errors need the power removed and restored[27].
+
+## Got the error right after cleaning or refilling?
+
+That is a common pattern, and the documents point to air or water level rather than the clean filter. Hot Spring lists draining the spa without disconnecting power, and air locks in the plumbing, as causes of pressure-switch and thermal cut-off trips[29]. Sundance says that if filling through the footwell gives you an air lock, fill through the filter inlet instead[12]. On Balboa systems the spa enters Priming Mode at every power-up for 4 minutes so you can check each pump is primed, and the heater cannot run in that mode[27]. Jacuzzi also lists recurring FLO errors right after cleaning as one of the signs a cartridge needs replacing rather than cleaning[10].
+
+## Can I run the spa without the filter to see if the error clears?
+
+The manufacturers we checked don’t recommend it. Sundance has you take the filter out only to purge air, and to reinstall it before turning the power back on[12]. Jacuzzi advises against running the spa with no filter installed, because unfiltered water carries contaminants to the pumps and heater, and suggests keeping a second clean cartridge to swap in[10].
+
+## When it isn’t the filter
+
+- Sundance FL--2 is a flow switch stuck closed, which a clean filter won’t fix[12].
+
+- Gecko FLO that persists: Gecko’s checklist also asks for a minimum flow of 68 L/min (18 US gal/min) and a properly plugged-in in.flo cable above the heater; if FLO still persists, it says to replace the heater and then the control system[26]. Those steps are for a technician.
+
+- Hot Spring: call for service if the heater trips frequently[29].
+
+- Any brand: if the spa won’t circulate or heat with a new, clean filter and balanced water, Jacuzzi says it needs professional diagnosis, and that running a faulty system can damage other parts[10].
+
+## Preventing it
+
+A filter that is cleaned on schedule is less likely to restrict flow; see how often to clean a hot tub filter and how to clean one. If you need a replacement, search by part number, or use the model-year lookups for Hot Spring, Caldera, Jacuzzi, Sundance, Bullfrog and Master Spas.
+
+Affiliate disclosure: this guide contains no retailer links. Some cartridge pages it links to do, and we may earn a commission from qualifying purchases made through them at no cost to you. Read our affiliate disclosure.
+
+### Sources
+- Gecko Alliance — Troubleshooting Guide, Y series and in.xe (rev. 07/2023): FLO and HL messages: https://geckoalliance.com/wp-content/uploads/2023/04/9919-101313-D_Troubleshooting_Guide_YSERIES_XE_EN_REV_15_07_2023.pdf
+- Balboa Water Group — TP600 and TP400 User Guide (heater-related messages and flow-related checks): https://www.balboawater.com/wp-content/uploads/2024/12/TP600-and-TP400-USER-GUIDE_Standard-Menus_40940.pdf
+- Balboa fault codes sheet (copy hosted by UK dealer Allswim): https://www.allswimltd.com/pdf/balboa-fault-codes.pdf
+- Sundance Spas 780 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf
+- Hot Spring Highlife Collection Owner’s Manual (2023): service information and logo-light troubleshooting: https://www.hotspring.com/wp-content/uploads/2023/07/highlife-owners-manual-en_us.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+
+## Open-end vs threaded hot tub filters: how to tell which fitting you have
+
+URL: https://myspafilter.com/guides/open-end-vs-threaded-hot-tub-filters/
+Last updated: 2026-10-27
+
+Why two spa cartridges with the same diameter and length can still be the wrong filter: open ends, handles, male slip, MPT and SAE threads, from the Unicel and Pleatco spec fields.
+
+Match the top and the bottom, not just the outside size. Unicel’s and Pleatco’s spec tables print an opening size, a handle, a male slip or a thread for each end[5][2]. A 7" × 10-3/4" Caldera cartridge with a 2" male slip bottom (C-7451, OEM 033016) is not the same fitting as the 7" × 10-3/4" cartridge with a 2-11/16" open bottom (C-7350, OEM 1019401), even though both are listed at 50 sq ft with a handle on top.
+
+## What the catalogs actually list
+
+A spa filter cartridge is a stack of pleated media between two end caps. The outside diameter and the overall length tell you whether the cartridge fits the well. The end caps tell you whether it seals. Unicel’s 2026 Replacement Guide and the Pleatco 2023 catalog both give those four fields for each cartridge: diameter, length, top and bottom[5][2]. Square footage is a fifth field, and it describes media area, not the shape of the cap. Our square-foot guide covers that difference. This page is about the caps.
+
+When you pull the old cartridge, look at each end before you measure across the pleats. The patterns that show up over and over in the spec tables are:
+
+- Open both ends. A round hole in the top cap and a round hole in the bottom cap. The catalog prints the hole size, for example 1-15/16" or 2-1/8". The cartridge slides over a standpipe or sits between two sealing surfaces in the housing.
+
+- Handle on top, thread on the bottom. The top is a molded cone, a bar, or a semi-circular handle you grab to pull the cartridge out. The bottom is a male thread, printed as MPT or as an SAE thread of a stated size.
+
+- Handle on top, male slip on the bottom. The bottom is a smooth pipe-like stub, not a thread. Caldera’s older 7" cartridges are printed this way.
+
+- Handle on top, open bottom. Common on later Caldera cartridges: you still lift it by a handle, but the bottom is an open hole with a stated inside diameter instead of a slip fitting.
+
+- Closed or castle top. Some Sundance cartridges are printed with a castle top or a closed top and an open bottom of a specific size. The top is not a hole you can see through.
+
+None of those descriptions is a guess about how a spa “usually” works. Each one is a column in the spec table for a particular part number[5][2].
+
+## Same length, different bottom: Caldera’s 7" cartridges
+
+Caldera’s Paradise, Utopia and Highland collections use several 7"-diameter cartridges with a semi-circular handle. Two lengths show up: 10-3/4" and 14-3/4". Inside each length, the bottom changed.
+
+UnicelOEMSizeBottom, as printedPleatcoArea
+
+C-74510330167" × 10-3/4"2" male slipPCD5050 sq ft
+
+C-73501019401; 735327" × 10-3/4"2-11/16" openPCD50N50 sq ft
+
+C-74790330177" × 14-3/4"2" male slipPCD7575 sq ft
+
+C-73751019301; 735317" × 14-3/4"2-11/16" openPCD75N75 sq ft
+
+A tape measure across the pleats will not separate C-7451 from C-7350. You have to look at the bottom. The Unicel note on the C-7451 row says C-7350 can also be used, and the note on C-7479 says C-7375 can also be used[5]. That is an interchange note from Unicel, not a statement that the bottoms are printed the same. If your old cartridge still has a 2" male slip stub, order the slip-bottom number and compare it with the cartridge in your hand. If the bottom is an open hole, order the open-bottom number. The longer pair is the same story at 14-3/4". Read Caldera filter bottoms before you buy for a Paradise, Utopia or Highland tub, and use the Caldera model-year lookup when you know the model.
+
+## Open both ends: the Hot Spring footprint
+
+Many Hot Spring cartridges have no thread at all. C-6430 is 6" in diameter and 10-1/2" long, open 1-15/16" at both ends, rated 30 sq ft. Unicel, Pleatco and Filbur list it for OEM 31489 (also printed as 71825 and 71826), as Pleatco PWK30-4 and Filbur FC-3915[5][2][31]. C-8465 is the larger open cartridge: 8-1/2" × 10-1/2", open 3" at both ends, 65 sq ft, OEM 31114 / 71827 / 71828, Pleatco PWK65, Filbur FC-3960[5][2][31]. Both are open-end filters. They are not interchangeable with each other, because the diameter and the hole size differ. A full walk-through of which collection uses which one is in Hot Spring filter sizes by collection.
+
+Open-end cartridges in the 4-15/16" family are just as specific. C-4335 is 4-15/16" × 9-1/4" with 2-1/8" open ends (OEM 74148, Pleatco PRB35-IN, 35 sq ft). C-4326 is 4-15/16" × 13-5/16" with the same 2-1/8" open ends, at 25 sq ft. The hole size matches. The length does not. Ordering by diameter alone would mix them.
+
+## Threads: MPT and SAE are both “threaded,” and they are not one size
+
+Where the catalog says “male thread” or “MPT,” the bottom screws onto a fitting. Where it says “SAE thread,” it also screws on, but the thread series is the SAE thread printed for that part, not a generic pipe thread. The spec table gives the size either way[5].
+
+- Sundance 4CH-35, OEM 6540-486, is 4-5/8" × 16" with a molded cone handle and a 1-1/2" male MPT bottom, 40 sq ft.
+
+- Bullfrog 8CH-951, OEM 10-2870, is an 8" cartridge 5-3/4" long with a semi-circular handle and a 2" SAE thread. Pleatco lists it as PBF36[2].
+
+- Jacuzzi 6CH-960 is 6-3/4" × 15-1/2" with a semi-circular handle and a 2" SAE thread. The look-alike 6CH-961 uses the same OEM numbers in Unicel’s table but is printed “open with slots” on top, and Unicel says it requires an injection-molded semi-circular handle that is not furnished[5].
+
+A 1-1/2" MPT bottom will not become a 2" SAE bottom because the lengths are close. If the old cartridge’s thread is worn, match the OEM number molded into the cap before you match the thread you can still see. Sundance and Jacuzzi look-alike filters goes through the pairs that share a body and not a fitting.
+
+## How to check the fitting on the cartridge in your hand
+
+- Turn the spa off before you open the filter well. Hot Spring and Jacuzzi both say to cut power first[9][10].
+
+- Read any number on the end cap or the band. Search it from the homepage. A readable OEM, Unicel or Pleatco number beats a measurement.
+
+- If the number is gone, measure the outside diameter across the pleats and the overall length, including a handle or a threaded nipple. Then write down the top and the bottom in words: open (and the hole size, if you can measure the inside), handle, closed, slip, or thread. The measuring guide and the size lookup use the same fields the catalogs use.
+
+- Compare your notes with the top and bottom lines on the cartridge page, not only with the diameter and length.
+
+- If two pages share a size, open both. The one whose ends match is the one to order.
+
+Pleatco’s cleaning sheet makes a related point about the media itself: a cartridge can look stained and still be the right part, and a white cartridge is not automatically a clean one[3]. Stain is not a fitting. The end cap is.
+
+## What to do when the sources disagree about the hole
+
+They sometimes do. On the Intex Type S1 cartridge, Unicel prints 2-1/16" open ends and Pleatco prints 1-5/8", while both print the body as 4-1/4" × 2-15/16"[5][2]. Our Intex C-4317 page keeps both figures and tells you the body size is the part they agree on. When a page on this site says the catalogs disagree, order by the manufacturer’s part number and hold the new cartridge next to the old one before you drop it in the well.
+
+Replacement intervals and cleaning are separate decisions. A correct fitting does not tell you how old the media is. Use how often to replace a hot tub filter and signs the filter is bad for that, and how to install a cartridge once the part number matches.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Filbur Catalog & Reference Guide: https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf
+- Pleatco FilterWash information sheet: https://lesl.a.bigcontent.io/v1/static/Pleatco-FilterWash-InfoSheet
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+
+## Hot Spring filter sizes by collection: Highlife, Limelight and Tiger River
+
+URL: https://myspafilter.com/guides/hot-spring-filter-sizes-by-collection/
+Last updated: 2026-10-27
+
+Which Hot Spring cartridge is the 6" open filter, which is the 8-1/2" open filter, and which Limelight part the catalogs rate three different ways. OEM numbers 31489, 71825, 71827 and 78161.
+
+Most Highlife spas in our cited listings use the 6" × 10-1/2" open cartridge C-6430 (OEM 31489 / 71825 / 71826, 30 sq ft). Many 2008–2017 Limelight and Tiger River models in those listings use the 8-1/2" × 10-1/2" open cartridge C-8465 (OEM 31114 / 71827 / 71828, 65 sq ft). 2018-and-later Limelight models in the same listings use OEM 78161 / 1642301-1, which Unicel lists as both a 50 sq ft and a 75 sq ft 6" × 14" cartridge[5][38][39][24].
+
+## Three bodies, not one “Hot Spring filter”
+
+Hot Spring is built by Watkins, and the brand has reused a small set of cartridge sizes across many collections. That reuse is why a model name alone is a weak way to order. The end cap number is the strong way. The three bodies below are the ones the Unicel 2026 guide, the Pleatco 2023 catalog, the Filbur catalog and the Leisure Time Inc. listings agree enough to publish. Where they do not agree, the paragraph says so.
+
+Collection, from the cited listingOEM numbersUnicelSize and endsArea on our row
+
+Highlife models named for 71825, many from 1990 onward31489; 71825; 71826C-64306" × 10-1/2", open 1-15/16" both ends30 sq ft
+
+Limelight 2008–2017 and Tiger River models named for 7182731114; 71827; 71828C-84658-1/2" × 10-1/2", open 3" both ends65 sq ft
+
+Limelight 2018–2026 models named for 781611642301-1; 78161C-6350 and C-63556" × 14", open 1-15/16" both ends. Unicel notes the original OD is 6-3/8"50 sq ft (C-6350) and 75 sq ft (C-6355)
+
+Pleatco’s cross-reference lists C-6430 as PWK30-4 and C-8465 as PWK65[2]. Filbur lists FC-3915 and FC-3960 for those same OEM numbers[31]. The 2018 Limelight cartridge is the one the catalogs do not line up, and it has its own section below. Model-by-model years are on the Hot Spring filter by model and year page and on each cartridge page.
+
+## The 6" Highlife cartridge, and the Tri-X warning
+
+C-6430 is an open-end cartridge: no handle threads onto the housing. Unicel dates the Hot Spring use of this size to models after 1990 and prints the media as 4 oz[5]. The Leisure Time listing for OEM 71825 says many of these hot tubs take three cartridges at once, and that some models use a Tri-X ceramic filter of the same footprint instead of a pleated cartridge. The same listing says to use the pleated cartridge only where the spa specifies 71825 or a listed equivalent, and that a model which requires Tri-X needs the Tri-X filter[38].
+
+That is a practical check, not a slogan. If you open the well and find a ceramic block rather than pleated fabric, C-6430 is the wrong object even if the footprint matches. If you find three pleated cartridges, order three. Hot Spring’s own maintenance page tells owners to replace with genuine Watkins filters[7]. An aftermarket cross-reference matches size and fittings; it is not a Watkins part. Warranty language is in your owner’s manual, not in a catalog table.
+
+Hot Spot and some Solana models are assigned this same 6" × 10-1/2" cartridge by the dealer listings we cite, which is why those brands point back at the Hot Spring tables. Start at Hot Spot or Solana if that is the badge on the cabinet, then confirm the end-cap number.
+
+## The 8-1/2" cartridge for earlier Limelight and Tiger River
+
+C-8465 is larger in diameter (8-1/2") and shorter than the 2018 Limelight cartridge. Both ends are open 3". Unicel, Pleatco and Filbur agree on OEM 31114 / 71827 / 71828, Pleatco PWK65 and Filbur FC-3960, at 65 sq ft[5][2][31]. The Leisure Time listing for 71827 is the source of the model years on that page: Limelight Bolt 2012–2017, Flair, Glow and Pulse 2008–2017, and a long Tiger River list that includes Bengal, Caspian, Sumatran and others going back to the early 1990s[39].
+
+Do not put this cartridge in a 2018-or-later Limelight that calls for 78161. The diameter is 8-1/2", not 6", and the length is 10-1/2", not 14". The open-end vs threaded guide shows why the hole size matters even when you have already matched the brand.
+
+## 2018 and newer Limelight: one OEM number, three area ratings
+
+Unicel’s Hot Spring cross-reference ties both C-6350 (50 sq ft, 142 pleats) and C-6355 (75 sq ft, 229 pleats) to OEM 1642301-1 / 78161. Both replacements are printed 6" × 14" with 1-15/16" open ends, and Unicel notes that the original cartridge is 6-3/8" OD while the replacements are 6"[5]. A Leisure Time product page for 78161 gives 50 sq ft, 14" long, and about 6-1/4" OD with open 2" ends[24]. Pleatco’s 2023 catalog lists the same OEM number as PWK35B at 6-3/8" × 14" and 35 sq ft[2]. Those are three different area ratings — 75, 50 and 35 sq ft — for what the sources treat as one factory part.
+
+We do not pick a winner. Our C-6350 page leaves the Pleatco equivalent off because PWK35B’s printed size and area do not match Unicel’s 6" / 50 sq ft row. The C-6355 page shows PWK35B and repeats the disagreement. For a 2018-or-later Limelight Beam, Flair, Flash or Pulse, order by 78161 or 1642301-1 and compare OD, length and the open ends with the old cartridge. The dealer listing we cite names those five Limelight models for 2018–2026[24].
+
+The arithmetic Unicel publishes for area is pleats × 2 × pleat height × usable length ÷ 144[5]. That is why two cartridges with the same outside size can carry different ratings. It is also why a rating, by itself, is the wrong thing to shop for. The worked examples live in why same-size filters have different square-foot ratings.
+
+## Other Hot Spring numbers that are easy to mix in
+
+Not every Hot Spring row is one of the three bodies above. 4CH-35 is OEM 31382 (formerly 31116): 4-5/8" × 16", molded cone handle, 1-1/2" male MPT, 35 sq ft, Pleatco PTL35-4, Filbur FC-0161. No model-year list is in the sources for that row, so we do not invent one. C-6330 shares the 6" × 10-1/2" open body and the 30 sq ft rating with C-6430 but is listed under OEM 31489 as its own Unicel number; read that page before assuming the two Unicel numbers are identical in every column. C-6600 is a different body again: 6-3/8" × 11-7/8", open 3" both ends.
+
+If the number on your cap is not in this article, search it. The cross-reference is the index. This article is the map of the three sizes people confuse.
+
+## Care, once the size is right
+
+Hot Spring’s filter article says a standard polyester cartridge is typically replaced every 2–3 years, and a TRI-X cartridge every 4–6 years[8]. The owner maintenance page says every three years[7]. Those are different sentences from the same brand, so treat them as a range and replace sooner if the media is torn or flow does not come back after a clean. The Hot Spot collection manual says to turn power off before removing filters, not to run the spa with the cartridge removed, and not to overtighten the retainer[9]. Cleaning steps are in how to clean a hot tub filter. A clogged cartridge is also the first thing Hot Spring names when a spa shows a no-flow fault; see what a clogged or missing filter does.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Filbur Catalog & Reference Guide: https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf
+- Leisure Time Inc. — Hot Spring Highlife 71825 filter cartridge: https://leisuretimeinc.com/products/hot-spring-highlife-71825-filter-cartridge
+- Leisure Time Inc. — Hot Spring 71827 filter cartridge: https://leisuretimeinc.com/products/hot-spring-71827-filter-cartridge
+- Leisure Time Inc. — Hot Spring Limelight 78161 filter cartridge (specifications): https://leisuretimeinc.com/products/hotspring-limelight-78161-filter-cartridge
+- Hot Spring Spas — Maintenance Tips: https://www.hotspring.com/owners/maintenance-and-tips
+- Hot Spring Spas — How Do Hot Tub Filters Work?: https://www.hotspring.com/blog/how-do-hot-tub-filters-work
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+
+## Caldera filter bottoms: male slip, open end, and the 2014 Cantabria split
+
+URL: https://myspafilter.com/guides/caldera-filter-bottom-fittings/
+Last updated: 2026-10-27
+
+Caldera 7" and 8" cartridges that share a length and not a bottom fitting, including OEM 033016 vs 1019401 and the 74817 / 73722 quarter split on Utopia Cantabria.
+
+On Caldera’s 7" handle cartridges, the older parts have a 2" male slip bottom (C-7451, OEM 033016, and C-7479, OEM 033017) and the later parts have a 2-11/16" open bottom (C-7350, OEM 1019401, and C-7375, OEM 1019301 / 73531)[5]. On the 8" × 16-1/2" pair, Leisure Time says Utopia Cantabria uses OEM 74817 through the second quarter of 2014 and OEM 73722 from the third quarter of 2014 on[41][40]. Look at the bottom of the old cartridge either way.
+
+## Why Caldera has two filters that measure the same
+
+Caldera and Hot Spring come from the same Watkins factory, but most Caldera collections do not use the Hot Spring open-end cartridge. Paradise, Utopia and Highland models in the cited listings use a 7"-diameter cartridge with a semi-circular handle on top. The length is either 10-3/4" (about 50 sq ft in the rows below) or 14-3/4" (about 75 sq ft). The detail that changed over time is the bottom.
+
+UnicelOEMPleatcoFilburSizeBottom
+
+C-7451033016PCD50FC-30847" × 10-3/4"2" male slip
+
+C-73501019401; 73532PCD50NFC-39637" × 10-3/4"2-11/16" open
+
+C-7479033017PCD75FC-30857" × 14-3/4"2" male slip
+
+C-73751019301; 73531PCD75NFC-39647" × 14-3/4"2-11/16" open
+
+Unicel’s note on C-7451 says C-7350 can also be used, and the note on C-7479 says C-7375 can also be used[5]. Read that as Unicel’s interchange note, and still look at the cartridge you removed. A male slip is a stub that pushes into a fitting. An open bottom is a hole. If you still have the stub, the slip-bottom part is the one the spec row describes. If you have a hole about 2-11/16" across, the open-bottom part is the one the spec row describes. Pleatco marks the open-bottom numbers with an N (PCD50N, PCD75N) and the slip-bottom numbers without it (PCD50, PCD75)[2].
+
+The open-bottom 14-3/4" cartridge is the one with the long model list. C-7375 is cited for Utopia Geneva, Hawaiian, Niagara, Provence and Tahitian years, and for Paradise Geneva, Hawaiian, Makena, Moorea, Niagara, Reunion, Salina and Seychelles years, among others. Two of those lines carry an extra warning from Leisure Time: a 2004 Hawaiian HAA and a 2024 Makena need a serial-number check before you order[5]. The short open-bottom cartridge, C-7350, is the one cited for later Utopia Ravello, several Paradise models including a 2024-only Makena note, and Highland Cascade, Cumberland, San Gabriel and Teton. The Caldera model-year lookup is the index of those rows. A model name without the year is how people order the slip bottom for a spa that left the factory with the open bottom.
+
+## The 8" Cantabria cartridges are a quarter-year problem
+
+Two Caldera cartridges share an 8" diameter, a 16-1/2" length and a 100 sq ft rating, and they do not share end caps.
+
+- C-8300, OEM 74817, Filbur FC-3966. Top and bottom are 3-1/8" open with a molded gasket. No Pleatco number is shown: the Leisure Time listing also names Pleatco PWK100, and PWK100 is not in the Pleatco 2023 spec tables, so we do not list it as an equivalent. The cited fitment is Utopia Cantabria 2009 through the second quarter of 2014. Leisure Time says to confirm the production quarter on a 2014 Cantabria, because third and fourth quarter production uses 73722[41].
+
+- C-8399, OEM 1039607 / 73722, Pleatco PCD100W, Filbur FC-3965. The top is a semi-circular handle and the bottom is 3-5/8" open with a lip seal. Leisure Time says this is the cartridge for Cantabria from the third quarter of 2014 onward, and that first and second quarter 2014 uses 74817[40]. The same listing names later Utopia Geneva, Niagara, Tahitian, Florence and Elation years, plus Aquatic Melodies Aspire and Elation for 2005–2008.
+
+A 2014 Cantabria owner who only knows the model name has a coin flip. The serial number or the production quarter is the tie-break, and the cartridge in the spa is the better one. Measure the bottom: a 3-1/8" opening with gaskets is the C-8300 description; a handle and a 3-5/8" lip-seal bottom is the C-8399 description.
+
+## Vacanza is the Caldera line that borrows Hot Spring sizes
+
+Vacanza Marino, Palatino (2010–2026) and Vanto (2011–2026) are listed on Caldera C-8465 for OEM 76136: 8-1/2" × 10-1/2", open 3" both ends, 65 sq ft, Pleatco PWK65, Filbur FC-3960. That is the same Unicel body as Hot Spring’s 71827 cartridge, with a Caldera OEM number. Caldera C-6430 is the 6" × 10-1/2" open cartridge under OEM 31489, shared with Hot Spring Highlife. If your Caldera is a Vacanza, do not assume it takes the 7" handle cartridge the Paradise and Utopia listings use. Read the end cap, or start at the model-year table.
+
+C-4335 (OEM 74148, Pleatco PRB35-IN) and C-4950 (OEM 302005, Pleatco PRB50-IN) are the smaller open-end Caldera cartridges, 4-15/16" in diameter, 9-1/4" and 13-5/16" long. They are a third family. The fitting guide open-end vs threaded puts the three families side by side.
+
+## How to order without guessing the year
+
+- Read the OEM number on the cartridge. 033016 and 033017 are the slip-bottom pair. 1019401, 73532, 1019301 and 73531 are the open-bottom pair. 74817 and 73722 are the 8" pair.
+
+- If the number is gone, measure diameter, length, and the bottom. Write “slip,” “open,” or “gasket,” and the size of the opening if you can take it.
+
+- For a 2014 Cantabria, get the production quarter or compare the ends with the two descriptions above[40][41].
+
+- For a 2024 Makena or a 2004 Hawaiian, the cited listing says to check the serial number[5].
+
+- Then confirm on the cartridge page, which cites the catalog page the numbers came from. How Filbur, Unicel and Pleatco numbers compare shows what those three columns mean.
+
+Hot Spring’s chemical page is the one we cite for Watkins water ranges if you are balancing after a filter change: free chlorine 1–5 ppm, pH 7.2–7.8, alkalinity 40–120 ppm, calcium hardness 75–150 ppm on a standard system[18]. The filter fitting and the water chemistry are different jobs. A correct bottom does not fix a low sanitizer reading, and a bottle of balancer does not seal a slip fitting.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Filbur Catalog & Reference Guide: https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf
+- Leisure Time Inc. — Caldera 73722 filter cartridge: https://leisuretimeinc.com/products/caldera-73722-filter-cartridge
+- Leisure Time Inc. — Caldera 74817 filter cartridge: https://leisuretimeinc.com/products/caldera-74817-filter-cartridge
+- Hot Spring — How do I choose the right spa chemicals for my hot tub?: https://www.hotspring.com/faq/how-do-i-choose-the-right-spa-chemicals-for-my-hot-tub
+
+## Bullfrog spa filters: short thread, long thread, and coreless cartridges
+
+URL: https://myspafilter.com/guides/bullfrog-threaded-and-coreless-filters/
+Last updated: 2026-10-27
+
+How Unicel, Pleatco and Leisure Time describe Bullfrog 8CH-950, 8CH-951, and the coreless PBF17 and PBF40 cartridges, including the cage-and-cap note and the area ratings that do not match.
+
+Bullfrog’s older threaded cartridges are not one part. Unicel marks 8CH-950 discontinued and says to use 8CH-951[5]. Pleatco lists PBF35 against a short-thread OEM (10-2785, 2003–2012) and PBF36 against the long-thread OEM 10-2870 (2013–2017)[2]. From 2017, Pleatco’s spec table adds coreless cartridges PBF17 (OEM 10-00281) and PBF40 (OEM 10-00282), and Leisure Time says those need the correct filter cage and cap installed[43][42].
+
+## Two threaded 8" cartridges, and a discontinued number
+
+Bullfrog used a top-load cartridge with a handle and an SAE thread before it moved some models to a coreless design. The threaded pair is where people order the wrong length.
+
+PartOEM as printedSizeThreadWhat the source says
+
+Unicel 8CH-950 / Pleatco PBF35 / Filbur FC-0536Unicel: 10-1035. Pleatco’s PBF35 spec row: 10-27858" × 6"2" SAE, described by Pleatco as the short threadUnicel: discontinued, use 8CH-951. Pleatco: Bullfrog 35, 2003–2012[5][2]
+
+Unicel 8CH-951 / Pleatco PBF3610-28708" × 5-3/4"2" SAE, described by Pleatco as the long threadPleatco: Bullfrog 35, 2013–2017. Unicel’s note says the original element is 35 sq ft and that the spec table rates 8CH-951 at 40 sq ft[5][2]
+
+Read the disagreements instead of averaging them. Unicel’s OEM for 8CH-950 is 10-1035. Pleatco’s spec row for the cartridge it cross-references, PBF35, prints OEM 10-2785, not 10-1035[2]. Unicel says 8CH-950 is discontinued in favor of 8CH-951. The length on our rows is 6" for 8CH-950 and 5-3/4" for 8CH-951, and Unicel also says 8CH-951 replaces a Bullfrog element with a 6" overall length and a shorter threaded end[5]. Area is not settled in a single number either: Unicel’s note says the original cartridge is 35 sq ft and that the spec table rates 8CH-951 at 40 sq ft. The compiled size field on our 8CH-951 page shows 50 sq ft. Do not buy this cartridge by the square-foot figure. Buy it by OEM 10-2870 if that is the number on a 2013–2017 long-thread filter, and compare the thread length and the 5-3/4" body with the old one.
+
+There is also a smaller threaded Bullfrog row, 6CH-940, with no OEM number in the catalogs we used: 6" × 8-1/4", semi-circular handle, injection-molded 1-1/2" SAE thread, Pleatco PWW50P3, Filbur FC-0359, 50 sq ft on the row. No model years are attached. If your cartridge is about 6" across rather than 8", start there and measure.
+
+## Coreless cartridges: the fabric is not the whole filter
+
+Pleatco’s 2023 spec table lists two Bullfrog coreless cartridges for 2017 onward[2]. Neither has a Unicel number in the 2026 guide, which is why those pages are filed under the Pleatco part.
+
+- PBF17, OEM 10-00281. Pleatco prints 6-5/8" × 6-1/4", 3-3/8" open top, 4-1/2" open bottom, and calls it the Bullfrog 18 coreless cartridge, 2017 to current. Our row shows 18 sq ft from that Pleatco description. Leisure Time rates the same OEM number at about 27 sq ft, lists Bullfrog STIL spas, and says 2015–2017 STIL spas need Filter Core Cage and Cap Assembly 10-00417. The listing also says the cartridge is coreless and that the correct filter cage and cap must be installed[43].
+
+- PBF40, OEM 10-00282. Pleatco prints 8" × 6-1/4" with the same style of open ends and calls it the Bullfrog 30 coreless cartridge, 2017 to current (30 sq ft on our Pleatco-based row). Leisure Time rates OEM 10-00282 at 50 sq ft, says 2013–2017 A/R/X spas need the Filter Core Cage and Cap Assembly, and says 2023-and-newer A Series models use Simplicity flat filters instead[42]. The fitment we publish from that listing is A Series and R Series for 2018–2022, and X Series for 2018–2026.
+
+The area gap (18 vs about 27, and 30 vs 50) is the same kind of catalog disagreement described in why same-size filters show different square feet. For a coreless Bullfrog filter it has an extra consequence: the pleated sock is only half the assembly. Leisure Time’s sentence is to install the correct cage and cap[43][42]. If the cage is broken, a new sock does not replace the cage. If the spa is a 2023-or-newer A Series, the same listing says the filter is a Simplicity flat filter, not PBF40. Confirm that on the listing or in the spa before you order a coreless cartridge.
+
+## Open-end Bullfrog rows that are not the threaded 8"
+
+Bullfrog also appears on two open-end cartridges that other brands use: C-4335 (4-15/16" × 9-1/4", 2-1/8" open both ends, 35 sq ft, Pleatco PRB35-IN) and C-4950 (4-15/16" × 13-5/16", same open ends, 50 sq ft, Pleatco PRB50-IN). Those rows do not carry a Bullfrog OEM number in our table. They are size matches from the catalogs, not a model-year list. If your Bullfrog cartridge is a short 8" threaded filter or a coreless sock, these 4-15/16" parts are the wrong family. The way to tell is the end cap, which is the subject of open-end vs threaded hot tub filters.
+
+## What to photograph before you order
+
+- The OEM number, especially 10-1035, 10-2785, 10-2870, 10-00281 or 10-00282.
+
+- The overall length. A 6" threaded cartridge and a 5-3/4" threaded cartridge are both “about six inches” if you only glance at them.
+
+- The thread: short versus long is the distinction Pleatco prints for the 2003–2012 and 2013–2017 Bullfrog 35 cartridges[2].
+
+- Whether there is a plastic cage around the media. Coreless cartridges are open fabric over a cage. Threaded cartridges have a handle and a screw bottom.
+
+- The series badge (STIL, A, R, X) and the year, then check Bullfrog filters by series and year.
+
+Unicel’s maintenance page still applies after you have the right part: cartridges are replaced when cleaning stops restoring flow, not on a calendar alone, and acid washing is the step Unicel warns against doing casually[4][6]. Installation steps that every brand shares — power off, don’t run the spa empty of a filter — are in how to install a hot tub filter.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Unicel — When to Replace a Cartridge Filter (PDF): https://waterlinetechnologies.com/content/Unicel/When%20to%20Replace%20A%20Cartridge%20Filter.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Leisure Time Inc. — Bullfrog STIL series 10-00281 filter cartridges: https://leisuretimeinc.com/products/bullfrog-stil-series-10-00281-filter-cartridges
+- Leisure Time Inc. — Bullfrog A/R/X series 10-00282 filter cartridges: https://leisuretimeinc.com/products/bullfrog-a-r-x-series-10-00282-filter-cartridges
+
+## Intex PureSpa and Bestway Lay-Z-Spa filters: S1, S2 and Type VI
+
+URL: https://myspafilter.com/guides/intex-and-bestway-inflatable-spa-filters/
+Last updated: 2026-10-27
+
+Which inflatable hot tub uses the Intex Type S1 cartridge, which uses Type S2, and which Bestway tubs use the Type VI cartridge. Sizes and part numbers from the manufacturers’ pages.
+
+Intex PureSpa tubs use two different cartridges. Type S1 is sold as 29001E (two-pack), 29011E (six-pack) and single part 11692; Unicel lists it as C-4317 and Pleatco as PIN4PAIR, at 4-1/4" × 2-15/16"[32][33][5][2]. Type S2 is 29012E (two-pack) and single part 13435, and Intex gives the size as 3.375" × 5.125" for PureSpa models whose cartridge is built into the control unit[34][35]. Bestway’s SaluSpa Type VI cartridge is 4.2" × 3.1", and Lay-Z-Spa says Type VI fits every Lay-Z-Spa except the Monte Carlo[36][37].
+
+## Why the set number matters more than the brand name
+
+An inflatable spa does not use the 6" or 8" cartridge a hardshell Hot Spring or Caldera uses. The cartridges are a few inches each way, and Intex has sold two of them under names that look alike. The set number on the box or on the spa, including the letters at the end, is what Intex’s own compatible-item lists use. A retailer search for “Intex spa filter” mixes S1 and S2. The lists do not.
+
+These cartridges are also absent from the usual hardshell cross-reference in one important way. S1 is in the Unicel 2026 guide and the Pleatco 2023 catalog. S2 and the Bestway Type VI cartridge are not in those catalogs, so there is no Unicel C-number or Pleatco P-number to fall back on. You order the manufacturer’s part, then compare the size Intex or Bestway prints.
+
+## Type S1: 29001E, 29011E and part 11692
+
+Intex’s product page for the Type S1 twin pack is SKU 29001E, described as the PureSpa replacement filter. The six-pack is SKU 29011E. The replacement-part page for a single cartridge is part 11692, and that page is the compatible-item list[32][33]. Unicel prints OEM 29001 and 11692 and lists the cartridge as C-4317. Pleatco’s spec table prints OEM 29001E as PIN4PAIR, which is a two-cartridge pack, not a different body[5][2].
+
+What you might seeWhat it refers to
+
+29001EIntex Type S1 twin pack
+
+29011EIntex Type S1 six-pack
+
+11692Intex single S1 replacement cartridge
+
+Unicel C-4317Unicel’s listing of that S1 body
+
+Pleatco PIN4PAIRPleatco’s two-cartridge pack for OEM 29001E
+
+Body size is the number the catalogs agree on: 4-1/4" diameter by 2-15/16" long, rated 4 sq ft on the Unicel row. The end-cap opening is the number they do not agree on. Unicel prints 2-1/16" open at both ends. Pleatco prints 1-5/8"[5][2]. Our C-4317 page keeps both and treats the body size as the match. Hold a new cartridge against the old one if you are crossing from one brand’s listing to the other.
+
+Intex’s 11692 compatible-item list is the model list on that page. It includes, among others, PureSpa set numbers 28403E, 28405E, 28407E and 28409E (Intex marks those four 2019 sets with the year), plus 28421E, 28425E, 28427E, 28429E, 28431E, 28433EP, 28433WL, 28435E, 28439E, 28441E and 28453E[33]. A retailer listing for 29001E has named extra set numbers that are not on Intex’s list. We do not add those. If your set number is not on the 11692 page, do not assume S1 fits. Check the S2 list next, because several of the same digits move to S2 when the suffix changes.
+
+## Type S2: the suffix is the whole story
+
+Intex’s S2 twin pack is SKU 29012E. The single replacement is part 13435. Intex prints the size as 3.375" × 5.125" and says the S2 is only for PureSpa models with the cartridge built into the control unit[34]. That is a different shape from S1: S1 is a short, wide cartridge (4-1/4" across and under 3" tall). S2 is narrower and taller. They do not swap.
+
+The 13435 compatible-item list names 28425EG, 28425EH, 28427EG, 28427EH, 28439EH, 28441EH and 28449EH[35]. Compare that with the S1 list. 28425E, 28427E, 28439E and 28441E are on the S1 list. The same digits with an EG or EH suffix are on the S2 list. “28425” without the suffix is not a filter choice. Read the full set number on the box or in the manual.
+
+Our 29012E page also records that one retailer listing prints 3.5" × 6.25" per filter. That figure does not match Intex’s 3.375" × 5.125", so the page shows Intex’s size. There is no Unicel or Pleatco equivalent in the catalogs we use. Search by 29012E or 13435, not by a C-number.
+
+## Bestway Type VI, and the Monte Carlo exception
+
+Bestway’s US product page for the SaluSpa Type VI two-pack gives the size as 4.2" across and 3.1" tall, for Bestway’s SaluSpa line[36]. The Lay-Z-Spa UK page for Filter Cartridge VI says it is compatible with all Lay-Z-Spa hot tubs except the Monte Carlo, which has its own rigid-spa cartridge[37]. Neither of those manufacturer pages is where we got a numeric part. The retail model 58323 / 58323E-BW is the number recorded on our Bestway 58323 page from the retailer listing that page cites. Order from a listing whose title says Type VI, and compare 4.2" × 3.1" with the old cartridge. If the spa is a Monte Carlo, stop and use the rigid-spa cartridge Lay-Z-Spa sells for that model. The Type VI page says it does not fit.
+
+Unicel, Pleatco and Filbur do not list a Type VI equivalent. There is no honest C-number to print, and the page does not invent one.
+
+## How these small cartridges get used
+
+S1 and S2 are small media areas next to a hardshell cartridge of 30 to 75 sq ft. Intex sells them in multi-packs because owners go through them, not because the spa holds two different types at once. A twin pack is two of the same cartridge in the box. It is not a statement that the spa takes an S1 and an S2 together.
+
+Nothing on Intex’s S1 or S2 pages reprints the hose-and-soak procedure Unicel publishes for pleated spa cartridges[4]. Follow the care card that came with the spa. What does transfer from the hardshell manuals is the reason to keep a spare: Jacuzzi says not to run a spa with no filter installed, because unfiltered water carries debris to the pump and the heater[10]. That warning is not written for PureSpa specifically. It is the reason a two-pack is useful. Rinse or swap before the little cartridge collapses, and see what a clogged or missing filter does for the flow faults hardshell controls display when a cartridge plugs.
+
+If you also own a hardshell tub, do not borrow its cartridge. A Hot Spring C-6430 is 6" × 10-1/2". It will not fit a PureSpa. The size lookup will show you that immediately if you type the diameter and length.
+
+## A short decision list
+
+- Find the full set number, letters included.
+
+- If it is on Intex’s 11692 list, you need Type S1 (29001E, 29011E or 11692). Open the S1 page.
+
+- If it is on Intex’s 13435 list, or the letters are EG or EH on a number that looks like an S1 set, you need Type S2 (29012E or 13435). Open the S2 page.
+
+- If the spa is a SaluSpa or a Lay-Z-Spa other than Monte Carlo, you need Type VI, about 4.2" × 3.1". Open the Type VI page.
+
+- If it is a Monte Carlo, use Lay-Z-Spa’s rigid-spa cartridge, not Type VI[37].
+
+Hardshell cross-reference, for when the tub is not inflatable, starts at how Filbur, Unicel and Pleatco numbers compare.
+
+### Sources
+- Intex — Type S1 filter cartridge twin pack (29001E): https://intexcorp.com/products/spas/spa-accessories/filter-cartridge-s1-twin-pack/
+- Intex — Spa cartridge S1 (part 11692) compatible item list: https://intexcorp.com/replacement-parts/purespa/purespa-bubble-massage/77in-x-28in/11692-spa-s1-filter-cartridge/
+- Intex — Type S2 filter cartridge twin pack (29012E): https://intexcorp.com/spa-accessories/filter-cartridge-s2-twin-pack-for-spa/
+- Intex — Spa cartridge S2 (part 13435) compatible item list: https://intexcorp.com/replacement-parts/13435-spa-cartridge-s2/
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Bestway USA — SaluSpa Type VI filter cartridge: https://bestwayusa.com/products/saluspa-type-vi-filter-cartridge-2-pack-1060311usx21
+- Lay-Z-Spa UK (Bestway) — Filter Cartridge VI: https://www.lay-z-spa.co.uk/products/filter-cartridge-lay-z-spa-vi
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+
+## Sundance and Jacuzzi look-alike filters: core plugs, bottom holes and handles
+
+URL: https://myspafilter.com/guides/sundance-and-jacuzzi-look-alike-filters/
+Last updated: 2026-10-27
+
+Cartridges that share a Sundance or Jacuzzi OEM number, or a diameter and length, and still differ: C-8326 vs C-8327, C-7465 vs C-7466, 6CH-960 vs 6CH-961, and OEM 373045.
+
+Several Sundance and Jacuzzi cartridges share a body and not a detail Unicel bothers to print. C-8326 and C-8327 are both 8-7/16" × 19", 125 sq ft, OEM 6540-488; Unicel says C-8326 has a core plug and fits spas before 2006, and C-8327 has no core plug and fits spas after 2005[5]. C-7465 and C-7466 are both 7-1/2" × 14-3/4" castle-top cartridges at 65 sq ft; the bottom opening is 2-1/16" (OEM 6540-480) or 2-5/8" (OEM 6540-481)[5]. Match the OEM number, then the note in the spec table.
+
+## The 125 sq ft pair: core plug or no core plug
+
+C-8326 and C-8327 are the cartridges people shorten to “the big Sundance filter.” The spec rows print the same outside size and the same ends: 8-7/16" diameter, 19" long, a 1-1/2" male slip fitting on top, and a 2-1/2" open bottom with a beveled edge. Both are rated 125 sq ft. Both are tied to OEM 6540-488. Pleatco lists PSD125-2000 and Filbur lists FC-2780 against that OEM number[5][2][31].
+
+Unicel still splits them. The note on C-8326 says it contains a core block or plug, and the fitment Unicel gives is Sundance spas before 2006. The note on C-8327 says there is no core block or plug, the fitment is Sundance spas after 2005, and Unicel also prints OEM 6540-507 on that row. A Leisure Time listing describes C-8326 and C-8327 as the same cartridge[44]. Unicel does not. When a dealer treats them as one part and the manufacturer’s filter guide treats the plug as the difference, keep the plug. Look down the core of the old cartridge. If your spa is dated before 2006 and the cartridge you removed has the plug, C-8326 is the row Unicel points at. If it is after 2005 and there is no plug, C-8327 is the row. If you cannot see a plug and cannot date the spa, order by the full OEM number on the cap (6540-488 or 6540-507) and compare the new cartridge with the old one before you install it.
+
+## The 65 sq ft castle-top pair: the bottom hole changes
+
+C-7465 and C-7466 are both 7-1/2" × 14-3/4", both have a castle top, and both are rated 65 sq ft. The bottom inside diameter is the spec line that changes.
+
+UnicelOEMBottomPleatcoFilbur
+
+C-74656540-4802-1/16" openPSD65FC-2730
+
+C-74666540-4812-5/8" openPSD65-2FC-2740
+
+Pleatco’s “-2” on PSD65-2 is doing the same job as the different OEM number: it marks the larger bottom opening. Filbur splits them into FC-2730 and FC-2740[31]. A castle top tells you that you are in this family. It does not tell you which bottom you have. Measure the open end, or read 6540-480 versus 6540-481. The fitting guide open-end vs threaded filters shows the same pattern on other brands.
+
+## Same OEM numbers, different top: 6CH-960 and 6CH-961
+
+Jacuzzi 6CH-960 and 6CH-961 are both 6-3/4" × 15-1/2" cartridges with a 2" SAE thread, and Unicel prints the same OEM set on both rows: 6540-164, 6540-476 and 6541-383. The area on the rows is 75 sq ft, with a note that square footage is 75 or 60 depending on the OEM part number[5]. The tops differ. 6CH-960 is printed with a semi-circular handle. 6CH-961 is printed “open with slots,” and Unicel says it requires an injection-molded semi-circular handle that is not furnished. Pleatco splits them into PJW60TL-F2S and PJW60TL-OT-F2S. Filbur lists FC-2800 and FC-2715. If your old cartridge has the handle molded on, you are looking at the 6CH-960 description. If the top is open and the handle is a separate piece, you are looking at the 6CH-961 description. Ordering the one that does not include the handle, when yours is molded on, gives you a cap you did not have before.
+
+## One Jacuzzi OEM number printed on two areas
+
+Jacuzzi OEM 373045 appears on two open-end cartridges of the same body size and different media area: C-4326 at 25 sq ft and C-4950 at 50 sq ft. Both are 4-15/16" × 13-5/16" with 2-1/8" open ends. The note on the C-4950 row says the same OEM part number is listed for 25 and 50 sq ft[5]. This is the upgrade pattern Unicel describes elsewhere: more pleats in the same can, which is the subject of why same-size filters have different square-foot ratings. Pleatco lists PRB25-IN and PRB50-IN for that size family. If the only number you have is 373045, you still have to know whether the cartridge you removed is the 25 sq ft or the 50 sq ft version. Count the pleats if the printing is gone. Unicel’s own lookup instructions include a pleat count within about two pleats[5].
+
+## J-460 and the shared 6540-series numbers
+
+Sundance and Jacuzzi Premium share a large family of 6540-series OEM numbers. Sundance 5CH-402 and Jacuzzi 5CH-402 are both OEM 6540-723: 5-3/16" × 10-3/4", bar handle, 2" male MPT, 50 sq ft. Sharing the number across the two brands means the cartridge is the same row, not that every Jacuzzi takes every Sundance cartridge.
+
+The opposite warning is on the J-460. Leisure Time’s listing for 6CH-945 (OEM 6540-498, 6" × 13-1/2", 2" SAE, 45 sq ft, Pleatco PJP45-F2S) says J-460 spas used several cartridges that are not interchangeable, and that you should confirm size and thread against the old filter[45]. A J-460 owner who orders “the J-460 filter” from a single photo has not finished the job. Measure length and look at the thread. The Jacuzzi model-year lookup and the Sundance lookup are the indexes. All Jacuzzi cartridges and all Sundance cartridges are the full tables.
+
+## What to write down
+
+- The full OEM number, including 6540-488 versus 6540-507, 6540-480 versus 6540-481, and 6540-164 versus the other numbers on that cap.
+
+- Whether you can see a core plug.
+
+- The bottom opening or the thread, measured, not guessed from the length.
+
+- Whether the handle is molded on or is a separate piece.
+
+- The year of the spa when the Unicel note is “before 2006” or “after 2005.”
+
+Installation after you have the match is covered in how to install a hot tub filter. If the spa throws a flow code the first time the new cartridge runs, the code list is in flow errors and the filter.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Filbur Catalog & Reference Guide: https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf
+- Leisure Time Inc. — Unicel C-8327 filter cartridge: https://leisuretimeinc.com/products/unicel-c-8327-filter-cartridge
+- Leisure Time Inc. — Unicel 6CH-945 filter cartridge (Jacuzzi J-460): https://leisuretimeinc.com/products/unicel-6ch-945-filter-cartridge
+
+## Master Spas Eco-Pur filters: outer cartridges, the inner element, and the stand pipe
+
+URL: https://myspafilter.com/guides/master-spas-eco-pur-filters/
+Last updated: 2026-10-27
+
+Unicel’s dates and installation notes for Master Spas Eco-Pur cartridges: C-7330 (2002–2005), C-8341 (2006 on, two required), the C-3310AM inner element, and when to remove the black stand pipe.
+
+Unicel splits Master Spas Eco-Pur filtration into two eras. C-7330 is the outer cartridge for 2002–2005 (7" × 7-1/4", 30 sq ft). C-8341 is the outer cartridge from 2006 on (8" × 6-3/4", 40 sq ft), and Unicel says two of those 40 sq ft cartridges are required[5]. The small C-3310AM element (3-7/8" × 7", antimicrobial media) is used with either outer cartridge. On the threaded Eco-Pur replacements, Unicel says to remove the black stand pipe[5].
+
+## Eco-Pur is an assembly, not a single cartridge
+
+Master Spas cartridges fall into two groups in the Unicel 2026 guide: ordinary threaded top-load cartridges, and the Eco-Pur system, which pairs an outer cartridge with a small inner element. Ordering “a Master Spas filter” does not say which half you need, or whether the spa holds one outer cartridge or two. The notes below are Unicel’s, from the Master Spas section of the 2026 guide and the spec table[5].
+
+UnicelRole Unicel gives itSizeEndsPleatco / Filbur
+
+C-7330Eco-Pur outer, 2002–20057" × 7-1/4", 30 sq ft4-1/8" open both endsPMA30-2002-R / FC-1003
+
+C-8341Eco-Pur outer, 2006 to present; two 40 sq ft cartridges required8" × 6-3/4", 40 sq ft4" open with a raised ring, both endsPMA45-2004-R / FC-1007
+
+C-3310AMAntimicrobial inner element, used with C-7330 or C-83413-7/8" × 7", 8 sq ft2-3/16" open both endsPMA10; no Filbur number on our row
+
+Count what comes out of the housing. If you remove two large cartridges and one slim element, that is the C-8341 arrangement Unicel describes, and you replace both outers plus the inner on its own schedule. If you remove one outer and one inner from a 2002–2005 system, C-7330 is the outer Unicel names. The diameters differ (7" versus 8"), so a 2002 outer does not take the place of a 2006 outer. Pleatco’s numbers carry the year in the part itself: PMA30-2002-R and PMA45-2004-R[2]. Filbur lists FC-1003 and FC-1007[31].
+
+C-3310AM is not a substitute for the outer. It is 3-7/8" across. Unicel calls out antimicrobial media and says it is used with a C-7330 or a C-8341[5]. Replacing only the inner leaves the outer media in place. Replacing only the outer leaves the inner element in place. They are different part numbers because they are different pieces.
+
+## The stand-pipe note on the threaded replacements
+
+Other Master Spas rows are threaded cartridges rather than the open-end Eco-Pur outers, and Unicel attaches an installation note to them.
+
+- 6CH-352, OEM PMA-R1. 6" × 8", semi-circular handle, 2" male MPT, 35 sq ft, Pleatco PAS40-F2M. Unicel says to remove the black stand pipe. Filbur cross-references 6CH-352 to FC-0312 but lists FC-0312 at 6" × 7", not 6" × 8"[5][31]. When the two catalogs disagree on length, measure the cartridge you removed. Do not average 7" and 8" into a length neither book printed.
+
+- 7CH-322. 7" × 8", semi-circular handle, 2" male MPT, 32 sq ft on our row, Pleatco PAS35-F2M, Filbur FC-0420. Unicel says it is a replacement for 7" or 8" OD Eco-Pur systems, and to remove the black stand pipe for an 8" OD system[5].
+
+- 4CH-935 and 4CH-949 are Unicel’s replacements for 5" OD Eco-Pur systems. 4CH-935 is 4-15/16" × 9-1/4". 4CH-949 is 4-15/16" × 13-1/2". Neither row has an OEM number in our table, and Unicel says to verify the overall length. “Verify OAL” means measure. A 9-1/4" cartridge and a 13-1/2" cartridge are both 4-15/16" in diameter and they are not the same part.
+
+The stand pipe is a plastic tube in the filter well. Unicel’s instruction is to remove it when you install these replacements. That instruction is on the cartridge, not a general rule for every Master Spas model. If your housing does not have a black stand pipe, there is nothing to remove. If it does, and you are installing 6CH-352 or an 8" application of 7CH-322, the note says it comes out[5]. Forcing a threaded cartridge down over a stand pipe the note says to remove is how a new filter fails to seat.
+
+## How this differs from “buy a spare”
+
+A second set of cartridges, which Unicel, Pleatco and Jacuzzi recommend so one set can soak while the other is in the spa, is a spare[4][1][10]. Two C-8341 cartridges in the housing at the same time are not a spare. They are the system Unicel says the 2006-and-later Eco-Pur filter uses. Buy two outers because the housing holds two, and keep a further spare only if you want one soaking. The guide to that distinction, including Hot Spring’s three-cartridge wells, is spas that use more than one filter.
+
+## What to check before you order
+
+- Count the large cartridges and look for a slim inner element.
+
+- Measure the outer diameter: about 7" points at C-7330, about 8" at C-8341, about 6" at 6CH-352, about 4-15/16" at the 4CH Eco-Pur replacements.
+
+- Read any OEM number, especially PMA-R1.
+
+- If the spa is around 2005 or 2006, use the year Unicel prints rather than a photo of “an Eco-Pur filter.”
+
+- Read the stand-pipe note on the page for the part you are about to buy.
+
+- Use the Master Spas filter by series and year lookup, then the Master Spas brand table for the rows that have no year.
+
+Threaded versus open ends are covered in open-end vs threaded hot tub filters. Length disagreements between catalogs are the same problem as the square-foot disagreements in why same-size filters differ: the outside dimensions in the two books are not always identical, so the cartridge in your hand is the measurement that counts.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Filbur Catalog & Reference Guide: https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+
+## How to install a hot tub filter cartridge
+
+URL: https://myspafilter.com/guides/how-to-install-a-hot-tub-filter/
+Last updated: 2026-10-27
+
+The install steps that Hot Spring, Jacuzzi, Sundance and Unicel actually print: power off, match the ends, do not overtighten, do not run the spa with the cartridge out, and keep a second set.
+
+Turn the spa off, put the new cartridge in the same orientation as the one you removed, and do not overtighten the retainer. Hot Spring’s manual says to cut power before you remove filters, not to use the spa with the cartridge removed, and not to overtighten the filter retainer[9]. Jacuzzi says the same about power and about running with no filter, because debris then goes to the pump and heater, and it says to keep a second cartridge so the spa is never filter-less while one soaks[10].
+
+## Before you open the well
+
+Installation starts with the right part, not with the lid. If you are not sure the new cartridge matches, stop and use the part-number search or the size guide. A cartridge that is close in length and wrong on the bottom will sit in the housing and not seal. Which ends the catalogs care about is covered in open-end vs threaded hot tub filters.
+
+Then make the spa safe to open. Hot Spring’s Hot Spot collection manual and Jacuzzi’s filter instructions both say to turn the power off before you remove the filter[9][10]. Jacuzzi’s reason is specific: it stops the pump from starting while your hands are in the well, and it avoids pulling air into the plumbing. Sundance’s air-lock procedure has you take the filter out only with the power off, purge the air, and put the filter back before you restore power[12].
+
+## The steps the manuals share
+
+- Power off at the spa’s disconnect or the breaker the manual names, not only by setting the jets to zero[9][10].
+
+- Lift the old cartridge the way that spa is built. Handle-top cartridges lift by the handle. Open-end cartridges slide off a standpipe. Unicel’s general instruction is to remove the cartridge following the spa maker’s instructions[4].
+
+- Look at which end was up. The spec table’s “top” is the end that faced you: a handle, an open hole of a stated size, or a closed cap. Put the new cartridge back the same way. On a threaded bottom, the thread goes onto the fitting you just unscrewed the old one from. On a male-slip bottom, the stub goes into the receiver. Do not flip an open-end cartridge end for end if the two holes are different sizes. Sundance C-8326, for example, has a 1-1/2" male slip on one end and a 2-1/2" opening on the other[5].
+
+- Seat it and snug the retainer. Hot Spring says not to overtighten the filter retainer[9]. Cracking an end cap by cranking the retainer is a failed install, not a tighter seal.
+
+- Restore power only after the cartridge is in. Sundance’s purge steps end with the filter reinstalled before power returns[12]. Hot Spring says not to use the spa with the cartridge removed[9]. Jacuzzi advises against running with no filter installed[10].
+
+- Watch the first cycle. A flow error right after a filter change is often air or water level, not a bad new cartridge. The code-by-code version is hot tub flow errors and your filter.
+
+## If the housing holds more than one
+
+Some spas do not hold a single cartridge. The Leisure Time listing for Hot Spring OEM 71825 says many of those models take three of the 6" cartridges[38]. Unicel says Master Spas Eco-Pur systems from 2006 on require two C-8341 cartridges, plus the separate inner element[5]. Sundance’s 680 and 780 manuals describe a pleated outer filter and a disposable MicroClean insert, and they give those two pieces different replacement intervals[11][12]. Count the pieces you removed. Install the same count. A guide to those systems is spas that use more than one filter.
+
+The insert is not cleaned like the outer cartridge. Sundance says never to use filter cleaners on the inner inserts, and its 680 manual specifies a low-pressure rinse and no chemicals on the insert, while the outer pleated filter is the one that gets a stronger hose rinse[11]. Putting the insert through the degreaser soak Unicel describes for a pleated cartridge is the wrong procedure for that piece.
+
+## The second cartridge is a spare, not a stack
+
+Unicel, Pleatco and Jacuzzi all tell owners to alternate two sets so one can be cleaned and dried while the other is in the spa[4][1][10]. Jacuzzi says a filter can go back in damp, and that letting a set dry completely is what extends its life. That second set lives on a shelf. It is not a second cartridge shoved into a housing designed for one, unless the spa’s own list says the housing holds two or three. Buying a two-pack of an Intex S1 cartridge is the same idea: the pack is spares of one type, and Intex’s lists still require you to pick S1 or S2. See Intex and Bestway filters.
+
+## What not to do in the same visit
+
+- Do not run the pump “just to test” with the well empty. That is the thing Jacuzzi and Hot Spring say not to do[10][9].
+
+- Do not acid-wash a new cartridge. Acid is Unicel’s last step for mineral scale on a cartridge you are trying to save, and only after a degrease. Unicel calls acid washing a leading cause of early cartridge failure[4]. A new cartridge does not need it. The full caution is in should you acid wash a spa filter?
+
+- Do not put any cartridge in a dishwasher. Jacuzzi says dishwashers and washing machines can warp end caps and do not clean between the pleats[10].
+
+- Do not ignore a retainer that will not close. If the lid or the retainer will not seat, the cartridge is too long, the handle is on the wrong end, or a stand pipe Unicel told you to remove is still in the well. Master Spas notes that stand pipe on specific part numbers[5]. See Master Spas Eco-Pur filters.
+
+## After it is in
+
+Rinse residue matters on a cartridge you just cleaned, more than on one fresh from the package. Jacuzzi warns that cleaner left in the media foams once the jets run[10]. If you installed a cartridge that has been soaking, rinse it until the water runs clear, using the top-down hose method Unicel and Pleatco describe[4][1]. Then balance the water. A new filter does not set pH. Hot Spring’s published ranges for its own spas are a separate job, covered in how to balance pH and alkalinity.
+
+Replace, rather than reinstall, when the media is torn, the core is collapsed, or cleaning no longer restores flow[6][1]. Those signs are listed in signs your hot tub filter is bad. Intervals by brand are in how often to replace a hot tub filter.
+
+### Sources
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Sundance Spas 780 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf
+- Sundance Spas 680 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Unicel — When to Replace a Cartridge Filter (PDF): https://waterlinetechnologies.com/content/Unicel/When%20to%20Replace%20A%20Cartridge%20Filter.pdf
+- Leisure Time Inc. — Hot Spring Highlife 71825 filter cartridge: https://leisuretimeinc.com/products/hot-spring-highlife-71825-filter-cartridge
+
+## What a clogged or missing hot tub filter does
+
+URL: https://myspafilter.com/guides/clogged-or-missing-hot-tub-filter/
+Last updated: 2026-10-27
+
+Why Hot Spring, Jacuzzi, Sundance, Gecko and the CDC treat a dirty cartridge as a flow and water-quality problem, and why the manuals say not to run the spa with the filter removed.
+
+A clogged cartridge restricts flow. Hot Spring says that can weaken the jets, limit circulation, and trip the high-limit thermostat so the spa shuts off[9]. Jacuzzi lists cloudy water, a musty odor, and FLO or low-flow errors, and says not to run the spa with no filter installed because unfiltered water carries debris into the pump and heater[10]. The CDC’s hot-tub Legionella guidance includes replacing cartridges on the manufacturer’s schedule as part of controlling germs[14].
+
+## A filter is a restriction on purpose, until it is too much
+
+Pleated media works by catching oils, lotions, scale and fine particles. Unicel’s point is that the cartridge does not have a moving part that fails on a date. It plugs[6]. Some of that loading is the filter doing its job. Unicel also says cleaning too often can lower efficiency, because the cartridge uses the debris it has caught, and cleaning too rarely shortens the cartridge’s life[4]. The failure is the point where flow no longer recovers after a proper clean, or the media itself is torn or the core has collapsed[6][1].
+
+You can see the early stage before a code appears. Jets feel weaker. The spa is louder or the water looks dull. Jacuzzi names cloudy water and a musty odor that survive a normal clean, limp pleats that do not spring back, cracked end caps, and a flow error that returns immediately after cleaning[10]. Hot Spring names discolored or worn media as a reason to replace, with the caution that color alone is not the whole test: Pleatco says white does not mean clean, and that media can discolor with age[8][3]. The checklist is in signs your hot tub filter is bad.
+
+## What the control systems do when flow drops
+
+Heaters in these spas are not supposed to fire when water is not moving. The panel messages are the control system saying it cannot see that flow. They are not a filter brand.
+
+- Hot Spring’s Hot Spot manual says a clogged filter can reduce jet performance, limit flow, and trip the high-limit thermostat[9]. The 2023 Highlife manual’s E2 message is literally “NO FLOW-CHECK FILTER,” with the heater off, and it tells the owner to check and clean the filter and to call for service if the heater trips often[29].
+
+- Sundance’s 2024 780 manual lists an excessively dirty filter as one cause of FL--1 (flow switch open), along with a bad switch or an air lock. FL--3 tells you to clean the filters and correct the water level before you call the dealer[12].
+
+- Gecko’s troubleshooting guide for its Y-series and in.xe systems says FLO means no flow was detected while the main pump runs, and its HL (high-limit) note tells you to make sure nothing is blocking flow, including a dirty filter or a closed valve[26].
+
+- Balboa’s TP600/TP400 guide uses HFL for reduced heater flow and LF when flow stays too low for the heater. Its checks start with low water, closed valves and too many closed jets, which sit alongside a blocked filter as reasons water is not moving[27].
+
+The code-by-code order of checks is already written up in hot tub flow errors and your filter. The short version: power off, confirm the water level, clean or replace the cartridge, purge air, open valves, then reset the way that control describes. If the error survives a clean cartridge and a full water level, Jacuzzi and Sundance say to call a dealer[10][12].
+
+## Taking the filter out is not a test
+
+It is tempting to pull the cartridge, turn the jets on, and see if the error goes away. That tells you the cartridge was a restriction. It also runs the spa with no filtration, which is the state the manuals reject.
+
+- Jacuzzi advises against running with no filter installed. Unfiltered water carries contaminants to the pumps and the heater. Jacuzzi’s alternative is a second, clean cartridge you can swap in[10].
+
+- Hot Spring says not to use the spa with the cartridge removed[9].
+
+- Sundance’s air-lock fix has the filter out only while you purge, and back in before power is on[12].
+
+If you need the spa tonight and the cartridge is soaking, the second set is the supported method. Unicel and Pleatco describe the same rotation: one set in the spa, one set drying after a soak of at least an hour[4][1]. How to put the spare in without forcing the retainer is how to install a hot tub filter.
+
+## Water quality is the other half of a missing filter
+
+Flow codes are the mechanical symptom. The CDC’s hot-tub module on Legionella treats filtration as part of germ control, and it tells operators to replace cartridges according to the manufacturer[14]. The CDC’s hot-tub rash page tells bathers and operators to keep disinfectant and pH in range, which a filter does not do by itself[13]. A torn cartridge and a sanitizer at zero are two different failures. Test the water. Hot Spring’s published owner ranges are free chlorine 1–5 ppm, pH 7.2–7.8, total alkalinity 40–120 ppm and calcium hardness 75–150 ppm on a standard system[18]. CDC’s rash page uses a free-chlorine floor of at least 3 ppm for hot tubs and a bromine range of 4–8 ppm, and its pH band on that page is 7.0–7.8, which is not identical to Hot Spring’s 7.2–7.8[13]. Follow the manual for your spa when the numbers differ. The order of balancing is in how to balance pH and alkalinity, and sanitizer choices are in bromine, chlorine and mineral systems.
+
+Cloudy water has a filter chapter and a chemistry chapter. Jacuzzi lists it as a filter symptom when it persists after the water is balanced[10]. If the water is cloudy and the test strip says the sanitizer is at zero, fix the sanitizer. If the sanitizer is in range and the pleats are crushed, replace the cartridge. Doing only one of those leaves the other problem in the tub.
+
+## How a cartridge gets to that state
+
+Heavy bather loads, oils and unbalanced water are the loads Pleatco and Unicel name[1][4]. Hot Spring notes that more use means more frequent cleaning[8]. Jacuzzi’s baseline for a family tub is a weekly rinse and a deep clean every 4–6 weeks, sooner with heavy use[10]. Cleaning technique matters as much as the calendar. A pressure washer or a stiff brush can tear the media Pleatco says not to scrub, and a torn cartridge bypasses in the sense that water takes the hole instead of the pleat[1][10]. Acid washing before the oils are removed is the failure Unicel flags as causing a permanent restriction[4]. The procedures, including what not to soak in, are in how to clean a hot tub filter and filter cleaner vs DIY soaks.
+
+Replacement intervals are not one number. Jacuzzi says 12–24 months for pleated cartridges. Hot Spring says 2–3 years for a standard polyester cartridge and 4–6 years for TRI-X, while its maintenance page says three years[10][8][7]. Disposable inserts are on a much shorter clock: Sundance’s 780 manual says every 3 months for the small MicroClean cartridge, and the 680 manual says every 4 months for the Mini insert[12][11]. When the interval has passed and the flow codes have started, cleaning is the experiment and replacement is the result if flow does not return. Search the part from the homepage.
+
+### Sources
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Hot Spring Highlife Collection Owner’s Manual (2023): service information and logo-light troubleshooting: https://www.hotspring.com/wp-content/uploads/2023/07/highlife-owners-manual-en_us.pdf
+- Hot Spring Spas — How Do Hot Tub Filters Work?: https://www.hotspring.com/blog/how-do-hot-tub-filters-work
+- Hot Spring Spas — Maintenance Tips: https://www.hotspring.com/owners/maintenance-and-tips
+- Hot Spring — How do I choose the right spa chemicals for my hot tub?: https://www.hotspring.com/faq/how-do-i-choose-the-right-spa-chemicals-for-my-hot-tub
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Sundance Spas 780 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf
+- Sundance Spas 680 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf
+- Gecko Alliance — Troubleshooting Guide, Y series and in.xe (rev. 07/2023): FLO and HL messages: https://geckoalliance.com/wp-content/uploads/2023/04/9919-101313-D_Troubleshooting_Guide_YSERIES_XE_EN_REV_15_07_2023.pdf
+- Balboa Water Group — TP600 and TP400 User Guide (heater-related messages and flow-related checks): https://www.balboawater.com/wp-content/uploads/2024/12/TP600-and-TP400-USER-GUIDE_Standard-Menus_40940.pdf
+- CDC — Controlling Legionella in Hot Tubs: https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html
+- CDC — Preventing Hot Tub Rash: https://www.cdc.gov/healthy-swimming/prevention/preventing-hot-tub-rash.html
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Unicel — When to Replace a Cartridge Filter (PDF): https://waterlinetechnologies.com/content/Unicel/When%20to%20Replace%20A%20Cartridge%20Filter.pdf
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Pleatco FilterWash information sheet: https://lesl.a.bigcontent.io/v1/static/Pleatco-FilterWash-InfoSheet
+
+## How Filbur, Unicel and Pleatco numbers compare on the same spa filter
+
+URL: https://myspafilter.com/guides/how-filbur-unicel-and-pleatco-numbers-compare/
+Last updated: 2026-10-27
+
+What an OEM number, a Unicel C-number or CH-number, a Pleatco P-number and a Filbur FC-number each refer to, with rows where the three catalogs agree and rows where they do not.
+
+They are four names for a match, not four shapes. The spa maker’s OEM number is the one molded for that brand. Unicel prints a C-number or a CH-number. Pleatco prints a P-number and a cross-reference to the Unicel number. Filbur prints an FC-number in its own catalog[5][2][31]. When the size and the ends agree, the numbers are equivalents. When a catalog prints a different length or a different area, the page on this site says so instead of hiding the conflict.
+
+## Four columns, one cartridge
+
+Retail sites often list a single part number and a photo. The catalogs list the same physical cartridge once for each company that sells it. Our cartridge pages put those numbers in one place so you can search whichever one is still readable. The columns are:
+
+- OEM. The spa maker’s number. Hot Spring 31489, Caldera 74148, Sundance 6540-488, Softub 90-802, Bullfrog 10-2870. Some cartridges accumulated several OEM numbers over the years. C-6430’s row prints 31489, 71825 and 71826[5].
+
+- Unicel. Usually C- followed by four digits (C-6430, C-4950) or a size-series CH number (4CH-35, 6CH-940, 8CH-951). The 2026 Replacement Guide is both a cross-reference, by spa brand, and a spec table of diameter, length, ends, pleats and area[5].
+
+- Pleatco. A P-number such as PWK30-4, PRB35-IN, PCD50N or PSD125-2000. The 2023 catalog includes a Unicel-to-Pleatco cross-reference and its own spec tables[2].
+
+- Filbur. An FC-number such as FC-3915 or FC-2780, in the Filbur Catalog and Reference Guide, which also sorts parts by spa manufacturer[31].
+
+A worked example that agrees: Hot Spring OEM 31489 / 71825 / 71826, Unicel C-6430, Pleatco PWK30-4, Filbur FC-3915. All three catalogs are cited on the C-6430 page for a 6" × 10-1/2" cartridge open 1-15/16" at both ends, 30 sq ft. Another that agrees: Caldera OEM 74148, Unicel C-4335, Pleatco PRB35-IN, a 4-15/16" × 9-1/4" cartridge with 2-1/8" open ends. Searching any one of those strings from the homepage should land on the same family of pages. OEM vs Unicel vs Pleatco is the shorter version of this idea. This page adds Filbur and the rows where the books diverge.
+
+## Where the catalogs agree on size and disagree on a detail
+
+Agreement on the body is not agreement on every cell.
+
+- Softub 90-802. Unicel 6CH-25, Pleatco PTL20W-SV-P4 and Filbur FC-0305 all print 6" × 5-1/2" with a handle and a 1-1/2" MPT bottom. Unicel and Filbur rate it at 25 sq ft. Pleatco rates the same OEM number at 20 sq ft[5][2][31]. The Softub page keeps the disagreement visible. Size, OEM number and fitting are the match. Area is not a single number.
+
+- Intex S1. Unicel C-4317 and Pleatco PIN4PAIR agree on 4-1/4" × 2-15/16". They do not agree on the end opening (2-1/16" versus 1-5/8")[5][2]. Details are in Intex and Bestway filters.
+
+- Master Spas 6CH-352. Unicel prints 6" × 8". Filbur’s cross-reference to FC-0312 prints 6" × 7"[5][31]. Measure. The Eco-Pur context is in Master Spas Eco-Pur filters.
+
+- Hot Spring 78161 / 1642301-1. Unicel offers C-6350 at 50 sq ft and C-6355 at 75 sq ft, both 6" × 14". Pleatco lists PWK35B at 35 sq ft and 6-3/8" × 14". A dealer page lists 50 sq ft and a slightly different OD again[5][2][24]. We do not collapse those into one rating. See Hot Spring sizes by collection.
+
+Unicel’s area formula — pleat count times two, times pleat height, times usable length, divided by 144 — is why two honest measurements of “the same” cartridge can still print different square footage when the pleat count differs[5]. Why same-size filters differ walks through the groups in the spec table, including Unicel’s own upgrade notes such as C-4637 for a 25 sq ft cartridge of the same outside size.
+
+## When a column is blank on purpose
+
+A blank is not a zero. It means that catalog did not give us a number we are willing to print.
+
+- C-6350 has no Pleatco equivalent on the page, because PWK35B’s printed size and area do not match that Unicel row.
+
+- Intex 29012E and Bestway Type VI have no Unicel, Pleatco or Filbur numbers. They are not in those books. The manufacturer pages identify them.
+
+- Bullfrog PBF17 and PBF40 are Pleatco coreless parts with no Unicel number in the 2026 guide. Inventing a C-number would make the search box lie.
+
+- Some rows are marked unverified and kept out of the search index when we have only one source or the sources conflict on the OEM number. The dataset still lists them, with the citation, so you can see the gap. The methodology is the rule we use.
+
+## What the spa maker says about “equivalent”
+
+A cross-reference is the filter maker’s statement that its cartridge matches the OEM part’s size and fittings. It is not the spa maker’s statement that the aftermarket part is the one they want in the spa. Hot Spring’s maintenance page says to replace with genuine Watkins filters[7]. Jacuzzi recommends filters designed for the specific model[10]. Check the warranty before you switch. We are not Watkins, Jacuzzi, Unicel, Pleatco or Filbur, and the pages do not say an aftermarket cartridge is “genuine.” They say which numbers the catalogs tie together.
+
+Filbur’s catalog is doing the same kind of work as the other two. On Marquis cartridges it lists the brand as Pacific Marquis, which is why a search for a Marquis OEM number can land on an FC-number you have not seen on the spa. The Marquis rows on this site cite that naming. If Filbur’s length or area differs from Unicel’s, the cartridge page carries the note, the way the Master Spas 6CH-352 page does.
+
+## How to use the numbers you can still read
+
+- Search the string on the cap, whatever prefix it has. C-, FC-, P-, PRB, PCD, PWK, 6540- and a plain OEM code all go through the same box.
+
+- Read all four columns on the page you land on. If one is blank, believe the blank.
+
+- Read the size line and the top and bottom. Equivalence means those match, not merely that two brands sell “a filter for this spa.”
+
+- If two pages share an OEM number and not an area or a plug or a bottom hole, open both. Sundance C-8326 and C-8327, and Jacuzzi C-4326 and C-4950, are the cases in look-alike Sundance and Jacuzzi filters.
+
+- Then use the retailer buttons on that cartridge page if you want to shop. A search for a Unicel number and a search for the OEM number should be the same physical cartridge only when our page says they are equivalents.
+
+The whole table, including a source for every row, is the downloadable dataset. If a number on your cartridge is missing, the correction address is on the corrections policy.
+
+### Sources
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Pleatco 2023 Catalog (Pentair): https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf
+- Filbur Catalog & Reference Guide: https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf
+- Leisure Time Inc. — Hot Spring Limelight 78161 filter cartridge (specifications): https://leisuretimeinc.com/products/hotspring-limelight-78161-filter-cartridge
+- Hot Spring Spas — Maintenance Tips: https://www.hotspring.com/owners/maintenance-and-tips
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+
+## Spas that use more than one filter cartridge at the same time
+
+URL: https://myspafilter.com/guides/spas-that-use-more-than-one-filter/
+Last updated: 2026-10-27
+
+When a hot tub holds two or three cartridges at once, when a slim insert sits inside a pleated filter, and when a second cartridge is only a spare on the shelf.
+
+Some housings are built for more than one cartridge. Leisure Time’s listing for Hot Spring OEM 71825 says many of those models take three of the 6" cartridges[38]. Unicel says Master Spas Eco-Pur systems from 2006 on require two C-8341 cartridges, and a separate inner element is used with them[5]. Sundance’s 680 and 780 manuals describe a pleated filter plus a disposable MicroClean insert, on two different replacement clocks[11][12]. A second set you rotate while one soaks is a spare, which Unicel, Pleatco and Jacuzzi recommend, and it is not the same as a housing that holds two[4][1][10].
+
+## Three different meanings of “two filters”
+
+Owners get sold a two-pack and then are not sure whether both cartridges go in the spa today. The documents use “two” in three ways, and only one of them means the housing is full when a single cartridge is installed.
+
+- The housing holds more than one at the same time. You replace every cartridge that was in the well, because each one is part of the flow path.
+
+- One pleated cartridge and one smaller insert occupy the same well and are not the same part. They can have different lifetimes and different cleaning rules.
+
+- A spare set waits while the set in the spa gets dirty. The spare is not installed on top of a full housing.
+
+A retail “2-pack” is usually the third meaning, or simply how the manufacturer boxes the part. Intex 29001E is a two-pack of Type S1 cartridges. Intex’s pages do not say a PureSpa holds an S1 and an S2 together. They say which set numbers take which type. That split is in Intex and Bestway filters.
+
+## Hot Spring wells that hold three
+
+The 6" × 10-1/2" open cartridge C-6430 (OEM 31489 / 71825 / 71826) is the Highlife size. The Leisure Time listing for 71825 says many of these models take three cartridges, and that some models of the same footprint use a Tri-X ceramic filter instead of pleated media. Use the pleated cartridge only where the spa specifies 71825 or a listed equivalent[38].
+
+If you open the well and see three pleated cartridges, order three of the part that matches, not one. If you see a ceramic block, C-6430 is the wrong object even though the footprint is the one the listing mentions. The collection-by-collection sizes, including the 8-1/2" cartridge and the 2018 Limelight cartridge that is not this 6" part, are in Hot Spring filter sizes by collection. Hot Spot models that the dealer assigns to this cartridge are on the Hot Spot page; count the filters in that housing too, because several Hot Spot tubs are listed with more than one.
+
+## Master Spas: two outers, plus an inner
+
+Unicel’s note on C-8341 is direct: from 2006 onward this Eco-Pur outer is a 40 sq ft cartridge and two of them are required. Each one is 8" × 6-3/4" with 4" open ends and a raised ring. The 2002–2005 outer is the different part C-7330, 7" × 7-1/4", 30 sq ft. The inner element C-3310AM is 3-7/8" × 7" and is used with either outer. Unicel calls that inner piece antimicrobial media[5].
+
+Buying one C-8341 leaves the housing half serviced if both outers were due. Buying a C-8341 for a 2004 spa ignores the 7" versus 8" change. The stand-pipe note on the threaded Master Spas replacements is a separate installation step and is explained in Master Spas Eco-Pur filters.
+
+## Sundance’s outer cartridge and disposable insert
+
+Sundance’s 2024 manuals describe a two-stage arrangement rather than two copies of one cartridge. On the 680 Series, the pleated MicroClean Mini filter is on a 12-month replacement and the insert is on a 4-month replacement. On the 780 Series, the small disposable MicroClean cartridge is replaced every 3 months, or earlier[11][12]. Those are not suggestions from a retailer. They are the intervals in the owner’s manuals.
+
+The cleaning rules differ inside the same well. Sundance says not to use filter cleaners on the inner inserts. The 680 manual calls for a high-pressure hose nozzle on the outer pleated filter and a low-pressure nozzle with no chemicals on the insert[11]. Unicel’s one-hour degreaser soak is written for a pleated cartridge you intend to reuse[4]. It is the wrong soak for the insert Sundance says not to chemically clean. Replace the insert on its short interval. Clean or replace the outer on its longer one. Our general cleaning steps are in how to clean a hot tub filter, with that Sundance exception spelled out.
+
+## A cage is not a second cartridge
+
+Bullfrog’s coreless filters are a pleated element plus a plastic cage and cap. Leisure Time says the cage and cap must be installed with OEM 10-00281 and 10-00282, and it names a cage assembly for specific years[43][42]. You do not stack two coreless socks to make up for a missing cage. You install the cage the listing calls for, or you confirm the spa has moved to the Simplicity flat filter that the 10-00282 listing assigns to 2023-and-newer A Series models. The thread-versus-coreless split is in Bullfrog threaded and coreless filters.
+
+## The spare set, which is the recommendation you can apply to any of these
+
+Unicel and Pleatco tell owners to keep two sets and alternate them. The set that comes out gets a hose rinse and a degreasing soak of at least an hour, overnight if you can, and then it dries. The other set goes into the spa so you are not running without filtration[4][1]. Jacuzzi gives the same advice and adds that a cartridge may be reinstalled damp, while a full dry extends its life[10]. For a three-cartridge Hot Spring well, a “set” is three cartridges, not one. For a two-cartridge Eco-Pur well, a set is two outers, and the inner element is its own part. For a Sundance two-stage well, the spare you rotate is the pleated outer; the insert is a disposable on a shorter clock, not a piece you soak and put back.
+
+Running while a set soaks, with nothing in the well, is the case Jacuzzi and Hot Spring reject[10][9]. The consequences — weak jets, high-limit trips, flow codes — are in what a clogged or missing filter does. Putting the spare in without overtightening the retainer is in how to install a hot tub filter.
+
+## How to count yours
+
+- Power off, then remove every cartridge and lay them in a row[9][10].
+
+- If they are the same part, count them. That count is what you replace.
+
+- If one is much smaller, or is a thin insert inside a pleated cartridge, treat it as a different part number and a different interval.
+
+- Read the OEM number off one of the large cartridges and search it here. The page’s fitment notes are where “three required” or “two required” is written when a source says it.
+
+- Order that many, and order a second set only if you want the rotation. Do not install the spare set in a housing that is already full.
+
+### Sources
+- Leisure Time Inc. — Hot Spring Highlife 71825 filter cartridge: https://leisuretimeinc.com/products/hot-spring-highlife-71825-filter-cartridge
+- Unicel 2026 Replacement Guide: https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf
+- Sundance Spas 680 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-681L-English-Rev-A-13426123.pdf
+- Sundance Spas 780 Series Owner’s Manual (2024): https://cdn.spasoftwaresolutions.net/product_documents/sundance_spas/2024/6530-607L-English-Rev-A-7862392.pdf
+- Unicel — Maintenance & FAQ: https://www.unicelfilters.com/maintenance-and-faq/
+- Pleatco Catalog & Cross Reference Guide — filter care FAQ: https://cjp-manuals.s3.us-east-2.amazonaws.com/Pleatco.pdf
+- Jacuzzi — Hot Tub Filter Cleaning Made Easy: https://www.jacuzzi.com/en-us/Hot-Tub-Filter-Cleaning-Made-Easy.html
+- Hot Spring Hot Spot Collection Owner’s Manual (2026): https://cdn.spasoftwaresolutions.net/product_documents/hot_spring%C2%AE/2026/hot-spring-hot-spot-collection-owners-manual-2026-5050076.pdf
+- Leisure Time Inc. — Bullfrog STIL series 10-00281 filter cartridges: https://leisuretimeinc.com/products/bullfrog-stil-series-10-00281-filter-cartridges
+- Leisure Time Inc. — Bullfrog A/R/X series 10-00282 filter cartridges: https://leisuretimeinc.com/products/bullfrog-a-r-x-series-10-00282-filter-cartridges
+
+## Model-year fitment
+
+## Which filter does my Hot Spring hot tub take? Lookup by model and year
+
+URL: https://myspafilter.com/fitment/hot-spring-filter-by-model-year/
+
+Find the Hot Spring filter part number (71825, 71827, 79435 Tri-X, 78161 and more) for your Highlife, Limelight, Hot Spot, Tiger River or Solana model and year.
+
+The dealer fitment table lists six Hot Spring factory cartridge numbers across these collections: 71825 (pleated, 6" × 10-1/2"), 71827 (8-1/2" × 10-1/2", 65 sq ft), 79435 (Tri-X), 78161 (Limelight 2018 and newer), 78286 (Limelight Prism) and 77004 (Limelight Gleam). The same model name can change cartridge by year, for example Limelight Flair and Pulse take the 71827 for 2008–2017 and the 78161 for 2018–2026. Find your model below, then confirm against the part number on your old cartridge.
+
+## Highlife: pleated cartridge or Tri-X?
+
+For many Highlife models the dealer table lists both the pleated 71825 and the Tri-X 79435 over the same years. The dealer’s note says to use the pleated cartridge only where the spa specifies 71825 or its listed equivalent, and that models requiring Tri-X must use a Tri-X filter. Hot Spring’s own filter article says its Tri-X is compatible with all Highlife Collection models, including those that did not come with one as standard, and gives replacement intervals of 2–3 years for polyester cartridges and 4–6 years for Tri-X. If your spa came with Tri-X cartridges, stay with Tri-X.
+
+## Where the dealer tables differ
+
+Model-year ranges are not identical between dealers. For the Aria, this page’s main source lists Aria AR for 2007–2018, while another Hot Spring dealer’s Tri-X listing gives Aria 2007–2015. Ranges for a model’s first and last year are the least reliable part of any dealer table.
+
+## How to confirm yours
+
+- Read the part number on the old cartridge, or on the filter label if it has worn off.
+- If you cannot read it, measure the diameter and length: a 6" × 10-1/2" cartridge is the 71825 family and an 8-1/2" × 10-1/2" one is the 71827 family. Our filter-size guide shows how.
+- Check how many cartridges your spa takes in your owner’s manual; we do not list counts per model.
+
+## Which filter does my Caldera hot tub take? Lookup by model and year
+
+URL: https://myspafilter.com/fitment/caldera-filter-by-model-year/
+
+Find the Caldera filter part number (73531, 73532, 73722, 74817, 74148, 76136) for your Utopia, Paradise, Highland or Vacanza model and year, with Unicel equivalents.
+
+The dealer fitment table lists seven Caldera cartridge numbers across these series, and several models switch cartridge partway through their run: for example the Utopia Geneva, Niagara and Tahitian take the 7" × 14-3/4" 73531 through 2004 and the 8" × 16-1/2" 73722 from 2005. Most current Paradise models (Salina, Reunion, Seychelles, Makena) are listed for 73531, and Kauai and Martinique for the shorter 73532. Find your model below and confirm against the number on the old cartridge, because the dealer table flags several model-years as needing a serial-number check.
+
+## Where the dealer tables differ
+
+The model-year table here comes from a single dealer, and other listings do not match it exactly. That dealer’s own product page for the 73531 gives Tahitian as 2002–2005 and Elation as 2003–2008, while its fitment guide gives Paradise Tahitian TAA as 2000–2005 and Elation as 2003–2004 for the 73531 (it moves Elation 2005–2008 to the 73722). A second retailer lists the 73531 for the Paradise series as 2003 to current, and sells the 8" × 16-1/2", 100 sq ft cartridge for the Utopia Geneva from 2005 on, which agrees with the table below. Treat first and last years as approximate.
+
+## How to confirm yours
+
+- Read the part number printed on the old cartridge. The dealer itself says that even within one Caldera model line the filter can change by year, and that the part number is the most reliable method.
+- Measure the diameter and length if it is unreadable: 7" × 14-3/4" is the 73531 family, 7" × 10-3/4" the 73532, and 8" × 16-1/2" the 73722 or 74817. Our filter-size guide shows how.
+- For the model-years flagged above, have the spa serial number ready and ask a Caldera dealer.
+
+## Which filter does my Jacuzzi hot tub take? Lookup by collection, model and year
+
+URL: https://myspafilter.com/fitment/jacuzzi-filter-by-model-year/
+Last updated: 2026-10-26
+
+Jacuzzi filter part numbers (373045, 2540-381, 6000-383A, 6473-157/161 and more) for J-100, J-200, J-300, J-400, J-500 and J-LX models by year, from two published tables, with Unicel, Pleatco and Filbur equivalents.
+
+It depends on the collection and, for several models, the year. In the two published tables we compared, most J-200 and J-100 models take the 373045 (4-15/16" × 13-5/16"), while the J-230 from 2008, J-270 and J-280 take the 2540-381 (8" × 15-1/2"). J-300 spas take two 6000-383A ProClear 60 sq ft cartridges. Current J-400, J-500 and J-LX spas use a three-filter set: a 6473-157 pleated upper, a 6473-161 micron lower and a 6000-383A for the jet pump. Older J-400s (2006–2012) used different parts, and the 2023+ J-200 ProClassic uses an oval 6541-853.
+
+## Find your model
+
+Rows combine two dealer tables: Spa World’s Jacuzzi filter guide (Australia) and the March 2024 Jacuzzi Direct filter table published by a French Jacuzzi dealer. Where they give different years, both are shown. Skimmer and filter bags (6570-392, 6570-398, 2540-389) and the J-LX weir (6540-188) are listed in those tables too but are not cartridges, so they are left out here.
+
+### J-LX / J-LXL Collection
+ModelYearsMain / upper filterLower filterJet-pump or second filterListed by
+J-LX, J-LXL2023 and newer6473-157J6473-161J6000-383AJBoth
+J-LX, J-LXL2011–2021 (Spa World) · 2011–2022 (France)6000-383AJ—6000-383AJBoth
+
+### J-500 Collection
+ModelYearsMain / upper filterLower filterJet-pump or second filterListed by
+J-585, J-5752015 and newer (France) · 2015–2021 (Spa World)6473-157J6473-161J6000-383AJBoth
+
+### J-400 Collection
+ModelYearsMain / upper filterLower filterJet-pump or second filterListed by
+All J-400 (Spa World names J-435, J-445, J-475, J-485, J-495)2013 and newer (France) · 2013–2023 (Spa World)6473-157J6473-161J6000-383AJBoth
+J-495, J-425, J-41520126473-157J6473-161J6000-383AJBoth
+J-480, J-470, J-46520126473-1586473-161J2540-387JBoth
+J-46020126473-1566473-161J2540-384Both
+J-480, J-4702006–20112540-383J—2540-387JBoth
+J-465May 2007–2011 (France) · “up to May 2011” (Spa World)2540-383J—2540-387JBoth
+J-465Before May 2007 (France) · “up to April 2007” (Spa World)2000-498—2540-384Both
+J-4602006–20112000-498—2540-384Both
+
+### J-300 Collection
+ModelYearsMain / upper filterLower filterJet-pump or second filterListed by
+All J-300 (J-310 to J-385)2014 and newer6000-383AJ6473-161J only with the 2472-234 canister (Spa World)6000-383AJ (second filter)Both
+All J-300Through 20136000-383AJ—6000-383AJ (second filter)Both
+
+### J-200 Collection
+ModelYearsMain / upper filterLower filterJet-pump or second filterListed by
+J-215, J-225, J-235, J-245, J-275, J-285 (ProClassic)2023 and newer6541-853J——Spa World
+J-210, J-215, J-220Since 2005 (France) · J-220 2005–2008 and J-215/J-225 2016–2022 (Spa World)373045——Both
+J-230Through 2007 (France) · 2005–2007 (Spa World)373045——Both
+J-230Since 2008 (France) · 2008–2012 (Spa World)2540-381J——Both
+J-235Through 20116000-136——France only
+J-235, J-245, J-275Since 2012 (France) · 2012–2022 (Spa World)373045——Both
+J-270Since 2005 (France) · 2007–2012 (Spa World)2540-381J——Both
+J-280Since 2005 (France) · 2007–2022 (Spa World)2540-381J——Both
+
+### J-100 Collection
+ModelYearsMain / upper filterLower filterJet-pump or second filterListed by
+J-145, J-1352012–2022373045J——Spa World
+J-125, J-1152016–2022373045J——Spa World
+
+## Where the two tables differ
+
+- J-235 before 2012: only the French table covers it, and it lists the 35 sq ft 6000-136. Spa World starts the J-235 at 2012 with the 373045.
+
+- J-270 and J-280 start year: 2005 in the French table, 2007 in Spa World’s.
+
+- J-LX / J-LXL end year for the two-ProClear setup: 2021 (Spa World) vs 2022 (France). Both move to the 157/161/383 set for 2023.
+
+- J-465 cut-over: France says before May 2007 for 2000-498 and May 2007–2011 for 2540-383; Spa World words it as “up to April 2007” and “up to May 2011”. A 2007 J-465 needs a look at the old cartridge.
+
+- J-400 end year: Spa World lists 2013–2023 for the named J-400 models; the French table says 2013 onward with no end.
+
+Both tables come from dealers outside the US (Australia and France), and we found no public fitment table from Jacuzzi itself, so treat the years as a strong guide rather than a guarantee.
+
+## How to confirm yours
+
+- Read the part number printed on the old cartridge. Expect a J suffix on some (373045J, 6473-157J).
+- Jacuzzi’s owners center says filters are sold through local dealers, and that the spa serial number is in the equipment bay on top of the load box, typically 9 digits starting with 100. Give a dealer the serial if the year is near a change-over.
+- If the label is gone, measure diameter and length (our filter-size guide shows how) and compare with the sizes above. A J-400 or J-500 with a short upper cartridge and a small closed-end lower one is the 157/161 set.
+
+## Which filter does my Sundance hot tub take? Lookup by model, year and serial number
+
+URL: https://myspafilter.com/fitment/sundance-filter-by-model-year/
+Last updated: 2026-10-26
+
+Sundance filter part numbers for every model from 1995 to 2024+ (MicroClean, MicroClean Ultra, Ultra II, MicroClean Mini, 373045 and older cartridges), with serial ranges and Unicel, Pleatco and Filbur equivalents.
+
+Sundance changed filter systems several times, so the year matters. In Sundance Spas Norway’s model table: 880 and 980 Series spas from about 2005/2006 to 2023 take the two-piece MicroClean Ultra set (6473-165 outer + 6473-164 inner), with the one-piece 6540-488 as an alternative; 780 Series spas take the two-part MicroClean (6540-501 pleated + 6540-502 disposable upper), also with 6540-488 as the alternative; 680 Series spas through 2022 take the 373045 and 2023+ models take the MicroClean Mini (6473-249S + 6473-283S); and 2024+ 880 models take MicroClean Ultra II (6473-452S + 6473-453S). Pre-2002 spas mostly use the 6540-490 or 6540-483.
+
+## Find your model (with serial ranges)
+
+This table reproduces Sundance Spas Norway’s filter overview for all models from 1995 (version dated May 2026). Sundance Norway lists a serial-number range for most rows and asks owners to check against the serial number. “Alternative” is the part it lists as an alternative fit. Model names and years are as Sundance Norway prints them, including its spelling “Berkely”.
+
+ModelYearsSerial numbersFactory filter(s)Alternative
+Alicia2019-2022100700162-100736210373045—
+Alicia2023+100981585 +6473-249S + 6473-283S6541-468S
+Altamar1998-2001301736 - 4438046540-490—
+Altamar2002-2005100002044 - 1002058856540-501 + 6540-5026540-488
+Altamar2006-2023100211572 - 1009170786473-165 + 6473-1646540-488
+Altamar2024+100989714 +6473-452S + 6473-453S6541-965S
+Aruba2000-2002411248 - 1000091386540-483—
+Aspen1998-1999313736 - 3161456000-134—
+Aspen2012-2023100414133 - 1009700986473-165 + 6473-1646540-488
+Aspen2024+100984147 +6473-452S + 6473-453S6541-965S
+Bahia2000-2002412119 - 1000114626540-483—
+Bahia2003-2005100073478 - 1001712816540-4886540-501 + 6540-502
+Bahia2006+100219977+6540-501 + 6540-5026540-488
+Berkely2020+E20080262 +SC817—
+Bristol2017+1006207216540-501 + 6540-5026540-488
+Brook2020+E21020396 +SC817—
+Burlington2006-2007100226439-100301275373045—
+Burlington2008+100310713373043—
+Calypso1995-1999221907 - 3720246540-490—
+Cambria2018+100660346+6473-165 + 6473-1646540-488
+Camden2007+100268856+6540-501 + 6540-5026540-488
+Cameo1995-2001221698 - 4438076540-490—
+Cameo2002-2004100001737 - 1002058786540-501 + 6540-5026540-488
+Cameo2005-2023100165804 - 1009253526473-165 + 6473-1646540-488
+Cameo2024+1009897166473-452S + 6473-453S6541-965S
+Capri1995-2000221701 - 4074196540-490—
+Capri2001420673 - 4438106540-4886540-501 + 6540-502
+Capri2002-2005100002052 - 1001771386540-501 + 6540-5026540-488
+Capri2006-2023100211768 - 1009200246473-165 + 6473-1646540-488
+Capri2024+—6473-452S + 6473-453S6541-965S
+Caprio2000-2001378523 - 4438086540-4886540-501 + 6540-502
+Caprio2002+100002056+6540-501 + 6540-5026540-488
+Certa2007+100268855+6540-501 + 6540-5026540-488
+Chelsee2007+100269376+6540-501 + 6540-5026540-488
+Constance2011+100394+6540-501 + 6540-5026540-488
+Cyprus2000-2002379872 - 4125756540-483—
+Cayman2003-2005100062428 - 1001767116540-4886540-501 + 6540-502
+Cayman2006+100226500+6540-501 + 6540-5026540-488
+Claremont2017+—6473-165 + 6473-1646540-488
+Denali2006+100226495+373045—
+Dover2008+100310186+6540-501 + 6540-5026540-488
+Edison2013-2022100446972 - 100968647373045—
+Edison2023+100996693 +6473-249S + 6473-283S6541-468S
+Hamilton2007+100268299+6540-501 + 6540-5026540-488
+Hanover2017+1006207196540-501 + 6540-5026540-488
+Hartford2008+100310184+373043—
+Hawthorne2008+100310183+373043—
+Hermosa2003-2004100074496 - 1001694766540-723—
+Kingston2017+100608645+6473-165 + 6473-1646540-488
+Lagunas2003+100050588+6540-4886540-501 + 6540-502
+Lisbon2019+100708331+6473-165 + 6473-1646540-488
+Majesta2005+100169476+6473-165 + 6473-1646540-488
+Marin1995-2001155316 - 4386316540-490—
+Marin2002-2005100003509 - 1001934066540-501 + 6540-5026540-488
+Marin2006-2023100211573 - 1009687836473-165 + 6473-1646540-488
+Marin2024+100981488 +6473-452S + 6473-453S6541-965S
+Maxxus1995-2001385155 - 4438126540-490—
+Maxxus2002-2004100006237 - 1002085156540-501 + 6540-5026540-488
+Maxxus2005+100159517+6473-165 + 6473-1646540-488
+McKinley2014-2022100500843 - 100919760373045—
+McKinley2023+1009684296473-249S + 6473-283S6541-468S
+Metro2003+100050590+6540-501 + 6540-502—
+Montclair2019+100456722+6540-501 + 6540-5026540-488
+Montego1997-1999233302 - 3433696540-490—
+Odessa2019+100708335+6473-165 + 6473-1646540-488
+Optima1995-2001111186 - 4392156540-490—
+Optima2002-2004100007263 - 1001969306540-501 + 6540-5026540-488
+Optima2005-2023100160195 - 1009633146473-165 + 6473-1646540-488
+Optima2024+100982428 +6473-452S + 6473-453S6541-965S
+Palermo2000-2002378057 - 4306616540-483—
+Palermo2003-20051000505916540-4886540-501 + 6540-502
+Palermo2006+100215366+6540-501 + 6540-5026540-488
+Paisley2020+E20080395 +SC817—
+Peyton2012-2022100420355 - 100914730373045—
+Peyton2023+100968663 +6473-249S + 6473-283S6541-468S
+Prado2017-2022100608639 - 100722921373045—
+Prado2023+1009686706473-249S + 6473-283S6541-468S
+5-Prado2017+100608636373045—
+Ramona2014-2022100500827 - 100919766373045—
+Ramona2023+—6473-249S + 6473-283S6541-468S
+Redondo2003+100073556 - 1001263216540-723—
+Rio1995-1999233304 - 3441166540-490—
+Solo1997+314716 - 3931966540-487—
+Tacoma2006+1002279586000-136—
+Tango1995-1999351857 - 3635536540-495—
+Tango2000-2002379499 - 4438136540-487—
+Tango2003+100050590+6540-501 + 6540-5026540-488
+Vail / Bali1999-2002319214 - 3330316000-134—
+Victoria2011+1003941+6540-501 + 6540-5026540-488
+Vistamar2024+1009779536473-452S + 6473-453S6541-965S
+
+Berkely, Brook and Paisley (2020 on, serials starting E2…) are listed with SC817. We could not find that number in any of the three aftermarket catalogs, so confirm it with a Sundance dealer.
+
+## Which system is in my spa, and how often does it need attention?
+
+A Sundance dealer, The Sundance Spa Store, publishes these care intervals by system:
+
+Series and systemCleanReplace
+680 Series 2006–2022 (373045 style)MonthlyEvery 12 months
+680 Series 2023+ (MicroClean Mini)Outer every 2–3 monthsOuter every 12–18 months; Mini inner every 3–4 months
+780 Series (two-piece MicroClean)—Pleated outer every 12–18 months; MicroClean upper every 3–5 months
+880 / 980 Series (MicroClean Ultra)—Inner core every 6–9 months
+
+Filbur prints “Replace after 3 months of use” on its FC-2812 version of the 6540-502 disposable upper. For our general advice, see how often to replace a hot tub filter.
+
+## Where the sources differ
+
+- 880 Series, 2005–2008. Leisure Time Inc. lists the 6540-507 MicroClean Plus for 880 Maxxus, Cameo and Optima 2005–2008 and Altamar, Majesta, Marin and Capri 2006–2008. Sundance Norway puts those models on the MicroClean Ultra 6473-165/164 from 2005 or 2006. Check the old cartridge: the MicroClean Plus is a single cartridge, the Ultra is an outer plus an inner core.
+
+- 980 Series start and end dates. Leisure Time lists Claremont and Kingston for 2017–2025. A Sundance dealer (Snow Valley Spas) lists Claremont and Kingston from October 2016, and Lisbon and Odessa for 2019–March 2021. Sundance Norway gives 2017+ and 2019+.
+
+- Bahia, Cayman, Palermo and Lagunas 2003–2005, Capri 2001 and Caprio 2000–2001. Sundance Norway lists the one-piece 6540-488 as the main filter for these and the 501/502 pair as the alternative, the reverse of later 780 models.
+
+- 680 Series, early 2023. Leisure Time says some early-2023 680 spas may still use the 373045. The serial ranges above are the best way to tell.
+
+- 2024 and 2026 changes. Leisure Time says to confirm the system on 2024 880 spas, and lists a MicroClean Ultra II Lite for 2026 780 models (Bristol, Chelsee, Dover, Hamilton, Montclair) using a 6473-608S outer with the 6473-453S inner. Sundance Norway’s table does not list the Ultra II Lite yet.
+
+- Pre-2006 vs 2006+ one-piece cartridges. Unicel splits the 6540-488 into C-8326 (with core plug, for pre-2006 spas) and C-8327 (no plug, after 2005). Leisure Time’s tables follow the same split.
+
+Sundance Norway is a European distributor, and Leisure Time and Snow Valley are North American dealers. Model names match across them, but production dates can differ by market.
+
+## How to confirm yours
+
+- Read the part number on the old cartridge or cartridges. A two-piece set (outer plus inner core) is MicroClean Ultra or Mini; a pleated cartridge plus a short disposable top is MicroClean.
+- Compare your spa’s serial number with the ranges in the table above, as Sundance Norway advises.
+- If the label is unreadable, measure diameter and length (see our filter-size guide) and compare with the sizes above.
+
+## Which filter does my Bullfrog hot tub take? Lookup by series and year
+
+URL: https://myspafilter.com/fitment/bullfrog-filter-by-model-year/
+Last updated: 2026-10-27
+
+Bullfrog Spas filter part numbers by series and model year, 1997 to 2026: 10-1086, 10-1085, 10-2785, 10-2870, coreless 10-00282 and 10-00281, Simplicity flat filters and CALM, with Unicel, Pleatco and Filbur equivalents and sizes.
+
+It depends on the series and the year. Per Bullfrog’s own parts store: A Series 2018–2022, R Series and X Series from 2018 take the coreless 10-00282 (2-pack 10-00416); STIL from 2018 takes the smaller coreless 10-00281 (2-pack 10-00810); A Series from 2023, M Series and Swim Series use Simplicity flat filters 10-00814. Older spas take threaded cartridges: 10-2870 for A/R/X 2013–2016, 10-2785 for 2003–2012, 10-1085 for 2000–2002 and 10-1086 for 1997–1999. A 2013–2017 A/R/X or 2015–2017 STIL can switch to coreless filters by fitting the 10-00417 cage and cap assembly.
+
+## Find your series and year
+
+Bullfrog sorts its filters by series and build year rather than by individual model, so the table works the same way: an A7L, A8 or any other A Series spa uses the A Series row for its year. Years come from the product pages on Bullfrog’s own parts store, cross-checked against Leisure Time Inc.’s fitment guide and the list kept by Bullfrog Spa Parts Charlottesville, a Bullfrog dealer.
+
+SeriesModel yearsFilterWhere the years come from
+All Bullfrog spas1997–199910-1086 (50 sq ft)Bullfrog store; Charlottesville dealer
+All Bullfrog spas2000–200210-1085 (50 sq ft)Bullfrog store; Charlottesville dealer
+All Bullfrog and Tadpole spas2003–201210-2785 (Microban, threaded). No longer available; the dealer substitute is 10-2870Bullfrog store (years); Charlottesville (substitute); Pleatco calls it the “short thread” 2003–2012 cartridge
+A, R and X Series2013–2016 (Bullfrog store) or 2013–2017 (Pleatco)10-2870 (Microban, threaded), or coreless 10-00282 after fitting cage assembly 10-00417Bullfrog store; Pleatco PBF36 “long thread”
+STIL (first years)2015–201710-3430 originally (no longer available); now 10-00281 + cage assembly 10-00417Bullfrog store (10-00810 page); Charlottesville (10-3430 substitute)
+A Series2018–202210-00282 coreless (sold as 2-pack 10-00416)Bullfrog store; Leisure Time
+R Series2018 and later (Bullfrog store) or 2018–2022 (Leisure Time)10-00282 coreless (2-pack 10-00416)Bullfrog store; Leisure Time
+X Series2018 on (“all X Series” per the Bullfrog store; Leisure Time lists 2018–2026)10-00282 coreless (2-pack 10-00416)Bullfrog store; Leisure Time
+STIL (STIL5, STIL7)2018 and later10-00281 coreless (2-pack 10-00810)Bullfrog store; Leisure Time
+A Series2023 and laterSimplicity flat filters 10-00814 (4-pack)Bullfrog store; Leisure Time; Bullfrog filter-care article
+M SeriesAll (Bullfrog store) or 2020 on (Leisure Time)Simplicity flat filters 10-00814Bullfrog store; Leisure Time
+Swim SeriesAll (Bullfrog store) or 2020 on (Leisure Time)Simplicity flat filters 10-00814Bullfrog store; Leisure Time
+CALM Series2026 and later10-05338 (drop-in filter)Bullfrog store; Charlottesville dealer
+
+## Threaded or coreless: how to tell in ten seconds
+
+Lift out the cartridge. If a plastic cage stays in the spa and the pleated sleeve slides off it, you have the coreless system (10-00282 or 10-00281). If the whole cartridge unscrews as one piece with a handle on top, it is a threaded cartridge (10-2870 or older). For A (2022 and earlier), R, X and STIL spas, Bullfrog’s filter-care article describes removal as turning the filter-core cap counter-clockwise and sliding the cartridge up off the core. A flat, rectangular filter is a Simplicity filter.
+
+## Where the sources disagree
+
+- When coreless started. Bullfrog’s store and Leisure Time say 2018. Pleatco labels both coreless cross-references (PBF40, PBF17) “2017–Current”, and labels the threaded PBF36 “2013–2017”. Bullfrog’s store limits the original 10-2870 to 2013–2016, while its cage-assembly page offers the conversion for 2013–2017 spas. For a 2017 spa, look at what is installed.
+
+- R Series end year. Bullfrog’s 10-00416 page says R Series 2018 and later; Leisure Time and Southern Leisure Spas say R Series 2018–2022.
+
+- Coreless in pre-2013 spas. The Charlottesville dealer lists 10-00282 for “All 2003–2012 except STIL” when used with the 10-00417 cage, and Hot Tub Outpost says 2002 and newer except STIL. Bullfrog’s own cage page only claims 2013 and newer. If your spa is older than 2013, ask a dealer before buying the cage.
+
+- Size and rating of the coreless filters. 10-00282: 7-3/4" × 5-3/4" and 50 sq ft (Leisure Time) vs 8" × 6-1/4" (Pleatco, Southern Leisure, Hot Tub Outpost) and 30 sq ft for Pleatco’s PBF40. 10-00281: about 27 sq ft (Leisure Time) vs 18 sq ft (Pleatco PBF17).
+
+- Rating of the threaded cartridges. The Charlottesville dealer and Filbur call 10-1035 a 35 sq ft cartridge, and Unicel notes the original is 35 sq ft, but Unicel rates its own 8CH-950 at 50. Unicel’s 8CH-951 (for 10-2870) appears as 50 sq ft in the Bullfrog listing and 40 in the spec table.
+
+- Is 10-2870 for 2003 on? The Charlottesville dealer describes 10-2870 as “2003–Present except STIL” because it replaces 10-2785; Bullfrog’s store describes it as the original cartridge for 2013–2016 A/R/X spas.
+
+## Known limits
+
+- No source we found gives dimensions for 10-1085, 10-1086, 10-3430, the Simplicity filters or the CALM filter, and none of the three aftermarket catalogs lists them.
+
+- No catalog lists an aftermarket version of the Simplicity or CALM filters.
+
+- The 10-1035 is listed by Unicel and Filbur, but no source we found says which years it was fitted.
+
+## How to confirm yours
+
+- Read the number on the old cartridge’s end cap or label and search it here.
+- No number? Measure diameter and length (our filter-size guide shows how). A threaded 8" × about 6" cartridge is the 10-2870/10-2785 family; a coreless 8" sleeve is 10-00282; a coreless sleeve under 7" is the STIL 10-00281.
+- Bullfrog’s care article says to clean pleated cartridges every 3–6 weeks and replace them every 1–2 years; see also how often to clean a hot tub filter.
+
+## Which filter does my Master Spas hot tub or swim spa take? Lookup by series and year
+
+URL: https://myspafilter.com/fitment/master-spas-filter-by-model-year/
+Last updated: 2026-10-27
+
+Master Spas filter part numbers by series and year: X268546, X268532 EcoPur Charge, X268543, X268548, X268549, X268550, X268542 and the 2025 X268566/X268567/X268560 platform, with Unicel, Pleatco and Filbur equivalents and where sources disagree.
+
+Most Master Spas from 2004 to 2024 use a pleated outer cartridge around an X268532 EcoPur Charge core, and the outer depends on the series: X268546 for Twilight and Legend (3-filter models add a standalone X268543), X268548 for Healthy Living, Clarity, Balance and Precision and the TS 120/240, X268550 for Getaway, and X268549 plus a standalone X268542 for H2X and Michael Phelps swim spas. 2025 and newer models moved to new cartridges (X268566, X268567, X268560, X268568, X268569) that do not swap with the older ones. 1996–2001 Legend and Down East spas use the single 70 sq ft X268500.
+
+## Find your series and year
+
+Rows are from the filter guide kept by Suntek Pools & Spas, a Master Spas dealer (masterspapartsonline.com; its chart says it was last updated 22 July 2026), condensed to one line per series and period. Where a second dealer, masterspaparts.com, says something different, it is in the next section. “+” means the parts are used together in one filter well.
+
+Series / modelsYearsFilters
+Twilight Series except TS 120/240 (TS 6.2, 7.2, 7.25, 8.2, 8.25, 8.3, 87.3 and others)2009–2024 (2009–2010 TS x.1 and x.15 models were documented without the EcoPur insert)X268546 + X268532 EcoPur Charge + X268543
+Twilight TS 120 / TS 2402010–2024X268548 + X268532 EcoPur Charge (some 2010–2014 units used the 13" X268553 instead)
+Twilight Series, 3-filter models (2025 “Heritage” models on the old platform keep the 2017–2024 set)2025 onX268566 + X268532 EcoPur Charge + X268560
+Twilight Series, 2-filter models2025 onX268567 + X268532 EcoPur Charge
+Twilight TS 240X2025 onX268568 + X268532 EcoPur Charge
+Legend (early)1996–2000X268500 (single 70 sq ft)
+Legend2001–2003X268057 old-style Eco-Pur + pleated outer (outer number varies)
+Legend LSX2004–2013Usually two wells, each X268546 + X268532 EcoPur Charge
+Legend LSX2014–2024X268546 + X268532 EcoPur Charge + X268543
+MP Legend2025 onX268566 or X268567 + X268532 EcoPur Charge + X268560
+Healthy Living (HL7, HL 7.5, HL8, HL 8.5, HL 628 and others)2013–2021X268548 + X268532 EcoPur Charge
+Clarity CLS 524 / 730 / 738 / 855 / 10552013–2015X268548 + X268532 EcoPur Charge
+Clarity CLS 360 / 4152013–2015Not confirmed by the dealer (X268521 is “likely” for the CLS 415)
+Balance and Precision2016–2024X268548 + X268532 EcoPur Charge
+Clarity (Balance, Precision)2025 onX268568 + X268532 EcoPur Charge (see the change-over note below)
+Getaway San Miguel, Ocho Rios, Bar Harbor2017–2024X268550 + X268532 EcoPur Charge
+Getaway2025 onX268569 + X268532 EcoPur Charge
+Down East1996–2001X268500 (1996–2000; some 1999–2001 spas used the 5" X268201, 25 sq ft, now discontinued)
+Down East2002–2003 / 2004–2013X268057 old-style / X268546 + X268532 EcoPur Charge
+Down East Somerset, East Hampton2010–2012X268548 + X268532 EcoPur Charge
+H2X swim spas (all)2006–2016X268549 + X268532 EcoPur Charge + X268542
+H2X Trainer 122017–2024X268542 only (×1)
+H2X Trainer 15/15D/18/18D, Challenger 15D/18D2017–2024Two each of X268549, X268532 and X268542
+H2X Trainer 19/19D, Challenger 19D2017–2024Seven-filter system: 2 × X268549, 2 × X268532, 3 × X268542
+H2X Trainer 15/15D/19/19D, Challenger 15D/19D; 19D MAX, 21, 21D2025 onX268566 + X268532 EcoPur Charge + X268560
+H2X Trainer 12, 18D, Challenger 18D2025 onUnchanged: X268549 + X268532 + X268542
+H2X Therapool SE / D2017–2024 / 2025 onX268546 + X268532 + X268543 / X268566 + X268532 + X268560
+H2X Therapool 13 / 152019 onX268548 + X268532 EcoPur Charge + X268554
+Michael Phelps swim spas2011–2016X268549 + X268532 + X268542; 2017–2024 Force/Signature use a 4-filter set, Momentum a 7-filter set of the same parts; 2025 models kept them
+Legacy (Whirlpool, Intrepid, Inspire, Enterprise, 730L, Acclaim)2023X268546 + X268532 EcoPur Charge
+Older Legacy and FreedomYears not givenX268080 (some use X268300 or X268526)
+Contractor SeriesUp to 2011 / 2012X268519 (now X268558) / X268554; CS 415: X268521
+Instinct2025 / 2026X268554 / X268563
+
+## Where the sources disagree
+
+- 2025–2026 Clarity. The Suntek chart lists X268568. Suntek’s own X268566 listing says Clarity spas made on or after 15 April 2026 take X268566 and earlier 2025 models X268568. Masterspaparts.com says Master Spas changed the Clarity filter during 2026 and associates X268569 with “updated Clarity and Getaway” lines. Check the cartridge before ordering.
+
+- 2025 H2X swim spas. Suntek lists X268566 + X268532 + X268560 for most 2025 H2X models (and notes that the factory store lists X268559 for “most 2025 H2X”). Masterspaparts.com gives X268559 for most H2X swim spas.
+
+- X268572. Suntek treats it as a late-production stamping of X268560. Masterspaparts.com presents it as the cartridge for most 2025 Twilight, MP Legend, Living Healthy and many H2X models.
+
+- X268568. Masterspaparts.com says it is exclusively for the TS 240; Suntek also lists it for 2025 Clarity.
+
+- Old-style Eco-Pur years. Pleatco labels PMA10 (X268057) “Eco-pur replacement 2004 and later”; Suntek puts X268057 in 2001–2003 spas and the black-standpipe X268546 set from 2004. Unicel splits its Eco-Pur outer cartridges as C-7330 for 2002–2005 and C-8341 (two required) for 2006 on.
+
+- X268546 size. Unicel’s 6CH-352 is 6" × 8"; Suntek lists the factory part at 6.5" × 7.75". Unicel says to remove the black standpipe when using 6CH-352.
+
+- Healthy Living years. Suntek lists 2013–2016 and 2017–2021, and notes the factory tables show 2018–2020.
+
+## Known limits
+
+- None of the three aftermarket catalogs lists X268548, X268549, X268550 or any 2025-platform part by number, and Suntek says there is no aftermarket EcoPur Charge.
+
+- Suntek marks several lines as “confirm with serial”: Clarity CLS 360/415 (2013–2015), Getaway Caribbean (2014–2016), Living Healthy L5–S7 (2025 on) and Michael Phelps Xtreme. We do not list a filter for them. For the LH line, Suntek reports that Master Spas’ official part finder shows a single cartridge, X268543 for 2023–2024 LH6/LH7 and X268560 for 2025–2026 LH6/LH7.
+
+- Sizes for X268546 to X268569 come from one dealer’s listings; Master Spas publishes no public spec sheet that we found.
+
+## How to confirm yours
+
+- Read the X2685xx number on the old cartridge and search it here.
+- Use the serial number. Per Suntek, on most spas built since 2009 the first two digits are the model year (22… = 2022); Getaway serials start with R, swim spas with H, and spas built before 2009 start with M.
+- 2025 cartridges do not fit older housings. Suntek says adapters X251168 and X251169 exist to retrofit 2025 filters into earlier spas.
+- Citing Master Spas’ owner’s manuals, Suntek suggests rinsing the pleated cartridges weekly, soaking them monthly, replacing them about every 12 months, and replacing the EcoPur Charge every 6 months. See also how often to clean a hot tub filter.

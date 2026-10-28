@@ -30,7 +30,6 @@ const ld = [
 ];
 ---
 <Base title={title} description={desc} jsonld={ld}>
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">Dataset</span></nav>
 <h1>Spa filter cartridge dataset</h1>
 <p>Every cartridge on MySpaFilter in one table: <strong>{filters.length}</strong> rows from <strong>{nBrands}</strong> spa brands, with OEM, Unicel, Pleatco and Filbur part numbers, diameter, length, fittings, filter area and the sources each row comes from. <strong>{nVer}</strong> rows are verified against the cited pages; the rest are marked unverified. Data last changed <time datetime={dataUpdated}>{nice(dataUpdated)}</time>.</p>
 <p>
