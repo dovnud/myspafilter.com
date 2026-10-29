@@ -15,7 +15,6 @@ const fmt=(r:any)=>r.fits.map((f:any)=>`${[...new Set(f.oems)].join(' or ')}: ${
 const colls=(p.collections as string[]).filter(c=>p.rows.some((r:any)=>r.collection===c));
 ---
 <Base title={`${p.title} | MySpaFilter`} description={p.desc} jsonld={ld} >
-<p class="crumbs"><a href="/">Home</a> › <a href={`/${p.brandSlug}/`}>{p.crumbBrand} filters</a></p>
 <article><h1>{p.h1}</h1>
 <p class="crumbs byline">Compiled by <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Reviewed <time datetime={D}>{dt}</time></p>
 <section class="card answer"><div class="kicker">Short answer</div><p style="font-size:1.12rem;margin:.4rem 0 0" set:html={p.answer} /></section>

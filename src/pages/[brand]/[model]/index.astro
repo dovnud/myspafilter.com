@@ -30,6 +30,26 @@ const shortNames = names.length ? names.map(n=>n.split(' ')[1]) : (f.label ? [f.
 if (!names.length && f.label) names.push(`${f.brand} ${f.label}`);
 const sq = sqftText(d);
 const oemTxt = oems.length ? `OEM ${oems.join(', ')}` : `the ${f.series} cartridge`;
+const leadBits = [
+  `${f.brand} ${f.model} is the spa filter cartridge this page cross-references.`,
+  oems.length ? `The OEM number is ${oems.join(' or ')}.` : `It is the ${f.series} cartridge.`,
+  [eq.unicel && `Unicel ${eq.unicel}`, eq.pleatco && `Pleatco ${eq.pleatco}`, eq.filbur && `Filbur ${eq.filbur}`].filter(Boolean).join(', ')
+    ? `Cited equivalents include ${[eq.unicel && `Unicel ${eq.unicel}`, eq.pleatco && `Pleatco ${eq.pleatco}`, eq.filbur && `Filbur ${eq.filbur}`].filter(Boolean).join(', ')}.`
+    : 'The cited catalogs do not list a full set of aftermarket numbers.',
+  `It measures ${d.diameterText} in diameter by ${d.lengthText} long${sq ? `, ${sq}` : ''}.`,
+  'Match both end fittings to the old cartridge before you order. Each number is tied to a source at the bottom of this page.',
+];
+const modelLead = (() => {
+  const wc = (s: string) => s.split(/\s+/).filter(Boolean);
+  let parts = [...leadBits];
+  while (wc(parts.join(' ')).length > 78 && parts.length > 3) parts.pop();
+  let text = parts.join(' ');
+  const pad = 'Confirm the part number on the old end cap as well as the diameter and length.';
+  if (wc(text).length < 40) text = `${text} ${pad}`;
+  const words = wc(text);
+  if (words.length > 78) text = words.slice(0, 78).join(' ').replace(/[,:;]$/, '') + '.';
+  return text;
+})();
 const pageTitle = `${f.brand} ${f.oem||pk} Spa Filter – ${shortNames.slice(0,2).join(' / ')} Replacement`;
 const dim = `${d.diameterText} diameter × ${d.lengthText} long${d.topCore?`, top: ${d.topCore}`:''}${d.bottomCore?`, bottom: ${d.bottomCore}`:''}${sq?`, ${sq}`:''}`;
 // Cross-reference entries: one per part number the cited catalogs treat as interchangeable. No offers, prices, ratings or reviews.
@@ -63,8 +83,8 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
   {"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:f.brand,item:new URL(`/${f.brandSlug}/`,site).href},{"@type":"ListItem",position:3,name:f.model,item:url}]}];
 ---
 <Base title={pageTitle} description={`${f.brand} ${oemTxt} hot tub filter cross-reference: ${names.join(', ')}. ${d.diameterText} × ${d.lengthText}${sq?`, ${sq}`:''}${fit.length?`, fits ${fit.length} listed model${fit.length>1?'s':''}`:''}, with cited sources.`} jsonld={ld} noindex={f.index===false}>
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href={`/${f.brandSlug}/`}>{f.brand}</a> › <span aria-current="page">{f.model}</span></nav>
 <h1>{f.brand} {f.oem?`OEM ${f.oem} `:''}spa filter ({pk!==f.oem ? pk : (f.label||pk)})</h1>
+<p>{modelLead}</p>
 <p>Listed for: {f.series}{f.status!=='verified' && <strong> — unverified</strong>}</p>
 <section class="card answer"><div class="cols"><div>
 <div class="kicker">Your replacement</div>
