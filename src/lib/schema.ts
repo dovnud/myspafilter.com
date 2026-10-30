@@ -4,7 +4,7 @@ export const ORG_ID = `${SITE}#organization`;
 export const EDITORIAL_ID = `${SITE}about/#editorial-team`;
 export const CONTACT_EMAIL = 'contact@myspafilter.com';
 /** Profiles that actually exist. The GitHub repo is the site's public source and data. Do not add a profile that does not exist. */
-export const SAME_AS = ['https://github.com/dovnud/myspafilter.com'];
+export const SAME_AS: string[] = [];
 export const logo = { '@type': 'ImageObject', url: `${SITE}logo.png`, width: 512, height: 512 };
 export const organization = { '@type': 'Organization', '@id': ORG_ID, name: 'MySpaFilter', url: SITE, logo, email: CONTACT_EMAIL, sameAs: SAME_AS,
   description: 'Independent hot tub and spa filter cross-reference: OEM, Unicel, Pleatco and Filbur part numbers matched with sizes and cited sources.' };

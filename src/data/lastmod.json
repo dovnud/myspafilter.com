@@ -120,7 +120,7 @@
  },
  "files": {
   "src/pages/index.astro": "2026-10-30",
-  "src/pages/about.astro": "2026-10-25",
+  "src/pages/about.astro": "2026-10-30",
   "src/pages/contact.astro": "2026-10-23",
   "src/pages/guide.astro": "2026-10-27",
   "src/pages/size/index.astro": "2026-10-27",
