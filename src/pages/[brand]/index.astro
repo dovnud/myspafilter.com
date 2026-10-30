@@ -5,6 +5,8 @@ import ProductPicks from '../../components/ProductPicks.astro';
 import { brandCopy } from '../../lib/brandcopy';
 import { brandDate } from '../../lib/lastmod';
 import { SITE, publisherRef } from '../../lib/schema';
+import HolidayCta from '../../components/HolidayCta.astro';
+import { holidayOnBrand } from '../../lib/holiday';
 export function getStaticPaths(){ return brands().map(b=>({params:{brand:b.slug},props:{b}})); }
 const { b } = Astro.props as any; const list = filters.filter(f=>f.brandSlug===b.slug);
 const nFit = list.filter(f=>(f.fitment||[]).length).length; const nFb = list.filter(f=>f.equivalents?.filbur).length;
@@ -52,6 +54,7 @@ const ld = [{"@context":"https://schema.org","@type":"CollectionPage","@id":`${u
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">{b.name}</span></nav><h1>{b.name} spa filters</h1>
 {copy.map(p=><p>{p}</p>)}
 <p>This page lists {list.length} {b.name} replacement cartridge{list.length>1?'s':''} from {srcTxt}{nFit?`, plus model and model-year fitment for ${nFit} of them (${models.size} hot tub models in total)`:''}. {hasCat ? `${nFb} ha${nFb===1?'s':'ve'} a Filbur number. ` : ''} Find your spa filter by the OEM part number on the end cap, or measure it and compare sizes below.</p>
+{holidayOnBrand(b.slug) && <HolidayCta />}
 <ul class="brand-cards">{list.map((f:any)=><li><a class="brand-card" href={modelHref(f)}><b>{f.oemAll||partLabel(f)}</b><small>{f.equivalents?.unicel||'—'} · {f.dimensions.diameterText} × {f.dimensions.lengthText}</small><span>See replacement →</span></a></li>)}</ul>
 <div class="tbl brand-table"><table><thead><tr><th>Cartridge</th><th>Unicel</th><th>Pleatco</th><th>Filbur</th><th>Size</th><th>Fits</th><th>Status</th></tr></thead><tbody>
 {list.map((f:any)=><tr><td><a href={modelHref(f)}>{f.oemAll||partLabel(f)}</a>{!f.oemAll && <small> ({f.series})</small>}</td><td>{f.equivalents.unicel||'—'}</td><td>{f.equivalents.pleatco||'—'}</td><td>{f.equivalents.filbur||'—'}</td><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}{f.dimensions.sqft!=null ? `, ${f.dimensions.sqft} sq ft` : ''}</td><td>{(f.fitment||[]).length?`${f.fitment.length} model${f.fitment.length>1?'s':''}`:'—'}</td><td>{f.status==='verified'?<span class="badge">cited</span>:<span class="badge u">unverified</span>}</td></tr>)}</tbody></table></div>

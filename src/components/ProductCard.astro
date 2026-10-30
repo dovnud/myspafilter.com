@@ -1,0 +1,40 @@
+---
+import { outboundRel, type CompliantProductImage } from '../config/affiliate';
+interface Props {
+  name: string;
+  note?: string;
+  href: string;
+  button: string;
+  /** Only a PA-API or SiteStripe image that already passed asCompliantImage(). Omitted when none exists. */
+  image?: CompliantProductImage | null;
+}
+const { name, note, href, button, image = null } = Astro.props as Props;
+---
+<article class="product-card">
+  {image && (
+    <img
+      src={image.src}
+      alt={image.alt}
+      width={image.width}
+      height={image.height}
+      loading="lazy"
+      decoding="async"
+      data-image-source={image.source}
+    />
+  )}
+  <strong class="product-name">{name}</strong>
+  {note && <p class="why">{note}</p>}
+  <div class="buy">
+    <a class="btn" href={href} rel={outboundRel} target="_blank">{button}<span class="sr"> — {name} (opens in a new tab)</span></a>
+  </div>
+</article>
+<style>
+.product-card{display:flex;flex-direction:column;gap:.45rem;height:100%;margin:0;color:var(--fg);background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:1.05rem 1.15rem;box-shadow:var(--sh1)}
+.product-card img{width:100%;height:auto;border-radius:10px;background:var(--sand2);object-fit:contain}
+.product-card .product-name{font-family:var(--hd);font-weight:400;font-size:1.18rem;line-height:1.25;color:var(--ink)}
+.product-card .why{margin:0;font-size:.92rem;line-height:1.45;flex:1}
+.product-card .buy{margin-top:auto}
+.product-card .buy .btn{width:100%;justify-content:center;margin:.35rem 0 0}
+.answer .product-card{color:var(--fg)}
+.answer .product-card .why{color:var(--fg)}
+</style>

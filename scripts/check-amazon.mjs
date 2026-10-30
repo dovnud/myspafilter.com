@@ -87,6 +87,19 @@ if (!srcOnly) {
       const page = '/' + relative(dist, file).replace(/index\.html$/, '');
       const anchors = [...html.matchAll(/<a\b[^>]*>/gi)].map((m) => m[0]);
       const amz = anchors.filter((a) => /href=["']https?:\/\/(www\.)?amazon\.com\//i.test(a));
+      for (const img of [...html.matchAll(/<img\b[^>]*>/gi)].map((m) => m[0])) {
+        const src = (img.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || '';
+        const source = (img.match(/\bdata-image-source=["']([^"']+)["']/i) || [])[1] || '';
+        let host = '';
+        try { host = new URL(src, 'https://myspafilter.com').hostname; } catch { /* relative or empty */ }
+        const cdn = /(^|\.)(media-amazon\.com|ssl-images-amazon\.com|images-amazon\.com)$/.test(host);
+        const widget = host === 'ws-na.amazon-adsystem.com' || host === 'ws-eu.amazon-adsystem.com';
+        if (cdn && source !== 'pa-api') fail(`${page}: Amazon product-photo hotlink is not allowed (${src}). Use a PA-API image or leave the card without an image.`);
+        if (widget && source !== 'sitestripe') fail(`${page}: amazon-adsystem image without data-image-source="sitestripe" (${src})`);
+        if ((source === 'pa-api' || source === 'sitestripe') && !/\bloading=["']lazy["']/.test(img)) fail(`${page}: product image must set loading="lazy"`);
+        if (source && source !== 'pa-api' && source !== 'sitestripe') fail(`${page}: unknown data-image-source "${source}"`);
+      }
+      if (/url\(\s*['"]?https?:\/\/[^)'"]*(media-amazon\.com|ssl-images-amazon\.com|images-amazon\.com)/i.test(html)) fail(`${page}: CSS hotlinks an Amazon product image`);
       if (!amz.length) continue;
       stats.amazonPages++;
       if (/href=["']mailto:/i.test(html)) fail(`${page}: page with Amazon links contains a mailto: link`);

@@ -1,5 +1,6 @@
 ---
-import { products, productLink, searchLink, outboundRel } from '../config/affiliate';
+import { products, productLink, productImage, searchLink } from '../config/affiliate';
+import ProductCard from './ProductCard.astro';
 export type PickGroup = { h: string; intro?: string; keys?: string[]; search?: [label: string, query: string, why?: string][] };
 interface Props { groups: PickGroup[]; heading?: string; lead?: string; level?: 2 | 3; disclose?: boolean; id?: string }
 const { groups, heading, lead, disclose = true, id } = Astro.props as Props;
@@ -9,32 +10,27 @@ const hasSearch = groups.some((g) => (g.search?.length || 0) > 0);
 <section class="picks" data-picks id={id}>
   {heading && <h2>{heading}</h2>}
   {lead && <p set:html={lead} />}
-  {disclose && <p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. Links in this section go to Amazon.com and are affiliate links; they never change what we write, and the list is not ranked by commission. {hasDirect && <>Each “See on Amazon” link opens a specific listing whose title we checked, and the description under each name repeats only what that listing title says. </>}{hasSearch && <>Each “Search on Amazon” link opens an Amazon search for the part or product name shown, not a single listing we pre-checked. </>}Check size, quantity and your spa maker’s guidance before you buy. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</small></p>}
   {groups.map((g) => (
     <div class="pickgroup">
       <h3>{g.h}</h3>
       {g.intro && <p set:html={g.intro} />}
-      {g.keys && g.keys.length > 0 && (
-        <ul class="pickgrid">{g.keys.map((k) => { const p = products[k]; return (
-          <li class="card pick">
-            <strong>{p.name}</strong>
-            <p>{p.says}</p>
-            <a class="btn" href={productLink(k)} rel={outboundRel} target="_blank">See on Amazon<span class="sr"> — {p.name} (opens in a new tab)</span></a>
-          </li>); })}</ul>
-      )}
-      {g.search && g.search.length > 0 && (
-        <ul class="pickgrid">{g.search.map(([label, query, why]) => (
-          <li class="card pick">
-            <strong>{label}</strong>
-            {why && <p>{why}</p>}
-            <a class="btn" href={searchLink(query)} rel={outboundRel} target="_blank">Search on Amazon<span class="sr"> — {label} (opens in a new tab)</span></a>
-          </li>))}</ul>
-      )}
+      <ul class="pickgrid">
+        {g.keys?.map((k) => { const p = products[k]; return (
+          <li>
+            <ProductCard name={p.name} note={p.says} href={productLink(k)} button="Check price on Amazon" image={productImage(k)} />
+          </li>
+        ); })}
+        {g.search?.map(([label, query, why]) => (
+          <li>
+            <ProductCard name={label} note={why} href={searchLink(query)} button="Search on Amazon" />
+          </li>
+        ))}
+      </ul>
     </div>
   ))}
+  {disclose && <p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. Links in this section go to Amazon.com and are affiliate links; they never change what we write, and the list is not ranked by commission. {hasDirect && <>Each “Check price on Amazon” button opens a specific listing whose title we checked. The line under the name repeats only that title. There is no product photo unless Amazon provided one through the Product Advertising API or a SiteStripe image link. </>}{hasSearch && <>Each “Search on Amazon” button opens an Amazon search for the part or product name shown, not a single listing we pre-checked. </>}Check size, quantity and your spa maker’s guidance before you buy. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</small></p>}
 </section>
 <style>
 .picks{margin:1.6rem 0}.pickgrid{list-style:none;padding:0;margin:.6rem 0 1.2rem;display:grid;gap:.7rem;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr))}
-.pick{display:flex;flex-direction:column;gap:.35rem}.pick p{margin:0;font-size:.92rem;flex:1}.pick .btn{align-self:flex-start;margin-top:.3rem}
-.sr{position:absolute;left:-9999px}
+.pickgrid>li{margin:0;display:flex}.pickgrid>li>.product-card{flex:1}
 </style>

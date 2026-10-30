@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { guides } from '../../lib/guides';
 const by = (slug: string) => guides.find((g) => g.slug === slug)!;
 const sections: { h: string; blurb: string; slugs: string[] }[] = [
+  { h: 'Holiday 2026', blurb: 'Spare filters, chemicals and cover care before guests arrive, with the published Black Friday, Cyber Monday and carrier dates. No discount is invented here.', slugs: ['black-friday-hot-tub-filter-and-spa-care','gifts-for-hot-tub-owners-2026','winter-spa-care'] },
   { h: 'Test and balance your water', blurb: 'Start here. Know your numbers before you add anything: strips or kits, then pH, alkalinity and calcium in the order your spa maker gives.', slugs: ['best-hot-tub-test-strips', 'how-to-balance-hot-tub-ph-and-alkalinity'] },
   { h: 'Sanitize and shock', blurb: 'Bromine, chlorine and mineral systems compared against CDC and Hot Spring guidance, and how shocking works.', slugs: ['best-hot-tub-sanitizer-bromine-chlorine-mineral', 'hot-tub-shock-chlorine-vs-non-chlorine'] },
   { h: 'Fix water problems', blurb: 'Foam, cloudy water, stains and scale, with the causes Hot Spring lists before you reach for a bottle.', slugs: ['hot-tub-foam-cloudy-water-and-jet-cleaners', 'hot-tub-stain-scale-and-metal-control'] },

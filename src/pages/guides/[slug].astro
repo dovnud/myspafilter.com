@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ProductPicks from '../../components/ProductPicks.astro';
-import { products, productLink, searchLink, outboundRel } from '../../config/affiliate';
+import ProductCard from '../../components/ProductCard.astro';
+import { products, productLink, productImage, searchLink } from '../../config/affiliate';
 import { guides, SRC, REVIEWED } from '../../lib/guides';
 import { guidePublished } from '../../lib/lastmod';
 import { editorialTeam, publisherRef } from '../../lib/schema';
@@ -18,7 +19,10 @@ const RELATED: Record<string, string[]> = {
   'oem-vs-unicel-vs-pleatco-spa-filters': ['how-filbur-unicel-and-pleatco-numbers-compare','sundance-and-jacuzzi-look-alike-filters','why-same-size-spa-filters-have-different-square-feet'],
   'why-same-size-spa-filters-have-different-square-feet': ['open-end-vs-threaded-hot-tub-filters','how-filbur-unicel-and-pleatco-numbers-compare','sundance-and-jacuzzi-look-alike-filters'],
   'how-to-clean-a-hot-tub-filter': ['how-to-install-a-hot-tub-filter','clogged-or-missing-hot-tub-filter','spas-that-use-more-than-one-filter'],
-  'how-often-to-replace-hot-tub-filter': ['clogged-or-missing-hot-tub-filter','signs-your-hot-tub-filter-is-bad','spas-that-use-more-than-one-filter'],
+  'how-often-to-replace-hot-tub-filter': ['clogged-or-missing-hot-tub-filter','signs-your-hot-tub-filter-is-bad','spas-that-use-more-than-one-filter','black-friday-hot-tub-filter-and-spa-care','winter-spa-care'],
+  'hot-tub-cover-lifters-and-cover-care': ['winter-spa-care','gifts-for-hot-tub-owners-2026','black-friday-hot-tub-filter-and-spa-care'],
+  'hot-tub-chemical-safety-and-storage': ['winter-spa-care','black-friday-hot-tub-filter-and-spa-care','gifts-for-hot-tub-owners-2026'],
+  'best-hot-tub-test-strips': ['gifts-for-hot-tub-owners-2026','winter-spa-care','black-friday-hot-tub-filter-and-spa-care'],
   'signs-your-hot-tub-filter-is-bad': ['clogged-or-missing-hot-tub-filter','how-to-install-a-hot-tub-filter','hot-tub-flow-error-codes-and-your-filter'],
   'hot-tub-flow-error-codes-and-your-filter': ['clogged-or-missing-hot-tub-filter','how-to-install-a-hot-tub-filter','how-to-clean-a-hot-tub-filter'],
   'how-often-to-clean-hot-tub-filter': ['how-to-clean-a-hot-tub-filter','clogged-or-missing-hot-tub-filter','how-to-install-a-hot-tub-filter'],
@@ -33,9 +37,9 @@ for (const x of guides) { if (others.length >= 6) break; if (!seen.has(x.slug)) 
 const leadPick = (() => {
   for (const group of g.picks || []) {
     const key = group.keys?.find((k: string) => products[k]);
-    if (key) { const p = products[key]; return { kind: 'direct' as const, href: productLink(key), name: p.name, says: p.says }; }
+    if (key) { const p = products[key]; return { kind: 'direct' as const, key, href: productLink(key), name: p.name, says: p.says }; }
     const search = group.search?.[0];
-    if (search) { const [name, query, why] = search; return { kind: 'search' as const, href: searchLink(query), name, says: why || '' }; }
+    if (search) { const [name, query, why] = search; return { kind: 'search' as const, key: '', href: searchLink(query), name, says: why || '' }; }
   }
   return null;
 })();
@@ -45,7 +49,7 @@ const leadPick = (() => {
 <article><h1>{g.title}</h1>
 <p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={rev}>{revText}</time></p>
 <section class="card answer"><div class="kicker">Short answer</div><p style="font-size:1.12rem;margin:.4rem 0 0" set:html={g.answer} /></section>
-{leadPick && <section class="card quick-pick"><p><strong>One product this answer points to</strong></p><p><strong>{leadPick.name}</strong></p>{leadPick.says && <p>{leadPick.says}</p>}<div class="buy"><a class="btn" href={leadPick.href} rel={outboundRel} target="_blank">{leadPick.kind === 'direct' ? 'See on Amazon' : 'Search on Amazon'}<span class="sr"> — {leadPick.name} (opens in a new tab)</span></a></div><p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. {leadPick.kind === 'direct' ? 'See on Amazon opens a listing whose title we checked. The line under the name repeats only that title.' : 'Search on Amazon opens an Amazon search for this name, not one listing we pre-checked.'} See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</small></p><p><a href="#picks">Products we checked</a></p></section>}
+{leadPick && <section class="quick-pick"><p><strong>One product this answer points to</strong></p><ProductCard name={leadPick.name} note={leadPick.says} href={leadPick.href} button={leadPick.kind === 'direct' ? 'Check price on Amazon' : 'Search on Amazon'} image={leadPick.kind === 'direct' && leadPick.key ? productImage(leadPick.key) : null} /><p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. {leadPick.kind === 'direct' ? 'Check price on Amazon opens a listing whose title we checked. The line under the name repeats only that title.' : 'Search on Amazon opens an Amazon search for this name, not one listing we pre-checked.'} See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</small></p><p><a href="#picks">Products we checked</a></p></section>}
 <Fragment set:html={g.body} />
 {g.picks && <ProductPicks id="picks" groups={g.picks} heading={g.pickHeading || 'Products worth considering'} />}
 <h2 data-reveal>FAQ</h2>{g.faq.map(([q,a]:any)=><details class="card"><summary><strong>{q}</strong></summary><p>{a}</p></details>)}

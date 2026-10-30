@@ -119,20 +119,20 @@
   "intex/29012e": "2026-10-25"
  },
  "files": {
-  "src/pages/index.astro": "2026-10-28",
+  "src/pages/index.astro": "2026-10-30",
   "src/pages/about.astro": "2026-10-25",
   "src/pages/contact.astro": "2026-10-23",
   "src/pages/guide.astro": "2026-10-27",
-  "src/pages/size/index.astro": "2026-10-28",
-  "src/pages/supplies/index.astro": "2026-10-27",
-  "src/pages/guides/index.astro": "2026-10-27",
+  "src/pages/size/index.astro": "2026-10-27",
+  "src/pages/supplies/index.astro": "2026-10-30",
+  "src/pages/guides/index.astro": "2026-10-30",
   "src/pages/data/index.astro": "2026-10-25",
   "src/pages/affiliate-disclosure.astro": "2026-10-27",
   "src/pages/disclaimer.astro": "2026-10-27",
   "src/pages/privacy.astro": "2026-10-27",
   "src/pages/terms.astro": "2026-10-27",
   "src/lib/brandcopy.ts": "2026-10-25",
-  "src/lib/guides.ts": "2026-10-27",
+  "src/lib/guides.ts": "2026-10-30",
   "src/lib/guides2.ts": "2026-10-25"
  },
  "first": {
