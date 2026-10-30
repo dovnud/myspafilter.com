@@ -7,6 +7,8 @@ import { filters, slug, partLabel, fitSrc, sqftText, isIndexable, modelHref, typ
 import BuyLinks from '../../../components/BuyLinks.astro';
 import { rowDate } from '../../../lib/lastmod';
 import { SITE, publisherRef } from '../../../lib/schema';
+import HolidayCta from '../../../components/HolidayCta.astro';
+import { holidayOnCartridge } from '../../../lib/holiday';
 export function getStaticPaths(){ return filters.map(f=>({params:{brand:f.brandSlug,model:f.modelSlug},props:{f}})); }
 const { f } = Astro.props as { f: Filter };
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
@@ -77,6 +79,7 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
 <tr><th>Filbur</th><td>{eq.filbur ? <a href={`/filter/${slug(eq.filbur)}/`}>{eq.filbur}</a> : 'not found in Filbur catalog'}</td></tr>
 <tr><th>Top</th><td>{d.topCore||'—'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore||'—'}</td></tr></table>
 </div><Cartridge d={d} /></div></section>
+{holidayOnCartridge(f.brandSlug, f.modelSlug) && <HolidayCta />}
 <ProductPicks heading="Keep this cartridge clean and your water in range" lead={`Unicel and Pleatco say a spa cartridge needs a hose rinse and a degreasing soak of at least an hour to keep flowing. Our guides cover the <a href="/guides/how-to-clean-a-hot-tub-filter/">cleaning steps</a>, <a href="/guides/best-hot-tub-filter-cleaners/">filter cleaners</a> and <a href="/guides/best-hot-tub-test-strips/">test strips</a>; a few picks are below.`} groups={[{h:'Filter cleaner and test strips',keys:['lt-filter-clean-o','spaguard-filter-cleaner','aquachek-spa-6in1']}]} />
 {f.notes && <p><strong>Source note:</strong> {f.notes}</p>}
 {fit.length>0 && <>

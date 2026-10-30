@@ -154,6 +154,34 @@ export const outboundRel = 'sponsored nofollow noopener';
 // Every Amazon URL on the site is still built in this file, so the tag is a single setting above.
 // ---------------------------------------------------------------------------
 
+/**
+ * An image is allowed only when Amazon handed it to us.
+ * `pa-api` — URL returned by the Product Advertising API (Amazon image CDN).
+ * `sitestripe` — image URL inside an official SiteStripe text+image or image link (amazon-adsystem.com widget).
+ * Never a file we downloaded, a copied product photo, or a CDN address taken from a product page.
+ */
+export type CompliantProductImage = {
+  source: 'pa-api' | 'sitestripe';
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
+const SITESTRIPE_HOSTS = new Set(['ws-na.amazon-adsystem.com', 'ws-eu.amazon-adsystem.com']);
+
+/** Returns the image only when source and host match Amazon's allowed channels. Otherwise null (card renders with no image). */
+export function asCompliantImage(image: Partial<CompliantProductImage> | null | undefined): CompliantProductImage | null {
+  if (!image || (image.source !== 'pa-api' && image.source !== 'sitestripe')) return null;
+  if (!image.src || !image.alt || !image.width || !image.height) return null;
+  let url: URL;
+  try { url = new URL(image.src); } catch { return null; }
+  if (url.protocol !== 'https:') return null;
+  if (image.source === 'sitestripe' && !SITESTRIPE_HOSTS.has(url.hostname)) return null;
+  if (image.source === 'pa-api' && !/(^|\.)(media-amazon\.com|ssl-images-amazon\.com)$/.test(url.hostname)) return null;
+  return { source: image.source, src: image.src, alt: image.alt, width: image.width, height: image.height };
+}
+
 export type ProductRecord = {
   asin: string;
   /** Short display name we show on the page. */
@@ -169,9 +197,16 @@ export type ProductRecord = {
   titleSeen: string;
   verifiedDate: string;
   verifiedNote: string;
+  /** Optional. Set only from a PA-API response or a SiteStripe export. Absent means the card has no image. */
+  image?: CompliantProductImage;
 };
 
 export const products = (productData as { products: Record<string, ProductRecord> }).products;
+
+/** Compliant image for a verified product key, or null when we do not have one. */
+export function productImage(key: string): CompliantProductImage | null {
+  return asCompliantImage(products[key]?.image);
+}
 
 const withTag = (url: string, cfg = affiliate) => {
   if (!cfg.amazonTag) return url;

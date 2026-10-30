@@ -46,5 +46,11 @@ export const SRC: Record<string,{t:string;u:string}> = {
   ltBullfrog281:{t:'Leisure Time Inc. — Bullfrog STIL series 10-00281 filter cartridges',u:'https://leisuretimeinc.com/products/bullfrog-stil-series-10-00281-filter-cartridges'},
   ltC8327:{t:'Leisure Time Inc. — Unicel C-8327 filter cartridge',u:'https://leisuretimeinc.com/products/unicel-c-8327-filter-cartridge'},
   lt6ch945:{t:'Leisure Time Inc. — Unicel 6CH-945 filter cartridge (Jacuzzi J-460)',u:'https://leisuretimeinc.com/products/unicel-6ch-945-filter-cartridge'},
+  amazonBf:{t:'Amazon News — When is Black Friday 2026?',u:'https://www.aboutamazon.com/news/retail/when-is-amazon-black-friday-faq'},
+  nrfHoliday:{t:'National Retail Federation — Winter Holiday FAQs',u:'https://nrf.com/research-insights/holiday-data-and-trends/winter-holidays/winter-holiday-faqs'},
+  uspsHoliday:{t:'USPS — 2026 Holiday Shipping Deadlines',u:'https://www.usps.com/holiday/holiday-shipping-dates.htm'},
+  upsHoliday:{t:'UPS — 2026 U.S. Holiday Schedule',u:'https://www.ups.com/us/en/support/shipping-support/shipping-services/holiday-shipping-schedule'},
+  upsYearEnd:{t:'UPS — 2026 Year-End Holiday Schedule (recommended last days to ship)',u:'https://assets.ups.com/adobe/assets/urn:aaid:aem:e8548535-8096-4fa9-9cef-2b81aef7c26c/original/as/year-end-holiday-schedule-us-en.pdf'},
+  fedexHoliday:{t:'FedEx — Holiday schedule and last days to ship',u:'https://www.fedex.com/en-us/holiday/last-days-to-ship.html'},
 };
 export const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');

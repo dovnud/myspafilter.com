@@ -3,6 +3,8 @@ import Base from '../../layouts/Base.astro';
 import Sources from '../../components/Sources.astro';
 import { allParts } from '../../lib/data';
 import BuyLinks from '../../components/BuyLinks.astro';
+import HolidayCta from '../../components/HolidayCta.astro';
+import { holidayOnPart } from '../../lib/holiday';
 export function getStaticPaths(){ return [...allParts().entries()].map(([part,list])=>({params:{part},props:{list}})); }
 const { list } = Astro.props; const { part } = Astro.params;
 const label = part!.toUpperCase(); const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
@@ -10,6 +12,7 @@ const ld=[{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElem
 ---
 <Base title={`${label} Spa Filter Equivalents – Hot Tub Filter Cross Reference`} description={`Cross-reference for spa filter / hot tub filter part ${label}: OEM, Unicel, Pleatco and Filbur equivalents.`} jsonld={ld} noindex>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">{label}</span></nav><h1>{label} spa filter equivalents</h1><p>Part number {label} appears in {list.length} cited cross-reference row{list.length>1?'s':''} below. Each row lists the OEM, Unicel and Pleatco numbers that the source documents treat as interchangeable, plus the cartridge size so you can confirm against your old filter.</p>
+{holidayOnPart(part!, list) && <HolidayCta />}
 {list.map((f:any)=>(<section class="card answer"><p><strong>{f.brand} {f.model}</strong> — {f.dimensions.diameterText} × {f.dimensions.lengthText}{f.dimensions.sqft!=null ? `, ${f.dimensions.sqft} sq ft` : ''}. Unicel {f.equivalents?.unicel||'—'}, Pleatco {f.equivalents?.pleatco||'—'}.</p>
 <BuyLinks filter={f} />
 <table>

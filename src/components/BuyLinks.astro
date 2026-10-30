@@ -1,5 +1,6 @@
 ---
-import { cartridgeBuyLinks, outboundRel, type RetailerLink } from '../config/affiliate';
+import { cartridgeBuyLinks, type RetailerLink } from '../config/affiliate';
+import ProductCard from './ProductCard.astro';
 interface CartridgeRef {
   searchTerm?: string;
   oem?: string;
@@ -12,22 +13,28 @@ const links = cartridgeBuyLinks(filter);
 const directs = links.filter((r) => r.id === 'amazon' && r.direct && r.listing);
 const hasSearch = links.some((r) => r.id === 'amazon' && !r.direct);
 const others = links.filter((r) => r.id !== 'amazon');
-const label = (r: RetailerLink) => {
-  if (r.id !== 'amazon') return `Search ${r.name}`;
-  if (!r.direct) return 'Search on Amazon';
-  return directs.length > 1 && r.listing ? `See ${r.listing} on Amazon` : 'See on Amazon';
+const card = (r: RetailerLink) => {
+  if (r.id === 'amazon' && r.direct && r.listing) {
+    return { name: r.listing, note: 'Listing we opened and checked. Match the diameter, length and both fittings on this page before you order. The price is on Amazon; we do not print one.', button: 'Check price on Amazon' };
+  }
+  if (r.id === 'amazon') {
+    return { name: 'Search this part on Amazon', note: 'Opens an Amazon search for this part number, not one listing we pre-checked.', button: 'Search on Amazon' };
+  }
+  return { name: `Search ${r.name}`, note: `Opens a ${r.name} search for this part number. No program image is attached.`, button: `Search ${r.name}` };
 };
 ---
 {links.length > 0 && (
   <>
-    <div class="buy">
-      {links.map((r) => (
-        <a class="btn" href={r.href} rel={outboundRel} target="_blank">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 4h2l2.4 11h11l2-8H6.2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
-          {label(r)}<span class="sr"> ({r.listing || r.name}, opens in a new tab)</span>
-        </a>
-      ))}
-    </div>
-    <p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. {directs.length === 1 && <>See on Amazon opens the {directs[0].listing} listing we checked. </>}{directs.length > 1 && <>Each See on Amazon button opens the listing named on that button, which we checked. </>}{hasSearch && <>Search on Amazon opens an Amazon search for this part number, not one listing we pre-checked. </>}{others.length > 0 && <>{others.map((r) => r.name).join(' and ')} {others.length > 1 ? 'open' : 'opens'} a retailer search. </>}These are affiliate links. See the <a href="/affiliate-disclosure/">affiliate disclosure</a>. Verify dimensions before ordering.</small></p>
+    <ul class="buy-cards">
+      {links.map((r) => {
+        const c = card(r);
+        return <li><ProductCard name={c.name} note={c.note} href={r.href} button={c.button} /></li>;
+      })}
+    </ul>
+    <p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. {directs.length === 1 && <>Check price on Amazon opens the {directs[0].listing} listing we checked. </>}{directs.length > 1 && <>Each Check price on Amazon button opens the listing named on that card, which we checked. </>}{hasSearch && <>Search on Amazon opens an Amazon search for this part number, not one listing we pre-checked. </>}{others.length > 0 && <>{others.map((r) => r.name).join(' and ')} {others.length > 1 ? 'open' : 'opens'} a retailer search. </>}These are affiliate links. Product photos are omitted unless Amazon supplied one through the Product Advertising API or a SiteStripe image link. See the <a href="/affiliate-disclosure/">affiliate disclosure</a>. Verify dimensions before ordering.</small></p>
   </>
 )}
+<style>
+.buy-cards{list-style:none;padding:0;margin:.8rem 0 0;display:grid;gap:.7rem;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr))}
+.buy-cards>li{margin:0;display:flex}.buy-cards>li>.product-card{flex:1}
+</style>
