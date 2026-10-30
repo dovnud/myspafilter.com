@@ -4848,7 +4848,7 @@
    },
    "notes": "Pleatco 2023 lists OEM 20042, 370-0242 and 370-0243 for PPM35SC-F2M; Filbur lists OEM 370-0242 for FC-0196 and prints N/A in its Pleatco column.",
    "status": "verified",
-   "gaps": "no model-year fitment in sources",
+   "gaps": "Marquis's 2001 and 2002 owner's manuals name a single #5040 50 sq ft cartridge for all 2000-and-later spas, which does not match the finder's 35/50 split",
    "fitment": [
     {
      "model": "Pacific Marquis Spas",
@@ -4861,6 +4861,36 @@
      "years": "",
      "note": "same Pleatco row",
      "src": "pleatco"
+    },
+    {
+     "model": "Marquis Signature Series",
+     "years": "2000–2021",
+     "note": "threaded 35 sq ft, part 20092",
+     "src": "marquis"
+    },
+    {
+     "model": "Marquis Vector21",
+     "years": "2016 and newer",
+     "note": "threaded 35 sq ft, part 20092",
+     "src": "marquis"
+    },
+    {
+     "model": "Marquis Elite: Nashville Elite",
+     "years": "2020 and newer",
+     "note": "threaded 35 sq ft, part 20042",
+     "src": "marquis"
+    },
+    {
+     "model": "Marquis Celebrity Series: Nashville Elite",
+     "years": "2018–2019",
+     "note": "threaded 35 sq ft, part 20042",
+     "src": "marquis"
+    },
+    {
+     "model": "Marquis Celebrity hot tubs",
+     "years": "2019 and newer",
+     "note": "threaded 35 sq ft, part 20042",
+     "src": "marquis"
     }
    ],
    "pleatcoNote": "",
@@ -4881,6 +4911,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.42 (PDF p.22)"
+    },
+    {
+     "source": "Marquis Spas (manufacturer filter finder)",
+     "url": "https://www.marquisspas.com/options-and-accessories/hot-tub-filters",
+     "where": "Filter Finder (series, model years, slip-on/threaded, sq ft, part number): 20092 threaded 35 for Signature 2000–2021 and Vector21 2016 and newer; 20042 threaded 35 for Nashville Elite (2018 on) and Celebrity 2019 and newer"
     }
    ]
   },
@@ -4908,7 +4943,7 @@
    },
    "notes": "Unicel notes this part number was formerly C-5303, and also lists the cartridge under Cal Spas. Filbur prints the Pleatco number as PPM350SC-F2M; Pleatco's own catalog and its Filbur-to-Pleatco table give PPM50SC-F2M, which is what is shown here.",
    "status": "verified",
-   "gaps": "no model-year fitment in sources",
+   "gaps": "Marquis's 2001 and 2002 owner's manuals name a single #5040 50 sq ft cartridge for all 2000-and-later spas",
    "fitment": [
     {
      "model": "Pacific Marquis Spas",
@@ -4921,6 +4956,12 @@
      "years": "",
      "note": "same Pleatco row",
      "src": "pleatco"
+    },
+    {
+     "model": "Marquis Signature Series",
+     "years": "2000–2021",
+     "note": "threaded 50 sq ft, part 20091",
+     "src": "marquis"
     }
    ],
    "pleatcoNote": "",
@@ -4941,6 +4982,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.42 (PDF p.22)"
+    },
+    {
+     "source": "Marquis Spas (manufacturer filter finder)",
+     "url": "https://www.marquisspas.com/options-and-accessories/hot-tub-filters",
+     "where": "Filter Finder (series, model years, slip-on/threaded, sq ft, part number): 20091 threaded 50 for Signature Series 2000–2021"
     }
    ]
   },
@@ -4968,8 +5014,15 @@
    },
    "notes": "Closed-top cartridge. Unicel's spec table rates it 34 sq ft and notes the original was 25 sq ft (115 pleats), upgraded to 35 sq ft in the replacement. Unicel lists OEM 370-0215; Filbur prints 370-215.",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "Unicel notes the original 20045 was a 25 sq ft cartridge, while Marquis's finder calls it 35 sq ft",
+   "fitment": [
+    {
+     "model": "Marquis Signature Series",
+     "years": "Pre-1997",
+     "note": "slip-on 35 sq ft, part 20045",
+     "src": "marquis"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Marquis Spas section (printed p.42); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
    "index": true,
@@ -4983,6 +5036,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.42 (PDF p.22)"
+    },
+    {
+     "source": "Marquis Spas (manufacturer filter finder)",
+     "url": "https://www.marquisspas.com/options-and-accessories/hot-tub-filters",
+     "where": "Filter Finder (series, model years, slip-on/threaded, sq ft, part number): Signature Series pre-1997, slip-on 35, 20045"
     }
    ]
   },
@@ -5050,13 +5108,20 @@
     "bottomCore": "1-5/8\" / open",
     "sqft": 50.0
    },
-   "notes": "Closed-top cartridge, old style. Unicel lists OEM 20044 and 370-0236 for it, but Filbur prints a different Marquis number, 370-217, for the same 5-3/16\" x 14-1/8\" closed-top size (FC-3638, PPM50TC), so the OEM mapping needs checking.",
-   "status": "needs_verification",
-   "gaps": "OEM number differs between Unicel (370-0236) and Filbur (370-217); Filbur prints Marquis numbers in short form elsewhere (370-215, 370-216 where Unicel prints 370-0215, 370-0216), so 370-217 is probably 370-0217, still a different number; no second source found; no model/model-year fitment in sources",
-   "fitment": [],
+   "notes": "Closed-top slip-on cartridge, old style. Marquis's own filter finder lists 20044 as the slip-on 50 sq ft filter for 1997–1999 Signature Series spas, which matches Unicel's C-5346 (5-3/16\" x 14-1/8\", closed top, 1-5/8\" open bottom, 50 sq ft) and Filbur's FC-3638 of the same size. The second factory number still differs: Unicel lists 370-0236, while Filbur prints 370-217 for the same size.",
+   "status": "verified",
+   "gaps": "alternate OEM number differs between Unicel (370-0236) and Filbur (370-217); Marquis's finder gives 20044 only and no dimensions",
+   "fitment": [
+    {
+     "model": "Marquis Signature Series",
+     "years": "1997–1999",
+     "note": "slip-on 50 sq ft, part 20044",
+     "src": "marquis"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Marquis Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
-   "index": false,
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
@@ -5067,6 +5132,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Marquis Spas, printed p.43 (PDF p.22)"
+    },
+    {
+     "source": "Marquis Spas (manufacturer filter finder)",
+     "url": "https://www.marquisspas.com/options-and-accessories/hot-tub-filters",
+     "where": "Filter Finder (series, model years, slip-on/threaded, sq ft, part number): Signature Series 1997–1999, slip-on 50, 20044"
     }
    ]
   },
@@ -5090,18 +5160,52 @@
     "bottomCore": "2” male thread/MPT",
     "sqft": 50.0
    },
-   "notes": "Only the Unicel 2026 guide lists this cartridge for Marquis; no Pleatco or Filbur entry was found.",
-   "status": "needs_verification",
-   "gaps": "single source (Unicel only); no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
-   "fitment": [],
+   "notes": "Marquis's own filter finder lists part 20690 as the threaded 50 sq ft filter for Crown Series spas from 2021, Elite models (Woodstock, Vegas, Hollywood, Broadway, Monaco Elite) from 2020, and the same Elite models in the 2018–2019 Celebrity Series. Two Marquis parts dealers describe 20690 as 5-3/16\" x 16\" with a handle top and 2\" MPT thread, 50 sq ft, which matches Unicel's 5CH-512; they describe it as used on Celebrity Elite and V150 models rather than naming Crown. Marquis's 2026 Crown owner's manual describes a single 35 sq ft cartridge, which does not match the finder's 50 sq ft 20690 for Crown; see our Marquis model-year page.",
+   "status": "verified",
+   "gaps": "no Pleatco or Filbur equivalent found in either catalog; 2026 Crown owner's manual describes a 35 sq ft filter, not the finder's 50 sq ft 20690",
+   "fitment": [
+    {
+     "model": "Marquis Crown Series",
+     "years": "2021 and newer",
+     "note": "threaded 50 sq ft",
+     "src": "marquis"
+    },
+    {
+     "model": "Marquis Elite: Woodstock, Vegas, Hollywood, Broadway, Monaco Elite",
+     "years": "2020 and newer",
+     "note": "threaded 50 sq ft",
+     "src": "marquis"
+    },
+    {
+     "model": "Marquis Celebrity Series Elite models: Woodstock, Vegas, Hollywood, Broadway, Monaco Elite",
+     "years": "2018–2019",
+     "note": "threaded 50 sq ft",
+     "src": "marquis"
+    }
+   ],
    "pleatcoNote": "",
    "filburNote": "",
-   "index": false,
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
      "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Marquis Spas (manufacturer filter finder)",
+     "url": "https://www.marquisspas.com/options-and-accessories/hot-tub-filters",
+     "where": "Filter Finder (series, model years, slip-on/threaded, sq ft, part number): Crown Series 2021 and newer, threaded 50, 20690; Elite 2020 and newer and Celebrity Series Elite 2018–2019, threaded 50, 20690"
+    },
+    {
+     "source": "Canada Hot Tub Parts (Marquis parts dealer)",
+     "url": "https://canadahottubparts.ca/marquis-spa-filter-20690/",
+     "where": "Marquis 20690: 5-3/16\" x 16\", handle top, 2\" threaded MPT, 50 sq ft; for Celebrity Elite and V150 Select models"
+    },
+    {
+     "source": "Hot Spring Supply (retailer)",
+     "url": "https://hotspringsupply.com/products/marquis-crown-collection-2021-threaded-50-sq-ft-filter",
+     "where": "Marquis Crown Collection 2021 threaded 50 sq ft filter 20690: 5-3/16\" x 16\", handle, 2\" MPT; used on some Celebrity Elite and V150 models"
     }
    ]
   },
@@ -5248,8 +5352,27 @@
    },
    "notes": "Unicel's spec table rates 4CH-30 at 30 sq ft (4 oz media); its OEM cross reference and Filbur both give 25 sq ft for the Dimension One part, which is the figure shown.",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Dimension One Legend",
+     "years": "1996",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One SRX, Impulse, Duet",
+     "years": "1991 and 1993",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One Little Dipper",
+     "years": "1994–1995",
+     "note": "",
+     "src": "hto"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
    "index": true,
@@ -5263,6 +5386,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-30-square-foot-spa-filter-01561-14/",
+     "where": "01561-14: 4-3/4\" OD x 11-7/8\", handle, 1-1/2\" MPT fine thread; 1996 Legend, 1991 and 1993 SRX/Impulse/Duet, 1994–1995 Little Dipper; replaces Unicel 4CH-30, Filbur FC-0141, Pleatco PTL25P-4"
     }
    ]
   },
@@ -5290,8 +5418,27 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Dimension One Legend, Californian, Ambassador, Chancellor",
+     "years": "1991",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One Californian, Challenger, Legend 1500 Series",
+     "years": "1992",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One Arena",
+     "years": "1993",
+     "note": "",
+     "src": "hto"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
    "index": true,
@@ -5305,6 +5452,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-50-square-foot-spa-filter-01561-05/",
+     "where": "01561-05: 4-3/4\" x 14-3/4\", handle, 1-1/2\" MPT fine thread; 1991 Legend/Californian/Ambassador/Chancellor, 1992 Californian/Challenger/Legend 1500 Series, 1993 Arena; replaces Unicel 4CH-50, Filbur FC-0151"
     }
    ]
   },
@@ -5328,9 +5480,9 @@
     "bottomCore": "1-1/2” male thread/MPT",
     "sqft": 65.0
    },
-   "notes": "Unicel lists this one cartridge against OEM 1561-06 (65 sq ft) and 1561-07 (80 sq ft) and notes the original was 23-3/4\" overall length. Only Unicel lists it for Dimension One.",
-   "status": "needs_verification",
-   "gaps": "single source (Unicel only); no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
+   "notes": "Unicel lists both 1561-06 (65 sq ft) and 1561-07 (80 sq ft) against 4CH-65 and notes the original was 23-3/4\" overall. Two retailers (SpaStore and Hot Tub Outpost) tie OEM 1561-06 and 1561-07 to Unicel 4CH-65 at 4-5/8\" x 19-5/8\" with a handle top and 1-1/2\" MPT bottom, 65 sq ft. They also name Pleatco PTL65H-P4 / PTL65 and Filbur FC-0171, but neither number appears in the Pleatco 2023 or Filbur catalogs, so they are not shown as equivalents.",
+   "status": "verified",
+   "gaps": "no Pleatco or Filbur equivalent in either catalog; 1561-07 (80 sq ft) maps to a 65 sq ft replacement; no model/model-year fitment in sources",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -5340,6 +5492,16 @@
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
      "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.7 (printed p.3)"
+    },
+    {
+     "source": "SpaStore.com (retailer)",
+     "url": "https://www.spastore.com/spa-filter-baleen-ak-9008-oem-1561-06-1561-07-pleatco-ptl65h-p4-unicel-4ch-65-filbur-fc-0171/",
+     "where": "AK-9008: OEM 1561-06, 1561-07; Unicel 4CH-65; Pleatco PTL65H-P4; Filbur FC-0171; 4-5/8\" x 19-5/8\", handle, 1-1/2\" MPT, 65 sq ft"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer)",
+     "url": "https://www.hottuboutpost.com/ak-9008-dimension-one-spa-filter-ptl65-h-4ch-65-d1/",
+     "where": "AK-9008 for Dimension One: lists 1561-06, 4CH-65, FC-0171, PTL65; 4-5/8\" x 19-5/8\", 1-1/2\" MPT, molded cone handle, 65 sq ft"
     }
    ]
   },
@@ -5409,8 +5571,21 @@
    },
    "notes": "Unicel gives the length as 12\"; Filbur's table prints 11-7/8\" (and \"4-5/8 x 12\" in its description) for FC-0173.",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Dimension One Little Dipper",
+     "years": "1996–1998",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One El Nino",
+     "years": "1991",
+     "note": "",
+     "src": "hto"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
    "index": true,
@@ -5424,6 +5599,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-25-square-foot-spa-filter-01561-04/",
+     "where": "01561-04: 4.62\" x 11.50\", handle, 1-1/4\" SAE coarse thread; 1996–1998 Little Dipper, 1991 El Nino, also Saratoga Spas"
     }
    ]
   },
@@ -5445,20 +5625,48 @@
     "lengthText": "10-1/2\"",
     "topCore": "semi-circular handle",
     "bottomCore": "2” male thread/MPT",
-    "sqft": 75.0
+    "sqft": 52.0
    },
-   "notes": "Only the Unicel 2026 guide lists this cartridge for Dimension One (2\" male thread / MPT bottom).",
-   "status": "needs_verification",
-   "gaps": "single source (Unicel only); no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
-   "fitment": [],
+   "notes": "Unicel's Dimension One cross reference rates 1561-10 / 7CH-552 at 75 sq ft, but Unicel's own spec table rates 7CH-552 at 52 sq ft (7\" x 10-1/2\", 2\" MPT, semi-circular handle), and both retailer listings (Hot Tub Outpost and SpaStore) give 52 sq ft at 7\" x 10-1/2\" with a 2\" MPT bottom; 52 is shown. Both retailers name Pleatco PTL55XW-F2M and Filbur FC-0465 as equivalents, but the Pleatco 2023 catalog lists PTL55XW-F2M among its deactivated part numbers with no replacement (PDF p.24) and the Filbur catalog does not list FC-0465, so neither is shown as a current equivalent. Hot Tub Outpost lists the 1994 Arena and Diamante under this part, while its 01561-03 listing also names the 1994 Arena and Diamante; check the old cartridge.",
+   "status": "verified",
+   "gaps": "no current Pleatco or Filbur equivalent (Pleatco PTL55XW-F2M deactivated; FC-0465 not in the Filbur catalog); 1994 Arena/Diamante also listed under 1561-03",
+   "fitment": [
+    {
+     "model": "Dimension One Platinum Series",
+     "years": "1995",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One Arena, Diamante",
+     "years": "1994",
+     "note": "listed as Diamonte",
+     "src": "hto"
+    }
+   ],
    "pleatcoNote": "",
    "filburNote": "",
-   "index": false,
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
-     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29); spec table PDF p.15 (printed p.11)"
+     "where": "OEM cross reference (Dimension One Spas section), PDF p.33 (printed p.29), 75 sq ft; spec table PDF p.15 (printed p.11), 7CH-552 rated 52 sq ft"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-52-square-foot-spa-filter-01561-10/",
+     "where": "01561-10: 7\" x 10.5\", handle, 2\" MPT fine thread, 52 sq ft; 1995 Platinum Series, 1994 Arena and Diamonte; replaces Unicel 7CH-552, Filbur FC-0465, Pleatco PTL55XW-F2M"
+    },
+    {
+     "source": "SpaStore.com (retailer)",
+     "url": "https://www.spastore.com/spa-filter-baleen-ak-9026-oem-1561-10-pleatco-ptl55xw-f2m-unicel-7ch-552-filbur-fc-0465/",
+     "where": "AK-9026: OEM 1561-10, Unicel 7CH-552, Pleatco PTL55XW-F2M, Filbur FC-0465; 7\" x 10-1/2\", handle, 2\" MPT, 52 sq ft"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated Pleatco part numbers, PDF p.24: PTL55XW-F2M, replacement N/A"
     }
    ]
   },
@@ -5486,8 +5694,33 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Dimension One Platinum Series",
+     "years": "1992–1994",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One Californian SL",
+     "years": "1993–1994",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One Elite SL",
+     "years": "1993",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "Dimension One Seville SL, Ultra Series, Legend Series",
+     "years": "1994",
+     "note": "",
+     "src": "hto"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
    "index": true,
@@ -5501,6 +5734,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-75-square-foot-spa-filter-01561-02/",
+     "where": "01561-02: 7\" x 14-3/4\", handle, 2\" MPT fine thread, 75 sq ft; 1992–1994 Platinum Series, 1993–1994 Californian SL, 1993 Elite SL, 1994 Seville SL, Ultra and Legend Series; replaces Unicel 7CH-752, Filbur FC-0470, Pleatco PTL75XW-F2M"
     }
    ]
   },
@@ -5528,8 +5766,21 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Dimension One Madrid, Barcelona",
+     "years": "1996–2000",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "@Home hot tubs (all)",
+     "years": "2000",
+     "note": "",
+     "src": "hto"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
    "index": true,
@@ -5543,6 +5794,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-75-square-foot-spa-filter-01561-12/",
+     "where": "01561-12: 7\" x 10-5/8\", handle, 1-1/2\" SAE coarse thread, 75 sq ft; 1996–2000 Madrid and Barcelona, all 2000 model-year @Home hot tubs"
     }
    ]
   },
@@ -5570,8 +5826,15 @@
    },
    "notes": "Discontinued by Dimension One Spas (noted in both the Unicel guide and the Filbur catalog); the replacement cartridge is still made.",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Dimension One Arena, Diamante, Quadra",
+     "years": "1994",
+     "note": "",
+     "src": "hto"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
    "index": true,
@@ -5585,6 +5848,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-40-square-foot-spa-filter-01561-03/",
+     "where": "01561-03: 4-7/8\" x 11-5/8\", 2-1/8\" open top and bottom, 40 sq ft; 1994 Arena, Diamante and Quadra"
     }
    ]
   },
@@ -5612,8 +5880,15 @@
    },
    "notes": "Ozone cartridge with 12 concentric holes in the top cap (Unicel and Filbur).",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "",
+   "fitment": [
+    {
+     "model": "Dimension One spas with the Crystal Pure water management system",
+     "years": "",
+     "note": "",
+     "src": "hto"
+    }
+   ],
    "pleatcoNote": "as printed in the Filbur catalog Dimension One Spas section (printed p.33); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
    "index": true,
@@ -5627,6 +5902,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-40-square-foot-spa-filter-d1561-09/",
+     "where": "1561-09: 5.5\" x 17\", 1-15/16\" open top with 12 concentric holes, 2-7/8\" open bottom; all spas with the Crystal Pure water management system; replaces Unicel C-5404, Filbur FC-3097, Pleatco PDO40-4"
     }
    ]
   },
@@ -5667,6 +5947,18 @@
      "years": "",
      "note": "Pleatco spec table, OEM 1561-00",
      "src": "pleatco"
+    },
+    {
+     "model": "Dimension One spas (universal EZ twist-lock filter)",
+     "years": "2000–current",
+     "note": "",
+     "src": "hto"
+    },
+    {
+     "model": "@Home spas",
+     "years": "2000 and newer",
+     "note": "",
+     "src": "hto"
     }
    ],
    "pleatcoNote": "",
@@ -5687,6 +5979,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Hot Tub Outpost (retailer OEM listing)",
+     "url": "https://www.hottuboutpost.com/dimension-one-75-square-foot-spa-filter-01561-00/",
+     "where": "01561-00: 7-1/8\" x 10-1/2\", closed castle top, 2\" open bottom with EZ twist lock, 75 sq ft; universal filter for 2000-current models, also @Home spas 2000 and newer; fits filter screen 01510-501"
     }
    ]
   },
