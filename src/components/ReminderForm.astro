@@ -1,0 +1,112 @@
+---
+import { turnstileSitekey } from '../config/turnstile';
+import { CONSENT_TEXT, INTERVALS, PURPOSE } from '../../functions/lib/validate.mjs';
+interface Props { filterModel: string }
+const { filterModel } = Astro.props;
+const model = filterModel.trim().replace(/\s+/g, ' ').slice(0, 160);
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+---
+<form id="reminder-form" class="card reminder" method="post" action="/api/subscribe" data-sitekey={turnstileSitekey}>
+  <h2>Request a filter replacement reminder</h2>
+  <p>This stores a request for this filter: the model, the date you installed it, and how often you replace it. Submitting stores the request and does not send email.</p>
+  <p>We'll only use your email for this request.</p>
+  <p class="hp" aria-hidden="true"><label>Company<br><input name="company" type="text" tabindex="-1" autocomplete="off" value=""></label></p>
+  <p><label>Email<br><input name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" spellcheck="false"></label></p>
+  <p><label>Filter model<br><input name="filter_model" type="text" required maxlength="160" value={model}></label></p>
+  <p><label>Install date<br><input name="install_date" type="date" required min="1990-01-01"></label></p>
+  <p><label>Replacement interval<br>
+    <select name="interval" required>
+      <option value="">Choose one</option>
+      {INTERVALS.map((interval) => <option value={interval}>{interval}</option>)}
+    </select>
+  </label></p>
+  <input type="hidden" name="page_url" value={pageUrl}>
+  <input type="hidden" name="purpose" value={PURPOSE}>
+  <p><label class="check"><input type="checkbox" name="consent_text" value={CONSENT_TEXT} required> {CONSENT_TEXT}</label></p>
+  {turnstileSitekey && <div id="reminder-turnstile"></div>}
+  <p><button class="btn" type="submit">Store this request</button></p>
+  <p data-status role="status"></p>
+  <p><small>Deletion requests go only to the address on the <a href="/privacy/">privacy page</a>.</small></p>
+  <noscript><p>With JavaScript off, this check cannot run. Use the address on the <a href="/privacy/">privacy page</a>.</p></noscript>
+</form>
+<script is:inline>
+(function () {
+  var form = document.getElementById('reminder-form');
+  if (!form) return;
+  var sitekey = form.getAttribute('data-sitekey') || '';
+  var box = document.getElementById('reminder-turnstile');
+  var status = form.querySelector('[data-status]');
+  var button = form.querySelector('button[type="submit"]');
+  var widgetId = '';
+  var loading = false;
+  var pending = false;
+  function token() {
+    var input = form.querySelector('[name="cf-turnstile-response"]');
+    return input ? input.value : '';
+  }
+  function render() {
+    if (!box || !window.turnstile || widgetId) return;
+    widgetId = window.turnstile.render(box, {
+      sitekey: sitekey,
+      action: 'filter_reminder',
+      callback: function () { if (pending) { pending = false; form.requestSubmit(); } }
+    });
+  }
+  function ensure() {
+    if (!sitekey || widgetId || loading) return;
+    loading = true;
+    var script = document.createElement('script');
+    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+    script.async = true;
+    script.onload = render;
+    document.head.appendChild(script);
+  }
+  form.addEventListener('focusin', ensure);
+  form.addEventListener('pointerdown', ensure);
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    status.textContent = '';
+    if (sitekey && !token()) {
+      pending = true;
+      ensure();
+      status.textContent = 'Confirming this is a person. Wait a moment, then the request will store.';
+      return;
+    }
+    button.disabled = true;
+    var payload = {
+      email: form.email.value,
+      page_url: form.page_url.value,
+      purpose: form.purpose.value,
+      consent_text: form.consent_text.checked ? form.consent_text.value : '',
+      company: form.company.value,
+      filter_model: form.filter_model.value,
+      install_date: form.install_date.value,
+      interval: form.interval.value,
+      'cf-turnstile-response': token()
+    };
+    fetch('/api/subscribe', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', accept: 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (response) {
+      return response.json().then(function (body) { return { ok: response.ok, body: body }; });
+    }).then(function (result) {
+      status.textContent = (result.body && result.body.message) || (result.ok ? 'Stored.' : 'Could not store the request.');
+      if (widgetId && window.turnstile) window.turnstile.reset(widgetId);
+    }).catch(function () {
+      status.textContent = 'Could not store the request. Try again.';
+    }).then(function () { button.disabled = false; pending = false; });
+  });
+})();
+</script>
+<style>
+.reminder{position:relative}
+.reminder p:last-child{margin-bottom:0}
+.reminder input[type="checkbox"]{width:1.05rem;height:1.05rem;vertical-align:-.15rem;margin:0 .4rem 0 0;box-shadow:none}
+.reminder input[type="email"],.reminder input[type="text"],.reminder input[type="date"],.reminder select{display:block;width:100%;max-width:26rem;margin-top:.3rem;font:inherit}
+.reminder select{padding:.7rem .85rem;border:1px solid var(--bd2);border-radius:var(--r-sm);background:#fff;color:var(--fg)}
+.reminder select:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px rgba(19,94,99,.2)}
+.reminder .check{font-weight:550}
+.reminder .hp{position:absolute;left:-9999px;top:0;height:0;overflow:hidden}
+.reminder [data-status]{min-height:1.4em;font-weight:650}
+</style>
