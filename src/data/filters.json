@@ -6081,8 +6081,8 @@
    "model": "C-4326 cartridge",
    "modelSlug": "c-4326",
    "series": "Nordic Hot Tubs (models dated after 7/99)",
-   "oem": "",
-   "oemAll": "",
+   "oem": "31CARTRIDGE",
+   "oemAll": "31CARTRIDGE",
    "equivalents": {
     "unicel": "C-4326",
     "pleatco": "PRB25-IN",
@@ -6097,10 +6097,47 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 25.0
    },
-   "notes": "Unicel and Filbur both say this is for Nordic models dated after 7/99. Neither source gives an OEM number.",
+   "notes": "Unicel and Filbur both say this is for Nordic models dated after 7/99. Nordic Hot Tubs' own 2023 filter chart lists it as CARTRIDGE (sold as 31CARTRIDGE, 25 sq ft, in Nordic's 2022 parts list) = Unicel C-4326, Pleatco PRB25-IN, Filbur FC-2375, Waterway 817-2500. The chart says the Crown II, Crown XL, Escape MS/SE/LS, Impulse DP, Rendezvous LS, 110 Sport and Warrior XL models switched to CARTRIDGE-E (45 sq ft) after September 2021.",
    "status": "verified",
-   "gaps": "no OEM part number in sources; no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "Nordic's chart does not use the catalogs' 7/99 date and gives no years for most models; Nordic's owner's manual lists Impulse under CARTRIDGE-E while the chart lists it here",
+   "fitment": [
+    {
+     "model": "Nordic Crown",
+     "years": "before 2008",
+     "note": "CARTRIDGE, 25 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic Warrior",
+     "years": "before 2008",
+     "note": "CARTRIDGE, 25 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic DLX, DLX w HS, Nordic, Nordic w HS, Omni, Insider, Quadra",
+     "years": "",
+     "note": "CARTRIDGE, 25 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic Escape, Escape R, Escape Pre, Escape Pre R",
+     "years": "",
+     "note": "CARTRIDGE, 25 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic Impulse, Rendezvous 1, Rendezvous 2, Sport",
+     "years": "",
+     "note": "CARTRIDGE, 25 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic Crown II, Crown XL, Escape MS, SE, LS, Impulse DP, Rendezvous LS, 110 Sport, Warrior XL, 110 Warrior XL",
+     "years": "before Sept 2021",
+     "note": "CARTRIDGE, 25 sq ft",
+     "src": "nordic"
+    }
+   ],
    "pleatcoNote": "",
    "filburNote": "",
    "index": false,
@@ -6119,6 +6156,16 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Nordic Hot Tubs, printed p.44 (PDF p.23)"
+    },
+    {
+     "source": "Nordic Hot Tubs filter chart (2023)",
+     "url": "https://www.nordichottubs.com/wp-content/uploads/2023/03/FILTER-CARTRIDGES-BY-MODEL-2023-3-8-23.pdf",
+     "where": "CARTRIDGE row: Unicel C-4326, Pleatco PRB25-IN, Filbur FC-2375, Waterway 817-2500; model list, before/after Sept 2021 notes"
+    },
+    {
+     "source": "Nordic Hot Tubs 2022 service parts list",
+     "url": "https://www.nordichottubs.com/wp-content/uploads/2022/04/2022-North-American-Service-Parts-List_040722.pdf",
+     "where": "31CARTRIDGE, Cartridge, Filter, 25 SQ FT"
     }
    ]
   },
@@ -6128,8 +6175,8 @@
    "model": "4CH-935 cartridge",
    "modelSlug": "4ch-935",
    "series": "Nordic Hot Tubs",
-   "oem": "",
-   "oemAll": "",
+   "oem": "CARTRIDGE-T35",
+   "oemAll": "CARTRIDGE-T35; 31CARTRIDGE-T35",
    "equivalents": {
     "unicel": "4CH-935",
     "pleatco": "PWW35L"
@@ -6143,13 +6190,56 @@
     "bottomCore": "2\" female SAE thread",
     "sqft": 35.0
    },
-   "notes": "Unicel lists this 2\" female SAE thread cartridge for Nordic and its spec table notes it is for use on a 1-1/2\" male SAE stand pipe. Pleatco maps it to PWW35L in its Unicel cross reference but does not mention Nordic.",
-   "status": "needs_verification",
-   "gaps": "Nordic assignment from Unicel only; no OEM part number; no Filbur equivalent; no model/model-year fitment in sources",
-   "fitment": [],
+   "notes": "Nordic Hot Tubs' own 2023 filter chart lists CARTRIDGE-T35 as Unicel 4CH-935, Pleatco PWW35L and Waterway 817-4035, with no Filbur number. Nordic's owner's manual gives the same size: 9-1/4\" long, 4-15/16\" across, handle top, 2\" SAE female thread, 35 sq ft. Nordic's 2022 parts list sells it as 31CARTRIDGE-T35 for the Teleweir housing. Unicel's spec table says it fits a 1-1/2\" male SAE stand pipe.",
+   "status": "verified",
+   "gaps": "no Filbur equivalent (Nordic's chart prints NA); Pleatco's spec table prints PWW35L as 5\" x 8-1/2\" with a 1-1/2\" bottom, not 4-15/16\" x 9-1/4\"; Nordic's chart has no Crown entry for 2008-2014",
+   "fitment": [
+    {
+     "model": "Nordic Crown",
+     "years": "after 2014",
+     "note": "CARTRIDGE-T35, threaded 35 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic 110 Crown",
+     "years": "",
+     "note": "CARTRIDGE-T35, threaded 35 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic D'Amour: 110 D'Amour, D'Amour MS, D'Amour SE",
+     "years": "",
+     "note": "CARTRIDGE-T35, threaded 35 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic Encore: Encore, Encore Pre, 110 Encore, Encore MS, SE, LS",
+     "years": "",
+     "note": "CARTRIDGE-T35, threaded 35 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic Jubilee: 110 Jubilee, Jubilee MS, SE, LS",
+     "years": "",
+     "note": "CARTRIDGE-T35, threaded 35 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic Retreat: Retreat, 110 Retreat, Retreat MS, SE",
+     "years": "",
+     "note": "CARTRIDGE-T35, threaded 35 sq ft",
+     "src": "nordic"
+    },
+    {
+     "model": "Nordic Stella: Stella, 110 Stella, Stella MS, SE",
+     "years": "",
+     "note": "CARTRIDGE-T35, threaded 35 sq ft",
+     "src": "nordic"
+    }
+   ],
    "pleatcoNote": "",
    "filburNote": "",
-   "index": false,
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
@@ -6160,6 +6250,16 @@
      "source": "Pleatco 2023 Catalog",
      "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
      "where": "Unicel-to-Pleatco cross reference, PDF p.47 (4CH-935 = PWW35L)"
+    },
+    {
+     "source": "Nordic Hot Tubs filter chart (2023)",
+     "url": "https://www.nordichottubs.com/wp-content/uploads/2023/03/FILTER-CARTRIDGES-BY-MODEL-2023-3-8-23.pdf",
+     "where": "CARTRIDGE-T35 row: Unicel 4CH-935, Pleatco PWW35L, Filbur NA, Waterway 817-4035; model list"
+    },
+    {
+     "source": "Nordic Hot Tubs owner's manual (01.2024)",
+     "url": "https://www.nordichottubs.com/wp-content/uploads/2024/02/Nordic-Hot-Tubs-Owners-Manual-01.2024.pdf",
+     "where": "Filter Quick Reference by Model, p.22: CARTRIDGE-T35, 9-1/4\" x 4-15/16\", handle top, 2\" SAE female thread, 35 sq ft"
     }
    ]
   },
@@ -6216,8 +6316,8 @@
    "model": "C-4950 cartridge",
    "modelSlug": "c-4950",
    "series": "Arctic Spas (Unicel lists Arctic under Blue Falls Mfg. Ltd., Canada)",
-   "oem": "",
-   "oemAll": "",
+   "oem": "PRT-115LOT",
+   "oemAll": "PRT-115LOT",
    "equivalents": {
     "unicel": "C-4950",
     "pleatco": "PRB50-IN",
@@ -6232,10 +6332,17 @@
     "bottomCore": "2-1/8\" / open",
     "sqft": 50.0
    },
-   "notes": "Unicel has no Arctic table of its own and says \"see Blue Falls Mfg. Ltd. (Canada)\"; Filbur lists this part under both Arctic Spas and Blue Falls Mfg. Neither source gives an OEM number.",
+   "notes": "Unicel has no Arctic table of its own and says \"see Blue Falls Mfg. Ltd. (Canada)\"; Filbur lists this part under both Arctic Spas and Blue Falls Mfg. Arctic Spas Ontario sells the factory 50 sq ft pleated drop-in filter as PRT-115LOT and says it matches C-4950, PRB50-IN and FC-2390, for Arctic and most Coyote spas built in 2008 or earlier. The same dealer says these open-core cartridges do not fit the threaded intake used from 2009.",
    "status": "verified",
-   "gaps": "no OEM part number in sources; no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "factory part number from one Arctic dealer only; Arctic's owner's manual gives no part numbers; other dealers date the drop-in era 1998-2008 and exclude the Marmot model from the disposable drop-in",
+   "fitment": [
+    {
+     "model": "Arctic Spas and most Coyote spas (drop-in filter)",
+     "years": "2008 or earlier",
+     "note": "factory pleated PRT-115LOT, 50 sq ft",
+     "src": "arcticdealer"
+    }
+   ],
    "pleatcoNote": "",
    "filburNote": "",
    "index": false,
@@ -6254,6 +6361,11 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Arctic Spas, printed p.27 (PDF p.14)"
+    },
+    {
+     "source": "Arctic Spas Ontario (dealer)",
+     "url": "https://arcticspasontario.com/products/filter-50-pleated-drop-in",
+     "where": "Filter 50 Pleated Drop-In: PRT-115LOT, 50 sq ft, = C-4950 / PRB50-IN / FC-2390, Arctic and most Coyote spas 2008 or earlier"
     }
    ]
   },
@@ -6333,7 +6445,7 @@
    },
    "notes": "Unicel lists this 4-5/8\" x 6-3/4\" top-load cartridge for Softub. No OEM number is given, and neither Pleatco nor Filbur mentions Softub for it.",
    "status": "needs_verification",
-   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
+   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",

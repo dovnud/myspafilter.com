@@ -14,7 +14,7 @@ const models = new Set(list.flatMap(f=>(f.fitment||[]).map(x=>x.model)));
 const thin = list.filter(f=>f.index===false);
 const copy = brandCopy[b.slug]||[];
 // Brands with a /fitment/<slug>-filter-by-model-year/ page
-const FIT_SLUG: Record<string,string> = { 'hot-spring':'hot-spring', caldera:'caldera', jacuzzi:'jacuzzi', sundance:'sundance', bullfrog:'bullfrog', 'master-spas':'master-spas', 'marquis-spas':'marquis', 'dimension-one-spas':'dimension-one' };
+const FIT_SLUG: Record<string,string> = { 'hot-spring':'hot-spring', caldera:'caldera', jacuzzi:'jacuzzi', sundance:'sundance', bullfrog:'bullfrog', 'master-spas':'master-spas', 'marquis-spas':'marquis', 'dimension-one-spas':'dimension-one', 'nordic-hot-tubs':'nordic-hot-tubs', 'arctic-spas':'arctic-spas', softub:'softub' };
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
 const related = relatedBrands(b.slug);
 // Name only the sources this brand's rows actually cite.
