@@ -28,7 +28,7 @@ export const allParts = () => { const m = new Map<string,Filter[]>();
   }
   return m; };
 export const partLabel = (f:Filter) => f.equivalents?.unicel || f.equivalents?.pleatco || f.oem;
-export const fitSrc: Record<string,string> = { lt:'Leisure Time Inc. dealer listing', unicel:'Unicel 2026 Replacement Guide', pleatco:'Pleatco 2023 Catalog', hd:'Home Depot listing for Intex 29001E', intex:'Intex compatible-item list', bestway:'Bestway USA product page', layzspa:'Lay-Z-Spa UK (Bestway) product page', spd:'Spa Parts Depot listing', marquis:'Marquis Spas filter finder', hto:'Hot Tub Outpost OEM listing', nordic:'Nordic Hot Tubs filter chart (2023)', arcticdealer:'Arctic Spas Ontario dealer listing' };
+export const fitSrc: Record<string,string> = { lt:'Leisure Time Inc. dealer listing', unicel:'Unicel 2026 Replacement Guide', pleatco:'Pleatco 2023 Catalog', hd:'Home Depot listing for Intex 29001E', intex:'Intex compatible-item list', bestway:'Bestway USA product page', layzspa:'Lay-Z-Spa UK (Bestway) product page', spd:'Spa Parts Depot listing', marquis:'Marquis Spas filter finder', hto:'Hot Tub Outpost OEM listing', nordic:'Nordic Hot Tubs filter chart (2023)', arcticdealer:'Arctic Spas Ontario dealer listing', bwcat:'Bestway Lay-Z-Spa catalog', bwman:'Bestway owner’s manual', mqdealer:'Marquis spa dealer listings' };
 /** Sq ft text, or empty when no source gives a media area. */
 export const sqftText = (d:{sqft?:number}) => d.sqft!=null ? `${d.sqft} sq ft` : '';
 

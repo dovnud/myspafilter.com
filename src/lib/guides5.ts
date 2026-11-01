@@ -47,6 +47,7 @@ body:`<h2>Why the set number matters more than the brand name</h2>
 <li>If the spa is a SaluSpa or a Lay-Z-Spa other than Monte Carlo, you need Type VI, about 4.2" × 3.1"<a href="/bestway/58323/">. Open the Type VI page</a>.</li>
 <li>If it is a Monte Carlo, use Lay-Z-Spa’s rigid-spa cartridge, not Type VI${c('layzVI')}.</li>
 </ol>
+<p>If you would rather start from your set number or model year, the <a href="/fitment/intex-filter-by-model-year/">Intex filter by set number and year</a> and <a href="/fitment/bestway-filter-by-model-year/">Bestway filter by model and year</a> lookups list every set and model Intex’s and Bestway’s own documents name, with the year each appears.</p>
 <p>Hardshell cross-reference, for when the tub is not inflatable, starts at <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel and Pleatco numbers compare</a>.</p>`,
 faq:[['Is Intex 29001E the same filter as 29012E?','No. 29001E is the Type S1 twin pack (Unicel C-4317, about 4-1/4" × 2-15/16"). 29012E is the Type S2 twin pack, which Intex sizes at 3.375" × 5.125" and limits to PureSpa models with the cartridge in the control unit.'],
 ['My set number is 28425E. Which filter?','28425E is on Intex’s S1 compatible list (part 11692). 28425EG and 28425EH are on the S2 list (part 13435). The letters decide it.'],
