@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/gen-lastmod.mjs && astro build && npm run check:amazon && npm run check:seo",
+    "build": "node scripts/gen-lastmod.mjs && astro build && npm run check:amazon && npm run check:seo && node --test src/lib/xref.test.mjs src/lib/care-calc.test.mjs",
     "preview": "astro preview",
     "check:amazon": "node scripts/check-amazon.mjs",
     "check:seo": "node scripts/check-seo.mjs"

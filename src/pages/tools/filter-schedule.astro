@@ -1,0 +1,142 @@
+---
+import Base from '../../layouts/Base.astro';
+import HolidayCta from '../../components/HolidayCta.astro';
+import ReminderForm from '../../components/ReminderForm.astro';
+import { comparison, profiles } from '../../lib/care-calc.mjs';
+import { SRC } from '../../lib/guidesrc';
+import { fileDate } from '../../lib/lastmod';
+import { publisherRef } from '../../lib/schema';
+const site = Astro.site!.href;
+const url = new URL(Astro.url.pathname, site).href;
+const reviewed = '2026-11-01';
+const mod = [fileDate('src/pages/tools/filter-schedule.astro'), fileDate('src/lib/care-calc.mjs')].filter(Boolean).sort().at(-1) || reviewed;
+const faqs: [string, string][] = [
+  ['How often should I replace a hot tub filter?', 'There is no single interval. Jacuzzi says every 12–24 months for a pleated cartridge. Hot Spring’s filter article says every 2–3 years for a polyester cartridge and every 4–6 years for a TRI-X cartridge, and its maintenance page says every three years. Sundance’s 2024 680 Series manual uses 12 months for the pleated MicroClean Mini filter and 4 months for the insert. The 780 Series manual says every 3 months, or earlier, for the small disposable MicroClean cartridge. Unicel says a cartridge has no defined end date.'],
+  ['How often should I clean it?', 'That also varies. Jacuzzi’s baseline for a regularly used family tub is a rinse every 7 days and a deep clean every 4–6 weeks, with a shorter interval for heavy use and a longer one for light use. Hot Spring says a monthly rinse and a soak when you drain. Pleatco says most spa makers recommend monthly, every two weeks with heavy use, and after a party. Unicel tells spa owners to set a routine from how much the spa is used and does not print a week count for spas. The calculator shows the range when those sources do not say the same thing.'],
+  ['Will the reminder form email me or add me to a newsletter?', 'No. The form stores the request and does not send email. It is not a newsletter and it does not sign you up for regular updates. The only address for a deletion request is contact@myspafilter.com.'],
+  ['What if my spa’s manual is not in the list?', 'Follow that manual. CDC’s hot-tub module on Legionella says to replace cartridges according to the manufacturer. The calculator only dates the intervals published by the sources named on this page.'],
+];
+const used = [...new Set(comparison.map((row) => row.sourceKey))];
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: 'When to replace or clean a hot tub filter', url, description: 'Turn manufacturer-published hot tub filter cleaning and replacement intervals into dates. Where the sources disagree, the range is shown.', inLanguage: 'en-US', dateModified: mod, isPartOf: { '@type': 'WebSite', name: 'MySpaFilter', url: site }, publisher: publisherRef },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Tools', item: new URL('/tools/', site).href }, { '@type': 'ListItem', position: 3, name: 'When to replace or clean', item: url }] },
+];
+---
+<Base title="When to Replace or Clean a Hot Tub Filter | MySpaFilter" description="Turn manufacturer-published hot tub filter cleaning and replacement intervals into dates. Where the sources disagree, the range is shown." jsonld={ld}>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › <span aria-current="page">When to replace or clean</span></nav>
+<h1>When to replace or clean a hot tub filter</h1>
+<p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={reviewed}>November 1, 2026</time></p>
+<section class="card answer"><div class="kicker">Short answer</div>
+<p style="font-size:1.12rem;margin:.4rem 0 0">There is no single replacement date. Jacuzzi says 12–24 months for a pleated cartridge. Hot Spring’s filter article says 2–3 years for a polyester cartridge and 4–6 years for TRI-X, while its maintenance page says every three years. Sundance’s 2024 manuals use 12 months and 4 months on the 680 Series and 3 months, or earlier, on the 780 Series disposable cartridge. Unicel gives no end date. Cleaning varies too: Jacuzzi’s regular-use deep clean is 4–6 weeks, Hot Spring’s rinse is monthly, and Pleatco’s note on most spa makers is monthly or every two weeks with heavy use. The calculator counts those published figures from a date you enter. Where the sources do not match, it shows the range and says so.</p>
+</section>
+<p>Unicel’s maintenance page and Jacuzzi’s filter page both say to keep a second set, so one cartridge can be cleaned while the other is in the spa. A spare is what those pages describe. It is not a sale. The dates on this page are calendar readings of published intervals.</p>
+<HolidayCta />
+<h2>What the sources print</h2>
+<p>Read across a row. Do not read down the Replace column as one cartridge’s range. The 3-month figure is a Sundance 780 disposable cartridge. The 4–6 year figure is a Hot Spring TRI-X cartridge. Those are different products.</p>
+<div class="tbl"><table>
+<thead><tr><th>Source</th><th>Cartridge</th><th>Clean</th><th>Replace</th></tr></thead>
+<tbody>
+{comparison.map((row) => <tr>
+<td><a href={`#src-${row.sourceKey}`}>{SRC[row.sourceKey].t}</a></td>
+<td>{row.piece}</td>
+<td>{row.clean}</td>
+<td>{row.replace}</td>
+</tr>)}
+</tbody>
+</table></div>
+<p>For a Hot Spring polyester cartridge, the article’s 2–3 years and the maintenance page’s three years are different sentences. The three-year figure sits at the end of the 2–3 year range. For TRI-X, the article says 4–6 years and the maintenance page says three years without naming TRI-X. Read together, those Hot Spring sentences run from three years to six years, and they do not agree.</p>
+<h2>Count it from a date</h2>
+<p>Pick the cartridge the source is actually talking about. The use levels are Jacuzzi’s and, for heavy use, Pleatco’s. A maker that did not print a separate light or heavy number does not get one here. Nothing you type into the dates is sent anywhere. The reminder form further down is the only part of this page that stores anything, and only if you submit it.</p>
+<form id="calc" class="card calc">
+<p><label for="profile">Which published guidance<br>
+<select id="profile" name="profile">
+<option value="">Choose the cartridge</option>
+{profiles.map((p) => <option value={p.id}>{p.label}</option>)}
+</select></label></p>
+<p><label for="use">Use<br>
+<select id="use" name="use">
+<option value="regular">Regular use (Jacuzzi: a regularly used family tub)</option>
+<option value="heavy">Heavy use (Jacuzzi: 4–6 bathers several evenings a week, a rental or Airbnb amenity, or frequent sunscreen and cosmetics. Pleatco: heavy use.)</option>
+<option value="light">Light use (Jacuzzi: winter-only soaking with 1–2 people)</option>
+</select></label></p>
+<p><label for="installed">Installed or last replaced<br><input id="installed" name="installed" type="date" min="1990-01-01"></label></p>
+<p><label for="rinsed">Last rinse, if you have it<br><input id="rinsed" name="rinsed" type="date" min="1990-01-01"></label></p>
+<p><button class="btn" type="submit">Show the dates</button></p>
+</form>
+<div id="out" class="card" aria-live="polite"></div>
+<noscript><p>With JavaScript off, the table above is the published guidance. The date math needs JavaScript. The reminder form’s check needs it too.</p></noscript>
+<p id="schedule-form-note">The form stores a request. It does not send email, and it is not a newsletter or a series of updates. The interval list is the list the form can store. It is not a promise that your manual uses one of those choices. The note under the dates says when a published interval is missing from that list.</p>
+<ReminderForm heading="Remind me when it's time to replace my filter" lead="This stores a request: the filter, the date you installed it, and how often you replace it. Submitting stores the request and does not send email. It is not a newsletter, and it does not sign you up for regular updates." filterModel="" />
+<p>When you have the part number, open the <a href="/tools/cross-reference/">cross-reference lookup</a> and then the filter page. That page has the retailer links. This page does not print a price. The longer write-ups are <a href="/guides/how-often-to-replace-hot-tub-filter/">how often to replace a hot tub filter</a>, <a href="/guides/how-often-to-clean-hot-tub-filter/">how often to clean a hot tub filter</a>, and <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean one</a>.</p>
+<h2>FAQ</h2>
+{faqs.map(([q, a]) => <details class="card"><summary><strong>{q}</strong></summary><p>{a}</p></details>)}
+<h2>Sources</h2>
+<ol>{used.map((k, i) => <li id={`src-${k}`} value={i + 1}><a href={SRC[k].u} rel="nofollow">{SRC[k].t}</a></li>)}</ol>
+<p><small>This page summarizes published manufacturer and public-health guidance. Follow your own spa’s owner’s manual when it differs. See the <a href="/disclaimer/">disclaimer</a>. A correction goes to <a href="/contact/">contact</a>, which reaches contact@myspafilter.com and no other address. The method is on the <a href="/about/#methodology">about page</a>.</small></p>
+<script>
+import { compute } from '../../lib/care-calc.mjs';
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const pretty = (iso: string) => { const [y, m, d] = iso.split('-').map(Number); return `${months[m - 1]} ${d}, ${y}`; };
+const pad = (n: number) => String(n).padStart(2, '0');
+const form = document.getElementById('calc') as HTMLFormElement | null;
+const out = document.getElementById('out');
+const note = document.getElementById('schedule-form-note');
+const today = () => { const n = new Date(); return `${n.getFullYear()}-${pad(n.getMonth() + 1)}-${pad(n.getDate())}`; };
+const render = (result: { error?: string; blocks?: { title: string; paragraphs: string[]; dates: { label: string; iso: string }[] }[]; form?: { model: string; interval: string; install: string; note: string } }) => {
+  if (!out) return;
+  out.replaceChildren();
+  if (result.error) {
+    const p = document.createElement('p');
+    p.textContent = result.error;
+    out.append(p);
+    return;
+  }
+  for (const block of result.blocks || []) {
+    const h = document.createElement('h3');
+    h.textContent = block.title;
+    out.append(h);
+    for (const text of block.paragraphs) {
+      const p = document.createElement('p');
+      p.textContent = text;
+      out.append(p);
+    }
+    if (block.dates.length) {
+      const ul = document.createElement('ul');
+      for (const d of block.dates) {
+        const li = document.createElement('li');
+        li.textContent = `${d.label}: ${pretty(d.iso)}`;
+        ul.append(li);
+      }
+      out.append(ul);
+    }
+  }
+  const reminder = document.getElementById('reminder-form') as HTMLFormElement | null;
+  if (!reminder || !result.form) return;
+  const model = reminder.querySelector<HTMLInputElement>('[name="filter_model"]');
+  const installed = reminder.querySelector<HTMLInputElement>('[name="install_date"]');
+  const interval = reminder.querySelector<HTMLSelectElement>('[name="interval"]');
+  if (model) model.value = result.form.model;
+  if (installed && result.form.install) installed.value = result.form.install;
+  if (interval) interval.value = result.form.interval || '';
+  if (note) note.textContent = result.form.note;
+};
+form?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+  render(compute({
+    profileId: String(data.get('profile') || ''),
+    use: String(data.get('use') || 'regular'),
+    install: String(data.get('installed') || ''),
+    rinse: String(data.get('rinsed') || ''),
+    today: today(),
+  }));
+});
+</script>
+<style>
+.calc select,.calc input[type="date"]{display:block;width:100%;max-width:32rem;margin-top:.3rem}
+.calc select{padding:.7rem .85rem;border:1px solid var(--bd2);border-radius:var(--r-sm);background:#fff;color:var(--fg);font:inherit}
+.calc select:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px rgba(19,94,99,.2)}
+#out:empty{display:none}
+</style>
+</Base>

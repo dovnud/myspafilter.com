@@ -11,7 +11,7 @@ const image = new URL(ogImage || `/og/${section}.png`, Astro.site).href;
 const imageAlt = ogImageAlt || ogAlt[section];
 const proseRe = /^\/(guides\/[^/]+|fitment\/[^/]+|about|contact|privacy|terms|disclaimer|affiliate-disclosure|guide)\/$/;
 const prose = proseRe.test(path);
-const nav = [['/','Home'],['/size/','Size lookup'],['/guides/','Guides'],['/supplies/','Supplies'],['/data/','Data'],['/about/','About'],['/contact/','Contact']];
+const nav = [['/','Home'],['/size/','Size lookup'],['/tools/','Tools'],['/guides/','Guides'],['/supplies/','Supplies'],['/data/','Data'],['/about/','About'],['/contact/','Contact']];
 ---
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><link rel="preload" href="/fonts/young-serif-latin.woff2" as="font" type="font/woff2" crossorigin><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -142,11 +142,11 @@ header :focus-visible,footer :focus-visible,.hero :focus-visible,.answer :focus-
 .search :focus-visible{outline:0}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
-<header><div class="wrap"><a class="logo" href="/"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5C9 7 6 10 6 14a6 6 0 0 0 12 0c0-4-3-7-6-11.5Z" fill="#e8d6b5"/><path d="M8.5 15.5c1.2 1 2.2 1 3.5 0s2.3-1 3.5 0" stroke="#0b3c40" stroke-width="1.6" stroke-linecap="round"/></svg><span style="color:#fff">MySpaFilter<span>.com</span></span></a><nav class="site-nav" aria-label="Main">{nav.map(([h,l])=><a href={h} aria-current={path===h?'page':undefined}>{l}</a>)}</nav></div></header>
+<header><div class="wrap"><a class="logo" href="/"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5C9 7 6 10 6 14a6 6 0 0 0 12 0c0-4-3-7-6-11.5Z" fill="#e8d6b5"/><path d="M8.5 15.5c1.2 1 2.2 1 3.5 0s2.3-1 3.5 0" stroke="#0b3c40" stroke-width="1.6" stroke-linecap="round"/></svg><span style="color:#fff">MySpaFilter<span>.com</span></span></a><nav class="site-nav" aria-label="Main">{nav.map(([h,l])=><a href={h} aria-current={path===h || (h==='/tools/' && path.startsWith('/tools/')) ? 'page' : undefined}>{l}</a>)}</nav></div></header>
 <div class="disc"><div class="wrap">Disclosure: we may earn a commission from qualifying purchases made through retailer links on this site, at no extra cost to you. As an Amazon Associate I earn from qualifying purchases. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</div></div>
 <main id="main" class={`wrap${prose?' prose':''}`}><slot /></main>
 <footer><div class="wrap"><div class="f-grid"><div><strong class="f-h">Brands</strong><p class="f-links">{brands().map(b=><a href={`/${b.slug}/`}>{b.name}</a>)}</p></div>
-<div><strong class="f-h">Explore</strong><p class="f-links"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/guides/">Guides</a><a href="/supplies/">Supplies</a><a href="/data/">Dataset (CSV/JSON)</a><a href="/guide/">Measuring guide</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p></div></div>
+<div><strong class="f-h">Explore</strong><p class="f-links"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/guides/">Guides</a><a href="/supplies/">Supplies</a><a href="/data/">Dataset (CSV/JSON)</a><a href="/guide/">Measuring guide</a><a href="/tools/cross-reference/">Cross-reference lookup</a><a href="/tools/filter-schedule/">Replace or clean</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/disclaimer/">Disclaimer</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p></div></div>
 <div class="f-legal"><p>MySpaFilter is independent and not affiliated with any hot tub manufacturer or filter brand. Cross-reference data comes from the Unicel 2026 Replacement Guide and Pleatco 2023 catalog ({filters.length} cartridges). Always check dimensions before buying.</p>
 <p>© {new Date().getFullYear()} myspafilter.com</p></div></div></footer>
 <script>

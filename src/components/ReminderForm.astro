@@ -1,14 +1,14 @@
 ---
 import { turnstileSitekey } from '../config/turnstile';
 import { CONSENT_TEXT, INTERVALS, PURPOSE } from '../../functions/lib/validate.mjs';
-interface Props { filterModel: string }
-const { filterModel } = Astro.props;
+interface Props { filterModel: string; heading?: string; lead?: string }
+const { filterModel, heading = 'Request a filter replacement reminder', lead = 'This stores a request for this filter: the model, the date you installed it, and how often you replace it. Submitting stores the request and does not send email.' } = Astro.props;
 const model = filterModel.trim().replace(/\s+/g, ' ').slice(0, 160);
 const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 <form id="reminder-form" class="card reminder" method="post" action="/api/subscribe" data-sitekey={turnstileSitekey}>
-  <h2>Request a filter replacement reminder</h2>
-  <p>This stores a request for this filter: the model, the date you installed it, and how often you replace it. Submitting stores the request and does not send email.</p>
+  <h2>{heading}</h2>
+  <p>{lead}</p>
   <p>We'll only use your email for this request.</p>
   <p class="hp" aria-hidden="true"><label>Company<br><input name="company" type="text" tabindex="-1" autocomplete="off" value=""></label></p>
   <p><label>Email<br><input name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" spellcheck="false"></label></p>

@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import { fileDate } from '../../lib/lastmod';
+import { publisherRef } from '../../lib/schema';
+const site = Astro.site!.href;
+const url = new URL(Astro.url.pathname, site).href;
+const reviewed = '2026-11-01';
+const mod = fileDate('src/pages/tools/index.astro') || reviewed;
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Hot tub filter tools', url, description: 'Look up equivalent spa filter part numbers, or turn published clean and replace intervals into dates.', inLanguage: 'en-US', dateModified: mod, isPartOf: { '@type': 'WebSite', name: 'MySpaFilter', url: site }, publisher: publisherRef },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Tools', item: url }] },
+];
+---
+<Base title="Hot Tub Filter Tools | MySpaFilter" description="Look up equivalent spa filter part numbers already in this dataset, or turn published clean and replace intervals into dates." jsonld={ld}>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">Tools</span></nav>
+<h1>Tools</h1>
+<p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={reviewed}>November 1, 2026</time></p>
+<p>Two tools sit next to the homepage search and the <a href="/size/">size lookup</a>. They do not replace either one. The homepage search opens a single part-number page. The size lookup is for a cartridge whose number is worn off. These two stay on their own pages.</p>
+<ul class="grid">
+<li class="card"><a href="/tools/cross-reference/">Filter cross-reference lookup</a><p>Type a Unicel, Pleatco, Filbur, or OEM number. See the equivalent numbers and measurements already in this dataset, and open each filter page.</p></li>
+<li class="card"><a href="/tools/filter-schedule/">When to replace or clean</a><p>Count the intervals Hot Spring, Jacuzzi, Sundance, Unicel, and Pleatco publish. Where those pages disagree, the range is shown.</p></li>
+</ul>
+<p>The long versions of the same facts are the guides: <a href="/guides/how-often-to-replace-hot-tub-filter/">how often to replace a hot tub filter</a>, <a href="/guides/how-often-to-clean-hot-tub-filter/">how often to clean one</a>, and <a href="/guides/oem-vs-unicel-vs-pleatco-spa-filters/">OEM vs Unicel vs Pleatco</a>. The cited table is the <a href="/data/">dataset</a>. Holiday dates, when a spare is the thing you are buying, are on <a href="/guides/black-friday-hot-tub-filter-and-spa-care/">Black Friday filters and spa care</a> and <a href="/guides/gifts-for-hot-tub-owners-2026/">gifts for hot tub owners</a>.</p>
+</Base>
