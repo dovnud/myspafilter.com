@@ -1,0 +1,128 @@
+---
+import Base from '../../layouts/Base.astro';
+import HolidayCta from '../../components/HolidayCta.astro';
+import { filters, slug, allParts, sqftText, modelHref } from '../../lib/data';
+import { indexParts } from '../../lib/xref.mjs';
+import { SRC } from '../../lib/guidesrc';
+import { fileDate, dataDate } from '../../lib/lastmod';
+import { publisherRef } from '../../lib/schema';
+const site = Astro.site!.href;
+const url = new URL(Astro.url.pathname, site).href;
+const reviewed = '2026-11-01';
+const mod = [fileDate('src/pages/tools/cross-reference.astro'), fileDate('src/lib/xref.mjs'), dataDate()].filter(Boolean).sort().at(-1) || reviewed;
+const partPages = new Set(allParts().keys());
+const bits = (raw?: string) => String(raw || '').split(/[;/]/).map((s) => s.trim()).filter(Boolean).map((text) => {
+  const key = slug(text);
+  return { text, href: partPages.has(key) ? `/filter/${key}/` : '' };
+});
+const rows = filters.map((f) => {
+  const eq = f.equivalents || {};
+  const d = f.dimensions as { diameterText?: string; lengthText?: string; topCore?: string; bottomCore?: string; sqft?: number };
+  const indexed = indexParts([f.oem, f.oemAll, eq.unicel, eq.pleatco, eq.filbur, f.searchTerm]);
+  const sq = sqftText(d);
+  return {
+    href: modelHref(f),
+    name: `${f.brand} ${f.model}`,
+    verified: f.status === 'verified',
+    oem: bits(f.oemAll || f.oem),
+    unicel: bits(eq.unicel),
+    pleatco: bits(eq.pleatco),
+    filbur: bits(eq.filbur),
+    pleatcoNote: f.pleatcoNote || '',
+    filburNote: f.filburNote || '',
+    size: `${d.diameterText || '—'} × ${d.lengthText || '—'}${sq ? `, ${sq}` : ''}`,
+    fittings: [d.topCore, d.bottomCore].filter(Boolean).join(' / ') || '—',
+    wholes: indexed.wholes.join(' '),
+    tokens: indexed.tokens.join(' '),
+  };
+});
+const faqs: [string, string][] = [
+  ['Which part numbers can I look up?', 'Any OEM, Unicel, Pleatco, or Filbur number that is already in this site’s dataset. The dataset is built from the Unicel 2026 Replacement Guide, the Pleatco 2023 catalog, the Filbur catalog, and the other sources named on each filter page. A number that is not in those sources will not appear. This lookup does not invent a match.'],
+  ['Does one number always mean one cartridge?', 'No. Some numbers are listed on more than one cartridge. The lookup lists every row that carries the number you typed, with that row’s diameter, length, fittings, and square feet when a source printed them. Open each filter page and compare before you order.'],
+  ['Is a catalog cross-reference the same filter the spa maker sells?', 'No. A cross-reference is the filter maker’s match on size and fittings. Hot Spring’s maintenance page says to replace with genuine Watkins filters. Jacuzzi recommends filters designed for the specific model. Check the filter page, then the fittings, before you buy.'],
+];
+const sources = ['unicel26', 'pleatco23', 'filburCat', 'hsMaint', 'jac'] as const;
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Filter cross-reference lookup', url, description: 'Enter a Unicel, Pleatco, Filbur, or OEM spa filter part number and see the equivalent numbers, dimensions, and filter pages already in this dataset.', inLanguage: 'en-US', dateModified: mod, isPartOf: { '@type': 'WebSite', name: 'MySpaFilter', url: site }, publisher: publisherRef },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Tools', item: new URL('/tools/', site).href }, { '@type': 'ListItem', position: 3, name: 'Cross-reference lookup', item: url }] },
+];
+---
+<Base title="Spa Filter Cross-Reference Lookup | MySpaFilter" description="Enter a Unicel, Pleatco, Filbur, or OEM spa filter part number and see the equivalent numbers, dimensions, and filter pages already in this dataset." jsonld={ld}>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › <span aria-current="page">Cross-reference lookup</span></nav>
+<h1>Filter cross-reference lookup</h1>
+<p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={reviewed}>November 1, 2026</time></p>
+<p>Type the number on the end cap or the box. This page lists every cartridge in the dataset that carries it, with the OEM, Unicel, Pleatco, and Filbur numbers already on that row, plus diameter, length, and fittings. Each name links to that filter page. The homepage search opens one part-number page and leaves this step out. The <a href="/size/">size lookup</a> is the other tool, for when the number is gone. This one does not add a number the catalogs do not already have.</p>
+<p>Retailer buttons stay on the filter page. A listing this site has opened is labeled there, and a search is labeled as a search. This page does not print a price.</p>
+<HolidayCta />
+<form id="xref-form" class="card" role="search">
+<label for="q">Part number</label>
+<input id="q" class="wide" type="search" inputmode="text" autocomplete="off" placeholder="e.g. C-7350, 6540-476, FC-0161, PWK25-4" aria-describedby="xref-msg">
+<p><button class="btn" type="submit">Look up equivalents</button></p>
+<p id="xref-msg">Type a part number. Matches from this dataset are listed under the box, each linking to its filter page.</p>
+</form>
+<p id="xref-empty">The table stays empty until a number matches. Try <a href="/tools/cross-reference/?q=C-8326">C-8326</a>, <a href="/tools/cross-reference/?q=6540-476">6540-476</a>, or <a href="/tools/cross-reference/?q=FC-0161">FC-0161</a>.</p>
+<div class="tbl" hidden>
+<table id="xref">
+<thead><tr><th>Match</th><th>Filter page</th><th>OEM</th><th>Unicel</th><th>Pleatco</th><th>Filbur</th><th>Size</th><th>Top / bottom</th></tr></thead>
+<tbody>
+{rows.map((r) => <tr hidden data-wholes={r.wholes} data-tokens={r.tokens}>
+<td class="xref-match"></td>
+<td><a href={r.href}>{r.name}</a> {r.verified ? <span class="badge">cited</span> : <span class="badge u">unverified</span>}</td>
+<td>{r.oem.length ? r.oem.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : '—'}</td>
+<td>{r.unicel.length ? r.unicel.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : '—'}</td>
+<td>{r.pleatco.length ? r.pleatco.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : '—'}{r.pleatcoNote && <small> ({r.pleatcoNote})</small>}</td>
+<td>{r.filbur.length ? r.filbur.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : '—'}{r.filburNote && <small> ({r.filburNote})</small>}</td>
+<td>{r.size}</td>
+<td>{r.fittings}</td>
+</tr>)}
+</tbody>
+</table>
+</div>
+<noscript><p>With JavaScript off, this filter does not run. Use the <a href="/data/">dataset table</a>, or open a filter page from the <a href="/">homepage</a>.</p></noscript>
+<h2>FAQ</h2>
+{faqs.map(([q, a]) => <details class="card"><summary><strong>{q}</strong></summary><p>{a}</p></details>)}
+<h2>Sources</h2>
+<p>Each filter page names the catalog page its row came from. The documents behind the dataset, and the two maker sentences in the FAQ, are:</p>
+<ol>{sources.map((k, i) => <li id={`src-${k}`} value={i + 1}><a href={SRC[k].u} rel="nofollow">{SRC[k].t}</a></li>)}</ol>
+<p>Numbers on this page are the ones those rows already store. The method is on the <a href="/about/#methodology">about page</a>. A correction goes to <a href="/contact/">contact</a>, which reaches contact@myspafilter.com and no other address.</p>
+<p>Related: <a href="/guides/oem-vs-unicel-vs-pleatco-spa-filters/">OEM vs Unicel vs Pleatco</a>, <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel, and Pleatco numbers compare</a>, <a href="/guides/how-to-find-your-spa-filter-size/">how to find your spa filter size</a>, and the <a href="/tools/filter-schedule/">replace and clean calculator</a>.</p>
+<script>
+import { classify, resultMessage } from '../../lib/xref.mjs';
+const input = document.getElementById('q') as HTMLInputElement;
+const msg = document.getElementById('xref-msg');
+const wrap = document.getElementById('xref')?.closest('.tbl') as HTMLElement | null;
+const empty = document.getElementById('xref-empty');
+const trs = [...document.querySelectorAll<HTMLTableRowElement>('#xref tbody tr')].map((tr) => ({
+  tr,
+  wholes: (tr.dataset.wholes || '').split(' ').filter(Boolean),
+  tokens: (tr.dataset.tokens || '').split(' ').filter(Boolean),
+}));
+const run = () => {
+  const typed = input.value.trim();
+  if (!typed) {
+    for (const row of trs) row.tr.hidden = true;
+    if (wrap) wrap.hidden = true;
+    if (empty) empty.hidden = false;
+    if (msg) msg.textContent = 'Type a part number. Matches from this dataset are listed under the box, each linking to its filter page.';
+    return;
+  }
+  const result = classify(trs, typed);
+  const shown = result.kind === 'partial' ? result.partial : [...result.exact, ...result.token];
+  for (const row of trs) {
+    const hit = result.exact.includes(row) ? 'Exact' : result.token.includes(row) ? 'Inside a longer number' : result.partial.includes(row) ? 'Partial' : '';
+    row.tr.hidden = !hit;
+    const cell = row.tr.querySelector('.xref-match');
+    if (cell) cell.textContent = hit;
+  }
+  if (wrap) wrap.hidden = shown.length === 0;
+  if (empty) empty.hidden = shown.length > 0;
+  if (msg) msg.textContent = resultMessage(result);
+};
+document.getElementById('xref-form')?.addEventListener('submit', (e) => { e.preventDefault(); run(); });
+input?.addEventListener('input', run);
+const initial = new URLSearchParams(location.search).get('q');
+if (initial && input) input.value = initial;
+run();
+</script>
+</Base>

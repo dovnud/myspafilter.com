@@ -102,6 +102,7 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
 {others.length>0 && <p>The same {pk} cartridge is also listed for {others.map((x,i)=><>{i>0?', ':''}<a href={modelHref(x)}>{x.brand}</a></>)}, so those pages are a handy second check on the part number.</p>}
 {moreBrand.length>0 && <><h2>Other {f.brand} cartridges</h2><ul>{moreBrand.map(x=><li><a href={modelHref(x)}>{x.model}</a> — {(x.dimensions as any).diameterText} × {(x.dimensions as any).lengthText}</li>)}</ul>
 <p><a href={`/${f.brandSlug}/`}>See all {sameBrand.length} {f.brand} spa filters →</a></p></>}
+<p>Line every number on this cartridge up in the <a href={`/tools/cross-reference/?q=${encodeURIComponent(pk || f.oem || '')}`}>cross-reference lookup</a>, or count a clean and replace date from the published intervals in the <a href="/tools/filter-schedule/">calculator</a>.</p>
 <p>Match the top and bottom, not only the diameter. <a href="/guides/open-end-vs-threaded-hot-tub-filters/">Open-end vs threaded filters</a> explains those fittings, and <a href="/guides/how-to-install-a-hot-tub-filter/">how to install a cartridge</a> covers power-off, the retainer, and not running the spa with the filter removed.{fg && <> For this brand, see <a href={fg[0]}>{fg[1]}</a>.</>} Catalog numbers are compared in <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel and Pleatco numbers compare</a>.</p>
 <p><strong>When the measurements match,</strong> the same retailer link is repeated here.</p>
 <BuyLinks filter={f} />

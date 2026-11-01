@@ -4,6 +4,9 @@
 
 ## Key pages
 - [Home / part-number search](https://myspafilter.com/)
+- [Tools](https://myspafilter.com/tools/)
+- [Filter cross-reference lookup](https://myspafilter.com/tools/cross-reference/): type an OEM, Unicel, Pleatco, or Filbur number already in the dataset and see the equivalent numbers, dimensions, and filter pages. It does not invent a match.
+- [When to replace or clean](https://myspafilter.com/tools/filter-schedule/): dates from the intervals Hot Spring, Jacuzzi, Sundance, Unicel, and Pleatco publish. Where those pages disagree, the page shows the range. The reminder form only stores a request. It does not send email and it is not a newsletter.
 - [Find a filter by size](https://myspafilter.com/size/)
 - [Measuring guide](https://myspafilter.com/guide/)
 - [Guides index](https://myspafilter.com/guides/)

@@ -30,6 +30,9 @@ export function pageLastmod(pathname: string): string | undefined {
   if (seg[0] === 'fitment' && seg.length === 2) return fitPages.find((x) => x.slug === seg[1])?.date || FITMENT_DATE;
   if (seg[0] === 'supplies') return max([fileDate('src/pages/supplies/index.astro'), ...guides.filter((g) => extra.has(g.slug)).map(guideDate)]);
   if (seg[0] === 'size') return max([fileDate('src/pages/size/index.astro'), dataDate()]);
+  if (seg[0] === 'tools' && seg.length === 1) return fileDate('src/pages/tools/index.astro') || '2026-11-01';
+  if (seg[0] === 'tools' && seg[1] === 'cross-reference') return max([fileDate('src/pages/tools/cross-reference.astro'), fileDate('src/lib/xref.mjs'), dataDate()]) || '2026-11-01';
+  if (seg[0] === 'tools' && seg[1] === 'filter-schedule') return max([fileDate('src/pages/tools/filter-schedule.astro'), fileDate('src/lib/care-calc.mjs')]) || '2026-11-01';
   if (seg[0] === 'data') return max([fileDate('src/pages/data/index.astro'), dataDate()]);
   const st: Record<string, string> = { about: 'about', contact: 'contact', guide: 'guide', 'affiliate-disclosure': 'affiliate-disclosure', disclaimer: 'disclaimer', privacy: 'privacy', terms: 'terms' };
   if (st[seg[0]] && seg.length === 1) return fileDate(`src/pages/${st[seg[0]]}.astro`);

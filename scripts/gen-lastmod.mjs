@@ -41,7 +41,9 @@ for (const k of Object.keys(rows)) if (!head.has(k) && !dirty.includes(FILE)) de
 // ---- files ----
 const tracked = ['src/pages/index.astro', 'src/pages/about.astro', 'src/pages/contact.astro', 'src/pages/guide.astro', 'src/pages/size/index.astro', 'src/pages/supplies/index.astro',
   'src/pages/guides/index.astro', 'src/pages/data/index.astro', 'src/pages/affiliate-disclosure.astro', 'src/pages/disclaimer.astro', 'src/pages/privacy.astro', 'src/pages/terms.astro',
-  'src/lib/brandcopy.ts', 'src/lib/guides.ts', 'src/lib/guides2.ts'];
+  'src/lib/brandcopy.ts', 'src/lib/guides.ts', 'src/lib/guides2.ts',
+  'src/pages/tools/index.astro', 'src/pages/tools/cross-reference.astro', 'src/pages/tools/filter-schedule.astro',
+  'src/lib/xref.mjs', 'src/lib/care-calc.mjs'];
 const files = {}, first = {};
 for (const f of tracked) {
   const p = join(root, f);
