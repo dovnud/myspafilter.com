@@ -5229,10 +5229,23 @@
     "bottomCore": "2” male thread/MPT",
     "sqft": 90.0
    },
-   "notes": "Made with antimicrobial filter media (Unicel spec note). Only the Unicel 2026 guide lists it for Marquis.",
+   "notes": "Made with antimicrobial filter media (Unicel spec note). Only the Unicel 2026 guide lists it among the catalogs. Two spa dealers sell OEM 20499 for Marquis ATV swim spas with matching area, length and handle, but a slightly larger diameter.",
    "status": "needs_verification",
-   "gaps": "single source (Unicel only); no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources",
-   "fitment": [],
+   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT",
+   "fitment": [
+    {
+     "model": "Marquis ATV 14 and ATV 17 swim spas (ATV 14 Sport, ATV 14 Slash, ATV 17 Sport, ATV 17 Kona)",
+     "years": "",
+     "note": "some use two filters",
+     "src": "mqdealer"
+    },
+    {
+     "model": "Marquis V174S and V174K swim spas",
+     "years": "2023 and newer (select)",
+     "note": "two 90 sq ft filters",
+     "src": "mqdealer"
+    }
+   ],
    "pleatcoNote": "",
    "filburNote": "",
    "index": false,
@@ -5241,6 +5254,16 @@
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
      "where": "OEM cross reference (Marquis Spas section), PDF p.44 (printed p.40); spec table PDF p.10 (printed p.6)"
+    },
+    {
+     "source": "Southern Leisure Spas (spa dealer listing)",
+     "url": "https://shop.southernleisurespas.com/products/marquis-atv-swim-spa-filter-20499",
+     "where": "replaces Marquis 20499 and 20496; ~90 sq ft, ~30\" body, closed top with handle, ~2\" male thread, OD ~5-1/4\" to 5-1/2\"; Marquis ATV 14/17 and select 2023+ V174S/V174K"
+    },
+    {
+     "source": "Mastercraft Pool and Spa (spa dealer listing)",
+     "url": "https://mastercraftpool.store/products/atv-90-sf-filter-2",
+     "where": "Marquis P/N 20499, 90 sq ft, 31.5\" long, 5.5\" OD, bar handle, threaded bottom; Marquis ATV 14 and ATV 17 swim spas"
     }
    ]
   },
@@ -6479,67 +6502,67 @@
     "bottomCore": "2-1/16\" / open",
     "sqft": 4.0
    },
-   "notes": "Intex sells this cartridge as Type S1: 29001E (twin pack), 29011E (six-pack) and single replacement part 11692. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees. The model list is Intex's own compatible-item list for part 11692 (Intex marks four 2019 sets with the year). A Home Depot listing for 29001E also names 28413E, 28423E and 28443E, which are not on Intex's list. The EG/EH versions of 28425, 28427, 28439 and 28441 take the newer Type S2 cartridge instead.",
+   "notes": "Intex sells this cartridge as Type S1: 29001E (twin pack), 29011E (six-pack) and single replacement part 11692. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees. The model list is Intex's own compatible-item list for part 11692 (Intex names five of them as 2019 sets); the years shown are the model-year folders Intex's replacement-parts archive files part 11692 under. A Home Depot listing for 29001E also names 28413E, 28423E and 28443E, which are not on Intex's list. The EG/EH versions of 28425, 28427, 28439 and 28441 take the newer Type S2 cartridge instead.",
    "status": "needs_verification",
-   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found",
+   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved",
    "fitment": [
     {
      "model": "Intex PureSpa 28403E",
-     "years": "2019",
-     "note": "",
+     "years": "2017–2019, 2022–2026",
+     "note": "Intex's list names it as a 2019 set",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28405E",
-     "years": "2019",
-     "note": "",
+     "years": "2017, 2018",
+     "note": "Intex's list names it as a 2019 set",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28407E",
-     "years": "2019",
-     "note": "",
+     "years": "2017–2026",
+     "note": "Intex's list names it as a 2019 set",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28409E",
-     "years": "2019",
-     "note": "",
+     "years": "2017–2019",
+     "note": "Intex's list names it as a 2019 set",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28413WL",
-     "years": "",
+     "years": "2017, 2018, 2022–2026",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28421E",
-     "years": "",
+     "years": "2016, 2024–2026",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28425E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28427E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28429E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28431E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
@@ -6557,37 +6580,37 @@
     },
     {
      "model": "Intex PureSpa 28435E",
-     "years": "",
+     "years": "2016, 2024–2026",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28439E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28441E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28453E",
-     "years": "2019",
-     "note": "",
+     "years": "2017–2019",
+     "note": "Intex's list names it as a 2019 set",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28455E",
-     "years": "",
+     "years": "2017–2019",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28457E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
@@ -6599,31 +6622,31 @@
     },
     {
      "model": "Intex PureSpa 28461E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28473E",
-     "years": "",
+     "years": "2019–2026",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28475E",
-     "years": "",
+     "years": "2021",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex SimpleSpa 28481E",
-     "years": "",
+     "years": "2020–2022",
      "note": "",
      "src": "intex"
     },
     {
      "model": "Intex PureSpa 28491E",
-     "years": "",
+     "years": "2017, 2019–2021, 2024–2026",
      "note": "",
      "src": "intex"
     }
@@ -6661,6 +6684,11 @@
      "source": "Home Depot listing for Intex 29001E (retailer)",
      "url": "https://www.homedepot.com/p/Intex-4-25-in-Dia-Type-S1-Pool-Replacement-Filter-Cartridge-4-Pack-2-x-29001E/310718769",
      "where": "Compatible-models list: PureSpa 28403E, 28407E, 28443E, 28453E, 28421E, 28423E, 28413E (28413E, 28423E and 28443E are not on Intex's own list)"
+    },
+    {
+     "source": "Intex (manufacturer replacement-parts archive)",
+     "url": "https://intexcorp.com/replacement-parts-archive/purespa/",
+     "where": "PureSpa set-number and model-year folders (2016–2026) that list part 11692"
     }
    ],
    "searchTerm": "Intex 29001E",
@@ -6684,10 +6712,46 @@
     "topCore": "",
     "bottomCore": ""
    },
-   "notes": "Bestway's US site gives the Type VI cartridge as Ø4.2\" x 3.1\" for its SaluSpa line, and the Lay-Z-Spa UK site sells the same Type VI cartridge as compatible with all Lay-Z-Spa hot tubs except the Monte Carlo, which takes its own rigid-spa cartridge. Neither Bestway page prints the part number; the Home Depot listing for the Bestway two-pack names it as 58323E-BW (4.2\" x 4.2\" x 3.1\"). The Unicel, Pleatco and Filbur catalogs do not list a Bestway Type VI equivalent, and no source gives an end-cap opening size or a sq ft rating.",
+   "notes": "Bestway's US site gives the Type VI cartridge as Ø4.2\" x 3.1\" for its SaluSpa line, and the Lay-Z-Spa UK site sells the same Type VI cartridge as compatible with all Lay-Z-Spa hot tubs except the Monte Carlo, which takes its own rigid-spa cartridge. Neither Bestway page prints the part number; the Home Depot listing for the Bestway two-pack names it as 58323E-BW (4.2\" x 4.2\" x 3.1\"). The Unicel, Pleatco and Filbur catalogs do not list a Bestway Type VI equivalent, and no source gives an end-cap opening size or a sq ft rating. Bestway's own documents use other numbers for the same Type VI cartridge: 58239 (VI) in the 2013 Lay-Z-Spa manual, and item 60311 (10.6 x 8.0 cm, two per pack) in the 2021 and 2025 Lay-Z-Spa catalogs, sold today as BW60311 (Lay-Z-Spa UK) and 60311E (Bestway USA). The Monte Carlo cartridge is BWA0024, and the 2011 manual for the older #54075 and #54090 tubs lists a different cartridge, 58094.",
    "status": "verified",
-   "gaps": "no Unicel, Pleatco or Filbur equivalent; no end-cap opening size or sq ft rating; part number 58323 is printed on a retailer listing, not on Bestway's own pages; no model-year fitment",
+   "gaps": "no Unicel, Pleatco or Filbur equivalent; no end-cap opening size or sq ft rating; 58323 itself appears only on retailer listings (Bestway's current number is 60311)",
    "fitment": [
+    {
+     "model": "Lay-Z-Spa Vegas #54112 and Monaco #54113",
+     "years": "2013",
+     "note": "printed as 58239 (VI), in filter set P6600",
+     "src": "bwman"
+    },
+    {
+     "model": "Lay-Z-Spa AirJet: St. Lucia, Miami, Bahamas, Cancun, Tahiti, Ibiza, Honolulu, Hawaii, St. Moritz, Helsinki",
+     "years": "2021",
+     "note": "item 60311",
+     "src": "bwcat"
+    },
+    {
+     "model": "Lay-Z-Spa AirJet Plus: Milan, Vancouver; HydroJet Pro: Hawaii, Maldives",
+     "years": "2021",
+     "note": "item 60311",
+     "src": "bwcat"
+    },
+    {
+     "model": "Lay-Z-Spa Miami AirJet 4/6, Hollywood Luxe AirJet 6, Hawaii/Bali/Rome Smart AirJet 6 and 7",
+     "years": "2025",
+     "note": "item 60311",
+     "src": "bwcat"
+    },
+    {
+     "model": "Lay-Z-Spa Dominica and Cabo Smart HydroJet 6; Santorini, Maldives, San Francisco Smart HydroJet Pro 7",
+     "years": "2025",
+     "note": "item 60311",
+     "src": "bwcat"
+    },
+    {
+     "model": "Lay-Z-Spa Carrara Smart AirJet 6 and Toronto Smart AirJet 7 (ThermaCore)",
+     "years": "2025",
+     "note": "item 60311",
+     "src": "bwcat"
+    },
     {
      "model": "Lay-Z-Spa hot tubs (all models except Monte Carlo)",
      "years": "",
@@ -6725,6 +6789,21 @@
      "source": "Home Depot listing for Bestway Type VI (retailer)",
      "url": "https://www.homedepot.com/p/Bestway-4-2-in-Dia-Type-VI-SaluSpa-Hot-Tub-Replacement-Pool-Filter-Cartridge-2-Pack-2-x-58323E-BW/310718619",
      "where": "Bestway Type VI SaluSpa filter cartridge 2-pack, model 2 x 58323E-BW; 4.2 in W x 4.2 in D x 3.1 in H"
+    },
+    {
+     "source": "Bestway Lay-Z-Spa 2025 catalog (manufacturer)",
+     "url": "https://www.lay-z-spa.no/25ss_LayZSpa.pdf",
+     "where": "Technical Features & Accessory Compatibility matrix: Filter Cartridge (60311) for every model; 60311 10.6 cm x 8.0 cm / 4.2\" x 3.1\""
+    },
+    {
+     "source": "Bestway Lay-Z-Spa Collection 2021 catalog (manufacturer)",
+     "url": "https://bestway-store.ru/upload/bestwaycatalog/BESTWAY_2021_Lay-Z-Spa_bestway-store.ru.pdf",
+     "where": "box contents of all 14 models list filter cartridge (VI); spare 60311, 2 cartridges, 10.6 x 8.0 cm"
+    },
+    {
+     "source": "Bestway Lay-Z-Spa owner’s manual 2013 (manufacturer)",
+     "url": "https://files.drinkstuff.com/pdf/BestwayLay-Z-SpaManual2013.pdf",
+     "where": "Vegas #54112 / Monaco #54113: 58239(VI) Filter Cartridge, P6600 Filter Set"
     }
    ]
   },
