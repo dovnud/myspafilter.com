@@ -5,6 +5,7 @@ import { newGuides } from './guides3';
 import { batchGuides } from './guides4';
 import { moreGuides } from './guides5';
 import { holidayGuides } from './guides6';
+import { drainGuides } from './guides7';
 export { SRC, REVIEWED };
 export type Guide={slug:string;title:string;desc:string;answer:string;body:string;faq:[string,string][];src:string[];picks?:PickGroup[];pickHeading?:string;related?:string[];reviewed?:string;intro?:string;published?:string};
 const baseGuides: Guide[] = [
@@ -174,4 +175,4 @@ const attach: Record<string, PickGroup[]> = {
 };
 for (const g of baseGuides) if (attach[g.slug]) { g.picks = attach[g.slug]; g.reviewed = REVIEWED_NEW; }
 
-export const guides: Guide[] = [...baseGuides, ...extraGuides, ...newGuides, ...batchGuides, ...moreGuides, ...holidayGuides];
+export const guides: Guide[] = [...baseGuides, ...extraGuides, ...newGuides, ...batchGuides, ...moreGuides, ...holidayGuides, ...drainGuides];

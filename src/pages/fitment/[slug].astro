@@ -27,7 +27,7 @@ const colls=(p.collections as string[]).filter(c=>p.rows.some((r:any)=>r.collect
 <p set:html={p.partsNote || 'Equivalents and sizes are from the Unicel 2026 Replacement Guide unless the table says otherwise. A part number in brackets is another factory number for the same cartridge in Unicel’s cross-reference.'} />
 {colls.length>0 && <><h2>Find your model</h2>
 <p>Rows show the factory part number, then the model years it is listed for. Where two part numbers are joined by “or”, the dealer table lists both for those years. Years are from one dealer’s table and are the least certain part of this page; the part number on your old cartridge wins.</p>
-{colls.map(c=><Fragment><h3>{c}</h3><div class="tbl"><table><thead><tr><th>Model</th><th>Cartridge: model years</th></tr></thead><tbody>{p.rows.filter((r:any)=>r.collection===c).map((r:any)=><tr><td>{r.model}</td><td>{fmt(r).map((l:string,i:number)=><Fragment>{i>0 && <br />}{l}</Fragment>)}</td></tr>)}</tbody></table></div></Fragment>)}</>}
+{colls.map(c=><Fragment><h3 id={c.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}>{c}</h3><div class="tbl"><table><thead><tr><th>Model</th><th>Cartridge: model years</th></tr></thead><tbody>{p.rows.filter((r:any)=>r.collection===c).map((r:any)=><tr><td>{r.model}</td><td>{fmt(r).map((l:string,i:number)=><Fragment>{i>0 && <br />}{l}</Fragment>)}</td></tr>)}</tbody></table></div></Fragment>)}</>}
 {notes.length>0 && <><h2>Model-years the dealer flags for a double-check</h2><ul>{notes.map(n=><li>{n}</li>)}</ul></>}
 <Fragment set:html={p.extraHtml} />
 <p>Why one cartridge size can carry two different square-foot ratings: <a href="/guides/why-same-size-spa-filters-have-different-square-feet/">our explainer with Unicel’s pleat-count table</a>.</p>

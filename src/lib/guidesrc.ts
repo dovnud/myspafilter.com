@@ -52,5 +52,11 @@ export const SRC: Record<string,{t:string;u:string}> = {
   upsHoliday:{t:'UPS — 2026 U.S. Holiday Schedule',u:'https://www.ups.com/us/en/support/shipping-support/shipping-services/holiday-shipping-schedule'},
   upsYearEnd:{t:'UPS — 2026 Year-End Holiday Schedule (recommended last days to ship)',u:'https://assets.ups.com/adobe/assets/urn:aaid:aem:e8548535-8096-4fa9-9cef-2b81aef7c26c/original/as/year-end-holiday-schedule-us-en.pdf'},
   fedexHoliday:{t:'FedEx — Holiday schedule and last days to ship',u:'https://www.fedex.com/en-us/holiday/last-days-to-ship.html'},
+  jacDrain:{t:'Jacuzzi — How to Drain a Spa: Step-by-Step Guide (filter care while drained; refilling)',u:'https://www.jacuzzi.com/en-us/How-to-Drain-a-Spa.html'},
+  jacCleanTub:{t:'Jacuzzi — How to Clean a Hot Tub (plumbing flush, filters, refill)',u:'https://www.jacuzzi.com/en-us/How-to-Clean-a-Hot-Tub.html'},
+  ahhUS:{t:'Ahh-Some — Hot Tub/Jetted Bath Plumbing & Jet Cleaner instructions (US, PDF)',u:'https://ahhsome.com/wp-content/uploads/Ahhsome-Hot-Tub-Instructions-042420.pdf'},
+  ahhUK:{t:'Ahh!Some Watercare UK — How to purge your hot tub (step by step)',u:'https://ahhsomeuk.com/how-to-use/'},
+  ltJetClean:{t:'Leisure Time Inc. — Leisure Time Jet Clean (directions for use)',u:'https://leisuretimeinc.com/products/leisure-time-jet-clean'},
+  sgFlush:{t:'BioGuard — SpaGuard Spa System Flush technical bulletin with label directions (copy hosted by The Pool and Spa House)',u:'https://www.thepoolandspahouse.com/documents/Manuals/BioGuard_Spa-System-Flush-TIB.pdf'},
 };
 export const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');
