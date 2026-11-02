@@ -32,7 +32,7 @@ const ld = [
 <Base title={title} description={desc} jsonld={ld}>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">Dataset</span></nav>
 <h1>Spa filter cartridge dataset</h1>
-<p>Every cartridge on MySpaFilter in one table: <strong>{filters.length}</strong> rows from <strong>{nBrands}</strong> spa brands, with OEM, Unicel, Pleatco and Filbur part numbers, diameter, length, fittings, filter area and the sources each row comes from. <strong>{nVer}</strong> rows are verified against the cited pages; the rest are marked unverified. Data last changed <time datetime={dataUpdated}>{nice(dataUpdated)}</time>.</p>
+<p>Every cartridge on MySpaFilter in one table: {filters.length} rows from {nBrands} spa brands, with OEM, Unicel, Pleatco and Filbur part numbers, diameter, length, fittings, filter area and the sources each row comes from. {nVer} rows are verified against those pages. The rest say unverified. Data last changed <time datetime={dataUpdated}>{nice(dataUpdated)}</time>.</p>
 <p>
 <a class="btn" href="/data/spa-filters.csv" download>Download CSV</a><a class="btn sand" href="/data/spa-filters.json" download>Download JSON</a></p>
 <p class="crumbs">Both files are generated from the same data as this table (<code>spa-filters.csv</code> and <code>spa-filters.json</code>), and include full source citations and the date each row last changed.</p>
@@ -50,15 +50,15 @@ const ld = [
 <div class="tbl"><table class="dataset"><caption class="crumbs" style="text-align:left;padding:.6rem .75rem">{filters.length} cartridges, sorted by brand then model. Click a model for its page with the full citations.</caption>
 <thead><tr><th>Brand</th><th>Model</th><th>OEM part no.</th><th>Unicel</th><th>Pleatco</th><th>Filbur</th><th>Diameter</th><th>Length</th><th>Top fitting</th><th>Bottom fitting</th><th>Sq ft</th><th>Status</th><th>Sources</th></tr></thead>
 <tbody>{sorted.map(f=>{const d:any=f.dimensions;return <tr>
-<td>{f.brand}</td><td><a href={modelHref(f)}>{f.model}</a></td><td>{f.oemAll||f.oem||'—'}</td><td>{f.equivalents?.unicel||'—'}</td><td>{f.equivalents?.pleatco||'—'}</td><td>{f.equivalents?.filbur||'—'}</td>
-<td>{d.diameterText||'—'}</td><td>{d.lengthText||'—'}</td><td>{d.topCore||'—'}</td><td>{d.bottomCore||'—'}</td><td>{d.sqft!=null?d.sqft:'—'}</td>
-<td>{f.status==='verified'?<span class="badge">verified</span>:<span class="badge u">unverified</span>}</td>
+<td>{f.brand}</td><td><a href={modelHref(f)}>{f.model}</a></td><td>{f.oemAll||f.oem||'not listed'}</td><td>{f.equivalents?.unicel||'not listed'}</td><td>{f.equivalents?.pleatco||'not listed'}</td><td>{f.equivalents?.filbur||'not listed'}</td>
+<td>{d.diameterText||'not listed'}</td><td>{d.lengthText||'not listed'}</td><td>{d.topCore||'not listed'}</td><td>{d.bottomCore||'not listed'}</td><td>{d.sqft!=null?d.sqft:'not listed'}</td>
+<td>{f.status==='verified'?'verified':'unverified'}</td>
 <td>{(f.sources||[]).map((s,i)=><>{i>0?'; ':''}<a href={s.url} rel="nofollow" title={s.where}>{short(s.source)}</a></>)} · <a href={modelHref(f)}>citations</a></td></tr>})}</tbody></table></div>
 
 <h2 id="columns">Columns and notes</h2>
 <ul>
 <li><strong>OEM part no.</strong> is the spa maker's number; where the sources list older numbers they are shown together.</li>
-<li><strong>Unicel, Pleatco, Filbur</strong> are the equivalents given by those catalogs. A dash means the catalog does not list one; we do not guess.</li>
+<li><strong>Unicel, Pleatco, Filbur</strong> are the equivalents given by those catalogs. “not listed” means that catalog does not print one. We do not fill the cell.</li>
 <li><strong>Diameter and length</strong> are in inches as printed in the sources; the CSV and JSON also carry numeric inch values.</li>
 <li><strong>Sq ft</strong> is the filter media area where a source gives it; blank when none does.</li>
 <li><strong>Status:</strong> verified means the numbers come straight from the cited pages; unverified rows lack a second source or have a conflict. See our <a href="/about/#methodology">methodology</a>. Measure your old cartridge before ordering.</li>

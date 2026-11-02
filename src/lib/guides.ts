@@ -25,7 +25,7 @@ body:`<h2>What the manufacturers say</h2>
 <h2>Why there is no fixed lifespan</h2>
 <p>Unicel and Pleatco both make the same point: a cartridge has no moving parts, so it doesn’t “fail” on a date. The media gradually plugs with body oils, soaps, chemicals and very fine particles${c('unicelReplace','pleatcoCat')}. They tie the end of a cartridge’s life to three things: shorter and shorter intervals between cleanings, low flow / high pressure, or physical failure such as torn media or a collapsed core${c('pleatcoCat')}.</p>
 <h2>What makes a filter wear out faster</h2>
-<ul><li>More bathers and more frequent use (Hot Spring notes that more use means more frequent cleaning)${c('hsBlog')}.</li><li>Unbalanced water chemistry${c('pleatcoCat')}.</li><li>Scrubbing with a stiff brush${c('pleatcoCat')}, or unnecessary acid washing — Unicel calls acid washing “perhaps the biggest single factor leading to premature cartridge failure”${c('unicel')}.</li></ul>
+<ul><li>More bathers and more frequent use (Hot Spring notes that more use means more frequent cleaning)${c('hsBlog')}.</li><li>Unbalanced water chemistry${c('pleatcoCat')}.</li><li>Scrubbing with a stiff brush${c('pleatcoCat')}, or unnecessary acid washing. Unicel calls acid washing “perhaps the biggest single factor leading to premature cartridge failure”${c('unicel')}.</li></ul>
 <h2>Stretch the life with two cartridges</h2><p>Unicel, Pleatco and Jacuzzi all recommend alternating two sets of cartridges so one can be soaked and dried fully while the other is in use${c('unicelReplace','pleatcoCat','jac')}. Find your replacement by OEM number on the <a href="/">homepage search</a>, or browse <a href="/hot-spring/">Hot Spring</a>, <a href="/jacuzzi/">Jacuzzi</a> and <a href="/sundance/">Sundance</a> cartridges. The same intervals can be counted from a date on the <a href="/tools/filter-schedule/">replace and clean calculator</a>. Where the sources disagree, that page shows the range instead of one due date.</p>`,
 faq:[['Do I need to replace my hot tub filter every year?','Not necessarily. Jacuzzi gives a 12–24 month range and Hot Spring gives 2–3 years for standard cartridges; replace sooner if the cartridge is torn, flattened or no longer restores flow after cleaning.'],
 ['How long do disposable inner filters last?','They are on a much shorter schedule. Sundance’s 2024 780 Series manual says to replace the small MicroClean cartridge every 3 months, and its 680 Series manual says to replace the MicroClean Mini insert every 4 months.'],
@@ -33,7 +33,7 @@ faq:[['Do I need to replace my hot tub filter every year?','Not necessarily. Jac
 src:['jac','hsBlog','hsMaint','sd680','sd780','pleatcoCat','unicelReplace','unicel']},
 
 {slug:'how-to-clean-a-hot-tub-filter',title:'How to clean a hot tub filter (step by step)',
-desc:'The cartridge cleaning procedure Unicel and Pleatco publish: hose rinse, degreasing soak, optional acid soak, and rinse — plus what to avoid.',
+desc:'The cartridge cleaning procedure Unicel and Pleatco publish: hose rinse, degreasing soak, optional acid soak, and rinse, plus what to avoid.',
 answer:`Turn the spa off, remove the cartridge, hose it from the top down at about a 45° angle between every pleat, then soak it for at least an hour (overnight is better) in a filter cleaner, rinse thoroughly and reinstall. That is the procedure Unicel and Pleatco both publish${c('unicel','pleatcoCat')}.`,
 body:`<h2>The full procedure</h2><ol>
 <li><strong>Power off.</strong> Hot Spring and Jacuzzi both say to cut power before removing filters${c('hsManual','jac')}.</li>
@@ -41,9 +41,9 @@ body:`<h2>The full procedure</h2><ol>
 <li><strong>Hose rinse.</strong> Use a straight-flow nozzle, work from the top down, hold it at about 45°, and focus between the pleats; rinse until all debris is gone${c('unicel','pleatcoCat')}.</li>
 <li><strong>Degreasing soak.</strong> For spa cartridges, soak at least one hour (overnight is most effective) in a commercial filter cleaner, or 1 cup trisodium phosphate (TSP) per 5 gallons of water, or 1 cup dishwasher detergent per 5 gallons${c('unicel','pleatcoCat')}.</li>
 <li><strong>Rinse again</strong> to remove oils and cleaner${c('unicel')}. Jacuzzi warns that leftover residue can cause foaming once the jets run${c('jac')}.</li>
-<li><strong>Acid soak only if needed</strong> for mineral scale — see <a href="/guides/should-you-acid-wash-a-spa-filter/">should you acid wash a spa filter?</a></li>
+<li><strong>Acid soak only if needed</strong> for mineral scale, see <a href="/guides/should-you-acid-wash-a-spa-filter/">should you acid wash a spa filter?</a></li>
 <li><strong>Reinstall</strong> and restart. Don’t overtighten the filter retainer${c('hsManual')}.</li></ol>
-<h2>Things to avoid</h2><ul><li>Stiff brushes on the media${c('pleatcoCat')}.</li><li>Pressure washers or high-pressure nozzles that can tear fibers${c('jac')} (some Sundance manuals do call for a high-pressure hose nozzle on the outer pleated filter — follow your own manual${c('sd680')}).</li><li>Dishwashers and washing machines${c('jac')} — see <a href="/guides/can-you-put-a-hot-tub-filter-in-the-dishwasher/">dishwasher guide</a>.</li><li>Any cleaner on disposable inner inserts — Sundance says never to use filter cleaners on them${c('sd680')}.</li></ul>
+<h2>Things to avoid</h2><ul><li>Stiff brushes on the media${c('pleatcoCat')}.</li><li>Pressure washers or high-pressure nozzles that can tear fibers${c('jac')} (some Sundance manuals do call for a high-pressure hose nozzle on the outer pleated filter, follow your own manual${c('sd680')}).</li><li>Dishwashers and washing machines${c('jac')}, see <a href="/guides/can-you-put-a-hot-tub-filter-in-the-dishwasher/">dishwasher guide</a>.</li><li>Any cleaner on disposable inner inserts. Sundance says never to use filter cleaners on them${c('sd680')}.</li></ul>
 <h2>Using the spa while the filter soaks</h2><p>Jacuzzi advises against running the spa with no filter installed; keep a second clean cartridge to swap in${c('jac')}. Hot Spring’s manual also says not to use the spa with the cartridge removed${c('hsManual')}. Look up a spare by part number on the <a href="/">homepage</a>.</p>`,
 faq:[['How long should I soak a hot tub filter?','Unicel and Pleatco say at least one hour, with overnight most effective. Pleatco’s FilterWash tablets are designed for a 25–30 minute soak.'],
 ['Do filters need to dry before going back in?','Jacuzzi says filters can be reinstalled damp; rotating two sets lets each dry completely, which it says extends life.'],
@@ -108,22 +108,22 @@ body:`<h2>Checklist</h2><div class="tbl"><table><thead><tr><th>Sign</th><th>Sour
 <tr><td>Cloudy water or odor that persists after cleaning and balancing</td><td>Jacuzzi${c('jac')}</td></tr>
 <tr><td>FLO / low-flow errors right after cleaning</td><td>Jacuzzi${c('jac')}</td></tr>
 <tr><td>Discolored or worn media</td><td>Hot Spring${c('hsBlog')}</td></tr></tbody></table></div>
-<h2>Discoloration alone isn’t proof</h2><p>Pleatco notes that “white does not indicate clean” and media can discolor over time, while faded end caps can come from chlorine and cyanuric acid — though it can also indicate an old cartridge${c('pleatcoWash')}.</p>
+<h2>Discoloration alone isn’t proof</h2><p>Pleatco notes that “white does not indicate clean” and media can discolor over time, while faded end caps can come from chlorine and cyanuric acid, though it can also indicate an old cartridge${c('pleatcoWash')}.</p>
 <h2>Why it matters</h2><p>Hot Spring warns a clogged filter can trip the high-limit thermostat and shut the spa off${c('hsManual')}. CDC advises regular cartridge replacement per the manufacturer as part of controlling germs like Legionella in hot tubs${c('cdcLeg')}. Ready to replace? <a href="/">Search your part number</a>.</p>`,
 faq:[['Can a filter look dirty but still be fine?','Yes. Pleatco says white does not mean clean and media can discolor naturally; judge by flow and condition after a proper clean.'],
 ['What does a FLO error have to do with the filter?','Jacuzzi lists FLO/low-flow errors as a filter-related symptom; rinse and inspect the filter first, and call a dealer if it persists with a clean filter.']],
 src:['pleatcoCat','unicelReplace','jac','hsBlog','hsManual','pleatcoWash','cdcLeg']},
 
 {slug:'spa-filter-cleaner-vs-diy-soak',title:'Spa filter cleaner vs DIY soaks (TSP, dishwasher detergent, vinegar, bleach)',
-desc:'Which cleaning solutions cartridge makers actually approve for hot tub filters, and which to avoid.',
+desc:'Which cleaning solutions cartridge makers approve for hot tub filters, and which to avoid.',
 answer:`Unicel and Pleatco approve three soaks: a commercial filter cleaner, 1 cup TSP per 5 gallons, or 1 cup dishwasher detergent per 5 gallons${c('unicel','pleatcoCat')}. Jacuzzi prefers commercial non-foaming cleaners, allows a 1:3 white vinegar solution for light mineral scale, and says to avoid chlorine bleach, harsh degreasers, bathroom cleaners and abrasive powders${c('jac')}.`,
 body:`<h2>Comparison</h2><div class="tbl"><table><thead><tr><th>Option</th><th>What sources say</th></tr></thead><tbody>
 <tr><td>Commercial spa filter cleaner</td><td>Approved by Unicel/Pleatco${c('unicel','pleatcoCat')}; Jacuzzi’s preferred choice${c('jac')}; Hot Spring recommends a filter degreaser${c('hsManual')}</td></tr>
 <tr><td>Trisodium phosphate (TSP)</td><td>1 cup per 5 gallons, soak ≥1 hour${c('unicel','pleatcoCat')}</td></tr>
 <tr><td>Dishwasher detergent</td><td>1 cup per 5 gallons${c('unicel','pleatcoCat')}; Jacuzzi warns detergents can foam if not rinsed extremely well${c('jac')}</td></tr>
 <tr><td>White vinegar</td><td>1 part to 3 parts water for light mineral scale; weak on oils${c('jac')}</td></tr>
-<tr><td>Chlorine bleach</td><td>Avoid — can damage fibers${c('jac')}; Pleatco says bleaching agents can damage filtration fabric${c('pleatcoWash')}</td></tr>
-<tr><td>Muriatic acid</td><td>Only for confirmed mineral scale, after degreasing — <a href="/guides/should-you-acid-wash-a-spa-filter/">see guide</a></td></tr></tbody></table></div>
+<tr><td>Chlorine bleach</td><td>Avoid, can damage fibers${c('jac')}; Pleatco says bleaching agents can damage filtration fabric${c('pleatcoWash')}</td></tr>
+<tr><td>Muriatic acid</td><td>Only for confirmed mineral scale, after degreasing, <a href="/guides/should-you-acid-wash-a-spa-filter/">see guide</a></td></tr></tbody></table></div>
 <h2>Special cases</h2><ul><li><strong>Biguanide (Baquacil) users:</strong> Unicel and Pleatco say the cartridge must be cleaned with Baqua Clean before any cartridge cleaner${c('unicel','pleatcoCat')}.</li><li><strong>Disposable inserts:</strong> Sundance says never use filter cleaners on its inner inserts${c('sd680')}.</li><li><strong>Tablets:</strong> Pleatco FilterWash is meant for a 25–30 minute soak and the solution should not be saved${c('pleatcoWash')}.</li></ul><p>Always rinse thoroughly before reinstalling. Need a fresh cartridge instead? <a href="/">Find yours</a>.</p>`,
 faq:[['Can I use bleach on a hot tub filter?','Jacuzzi says to avoid chlorine bleach, and Pleatco says bleaching agents can damage filtration fabric.'],
 ['Is dishwasher detergent safe for spa filters?','Unicel and Pleatco list 1 cup per 5 gallons of water as an option; rinse very thoroughly because detergent residue can foam.'],
@@ -136,7 +136,7 @@ answer:`Usually not. Unicel calls acid washing “perhaps the biggest single fac
 body:`<h2>Unicel’s bubble test</h2><ol><li>Degrease the cartridge thoroughly and rinse away all soap${c('unicel')}.</li><li>Put a few drops of acid on a small area of media.</li><li>Bubbling = calcium/mineral buildup → mild acid soak. No bubbling = no acid wash needed${c('unicel')}.</li></ol>
 <h2>The soak</h2><p>1 part muriatic acid to 20 parts water until bubbling stops, then rinse${c('unicel','pleatcoCat')}. Unicel warns that acid-soaking before removing all oils and cleaner causes a permanent flow restriction${c('unicel')}.</p>
 <h2>Safety</h2><ul><li>Wear rubber gloves and safety glasses; don’t add water to acid; never mix chlorine and acid${c('unicel')}.</li><li>Jacuzzi says strong acids like muriatic acid should only be used by professionals and never as a first-step cleaner${c('jac')}.</li></ul>
-<p>If the cartridge is old and scaled, a replacement may be the safer choice — <a href="/">search your part number</a>.</p>`,
+<p>If the cartridge is old and scaled, a replacement may be the safer choice, <a href="/">search your part number</a>.</p>`,
 faq:[['What ratio of muriatic acid for a spa filter?','Unicel and Pleatco publish 1 part muriatic acid to 20 parts water, used only after degreasing and rinsing.'],
 ['Why degrease before acid?','Unicel warns acid-soaking with oils or cleaner still present causes a permanent restriction of flow and premature failure.']],
 src:['unicel','pleatcoCat','jac']},
@@ -146,11 +146,11 @@ desc:'What Jacuzzi, Pleatco and Sundance say about dishwashers, washing machines
 answer:`No to the dishwasher: Jacuzzi says dishwashers and washing machines aren’t recommended because high heat and aggressive spray can warp end caps and don’t clean deep between the pleats${c('jac')}. For rinsing, use a garden hose; Jacuzzi says to avoid pressure washers that can tear fibers${c('jac')}.`,
 body:`<h2>Quick answers</h2><div class="tbl"><table><thead><tr><th>Method</th><th>Verdict</th></tr></thead><tbody>
 <tr><td>Dishwasher / washing machine</td><td>Not recommended${c('jac')}</td></tr>
-<tr><td>Pressure washer</td><td>Avoid — can tear fibers or damage seams${c('jac')}</td></tr>
+<tr><td>Pressure washer</td><td>Avoid, can tear fibers or damage seams${c('jac')}</td></tr>
 <tr><td>Garden hose, top-down at ~45°</td><td>Recommended${c('unicel','pleatcoCat')}</td></tr>
 <tr><td>Stiff brush</td><td>Never on the media${c('pleatcoCat')}</td></tr>
 <tr><td>Dishwasher detergent as a bucket soak</td><td>Allowed by Unicel/Pleatco (1 cup per 5 gal)${c('unicel','pleatcoCat')}</td></tr></tbody></table></div>
-<p>Note the difference: putting dishwasher <em>detergent</em> in a soaking bucket is a published option; running the cartridge through a dishwasher is not. Sundance’s 2024 680 manual specifies a high-pressure hose nozzle for its outer pleated filter but a low-pressure nozzle and no chemicals for the insert${c('sd680')} — follow your own spa’s manual. Full steps in <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean a hot tub filter</a>.</p>`,
+<p>Note the difference: putting dishwasher <em>detergent</em> in a soaking bucket is a published option; running the cartridge through a dishwasher is not. Sundance’s 2024 680 manual specifies a high-pressure hose nozzle for its outer pleated filter but a low-pressure nozzle and no chemicals for the insert${c('sd680')}, follow your own spa’s manual. Full steps in <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean a hot tub filter</a>.</p>`,
 faq:[['Will a dishwasher damage a hot tub filter?','Jacuzzi says high heat and aggressive spray can warp end caps, and dishwashers don’t clean deep between the pleats.'],
 ['What about filter-cleaning wands?','Unicel and Pleatco describe a garden hose with a straight-flow nozzle. Jacuzzi warns against high-pressure tools that can tear fibers, so avoid anything aggressive on the media.']],
 src:['jac','unicel','pleatcoCat','sd680']},
@@ -175,4 +175,4 @@ const attach: Record<string, PickGroup[]> = {
 };
 for (const g of baseGuides) if (attach[g.slug]) { g.picks = attach[g.slug]; g.reviewed = REVIEWED_NEW; }
 
-export const guides: Guide[] = [...baseGuides, ...extraGuides, ...newGuides, ...batchGuides, ...moreGuides, ...holidayGuides, ...drainGuides];
+export const guides: Guide[] = [...baseGuides,...extraGuides,...newGuides,...batchGuides,...moreGuides,...holidayGuides,...drainGuides];

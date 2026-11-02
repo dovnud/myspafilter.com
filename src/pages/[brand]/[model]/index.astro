@@ -11,6 +11,7 @@ import HolidayCta from '../../../components/HolidayCta.astro';
 import ReminderForm from '../../../components/ReminderForm.astro';
 import { holidayOnCartridge } from '../../../lib/holiday';
 import { pages as fitPages } from '../../../lib/fitment';
+import { cartridgeParagraphs } from '../../../lib/cartridgeNote.mjs';
 export function getStaticPaths(){ return filters.map(f=>({params:{brand:f.brandSlug,model:f.modelSlug},props:{f}})); }
 const { f } = Astro.props as { f: Filter };
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
@@ -25,15 +26,11 @@ const moreBrand = sameBrand.filter(x=>x!==f && isIndexable(x))
 // Same Unicel/Pleatco part listed under other brands (genuine "compatible / equivalent" links), indexable pages only.
 const others = filters.filter(x=>x.brandSlug!==f.brandSlug && pk && partLabel(x)===pk && isIndexable(x)).slice(0,5);
 const fit = f.fitment||[];
-const fitGroups = [...new Set(fit.map(x=>x.src))];
 // Hot Spot and Solana models are a section of the Hot Spring lookup (same dealer table).
 const FAMILY: Record<string,string> = { 'hot-spot':'hot-spot', solana:'solana' };
 const famPage = FAMILY[f.brandSlug] ? fitPages.find(p=>p.brandSlug==='hot-spring') : undefined;
 const fitPage = fitPages.find(p=>p.brandSlug===f.brandSlug);
-const yrs = fit.flatMap(x=>(x.years.match(/\d{4}/g)||[]).map(Number));
-const yrSpan = yrs.length ? `${Math.min(...yrs)}–${Math.max(...yrs)}` : '';
-const LINES = ['Highlife','Limelight','Tiger River','Vacanza','Utopia','Paradise','Highland','Aquatic Melodies','C-Series'];
-const series = LINES.filter(l=>fit.some(x=>x.src==='lt' && x.model.startsWith(l)));
+const brief = cartridgeParagraphs(f, filters, fitSrc);
 const names = [eq.unicel&&`Unicel ${eq.unicel}`, eq.pleatco&&`Pleatco ${eq.pleatco}`, eq.filbur&&`Filbur ${eq.filbur}`].filter(Boolean) as string[];
 // Rows with no catalog equivalent (e.g. inflatable-spa cartridges) are named by the maker's own cartridge type.
 const shortNames = names.length ? names.map(n=>n.split(' ')[1]) : (f.label ? [f.label] : []);
@@ -72,43 +69,39 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
  {"@context":"https://schema.org","@type":"BreadcrumbList","@id":`${url}#breadcrumb`,itemListElement:[
   {"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:f.brand,item:new URL(`/${f.brandSlug}/`,site).href},{"@type":"ListItem",position:3,name:f.model,item:url}]}];
 ---
-<Base title={pageTitle} description={`${f.brand} ${oemTxt} hot tub filter cross-reference: ${names.join(', ')}. ${d.diameterText} × ${d.lengthText}${sq?`, ${sq}`:''}${fit.length?`, fits ${fit.length} listed model${fit.length>1?'s':''}`:''}, with cited sources.`} jsonld={ld} noindex={f.index===false}>
+<Base title={pageTitle} description={`${f.brand} ${oemTxt} hot tub filter: ${names.join(', ')}. ${d.diameterText} × ${d.lengthText}${sq?`, ${sq}`:''}${fit.length?`, listed for ${fit.length} model${fit.length>1?'s':''}`:''}. The catalog page for each number is named below.`} jsonld={ld} noindex={f.index===false}>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href={`/${f.brandSlug}/`}>{f.brand}</a> › <span aria-current="page">{f.model}</span></nav>
 <h1>{f.brand} {f.oem?`OEM ${f.oem} `:''}spa filter ({pk!==f.oem ? pk : (f.label||pk)})</h1>
-<p>Listed for: {f.series}{f.status!=='verified' && <strong> — unverified</strong>}</p>
-<section class="card answer"><div class="cols"><div>
-<div class="kicker">Your replacement</div>
-<div class="big">{names.slice(0,2).join(' · ')}</div>
-<p style="margin:.2rem 0 .6rem">Fits {oems.length?`${f.brand} OEM ${oems.join(', ')}`:f.series} {f.status==='verified'?<span class="badge">cited</span>:<span class="badge u">unverified</span>}</p>
-<span class="pill">Ø {d.diameterText}</span><span class="pill">L {d.lengthText}</span>{sq && <span class="pill">{sq}</span>}{fit.length>0 && <span class="pill">{fit.length} model{fit.length>1?'s':''} listed</span>}
+<p>{f.series}{f.status!=='verified' && <> Unverified: {f.gaps}</>}</p>
+<section class="answer"><div class="cols"><div>
+<p class="lead-label">Replacement numbers</p>
+<div class="big">{names.slice(0,2).join(', ')}</div>
+<p style="margin:.2rem 0 .6rem">Fits {oems.length?`${f.brand} OEM ${oems.join(', ')}`:f.series}.</p>
+<span class="pill">Diameter {d.diameterText}</span><span class="pill">Length {d.lengthText}</span>{sq && <span class="pill">{sq}</span>}{fit.length>0 && <span class="pill">{fit.length} model{fit.length>1?'s':''} listed</span>}
 <BuyLinks filter={f} />
 <table style="margin-top:1rem"><tr><th>Unicel</th><td>{eq.unicel ? <a href={`/filter/${slug(eq.unicel)}/`}>{eq.unicel}</a> : 'not listed in Unicel 2026 guide'}</td></tr>
 <tr><th>Pleatco</th><td>{eq.pleatco ? <a href={`/filter/${slug(eq.pleatco.split('/')[0])}/`}>{eq.pleatco}</a> : 'not found in source'}{f.pleatcoNote && <small> ({f.pleatcoNote})</small>}</td></tr>
 <tr><th>Filbur</th><td>{eq.filbur ? <a href={`/filter/${slug(eq.filbur)}/`}>{eq.filbur}</a> : 'not found in Filbur catalog'}</td></tr>
-<tr><th>Top</th><td>{d.topCore||'—'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore||'—'}</td></tr></table>
+<tr><th>Top</th><td>{d.topCore||'not listed'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore||'not listed'}</td></tr></table>
 </div><Cartridge d={d} /></div></section>
 {holidayOnCartridge(f.brandSlug, f.modelSlug) && <HolidayCta />}
 <ReminderForm filterModel={reminderLabel} />
-<ProductPicks heading="Keep this cartridge clean and your water in range" lead={`Unicel and Pleatco say a spa cartridge needs a hose rinse and a degreasing soak of at least an hour to keep flowing. Our guides cover the <a href="/guides/how-to-clean-a-hot-tub-filter/">cleaning steps</a>, <a href="/guides/best-hot-tub-filter-cleaners/">filter cleaners</a> and <a href="/guides/best-hot-tub-test-strips/">test strips</a>; a few picks are below.`} groups={[{h:'Filter cleaner and test strips',keys:['lt-filter-clean-o','spaguard-filter-cleaner','aquachek-spa-6in1']}]} />
-{f.notes && <p><strong>Source note:</strong> {f.notes}</p>}
+{brief.map((p) => <p set:html={p} />)}
 {fit.length>0 && <>
-<h2>Which {f.brand} hot tubs use this filter</h2>
-<p>{fitGroups.includes('lt') ? `A spa dealer listing (Leisure Time Inc.) for this cartridge names ${fit.filter(x=>x.src==='lt').length} ${f.brand} model${fit.filter(x=>x.src==='lt').length>1?'s':''}${series.length?` across the ${series.join(', ')} line${series.length>1?'s':''}`:''}${yrSpan?`, with model years from ${yrSpan}`:''}. ` : ''}{fitGroups.includes('unicel') ? `The Unicel guide ties this spa filter to the ${f.brand} system${fit.filter(x=>x.src==='unicel').length>1?'s':''} shown below. ` : ''}{fitGroups.includes('pleatco') ? (fit.filter(x=>x.src==='pleatco').some(x=>x.years) ? 'The Pleatco catalog gives the production years shown below for the matching OEM number. ' : 'The Pleatco catalog names the systems shown below against the matching OEM number. ') : ''}{fitGroups.includes('hd') ? "The PureSpa model numbers below come from a retailer listing for the same Intex part; confirm against your spa's manual. " : ''}{fitGroups.includes('intex') ? `Intex's own replacement-part page for this cartridge lists the ${fit.filter(x=>x.src==='intex').length} inflatable hot tub set numbers below${fit.some(x=>x.src==='intex'&&x.years) ? ", and the years are the model-year folders Intex's parts archive files the part under" : ''}. Match the full set number on your spa's box or manual, including any letter suffix, because Intex has sold sets with near-identical numbers that take different cartridges. ` : ''}{fitGroups.includes('bwcat')||fitGroups.includes('bwman') ? "Bestway's own catalogs and owner's manuals name the models below for this cartridge, by catalog or manual year; Bestway's stores describe the current range. " : (fitGroups.includes('layzspa')||fitGroups.includes('bestway') ? "Bestway's own sites describe which of its inflatable hot tubs take this cartridge, as shown below; they do not print model-year lists. " : '')}{fitGroups.includes('mqdealer') ? "Two spa dealer listings for the factory part name the swim spas below; we could not check them against a Marquis document. " : ''}{fitGroups.includes('spd') ? "A spa parts retailer's listing for the OEM part names the models below; it gives no model years. " : ''}{fitGroups.includes('marquis') ? "Marquis's own filter finder lists this factory part number for the series and model years below. " : ''}{fitGroups.includes('nordic') ? "Nordic Hot Tubs' own filter chart lists this factory cartridge for the models below. " : ''}{fitGroups.includes('arcticdealer') ? "An Arctic Spas dealer listing gives the factory part number and the build years below. " : ''}{fitGroups.includes('hto') ? "A spa parts retailer's listing for the factory part (Hot Tub Outpost) names the models and years below; we could not check them against a manufacturer document. " : ''}A model name alone is not always enough: some hot tubs changed filter size mid-run, and dealers flag years where you should check the serial number or read the part number off the old cartridge first.</p>
-{fitPage && <p>To see which cartridge every other {f.brand} model and year takes, use the <a href={`/fitment/${fitPage.slug}/`}>{f.brand} filter by model and year</a> lookup.</p>}
+<h2>Hot tubs listed for this cartridge</h2>
+{fitPage && <p>The rest of the {f.brand} model list is the <a href={`/fitment/${fitPage.slug}/`}>{f.brand} filter by model and year</a> lookup.</p>}
 <div class="tbl"><table><thead><tr><th>Model / system</th><th>Years</th><th>Listed by</th></tr></thead><tbody>
-{fit.map(x=><tr><td>{x.model}{x.note && <small> ({x.note})</small>}</td><td>{x.years||'—'}</td><td>{fitSrc[x.src]}</td></tr>)}</tbody></table></div>
+{fit.map(x=><tr><td>{x.model}{x.note && <small> ({x.note})</small>}</td><td>{x.years||'not given'}</td><td>{fitSrc[x.src]}</td></tr>)}</tbody></table></div>
 </>}
 {famPage && <p>Other {f.brand} models and years are in the {f.brand} section of the <a href={`/fitment/${famPage.slug}/#${FAMILY[f.brandSlug]}`}>Hot Spring filter by model and year</a> lookup.</p>}
-{fit.length===0 && fitPage && <p><strong>Know your {f.brand} model but not sure this is the cartridge?</strong> Check the <a href={`/fitment/${fitPage.slug}/`}>{f.brand} filter by model and year</a> lookup.</p>}
-<h2>How to confirm this is your filter</h2>
-<p>Pull your current cartridge and measure it end to end, including any handle, and across the widest point of the pleats. This cartridge measures {d.diameterText} in diameter and {d.lengthText} long{d.topCore ? `, with a ${d.topCore} top` : ''}{d.bottomCore ? ` and a ${d.bottomCore} bottom` : ''}. The bottom fitting matters most: a hot tub filter with the right diameter but the wrong thread or open-end size will not seal in the housing, letting unfiltered water bypass the media.</p>
-<p>{sq ? `The ${sq} rating describes the pleated media area. ` : 'None of our sources gives a media-area (sq ft) rating for this cartridge, so compare it by size and part number. '}{f.brand} housings are designed around a particular cartridge, so choose a replacement with the same size and fittings rather than a larger area rating. {eq.unicel && eq.pleatco && !f.pleatcoNote ? `Unicel ${eq.unicel} and Pleatco ${eq.pleatco} are cross-referenced to each other in the Pleatco 2023 catalog, so either should fit the same housing.` : eq.pleatco ? `The Pleatco number shown comes from ${f.pleatcoNote ? 'the source noted beside it' : 'the Pleatco 2023 spec table'}, so match its size and fittings to your old cartridge before ordering.` : `We did not find a Pleatco equivalent for ${pk} in the Pleatco 2023 cross-reference, so search by the ${eq.unicel?'Unicel or ':''}${f.brand} part number.`}{eq.filbur ? ` Filbur ${eq.filbur} is the Filbur catalog's match${f.filburNote ? ' (see the source note in the list below)' : ''}.` : ''}{oems.length>1 ? ` ${f.brand} has used ${oems.length} OEM numbers for this cartridge; any of them should map to the same replacement spa filter.` : ''}</p>
-{others.length>0 && <p>The same {pk} cartridge is also listed for {others.map((x,i)=><>{i>0?', ':''}<a href={modelHref(x)}>{x.brand}</a></>)}, so those pages are a handy second check on the part number.</p>}
-{moreBrand.length>0 && <><h2>Other {f.brand} cartridges</h2><ul>{moreBrand.map(x=><li><a href={modelHref(x)}>{x.model}</a> — {(x.dimensions as any).diameterText} × {(x.dimensions as any).lengthText}</li>)}</ul>
-<p><a href={`/${f.brandSlug}/`}>See all {sameBrand.length} {f.brand} spa filters →</a></p></>}
-<p>Line every number on this cartridge up in the <a href={`/tools/cross-reference/?q=${encodeURIComponent(pk || f.oem || '')}`}>cross-reference lookup</a>, or count a clean and replace date from the published intervals in the <a href="/tools/filter-schedule/">calculator</a>.</p>
-<p>Match the top and bottom, not only the diameter. <a href="/guides/open-end-vs-threaded-hot-tub-filters/">Open-end vs threaded filters</a> explains those fittings, and <a href="/guides/how-to-install-a-hot-tub-filter/">how to install a cartridge</a> covers power-off, the retainer, and not running the spa with the filter removed.{fg && <> For this brand, see <a href={fg[0]}>{fg[1]}</a>.</>} Catalog numbers are compared in <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel and Pleatco numbers compare</a>.</p>
-<p><strong>When the measurements match,</strong> the same retailer link is repeated here.</p>
+{fit.length===0 && fitPage && <p>If you know the {f.brand} model and not the part number, use the <a href={`/fitment/${fitPage.slug}/`}>{f.brand} filter by model and year</a> lookup.</p>}
+<h2>Check the cartridge you removed</h2>
+<p>Measure diameter, length, and both ends, then compare them with the figures above. The steps are in the <a href="/guide/">measuring guide</a>. Why the bottom decides whether it seals: <a href="/guides/open-end-vs-threaded-hot-tub-filters/">open-end vs threaded filters</a>. Power, the retainer, and not running the spa empty: <a href="/guides/how-to-install-a-hot-tub-filter/">how to install a cartridge</a>.{fg && <> Brand notes: <a href={fg[0]}>{fg[1]}</a>.</>} Number formats: <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel and Pleatco numbers compare</a>.</p>
+{others.length>0 && <p>The same {pk} number is also on the {others.map((x,i)=><>{i>0?', ':''}<a href={modelHref(x)}>{x.brand}</a></>)} page{others.length>1?'s':''}.</p>}
+{moreBrand.length>0 && <><h2>Other {f.brand} cartridges</h2><ul>{moreBrand.map(x=><li><a href={modelHref(x)}>{x.model}</a>, {(x.dimensions as any).diameterText} × {(x.dimensions as any).lengthText}</li>)}</ul>
+<p><a href={`/${f.brandSlug}/`}>All {sameBrand.length} {f.brand} spa filters</a></p></>}
+<p>Every number on this row, on one screen: <a href={`/tools/cross-reference/?q=${encodeURIComponent(pk || f.oem || '')}`}>cross-reference lookup</a>. Published clean and replace intervals: <a href="/tools/filter-schedule/">calculator</a>.</p>
+<ProductPicks heading="Cleaner and test strips" lead={`Hose rinse and soak steps are in <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean a cartridge</a>. Named cleaners and strips are in <a href="/guides/best-hot-tub-filter-cleaners/">filter cleaners</a> and <a href="/guides/best-hot-tub-test-strips/">test strips</a>.`} groups={[{h:'Filter cleaner and test strips',keys:['lt-filter-clean-o','spaguard-filter-cleaner','aquachek-spa-6in1']}]} />
 <BuyLinks filter={f} />
 <Sources f={f} />
 </Base>

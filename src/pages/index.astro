@@ -2,8 +2,6 @@
 import Base from '../layouts/Base.astro';
 import { brands, filters, allParts, brandIndexable } from '../lib/data';
 import { guides } from '../lib/guides';
-import SpotlightCard from '../components/rb/SpotlightCard.jsx';
-import Magnet from '../components/rb/Magnet.jsx';
 import { organization } from '../lib/schema';
 import { fileDate, dataDate } from '../lib/lastmod';
 const site = Astro.site!.href;
@@ -14,18 +12,16 @@ const armsB=Array.from({length:6},(_,i)=>arm(i/6*Math.PI*2+.3,46,84,-1.1));
 const parts = [...allParts().keys()];
 const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 ---
-<Base title="Spa Filter & Hot Tub Filter Cross Reference | MySpaFilter" description="Find the right hot tub filter: OEM part numbers cross-referenced to Unicel, Pleatco and Filbur equivalents for Hot Spring, Caldera, Hot Spot, Solana, Sundance, Jacuzzi, Bullfrog, Cal Spas, Master Spas, Marquis, Dimension One, Softub and Intex, with cited sources."
+<Base title="Spa Filter & Hot Tub Filter Cross Reference | MySpaFilter" description="Find the right hot tub filter: OEM part numbers cross-referenced to Unicel, Pleatco and Filbur equivalents for Hot Spring, Caldera, Hot Spot, Solana, Sundance, Jacuzzi, Bullfrog, Cal Spas, Master Spas, Marquis, Dimension One, Softub and Intex. Each match names the catalog page it comes from."
  jsonld={[{"@context":"https://schema.org","@type":"WebSite","@id":`${site}#website`,name:"MySpaFilter",url:site,inLanguage:"en-US",publisher:{"@id":organization["@id"]}},{"@context":"https://schema.org",...organization},{"@context":"https://schema.org","@type":"WebPage",url:site,name:"Spa Filter & Hot Tub Filter Cross Reference",dateModified:[fileDate('src/pages/index.astro'),dataDate()].sort().at(-1),isPartOf:{"@id":`${site}#website`}}]}>
 <section class="hero">
 <svg class="ripples" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#8fb9b0" stroke-opacity=".16">{[60,110,170,240,320,410].map(r=><ellipse cx="690" cy="40" rx={r*1.25} ry={r*.8}/>)}</svg>
 <div>
-<p class="eyebrow">Spa &amp; hot tub filter cross-reference</p>
-<h1>Read the end cap.<br><em>We'll find the cartridge.</em></h1>
-<p class="lede">Type the number molded into your old filter — a Sundance <code>6540-476</code>, a Unicel <code>C-8326</code>, a Pleatco <code>PTL47W</code> — or a spa brand. You get the matching OEM, Unicel, Pleatco and Filbur numbers plus diameter, length and fittings to check against a tape measure.</p>
+<h1>Spa and hot tub filter cross-reference</h1>
+<p class="lede">Type the number molded into your old filter, such as a Sundance <code>6540-476</code>, a Unicel <code>C-8326</code>, or a Pleatco <code>PTL47W</code>. A spa brand works too. You get the matching OEM, Unicel, Pleatco and Filbur numbers, plus diameter, length and fittings to check against a tape measure.</p>
 <form class="search" id="f" role="search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="e.g. 6540-476, C-8326, Jacuzzi" autocomplete="off" aria-label="Part number or spa brand"><button class="btn" id="go">Find filter</button></form>
-<p class="try">Try <a href="/filter/6540-476/">6540-476</a>, <a href="/filter/c-8326/">C-8326</a>, or <a href="/filter/ptl47w-p4/">PTL47W-P4</a>.</p>
+<p class="try">Try <a href="/filter/6540-476/">6540-476</a>, <a href="/filter/c-8326/">C-8326</a>, or <a href="/filter/ptl47w-p4/">PTL47W-P4</a>. No number on the cap? <a href="/size/">Search by size</a>.</p>
 <p id="msg" aria-live="polite"></p>
-<div class="stats"><span><b>{filters.length}</b>cartridges</span><span><b>{parts.length}</b>part numbers</span><span><b>{brands().length}</b>spa brands</span><Magnet client:visible padding={40} magnetStrength={6} maxOffset={6}><a class="btn ghost" href="/size/">No number? Search by size →</a></Magnet></div>
 </div>
 <figure class="endcap" aria-labelledby="endcap-cap">
 <svg viewBox="0 0 240 150" fill="none" stroke="#e8d6b5" stroke-width="1.4" role="img" aria-label="Illustration of a filter end cap with the part number C-8326 printed in the center, surrounded by slowly swirling pleats">
@@ -49,11 +45,11 @@ const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 @keyframes wp-ccw{to{transform:rotate(-360deg)}}
 @keyframes wp-ripple{0%{transform:scale(.37);opacity:0}15%{opacity:.4}100%{transform:scale(1);opacity:0}}
 @media (prefers-reduced-motion:reduce){.endcap .wp-spin,.endcap .rp{animation:none;will-change:auto}.endcap .rp{opacity:.22}.endcap .rp1{transform:scale(.55)}.endcap .rp2{transform:scale(.75)}.endcap .rp3{transform:scale(.95)}}
-.try{margin:.85rem 0 0;color:#d6e9e4;font-size:.95rem}.try a{color:var(--sand);font-weight:700}
+.try{margin:.85rem 0 0;color:#f7fbfa;font-size:.95rem}.try a{color:#fff;font-weight:700;text-decoration:underline}
 </style>
 </section>
 <h2 class="rule" data-reveal>Browse by spa brand</h2>
-<ul class="grid">{brands().filter(b=>brandIndexable(b.slug)).map((b,i)=>{const l=filters.filter(f=>f.brandSlug===b.slug);const c=['#135e63','#9c4b22','#4f7f6e','#2c5d7c','#b38a3e','#0b3c40'][i%6];return <li data-reveal><SpotlightCard client:visible className="card" theme="light" spotlightColor="#135e63" intensity={0.5} proximity={0}><a class="tile" style={`--c:${c}`} href={`/${b.slug}/`}><b>{b.name}</b><small>{l.length} cartridge{l.length===1?"":"s"} · {l.filter(f=>f.status==='verified').length} with cited sources</small><span class="go">See {b.name} filters →</span></a></SpotlightCard></li>})}</ul>
+<ul class="grid">{brands().filter(b=>brandIndexable(b.slug)).map((b)=>{const l=filters.filter(f=>f.brandSlug===b.slug);return <li class="card" data-reveal><a href={`/${b.slug}/`}><b>{b.name}</b><p>{l.length} cartridge{l.length===1?"":"s"}</p></a></li>})}</ul>
 <h2 class="rule" data-reveal>Look up a number, or a replacement date</h2>
 <p>The search above opens one part-number page. The <a href="/tools/cross-reference/">cross-reference lookup</a> stays on the page and lists every cartridge in this dataset that carries the number, with the equivalents and the measurements. The <a href="/size/">size lookup</a> is for when the number is gone. The <a href="/tools/filter-schedule/">replace and clean calculator</a> turns the published care intervals into dates and says so when the sources disagree.</p>
 <ul class="grid">
@@ -63,12 +59,8 @@ const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 <h2 class="rule" data-reveal>Guides worth reading first</h2>
 <ul class="grid">{['how-to-find-your-spa-filter-size','hot-spring-filter-sizes-by-collection','open-end-vs-threaded-hot-tub-filters','caldera-filter-bottom-fittings','how-often-to-replace-hot-tub-filter','intex-and-bestway-inflatable-spa-filters'].map(s=>guides.find(g=>g.slug===s)!).map(g=><li class="card" data-reveal><a href={`/guides/${g.slug}/`} style="font-weight:650">{g.title}</a></li>)}</ul><p><a href="/guides/">All {guides.length} guides</a>, including Bullfrog, Master Spas Eco-Pur, Sundance look-alikes, and how Filbur, Unicel and Pleatco numbers line up.</p>
 <p>Holiday 2026: <a href="/guides/black-friday-hot-tub-filter-and-spa-care/">Black Friday filters and spa care</a>, <a href="/guides/gifts-for-hot-tub-owners-2026/">gifts for hot tub owners</a>, and <a href="/guides/winter-spa-care/">winter spa care</a>. Published dates and shipping cutoffs only.</p>
-<h2 class="rule" data-reveal>How we match a cartridge</h2>
-<div class="feat" data-reveal>
-<div class="card"><span class="n">01</span><h3>Cross-referenced</h3><p>Spa makers, Unicel, Pleatco and Filbur number the same cartridge differently. We match them using the published tables.</p></div>
-<div class="card"><span class="n">02</span><h3>Cited sources</h3><p>Every row links the catalog page, and anything unconfirmed is clearly flagged so you can check it yourself.</p></div>
-<div class="card"><span class="n">03</span><h3>Measure to confirm</h3><p>No readable number? Use the <a href="/guide/">measuring guide</a> or <a href="/size/">size lookup</a>.</p></div>
-</div>
+<h2 class="rule" data-reveal>How a match is made</h2>
+<p>Spa makers, Unicel, Pleatco and Filbur often number the same cartridge differently. Each cartridge page lines those numbers up from the published tables and links the catalog page. If a number is missing, or two catalogs disagree, the page says what is missing. Measure the old cartridge before you order. The rule for what gets published is on the <a href="/about/#methodology">about page</a>. If the number is worn off, use the <a href="/guide/">measuring guide</a> or the <a href="/size/">size lookup</a>.</p>
 <script define:vars={{parts,bl}}>
 const q=document.getElementById('q'),m=document.getElementById('msg');const s=v=>v.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const go=e=>{e&&e.preventDefault();const k=s(q.value);if(!k)return;const br=bl.find(([sl,n])=>sl===k||n===q.value.trim().toLowerCase());if(br){location.href='/'+br[0]+'/';return}if(parts.includes(k)){location.href='/filter/'+k+'/';return}const h=parts.filter(p=>p.includes(k));if(h.length===1){location.href='/filter/'+h[0]+'/';return}m.innerHTML=h.length?'Did you mean: '+h.map(p=>`<a href="/filter/${p}/">${p.toUpperCase()}</a>`).join(', '):'No match for that number. Try the <a href="/tools/cross-reference/">cross-reference lookup</a> or the <a href="/size/">size lookup</a>.';};

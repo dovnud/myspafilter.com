@@ -6,7 +6,7 @@ const NOTE = `<p><small>Product lists below are picks, not rankings. We checked 
 export const extraGuides: Guide[] = [
 
 {slug:'best-hot-tub-test-strips',reviewed:R,title:'Best hot tub test strips and test kits: how to choose',
-desc:'What test strips and kits actually measure, which readings matter for chlorine vs bromine tubs, and a short list of strips and DPD kits to consider.',
+desc:'What test strips and kits measure, which readings matter for chlorine vs bromine tubs, and a short list of strips and DPD kits to consider.',
 answer:`Pick strips that read <strong>your</strong> sanitizer (free chlorine <em>or</em> bromine), plus pH, total alkalinity and calcium hardness. CDC says to use test strips to check disinfectant and pH${c('cdcRash')}, and Hot Spring’s own recommended ranges are free chlorine 1–5 ppm, pH 7.2–7.8, total alkalinity 40–120 ppm and calcium hardness 75–150 ppm${c('hsChem')}.`,
 body:`<h2>What you are testing for</h2>
 <div class="tbl"><table><thead><tr><th>Reading</th><th>Range given by source</th><th>Source</th></tr></thead><tbody>
@@ -117,7 +117,7 @@ body:`<h2>Soak, spray or DIY?</h2><div class="tbl"><table><thead><tr><th>Method<
 <tr><td>Spray-on cleaner</td><td>Spray, wait per label, rinse. Convenient between full soaks; read the label for contact time.</td></tr>
 <tr><td>DIY soak</td><td>Unicel/Pleatco list TSP or dishwasher detergent in a bucket; see <a href="/guides/spa-filter-cleaner-vs-diy-soak/">cleaner vs DIY</a>.</td></tr></tbody></table></div>
 <h2>What to look for</h2><ul>
-<li><strong>Made for cartridge filters</strong> — look for “filter cleaner” or “cartridge cleaner” on the label.</li>
+<li><strong>Made for cartridge filters</strong>, look for “filter cleaner” or “cartridge cleaner” on the label.</li>
 <li><strong>Match your spa maker.</strong> Hot Spring names its own filter cleaners as the fix for dirty filters in its troubleshooting table${c('hsWater')}, and its manual tells owners not to use cleaners other than those recommended by the maker or dealers${c('hsManualUK')}; check before using other brands on a warranty tub.</li>
 <li><strong>Quantity:</strong> a soak needs enough solution to submerge the cartridge, so bottle size matters more than price per ounce.</li>
 <li><strong>Don’t add an acid soak by habit.</strong> Unicel warns acid washing is a major cause of premature cartridge failure${c('unicel')}; see our <a href="/guides/should-you-acid-wash-a-spa-filter/">acid wash guide</a>.</li></ul>
@@ -249,7 +249,7 @@ answer:`Spa pillows are <strong>model-specific</strong>: mounting style, size an
 body:`<h2>Identify what you have</h2><ol>
 <li><strong>Find the make and model</strong> on the cabinet label, the manual or the control panel.</li>
 <li><strong>Look at the old pillow:</strong> does it clip, suction-cup, or use a pin or insert? Measure width, height and thickness.</li>
-<li><strong>Read the new listing’s model fitment</strong> and the part number if one is given; some listings name the spas they replace (for example, a pillow listing may name a specific brand and year range) — confirm the year range.</li></ol>
+<li><strong>Read the new listing’s model fitment</strong> and the part number if one is given; some listings name the spas they replace (for example, a pillow listing may name a specific brand and year range), confirm the year range.</li></ol>
 <h2>Material and care</h2><ul><li>Pillows sit in hot, chemical-laden water and will wear. Rinse them with fresh water and keep sanitizer in range${c('cdcLeg')}.</li>
 <li>Hot Spring’s quick start says most household chemicals are harmful to the spa shell${c('hsQuick')}; use mild products on pillows too and rinse well.</li></ul>
 <h2>New or generic?</h2><p>A manufacturer part usually matches the clips exactly; generic replacements can be cheaper but you must verify dimensions and mounting. Our <a href="/hot-spring/">Hot Spring</a>, <a href="/jacuzzi/">Jacuzzi</a>, <a href="/sundance/">Sundance</a> and <a href="/caldera/">Caldera</a> pages cover your <em>filters</em>; for pillows, start from your model name on the searches below.</p>${NOTE}`,
@@ -280,7 +280,7 @@ body:`<h2>Storage rules (CDC)</h2><ul>
 <li>Water temperature: CPSC says 104°F or below${c('cpsc96')}.</li></ul>
 <h2>A practical kit (editorial)</h2><p>A small bin that stays dry, a dedicated measuring scoop per product (never reused between chemicals), splash-resistant goggles and gloves, a good <a href="/guides/best-hot-tub-test-strips/">test kit</a> and the product labels. See the product guides for <a href="/guides/best-hot-tub-sanitizer-bromine-chlorine-mineral/">sanitizer</a>, <a href="/guides/hot-tub-shock-chlorine-vs-non-chlorine/">shock</a> and <a href="/guides/how-to-balance-hot-tub-ph-and-alkalinity/">pH balance</a>.</p>${NOTE}`,
 picks:[
-{h:'Safety gear and storage',intro:'Where fit isn’t model-specific, a search is the honest link.',search:[
+{h:'Safety gear and storage',intro:'Where fit isn’t model-specific, the link is an Amazon search for the product name.',search:[
 ['Chemical splash goggles','chemical splash goggles','Check the safety rating the listing states.'],
 ['Chemical-resistant gloves','chemical resistant gloves','Check the listing for the chemical resistance it states.'],
 ['Waterproof storage bin with latch','waterproof storage bin with latching lid','For keeping dry chemicals dry; keep each product in its own container.']]}],

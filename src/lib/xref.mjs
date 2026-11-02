@@ -75,7 +75,7 @@ export function resultMessage(result) {
   const m = result.token.length;
   if (result.kind === 'match' && n && !m) {
     return n === 1
-      ? '1 cartridge in this dataset uses that exact part number. Open its filter page for the fittings, the cited sources, and the retailer links.'
+      ? '1 cartridge in this dataset uses that exact part number. Open its filter page for the fittings, the source list, and the retailer links.'
       : `${n} cartridges in this dataset use that exact part number. Each row is a separate filter page. Compare diameter, length, and both fittings before you order. A shared number is not always one cartridge.`;
   }
   if (result.kind === 'match' && n && m) {

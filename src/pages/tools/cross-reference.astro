@@ -30,8 +30,8 @@ const rows = filters.map((f) => {
     filbur: bits(eq.filbur),
     pleatcoNote: f.pleatcoNote || '',
     filburNote: f.filburNote || '',
-    size: `${d.diameterText || '—'} × ${d.lengthText || '—'}${sq ? `, ${sq}` : ''}`,
-    fittings: [d.topCore, d.bottomCore].filter(Boolean).join(' / ') || '—',
+    size: `${d.diameterText || 'not listed'} × ${d.lengthText || 'not listed'}${sq ? `, ${sq}` : ''}`,
+    fittings: [d.topCore, d.bottomCore].filter(Boolean).join(' / ') || 'not listed',
     wholes: indexed.wholes.join(' '),
     tokens: indexed.tokens.join(' '),
   };
@@ -68,11 +68,11 @@ const ld = [
 <tbody>
 {rows.map((r) => <tr hidden data-wholes={r.wholes} data-tokens={r.tokens}>
 <td class="xref-match"></td>
-<td><a href={r.href}>{r.name}</a> {r.verified ? <span class="badge">cited</span> : <span class="badge u">unverified</span>}</td>
-<td>{r.oem.length ? r.oem.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : '—'}</td>
-<td>{r.unicel.length ? r.unicel.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : '—'}</td>
-<td>{r.pleatco.length ? r.pleatco.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : '—'}{r.pleatcoNote && <small> ({r.pleatcoNote})</small>}</td>
-<td>{r.filbur.length ? r.filbur.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : '—'}{r.filburNote && <small> ({r.filburNote})</small>}</td>
+<td><a href={r.href}>{r.name}</a>{r.verified ? '' : ' (unverified)'}</td>
+<td>{r.oem.length ? r.oem.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : 'not listed'}</td>
+<td>{r.unicel.length ? r.unicel.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : 'not listed'}</td>
+<td>{r.pleatco.length ? r.pleatco.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : 'not listed'}{r.pleatcoNote && <small> ({r.pleatcoNote})</small>}</td>
+<td>{r.filbur.length ? r.filbur.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : 'not listed'}{r.filburNote && <small> ({r.filburNote})</small>}</td>
 <td>{r.size}</td>
 <td>{r.fittings}</td>
 </tr>)}
@@ -80,8 +80,8 @@ const ld = [
 </table>
 </div>
 <noscript><p>With JavaScript off, this filter does not run. Use the <a href="/data/">dataset table</a>, or open a filter page from the <a href="/">homepage</a>.</p></noscript>
-<h2>FAQ</h2>
-{faqs.map(([q, a]) => <details class="card"><summary><strong>{q}</strong></summary><p>{a}</p></details>)}
+<h2>Questions</h2>
+{faqs.map(([q, a]) => <section><h3>{q}</h3><p>{a}</p></section>)}
 <h2>Sources</h2>
 <p>Each filter page names the catalog page its row came from. The documents behind the dataset, and the two maker sentences in the FAQ, are:</p>
 <ol>{sources.map((k, i) => <li id={`src-${k}`} value={i + 1}><a href={SRC[k].u} rel="nofollow">{SRC[k].t}</a></li>)}</ol>

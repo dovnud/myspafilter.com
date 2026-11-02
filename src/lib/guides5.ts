@@ -32,7 +32,7 @@ body:`<h2>Why the set number matters more than the brand name</h2>
 
 <h2>Bestway Type VI, and the Monte Carlo exception</h2>
 <p>Bestway’s US product page for the SaluSpa Type VI two-pack gives the size as 4.2" across and 3.1" tall, for Bestway’s SaluSpa line${c('bestwayVI')}. The Lay-Z-Spa UK page for Filter Cartridge VI says it is compatible with all Lay-Z-Spa hot tubs except the Monte Carlo, which has its own rigid-spa cartridge${c('layzVI')}. Neither of those manufacturer pages is where we got a numeric part. The retail model 58323 / 58323E-BW is the number recorded on our <a href="/bestway/58323/">Bestway 58323 page</a> from the retailer listing that page cites. Order from a listing whose title says Type VI, and compare 4.2" × 3.1" with the old cartridge. If the spa is a Monte Carlo, stop and use the rigid-spa cartridge Lay-Z-Spa sells for that model. The Type VI page says it does not fit.</p>
-<p>Unicel, Pleatco and Filbur do not list a Type VI equivalent. There is no honest C-number to print, and the page does not invent one.</p>
+<p>Unicel, Pleatco and Filbur do not list a Type VI equivalent. There is no C-number to print, and the page does not invent one.</p>
 
 <h2>How these small cartridges get used</h2>
 <p>S1 and S2 are small media areas next to a hardshell cartridge of 30 to 75 sq ft. Intex sells them in multi-packs because owners go through them, not because the spa holds two different types at once. A twin pack is two of the same cartridge in the box. It is not a statement that the spa takes an S1 and an S2 together.</p>
@@ -164,7 +164,7 @@ picks:search('Part-number searches','A search may return one cartridge when the 
 
 {slug:'how-to-install-a-hot-tub-filter',published:D,reviewed:D,
 title:'How to install a hot tub filter cartridge',
-desc:'The install steps that Hot Spring, Jacuzzi, Sundance and Unicel actually print: power off, match the ends, do not overtighten, do not run the spa with the cartridge out, and keep a second set.',
+desc:'The install steps that Hot Spring, Jacuzzi, Sundance and Unicel print: power off, match the ends, do not overtighten, do not run the spa with the cartridge out, and keep a second set.',
 answer:`Turn the spa off, put the new cartridge in the same orientation as the one you removed, and do not overtighten the retainer. Hot Spring’s manual says to cut power before you remove filters, not to use the spa with the cartridge removed, and not to overtighten the filter retainer${c('hsManual')}. Jacuzzi says the same about power and about running with no filter, because debris then goes to the pump and heater, and it says to keep a second cartridge so the spa is never filter-less while one soaks${c('jac')}.`,
 body:`<h2>Before you open the well</h2>
 <p>Installation starts with the right part, not with the lid. If you are not sure the new cartridge matches, stop and use the <a href="/">part-number search</a> or the <a href="/guides/how-to-find-your-spa-filter-size/">size guide</a>. A cartridge that is close in length and wrong on the bottom will sit in the housing and not seal. Which ends the catalogs care about is covered in <a href="/guides/open-end-vs-threaded-hot-tub-filters/">open-end vs threaded hot tub filters</a>.</p>
@@ -284,7 +284,7 @@ body:`<h2>Four columns, one cartridge</h2>
 <li><strong>Master Spas 6CH-352.</strong> Unicel prints 6" × 8". Filbur’s cross-reference to FC-0312 prints 6" × 7"${c('unicel26','filburCat')}. Measure. The Eco-Pur context is in <a href="/guides/master-spas-eco-pur-filters/">Master Spas Eco-Pur filters</a>.</li>
 <li><strong>Hot Spring 78161 / 1642301-1.</strong> Unicel offers C-6350 at 50 sq ft and C-6355 at 75 sq ft, both 6" × 14". Pleatco lists PWK35B at 35 sq ft and 6-3/8" × 14". A dealer page lists 50 sq ft and a slightly different OD again${c('unicel26','pleatco23','lt78161')}. We do not collapse those into one rating. See <a href="/guides/hot-spring-filter-sizes-by-collection/">Hot Spring sizes by collection</a>.</li>
 </ul>
-<p>Unicel’s area formula — pleat count times two, times pleat height, times usable length, divided by 144 — is why two honest measurements of “the same” cartridge can still print different square footage when the pleat count differs${c('unicel26')}. <a href="/guides/why-same-size-spa-filters-have-different-square-feet/">Why same-size filters differ</a> walks through the groups in the spec table, including Unicel’s own upgrade notes such as C-4637 for a 25 sq ft cartridge of the same outside size.</p>
+<p>Unicel’s area formula, pleat count times two, times pleat height, times usable length, divided by 144, is why two measurements of “the same” cartridge can still print different square footage when the pleat count differs${c('unicel26')}. <a href="/guides/why-same-size-spa-filters-have-different-square-feet/">Why same-size filters differ</a> walks through the groups in the spec table, including Unicel’s own upgrade notes such as C-4637 for a 25 sq ft cartridge of the same outside size.</p>
 
 <h2>When a column is blank on purpose</h2>
 <p>A blank is not a zero. It means that catalog did not give us a number we are willing to print.</p>
@@ -352,7 +352,7 @@ body:`<h2>Three different meanings of “two filters”</h2>
 
 <h2>The spare set, which is the recommendation you can apply to any of these</h2>
 <p>Unicel and Pleatco tell owners to keep two sets and alternate them. The set that comes out gets a hose rinse and a degreasing soak of at least an hour, overnight if you can, and then it dries. The other set goes into the spa so you are not running without filtration${c('unicel','pleatcoCat')}. Jacuzzi gives the same advice and adds that a cartridge may be reinstalled damp, while a full dry extends its life${c('jac')}. For a three-cartridge Hot Spring well, a “set” is three cartridges, not one. For a two-cartridge Eco-Pur well, a set is two outers, and the inner element is its own part. For a Sundance two-stage well, the spare you rotate is the pleated outer; the insert is a disposable on a shorter clock, not a piece you soak and put back.</p>
-<p>Running while a set soaks, with nothing in the well, is the case Jacuzzi and Hot Spring reject${c('jac','hsManual')}. The consequences — weak jets, high-limit trips, flow codes — are in <a href="/guides/clogged-or-missing-hot-tub-filter/">what a clogged or missing filter does</a>. Putting the spare in without overtightening the retainer is in <a href="/guides/how-to-install-a-hot-tub-filter/">how to install a hot tub filter</a>.</p>
+<p>Running while a set soaks, with nothing in the well, is the case Jacuzzi and Hot Spring reject${c('jac','hsManual')}. The consequences, weak jets, high-limit trips, flow codes, are in <a href="/guides/clogged-or-missing-hot-tub-filter/">what a clogged or missing filter does</a>. Putting the spare in without overtightening the retainer is in <a href="/guides/how-to-install-a-hot-tub-filter/">how to install a hot tub filter</a>.</p>
 
 <h2>How to count yours</h2>
 <ol>

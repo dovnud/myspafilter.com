@@ -1,4 +1,4 @@
-/* From React Bits (github.com/DavidHDev/react-bits) by David Haz — MIT + Commons Clause, see LICENSE-react-bits.md. Used unmodified as part of this website. */
+/* From React Bits (github.com/DavidHDev/react-bits) by David Haz, MIT + Commons Clause, see LICENSE-react-bits.md. Used unmodified as part of this website. */
 'use client';
 
 import { useEffect, useRef } from 'react';

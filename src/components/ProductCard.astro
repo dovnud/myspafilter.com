@@ -25,7 +25,7 @@ const { name, note, href, button, image = null } = Astro.props as Props;
   <strong class="product-name">{name}</strong>
   {note && <p class="why">{note}</p>}
   <div class="buy">
-    <a class="btn" href={href} rel={outboundRel} target="_blank">{button}<span class="sr"> — {name} (opens in a new tab)</span></a>
+    <a class="btn" href={href} rel={outboundRel} target="_blank">{button}<span class="sr">, {name} (opens in a new tab)</span></a>
   </div>
 </article>
 <style>

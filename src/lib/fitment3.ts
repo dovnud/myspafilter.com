@@ -49,7 +49,7 @@ const bullfrog: Page = { slug: 'bullfrog-filter-by-model-year', brandSlug: 'bull
     { oem: '10-3430', what: 'Original STIL cartridge before coreless. No longer available; substitute 10-00281 with cage assembly 10-00417', unicel: 'None listed', size: 'Not given in our sources' },
     { oem: '10-00814', what: 'Simplicity flat filters, 4-pack (A Series 2023+, M Series, Swim Series); housing 10-04669 is standard in A, M and Swim Series from 2024', unicel: 'None listed', size: 'Not given in our sources', note: 'Bullfrog’s store says to clean or replace these monthly.' },
     { oem: '10-05338', what: 'Filter for CALM Series spas (2026 on)', unicel: 'None listed', size: 'Not given in our sources' },
-    { oem: '10-00417', what: 'Filter core cage and cap assembly, not a filter. Converts 2013–2017 A/R/X and STIL spas to coreless; replacement part on 2018+ spas', unicel: '—', size: '—' },
+    { oem: '10-00417', what: 'Filter core cage and cap assembly, not a filter. Converts 2013–2017 A/R/X and STIL spas to coreless; replacement part on 2018+ spas', unicel: 'not listed', size: 'not listed' },
   ],
   collections: [], rows: [], notes: [],
   extraHtml: `<h2>Find your series and year</h2>
@@ -73,19 +73,19 @@ ${tbl(['Series', 'Model years', 'Filter', 'Where the years come from'], bfRows)}
 <h2>How to confirm yours</h2>
 <ol><li>Read the number on the old cartridge’s end cap or label and <a href="/">search it here</a>.</li><li>No number? Measure diameter and length (our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a> shows how). A threaded 8" × about 6" cartridge is the 10-2870/10-2785 family; a coreless 8" sleeve is 10-00282; a coreless sleeve under 7" is the STIL 10-00281.</li><li>Bullfrog’s care article says to clean pleated cartridges every 3–6 weeks and replace them every 1–2 years; see also <a href="/guides/how-often-to-clean-hot-tub-filter/">how often to clean a hot tub filter</a>.</li></ol>`,
   sources: [
-    { t: 'Bullfrog Spas official parts store — Filters category and product pages (10-1086, 10-1085, 10-2785, 10-2870, 10-00416, 10-00810, 10-00417, 10-00814, 10-05338, 10-04669; fetched 2026-10-27)', u: BF },
-    { t: 'Bullfrog Spas official store — Coreless Filter for A, R and X Series, 2-pack 10-00416 (series and years)', u: 'https://shop.bullfrogspas.com/shop/water-care/coreless-filter-a-r-x-series-2-pack/' },
-    { t: 'Bullfrog Spas official store — Filter Core Cage & Cap Assembly 10-00417', u: 'https://shop.bullfrogspas.com/shop/water-care/filters/filter-core-cage-cap-assembly/' },
-    { t: 'Bullfrog Spas — How to clean, take care of and replace a hot tub filter (filter types by series, cleaning intervals)', u: 'https://www.bullfrogspas.com/how-to-clean-a-hot-tub-filter/' },
-    { t: 'Leisure Time Inc. — Hot Tub Filter Fitment Guide (Bullfrog section)', u: LT },
-    { t: 'Leisure Time Inc. — Bullfrog A/R/X 10-00282 product page (specifications)', u: 'https://leisuretimeinc.com/products/bullfrog-a-r-x-series-10-00282-filter-cartridges' },
-    { t: 'Leisure Time Inc. — Bullfrog STIL 10-00281 product page (specifications)', u: 'https://leisuretimeinc.com/products/bullfrog-stil-series-10-00281-filter-cartridges' },
-    { t: 'Bullfrog Spa Parts Charlottesville — Replacement filters (years, discontinued parts and substitutes)', u: CVL },
-    { t: 'Southern Leisure Spas — Bullfrog coreless filters 10-00416 (dimensions, series years)', u: 'https://shop.southernleisurespas.com/products/bullfrog-spas-coreless-filter-for-a-series-r-series-x-series-2-pack' },
-    { t: 'Hot Tub Outpost — Bullfrog 10-00282 coreless filter (dimensions)', u: 'https://www.hottuboutpost.com/bullfrog-spa-50sqft-filter-10-00282-coreless-a-r-x-series/' },
-    { t: 'Pleatco 2023 Catalog — PBF17, PBF35, PBF36, PBF40 (sizes, ratings, application years)', u: PLEATCO },
-    { t: 'Unicel 2026 Replacement Guide — Bullfrog Spas cross-reference and spec table (8CH-950, 8CH-951)', u: UNICEL },
-    { t: 'Filbur Catalog & Reference Guide — Bullfrog (FC-0536)', u: FILBUR },
+    { t: 'Bullfrog Spas official parts store: Filters category and product pages (10-1086, 10-1085, 10-2785, 10-2870, 10-00416, 10-00810, 10-00417, 10-00814, 10-05338, 10-04669; fetched 2026-10-27)', u: BF },
+    { t: 'Bullfrog Spas official store: Coreless Filter for A, R and X Series, 2-pack 10-00416 (series and years)', u: 'https://shop.bullfrogspas.com/shop/water-care/coreless-filter-a-r-x-series-2-pack/' },
+    { t: 'Bullfrog Spas official store: Filter Core Cage & Cap Assembly 10-00417', u: 'https://shop.bullfrogspas.com/shop/water-care/filters/filter-core-cage-cap-assembly/' },
+    { t: 'Bullfrog Spas: How to clean, take care of and replace a hot tub filter (filter types by series, cleaning intervals)', u: 'https://www.bullfrogspas.com/how-to-clean-a-hot-tub-filter/' },
+    { t: 'Leisure Time Inc.: Hot Tub Filter Fitment Guide (Bullfrog section)', u: LT },
+    { t: 'Leisure Time Inc.: Bullfrog A/R/X 10-00282 product page (specifications)', u: 'https://leisuretimeinc.com/products/bullfrog-a-r-x-series-10-00282-filter-cartridges' },
+    { t: 'Leisure Time Inc.: Bullfrog STIL 10-00281 product page (specifications)', u: 'https://leisuretimeinc.com/products/bullfrog-stil-series-10-00281-filter-cartridges' },
+    { t: 'Bullfrog Spa Parts Charlottesville: Replacement filters (years, discontinued parts and substitutes)', u: CVL },
+    { t: 'Southern Leisure Spas: Bullfrog coreless filters 10-00416 (dimensions, series years)', u: 'https://shop.southernleisurespas.com/products/bullfrog-spas-coreless-filter-for-a-series-r-series-x-series-2-pack' },
+    { t: 'Hot Tub Outpost: Bullfrog 10-00282 coreless filter (dimensions)', u: 'https://www.hottuboutpost.com/bullfrog-spa-50sqft-filter-10-00282-coreless-a-r-x-series/' },
+    { t: 'Pleatco 2023 Catalog: PBF17, PBF35, PBF36, PBF40 (sizes, ratings, application years)', u: PLEATCO },
+    { t: 'Unicel 2026 Replacement Guide: Bullfrog Spas cross-reference and spec table (8CH-950, 8CH-951)', u: UNICEL },
+    { t: 'Filbur Catalog & Reference Guide: Bullfrog (FC-0536)', u: FILBUR },
   ] };
 
 /* ---------- Master Spas ---------- */
@@ -170,12 +170,12 @@ ${tbl(['Series / models', 'Years', 'Filters'], msRows)}
 <h2>How to confirm yours</h2>
 <ol><li>Read the X2685xx number on the old cartridge and <a href="/">search it here</a>.</li><li>Use the serial number. Per Suntek, on most spas built since 2009 the first two digits are the model year (22… = 2022); Getaway serials start with R, swim spas with H, and spas built before 2009 start with M.</li><li>2025 cartridges do not fit older housings. Suntek says adapters X251168 and X251169 exist to retrofit 2025 filters into earlier spas.</li><li>Citing Master Spas’ owner’s manuals, Suntek suggests rinsing the pleated cartridges weekly, soaking them monthly, replacing them about every 12 months, and replacing the EcoPur Charge every 6 months. See also <a href="/guides/how-often-to-clean-hot-tub-filter/">how often to clean a hot tub filter</a>.</li></ol>`,
   sources: [
-    { t: 'Suntek Pools & Spas (masterspapartsonline.com) — Master Spas Filter Guide (series and year tables, supersessions, serial-number tips; chart dated 2026-07-22, fetched 2026-10-27)', u: MSG },
-    { t: 'masterspapartsonline.com — product listings for X268546, X268548, X268549, X268550, X268532, X268543, X268542, X268554, X268500, X268566, X268567, X268568, X268560, X268569, X268559 (sizes, Pleatco-style names)', u: 'https://masterspapartsonline.com/collections/all' },
-    { t: 'masterspaparts.com — 2025 Master Spas filters', u: MSP25 },
-    { t: 'Unicel 2026 Replacement Guide — Master Spas cross-reference (6CH-352, 6CH-402, 6CH-940, 4CH-252, C-3310AM, C-7330, C-8341)', u: UNICEL },
-    { t: 'Pleatco 2023 Catalog — PMA10, PMA20-F2M, PMA40-F2M, PMA40L-F2M, PMA70-F2M, PWW35L, PWW50P3', u: PLEATCO },
-    { t: 'Filbur Catalog & Reference Guide — Master Spas (FC-0317, FC-0416, FC-0359)', u: FILBUR },
+    { t: 'Suntek Pools & Spas (masterspapartsonline.com): Master Spas Filter Guide (series and year tables, supersessions, serial-number tips; chart dated 2026-07-22, fetched 2026-10-27)', u: MSG },
+    { t: 'masterspapartsonline.com: product listings for X268546, X268548, X268549, X268550, X268532, X268543, X268542, X268554, X268500, X268566, X268567, X268568, X268560, X268569, X268559 (sizes, Pleatco-style names)', u: 'https://masterspapartsonline.com/collections/all' },
+    { t: 'masterspaparts.com: 2025 Master Spas filters', u: MSP25 },
+    { t: 'Unicel 2026 Replacement Guide: Master Spas cross-reference (6CH-352, 6CH-402, 6CH-940, 4CH-252, C-3310AM, C-7330, C-8341)', u: UNICEL },
+    { t: 'Pleatco 2023 Catalog: PMA10, PMA20-F2M, PMA40-F2M, PMA40L-F2M, PMA70-F2M, PWW35L, PWW50P3', u: PLEATCO },
+    { t: 'Filbur Catalog & Reference Guide: Master Spas (FC-0317, FC-0416, FC-0359)', u: FILBUR },
   ] };
 
 export const pages3: Page[] = [bullfrog, masterSpas];

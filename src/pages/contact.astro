@@ -14,7 +14,7 @@ import Page from '../components/Page.astro';
 <p><small>This opens your email app with the message filled in, addressed to contact@myspafilter.com. Nothing is sent until you press send there.</small></p>
 </form>
 <script is:inline>
-document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var f=e.target;var body=f.message.value+'\n\n— '+f.name.value;location.href='mailto:contact@myspafilter.com?subject='+encodeURIComponent(f.subject.value)+'&body='+encodeURIComponent(body);});
+document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var f=e.target;var body=f.message.value+'\n\nFrom: '+f.name.value;location.href='mailto:contact@myspafilter.com?subject='+encodeURIComponent(f.subject.value)+'&body='+encodeURIComponent(body);});
 </script>
 <p>We read every correction, and when a source confirms the change we update the data and the page's source citation.</p>
 </Page>

@@ -51,12 +51,12 @@ export const pages: Page[] = [
 <h2>How to confirm yours</h2>
 <ol><li>Read the part number on the old cartridge, or on the filter label if it has worn off.</li><li>If you cannot read it, measure the diameter and length: a 6" × 10-1/2" cartridge is the 71825 family and an 8-1/2" × 10-1/2" one is the 71827 family. Our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a> shows how.</li><li>Check how many cartridges your spa takes in your owner’s manual; we do not list counts per model.</li></ol>`,
   sources: [
-    { t: 'Leisure Time Inc. — Hot Tub Filter Fitment Guide (Hot Spring tables; fetched 2026-10-25)', u: 'https://leisuretimeinc.com/pages/filter-guide' },
-    { t: 'Unicel 2026 Replacement Guide — Hot Springs Spas cross-reference (printed p. 35) and spec tables (pp. 5–8)', u: UNICEL_URL },
-    { t: 'Pleatco 2023 Catalog — Hot Spring PWK35B entry for OEM 1642301-1', u: 'https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf' },
-    { t: 'Hot Spring Spas — How Do Hot Tub Filters Work? (Tri-X compatibility and replacement intervals)', u: 'https://www.hotspring.com/blog/how-do-hot-tub-filters-work' },
-    { t: 'Prisco Hot Spring — 79435 Tri-X listing (size and model-year table)', u: 'https://priscohotspring.com/79435-hot-spring-spas-tri-x-ceramic-cartridge-filter-single/' },
-    { t: 'HotSpring World UK — Tri-X 65 sq ft listing', u: 'https://www.hotspringworld.co.uk/shop/hot-tub-filters/tri-x-filter/' },
+    { t: 'Leisure Time Inc.: Hot Tub Filter Fitment Guide (Hot Spring tables; fetched 2026-10-25)', u: 'https://leisuretimeinc.com/pages/filter-guide' },
+    { t: 'Unicel 2026 Replacement Guide: Hot Springs Spas cross-reference (printed p. 35) and spec tables (pp. 5–8)', u: UNICEL_URL },
+    { t: 'Pleatco 2023 Catalog: Hot Spring PWK35B entry for OEM 1642301-1', u: 'https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf' },
+    { t: 'Hot Spring Spas: How Do Hot Tub Filters Work? (Tri-X compatibility and replacement intervals)', u: 'https://www.hotspring.com/blog/how-do-hot-tub-filters-work' },
+    { t: 'Prisco Hot Spring: 79435 Tri-X listing (size and model-year table)', u: 'https://priscohotspring.com/79435-hot-spring-spas-tri-x-ceramic-cartridge-filter-single/' },
+    { t: 'HotSpring World UK: Tri-X 65 sq ft listing', u: 'https://www.hotspringworld.co.uk/shop/hot-tub-filters/tri-x-filter/' },
   ] },
 { slug: 'caldera-filter-by-model-year', brandSlug: 'caldera', brandName: 'Caldera', crumbBrand: 'Caldera',
   title: 'Caldera hot tub filter by model and year (Utopia, Paradise, Highland, Vacanza)',
@@ -84,10 +84,10 @@ export const pages: Page[] = [
 <h2>How to confirm yours</h2>
 <ol><li>Read the part number printed on the old cartridge. The dealer itself says that even within one Caldera model line the filter can change by year, and that the part number is the most reliable method.</li><li>Measure the diameter and length if it is unreadable: 7" × 14-3/4" is the 73531 family, 7" × 10-3/4" the 73532, and 8" × 16-1/2" the 73722 or 74817. Our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a> shows how.</li><li>For the model-years flagged above, have the spa serial number ready and ask a Caldera dealer.</li></ol>`,
   sources: [
-    { t: 'Leisure Time Inc. — Hot Tub Filter Fitment Guide (Caldera tables; fetched 2026-10-25)', u: 'https://leisuretimeinc.com/pages/filter-guide' },
-    { t: 'Unicel 2026 Replacement Guide — Caldera Spas cross-reference (printed p. 26) and Hot Springs cross-reference (p. 35)', u: UNICEL_URL },
-    { t: 'Leisure Time Inc. — Caldera 73531 product page (specifications, model-year list, filter FAQ)', u: 'https://leisuretimeinc.com/products/caldera-77813-filter-cartridge' },
-    { t: 'SpaStore.com — Caldera 73531 / PCD75N listing (model years; related 8" × 16-1/2" Utopia filter)', u: 'https://www.spastore.com/7-x-14-3-4-caldera-paradise-utopia-series-spa-filter-73531-pcd75n-years-2003/' },
+    { t: 'Leisure Time Inc.: Hot Tub Filter Fitment Guide (Caldera tables; fetched 2026-10-25)', u: 'https://leisuretimeinc.com/pages/filter-guide' },
+    { t: 'Unicel 2026 Replacement Guide: Caldera Spas cross-reference (printed p. 26) and Hot Springs cross-reference (p. 35)', u: UNICEL_URL },
+    { t: 'Leisure Time Inc.: Caldera 73531 product page (specifications, model-year list, filter FAQ)', u: 'https://leisuretimeinc.com/products/caldera-77813-filter-cartridge' },
+    { t: 'SpaStore.com: Caldera 73531 / PCD75N listing (model years; related 8" × 16-1/2" Utopia filter)', u: 'https://www.spastore.com/7-x-14-3-4-caldera-paradise-utopia-series-spa-filter-73531-pcd75n-years-2003/' },
   ] },
 ...pages2,
 ...pages3,

@@ -18,28 +18,28 @@ const tbl = (head: string[], rows: string[][]) => `<div class="tbl"><table><thea
 // [collection, model(s), years (and which table gives them), main/upper, lower, jet-pump filter, table]
 const J: string[][] = [
   ['J-LX / J-LXL', 'J-LX, J-LXL', '2023 and newer', '6473-157J', '6473-161J', '6000-383AJ', 'Both'],
-  ['J-LX / J-LXL', 'J-LX, J-LXL', '2011–2021 (Spa World) · 2011–2022 (France)', '6000-383AJ', '—', '6000-383AJ', 'Both'],
+  ['J-LX / J-LXL', 'J-LX, J-LXL', '2011–2021 (Spa World) · 2011–2022 (France)', '6000-383AJ', 'not listed', '6000-383AJ', 'Both'],
   ['J-500', 'J-585, J-575', '2015 and newer (France) · 2015–2021 (Spa World)', '6473-157J', '6473-161J', '6000-383AJ', 'Both'],
   ['J-400', 'All J-400 (Spa World names J-435, J-445, J-475, J-485, J-495)', '2013 and newer (France) · 2013–2023 (Spa World)', '6473-157J', '6473-161J', '6000-383AJ', 'Both'],
   ['J-400', 'J-495, J-425, J-415', '2012', '6473-157J', '6473-161J', '6000-383AJ', 'Both'],
   ['J-400', 'J-480, J-470, J-465', '2012', '6473-158', '6473-161J', '2540-387J', 'Both'],
   ['J-400', 'J-460', '2012', '6473-156', '6473-161J', '2540-384', 'Both'],
-  ['J-400', 'J-480, J-470', '2006–2011', '2540-383J', '—', '2540-387J', 'Both'],
-  ['J-400', 'J-465', 'May 2007–2011 (France) · “up to May 2011” (Spa World)', '2540-383J', '—', '2540-387J', 'Both'],
-  ['J-400', 'J-465', 'Before May 2007 (France) · “up to April 2007” (Spa World)', '2000-498', '—', '2540-384', 'Both'],
-  ['J-400', 'J-460', '2006–2011', '2000-498', '—', '2540-384', 'Both'],
+  ['J-400', 'J-480, J-470', '2006–2011', '2540-383J', 'not listed', '2540-387J', 'Both'],
+  ['J-400', 'J-465', 'May 2007–2011 (France) · “up to May 2011” (Spa World)', '2540-383J', 'not listed', '2540-387J', 'Both'],
+  ['J-400', 'J-465', 'Before May 2007 (France) · “up to April 2007” (Spa World)', '2000-498', 'not listed', '2540-384', 'Both'],
+  ['J-400', 'J-460', '2006–2011', '2000-498', 'not listed', '2540-384', 'Both'],
   ['J-300', 'All J-300 (J-310 to J-385)', '2014 and newer', '6000-383AJ', '6473-161J only with the 2472-234 canister (Spa World)', '6000-383AJ (second filter)', 'Both'],
-  ['J-300', 'All J-300', 'Through 2013', '6000-383AJ', '—', '6000-383AJ (second filter)', 'Both'],
-  ['J-200', 'J-215, J-225, J-235, J-245, J-275, J-285 (ProClassic)', '2023 and newer', '6541-853J', '—', '—', 'Spa World'],
-  ['J-200', 'J-210, J-215, J-220', 'Since 2005 (France) · J-220 2005–2008 and J-215/J-225 2016–2022 (Spa World)', '373045', '—', '—', 'Both'],
-  ['J-200', 'J-230', 'Through 2007 (France) · 2005–2007 (Spa World)', '373045', '—', '—', 'Both'],
-  ['J-200', 'J-230', 'Since 2008 (France) · 2008–2012 (Spa World)', '2540-381J', '—', '—', 'Both'],
-  ['J-200', 'J-235', 'Through 2011', '6000-136', '—', '—', 'France only'],
-  ['J-200', 'J-235, J-245, J-275', 'Since 2012 (France) · 2012–2022 (Spa World)', '373045', '—', '—', 'Both'],
-  ['J-200', 'J-270', 'Since 2005 (France) · 2007–2012 (Spa World)', '2540-381J', '—', '—', 'Both'],
-  ['J-200', 'J-280', 'Since 2005 (France) · 2007–2022 (Spa World)', '2540-381J', '—', '—', 'Both'],
-  ['J-100', 'J-145, J-135', '2012–2022', '373045J', '—', '—', 'Spa World'],
-  ['J-100', 'J-125, J-115', '2016–2022', '373045J', '—', '—', 'Spa World'],
+  ['J-300', 'All J-300', 'Through 2013', '6000-383AJ', 'not listed', '6000-383AJ (second filter)', 'Both'],
+  ['J-200', 'J-215, J-225, J-235, J-245, J-275, J-285 (ProClassic)', '2023 and newer', '6541-853J', 'not listed', 'not listed', 'Spa World'],
+  ['J-200', 'J-210, J-215, J-220', 'Since 2005 (France) · J-220 2005–2008 and J-215/J-225 2016–2022 (Spa World)', '373045', 'not listed', 'not listed', 'Both'],
+  ['J-200', 'J-230', 'Through 2007 (France) · 2005–2007 (Spa World)', '373045', 'not listed', 'not listed', 'Both'],
+  ['J-200', 'J-230', 'Since 2008 (France) · 2008–2012 (Spa World)', '2540-381J', 'not listed', 'not listed', 'Both'],
+  ['J-200', 'J-235', 'Through 2011', '6000-136', 'not listed', 'not listed', 'France only'],
+  ['J-200', 'J-235, J-245, J-275', 'Since 2012 (France) · 2012–2022 (Spa World)', '373045', 'not listed', 'not listed', 'Both'],
+  ['J-200', 'J-270', 'Since 2005 (France) · 2007–2012 (Spa World)', '2540-381J', 'not listed', 'not listed', 'Both'],
+  ['J-200', 'J-280', 'Since 2005 (France) · 2007–2022 (Spa World)', '2540-381J', 'not listed', 'not listed', 'Both'],
+  ['J-100', 'J-145, J-135', '2012–2022', '373045J', 'not listed', 'not listed', 'Spa World'],
+  ['J-100', 'J-125, J-115', '2016–2022', '373045J', 'not listed', 'not listed', 'Spa World'],
 ];
 const jacTable = ['J-LX / J-LXL', 'J-500', 'J-400', 'J-300', 'J-200', 'J-100'].map((c) => `<h3>${c} Collection</h3>` + tbl(['Model', 'Years', 'Main / upper filter', 'Lower filter', 'Jet-pump or second filter', 'Listed by'], J.filter((r) => r[0] === c).map((r) => [r[1], r[2], `<strong>${r[3]}</strong>`, r[4], r[5], r[6]]))).join('');
 
@@ -79,21 +79,21 @@ ${jacTable}
 <h2>How to confirm yours</h2>
 <ol><li>Read the part number printed on the old cartridge. Expect a J suffix on some (373045J, 6473-157J).</li><li>Jacuzzi’s owners center says filters are sold through local dealers, and that the spa serial number is in the equipment bay on top of the load box, typically 9 digits starting with 100. Give a dealer the serial if the year is near a change-over.</li><li>If the label is gone, measure diameter and length (our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a> shows how) and compare with the sizes above. A J-400 or J-500 with a short upper cartridge and a small closed-end lower one is the 157/161 set.</li></ol>`,
   sources: [
-    { t: 'Spa World (Australia) — Jacuzzi Filter Guide (model, year, pleated/micron/jet-pump filters; fetched 2026-10-26)', u: SW },
+    { t: 'Spa World (Australia): Jacuzzi Filter Guide (model, year, pleated/micron/jet-pump filters; fetched 2026-10-26)', u: SW },
     { t: 'Jacuzzi Direct filter table, March 2024 (published by Jacuzzi dealer JVG Boutique, France)', u: JDF },
-    { t: 'Unicel 2026 Replacement Guide — Jacuzzi and Sundance cross-reference and spec tables', u: UNICEL },
-    { t: 'Filbur Catalog & Reference Guide — Jacuzzi section (FC-2390, FC-2761, FC-2763/2764/2765, FC-2767, FC-2781)', u: FILBUR },
-    { t: 'Pleatco 2023 Catalog — Jacuzzi and Sundance cross-reference', u: PLEATCO },
-    { t: 'The Spa Supply Store — Jacuzzi ProClear 60 sq ft 6000-383AJ (dimensions)', u: 'https://thespasupplystore.com/products/jacuzzi%C2%AE-proclear%C2%AE-60-sq-ft-filter-6000-383aj' },
-    { t: 'Hot Tub Things — 6000-383AJ listing (dimensions and listed replacements)', u: 'https://www.hottubthings.com/products/htt-6000-383aj' },
-    { t: 'Spa World shop — Jacuzzi 50 sq ft ProClassic filter 6541-853 (size, 18-month note)', u: 'https://shop.spaworld.com.au/248-x-203mm-jacuzzi-50-sqft-proclassic-filter-6541' },
-    { t: 'Jacuzzi — Owners Center (filters through dealers; serial number location)', u: 'https://www.jacuzzi.com/owners-center.html' },
+    { t: 'Unicel 2026 Replacement Guide: Jacuzzi and Sundance cross-reference and spec tables', u: UNICEL },
+    { t: 'Filbur Catalog & Reference Guide: Jacuzzi section (FC-2390, FC-2761, FC-2763/2764/2765, FC-2767, FC-2781)', u: FILBUR },
+    { t: 'Pleatco 2023 Catalog: Jacuzzi and Sundance cross-reference', u: PLEATCO },
+    { t: 'The Spa Supply Store: Jacuzzi ProClear 60 sq ft 6000-383AJ (dimensions)', u: 'https://thespasupplystore.com/products/jacuzzi%C2%AE-proclear%C2%AE-60-sq-ft-filter-6000-383aj' },
+    { t: 'Hot Tub Things: 6000-383AJ listing (dimensions and listed replacements)', u: 'https://www.hottubthings.com/products/htt-6000-383aj' },
+    { t: 'Spa World shop: Jacuzzi 50 sq ft ProClassic filter 6541-853 (size, 18-month note)', u: 'https://shop.spaworld.com.au/248-x-203mm-jacuzzi-50-sqft-proclassic-filter-6541' },
+    { t: 'Jacuzzi: Owners Center (filters through dealers; serial number location)', u: 'https://www.jacuzzi.com/owners-center.html' },
   ] };
 
 /* ---------- Sundance ---------- */
 type SR = { model: string; years: string; serial: string; parts: string[]; alt: string[] };
 const S = sdno as SR[];
-const sdRows = S.map((r) => [esc(r.model), r.years, r.serial || '—', `<strong>${r.parts.join(' + ')}</strong>`, r.alt.length ? r.alt.join(' + ') : '—']);
+const sdRows = S.map((r) => [esc(r.model), r.years, r.serial || 'not listed', `<strong>${r.parts.join(' + ')}</strong>`, r.alt.length ? r.alt.join(' + '): 'not listed']);
 const sundance: Page = { slug: 'sundance-filter-by-model-year', brandSlug: 'sundance', brandName: 'Sundance', crumbBrand: 'Sundance', date: FITMENT2_DATE,
   title: 'Sundance hot tub filter by model and year (680, 780, 880, 980 Series)',
   h1: 'Which filter does my Sundance hot tub take? Lookup by model, year and serial number',
@@ -128,8 +128,8 @@ ${tbl(['Model', 'Years', 'Serial numbers', 'Factory filter(s)', 'Alternative'], 
 ${tbl(['Series and system', 'Clean', 'Replace'], [
   ['680 Series 2006–2022 (373045 style)', 'Monthly', 'Every 12 months'],
   ['680 Series 2023+ (MicroClean Mini)', 'Outer every 2–3 months', 'Outer every 12–18 months; Mini inner every 3–4 months'],
-  ['780 Series (two-piece MicroClean)', '—', 'Pleated outer every 12–18 months; MicroClean upper every 3–5 months'],
-  ['880 / 980 Series (MicroClean Ultra)', '—', 'Inner core every 6–9 months'],
+  ['780 Series (two-piece MicroClean)', 'not listed', 'Pleated outer every 12–18 months; MicroClean upper every 3–5 months'],
+  ['880 / 980 Series (MicroClean Ultra)', 'not listed', 'Inner core every 6–9 months'],
 ])}
 <p>Filbur prints “Replace after 3 months of use” on its FC-2812 version of the 6540-502 disposable upper. For our general advice, see <a href="/guides/how-often-to-replace-hot-tub-filter/">how often to replace a hot tub filter</a>.</p>
 <h2>Where the sources differ</h2>
@@ -143,12 +143,12 @@ ${tbl(['Series and system', 'Clean', 'Replace'], [
 <h2>How to confirm yours</h2>
 <ol><li>Read the part number on the old cartridge or cartridges. A two-piece set (outer plus inner core) is MicroClean Ultra or Mini; a pleated cartridge plus a short disposable top is MicroClean.</li><li>Compare your spa’s serial number with the ranges in the table above, as Sundance Norway advises.</li><li>If the label is unreadable, measure diameter and length (see our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a>) and compare with the sizes above.</li></ol>`,
   sources: [
-    { t: 'Sundance Spas Norway — Filteroversikt alle modeller fra 1995 (filter overview by model, year and serial number, May 2026)', u: SDNO },
-    { t: 'Leisure Time Inc. — Hot Tub Filter Fitment Guide (Sundance tables; fetched 2026-10-26)', u: LT },
-    { t: 'Snow Valley Spas — 6473-165S MicroClean Ultra outer (size and model years)', u: 'https://snowvalleyspas.ca/products/6473-165s-sundance-880-2009-2023-and-980-2016-microclean-ultra-outer-core' },
-    { t: 'The Sundance Spa Store — Filter cleaning and maintenance instructions (intervals by series)', u: 'https://www.thesundancespastore.com/filter-cleaning-maintenance-instructions/' },
-    { t: 'Unicel 2026 Replacement Guide — Sundance cross-reference and spec tables', u: UNICEL },
-    { t: 'Filbur Catalog & Reference Guide — Sundance section (FC-2760, FC-2769/2771/2772, FC-2770, FC-2780, FC-2791, FC-2810, FC-2812)', u: FILBUR },
-    { t: 'Pleatco 2023 Catalog — Sundance cross-reference (PSD125-2000, PSD85-2002, PPS750, PSD125U, PSD75)', u: PLEATCO },
+    { t: 'Sundance Spas Norway: Filteroversikt alle modeller fra 1995 (filter overview by model, year and serial number, May 2026)', u: SDNO },
+    { t: 'Leisure Time Inc.: Hot Tub Filter Fitment Guide (Sundance tables; fetched 2026-10-26)', u: LT },
+    { t: 'Snow Valley Spas: 6473-165S MicroClean Ultra outer (size and model years)', u: 'https://snowvalleyspas.ca/products/6473-165s-sundance-880-2009-2023-and-980-2016-microclean-ultra-outer-core' },
+    { t: 'The Sundance Spa Store: Filter cleaning and maintenance instructions (intervals by series)', u: 'https://www.thesundancespastore.com/filter-cleaning-maintenance-instructions/' },
+    { t: 'Unicel 2026 Replacement Guide: Sundance cross-reference and spec tables', u: UNICEL },
+    { t: 'Filbur Catalog & Reference Guide: Sundance section (FC-2760, FC-2769/2771/2772, FC-2770, FC-2780, FC-2791, FC-2810, FC-2812)', u: FILBUR },
+    { t: 'Pleatco 2023 Catalog: Sundance cross-reference (PSD125-2000, PSD85-2002, PPS750, PSD125U, PSD75)', u: PLEATCO },
   ] };
 export const pages2: Page[] = [jacuzzi, sundance];

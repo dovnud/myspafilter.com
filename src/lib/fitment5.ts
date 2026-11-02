@@ -73,15 +73,15 @@ ${tbl(['Model', 'Built', 'Nordic filter'], nRows)}
 <h2>How to confirm yours</h2>
 <ol><li>Read the number on the old cartridge’s end cap and <a href="/">search it here</a>.</li><li>No number? Look at the ends: a handle with a threaded bottom is the T35; open at both ends and 13-5/16" long is the CARTRIDGE; open at both ends, fatter (5-5/16") and 10-1/8" long is the CARTRIDGE-E. Measure as in our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a>.</li><li>Compare the result with the <a href="/nordic-hot-tubs/">Nordic Hot Tubs brand table</a>, then see <a href="/guides/how-often-to-clean-hot-tub-filter/">how often to clean a hot tub filter</a>.</li></ol>`,
   sources: [
-    { t: 'Nordic Hot Tubs — Filter Cartridges List by Model, 2023 (models, Nordic numbers, Unicel/Pleatco/Filbur/Waterway equivalents)', u: N_CHART },
-    { t: 'Nordic Hot Tubs — Filter Cartridges List by Model, 2021 edition (earlier chart; no CARTRIDGE-BELLA equivalents)', u: N_CHART21 },
-    { t: 'Nordic Hot Tubs — Filter cartridge listed by model (page linking the chart)', u: 'https://www.nordichottubs.com/filter-cartridge-listed-by-model/' },
-    { t: 'Nordic Hot Tubs — Owner’s manual, 01.2024 (Filter Quick Reference by Model, p. 22; filter care and removal)', u: N_MAN },
-    { t: 'Nordic Hot Tubs — 2022 North American service parts list (31CARTRIDGE, 31CARTRIDGE-E, 31CARTRIDGE-T35, housings and Teleweir cages)', u: N_PL },
-    { t: 'Hot Tub Outpost — Nordic 31CARTRIDGE-E listing (45 sq ft, 5-5/16" × 10-1/8", models after Sept 2021)', u: 'https://www.hottuboutpost.com/nordic-hot-tub-filter-31cartridge-e/' },
-    { t: 'Unicel 2026 Replacement Guide — Nordic Hot Tubs cross-reference (printed p. 42), spec tables and price list', u: UNICEL },
-    { t: 'Pleatco 2023 Catalog — spec tables (PRB25-IN, PLBS50, PWW35L, PRB14.5, PRB12-4) and Unicel cross-reference', u: PLEATCO },
-    { t: 'Filbur Catalog & Reference Guide — Nordic Hot Tubs (printed p. 44) and spec tables', u: FILBUR },
+    { t: 'Nordic Hot Tubs: Filter Cartridges List by Model, 2023 (models, Nordic numbers, Unicel/Pleatco/Filbur/Waterway equivalents)', u: N_CHART },
+    { t: 'Nordic Hot Tubs: Filter Cartridges List by Model, 2021 edition (earlier chart; no CARTRIDGE-BELLA equivalents)', u: N_CHART21 },
+    { t: 'Nordic Hot Tubs: Filter cartridge listed by model (page linking the chart)', u: 'https://www.nordichottubs.com/filter-cartridge-listed-by-model/' },
+    { t: 'Nordic Hot Tubs: Owner’s manual, 01.2024 (Filter Quick Reference by Model, p. 22; filter care and removal)', u: N_MAN },
+    { t: 'Nordic Hot Tubs: 2022 North American service parts list (31CARTRIDGE, 31CARTRIDGE-E, 31CARTRIDGE-T35, housings and Teleweir cages)', u: N_PL },
+    { t: 'Hot Tub Outpost: Nordic 31CARTRIDGE-E listing (45 sq ft, 5-5/16" × 10-1/8", models after Sept 2021)', u: 'https://www.hottuboutpost.com/nordic-hot-tub-filter-31cartridge-e/' },
+    { t: 'Unicel 2026 Replacement Guide: Nordic Hot Tubs cross-reference (printed p. 42), spec tables and price list', u: UNICEL },
+    { t: 'Pleatco 2023 Catalog: spec tables (PRB25-IN, PLBS50, PWW35L, PRB14.5, PRB12-4) and Unicel cross-reference', u: PLEATCO },
+    { t: 'Filbur Catalog & Reference Guide: Nordic Hot Tubs (printed p. 44) and spec tables', u: FILBUR },
   ] };
 
 /* ---------- Arctic Spas ---------- */
@@ -131,18 +131,18 @@ ${tbl(['Spa', 'Built', 'Factory filter', 'Equivalents and alternatives'], aRows)
 <h2>How to confirm yours</h2>
 <ol><li>Look at the intake: an ArcticSpas logo with threads means the threaded filter; an open well with no thread means the drop-in; a telescoping insert and pre-filter means Custom Series Pro-Filter or Polar Pro.</li><li>Read the number on the old filter and <a href="/">search it here</a>, or measure it with our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a>. Our <a href="/guides/open-end-vs-threaded-hot-tub-filters/">open-end vs threaded guide</a> explains why an open cartridge will not seal on a threaded intake.</li><li>Compare with the <a href="/arctic-spas/">Arctic Spas brand table</a>.</li></ol>`,
   sources: [
-    { t: 'Arctic Spas — Owner’s manual, international edition V0504-2026 (filter removal by series, care intervals)', u: 'https://www.arcticspas.com/wp-content/uploads/Arctic-Hot-Tub-Manual-International_V0504-2026.pdf' },
-    { t: 'Arctic Spas Ontario — Filter 50 pleated drop-in (PRT-115LOT; C-4950 / PRB50-IN / FC-2390; 2008 or earlier)', u: AON('products/filter-50-pleated-drop-in') },
-    { t: 'Arctic Spas Ontario — Filter 50 pleated thread-in (PRT-900020; open-core cartridges do not fit)', u: AON('products/filter-50-pleated-thread-in') },
-    { t: 'Arctic Spas Ontario — Silver Sentinel thread-in (PRT-900007, replaces PRT-900003; no aftermarket equivalent)', u: AON('products/silver-sentinel-thread-in') },
-    { t: 'Arctic Spas Ontario — Polar Pro filters (2020+ Custom Series)', u: AON('collections/polar-pro-filters') },
-    { t: 'Premier Pools & Spas — Arctic Spa filters 2009–2019 and 2020 Classic and Core filter guide (4CH-949, C-4310 note, Rescue Bag filters)', u: PREM + 'blogs/news/arctic-spa-filters-2009-2019-2020-classic-core-series-filter-guide' },
-    { t: 'Premier Pools & Spas — New Arctic Spas Polar Pro filters for Custom Series spas (PRT-900150, -900140, -900170, -900180, -900190)', u: PREM + 'blogs/hot-tub-info-customer-guides/new-arctic-spas-polar-pro-filters-for-custom-series-spas' },
-    { t: 'Premier Pools & Spas — Arctic Silver Sentinel drop-in PRT-900004 (1998–2008, not Marmot)', u: PREM + 'products/arctic-silver-sentinal-pre-2000' },
-    { t: 'Premier Pools & Spas — Arctic Atlantis drop-in PRT-900008 (1998–2008, not Marmot)', u: PREM + 'products/arctic-spas-prt-900008-silver-sentinel-filter-drop-in-copy' },
-    { t: 'Arctic Spas Spokane — Arctic parts: filters and weir parts by year', u: 'https://usparts.arcticspas.com/filters/' },
-    { t: 'Unicel 2026 Replacement Guide — Arctic Spas entry pointing to Blue Falls Mfg. (printed pp. 24–25) and spec tables', u: UNICEL },
-    { t: 'Filbur Catalog & Reference Guide — Arctic Spas and Blue Falls Mfg. (printed p. 27)', u: FILBUR },
+    { t: 'Arctic Spas: Owner’s manual, international edition V0504-2026 (filter removal by series, care intervals)', u: 'https://www.arcticspas.com/wp-content/uploads/Arctic-Hot-Tub-Manual-International_V0504-2026.pdf' },
+    { t: 'Arctic Spas Ontario: Filter 50 pleated drop-in (PRT-115LOT; C-4950 / PRB50-IN / FC-2390; 2008 or earlier)', u: AON('products/filter-50-pleated-drop-in') },
+    { t: 'Arctic Spas Ontario: Filter 50 pleated thread-in (PRT-900020; open-core cartridges do not fit)', u: AON('products/filter-50-pleated-thread-in') },
+    { t: 'Arctic Spas Ontario: Silver Sentinel thread-in (PRT-900007, replaces PRT-900003; no aftermarket equivalent)', u: AON('products/silver-sentinel-thread-in') },
+    { t: 'Arctic Spas Ontario: Polar Pro filters (2020+ Custom Series)', u: AON('collections/polar-pro-filters') },
+    { t: 'Premier Pools & Spas: Arctic Spa filters 2009–2019 and 2020 Classic and Core filter guide (4CH-949, C-4310 note, Rescue Bag filters)', u: PREM + 'blogs/news/arctic-spa-filters-2009-2019-2020-classic-core-series-filter-guide' },
+    { t: 'Premier Pools & Spas: New Arctic Spas Polar Pro filters for Custom Series spas (PRT-900150, -900140, -900170, -900180, -900190)', u: PREM + 'blogs/hot-tub-info-customer-guides/new-arctic-spas-polar-pro-filters-for-custom-series-spas' },
+    { t: 'Premier Pools & Spas: Arctic Silver Sentinel drop-in PRT-900004 (1998–2008, not Marmot)', u: PREM + 'products/arctic-silver-sentinal-pre-2000' },
+    { t: 'Premier Pools & Spas: Arctic Atlantis drop-in PRT-900008 (1998–2008, not Marmot)', u: PREM + 'products/arctic-spas-prt-900008-silver-sentinel-filter-drop-in-copy' },
+    { t: 'Arctic Spas Spokane: Arctic parts: filters and weir parts by year', u: 'https://usparts.arcticspas.com/filters/' },
+    { t: 'Unicel 2026 Replacement Guide: Arctic Spas entry pointing to Blue Falls Mfg. (printed pp. 24–25) and spec tables', u: UNICEL },
+    { t: 'Filbur Catalog & Reference Guide: Arctic Spas and Blue Falls Mfg. (printed p. 27)', u: FILBUR },
   ] };
 
 /* ---------- Softub ---------- */
@@ -150,7 +150,7 @@ const SD = (s: string) => `https://www.softubdirect.com/${s}/`;
 const sRows: string[][] = [
   ['Softub T-140, T-220, T-300 (and Portico, per one dealer)', 'July 2009 and newer (June 2009 in some dealer listings)', '<strong>5020</strong> snap-on, P/N 2003905; 5-1/2" drain cap held by 2 screws', 'Great Barrier 8553 (aftermarket)'],
   ['Older Softubs', 'Before July 2009', '<strong>5015</strong> snap-on, P/N 2005400; 4" drain cap held by 1 screw', 'Great Barrier 8555 / 8555CA (aftermarket)'],
-  ['Older T-140 and the Chameleon', 'Before July 2009', '<strong>5010</strong> short snap-on, P/N 2002200', '—'],
+  ['Older T-140 and the Chameleon', 'Before July 2009', '<strong>5010</strong> short snap-on, P/N 2002200', 'not listed'],
   ['Older Softub with a broken 4" drain cap and an exposed threaded pipe', 'Before July 2009', 'Screw-on “thinner” filter', 'Diamond Filtration 4CH-23DF (1-1/2" MPT, 5" diameter)'],
 ];
 const softub: Page = { slug: 'softub-filter-by-model-year', brandSlug: 'softub', brandName: 'Softub', crumbBrand: 'Softub',
@@ -191,18 +191,18 @@ ${tbl(['Softub', 'Built', 'Filter', 'Aftermarket'], sRows)}
 <h2>How to confirm yours</h2>
 <ol><li>With the spa warm, pull the filter and look at the drain cap: two screws and a 5-1/2" cap means the 5020; one screw and a 4" cap means the 5015 or 5010 (measure the length: 7-3/4" or 5-1/2").</li><li>A threaded cartridge instead? Read its number and <a href="/">search it here</a>, or measure it with our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a>, and compare with the <a href="/softub/">Softub brand table</a>.</li><li>See <a href="/guides/how-often-to-replace-hot-tub-filter/">how often to replace a hot tub filter</a>.</li></ol>`,
   sources: [
-    { t: 'Softub — Owner’s manual (domestic), October 2025 (snap-on filter, removal, cleaning and replacement)', u: 'https://softub.com/wp-content/uploads/2025/10/Owners_Manual_Domestic_20251006.pdf' },
-    { t: 'SoftubDirect — Which Softub filter do I need? (5020 vs older filters, drain-cap test)', u: SD('which-softub-filter-do-i-need') },
-    { t: 'SoftubDirect — Softub filter 5020 (P/N 2003905; T-140, T-220, T-300)', u: SD('product/softub-filter-5020-for-july-2009-softub-or-newer-pn-2003905') },
-    { t: 'SoftubDirect — Snap-on filter 5010 for much older Softubs (P/N 2002200, 25 sq ft)', u: SD('product/softub-snap-on-filter-for-much-older-softubs-5010') },
-    { t: 'SoftubDirect — Diamond thinner screw-on filter for older Softubs (4CH-23DF)', u: SD('product/diamond-thinner-screw-on-filter-for-much-older-softubs') },
-    { t: 'SpaStore.com — Softub filter cartridges (5020 / 2003905 and 5015 / 2005400, sizes)', u: 'https://www.spastore.com/softub-filter-cartridge/' },
-    { t: 'Simply Softub Spas — 5020 filter for tubs purchased after 2009', u: 'https://simplysoftubspas.com/product/5020-filter-for-tubs-purchased-after-2009/' },
-    { t: 'ezhottubparts — Softub filters (5020 / 2003905, Great Barrier 8553, 8555)', u: 'https://ezhottubparts.com/product-category/shop-part-by-spa-brand/softub-spas-parts/softub-filter/' },
-    { t: 'ezhottubparts — Softub 8555 pre-2009 snap-on filter (35 sq ft, 4" slip collar)', u: 'https://ezhottubparts.com/product/softub-8555-filter-pre-2009-snap-on/' },
-    { t: 'Unicel 2026 Replacement Guide — Softub cross-reference (printed p. 51) and spec tables', u: UNICEL },
-    { t: 'Pleatco 2023 Catalog — PTL20W-SV-P4 (Softub; Leisure Bay; OEM 90-802)', u: PLEATCO },
-    { t: 'Filbur Catalog & Reference Guide — Softsider Spas, FC-0305 (OEM 90-802)', u: FILBUR },
+    { t: 'Softub: Owner’s manual (domestic), October 2025 (snap-on filter, removal, cleaning and replacement)', u: 'https://softub.com/wp-content/uploads/2025/10/Owners_Manual_Domestic_20251006.pdf' },
+    { t: 'SoftubDirect: Which Softub filter do I need? (5020 vs older filters, drain-cap test)', u: SD('which-softub-filter-do-i-need') },
+    { t: 'SoftubDirect: Softub filter 5020 (P/N 2003905; T-140, T-220, T-300)', u: SD('product/softub-filter-5020-for-july-2009-softub-or-newer-pn-2003905') },
+    { t: 'SoftubDirect: Snap-on filter 5010 for much older Softubs (P/N 2002200, 25 sq ft)', u: SD('product/softub-snap-on-filter-for-much-older-softubs-5010') },
+    { t: 'SoftubDirect: Diamond thinner screw-on filter for older Softubs (4CH-23DF)', u: SD('product/diamond-thinner-screw-on-filter-for-much-older-softubs') },
+    { t: 'SpaStore.com: Softub filter cartridges (5020 / 2003905 and 5015 / 2005400, sizes)', u: 'https://www.spastore.com/softub-filter-cartridge/' },
+    { t: 'Simply Softub Spas: 5020 filter for tubs purchased after 2009', u: 'https://simplysoftubspas.com/product/5020-filter-for-tubs-purchased-after-2009/' },
+    { t: 'ezhottubparts: Softub filters (5020 / 2003905, Great Barrier 8553, 8555)', u: 'https://ezhottubparts.com/product-category/shop-part-by-spa-brand/softub-spas-parts/softub-filter/' },
+    { t: 'ezhottubparts: Softub 8555 pre-2009 snap-on filter (35 sq ft, 4" slip collar)', u: 'https://ezhottubparts.com/product/softub-8555-filter-pre-2009-snap-on/' },
+    { t: 'Unicel 2026 Replacement Guide: Softub cross-reference (printed p. 51) and spec tables', u: UNICEL },
+    { t: 'Pleatco 2023 Catalog: PTL20W-SV-P4 (Softub; Leisure Bay; OEM 90-802)', u: PLEATCO },
+    { t: 'Filbur Catalog & Reference Guide: Softsider Spas, FC-0305 (OEM 90-802)', u: FILBUR },
   ] };
 
 export const pages5: Page[] = [nordic, arctic, softub];
