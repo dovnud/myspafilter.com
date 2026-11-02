@@ -7,10 +7,9 @@ const pleats = Math.max(8, Math.round(W/9));
 ---
 <figure class="diagram" aria-label={`Cartridge diagram: ${d.diameterText} diameter, ${d.lengthText} long`}>
 <svg viewBox={`-10 0 430 ${H+134}`} role="img" aria-label={`Cartridge diagram: ${d.diameterText} diameter, ${d.lengthText} long`}>
-<defs><linearGradient id="pl" x1="0" x2="1"><stop offset="0" stop-color="#e9dcc4"/><stop offset=".5" stop-color="#fbf6ec"/><stop offset="1" stop-color="#e1cfae"/></linearGradient></defs>
 <rect x={x+W*.32} y={y-14} width={W*.36} height="14" rx="3" fill="#0b3c40"/>
 <rect x={x} y={y} width={W} height="12" rx="4" fill="#135e63"/>
-<rect x={x} y={y+12} width={W} height={H-24} fill="url(#pl)"/>
+<rect x={x} y={y+12} width={W} height={H-24} fill="#efe4cf"/>
 {Array.from({length:pleats}).map((_,i)=><line x1={x+(i+0.5)*W/pleats} x2={x+(i+0.5)*W/pleats} y1={y+12} y2={y+H-12} stroke="#c9b48e" stroke-width="1.2" class="pleat"/>)}
 <rect x={x} y={y+H-12} width={W} height="12" rx="4" fill="#135e63"/>
 <rect x={x+W*.32} y={y+H} width={W*.36} height="14" rx="3" fill="#0b3c40"/>
@@ -20,6 +19,6 @@ const pleats = Math.max(8, Math.round(W/9));
 <line x1={x+W+22} x2={x+W+22} y1={y} y2={y+H}/><line x1={x+W+16} x2={x+W+28} y1={y} y2={y}/><line x1={x+W+16} x2={x+W+28} y1={y+H} y2={y+H}/>
 <text x={x+W+32} y={y+H/2+6} stroke="none">{d.lengthText}</text></g>
 <g font-family="Public Sans Variable,system-ui" font-size="15.5" font-weight="500" fill="#3f5557" text-anchor="middle">
-<text x="200" y="14">Top: {d.topCore||'—'}</text>
-<text x="200" y={y+H+84}>Bottom: {d.bottomCore||'—'}</text></g>
+<text x="200" y="14">Top: {d.topCore||'not listed'}</text>
+<text x="200" y={y+H+84}>Bottom: {d.bottomCore||'not listed'}</text></g>
 </svg><figcaption class="crumbs" style="text-align:center">Diagram drawn to scale from the listed dimensions{d.sqft!=null ? ` · ${d.sqft} sq ft media` : ''}</figcaption></figure>

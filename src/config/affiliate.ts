@@ -6,7 +6,7 @@
  *
  * The Amazon tag below is this site's own Associates ID. Other retailer IDs ship
  * empty on purpose: an empty ID renders no link (not a plain search, and not
- * another site's ID). Never put a made-up ID here.
+ * another site's ID). Never put an ID that is not this site's.
  */
 import asinData from '../data/amazon-asins.json';
 import productData from '../data/amazon-products.json';
@@ -156,8 +156,8 @@ export const outboundRel = 'sponsored nofollow noopener';
 
 /**
  * An image is allowed only when Amazon handed it to us.
- * `pa-api` — URL returned by the Product Advertising API (Amazon image CDN).
- * `sitestripe` — image URL inside an official SiteStripe text+image or image link (amazon-adsystem.com widget).
+ * `pa-api`. URL returned by the Product Advertising API (Amazon image CDN).
+ * `sitestripe`, image URL inside an official SiteStripe text+image or image link (amazon-adsystem.com widget).
  * Never a file we downloaded, a copied product photo, or a CDN address taken from a product page.
  */
 export type CompliantProductImage = {

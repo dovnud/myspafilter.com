@@ -18,11 +18,11 @@ const colls=(p.collections as string[]).filter(c=>p.rows.some((r:any)=>r.collect
 <p class="crumbs"><a href="/">Home</a> › <a href={`/${p.brandSlug}/`}>{p.crumbBrand} filters</a></p>
 <article><h1>{p.h1}</h1>
 <p class="crumbs byline">Compiled by <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Reviewed <time datetime={D}>{dt}</time></p>
-<section class="card answer"><div class="kicker">Short answer</div><p style="font-size:1.12rem;margin:.4rem 0 0" set:html={p.answer} /></section>
+<p class="answer" style="font-size:1.12rem" set:html={p.answer} />
 <p><small>Affiliate disclosure: this page has no retailer links. Some cartridge pages it links to do, and we may earn a commission from qualifying purchases made through them at no cost to you. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</small></p>
 <h2>The cartridges, with equivalents</h2>
 <div class="tbl"><table><thead><tr><th>Factory part</th><th>What it is</th><th>{p.aftHead || 'Unicel equivalent'}</th><th>Rated area</th><th>Our page</th></tr></thead><tbody>
-{p.parts.map((x:any)=><tr><td><strong>{x.oem}</strong></td><td>{x.what}{x.note && <><br /><small>{x.note}</small></>}</td><td>{x.unicel}</td><td>{x.size}</td><td>{x.href ? x.href.map((h:string,i:number)=><Fragment>{i>0 && ', '}<a href={h}>{h.split('/')[2].toUpperCase()}</a></Fragment>) : '—'}</td></tr>)}
+{p.parts.map((x:any)=><tr><td><strong>{x.oem}</strong></td><td>{x.what}{x.note && <><br /><small>{x.note}</small></>}</td><td>{x.unicel}</td><td>{x.size}</td><td>{x.href ? x.href.map((h:string,i:number)=><Fragment>{i>0 && ', '}<a href={h}>{h.split('/')[2].toUpperCase()}</a></Fragment>) : 'not listed'}</td></tr>)}
 </tbody></table></div>
 <p set:html={p.partsNote || 'Equivalents and sizes are from the Unicel 2026 Replacement Guide unless the table says otherwise. A part number in brackets is another factory number for the same cartridge in Unicel’s cross-reference.'} />
 {colls.length>0 && <><h2>Find your model</h2>
