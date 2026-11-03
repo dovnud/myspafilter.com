@@ -135,7 +135,7 @@ const d1: Page = { slug: 'dimension-one-filter-by-model-year', brandSlug: 'dimen
     { oem: '1561-03', what: 'Open both ends (2-1/8"); 1994 Arena, Diamante and Quadra. Discontinued by Dimension One', unicel: 'Unicel C-4340 (4-15/16" × 11-5/8"); Pleatco PMT40; Filbur FC-3081', size: '40 sq ft', href: ['/dimension-one-spas/c-4340/'] },
     { oem: '1561-09', what: 'Ozone cartridge, 12 concentric holes in the top, 2-7/8" open bottom; spas with Crystal Pure water management', unicel: 'Unicel C-5404 (5-1/2" × 17"); Pleatco PDO40-4; Filbur FC-3097', size: '40 sq ft', href: ['/dimension-one-spas/c-5404/'] },
     { oem: '1561-11', what: 'Ozone-style cartridge, 5-1/2" × 11-7/8" (retailer); Retro-fit Vision and Seville only', unicel: 'Unicel C-5402 (discontinued by Unicel, listed without an OEM number). The retailer also names Filbur FC-3096 and Pleatco PDO25-4', size: '25 sq ft (Unicel)' },
-    { oem: 'No OEM number (SpaBerry)', what: 'Short twist-lock cartridge, closed top with Y stand-offs', unicel: 'Unicel C-7335 (7-1/8" × 5-7/8"); Filbur FC-3058', size: '35 sq ft', href: ['/dimension-one-spas/c-7335/'], note: 'Filbur prints the length as 5-1/8" and names it “SpaBerry 25” in one table and “Spa Berry 35” in another.' },
+    { oem: '1561-01 (SpaBerry)', what: 'Short twist-lock cartridge, closed top with Y stand-offs', unicel: 'Unicel C-7335 (7-1/8" × 5-7/8"); Filbur FC-3058', size: '35 sq ft', href: ['/dimension-one-spas/c-7335/'], note: 'The 1561-01 number comes from two retailer listings (Leisure Time Inc. and Enjoy Spa Pool); Unicel and Filbur print no D1 number. Filbur prints the length as 5-1/8" and names it “SpaBerry 25” in one table and “Spa Berry 35” in another.' },
   ],
   collections: [], rows: [], notes: [],
   extraHtml: `<h2>Find your model and year</h2>
@@ -155,7 +155,7 @@ ${tbl(['Model', 'Model years', 'Filter (D1 part)'], d1Rows)}
 <h2>Known limits</h2>
 <ul><li>No source we found gives models or years for 1561-13, 1561-06 or 1561-07, or years for the Crystal Pure (1561-09) and Vision retrofit (1561-11) cartridges.</li>
 <li>The pre-2000 model and year list comes from one retailer’s listings and could not be checked against a D1 document.</li>
-<li>The SpaBerry cartridge (C-7335) has no D1 part number in any source.</li></ul>
+<li>The SpaBerry cartridge’s D1 number (1561-01) comes from two retailer listings, not from a D1 document or either catalog.</li></ul>
 <h2>How to confirm yours</h2>
 <ol><li>Read the number on the old cartridge’s end cap and <a href="/">search it here</a>.</li><li>No number? A twist-lock bottom with prongs on top means the 1561-00. Otherwise measure the diameter and length and note the thread (our <a href="/guides/how-to-find-your-spa-filter-size/">filter-size guide</a> shows how): 7" threaded cartridges are 1561-12 (10-1/2", SAE thread), 1561-10 (10-1/2", MPT) or 1561-02 (14-3/4").</li><li>See <a href="/guides/how-often-to-clean-hot-tub-filter/">how often to clean a hot tub filter</a>.</li></ol>`,
   sources: [

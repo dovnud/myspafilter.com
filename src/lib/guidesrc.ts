@@ -58,5 +58,9 @@ export const SRC: Record<string,{t:string;u:string}> = {
   ahhUK:{t:'Ahh!Some Watercare UK: How to purge your hot tub (step by step)',u:'https://ahhsomeuk.com/how-to-use/'},
   ltJetClean:{t:'Leisure Time Inc.: Leisure Time Jet Clean (directions for use)',u:'https://leisuretimeinc.com/products/leisure-time-jet-clean'},
   sgFlush:{t:'BioGuard: SpaGuard Spa System Flush technical bulletin with label directions (copy hosted by The Pool and Spa House)',u:'https://www.thepoolandspahouse.com/documents/Manuals/BioGuard_Spa-System-Flush-TIB.pdf'},
+  htoPrb75m:{t:'Hot Tub Outpost: Pleatco PRB75-M Microban filter listing (discontinued; standard version PRB75)',u:'https://www.hottuboutpost.com/emerald-spa-pleatco-prb75-m-microban-filter-75-sqft-pressure-filter-system/'},
+  epaTreated:{t:'US EPA: Consumer Products Treated with Pesticides (treated articles)',u:'https://www.epa.gov/safepestcontrol/consumer-products-treated-pesticides'},
+  epaPrn:{t:'US EPA: PR Notice 2000-1, Applicability of the Treated Articles Exemption to Antimicrobial Pesticides',u:'https://www.epa.gov/sites/default/files/2014-04/documents/pr2000-1.pdf'},
+  ecfr15225:{t:'eCFR: 40 CFR 152.25, Exemptions for pesticides of a character not requiring FIFRA regulation (treated articles, paragraph (a))',u:'https://www.ecfr.gov/current/title-40/chapter-I/subchapter-E/part-152/subpart-B/section-152.25'},
 };
 export const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');

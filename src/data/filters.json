@@ -294,7 +294,7 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
    },
-   "notes": "4 oz media; Unicel: models dated after 1990. Leisure Time Inc. notes many models take three cartridges and that some use a Tri-X ceramic cartridge with the same footprint instead; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
+   "notes": "4 oz media; Unicel: models dated after 1990. Leisure Time Inc. notes many models take three cartridges and that some use a Tri-X ceramic cartridge with the same footprint instead; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter. Unicel's 2026 price list (not its spec table, which still prints C-6430 with 4 oz media) says \"C-6430 USE C-6430AM\", the antimicrobial version (30 sq ft, Watkins replacement).",
    "status": "verified",
    "gaps": "",
    "fitment": [
@@ -466,7 +466,7 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
    },
-   "notes": "Unicel lists these OEM numbers under Hot Springs Spas and directs Hot Spot owners there; Hot Spot model fitment is from Leisure Time Inc.; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
+   "notes": "Unicel lists these OEM numbers under Hot Springs Spas and directs Hot Spot owners there; Hot Spot model fitment is from Leisure Time Inc.; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter. Unicel's 2026 price list (not its spec table, which still prints C-6430 with 4 oz media) says \"C-6430 USE C-6430AM\", the antimicrobial version (30 sq ft, Watkins replacement).",
    "status": "verified",
    "gaps": "",
    "fitment": [
@@ -578,7 +578,7 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
    },
-   "notes": "Unicel does not list Solana separately; Solana model fitment for OEM 71825 is from Leisure Time Inc. Some Hot Spring-family spas use a Tri-X ceramic cartridge with the same footprint instead; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
+   "notes": "Unicel does not list Solana separately; Solana model fitment for OEM 71825 is from Leisure Time Inc. Some Hot Spring-family spas use a Tri-X ceramic cartridge with the same footprint instead; Leisure Time Inc.: Use this pleated cartridge only where the spa specifies 71825 or its listed equivalent. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter. Unicel's 2026 price list (not its spec table, which still prints C-6430 with 4 oz media) says \"C-6430 USE C-6430AM\", the antimicrobial version (30 sq ft, Watkins replacement).",
    "status": "verified",
    "gaps": "",
    "fitment": [
@@ -660,7 +660,7 @@
     "bottomCore": "1-15/16\" / open",
     "sqft": 30.0
    },
-   "notes": "Unicel lists OEM 31489 under Hot Springs Spas; the Caldera Vacanza fitment for 31489 is from Leisure Time Inc.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter.",
+   "notes": "Unicel lists OEM 31489 under Hot Springs Spas; the Caldera Vacanza fitment for 31489 is from Leisure Time Inc.; Leisure Time Inc.: Replaces compatible 71825 or 31489 pleated cartridges. Models requiring Tri-X cartridges must use the appropriate Tri-X filter. Unicel's 2026 price list (not its spec table, which still prints C-6430 with 4 oz media) says \"C-6430 USE C-6430AM\", the antimicrobial version (30 sq ft, Watkins replacement).",
    "status": "verified",
    "gaps": "",
    "fitment": [
@@ -3898,7 +3898,7 @@
    },
    "notes": "",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Still unresolved.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -3908,6 +3908,11 @@
      "source": "Unicel 2026 Replacement Guide",
      "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
      "where": "OEM cross reference (Cal Spas section), PDF p.30 (printed p.26); spec table PDF p.13 (printed p.9)"
+    },
+    {
+     "source": "Spa Parts Warehouse (retailer listing)",
+     "url": "https://shop.spapartswarehouse.com/products/filter-cartridge-75-sq-ft-7-odx-15-5-h-x-2-idx-coarse-thread-male",
+     "where": "Replacement for FIL75-7D155H2MCT-3 / FIL11700016 (fetched via search 2026-11-03): 7\" diameter, 15\" length, 2\" MPT, 75 sq ft"
     }
    ]
   },
@@ -6013,11 +6018,11 @@
   {
    "brand": "Dimension One Spas",
    "brandSlug": "dimension-one-spas",
-   "model": "C-7335 cartridge",
+   "model": "C-7335 cartridge (OEM 1561-01)",
    "modelSlug": "c-7335",
    "series": "Dimension One Spas (SpaBerry)",
-   "oem": "",
-   "oemAll": "",
+   "oem": "1561-01",
+   "oemAll": "1561-01",
    "equivalents": {
     "unicel": "C-7335",
     "filbur": "FC-3058"
@@ -6031,13 +6036,13 @@
     "bottomCore": "2\" / open w/ twist lock",
     "sqft": 35.0
    },
-   "notes": "Filbur calls FC-3058 \"SpaBerry 25\" while its sq ft column and Unicel both say 35 sq ft; neither source gives an OEM number and Filbur prints N/A for Pleatco.",
-   "status": "needs_verification",
-   "gaps": "no OEM part number in sources; no Pleatco equivalent; name/size-rating mismatch (SpaBerry 25 vs 35 sq ft); no model/model-year fitment in sources",
+   "notes": "Two spa retailers (Leisure Time Inc. and Enjoy Spa Pool) give the Dimension One OEM number as 1561-01 for the SpaBerry, with the same size, fittings and 35 sq ft as Unicel. Filbur calls FC-3058 \"SpaBerry 25\" in one table and \"Spa Berry 35\" in another, and prints the length as 5-1/8\" against Unicel's and both retailers' 5-7/8\"; its sq ft column says 35. Filbur prints N/A for Pleatco.",
+   "status": "verified",
+   "gaps": "no Pleatco equivalent; Filbur length 5-1/8\" vs 5-7/8\" (Unicel and two retailers); no Dimension One document found giving 1561-01; no model-year fitment beyond SpaBerry in sources. Promoted 2026-11-03: OEM 1561-01 from two retailer listings that agree with Unicel's size, fittings and area",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
-   "index": false,
+   "index": true,
    "sources": [
     {
      "source": "Unicel 2026 Replacement Guide",
@@ -6048,6 +6053,16 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Product by Pool/Spa Manufacturer (OEM), Dimension One Spas, printed p.33 (PDF p.17)"
+    },
+    {
+     "source": "Leisure Time Inc. (spa dealer listing)",
+     "url": "https://leisuretimeinc.com/products/unicel-c-7335-filter-cartridge",
+     "where": "Unicel C-7335 product page (fetched 2026-11-03): replaces Dimension One Spas OEM 1561-01 (SpaBerry); 7-1/8\" x 5-7/8\", closed top w/ Y stand-offs, 2\" open twist-lock bottom, 207 pleats, 3 oz, 35 sq ft; Filbur FC-3058"
+    },
+    {
+     "source": "Enjoy Spa Pool (retailer listing)",
+     "url": "https://www.enjoyspapool.com/product/filter-cartridge-35-sq-ft-dimension-one-c-7335/",
+     "where": "Filter cartridge 35 sq ft Dimension One (C-7335), fetched 2026-11-03: Spa Berry; 7-1/8\" x 5-7/8\"; closed top; 2\" open twist-lock bottom; 35 sq ft; 3 oz; OEM 1561-01; Unicel C-7335; Filbur FC-3058"
     }
    ]
   },
@@ -6468,7 +6483,7 @@
    },
    "notes": "Unicel lists this 4-5/8\" x 6-3/4\" top-load cartridge for Softub. No OEM number is given, and neither Pleatco nor Filbur mentions Softub for it.",
    "status": "needs_verification",
-   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number",
+   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
