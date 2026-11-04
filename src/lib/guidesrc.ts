@@ -63,5 +63,7 @@ export const SRC: Record<string,{t:string;u:string}> = {
   epaPrn:{t:'US EPA: PR Notice 2000-1, Applicability of the Treated Articles Exemption to Antimicrobial Pesticides',u:'https://www.epa.gov/sites/default/files/2014-04/documents/pr2000-1.pdf'},
   ecfr15225:{t:'eCFR: 40 CFR 152.25, Exemptions for pesticides of a character not requiring FIFRA regulation (treated articles, paragraph (a))',u:'https://www.ecfr.gov/current/title-40/chapter-I/subchapter-E/part-152/subpart-B/section-152.25'},
   sdNo:{t:'Sundance Spas Norway: Filteroversikt alle modeller fra 1995 (filter overview by model, year and serial number, May 2026)',u:'https://www.sundance.no/wp-content/uploads/2026/05/Filteroversikt_pr_mai_2026.pdf'},
+  beach25:{t:'Beachcomber Hot Tubs: Microfilter 25 sq ft, SKU 3005845 (107 pleats, 4-15/16" × 13-5/16")',u:'https://www.beachcomberhottubs.com/en_us/beachcomber-25-square-foot-medium'},
+  beach50:{t:'Beachcomber Hot Tubs: Microfilter 50 sq ft, SKU 3005815 (212 pleats, same body as the 25)',u:'https://www.beachcomberhottubs.com/en_us/microfilter-cartridge'},
 };
 export const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');

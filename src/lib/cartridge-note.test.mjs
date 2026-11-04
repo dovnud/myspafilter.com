@@ -19,6 +19,8 @@ const fitSrc = {
   bwcat: 'Bestway Lay-Z-Spa catalog',
   bwman: 'Bestway owner’s manual',
   mqdealer: 'Marquis spa dealer listings',
+  beach: 'Beachcomber Hot Tubs product page',
+  strong: 'Strong Spas FAQ',
 };
 
 const filters = JSON.parse(readFileSync(new URL('../data/filters.json', import.meta.url), 'utf8')).filters;
