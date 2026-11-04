@@ -86,7 +86,7 @@ const ld = [
 <p>Each filter page names the catalog page its row came from. The documents behind the dataset, and the two maker sentences in the FAQ, are:</p>
 <ol>{sources.map((k, i) => <li id={`src-${k}`} value={i + 1}><a href={SRC[k].u} rel="nofollow">{SRC[k].t}</a></li>)}</ol>
 <p>Numbers on this page are the ones those rows already store. The method is on the <a href="/about/#methodology">about page</a>. A correction goes to <a href="/contact/">contact</a>, which reaches contact@myspafilter.com and no other address.</p>
-<p>Related: <a href="/guides/oem-vs-unicel-vs-pleatco-spa-filters/">OEM vs Unicel vs Pleatco</a>, <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel, and Pleatco numbers compare</a>, <a href="/guides/how-to-find-your-spa-filter-size/">how to find your spa filter size</a>, and the <a href="/tools/filter-schedule/">replace and clean calculator</a>.</p>
+<p>Related: <a href="/guides/oem-vs-unicel-vs-pleatco-spa-filters/">OEM vs Unicel vs Pleatco</a>, <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel, and Pleatco numbers compare</a>, <a href="/guides/how-to-find-your-spa-filter-size/">how to find your spa filter size</a>, the <a href="/tools/filter-schedule/">replace and clean calculator</a>, and the <a href="/tools/filter-reorder/">replacement schedule and reorder</a> page, which adds the buy link for the cartridge you pick.</p>
 <script>
 import { classify, resultMessage } from '../../lib/xref.mjs';
 const input = document.getElementById('q') as HTMLInputElement;

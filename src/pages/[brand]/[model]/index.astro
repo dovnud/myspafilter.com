@@ -100,7 +100,7 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
 {others.length>0 && <p>The same {pk} number is also on the {others.map((x,i)=><>{i>0?', ':''}<a href={modelHref(x)}>{x.brand}</a></>)} page{others.length>1?'s':''}.</p>}
 {moreBrand.length>0 && <><h2>Other {f.brand} cartridges</h2><ul>{moreBrand.map(x=><li><a href={modelHref(x)}>{x.model}</a>, {(x.dimensions as any).diameterText} × {(x.dimensions as any).lengthText}</li>)}</ul>
 <p><a href={`/${f.brandSlug}/`}>All {sameBrand.length} {f.brand} spa filters</a></p></>}
-<p>Every number on this row, on one screen: <a href={`/tools/cross-reference/?q=${encodeURIComponent(pk || f.oem || '')}`}>cross-reference lookup</a>. Published clean and replace intervals: <a href="/tools/filter-schedule/">calculator</a>.</p>
+<p>Every number on this row, on one screen: <a href={`/tools/cross-reference/?q=${encodeURIComponent(pk || f.oem || '')}`}>cross-reference lookup</a>. Published clean and replace intervals for this cartridge, and a buy link for the numbers above: <a href={`/tools/filter-reorder/?brand=${f.brandSlug}&model=${f.modelSlug}`}>replacement schedule and reorder</a>. The interval comparison by brand: <a href="/tools/filter-schedule/">calculator</a>.</p>
 <ProductPicks heading="Cleaner and test strips" lead={`Hose rinse and soak steps are in <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean a cartridge</a>. Named cleaners and strips are in <a href="/guides/best-hot-tub-filter-cleaners/">filter cleaners</a> and <a href="/guides/best-hot-tub-test-strips/">test strips</a>.`} groups={[{h:'Filter cleaner and test strips',keys:['lt-filter-clean-o','spaguard-filter-cleaner','aquachek-spa-6in1']}]} />
 <BuyLinks filter={f} />
 <Sources f={f} />

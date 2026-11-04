@@ -51,10 +51,11 @@ const bl = brands().map(b=>[b.slug,b.name.toLowerCase()]);
 <h2 class="rule" data-reveal>Browse by spa brand</h2>
 <ul class="grid">{brands().filter(b=>brandIndexable(b.slug)).map((b)=>{const l=filters.filter(f=>f.brandSlug===b.slug);return <li class="card" data-reveal><a href={`/${b.slug}/`}><b>{b.name}</b><p>{l.length} cartridge{l.length===1?"":"s"}</p></a></li>})}</ul>
 <h2 class="rule" data-reveal>Look up a number, or a replacement date</h2>
-<p>The search above opens one part-number page. The <a href="/tools/cross-reference/">cross-reference lookup</a> stays on the page and lists every cartridge in this dataset that carries the number, with the equivalents and the measurements. The <a href="/size/">size lookup</a> is for when the number is gone. The <a href="/tools/filter-schedule/">replace and clean calculator</a> turns the published care intervals into dates and says so when the sources disagree.</p>
+<p>The search above opens one part-number page. The <a href="/tools/cross-reference/">cross-reference lookup</a> stays on the page and lists every cartridge in this dataset that carries the number, with the equivalents and the measurements. The <a href="/size/">size lookup</a> is for when the number is gone. The <a href="/tools/filter-schedule/">replace and clean calculator</a> turns the published care intervals into dates and says so when the sources disagree. The <a href="/tools/filter-reorder/">replacement schedule and reorder</a> page attaches that interval to one cartridge and lists its buy link.</p>
 <ul class="grid">
 <li class="card" data-reveal><a href="/tools/cross-reference/">Filter cross-reference lookup</a></li>
 <li class="card" data-reveal><a href="/tools/filter-schedule/">When to replace or clean</a></li>
+<li class="card" data-reveal><a href="/tools/filter-reorder/">Replacement schedule and reorder</a></li>
 </ul>
 <h2 class="rule" data-reveal>Guides worth reading first</h2>
 <ul class="grid">{['how-to-find-your-spa-filter-size','hot-spring-filter-sizes-by-collection','open-end-vs-threaded-hot-tub-filters','caldera-filter-bottom-fittings','how-often-to-replace-hot-tub-filter','intex-and-bestway-inflatable-spa-filters'].map(s=>guides.find(g=>g.slug===s)!).map(g=><li class="card" data-reveal><a href={`/guides/${g.slug}/`} style="font-weight:650">{g.title}</a></li>)}</ul><p><a href="/guides/">All {guides.length} guides</a>, including Bullfrog, Master Spas Eco-Pur, Sundance look-alikes, and how Filbur, Unicel and Pleatco numbers line up.</p>

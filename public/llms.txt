@@ -7,6 +7,7 @@
 - [Tools](https://myspafilter.com/tools/)
 - [Filter cross-reference lookup](https://myspafilter.com/tools/cross-reference/): type an OEM, Unicel, Pleatco, or Filbur number already in the dataset and see the equivalent numbers, dimensions, and filter pages. It does not invent a match.
 - [When to replace or clean](https://myspafilter.com/tools/filter-schedule/): dates from the intervals Hot Spring, Jacuzzi, Sundance, Unicel, and Pleatco publish. Where those pages disagree, the page shows the range. The reminder form only stores a request. It does not send email and it is not a newsletter.
+- [Filter replacement schedule and reorder](https://myspafilter.com/tools/filter-reorder/): pick a brand, model, or part number already in the dataset. The page counts only the manufacturer interval that applies to that cartridge, lists the OEM, Unicel, Pleatco and Filbur numbers, and gives a buy link. It does not print a price. A gift note for a spare filter set and cleaning tools runs through December 24, 2026, with USPS and UPS send-by dates.
 - [Find a filter by size](https://myspafilter.com/size/)
 - [Measuring guide](https://myspafilter.com/guide/)
 - [Guides index](https://myspafilter.com/guides/)
