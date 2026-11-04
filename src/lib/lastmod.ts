@@ -33,6 +33,7 @@ export function pageLastmod(pathname: string): string | undefined {
   if (seg[0] === 'tools' && seg.length === 1) return fileDate('src/pages/tools/index.astro') || '2026-11-01';
   if (seg[0] === 'tools' && seg[1] === 'cross-reference') return max([fileDate('src/pages/tools/cross-reference.astro'), fileDate('src/lib/xref.mjs'), dataDate()]) || '2026-11-01';
   if (seg[0] === 'tools' && seg[1] === 'filter-schedule') return max([fileDate('src/pages/tools/filter-schedule.astro'), fileDate('src/lib/care-calc.mjs')]) || '2026-11-01';
+  if (seg[0] === 'tools' && seg[1] === 'filter-reorder') return max([fileDate('src/pages/tools/filter-reorder.astro'), fileDate('src/lib/reorder.mjs'), fileDate('src/lib/care-calc.mjs')]) || '2026-11-04';
   if (seg[0] === 'data') return max([fileDate('src/pages/data/index.astro'), dataDate()]);
   const st: Record<string, string> = { about: 'about', contact: 'contact', guide: 'guide', 'affiliate-disclosure': 'affiliate-disclosure', disclaimer: 'disclaimer', privacy: 'privacy', terms: 'terms' };
   if (st[seg[0]] && seg.length === 1) return fileDate(`src/pages/${st[seg[0]]}.astro`);

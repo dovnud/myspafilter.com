@@ -1,0 +1,383 @@
+---
+import Base from '../../layouts/Base.astro';
+import BuyLinks from '../../components/BuyLinks.astro';
+import ProductPicks from '../../components/ProductPicks.astro';
+import ReminderForm from '../../components/ReminderForm.astro';
+import { filters, slug, allParts, sqftText } from '../../lib/data';
+import { comparison } from '../../lib/care-calc.mjs';
+import { guidanceFor, indexRow } from '../../lib/reorder.mjs';
+import { SRC } from '../../lib/guidesrc';
+import { fileDate } from '../../lib/lastmod';
+import { publisherRef } from '../../lib/schema';
+const site = Astro.site!.href;
+const url = new URL(Astro.url.pathname, site).href;
+const reviewed = '2026-11-04';
+const mod = [fileDate('src/pages/tools/filter-reorder.astro'), fileDate('src/lib/reorder.mjs'), fileDate('src/lib/care-calc.mjs')].filter(Boolean).sort().at(-1) || reviewed;
+const partPages = new Set(allParts().keys());
+const bits = (raw?: string) => String(raw || '').split(/[;/]/).map((s) => s.trim()).filter(Boolean).map((text) => {
+  const key = slug(text);
+  return { text, href: partPages.has(key) ? `/filter/${key}/` : '' };
+});
+const catalog = filters.map((f) => {
+  const eq = f.equivalents || {};
+  const d = f.dimensions as { diameterText?: string; lengthText?: string; topCore?: string; bottomCore?: string; sqft?: number };
+  const sq = sqftText(d);
+  const guidance = guidanceFor({
+    brand: f.brand, brandSlug: f.brandSlug, model: f.model, modelSlug: f.modelSlug,
+    oem: f.oem, oemAll: f.oemAll, unicel: eq.unicel, pleatco: eq.pleatco, filbur: eq.filbur, notes: f.notes || '',
+  });
+  const indexed = indexRow({ oem: f.oem, oemAll: f.oemAll, unicel: eq.unicel, pleatco: eq.pleatco, filbur: eq.filbur });
+  return {
+    key: `${f.brandSlug}/${f.modelSlug}`,
+    brand: f.brand,
+    brandSlug: f.brandSlug,
+    model: f.model,
+    href: `/${f.brandSlug}/${f.modelSlug}/`,
+    verified: f.status === 'verified',
+    size: `${d.diameterText || 'not listed'} × ${d.lengthText || 'not listed'}${sq ? `, ${sq}` : ''}`,
+    fittings: [d.topCore, d.bottomCore].filter(Boolean).join(' / ') || 'not listed',
+    parts: [
+      { label: 'OEM', items: bits(f.oemAll || f.oem) },
+      { label: 'Unicel', items: bits(eq.unicel) },
+      { label: 'Pleatco', items: bits(eq.pleatco), note: f.pleatcoNote || '' },
+      { label: 'Filbur', items: bits(eq.filbur), note: f.filburNote || '' },
+    ],
+    wholes: indexed.wholes,
+    tokens: indexed.tokens,
+    guidance,
+  };
+});
+const brandOptions = [...new Map(filters.map((f) => [f.brandSlug, f.brand])).entries()]
+  .map(([value, name]) => ({ value, name }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+const modelOptions = [...catalog].sort((a, b) => a.brand.localeCompare(b.brand) || a.model.localeCompare(b.model));
+const faqs: [string, string][] = [
+  ['How often should I replace the cartridge I looked up?', 'There is no single interval. Jacuzzi’s filter page says every 12–24 months for a pleated cartridge. Hot Spring’s filter article says every 2–3 years for a polyester cartridge and every 4–6 years for a TRI-X cartridge, and its maintenance page says every three years. Sundance’s 2024 680 Series manual says 12 months for the pleated MicroClean Mini filter and 4 months for the insert. The 780 Series manual says every 3 months, or earlier, for the small disposable MicroClean cartridge. Those figures are different products. This calculator counts a figure only when the cartridge you picked is the one that source is talking about. For every other brand in this dataset, no replacement month count is in the sources named on this page. CDC’s Legionella module says to replace cartridges according to the manufacturer. Unicel says a cartridge has no defined end date.'],
+  ['Does the number of filters change the schedule?', 'No. The number is how many of that one cartridge you said are in the spa. It sizes the spare set. It does not shorten the interval. Unicel, Pleatco and Jacuzzi say to keep a second set so one can be cleaned while the other is installed, so a spare set is that same count again. Some housings hold more than one, and some hold two different parts. Leisure Time’s Hot Spring 71825 listing says many of those models take three. Unicel’s 2026 guide says Eco-Pur systems from 2006 on use two C-8341 cartridges plus a separate inner element. Those are housing counts, and only on those rows. The buy link does not set a quantity, and this page does not print a price.'],
+  ['Why do the brand intervals differ?', 'They come from different pages about different products. Jacuzzi, Hot Spring and Sundance do not print the same month count, and Hot Spring’s polyester and TRI-X sentences do not match each other. The table lists each source, the cartridge it names, and the clean and replace lines it prints. This calculator does not average them and does not copy one brand’s months onto another brand.'],
+  ['What is a straightforward gift for a hot tub owner through December 24, 2026?', 'A spare set of the cartridge this calculator identifies, when you have the part number, or a filter cleaner and a skimmer when you do not. Unicel, Pleatco and Jacuzzi already tell owners to keep a second set. For expected delivery before December 25 in the contiguous United States, USPS recommends Ground Advantage and First-Class Mail by December 17, Priority Mail by December 18, and Priority Mail Express by December 19, and says the actual day can vary. UPS prints last ship dates for delivery on December 24: 3 Day Select on December 21, 2nd Day Air on December 22, and Next Day Air on December 23. It does not print one Ground date. This page does not add a discount or a countdown. The gift note stops on December 24, 2026.'],
+  ['Will the reminder form email me or sign me up for updates?', 'No. The form stores the request and does not send email. It is not a newsletter and it does not sign you up for regular updates. The only address for a deletion request is contact@myspafilter.com.'],
+];
+const sources = ['jac', 'hsBlog', 'hsMaint', 'sd680', 'sd780', 'sdNo', 'unicel', 'unicelReplace', 'unicel26', 'pleatcoCat', 'pleatcoWash', 'cdcLeg', 'lt71825', 'uspsHoliday', 'upsHoliday', 'upsYearEnd', 'fedexHoliday', 'amazonBf'] as const;
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Filter replacement schedule and reorder', url, description: 'Pick a cartridge already in this dataset. See the manufacturer clean and replace interval that applies to it, and the cross-reference numbers with a buy link. Where brands disagree, each interval stays with the brand that printed it.', inLanguage: 'en-US', dateModified: mod, isPartOf: { '@type': 'WebSite', name: 'MySpaFilter', url: site }, publisher: publisherRef },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Tools', item: new URL('/tools/', site).href }, { '@type': 'ListItem', position: 3, name: 'Replacement schedule and reorder', item: url }] },
+];
+const catalogJson = JSON.stringify(catalog).replace(/</g, '\\u003c');
+---
+<Base title="Filter Replacement Schedule and Reorder | MySpaFilter" description="Pick a spa brand, model, or part number already in this dataset. See the manufacturer clean and replace interval that applies, and the cross-reference numbers with a buy link." jsonld={ld}>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › <span aria-current="page">Replacement schedule and reorder</span></nav>
+<h1>Filter replacement schedule and reorder</h1>
+<p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={reviewed}>November 4, 2026</time></p>
+<p class="answer" style="font-size:1.12rem">Pick the cartridge that is already in this dataset. The schedule that follows is the one that manufacturer printed for that kind of cartridge. Jacuzzi’s pleated range is 12–24 months. Hot Spring’s article says 2–3 years for polyester and 4–6 years for TRI-X, and its maintenance page says three years. Sundance’s 2024 manuals use 12 months and 4 months on the 680 Series MicroClean Mini pieces, and 3 months, or earlier, on the 780 Series disposable cartridge. Those are different products. A brand with no month count on the sources below does not inherit one of those numbers. The result also lists the OEM, Unicel, Pleatco and Filbur numbers stored for that row, with a buy link. It does not print a price.</p>
+<p>Unicel, Pleatco and Jacuzzi say to keep a second set, so one cartridge can be cleaned while the other is in the spa. The spare-set line is that second set, in the count you enter. It is not a bundle and not a sale. Dates are calendar readings of published intervals. Gift ideas through December 24, 2026 are in the <a href="#holiday">holiday note</a>.</p>
+<h2>What each manufacturer prints</h2>
+<p>Read across a row. Do not read down the Replace column as one cartridge’s range. The 3-month figure is a Sundance 780 disposable cartridge. The 4–6 year figure is a Hot Spring TRI-X cartridge. Those are different products. The calculator will not move a figure onto a brand that did not print it.</p>
+<div class="tbl"><table>
+<thead><tr><th>Source</th><th>Cartridge</th><th>Clean</th><th>Replace</th></tr></thead>
+<tbody>
+{comparison.map((row) => <tr>
+<td><a href={`#src-${row.sourceKey}`}>{SRC[row.sourceKey].t}</a></td>
+<td>{row.piece}</td>
+<td>{row.clean}</td>
+<td>{row.replace}</td>
+</tr>)}
+</tbody>
+</table></div>
+<p>Two housing counts are already in the sources, and they appear only on the matching row. <a href="#src-lt71825">Leisure Time’s Hot Spring 71825 listing</a> says many of those models take three cartridges. <a href="#src-unicel26">Unicel’s 2026 guide</a> says Eco-Pur systems from 2006 on use two C-8341 cartridges, plus a separate inner element. Neither number is a replacement interval, and neither is applied to a different brand. <a href="#src-sdNo">Sundance Norway’s May 2026 model table</a> is what separates OEM 6540-501, the pleated lower, from 6540-502, the disposable upper. The 2024 manuals’ month counts stay with the pieces those manuals name. The same table is on the <a href="/fitment/sundance-filter-by-model-year/">Sundance filter-by-model page</a>.</p>
+<h2 id="calc">Count it for one cartridge</h2>
+<p>Choose a brand and a cartridge, or type a part number. If the part field has anything in it, that number is what gets looked up. Use levels are Jacuzzi’s and, for heavy use, Pleatco’s. A maker that did not print a separate light or heavy number does not get one here. The count is how many of this cartridge you removed. Nothing you type into the dates or the count is sent anywhere. The reminder form further down is the only part of this page that stores anything, and only if you submit it.</p>
+<form id="reorder" class="card calc">
+<p><label for="brand">Spa brand<br>
+<select id="brand" name="brand">
+<option value="">All brands</option>
+{brandOptions.map((b) => <option value={b.value}>{b.name}</option>)}
+</select></label></p>
+<p><label for="model">Cartridge<br>
+<select id="model" name="model">
+<option value="">Choose the cartridge</option>
+{modelOptions.map((row) => <option value={row.key} data-brand={row.brandSlug}>{row.brand} — {row.model}</option>)}
+</select></label></p>
+<p><label for="part">Or a part number already in this dataset<br>
+<input id="part" name="part" type="text" inputmode="text" autocomplete="off" placeholder="e.g. C-6430, 6540-488, 71825"></label></p>
+<p><label for="use">Use<br>
+<select id="use" name="use">
+<option value="regular">Regular use (Jacuzzi: a regularly used family tub)</option>
+<option value="heavy">Heavy use (Jacuzzi: 4–6 bathers several evenings a week, a rental or Airbnb amenity, or frequent sunscreen and cosmetics. Pleatco: heavy use.)</option>
+<option value="light">Light use (Jacuzzi: winter-only soaking with 1–2 people)</option>
+</select></label></p>
+<p><label for="count">Number of this cartridge in the spa<br>
+<input id="count" name="count" type="number" inputmode="numeric" min="1" max="12" step="1"></label></p>
+<p><label for="installed">Installed or last replaced<br><input id="installed" name="installed" type="date" min="1990-01-01"></label></p>
+<p><label for="rinsed">Last rinse, if you have it<br><input id="rinsed" name="rinsed" type="date" min="1990-01-01"></label></p>
+<p><button class="btn" type="submit">Show the schedule</button></p>
+</form>
+<div id="out" class="card" aria-live="polite"></div>
+<noscript><p>With JavaScript off, the table above is the published guidance. Matching a cartridge, counting the dates, and showing that row’s buy link need JavaScript. The <a href="/">homepage search</a> opens the filter page, which lists the same numbers and the same buy link.</p></noscript>
+<div id="buys">
+{filters.map((f) => <div data-reorder-buy={`${f.brandSlug}/${f.modelSlug}`} hidden><BuyLinks filter={f} /></div>)}
+</div>
+<p id="schedule-form-note">The form stores a request. It does not send email, and it is not a newsletter or a series of updates. The interval list is the list the form can store. It is not a promise that your manual uses one of those choices.</p>
+<ReminderForm heading="Remind me when it's time to replace my filter" lead="This stores a request: the filter, the date you installed it, and how often you replace it. Submitting stores the request and does not send email. It is not a newsletter, and it does not sign you up for regular updates." filterModel="" />
+<p>The interval comparison without a cartridge is the <a href="/tools/filter-schedule/">replace and clean calculator</a>. Every equivalent for a typed number, without the schedule, is the <a href="/tools/cross-reference/">cross-reference lookup</a>. The longer write-ups are <a href="/guides/how-often-to-replace-hot-tub-filter/">how often to replace a hot tub filter</a>, <a href="/guides/how-often-to-clean-hot-tub-filter/">how often to clean a hot tub filter</a>, and <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean one</a>.</p>
+<section id="holiday" data-through="2026-12-24">
+<h2>Gifts for a hot tub owner, through December 24, 2026</h2>
+<p>Two gifts match what the manufacturers already say to keep on hand. A spare set of the cartridge the <a href="#calc">calculator</a> names, in the count you entered. And a filter cleaner for the soak, plus a skimmer if you want a cleaning tool that does not depend on the part number. This note stops on December 24, 2026. That date is the UPS delivery day in its year-end schedule, the day before Christmas. It is not a sale window, and Amazon’s Black Friday post does not name a spa filter.</p>
+<p><a href="#src-amazonBf">Amazon’s news post</a> says Black Friday 2026 is Friday, November 27, and Cyber Monday is Monday, November 30. It says shoppers can browse early Holiday Shop deals and to check back for more. It does not give a percent off. This page does not add one.</p>
+<h3>Shipping cutoffs the carriers printed</h3>
+<p>These are send-by dates for expected arrival, not a promise. <a href="#src-uspsHoliday">USPS</a> says the actual delivery date depends on origin, destination, when the Post Office accepts the piece, and other conditions. <a href="#src-upsYearEnd">UPS</a> says some lanes need an earlier ship date and to check Calculate Time and Cost, and that a limited number of Ground packages from November 16, 2026 through January 8, 2027 need extra time in transit.</p>
+<div class="tbl"><table>
+<thead><tr><th>USPS service, contiguous United States</th><th>Recommended send-by, for delivery before December 25</th></tr></thead>
+<tbody>
+<tr><td>Ground Advantage</td><td>Thursday, December 17</td></tr>
+<tr><td>First-Class Mail</td><td>Thursday, December 17</td></tr>
+<tr><td>Priority Mail</td><td>Friday, December 18</td></tr>
+<tr><td>Priority Mail Express</td><td>Saturday, December 19</td></tr>
+</tbody>
+</table></div>
+<p>USPS does not print one Ground Advantage date for Alaska, Hawaii, Puerto Rico and U.S. territories. It says that service to or from those places has an expectation of 10 days or more. Hanukkah in 2026 is December 4–12, so the Christmas dates above are too late for the start of Hanukkah. The full table, including military mail, is on the <a href="/guides/black-friday-hot-tub-filter-and-spa-care/">Black Friday page</a>.</p>
+<div class="tbl"><table>
+<thead><tr><th>UPS service, for delivery on December 24</th><th>Recommended last ship date</th></tr></thead>
+<tbody>
+<tr><td>UPS Ground</td><td>No single date. UPS says to check ups.com/ctc.</td></tr>
+<tr><td>UPS 3 Day Select</td><td>Monday, December 21. UPS also says a limited number of packages tendered December 14 or 15 may take an extra day.</td></tr>
+<tr><td>UPS 2nd Day Air</td><td>Tuesday, December 22. A limited number tendered December 14, 15, 16 or 21 may take an extra day.</td></tr>
+<tr><td>UPS Next Day Air</td><td>Wednesday, December 23, with a scheduled pickup or a drop-off at a UPS Store or UPS Authorized Service Location.</td></tr>
+</tbody>
+</table></div>
+<p>December 24 is a UPS delivery day. Pickup that day is Air only, and only if it was arranged by December 18. December 25 is closed. <a href="#src-fedexHoliday">FedEx’s holiday page</a> lists December 24 as modified service and December 25 as closed, and it says that schedule can change. It does not print one nationwide Ground send-by date, so this page does not invent one.</p>
+<p>The same dates, written out with the carrier’s other conditions, are on <a href="/guides/gifts-for-hot-tub-owners-2026/">gifts for hot tub owners 2026</a> and <a href="/guides/black-friday-hot-tub-filter-and-spa-care/">Black Friday filters and spa care</a>.</p>
+<ProductPicks heading="Cleaning tools with a listing we checked" lead="These are not the spare filter. The spare filter is the cartridge the calculator names. A cleaner is for the soak Unicel and Pleatco describe. A skimmer does not require the part number. This is not a ranked list, and the price stays on Amazon." groups={[
+  { h: 'Filter cleaner', keys: ['lt-filter-clean-o', 'spaguard-filter-cleaner'] },
+  { h: 'Skimmer', intro: 'The longer page is <a href="/guides/hot-tub-cleaning-tools-skimmers-and-vacuums/">cleaning tools: skimmers and vacuums</a>.', keys: ['skimmie-scoop', 'uspool-hand-skimmer'] },
+]} />
+</section>
+<h2>Questions</h2>
+{faqs.map(([q, a]) => <section><h3>{q}</h3><p>{a}</p></section>)}
+<h2>Sources</h2>
+<ol>{sources.map((k, i) => <li id={`src-${k}`} value={i + 1}><a href={SRC[k].u} rel="nofollow">{SRC[k].t}</a></li>)}</ol>
+<p><small>This page summarizes published manufacturer, catalog, and carrier guidance. Follow your own spa’s owner’s manual when it differs. See the <a href="/disclaimer/">disclaimer</a>. A correction goes to <a href="/contact/">contact</a>, which reaches contact@myspafilter.com and no other address. The method is on the <a href="/about/#methodology">about page</a>.</small></p>
+<script type="application/json" id="reorder-catalog" set:html={catalogJson}></script>
+<script>
+import { holidayOpen, lookup, plan } from '../../lib/reorder.mjs';
+const catalog = JSON.parse(document.getElementById('reorder-catalog')!.textContent || '[]');
+const form = document.getElementById('reorder') as HTMLFormElement | null;
+const out = document.getElementById('out');
+const note = document.getElementById('schedule-form-note');
+const stash = document.getElementById('buys');
+const brandSel = document.getElementById('brand') as HTMLSelectElement | null;
+const modelSel = document.getElementById('model') as HTMLSelectElement | null;
+const partInput = document.getElementById('part') as HTMLInputElement | null;
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const pretty = (iso: string) => { const [y, m, d] = iso.split('-').map(Number); return `${months[m - 1]} ${d}, ${y}`; };
+const pad = (n: number) => String(n).padStart(2, '0');
+const today = () => { const n = new Date(); return `${n.getFullYear()}-${pad(n.getMonth() + 1)}-${pad(n.getDate())}`; };
+type Row = { key: string; brand: string; brandSlug: string; model: string; href: string; verified: boolean; size: string; fittings: string; parts: { label: string; items: { text: string; href: string }[]; note?: string }[] };
+type Plan = { error?: string; blocks?: { title: string; paragraphs: string[]; dates: { label: string; iso: string }[] }[]; form?: { model: string; interval: string; install: string; note: string } };
+type Found = { error?: string; message?: string; choices?: Row[]; row?: Row };
+const parkBuys = () => {
+  if (!stash) return;
+  for (const el of document.querySelectorAll<HTMLElement>('[data-reorder-buy]')) {
+    el.hidden = true;
+    stash.append(el);
+  }
+};
+const fillModels = () => {
+  if (!brandSel || !modelSel) return;
+  const brand = brandSel.value;
+  for (const opt of modelSel.options) {
+    if (!opt.value) continue;
+    const show = !brand || opt.dataset.brand === brand;
+    opt.hidden = !show;
+    opt.disabled = !show;
+  }
+  const selected = modelSel.selectedOptions[0];
+  if (selected?.disabled) modelSel.value = '';
+};
+const wireForm = (result: Plan) => {
+  const reminder = document.getElementById('reminder-form') as HTMLFormElement | null;
+  if (!reminder || !result.form) return;
+  const model = reminder.querySelector<HTMLInputElement>('[name="filter_model"]');
+  const installed = reminder.querySelector<HTMLInputElement>('[name="install_date"]');
+  const interval = reminder.querySelector<HTMLSelectElement>('[name="interval"]');
+  if (model) model.value = result.form.model;
+  if (installed && result.form.install) installed.value = result.form.install;
+  if (interval) interval.value = result.form.interval || '';
+  if (note) note.textContent = result.form.note;
+};
+const partsTable = (row: Row) => {
+  const table = document.createElement('table');
+  for (const part of row.parts) {
+    const tr = document.createElement('tr');
+    const th = document.createElement('th');
+    th.textContent = part.label;
+    const td = document.createElement('td');
+    if (!part.items.length) td.textContent = 'not listed';
+    else part.items.forEach((item, i) => {
+      if (i) td.append(document.createTextNode(', '));
+      if (item.href.startsWith('/filter/')) {
+        const a = document.createElement('a');
+        a.href = item.href;
+        a.textContent = item.text;
+        td.append(a);
+      } else td.append(document.createTextNode(item.text));
+    });
+    if (part.note) {
+      const small = document.createElement('small');
+      small.textContent = ` (${part.note})`;
+      td.append(small);
+    }
+    tr.append(th, td);
+    table.append(tr);
+  }
+  for (const [label, value] of [['Size', row.size], ['Top / bottom', row.fittings]] as const) {
+    const tr = document.createElement('tr');
+    const th = document.createElement('th');
+    th.textContent = label;
+    const td = document.createElement('td');
+    td.textContent = value;
+    tr.append(th, td);
+    table.append(tr);
+  }
+  return table;
+};
+const showChoices = (found: Found) => {
+  if (!out) return;
+  parkBuys();
+  out.replaceChildren();
+  const p = document.createElement('p');
+  p.textContent = found.message || '';
+  out.append(p);
+  const ul = document.createElement('ul');
+  for (const choice of found.choices || []) {
+    const li = document.createElement('li');
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn';
+    btn.textContent = `${choice.brand} ${choice.model}`;
+    btn.addEventListener('click', () => {
+      if (partInput) partInput.value = '';
+      if (brandSel) brandSel.value = choice.brandSlug;
+      fillModels();
+      if (modelSel) modelSel.value = choice.key;
+      showRow(choice);
+    });
+    li.append(btn);
+    ul.append(li);
+  }
+  out.append(ul);
+};
+const showRow = (row: Row) => {
+  if (!form || !out) return;
+  const data = new FormData(form);
+  const result = plan(row, {
+    use: String(data.get('use') || ''),
+    count: String(data.get('count') ?? ''),
+    install: String(data.get('installed') || ''),
+    rinse: String(data.get('rinsed') || ''),
+    today: today(),
+  }) as Plan;
+  parkBuys();
+  out.replaceChildren();
+  if (result.error) {
+    const p = document.createElement('p');
+    p.textContent = result.error;
+    out.append(p);
+    return;
+  }
+  for (const block of result.blocks || []) {
+    const h = document.createElement('h3');
+    h.textContent = block.title;
+    out.append(h);
+    for (const text of block.paragraphs) {
+      const p = document.createElement('p');
+      p.textContent = text;
+      out.append(p);
+    }
+    if (block.dates.length) {
+      const ul = document.createElement('ul');
+      for (const d of block.dates) {
+        const li = document.createElement('li');
+        li.textContent = `${d.label}: ${pretty(d.iso)}`;
+        ul.append(li);
+      }
+      out.append(ul);
+    }
+  }
+  if (!row.verified) {
+    const p = document.createElement('p');
+    p.textContent = 'This row is marked unverified. The filter page names the gap. Match the cartridge in your hand before you order.';
+    out.append(p);
+  }
+  const h = document.createElement('h3');
+  h.textContent = 'Cross-reference numbers';
+  const lead = document.createElement('p');
+  lead.textContent = 'These are the OEM, Unicel, Pleatco and Filbur numbers already stored for this row. A blank cell means that catalog did not list one. This page did not add a number.';
+  out.append(h, lead, partsTable(row));
+  const pageP = document.createElement('p');
+  const pageA = document.createElement('a');
+  pageA.href = row.href;
+  pageA.textContent = `${row.brand} ${row.model}`;
+  pageP.append('Filter page, with the source list and the fittings: ', pageA, '.');
+  out.append(pageP);
+  const buy = document.querySelector<HTMLElement>(`[data-reorder-buy="${row.key}"]`);
+  if (buy) {
+    buy.hidden = false;
+    out.append(buy);
+    if (!buy.querySelector('a') && !buy.querySelector('[data-no-link]')) {
+      const missing = document.createElement('p');
+      missing.dataset.noLink = '1';
+      missing.textContent = 'This row has no retailer link on this page. The filter page is the place to check.';
+      buy.append(missing);
+    }
+  }
+  wireForm(result);
+};
+const run = () => {
+  if (!form) return;
+  const data = new FormData(form);
+  const key = String(data.get('model') || '');
+  const [brandSlug, modelSlug] = key.split('/');
+  const found = lookup(catalog, { part: String(data.get('part') || ''), brandSlug, modelSlug }) as Found;
+  if (found.choices) { showChoices(found); return; }
+  if (found.error || !found.row) {
+    parkBuys();
+    if (!out) return;
+    out.replaceChildren();
+    const p = document.createElement('p');
+    p.textContent = found.error || 'Choose a cartridge from this dataset.';
+    out.append(p);
+    return;
+  }
+  showRow(found.row);
+};
+brandSel?.addEventListener('change', fillModels);
+form?.addEventListener('submit', (e) => { e.preventDefault(); run(); });
+const params = new URLSearchParams(location.search);
+if (brandSel && params.get('brand')) brandSel.value = params.get('brand') || '';
+fillModels();
+if (modelSel && params.get('brand') && params.get('model')) {
+  const key = `${params.get('brand')}/${params.get('model')}`;
+  if ([...modelSel.options].some((opt) => opt.value === key)) modelSel.value = key;
+}
+if (partInput && params.get('part')) partInput.value = params.get('part') || '';
+if ((partInput && partInput.value) || (modelSel && modelSel.value)) run();
+const holiday = document.getElementById('holiday');
+if (holiday && !holidayOpen(today())) {
+  holiday.replaceChildren();
+  const h = document.createElement('h2');
+  h.textContent = '2026 gift note';
+  const p = document.createElement('p');
+  p.textContent = 'The gift note on this page ran through December 24, 2026. The schedule, the part numbers, and the buy links above are unchanged.';
+  holiday.append(h, p);
+}
+</script>
+<style>
+.calc select,.calc input[type="date"],.calc input[type="text"],.calc input[type="number"]{display:block;width:100%;max-width:32rem;margin-top:.3rem}
+.calc select{padding:.7rem .85rem;border:1px solid var(--bd2);border-radius:var(--r-sm);background:#fff;color:var(--fg);font:inherit}
+.calc select:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px rgba(19,94,99,.2)}
+#out:empty{display:none}
+#out h3{margin-top:1.25rem}
+</style>
+</Base>
