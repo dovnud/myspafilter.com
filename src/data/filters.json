@@ -3898,7 +3898,7 @@
    },
    "notes": "",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Still unresolved.",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Still unresolved. Checked 2026-11-04: Unicel's Cal Spas section still prints FIL11700016 as 6CH-975 (6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft). A search of the Filbur catalog the same day found no FIL11700016. Unresolved.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -5236,7 +5236,7 @@
    },
    "notes": "Made with antimicrobial filter media (Unicel spec note). Only the Unicel 2026 guide lists it among the catalogs. Two spa dealers sell OEM 20499 for Marquis ATV swim spas with matching area, length and handle, but a slightly larger diameter.",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT",
+   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT Checked 2026-11-04: Filbur's Marquis section does not list 20499 or 5CH-902AM. OGS Pool and Spa's listing prints 5-3/16\" x 30\", handle, a 2\" bottom and 90 sq ft, matching Unicel's diameter and length, but it does not say whether that 2\" bottom is MPT or the fine thread Mastercraft describes. Still unresolved.",
    "fitment": [
     {
      "model": "Marquis ATV 14 and ATV 17 swim spas (ATV 14 Sport, ATV 14 Slash, ATV 17 Sport, ATV 17 Kona)",
@@ -5269,6 +5269,11 @@
      "source": "Mastercraft Pool and Spa (spa dealer listing)",
      "url": "https://mastercraftpool.store/products/atv-90-sf-filter-2",
      "where": "Marquis P/N 20499, 90 sq ft, 31.5\" long, 5.5\" OD, bar handle, threaded bottom; Marquis ATV 14 and ATV 17 swim spas"
+    },
+    {
+     "source": "OGS Pool and Spa (spa dealer listing)",
+     "url": "https://www.ogspoolandspa.ca/product/filter-20499/JY67RWNJL3XMCF3HSFGUWBGW",
+     "where": "Product description fetched 2026-11-04: Marquis ATV Models, diameter 5 3/16\", length 30\", top handle, bottom 2\", 90 sq ft, Microban. Does not say MPT or fine thread."
     }
    ]
   },
@@ -6483,7 +6488,7 @@
    },
    "notes": "Unicel lists this 4-5/8\" x 6-3/4\" top-load cartridge for Softub. No OEM number is given, and neither Pleatco nor Filbur mentions Softub for it.",
    "status": "needs_verification",
-   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source.",
+   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source. Checked 2026-11-04: Filbur lists FC-0125 / 4CH-20 under Saratoga (that row prints 15 sq ft), Leisure Bay (20 sq ft), Softsider (20 sq ft) and Vita (25 sq ft, OEM PVT-25), not under Softub. Pleatco lists Unicel's Saratoga OEM 20241-238 as PSG25P4 at 25 sq ft, not as a Softub part. Still no second source for the Softub application.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -6519,7 +6524,7 @@
    },
    "notes": "Intex sells this cartridge as Type S1: 29001E (twin pack), 29011E (six-pack) and single replacement part 11692. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees. The model list is Intex's own compatible-item list for part 11692 (Intex names five of them as 2019 sets); the years shown are the model-year folders Intex's replacement-parts archive files part 11692 under. A Home Depot listing for 29001E also names 28413E, 28423E and 28443E, which are not on Intex's list. The EG/EH versions of 28425, 28427, 28439 and 28441 take the newer Type S2 cartridge instead.",
    "status": "needs_verification",
-   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved",
+   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved Checked 2026-11-04: Pleatco's spec table still prints PIN4PAIR (OEM 29001E) with 1-5/8\" openings, and Unicel's C-4317 spec is still 2-1/16\". No new measurement. Unresolved.",
    "fitment": [
     {
      "model": "Intex PureSpa 28403E",
@@ -6911,6 +6916,301 @@
      "source": "Target listing for Intex 29012E (retailer)",
      "url": "https://www.target.com/p/intex-29012e-purespa-filter-cartridge-type-s2-for-various-purespa-models-2-pack/-/A-1001846352",
      "where": "Specifications: each filter 3.5 in x 6.25 in (differs from Intex's 3.375\" x 5.125\")"
+    }
+   ]
+  },
+  {
+   "brand": "Beachcomber",
+   "brandSlug": "beachcomber",
+   "model": "C-4326 cartridge (SKU 3005845)",
+   "modelSlug": "c-4326",
+   "series": "Beachcomber microfilter, 1995 to present",
+   "oem": "3005845",
+   "oemAll": "3005845",
+   "equivalents": {
+    "unicel": "C-4326",
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 25.0
+   },
+   "notes": "Beachcomber's 25 sq ft microfilter for hot tubs from 1995 to the present. Beachcomber and Unicel agree on 4-15/16\" x 13-5/16\", a 2-1/8\" open core and 3 oz media. Beachcomber counts 107 pleats; Unicel's spec table counts 106 for C-4326. Unicel calls C-4950 an upgrade of this body. Pleatco prints PRB25-IN at 5\" outside diameter and does not name Beachcomber.",
+   "status": "verified",
+   "gaps": "Pleat count 107 (Beachcomber) vs 106 (Unicel); Pleatco outside diameter 5\" vs 4-15/16\"",
+   "fitment": [
+    {
+     "model": "Beachcomber hot tubs",
+     "years": "1995 to present",
+     "note": "25 sq ft microfilter; Beachcomber does not name a model",
+     "src": "beach"
+    }
+   ],
+   "pleatcoNote": "Unicel-to-Pleatco cross reference, PDF p.47: C-4326 = PRB25-IN. Spec table PDF p.32 prints PRB25-IN at 5\" x 13-5/16\", 2-1/8\" open ends, 3 oz, 25 sq ft, for Rainbow / Waterway / CMP, with no Beachcomber stock number.",
+   "filburNote": "Beachcomber Spas section, PDF p.15: FC-2375, 4-15/16\" x 13-5/16\", 2-1/8\" open, Rainbow Dynamic 25, 3 oz, PRB25-IN, C-4326, 25 sq ft. Filbur does not print SKU 3005845.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Beachcomber Hot Tubs (manufacturer product page)",
+     "url": "https://www.beachcomberhottubs.com/en_us/beachcomber-25-square-foot-medium",
+     "where": "SKU 3005845: 25 sq ft, 4-15/16\" diameter, 2-1/8\" core, 13-5/16\" height, 107 pleats, 3 oz, 1995 to current"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Beachcomber OEM cross-reference, PDF p.29 (printed p.25): 3005845 = C-4326, 4-15/16\" x 13-5/16\", 25 sq ft, 3 oz; spec table PDF p.9 (printed p.5): 106 pleats, 2-1/8\" open ends"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (C-4326 = PRB25-IN); spec table PDF p.32 (5\" OD)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Beachcomber Spas, PDF p.15: FC-2375 = C-4326, 4-15/16\" x 13-5/16\", 25 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "Beachcomber",
+   "brandSlug": "beachcomber",
+   "model": "C-4950 cartridge (SKU 3005815)",
+   "modelSlug": "c-4950",
+   "series": "Beachcomber microfilter, 1995 to present",
+   "oem": "3005815",
+   "oemAll": "3005815",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "notes": "Beachcomber's 50 sq ft microfilter, the same outside size as SKU 3005845, for hot tubs from 1995 to the present. Beachcomber counts 212 pleats of 3 oz fiber and says this cartridge has double the medium of the 25 sq ft model. Unicel's spec table also counts 212 pleats for C-4950 and calls it an upgrade of C-4326. Neither source prints a micron rating. Pleatco prints PRB50-IN at 5\" outside diameter.",
+   "status": "verified",
+   "gaps": "Pleatco outside diameter 5\" vs 4-15/16\"; Beachcomber describes a finer strain and prints no micron",
+   "fitment": [
+    {
+     "model": "Beachcomber hot tubs",
+     "years": "1995 to present",
+     "note": "50 sq ft microfilter; Beachcomber does not name a model",
+     "src": "beach"
+    }
+   ],
+   "pleatcoNote": "Unicel-to-Pleatco cross reference, PDF p.47: C-4950 = PRB50-IN. Spec table PDF p.32 prints PRB50-IN at 5\" x 13-5/16\", 2-1/8\" open ends, 3 oz, 50 sq ft. No Beachcomber stock number.",
+   "filburNote": "Beachcomber Spas section, PDF p.15: FC-2390, 4-15/16\" x 13-5/16\", 2-1/8\" open, Rainbow Dynamic 50, C-4950, 50 sq ft. Filbur does not print SKU 3005815.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Beachcomber Hot Tubs (manufacturer product page)",
+     "url": "https://www.beachcomberhottubs.com/en_us/microfilter-cartridge",
+     "where": "SKU 3005815: 50 sq ft, same 4-15/16\" x 13-5/16\" body and 2-1/8\" core, 212 pleats, 3 oz, 1995 to present; double the medium of the 25"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Beachcomber OEM cross-reference, PDF p.29 (printed p.25): 3005815 = C-4950, 4-15/16\" x 13-5/16\", 50 sq ft, 3 oz; spec table PDF p.9 (printed p.5): 212 pleats; note that C-4950 upgrades C-4326"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47 (C-4950 = PRB50-IN); spec table PDF p.32 (5\" OD)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Beachcomber Spas, PDF p.15: FC-2390 = C-4950, 4-15/16\" x 13-5/16\", 50 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "Beachcomber",
+   "brandSlug": "beachcomber",
+   "model": "C-4401 cartridge (SKU 3005820)",
+   "modelSlug": "c-4401",
+   "series": "Beachcomber two-piece microfilter, generally pre-1995",
+   "oem": "3005820",
+   "oemAll": "3005820",
+   "equivalents": {
+    "unicel": "C-4401",
+    "pleatco": "PRB17.5SF-PAIR",
+    "filbur": "FC-2386"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 4.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "4-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 35.0
+   },
+   "notes": "Beachcomber sells SKU 3005820 as a two-piece 35 sq ft set for generally pre-1995 hot tubs with an upfront weir: the piece with the blue stem goes in first. The product page prints no diameter or length. Unicel and Filbur both size one cartridge at 4-15/16\" x 4-5/8\", open 2-1/8\" ends, two per set. Unicel's spec note says two cartridges per set with a stick handle, 158 pleats, 4 oz. Pleatco prints PRB17.5SF-PAIR at 5\" x 4-5/8\".",
+   "status": "verified",
+   "gaps": "Beachcomber prints no length; Pleatco outside diameter is 5\" and its JH-PAIR bottom hole is 2-3/16\" rather than 2-1/8\"",
+   "fitment": [
+    {
+     "model": "Beachcomber hot tubs with the upfront weir",
+     "years": "generally pre-1995",
+     "note": "two-piece 35 sq ft set; also some older off-brand spas",
+     "src": "beach"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: C-4401 = PRB17.5SF-JH-PAIR. Spec table PDF p.31: PRB17.5SF-PAIR is 5\" x 4-5/8\", 2-1/8\" both ends, 35 sq ft; PRB17.5SF-JH-PAIR has a 2-3/16\" bottom hole. No Beachcomber stock number.",
+   "filburNote": "Beachcomber Spas section, PDF p.15: FC-2386, 4-15/16\" x 4-5/8\", 2-1/8\" open, Rainbow DSF 35, 2/set, PRB17.5SF-PAIR/JH, C-4401, 35 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Beachcomber Hot Tubs (manufacturer product page)",
+     "url": "https://www.beachcomberhottubs.com/en_us/pos/genuine-parts/filtration-systems/microfilter-35-sq-ft",
+     "where": "SKU 3005820: 35 sq ft, two pieces, blue stem installed first, generally pre-1995 upfront weir; no length printed"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Beachcomber OEM cross-reference, PDF p.29 (printed p.25): 3005820 = C-4401, 4-15/16\" x 4-5/8\", 35 sq ft, 4 oz; spec table PDF p.8 (printed p.4): 158 pleats, 2-1/8\" open, two per set with stick handle"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47; spec table PDF p.31 (5\" OD)"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Beachcomber Spas, PDF p.15: FC-2386 = C-4401, 4-15/16\" x 4-5/8\", 2/set, 35 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "Beachcomber",
+   "brandSlug": "beachcomber",
+   "model": "C-4405 cartridge (SKU 3005825)",
+   "modelSlug": "c-4405",
+   "series": "Beachcomber two-piece microfilter, generally pre-1995",
+   "oem": "3005825",
+   "oemAll": "3005825",
+   "equivalents": {
+    "unicel": "C-4405",
+    "pleatco": "PRB25SF-PAIR",
+    "filbur": "FC-2387"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 6.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "6-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "notes": "Beachcomber's two-piece 50 sq ft set for the same generally pre-1995 upfront weir as SKU 3005820. The page says the 50 sq ft medium doubles filtration capacity and prints no length. Unicel and Filbur size it at 4-15/16\" x 6-5/8\", longer than the 35 sq ft pre-1995 cartridge, so it is not the same body with more pleats. Unicel counts 158 pleats and 4 oz, two per set. Pleatco prints PRB25SF-PAIR at 5\" x 6-5/8\".",
+   "status": "verified",
+   "gaps": "Beachcomber prints no length, and \"doubles\" does not match 35 sq ft to 50 sq ft; Pleatco outside diameter is 5\"",
+   "fitment": [
+    {
+     "model": "Beachcomber hot tubs with the upfront weir",
+     "years": "generally pre-1995",
+     "note": "two-piece 50 sq ft set; also some older off-brand spas",
+     "src": "beach"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: C-4405 = PRB25SF-JH-PAIR. Spec table PDF p.32: PRB25SF-PAIR and PRB25SF-JH-PAIR are both 5\" x 6-5/8\", 2-1/8\" open ends, 3 oz, 50 sq ft. No Beachcomber stock number.",
+   "filburNote": "Beachcomber Spas section, PDF p.15: FC-2387, 4-15/16\" x 6-5/8\", 2-1/8\" open, Rainbow DSF 50, 2/set, PRB25SF-PAIR/JH, C-4405, 50 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Beachcomber Hot Tubs (manufacturer product page)",
+     "url": "https://www.beachcomberhottubs.com/en_us/pos/genuine-parts/filtration-systems/2-x-50-sqft-microfilter-cartridge",
+     "where": "SKU 3005825: 50 sq ft, two pieces, generally pre-1995 upfront weir; page says the medium doubles filtration capacity; no length printed"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Beachcomber OEM cross-reference, PDF p.29 (printed p.25): 3005825 = C-4405, 4-15/16\" x 6-5/8\", 50 sq ft, 4 oz; spec table PDF p.8 (printed p.4): 158 pleats, two per set with stick handle"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel-to-Pleatco cross reference, PDF p.47; spec table PDF p.32 (5\" x 6-5/8\")"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Beachcomber Spas, PDF p.15: FC-2387 = C-4405, 4-15/16\" x 6-5/8\", 2/set, 50 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "Strong Spas",
+   "brandSlug": "strong-spas",
+   "model": "4CH-925 cartridge (Antigua / Futura)",
+   "modelSlug": "4ch-925",
+   "series": "Strong Industries (catalogs name Antigua / Futura; Strong's FAQ does not)",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-925",
+    "pleatco": "PSANT20P3",
+    "filbur": "FC-0126"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 7.25,
+    "diameterText": "4-5/8\"",
+    "lengthText": "7-1/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\" SAE",
+    "sqft": 20.0
+   },
+   "notes": "The 20 sq ft Strong cartridge in the catalogs, shown at Unicel's size. Pleatco lists PSANT20P3 for Futura Spa (Strong Industries) at 4-3/4\" x 7-1/16\", and its application index says Strong Antigua, 1.50\" SAE. Filbur's Strong section spells the model Antiqua and prints FC-0126 at 4-3/4\" x 8\", with the Unicel cell blank; a separate Filbur size table crosses FC-0126 to 4CH-925. Strong's FAQ does not mention this cartridge. Pleatco and Filbur also list an MPT version (PSANT20P4 / FC-0208) that is not 4CH-925.",
+   "status": "verified",
+   "gaps": "Length disagrees: Unicel 7-1/4\", Pleatco 7-1/16\", Filbur FC-0126 8\". Outside diameter 4-5/8\" (Unicel) vs 4-3/4\" (Pleatco, Filbur). No Strong OEM number. Not the 50 or 75 sq ft filter in Strong's series FAQ.",
+   "fitment": [
+    {
+     "model": "Strong Antigua / Futura Spa",
+     "years": "",
+     "note": "20 sq ft, 1-1/2\" SAE; Pleatco says Antigua, Filbur says Antiqua; not in Strong's FAQ",
+     "src": "pleatco"
+    }
+   ],
+   "pleatcoNote": "Spec table PDF p.31: PSANT20P3, 4-3/4\" x 7-1/16\", handle, 1-1/2\" SAE, 3 oz, 20 sq ft, Futura Spa (Strong Industries). PSANT20P4 is the same size with 1-1/2\" MPT. Application index PDF p.27: Strong Antigua.",
+   "filburNote": "Strong Industries section, PDF p.26 (printed p.51): FC-0126, 4-3/4\" x 8\", handle, 1-1/2\" SAE, Antiqua, Pleatco PSANT20 / PSANT20P3, Unicel cell N/A, 20 sq ft. Size table PDF p.9 crosses FC-0126 to 4CH-925. FC-0208 is the 7-1/16\" MPT Futura cartridge.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Strong Industries section, PDF p.58 (printed p.54): 4CH-925, 4-5/8\" x 7-1/4\", 1-1/2\" SAE, 20 sq ft, 3 oz, no model name; spec table PDF p.7 (printed p.3): 190 pleats, semi-circular handle"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.31: PSANT20P3 for Futura Spa (Strong Industries), 4-3/4\" x 7-1/16\", 1-1/2\" SAE, 20 sq ft; application index PDF p.27: Strong Antigua"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Strong Industries, PDF p.26 (printed p.51): FC-0126, 4-3/4\" x 8\", Antiqua, Unicel N/A; size table PDF p.9: FC-0126 = 4CH-925 = PSANT20P3"
+    },
+    {
+     "source": "Strong Spas (manufacturer FAQ)",
+     "url": "https://strongspas.com/learning-center/hot-tub-info-guide/frequently-asked-questions/",
+     "where": "What size filter does my spa use?: 50 or 75 sq ft by series and year, no part number, and no mention of Antigua, Futura or a 20 sq ft cartridge"
     }
    ]
   }

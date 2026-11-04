@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 const D = '2026-10-25';
 /** Guides published 2026-10-25 under the "few links, real data" rule: no retailer links; every number below is from the cited tables. */
 export const newGuides: Guide[] = [
-{slug:'why-same-size-spa-filters-have-different-square-feet',published:D,reviewed:D,
+{slug:'why-same-size-spa-filters-have-different-square-feet',published:D,reviewed:'2026-11-04',
 title:'Why do two spa filters the same size have different square-foot ratings?',
 desc:'Same diameter, same length, but 25, 37 or 50 sq ft? Unicel’s 2026 spec table shows it is the pleat count, and what that means when you replace a cartridge.',
 answer:`The square-foot number is the total area of filter media folded into the cartridge, not its outside size. Two cartridges with the <strong>same diameter, length and end caps</strong> can hold different amounts of media because one has more pleats: in Unicel’s 2026 table, 106, 158 and 212 pleats in the same 4-15/16" × 13-5/16" body are rated 25, 37 and 50 sq ft${c('unicel26')}. So size alone cannot tell you the rating; the part number, or the pleat count, can.`,
@@ -45,12 +45,13 @@ body:`<h2>How the number is calculated</h2>
 <li><strong>Count the pleats</strong> if two candidates share the same body: mark one fold with tape and count every fold around the circumference. Unicel’s own lookup instructions include counting the pleats (±2) and noting whether there is a center core${c('unicel26')}, so a count within two of a listed number is a match.</li>
 <li><strong>Use square footage last.</strong> Look at it only after the dimensions and end caps agree, and expect different catalogs to round it differently.</li></ol>
 <p>Once you know the cartridge, <a href="/guides/oem-vs-unicel-vs-pleatco-spa-filters/">OEM vs Unicel vs Pleatco</a> explains how the brands’ numbers line up.</p>
+<p>Beachcomber prints this split on a current hot tub filter. Its 25 sq ft microfilter (SKU 3005845) and 50 sq ft microfilter (SKU 3005815) are both 4-15/16" × 13-5/16" with a 2-1/8" open core, and Beachcomber counts 107 and 212 pleats${c('beach25','beach50')}. Unicel lists those stock numbers as C-4326 (106 pleats) and C-4950 (212 pleats)${c('unicel26')}. The one-pleat difference, and the shorter pre-1995 set, are on the <a href="/fitment/beachcomber-filter-by-model-year/">Beachcomber filter by year</a> page.</p>
 <p><small>Affiliate disclosure: this guide contains no retailer links. Some cartridge pages it links to do, and we may earn a commission from qualifying purchases made through them at no cost to you. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</small></p>`,
 faq:[['Can I use a 75 sq ft filter where my spa takes a 50 sq ft one?','Only if it is the same cartridge body. Unicel’s “upgrade” notes, such as C-4637 for C-4625, describe cartridges whose other dimensions are the same and that carry more media, and its guide says cartridges listed between the same horizontal lines are interchangeable. If the diameter, length or end caps differ, it will not seat correctly. We found no spa-maker statement approving or rejecting an upgrade for a specific spa, so ask your dealer if the spa is under warranty.'],
 ['Does a higher square-foot rating always mean a bigger cartridge?','No. In Unicel’s 2026 table, C-4326, C-4637 and C-4950 all measure 4-15/16" × 13-5/16" with 2-1/8" open ends, but they are rated 25, 37 and 50 sq ft because they have 106, 158 and 212 pleats.'],
 ['Why does one catalog list my Hot Spring Limelight filter as 35 sq ft and another as 75?','The catalogs genuinely disagree. Pleatco 2023 lists OEM 1642301-1 as PWK35B at 35 sq ft, a Hot Spring dealer lists 78161 at 50 sq ft, and Unicel offers both a 50 sq ft (C-6350) and a 75 sq ft (C-6355) replacement for it. Order by the OEM part number and check the dimensions.'],
 ['Is a thicker media weight the same as more surface area?','No. Media weight (3 oz or 4 oz in Unicel’s table) is listed separately from area. C-4326 and C-4625 both have 106 pleats and 25 sq ft but differ in media weight.']],
-src:['unicel26','unicel','pleatco23','lt78161','lt73531']},
+src:['unicel26','unicel','pleatco23','lt78161','lt73531','beach25','beach50']},
 {slug:'hot-tub-flow-error-codes-and-your-filter',published:'2026-10-26',reviewed:'2026-10-26',
 title:'Hot tub flow error (FLO, FL1, HFL, LF, dr): is it the filter?',
 desc:'What FLO, FL--1, HFL, LF, dr, HL and Hot Spring’s E2 No Flow mean, why a dirty filter is the first suspect, and the order to check things in, from Gecko, Balboa, Sundance, Hot Spring and Jacuzzi documents.',
