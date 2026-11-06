@@ -2662,7 +2662,7 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources",
+   "gaps": "no model/model-year fitment in sources. Checked 2026-11-06: Unicel's spec table and its Freedom Spas line both rate this 4CH-30 at 30 sq ft (158 pleats, 4 oz). This Sundance OEM line (6540-484) and Filbur's Sundance line print 25 sq ft. The 25 sq ft figure stays on this row because it is the Sundance line.",
    "fitment": [],
    "pleatcoNote": "as printed in the Filbur catalog Sundance section (printed p.51); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
@@ -3898,7 +3898,7 @@
    },
    "notes": "",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Still unresolved. Checked 2026-11-04: Unicel's Cal Spas section still prints FIL11700016 as 6CH-975 (6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft). A search of the Filbur catalog the same day found no FIL11700016. Unresolved.",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Still unresolved. Checked 2026-11-04: Unicel's Cal Spas section still prints FIL11700016 as 6CH-975 (6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft). A search of the Filbur catalog the same day found no FIL11700016. Unresolved. Checked 2026-11-06: Unicel PDF p.30 (printed p.26) still prints FIL11700016 as 6CH-975, 6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft. No new manufacturer model chart and no Filbur row for FIL11700016. Still unresolved.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -4408,7 +4408,7 @@
    },
    "notes": "",
    "status": "verified",
-   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry",
+   "gaps": "no model/model-year fitment in sources; Unicel lists no OEM part number for this brand entry. Checked 2026-11-06: Filbur's size table and Freedom Spas section print FC-0330 / 6CH-45 at 6 x 12-1/4 in, against Unicel's 12-3/8 in kept on this row. Freedom model names are on the Freedom Spas fitment page.",
    "fitment": [],
    "pleatcoNote": "as printed in the Filbur catalog Master Spas section (printed p.43); not found in the Pleatco 2023 Unicel cross reference",
    "filburNote": "",
@@ -5236,7 +5236,7 @@
    },
    "notes": "Made with antimicrobial filter media (Unicel spec note). Only the Unicel 2026 guide lists it among the catalogs. Two spa dealers sell OEM 20499 for Marquis ATV swim spas with matching area, length and handle, but a slightly larger diameter.",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT Checked 2026-11-04: Filbur's Marquis section does not list 20499 or 5CH-902AM. OGS Pool and Spa's listing prints 5-3/16\" x 30\", handle, a 2\" bottom and 90 sq ft, matching Unicel's diameter and length, but it does not say whether that 2\" bottom is MPT or the fine thread Mastercraft describes. Still unresolved.",
+   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT Checked 2026-11-04: Filbur's Marquis section does not list 20499 or 5CH-902AM. OGS Pool and Spa's listing prints 5-3/16\" x 30\", handle, a 2\" bottom and 90 sq ft, matching Unicel's diameter and length, but it does not say whether that 2\" bottom is MPT or the fine thread Mastercraft describes. Still unresolved. Checked 2026-11-06: Parts4tubs lists 5CH-902AM as a Unicel cartridge for Marquis Spas and reprints the catalog line \"Cartridge, 90sqft, Bar ht, 2\"mpt b, 5-3/16\", 30\", 4oz\" (UPC 678285250115). That matches Unicel's diameter, length and 2\" MPT wording. It is not a separate measurement of the fine thread. Still unresolved.",
    "fitment": [
     {
      "model": "Marquis ATV 14 and ATV 17 swim spas (ATV 14 Sport, ATV 14 Slash, ATV 17 Sport, ATV 17 Kona)",
@@ -5274,6 +5274,11 @@
      "source": "OGS Pool and Spa (spa dealer listing)",
      "url": "https://www.ogspoolandspa.ca/product/filter-20499/JY67RWNJL3XMCF3HSFGUWBGW",
      "where": "Product description fetched 2026-11-04: Marquis ATV Models, diameter 5 3/16\", length 30\", top handle, bottom 2\", 90 sq ft, Microban. Does not say MPT or fine thread."
+    },
+    {
+     "source": "Parts4tubs (Unicel cartridge listing)",
+     "url": "https://parts4tubs.com/product/cartridge-90sqft-bar-ht-2mpt-b-5-3-16-30-4oz-5ch-902am/",
+     "where": "Fetched 2026-11-06: Unicel 5CH-902AM for Marquis Spas. Catalog description repeats \"90sqft, Bar ht, 2\"mpt b, 5-3/16\", 30\", 4oz\". UPC 678285250115. Not an independent thread measurement."
     }
    ]
   },
@@ -6488,7 +6493,7 @@
    },
    "notes": "Unicel lists this 4-5/8\" x 6-3/4\" top-load cartridge for Softub. No OEM number is given, and neither Pleatco nor Filbur mentions Softub for it.",
    "status": "needs_verification",
-   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source. Checked 2026-11-04: Filbur lists FC-0125 / 4CH-20 under Saratoga (that row prints 15 sq ft), Leisure Bay (20 sq ft), Softsider (20 sq ft) and Vita (25 sq ft, OEM PVT-25), not under Softub. Pleatco lists Unicel's Saratoga OEM 20241-238 as PSG25P4 at 25 sq ft, not as a Softub part. Still no second source for the Softub application.",
+   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source. Checked 2026-11-04: Filbur lists FC-0125 / 4CH-20 under Saratoga (that row prints 15 sq ft), Leisure Bay (20 sq ft), Softsider (20 sq ft) and Vita (25 sq ft, OEM PVT-25), not under Softub. Pleatco lists Unicel's Saratoga OEM 20241-238 as PSG25P4 at 25 sq ft, not as a Softub part. Still no second source for the Softub application. Checked 2026-11-06: a pass over the Filbur catalog PDF found no row that prints Softub next to FC-0125 / 4CH-20. The size table still prints that Filbur number at 20 sq ft (Pleatco cell PHC25), and one brand row still prints Vita OEM PVT-25 at 25 sq ft. Still unresolved.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -6524,7 +6529,7 @@
    },
    "notes": "Intex sells this cartridge as Type S1: 29001E (twin pack), 29011E (six-pack) and single replacement part 11692. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees. The model list is Intex's own compatible-item list for part 11692 (Intex names five of them as 2019 sets); the years shown are the model-year folders Intex's replacement-parts archive files part 11692 under. A Home Depot listing for 29001E also names 28413E, 28423E and 28443E, which are not on Intex's list. The EG/EH versions of 28425, 28427, 28439 and 28441 take the newer Type S2 cartridge instead.",
    "status": "needs_verification",
-   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved Checked 2026-11-04: Pleatco's spec table still prints PIN4PAIR (OEM 29001E) with 1-5/8\" openings, and Unicel's C-4317 spec is still 2-1/16\". No new measurement. Unresolved.",
+   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved Checked 2026-11-04: Pleatco's spec table still prints PIN4PAIR (OEM 29001E) with 1-5/8\" openings, and Unicel's C-4317 spec is still 2-1/16\". No new measurement. Unresolved. Checked 2026-11-06: All Filters' SpiroPure SP-PS-IT-S1 listing prints 1-5/8\" top and bottom holes for Intex 29001E / C-4317 / PIN4PAIR, which repeats Pleatco's figure rather than measuring Unicel's 2-1/16\". Still unresolved.",
    "fitment": [
     {
      "model": "Intex PureSpa 28403E",
@@ -7211,6 +7216,518 @@
      "source": "Strong Spas (manufacturer FAQ)",
      "url": "https://strongspas.com/learning-center/hot-tub-info-guide/frequently-asked-questions/",
      "where": "What size filter does my spa use?: 50 or 75 sq ft by series and year, no part number, and no mention of Antigua, Futura or a 20 sq ft cartridge"
+    }
+   ]
+  }
+,
+  {
+   "brand": "Freeflow Spas",
+   "brandSlug": "freeflow-spas",
+   "model": "4CH-22 cartridge (open top)",
+   "modelSlug": "4ch-22",
+   "series": "Freeflow Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-22",
+    "pleatco": "PFF25W-P4",
+    "filbur": "FC-2399"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 6.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "6-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "1-1/2\u201d male thread/MPT",
+    "sqft": 25.0
+   },
+   "notes": "Unicel's spec table and Freeflow model list assign the open-top 4CH-22 to TLX and RLX: 4-15/16\" x 6-5/8\", 212 pleats, 3 oz, 25 sq ft, 1-1/2\" MPT. Filbur's size table and its Freedom Spas section assign that same open 4CH-22 / FC-2399 to CLX (and FF-150) and print Pleatco PFF25P4. Pleatco's own Unicel cross-reference prints 4CH-22 = PFF25W-P4, which Pleatco sizes at 5\" x 6-5/8\" for Lagas and does not name TLX, RLX or CLX. The dimension on this row is Unicel's.",
+   "status": "verified",
+   "gaps": "Model names are swapped: Unicel says TLX/RLX, Filbur and Pleatco's PFF25P4 say CLX. Pleatco equivalent is not one number (PFF25W-P4 on the cross-reference, PFF25P4 in Filbur). Outside diameter 4-15/16\" (Unicel, Filbur) vs 4-5/8\" (PFF25P4) vs 5\" (PFF25W-P4). No Freeflow OEM number in Unicel. FF-150 is Filbur/Pleatco only, so it is not an OEM lookup number.",
+   "fitment": [
+    {
+     "model": "Freeflow TLX and RLX",
+     "years": "",
+     "note": "Unicel spec table and Freeflow model list: open top, 4CH-22",
+     "src": "unicel"
+    },
+    {
+     "model": "Freeflow CLX",
+     "years": "",
+     "note": "Filbur FC-2399, open top, also numbered FF-150. Pleatco PFF25P4 names Lagas, CLX and FF-150. This is not Unicel's model assignment.",
+     "src": "filbur"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: 4CH-22 = PFF25W-P4. Spec table PDF p.32: PFF25W-P4 is 5\" x 6-5/8\", open 2-1/8\", 1-1/2\" MPT, 25 sq ft, Freeflow Lagas. Spec table PDF p.31: PFF25P4 is the 4-5/8\" open cartridge for Lagas, CLX, FF-150. Filbur, not Pleatco's cross-reference, ties PFF25P4 to 4CH-22.",
+   "filburNote": "Dimensional listing PDF p.9: FC-2399, 4-15/16\" x 6-5/8\", open 2-1/8\", 1-1/2\" MPT, Freeflow 25, CLX, PFF25P4, 4CH-22, 25 sq ft. Freedom Spas section PDF p.18 (printed p.35): CLX, FF-150. Filbur has no Freeflow heading.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freeflow model list, PDF p.35 (printed p.31): TLX and RLX = 4CH-22; spec table PDF p.8 (printed p.4): open 2-1/8\", 212 pleats, 3 oz, 25 sq ft, model cell TLX, RLX"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel cross-reference PDF p.47: 4CH-22 = PFF25W-P4. Spec table PDF p.32: PFF25W-P4 at 5\" x 6-5/8\" for Lagas. Spec table PDF p.31: PFF25P4 at 4-5/8\" x 6-5/8\" for Lagas, CLX, FF-150"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Dimensional listing PDF p.9: FC-2399 open, CLX, PFF25P4, 4CH-22. Freedom Spas section PDF p.18 (printed p.35): CLX, FF-150"
+    }
+   ]
+  },
+  {
+   "brand": "Freeflow Spas",
+   "brandSlug": "freeflow-spas",
+   "model": "4CH-23 cartridge (closed top)",
+   "modelSlug": "4ch-23",
+   "series": "Freeflow Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-23",
+    "pleatco": "PFF25TC-P4",
+    "filbur": "FC-2400"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 6.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "6-5/8\"",
+    "topCore": "closed",
+    "bottomCore": "1-1/2\u201d male thread/MPT",
+    "sqft": 25.0
+   },
+   "notes": "Unicel's spec table assigns the closed-top 4CH-23 to Freeflow CLX: 4-15/16\" x 6-5/8\", 212 pleats, 3 oz, 25 sq ft, 1-1/2\" MPT. The Freeflow model list agrees. Filbur and Pleatco agree that 4CH-23 / FC-2400 / PFF25TC-P4 is the closed cartridge, and they assign it to TLX and RLX instead of CLX. Pleatco also names Lagas, FF-100 and Claro. Pleatco's outside diameter is 4-5/8\".",
+   "status": "verified",
+   "gaps": "Unicel model is CLX; Filbur and Pleatco models are TLX and RLX (plus Lagas, FF-100, Claro). Diameter 4-15/16\" vs Pleatco 4-5/8\". No Freeflow OEM number in Unicel. FF-100 is Filbur/Pleatco only.",
+   "fitment": [
+    {
+     "model": "Freeflow CLX",
+     "years": "",
+     "note": "Unicel spec table and model list: closed top, 4CH-23",
+     "src": "unicel"
+    },
+    {
+     "model": "Freeflow TLX and RLX",
+     "years": "",
+     "note": "Filbur FC-2400, closed top, also numbered FF-100. Pleatco PFF25TC-P4 names Lagas, TLX, RLX, FF-100 and Claro.",
+     "src": "filbur"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: 4CH-23 = PFF25TC-P4. Spec table PDF p.31: 4-5/8\" x 6-5/8\", closed, 1-1/2\" MPT, 3 oz, 25 sq ft, Lagas, TLX, RLX, FF-100, Claro. Application index PDF p.27: Lagas TLX, RLX.",
+   "filburNote": "Dimensional listing PDF p.9: FC-2400, 4-15/16\" x 6-5/8\", closed, 1-1/2\" MPT, Freeflo 25, TLX, PFF25TC-P4, 4CH-23, 25 sq ft. Freedom Spas section PDF p.18 (printed p.35): TLX, RLX, FF-100.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freeflow model list, PDF p.35 (printed p.31): CLX = 4CH-23; spec table PDF p.8 (printed p.4): closed top, 212 pleats, 3 oz, 25 sq ft, model cell CLX"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel cross-reference PDF p.47: 4CH-23 = PFF25TC-P4. Spec table PDF p.31 and application index PDF p.27: closed cartridge for TLX and RLX"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Dimensional listing PDF p.9 and Freedom Spas section PDF p.18 (printed p.35): FC-2400 closed, TLX/RLX, FF-100, 4CH-23"
+    }
+   ]
+  },
+  {
+   "brand": "Freeflow Spas",
+   "brandSlug": "freeflow-spas",
+   "model": "5CH-45 cartridge (Legend)",
+   "modelSlug": "5ch-45",
+   "series": "Freeflow Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "5CH-45",
+    "pleatco": "PFF50P4",
+    "filbur": "FC-2401"
+   },
+   "dimensions": {
+    "diameterIn": 5.3125,
+    "lengthIn": 10,
+    "diameterText": "5-5/16\"",
+    "lengthText": "10\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "1-1/2\u201d male thread/MPT",
+    "sqft": 45.0
+   },
+   "notes": "Unicel's spec table prints 5CH-45 for Freeflow Legend: 5-5/16\" x 10\", open 2-1/8\", 1-1/2\" MPT, 225 pleats, 3 oz, 45 sq ft. The Freeflow model list puts Legend and Passport on that row. Passport is not in the spec-table model cell, and Filbur and Pleatco do not name Passport. Pleatco PFF50P4 is 50 sq ft. Filbur's size table is 5-5/16\" and 45 sq ft with Pleatco cell PFF50P; Filbur's Freedom Spas section prints the diameter as 5-1/4\".",
+   "status": "verified",
+   "gaps": "Area 45 sq ft (Unicel, Filbur) vs 50 sq ft (Pleatco). Filbur diameter 5-5/16\" in the size table vs 5-1/4\" in the Freedom section. Passport is Unicel's model list only. Pleatco number PFF50P4 on the cross-reference vs PFF50P in Filbur's cell.",
+   "fitment": [
+    {
+     "model": "Freeflow Legend",
+     "years": "",
+     "note": "Unicel spec table. The model list also names Passport on this 5CH-45 row; Passport is not repeated in the spec-table model cell.",
+     "src": "unicel"
+    },
+    {
+     "model": "Freeflow Legend",
+     "years": "",
+     "note": "Pleatco PFF50P4 at 50 sq ft. Filbur FC-2401 at 45 sq ft. Neither names Passport.",
+     "src": "pleatco"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: 5CH-45 = PFF50P4. Spec table PDF p.32: 5-5/16\" x 10\", open 2-1/8\", 1-1/2\" MPT, 3 oz, 50 sq ft, Freeflow Spas Legend. Application index PDF p.27: Spa Freeflow Legend 50.",
+   "filburNote": "Dimensional listing PDF p.10: FC-2401, 5-5/16\" x 10\", open 2-1/8\", 1-1/2\" MPT, 45 sq ft, PFF50P, 5CH-45. Freedom Spas section PDF p.18 (printed p.35): Legend, 5-1/4\" x 10\", 45 sq ft, PFF50P.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freeflow model list, PDF p.35 (printed p.31): Legend and Passport = 5CH-45, 45 sq ft; spec table PDF p.11 (printed p.7): 225 pleats, model cell Legend, 5-5/16\" x 10\", open 2-1/8\""
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel cross-reference PDF p.47: 5CH-45 = PFF50P4. Spec table PDF p.32: 50 sq ft for Freeflow Spas Legend"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Dimensional listing PDF p.10: FC-2401 at 5-5/16\" x 10\", 45 sq ft. Freedom Spas section PDF p.18 (printed p.35): Legend at 5-1/4\" x 10\""
+    }
+   ]
+  },
+  {
+   "brand": "Freedom Spas",
+   "brandSlug": "freedom-spas",
+   "model": "4CH-30 cartridge",
+   "modelSlug": "4ch-30",
+   "series": "Freedom Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "4CH-30",
+    "pleatco": "PTL25P-4",
+    "filbur": "FC-0141"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 11.875,
+    "diameterText": "4-5/8\"",
+    "lengthText": "11-7/8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2\u201d male thread/MPT",
+    "sqft": 30.0
+   },
+   "notes": "Shown at 30 sq ft because that is Unicel's Freedom Spas line, Unicel's spec table (158 pleats, 4 oz), Filbur's size table and Aladdin 13005. Unicel's Sundance line prints the same 4CH-30 for OEM 6540-484 at 25 sq ft, and Filbur's Sundance line does too. Unicel names Franklin, Statesman and Revere. Aladdin's model field uses that same string and lists Freedom among many brands, including Dimension One and Sundance. Pleatco's Unicel cross-reference does not list 4CH-30; PTL25P-4 is Filbur's Pleatco cell.",
+   "status": "verified",
+   "gaps": "Same Unicel number is 25 sq ft on the Sundance OEM line (6540-484) and 30 sq ft here. Franklin and Statesman are also named on 6CH-45. No Freedom OEM number. PTL25P-4 is not in Pleatco's Unicel cross-reference.",
+   "fitment": [
+    {
+     "model": "Franklin, Statesman and Revere",
+     "years": "",
+     "note": "Unicel Freedom Spas line, 30 sq ft. The same two of those names are also on the 6CH-45 row.",
+     "src": "unicel"
+    },
+    {
+     "model": "Franklin, Statesman and Revere",
+     "years": "",
+     "note": "Aladdin 13005 model field. Freedom Spas is one manufacturer in a multi-brand list. 30 sq ft, 158 pleats.",
+     "src": "aladdin"
+    }
+   ],
+   "pleatcoNote": "Not in the Pleatco 2023 Unicel cross-reference. Filbur's Pleatco cell prints PTL25P-4. Aladdin prints PTL25P4-4 among the OEM numbers on part 13005.",
+   "filburNote": "Size table PDF p.9: FC-0141, 4-5/8\" x 11-7/8\", handle, 1-1/2\" MPT, 30 sq ft, PTL25P-4, 4CH-30. Freedom Spas section PDF p.18 (printed p.35): FC-0141 at 30 sq ft, no model names. Sundance section prints 25 sq ft for OEM 6540-484.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freedom Spas line, PDF p.35 (printed p.31): Franklin, Statesman, Revere = 4CH-30, 30 sq ft, 4 oz; spec table PDF p.7 (printed p.3): 158 pleats, 30 sq ft, molded cone handle, 1-1/2\" MPT; Sundance line PDF p.59 (printed p.55): OEM 6540-484 at 25 sq ft"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Dimensional listing PDF p.9: FC-0141 at 30 sq ft. Freedom Spas section PDF p.18 (printed p.35): FC-0141, no Franklin/Statesman/Revere names"
+    },
+    {
+     "source": "Aladdin Equipment",
+     "url": "https://www.aladdin1950.com/product/cartridge-filter-element-86/",
+     "where": "Cartridge 13005, fetched 2026-11-06: model field 4CH-Top Load, Franklin, Statesman, Revere; 30 sq ft; 158 pleats; 4-5/8\" x 11-7/8\"; cone handle; 1-1/2\" male thread; Freedom Spas in the manufacturer list"
+    }
+   ]
+  },
+  {
+   "brand": "Freedom Spas",
+   "brandSlug": "freedom-spas",
+   "model": "6CH-45 cartridge",
+   "modelSlug": "6ch-45",
+   "series": "Freedom Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "6CH-45",
+    "pleatco": "PTL45W-P-4",
+    "filbur": "FC-0330"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 12.375,
+    "diameterText": "6\"",
+    "lengthText": "12-3/8\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\u201d male thread/MPT",
+    "sqft": 45.0
+   },
+   "notes": "Length is Unicel's 12-3/8\", which Aladdin 14506 also prints. Filbur's size table and Freedom Spas section print FC-0330 at 12-1/4\". Unicel names Statesman, Lexington, Enterprise, Aristocrat and Franklin. Aladdin's model field matches that string and names Freedom Spas and Master Spas. Pleatco's number here is Filbur's cell (PTL45W-P-4); Aladdin prints PTL45W-P4-4.",
+   "status": "verified",
+   "gaps": "Length 12-3/8\" (Unicel, Aladdin) vs 12-1/4\" (Filbur). Franklin and Statesman are also on the 4CH-30 row. No Freedom OEM number. PTL45W-P-4 is Filbur's Pleatco cell.",
+   "fitment": [
+    {
+     "model": "Statesman, Lexington, Enterprise, Aristocrat and Franklin",
+     "years": "",
+     "note": "Unicel Freedom Spas line, 6\" x 12-3/8\", 45 sq ft. Franklin and Statesman are also on 4CH-30.",
+     "src": "unicel"
+    },
+    {
+     "model": "Statesman, Lexington, Enterprise, Aristocrat and Franklin",
+     "years": "",
+     "note": "Aladdin 14506. 6\" x 12-3/8\", 45 sq ft, 158 pleats. Also names Master Spas.",
+     "src": "aladdin"
+    }
+   ],
+   "pleatcoNote": "Filbur prints PTL45W-P-4. Aladdin prints PTL45W-P4-4 on part 14506. Not taken from Pleatco's Unicel cross-reference.",
+   "filburNote": "Size table PDF p.10: FC-0330, 6\" x 12-1/4\", handle, 1-1/2\" MPT, 45 sq ft, PTL45W-P-4, 6CH-45. Freedom Spas section PDF p.18 (printed p.35): same 12-1/4\" length, no model names.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freedom Spas line, PDF p.35 (printed p.31): Statesman, Lexington, Enterprise, Aristocrat, Franklin = 6CH-45, 6\" x 12-3/8\", 45 sq ft; spec table PDF p.12 (printed p.8): 158 pleats, 3 oz, semi-circular handle, 1-1/2\" MPT"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Dimensional listing PDF p.10 and Freedom Spas section PDF p.18 (printed p.35): FC-0330 at 6\" x 12-1/4\", 45 sq ft, PTL45W-P-4"
+    },
+    {
+     "source": "Aladdin Equipment",
+     "url": "https://www.aladdin1950.com/product/cartridge-filter-element-133/",
+     "where": "Cartridge 14506, fetched 2026-11-06: model field Statesman/Lexington/Enterprise/Aristocrat/Franklin; 45 sq ft; 158 pleats; 6\" x 12-3/8\"; Freedom Spas and Master Spas"
+    }
+   ]
+  },
+  {
+   "brand": "Freedom Spas",
+   "brandSlug": "freedom-spas",
+   "model": "C-4401 cartridge (Liberty)",
+   "modelSlug": "c-4401",
+   "series": "Freedom Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4401",
+    "pleatco": "PRB17.5SF-PAIR",
+    "filbur": "FC-2386"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 4.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "4-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 35.0
+   },
+   "notes": "Unicel's Freedom list names Liberty only on this 35 sq ft row: 4-15/16\" x 4-5/8\", C-4401, 4 oz. The spec note says two cartridges per set with a stick handle. Filbur's Freedom section lists FC-2386 / C-4401 as Rainbow DSF 35, 2/set, and does not print Liberty. The same Unicel number is Beachcomber SKU 3005820. This row stays out of the search index because it has no Freedom OEM number and the model name is Unicel's alone.",
+   "status": "verified",
+   "gaps": "Liberty is Unicel's Freedom list only. Filbur says Rainbow DSF 35, two per set. No Freedom OEM number. Duplicate of the Beachcomber C-4401 body.",
+   "fitment": [
+    {
+     "model": "Liberty",
+     "years": "",
+     "note": "Unicel Freedom list only, on the 35 sq ft row. The following C-4405 row has no model name.",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: C-4401 = PRB17.5SF-JH-PAIR. Spec table prints PRB17.5SF-PAIR at 5\" OD. Same cross as the Beachcomber row.",
+   "filburNote": "Freedom Spas section PDF p.18 (printed p.35): FC-2386, Rainbow DSF 35, 2/set, PRB17.5SF-PAIR/JH, C-4401, 35 sq ft. Does not print Liberty.",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freedom Spas line, PDF p.35 (printed p.31): Liberty = C-4401, 4-15/16\" x 4-5/8\", 35 sq ft, 4 oz; spec table PDF p.8 (printed p.4): two per set with stick handle"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel cross-reference PDF p.47: C-4401 = PRB17.5SF-JH-PAIR"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Freedom Spas section PDF p.18 (printed p.35): FC-2386, Rainbow DSF 35, 2/set, C-4401. No Liberty name"
+    }
+   ]
+  },
+  {
+   "brand": "Freedom Spas",
+   "brandSlug": "freedom-spas",
+   "model": "C-4405 cartridge",
+   "modelSlug": "c-4405",
+   "series": "Freedom Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4405",
+    "pleatco": "PRB25SF-PAIR",
+    "filbur": "FC-2387"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 6.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "6-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "notes": "Unicel's Freedom block prints this 50 sq ft row with a blank model cell: 4-15/16\" x 6-5/8\", C-4405, 4 oz. The note \"Model dated after 1993\" is the next line, under this row, not under Liberty. Filbur's Freedom section repeats that note on FC-2387 and calls the row Rainbow DSF 50, 2/set. Not indexed: no Freedom OEM number, no model name, and the body duplicates Beachcomber C-4405.",
+   "status": "verified",
+   "gaps": "No model name. The 1993 note does not say it replaced Liberty's C-4401. Filbur calls it Rainbow DSF 50, not a Freedom model. Duplicate of the Beachcomber C-4405 body.",
+   "fitment": [
+    {
+     "model": "Not named",
+     "years": "Model dated after 1993",
+     "note": "Unicel prints the note under this blank-model row. Filbur repeats the note on the Rainbow DSF 50 row.",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: C-4405 = PRB25SF-JH-PAIR. Spec table prints PRB25SF-PAIR at 5\" x 6-5/8\".",
+   "filburNote": "Freedom Spas section PDF p.18 (printed p.35): FC-2387, Rainbow DSF 50, 2/set, \"Model dated after 1993\", C-4405, 50 sq ft.",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freedom Spas line, PDF p.35 (printed p.31): blank model cell, C-4405, 4-15/16\" x 6-5/8\", 50 sq ft, 4 oz, note \"Model dated after 1993\" under the row"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel cross-reference PDF p.47: C-4405 = PRB25SF-JH-PAIR"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Freedom Spas section PDF p.18 (printed p.35): FC-2387, Rainbow DSF 50, 2/set, same 1993 note"
+    }
+   ]
+  },
+  {
+   "brand": "Freedom Spas",
+   "brandSlug": "freedom-spas",
+   "model": "C-4637 cartridge",
+   "modelSlug": "c-4637",
+   "series": "Freedom Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4637",
+    "pleatco": "PRB37-IN-4",
+    "filbur": "FC-2380"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 37.0
+   },
+   "notes": "Unicel's Freedom list names Concord, Patriot, Ambassador and Executive on this row only: 4-15/16\" x 13-5/16\", C-4637, 37 sq ft, 4 oz. The spec table gives 158 pleats, 2-1/8\" open ends, and calls 37 sq ft an upgrade of the 25 sq ft C-4326 and C-4625. The brands on that spec line are Rainbow, Waterway, Morgan, Leisure Bay and Custom Molded Products, not Freedom. Filbur's Freedom section calls FC-2380 Rainbow Dynamic 37 and does not print the Concord names. PRB37-IN-4 is Filbur's Pleatco cell.",
+   "status": "verified",
+   "gaps": "Concord, Patriot, Ambassador and Executive are Unicel's Freedom list only. Spec-table applications and Filbur do not use those names. The following C-4950 row, not this one, carries the 1993 note. No Freedom OEM number.",
+   "fitment": [
+    {
+     "model": "Concord, Patriot, Ambassador and Executive",
+     "years": "",
+     "note": "Unicel Freedom list only. Filbur's matching row says Rainbow Dynamic 37.",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "PRB37-IN-4 is the Pleatco cell in Filbur's Freedom section. Not confirmed in Pleatco's Unicel cross-reference.",
+   "filburNote": "Freedom Spas section PDF p.18 (printed p.35): FC-2380, 4-15/16\" x 13-5/16\", open, Rainbow Dynamic 37, PRB37-IN-4, C-4637, 37 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freedom Spas line, PDF p.35 (printed p.31): Concord, Patriot, Ambassador, Executive = C-4637, 37 sq ft; spec table PDF p.9 (printed p.5): 158 pleats, 2-1/8\" open, upgrade of C-4326 and C-4625, application line does not name Freedom"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Freedom Spas section PDF p.18 (printed p.35): FC-2380, Rainbow Dynamic 37, PRB37-IN-4, C-4637, 37 sq ft. No Concord names"
+    }
+   ]
+  },
+  {
+   "brand": "Freedom Spas",
+   "brandSlug": "freedom-spas",
+   "model": "C-4950 cartridge",
+   "modelSlug": "c-4950",
+   "series": "Freedom Spas",
+   "oem": "",
+   "oemAll": "",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50.0
+   },
+   "notes": "Unicel's Freedom block ends with this 50 sq ft row and a blank model cell. The note \"Model dated after 1993\" is under this row. Filbur repeats the note on FC-2390 and calls the row Rainbow Dynamic 50. The same open cartridge is used by other brands. Not indexed: no Freedom OEM number and no model name.",
+   "status": "verified",
+   "gaps": "No model name. The 1993 note is not attached to the Concord names on C-4637. Duplicate of C-4950 rows under other brands.",
+   "fitment": [
+    {
+     "model": "Not named",
+     "years": "Model dated after 1993",
+     "note": "Unicel prints the note under this blank-model row. Filbur repeats it on Rainbow Dynamic 50.",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: C-4950 = PRB50-IN.",
+   "filburNote": "Freedom Spas section PDF p.18 (printed p.35): FC-2390, Rainbow Dynamic 50, \"Model dated after 1993\", C-4950, 50 sq ft.",
+   "index": false,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Freedom Spas line, PDF p.35 (printed p.31): blank model cell, C-4950, 4-15/16\" x 13-5/16\", 50 sq ft, 3 oz, note \"Model dated after 1993\" under the row"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel cross-reference PDF p.47: C-4950 = PRB50-IN"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Freedom Spas section PDF p.18 (printed p.35): FC-2390, Rainbow Dynamic 50, same 1993 note"
     }
    ]
   }
