@@ -21,6 +21,7 @@ const fitSrc = {
   mqdealer: 'Marquis spa dealer listings',
   beach: 'Beachcomber Hot Tubs product page',
   strong: 'Strong Spas FAQ',
+  pdc: 'PDC Spas Common Replacement Filter Elements (2025)',
 };
 
 const filters = JSON.parse(readFileSync(new URL('../data/filters.json', import.meta.url), 'utf8')).filters;
