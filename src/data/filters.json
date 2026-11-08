@@ -3898,7 +3898,7 @@
    },
    "notes": "",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Still unresolved. Checked 2026-11-04: Unicel's Cal Spas section still prints FIL11700016 as 6CH-975 (6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft). A search of the Filbur catalog the same day found no FIL11700016. Unresolved. Checked 2026-11-06: Unicel PDF p.30 (printed p.26) still prints FIL11700016 as 6CH-975, 6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft. No new manufacturer model chart and no Filbur row for FIL11700016. Still unresolved.",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Checked 2026-11-04: Unicel's Cal Spas section still prints FIL11700016 as 6CH-975 (6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft). A search of the Filbur catalog the same day found no FIL11700016. Unresolved. Checked 2026-11-06: Unicel PDF p.30 (printed p.26) still prints FIL11700016 as 6CH-975, 6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft. No new manufacturer model chart and no Filbur row for FIL11700016. Checked 2026-11-07: Unicel’s Cal Spas line still prints FIL11700016 as 6CH-975, 6-3/4\" × 15-1/2\", 2\" SAE, 75 sq ft. No model-to-cartridge chart was found. Still unresolved.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -5236,7 +5236,7 @@
    },
    "notes": "Made with antimicrobial filter media (Unicel spec note). Only the Unicel 2026 guide lists it among the catalogs. Two spa dealers sell OEM 20499 for Marquis ATV swim spas with matching area, length and handle, but a slightly larger diameter.",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT Checked 2026-11-04: Filbur's Marquis section does not list 20499 or 5CH-902AM. OGS Pool and Spa's listing prints 5-3/16\" x 30\", handle, a 2\" bottom and 90 sq ft, matching Unicel's diameter and length, but it does not say whether that 2\" bottom is MPT or the fine thread Mastercraft describes. Still unresolved. Checked 2026-11-06: Parts4tubs lists 5CH-902AM as a Unicel cartridge for Marquis Spas and reprints the catalog line \"Cartridge, 90sqft, Bar ht, 2\"mpt b, 5-3/16\", 30\", 4oz\" (UPC 678285250115). That matches Unicel's diameter, length and 2\" MPT wording. It is not a separate measurement of the fine thread. Still unresolved.",
+   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT Checked 2026-11-04: Filbur's Marquis section does not list 20499 or 5CH-902AM. OGS Pool and Spa's listing prints 5-3/16\" x 30\", handle, a 2\" bottom and 90 sq ft, matching Unicel's diameter and length, but it does not say whether that 2\" bottom is MPT or the fine thread Mastercraft describes. Checked 2026-11-06: Parts4tubs lists 5CH-902AM as a Unicel cartridge for Marquis Spas and reprints the catalog line \"Cartridge, 90sqft, Bar ht, 2\"mpt b, 5-3/16\", 30\", 4oz\" (UPC 678285250115). That matches Unicel's diameter, length and 2\" MPT wording. It is not a separate measurement of the fine thread. Checked 2026-11-07: no new measurement of the thread. A listing that reprints Unicel’s 2\" MPT line does not settle the fine-thread description from 2026-11-01. Still unresolved.",
    "fitment": [
     {
      "model": "Marquis ATV 14 and ATV 17 swim spas (ATV 14 Sport, ATV 14 Slash, ATV 17 Sport, ATV 17 Kona)",
@@ -6493,7 +6493,7 @@
    },
    "notes": "Unicel lists this 4-5/8\" x 6-3/4\" top-load cartridge for Softub. No OEM number is given, and neither Pleatco nor Filbur mentions Softub for it.",
    "status": "needs_verification",
-   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source. Checked 2026-11-04: Filbur lists FC-0125 / 4CH-20 under Saratoga (that row prints 15 sq ft), Leisure Bay (20 sq ft), Softsider (20 sq ft) and Vita (25 sq ft, OEM PVT-25), not under Softub. Pleatco lists Unicel's Saratoga OEM 20241-238 as PSG25P4 at 25 sq ft, not as a Softub part. Still no second source for the Softub application. Checked 2026-11-06: a pass over the Filbur catalog PDF found no row that prints Softub next to FC-0125 / 4CH-20. The size table still prints that Filbur number at 20 sq ft (Pleatco cell PHC25), and one brand row still prints Vita OEM PVT-25 at 25 sq ft. Still unresolved.",
+   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source. Checked 2026-11-04: Filbur lists FC-0125 / 4CH-20 under Saratoga (that row prints 15 sq ft), Leisure Bay (20 sq ft), Softsider (20 sq ft) and Vita (25 sq ft, OEM PVT-25), not under Softub. Pleatco lists Unicel's Saratoga OEM 20241-238 as PSG25P4 at 25 sq ft, not as a Softub part. Still no second source for the Softub application. Checked 2026-11-06: a pass over the Filbur catalog PDF found no row that prints Softub next to FC-0125 / 4CH-20. The size table still prints that Filbur number at 20 sq ft (Pleatco cell PHC25), and one brand row still prints Vita OEM PVT-25 at 25 sq ft. Checked 2026-11-07: Filbur still does not print Softub on an FC-0125 / 4CH-20 row. A Filbur brand row still pairs 4CH-20 with Vita OEM PVT-25. Still unresolved.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -6529,7 +6529,7 @@
    },
    "notes": "Intex sells this cartridge as Type S1: 29001E (twin pack), 29011E (six-pack) and single replacement part 11692. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees. The model list is Intex's own compatible-item list for part 11692 (Intex names five of them as 2019 sets); the years shown are the model-year folders Intex's replacement-parts archive files part 11692 under. A Home Depot listing for 29001E also names 28413E, 28423E and 28443E, which are not on Intex's list. The EG/EH versions of 28425, 28427, 28439 and 28441 take the newer Type S2 cartridge instead.",
    "status": "needs_verification",
-   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved Checked 2026-11-04: Pleatco's spec table still prints PIN4PAIR (OEM 29001E) with 1-5/8\" openings, and Unicel's C-4317 spec is still 2-1/16\". No new measurement. Unresolved. Checked 2026-11-06: All Filters' SpiroPure SP-PS-IT-S1 listing prints 1-5/8\" top and bottom holes for Intex 29001E / C-4317 / PIN4PAIR, which repeats Pleatco's figure rather than measuring Unicel's 2-1/16\". Still unresolved.",
+   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved Checked 2026-11-04: Pleatco's spec table still prints PIN4PAIR (OEM 29001E) with 1-5/8\" openings, and Unicel's C-4317 spec is still 2-1/16\". No new measurement. Unresolved. Checked 2026-11-06: All Filters' SpiroPure SP-PS-IT-S1 listing prints 1-5/8\" top and bottom holes for Intex 29001E / C-4317 / PIN4PAIR, which repeats Pleatco's figure rather than measuring Unicel's 2-1/16\". Checked 2026-11-07: Pleatco spec table PDF p.31 still prints PIN4PAIR (OEM 29001E) at 4-1/4\" × 2-15/16\" with 1-5/8\" openings. Unicel’s C-4317 spec still prints 2-1/16\" both ends. Still unresolved.",
    "fitment": [
     {
      "model": "Intex PureSpa 28403E",
@@ -7728,6 +7728,405 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "Freedom Spas section PDF p.18 (printed p.35): FC-2390, Rainbow Dynamic 50, same 1993 note"
+    }
+   ]
+  },
+  {
+   "brand": "PDC Spas",
+   "brandSlug": "pdc-spas",
+   "model": "C-4326 cartridge (OEM FLT-201TL)",
+   "modelSlug": "c-4326",
+   "series": "Luxury, Premium, SE and LX",
+   "oem": "FLT-201TL",
+   "oemAll": "FLT-201TL",
+   "equivalents": {
+    "unicel": "C-4326",
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 25.0
+   },
+   "notes": "PDC’s 2025 guide: Luxury, Premium, SE and LX, 1990 to present, FLT-201TL, 25 sq ft, 5\" × 13-5/16\", 2-1/8\" holes, named as Unicel C-4326. Unicel’s spec table prints C-4326 at 4-15/16\" × 13-5/16\", 106 pleats, 3 oz, 25 sq ft. Pleatco prints PRB25-IN at 5\" × 13-5/16\". Filbur’s size table crosses FC-2375 to C-4326. Filbur’s PDC section prints FC-2370 as C-4325, which is a different, 11-7/8\" cartridge.",
+   "status": "verified",
+   "gaps": "Diameter 5\" (PDC, Pleatco) vs 4-15/16\" (Unicel, Filbur). Filbur’s PDC section prints C-4325 on the FC-2370 row; its size table prints FC-2370 as C-4625 and FC-2375 as C-4326.",
+   "fitment": [
+    {
+     "model": "Luxury, Premium, SE and LX",
+     "years": "1990 to present",
+     "note": "FLT-201TL, 25 sq ft open cartridge. PDC does not split these four series onto different parts.",
+     "src": "pdc"
+    }
+   ],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: C-4326 = PRB25-IN. Spec table PDF p.32: 5\" × 13-5/16\", 2-1/8\" open, 3 oz, 25 sq ft. Deactivated PDC25-AFS points at PRB25-IN; PDC’s 2025 guide does not print PDC25-AFS.",
+   "filburNote": "Dimensional listing PDF p.9 (printed p.17): FC-2375 = PRB25-IN = C-4326, 4-15/16\" × 13-5/16\", 25 sq ft. Same page: FC-2370 = PRB25-IN-4 = C-4625. PDC Spas section PDF p.23 (printed p.45) prints FC-2370 as C-4325, not C-4326.",
+   "index": true,
+   "sources": [
+    {
+     "source": "PDC Spas (manufacturer filter guide, 2025)",
+     "url": "https://media.cmsmax.cloud/qq67leqlk45sgt0rapx2j/Filter%20Guide%20for%20Web%202025.pdf",
+     "where": "Luxury, Premium, SE and LX, 1990–present: FLT-201TL, 25 sq ft, 5\" × 13-5/16\", 2-1/8\" holes, Unicel C-4326"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "PDC Spas block, PDF p.47 (printed p.43): C-4326, 4-15/16\" × 13-5/16\", 25 sq ft, 3 oz. Spec table PDF p.9 (printed p.5): 106 pleats, 2-1/8\" open ends. C-4625 is the 4 oz cartridge of the same size."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PRB25-IN, 5\" × 13-5/16\", 3 oz, 25 sq ft. Cross-reference PDF p.47: C-4326 = PRB25-IN."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Size table PDF p.9 (printed p.17): FC-2375 = C-4326. PDC section printed p.45: FC-2370 printed as C-4325."
+    }
+   ]
+  },
+  {
+   "brand": "PDC Spas",
+   "brandSlug": "pdc-spas",
+   "model": "C-4405 cartridge (OEM FLT-171-CART)",
+   "modelSlug": "c-4405",
+   "series": "LifeStyle, XD2 spa side, and River",
+   "oem": "FLT-171-CART",
+   "oemAll": "FLT-171-CART",
+   "equivalents": {
+    "unicel": "C-4405",
+    "pleatco": "PRB25SF-JH-PAIR",
+    "filbur": "FC-2387"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 6.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "6-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 25.0
+   },
+   "notes": "Shown at 25 sq ft because that is what PDC’s 2025 guide prints for the element (LifeStyle, XD2 spa side, and River, 2010 to present), 5\" × 6-5/8\", 2-1/8\" holes, named as Unicel C-4405. Unicel’s OEM cross-reference prints 50 in the square-foot column for C-4405, and the spec note says two cartridges per set. The spec row itself does not print a square-foot figure. Pleatco prints PRB25SF at 25 sq ft for one cartridge and PRB25SF-JH-PAIR at 50 sq ft, and its cross sends C-4405 to the pair. Filbur prints FC-2387 at 50 sq ft, “6 sets,” with the same two-per-set note.",
+   "status": "verified",
+   "gaps": "Area 25 sq ft (PDC; Pleatco single PRB25SF) vs 50 sq ft (Unicel OEM column; Filbur FC-2387; Pleatco pair). Diameter 5\" (PDC, Pleatco) vs 4-15/16\" (Unicel, Filbur). Filbur’s PDC section does not list this cartridge. Unicel’s PDC block does not list C-4405.",
+   "fitment": [
+    {
+     "model": "LifeStyle, XD2 spa side, and River",
+     "years": "2010 to present",
+     "note": "FLT-171-CART. The XD2 cold side from 2024 is FLT-1000-CART, not this cartridge.",
+     "src": "pdc"
+    }
+   ],
+   "pleatcoNote": "Spec table PDF p.32: PRB25SF, 5\" × 6-5/8\", 2-1/8\" open, 3 oz, 25 sq ft, case quantity 12. PRB25SF-PAIR and PRB25SF-JH-PAIR, same body, 50 sq ft, case quantity 6. Cross-reference PDF p.47: C-4405 = PRB25SF-JH-PAIR.",
+   "filburNote": "Dimensional listing PDF p.9 (printed p.16): FC-2387, 4-15/16\" × 6-5/8\", 2-1/8\" open, PRB25SF-PAIR/JH, C-4405, 50 sq ft, 6 sets. Note: two cartridges per set with stick handle. PDC Spas section does not list FC-2387.",
+   "index": true,
+   "sources": [
+    {
+     "source": "PDC Spas (manufacturer filter guide, 2025)",
+     "url": "https://media.cmsmax.cloud/qq67leqlk45sgt0rapx2j/Filter%20Guide%20for%20Web%202025.pdf",
+     "where": "LifeStyle, XD2 spa side, and River, 2010–present: FLT-171-CART, 25 sq ft, 5\" × 6-5/8\", 2-1/8\" holes, Unicel C-4405"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Spec table PDF p.8 (printed p.4): C-4405, 4-15/16\" × 6-5/8\", 158 pleats, 4 oz, two per set. OEM cross-reference prints 50 sq ft. PDC block does not list C-4405."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "PDF p.32: PRB25SF at 25 sq ft and PRB25SF-JH-PAIR at 50 sq ft. PDF p.47: C-4405 = PRB25SF-JH-PAIR."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "PDF p.9 (printed p.16): FC-2387 = C-4405, 50 sq ft, 6 sets, two per set."
+    }
+   ]
+  },
+  {
+   "brand": "PDC Spas",
+   "brandSlug": "pdc-spas",
+   "model": "PRB7B cartridge (OEM FLT-118)",
+   "modelSlug": "prb7b",
+   "series": "Timeless and XTR",
+   "oem": "FLT-118",
+   "oemAll": "FLT-118",
+   "equivalents": {
+    "pleatco": "PRB7B"
+   },
+   "dimensions": {
+    "diameterIn": 5,
+    "lengthIn": 4.625,
+    "diameterText": "5\"",
+    "lengthText": "4-5/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 17.0
+   },
+   "notes": "PDC’s 2025 guide is the only size: Timeless and XTR, 2000–2005, FLT-118, Pleatco PRB7B, 17 sq ft, 5\" × 4-5/8\", 2-1/8\" holes. Pleatco’s 2023 deactivated list prints PRB7B with replacement N/A, and the spec table has no PRB7B row. Unicel’s PDC block lists C-4401 at 35 sq ft, 4-15/16\" × 4-5/8\", two per set, and does not print FLT-118 or PRB7B. Filbur’s PDC section prints that C-4401 set (FC-2386) and does not print PRB7B. Pleatco does not say PRB7B was replaced by PRB17.5SF-PAIR.",
+   "status": "verified",
+   "gaps": "Pleatco 2023: PRB7B deactivated, replacement N/A, no spec row. Unicel and Filbur list C-4401 at 35 sq ft and two per set for a cartridge of this length, and do not name PRB7B. No Unicel or Filbur equivalent is stored on this row.",
+   "fitment": [
+    {
+     "model": "Timeless and XTR",
+     "years": "2000–2005",
+     "note": "FLT-118, Pleatco PRB7B, 17 sq ft. PDC names no Unicel number.",
+     "src": "pdc"
+    }
+   ],
+   "pleatcoNote": "Deactivated list, PDF p.23: PRB7B, replacement N/A. No PRB7B line in the 2023 spec table. PRB17.5SF-PAIR (PDF p.31) is 5\" × 4-5/8\", 35 sq ft, and is not named as the replacement.",
+   "filburNote": "PDC Spas section, PDF p.23 (printed p.45): FC-2386, Rainbow DSF 35, two per set, PRB17.5SF-PAIR/JH, C-4401, 35 sq ft, 4-15/16\" × 4-5/8\". No PRB7B and no FLT-118.",
+   "index": true,
+   "sources": [
+    {
+     "source": "PDC Spas (manufacturer filter guide, 2025)",
+     "url": "https://media.cmsmax.cloud/qq67leqlk45sgt0rapx2j/Filter%20Guide%20for%20Web%202025.pdf",
+     "where": "Timeless and XTR, 2000–2005: FLT-118, 17 sq ft, 5\" × 4-5/8\", 2-1/8\" holes, Pleatco PRB7B"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated part numbers, PDF p.23: PRB7B replacement N/A"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "PDC block, PDF p.47 (printed p.43): C-4401, 35 sq ft, 4-15/16\" × 4-5/8\". Spec note: two per set. No FLT-118."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "PDC section, printed p.45: FC-2386 = C-4401, 35 sq ft, two per set. No PRB7B."
+    }
+   ]
+  },
+  {
+   "brand": "PDC Spas",
+   "brandSlug": "pdc-spas",
+   "model": "C-4310 cartridge (OEM FLT-101SK)",
+   "modelSlug": "c-4310",
+   "series": "Nouveau",
+   "oem": "FLT-101SK",
+   "oemAll": "FLT-101SK",
+   "equivalents": {
+    "unicel": "C-4310",
+    "pleatco": "PWW10",
+    "filbur": "FC-3077"
+   },
+   "dimensions": {
+    "diameterIn": 4.25,
+    "lengthIn": 4,
+    "diameterText": "4-1/4\"",
+    "lengthText": "4\"",
+    "topCore": "2-1/16\" / open",
+    "bottomCore": "2-1/16\" / open",
+    "sqft": 10.0
+   },
+   "notes": "PDC’s 2025 guide: Nouveau, 1996–1999, FLT-101SK, 10 sq ft, 4-1/4\" × 4\", 2-1/16\" holes, Pleatco PWW10. Unicel prints the same size for C-4310 (216 pleats, 3 oz, 2-1/16\" both ends) and lists it on the PDC block. Pleatco’s cross sends C-4310 to PWW10 and prints PWW10 at 10 sq ft; PWW10PAIR is 20 sq ft and is not this row. Filbur prints FC-3077 at the same outside size with 1-15/16\" openings.",
+   "status": "verified",
+   "gaps": "End openings 2-1/16\" (PDC, Unicel, Pleatco) vs 1-15/16\" (Filbur FC-3077).",
+   "fitment": [
+    {
+     "model": "Nouveau",
+     "years": "1996–1999",
+     "note": "FLT-101SK, 10 sq ft skim filter. Pleatco PWW10, not the 20 sq ft pair.",
+     "src": "pdc"
+    }
+   ],
+   "pleatcoNote": "Spec table PDF p.31: PWW10, 4-1/4\" × 4\", 2-1/16\" open, 3 oz, 10 sq ft, Waterway Skim Filter 10, OEM 817-0010. PWW10PAIR is 20 sq ft. Cross-reference PDF p.47: C-4310 = PWW10.",
+   "filburNote": "Dimensional listing PDF p.8 (printed p.15) and PDC Spas section PDF p.23 (printed p.45): FC-3077, 4-1/4\" × 4\", 1-15/16\" open, Skim Filter 10, PWW10, C-4310, 10 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "PDC Spas (manufacturer filter guide, 2025)",
+     "url": "https://media.cmsmax.cloud/qq67leqlk45sgt0rapx2j/Filter%20Guide%20for%20Web%202025.pdf",
+     "where": "Nouveau, 1996–1999: FLT-101SK, 10 sq ft, 4-1/4\" × 4\", 2-1/16\" holes, Pleatco PWW10"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "PDC block and spec table PDF p.6 (printed p.2): C-4310, 4-1/4\" × 4\", 2-1/16\" open both ends, 216 pleats, 3 oz, 10 sq ft"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "PDF p.31: PWW10 at 10 sq ft, 2-1/16\" openings. PDF p.47: C-4310 = PWW10."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "PDF p.8 (printed p.15) and PDC section printed p.45: FC-3077, 1-15/16\" openings, C-4310, 10 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "PDC Spas",
+   "brandSlug": "pdc-spas",
+   "model": "4CH-15 cartridge (OEM FLT-1000-CART)",
+   "modelSlug": "4ch-15",
+   "series": "XD1, XD1+ and XD2 cold side",
+   "oem": "FLT-1000-CART",
+   "oemAll": "FLT-1000-CART; 817-0020",
+   "equivalents": {
+    "unicel": "4CH-15"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 5.1875,
+    "diameterText": "4-5/8\"",
+    "lengthText": "5-3/16\"",
+    "topCore": "dual bar handle",
+    "bottomCore": "1-1/2\" SAE",
+    "sqft": 15.0
+   },
+   "notes": "PDC’s 2025 guide: XD1, XD1+ and the XD2 cold side, 2024 to present, FLT-1000-CART, 15 sq ft, 4-5/8\" × 5-1/4\", 1-1/2\" SAE on the bottom, bar handle on a closed top, Waterway 817-0020. Unicel’s Waterway line prints 817-0020 as 4CH-15 at 4-5/8\" × 5-3/16\", dual bar handle, 1-1/2\" SAE, 199 pleats, 3 oz, 15 sq ft. The length differs by 1/16\". The dimensions on this row are Unicel’s. Pleatco’s 2023 cross-reference has no 4CH-15 and no 817-0020. Filbur’s PDC section does not list it. The XD2 spa side is FLT-171-CART, not this cartridge.",
+   "status": "verified",
+   "gaps": "Length 5-1/4\" (PDC) vs 5-3/16\" (Unicel). No Pleatco equivalent in the 2023 cross-reference. No Filbur PDC row. Top wording: PDC “bar type handle on closed top”; Unicel “dual bar handle.”",
+   "fitment": [
+    {
+     "model": "XD1, XD1+ and XD2 cold side",
+     "years": "2024 to present",
+     "note": "FLT-1000-CART / Waterway 817-0020. Not the open XD2 spa-side cartridge.",
+     "src": "pdc"
+    }
+   ],
+   "pleatcoNote": "Not in the Pleatco 2023 Unicel cross-reference (no 4CH-15, no 817-0020).",
+   "filburNote": "Not in Filbur’s PDC Spas section (printed p.45).",
+   "index": true,
+   "sources": [
+    {
+     "source": "PDC Spas (manufacturer filter guide, 2025)",
+     "url": "https://media.cmsmax.cloud/qq67leqlk45sgt0rapx2j/Filter%20Guide%20for%20Web%202025.pdf",
+     "where": "XD Series, XD1, XD1+ and XD2 cold side, 2024–present: FLT-1000-CART, 15 sq ft, 4-5/8\" × 5-1/4\", 1-1/2\" SAE, bar handle, closed top, Waterway 817-0020"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway line: 817-0020 = 4CH-15, 4-5/8\" × 5-3/16\", 1-1/2\" SAE, 199 pleats, 3 oz, 15 sq ft. Spec table PDF p.6 (printed p.2): dual bar handle."
+    }
+   ]
+  },
+  {
+   "brand": "PDC Spas",
+   "brandSlug": "pdc-spas",
+   "model": "4CH-949 cartridge (OEM FLT-SWIM50-CART)",
+   "modelSlug": "4ch-949",
+   "series": "Synergy, Summit, Splash, Vitality, and dual-zone hot-tub side",
+   "oem": "FLT-SWIM50-CART",
+   "oemAll": "FLT-SWIM50-CART",
+   "equivalents": {
+    "unicel": "4CH-949",
+    "pleatco": "PWW50L",
+    "filbur": "FC-0172"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.5,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-1/2\"",
+    "topCore": "v-groove semi-circular handle",
+    "bottomCore": "2\" female SAE thread",
+    "sqft": 50.0
+   },
+   "notes": "Dimensions shown are Unicel’s: 4-15/16\" × 13-1/2\", v-groove handle, 210 pleats, 3 oz, 50 sq ft, 2\" female SAE, note “For use on 1-1/2\" male SAE stand pipe.” PDC’s 2025 guide rates FLT-SWIM50-CART at 50 sq ft, 5\" × 13-1/16\", 1-1/2\" female SAE (38 mm), for Synergy, Summit, Splash, Vitality, and the hot-tub zone of dual-zone models, 2009 to present, and names Unicel 4CH-949. Pleatco prints PWW50L at 5\" × 13-3/16\", 1-1/2\" female SAE, 50 sq ft, OEM 817-4050. Unicel’s Waterway line also prints 817-4050 as 4CH-949. PDC does not print 817-4050. Filbur’s size table prints FC-0172 at Unicel’s 13-1/2\" and 2\" female SAE.",
+   "status": "verified",
+   "gaps": "Length 13-1/16\" (PDC) vs 13-3/16\" (Pleatco) vs 13-1/2\" (Unicel, Filbur). Thread wording: PDC and Pleatco 1-1/2\" female SAE; Unicel and Filbur 2\" female SAE, with Unicel’s note that it fits a 1-1/2\" male SAE standpipe. Diameter 5\" (PDC, Pleatco) vs 4-15/16\" (Unicel, Filbur). Not in Filbur’s PDC section.",
+   "fitment": [
+    {
+     "model": "Synergy, Summit, Splash, Vitality, and the hot-tub zone of dual-zone models",
+     "years": "2009 to present",
+     "note": "FLT-SWIM50-CART, 50 sq ft top-mount. PDC names Unicel 4CH-949.",
+     "src": "pdc"
+    }
+   ],
+   "pleatcoNote": "Cross-reference PDF p.47: 4CH-949 = PWW50L. Spec table PDF p.32: 5\" × 13-3/16\", handle, 1-1/2\" female SAE, 3 oz, 50 sq ft, Waterway Teleweir 50, OEM 817-4050. Deactivated PDC570-AFS points at PWW50L; PDC’s 2025 guide does not print PDC570-AFS.",
+   "filburNote": "Dimensional listing PDF p.9 (printed p.17): FC-0172, 4-15/16\" × 13-1/2\", handle, 2\" female SAE, 4CH-949, 50 sq ft. PDC Spas section does not list it.",
+   "index": true,
+   "sources": [
+    {
+     "source": "PDC Spas (manufacturer filter guide, 2025)",
+     "url": "https://media.cmsmax.cloud/qq67leqlk45sgt0rapx2j/Filter%20Guide%20for%20Web%202025.pdf",
+     "where": "Synergy, Summit, Splash, Vitality, and the hot-tub zone of dual-zone models, 2009–present: FLT-SWIM50-CART, 50 sq ft, 5\" × 13-1/16\", 1-1/2\" female SAE (38 mm), Unicel 4CH-949"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Spec table PDF p.9 (printed p.5): 4CH-949, 4-15/16\" × 13-1/2\", 210 pleats, 3 oz, 50 sq ft, 2\" female SAE, note for a 1-1/2\" male SAE standpipe. Waterway line: 817-4050 = 4CH-949."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "PDF p.32: PWW50L, 5\" × 13-3/16\", 1-1/2\" female SAE, 50 sq ft. PDF p.47: 4CH-949 = PWW50L."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "PDF p.9 (printed p.17): FC-0172 = 4CH-949, 13-1/2\", 2\" female SAE, 50 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "PDC Spas",
+   "brandSlug": "pdc-spas",
+   "model": "C-4975 cartridge (OEM FLT-SWIM75-CART)",
+   "modelSlug": "c-4975",
+   "series": "TruSwim",
+   "oem": "FLT-SWIM75-CART",
+   "oemAll": "FLT-SWIM75-CART",
+   "equivalents": {
+    "unicel": "C-4975",
+    "pleatco": "PRB75",
+    "filbur": "FC-2395"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 20.125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "20-1/8\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 75.0
+   },
+   "notes": "PDC’s 2025 guide: TruSwim, 2016 to present, FLT-SWIM75-CART, 75 sq ft, 5\" × 20-1/8\", 2\" center hole, named as Unicel C-4975. Unicel’s spec table prints C-4975 at 4-15/16\" × 20-1/8\", 2-1/8\" open both ends, 210 pleats, 3 oz, 75 sq ft. Pleatco prints PRB75 at 5\" × 20-1/8\", 2-1/8\" both ends, 3 oz, 75 sq ft. Filbur prints FC-2395 at 4-15/16\" × 20-1/8\", 2-1/8\" open, 75 sq ft. The opening PDC prints (2\") is not the 2-1/8\" the three catalogs print. Dimensions on this row are Unicel’s.",
+   "status": "verified",
+   "gaps": "Center opening 2\" (PDC) vs 2-1/8\" (Unicel, Pleatco, Filbur). Diameter 5\" (PDC, Pleatco) vs 4-15/16\" (Unicel, Filbur). Not in Filbur’s PDC section or Unicel’s PDC block.",
+   "fitment": [
+    {
+     "model": "TruSwim",
+     "years": "2016 to present",
+     "note": "FLT-SWIM75-CART, 75 sq ft top-mount. PDC names Unicel C-4975.",
+     "src": "pdc"
+    }
+   ],
+   "pleatcoNote": "Cross-reference PDF p.47: C-4975 = PRB75. Spec table PDF p.32: 5\" × 20-1/8\", 2-1/8\" open, 3 oz, 75 sq ft. Deactivated PDC100-AFS points at PRB75; PDC’s 2025 guide does not print PDC100-AFS.",
+   "filburNote": "Dimensional listing PDF p.9 (printed p.17): FC-2395, 4-15/16\" × 20-1/8\", 2-1/8\" open, PRB75, C-4975, 75 sq ft. PDC Spas section does not list it.",
+   "index": true,
+   "sources": [
+    {
+     "source": "PDC Spas (manufacturer filter guide, 2025)",
+     "url": "https://media.cmsmax.cloud/qq67leqlk45sgt0rapx2j/Filter%20Guide%20for%20Web%202025.pdf",
+     "where": "TruSwim, 2016–present: FLT-SWIM75-CART, 75 sq ft, 5\" × 20-1/8\", 2\" center hole, Unicel C-4975"
+    },
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Spec table PDF p.9 (printed p.5): C-4975, 4-15/16\" × 20-1/8\", 2-1/8\" open both ends, 210 pleats, 3 oz, 75 sq ft. Not on the PDC block."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "PDF p.32: PRB75, 5\" × 20-1/8\", 2-1/8\", 75 sq ft. PDF p.47: C-4975 = PRB75."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "PDF p.9 (printed p.17): FC-2395 = C-4975, 4-15/16\" × 20-1/8\", 2-1/8\" open, 75 sq ft"
     }
    ]
   }

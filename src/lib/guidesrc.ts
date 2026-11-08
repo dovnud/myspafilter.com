@@ -65,5 +65,9 @@ export const SRC: Record<string,{t:string;u:string}> = {
   sdNo:{t:'Sundance Spas Norway: Filteroversikt alle modeller fra 1995 (filter overview by model, year and serial number, May 2026)',u:'https://www.sundance.no/wp-content/uploads/2026/05/Filteroversikt_pr_mai_2026.pdf'},
   beach25:{t:'Beachcomber Hot Tubs: Microfilter 25 sq ft, SKU 3005845 (107 pleats, 4-15/16" × 13-5/16")',u:'https://www.beachcomberhottubs.com/en_us/beachcomber-25-square-foot-medium'},
   beach50:{t:'Beachcomber Hot Tubs: Microfilter 50 sq ft, SKU 3005815 (212 pleats, same body as the 25)',u:'https://www.beachcomberhottubs.com/en_us/microfilter-cartridge'},
+  msHurricane:{t:'Master Spas: Safeguard your hot tub during a hurricane (27 September 2022)',u:'https://www.masterspas.com/blog/hot-tub-hurricane/'},
+  ncdhhsHelene:{t:'North Carolina Department of Health and Human Services: Guidance for hot tubs in private, rental and vacation homes (October 2024, Hurricane Helene)',u:'https://www.ncdhhs.gov/media/26062/open'},
+  cdcLegPdf:{t:'CDC: Controlling Legionella in Hot Tubs (toolkit PDF). No-illness remediation says clean and service filters per the manufacturer. Suspected outbreak remediation says replace filters or filter media.',u:'https://www.cdc.gov/control-legionella/media/pdfs/Control-Toolkit-Hot-Tubs.pdf'},
+  cdcDisplay:{t:'CDC: Minimizing Legionella Risk from Hot Tub Displays (remove filters, leave them to dry, clean before reuse, replace on the manufacturer’s schedule)',u:'https://www.cdc.gov/control-legionella/php/guidance/hot-tub-displays.html'},
 };
 export const c=(...k:string[])=>k.map(x=>`<sup><a href="#src-${x}">[${Object.keys(SRC).indexOf(x)+1}]</a></sup>`).join('');
