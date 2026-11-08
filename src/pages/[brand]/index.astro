@@ -14,7 +14,7 @@ const models = new Set(list.flatMap(f=>(f.fitment||[]).map(x=>x.model)));
 const thin = list.filter(f=>f.index===false);
 const copy = brandCopy[b.slug]||[];
 // Brands with a /fitment/<slug>-filter-by-model-year/ page
-const FIT_SLUG: Record<string,string> = { 'hot-spring':'hot-spring', caldera:'caldera', jacuzzi:'jacuzzi', sundance:'sundance', bullfrog:'bullfrog', 'master-spas':'master-spas', 'marquis-spas':'marquis', 'dimension-one-spas':'dimension-one', 'nordic-hot-tubs':'nordic-hot-tubs', 'arctic-spas':'arctic-spas', softub:'softub', intex:'intex', bestway:'bestway', beachcomber:'beachcomber', 'strong-spas':'strong-spas', 'freeflow-spas':'freeflow', 'freedom-spas':'freedom-spas', 'pdc-spas':'pdc-spas' };
+const FIT_SLUG: Record<string,string> = { 'hot-spring':'hot-spring', caldera:'caldera', jacuzzi:'jacuzzi', sundance:'sundance', bullfrog:'bullfrog', 'master-spas':'master-spas', 'marquis-spas':'marquis', 'dimension-one-spas':'dimension-one', 'nordic-hot-tubs':'nordic-hot-tubs', 'arctic-spas':'arctic-spas', softub:'softub', intex:'intex', bestway:'bestway', beachcomber:'beachcomber', 'strong-spas':'strong-spas', 'freeflow-spas':'freeflow', 'freedom-spas':'freedom-spas', 'pdc-spas':'pdc-spas', 'coleman-spas':'coleman-spas', 'maax-spas':'maax-spas' };
 // Hot Spring family lines whose models sit in a section of the Hot Spring lookup
 const FAMILY_FIT: Record<string,string> = { 'hot-spot':'hot-spot', solana:'solana' };
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
@@ -44,6 +44,8 @@ const brandGuides: Record<string, [string, string][]> = {
   'freeflow-spas': [['/fitment/freedom-spas-filter-by-model-year/','Freedom Spas filter by model, the other catalog heading'],['/guides/open-end-vs-threaded-hot-tub-filters/','Open-end vs threaded hot tub filters']],
   'freedom-spas': [['/fitment/freeflow-filter-by-model-year/','Freeflow filter by model, filed separately by Unicel'],['/guides/why-same-size-spa-filters-have-different-square-feet/','Why 37 and 50 sq ft can share one length']],
   'pdc-spas': [['/guides/why-same-size-spa-filters-have-different-square-feet/','Why 25 and 50 sq ft can share the River cartridge'],['/guides/open-end-vs-threaded-hot-tub-filters/','Open-end vs threaded, for the XD cold-side cartridge']],
+  'coleman-spas': [['/fitment/maax-spas-filter-by-model-year/','Maax Spas of AZ, which shares three Coleman OEM numbers'],['/guides/open-end-vs-threaded-hot-tub-filters/','Open-end vs threaded, for the 1-1/2" and 2" pairs']],
+  'maax-spas': [['/fitment/coleman-spas-filter-by-model-year/','Coleman part numbers, including the OEMs this list shares'],['/guides/why-same-size-spa-filters-have-different-square-feet/','Why one Unicel number can be printed at 35 and at 50 sq ft']],
 };
 const extraGuides = brandGuides[b.slug] || [];
 const commonGuides: [string, string][] = [
