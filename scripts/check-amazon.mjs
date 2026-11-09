@@ -6,7 +6,7 @@
  *   node scripts/check-amazon.mjs --src-only   config + data only (no dist/ needed)
  *
  * Fails (exit 1) when:
- *  - amazonTag is set but malformed (expected like "yourname-20"),
+ *  - amazonTag is set but malformed (expected like "myspafilter-20"),
  *  - an ASIN record is malformed, or its listing part is not one of the row's Unicel/Pleatco/OEM parts,
  *  - any built page links to amazon.com/dp/<ASIN> without a verified record in src/data/amazon-asins.json or src/data/amazon-products.json (titleToken must appear in the verified title),
  *  - any built page with an Amazon link lacks the visible Associate disclosure text next to the buy buttons,
@@ -28,8 +28,8 @@ const cfgSrc = readFileSync(join(root, 'src/config/affiliate.ts'), 'utf8');
 const tagMatch = cfgSrc.match(/amazonTag:\s*(['"`])([^'"`]*)\1/);
 if (!tagMatch) fail('Could not find amazonTag in src/config/affiliate.ts');
 const tag = tagMatch ? tagMatch[2] : '';
-const TAG_RE = /^[a-z0-9][a-z0-9_-]{0,58}-\d{2}$/i; // e.g. yourname-20
-if (tag && !TAG_RE.test(tag)) fail(`amazonTag "${tag}" is malformed (expected something like "yourname-20")`);
+const TAG_RE = /^[a-z0-9][a-z0-9_-]{0,58}-\d{2}$/i; // e.g. myspafilter-20
+if (tag && !TAG_RE.test(tag)) fail(`amazonTag "${tag}" is malformed (expected something like "myspafilter-20")`);
 
 // ---- data: ASIN records ----
 const asinFile = JSON.parse(readFileSync(join(root, 'src/data/amazon-asins.json'), 'utf8'));

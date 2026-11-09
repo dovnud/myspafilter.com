@@ -1,0 +1,160 @@
+---
+import { turnstileSitekey } from '../config/turnstile';
+import { REPLACE_CONSENT, REPLACE_PURPOSE } from '../../functions/lib/validate.mjs';
+interface Props { partId: string; oem?: string; unicel?: string; pleatco?: string; filbur?: string }
+const { partId, oem = '', unicel = '', pleatco = '', filbur = '' } = Astro.props;
+const id = partId.trim().toLowerCase();
+const bits = [
+  oem && `OEM ${oem}`,
+  unicel && `Unicel ${unicel}`,
+  pleatco && `Pleatco ${pleatco}`,
+  filbur && `Filbur ${filbur}`,
+].filter(Boolean);
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+---
+{bits.length > 0 && <form class="card replace-signup" method="post" action="/api/subscribe" data-replace-signup data-sitekey={turnstileSitekey}>
+  <p class="replace-part">{bits.join(' · ')}</p>
+  <p class="hp" aria-hidden="true"><label>Company<br><input name="company" type="text" tabindex="-1" autocomplete="off" value=""></label></p>
+  <p><label>Email<br><input name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" spellcheck="false"></label></p>
+  <input type="hidden" name="page_url" value={pageUrl}>
+  <input type="hidden" name="purpose" value={REPLACE_PURPOSE}>
+  <input type="hidden" name="consent_text" value={REPLACE_CONSENT}>
+  <input type="hidden" name="part_id" value={id}>
+  <input type="hidden" name="oem" value={oem || undefined}>
+  <input type="hidden" name="unicel" value={unicel || undefined}>
+  <input type="hidden" name="pleatco" value={pleatco || undefined}>
+  <input type="hidden" name="filbur" value={filbur || undefined}>
+  <p class="replace-note">{REPLACE_CONSENT}</p>
+  {turnstileSitekey && <div data-turnstile></div>}
+  <p><button class="btn" type="submit">Email me in 12 months to replace this exact filter</button></p>
+  <p data-status role="status"></p>
+  <p><small>Deletion requests go only to the address on the <a href="/privacy/">privacy page</a>.</small></p>
+  <noscript><p>With JavaScript off, this check cannot run. Use the address on the <a href="/privacy/">privacy page</a>.</p></noscript>
+</form>}
+<script>
+import { reminderEvent } from '../lib/reminder-event.mjs';
+
+const SCRIPT = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+
+function tokenOf(form: HTMLFormElement) {
+  const input = form.querySelector<HTMLInputElement>('[name="cf-turnstile-response"]');
+  return input ? input.value : '';
+}
+
+function renderWidget(form: HTMLFormElement) {
+  const box = form.querySelector<HTMLElement>('[data-turnstile]');
+  const sitekey = form.getAttribute('data-sitekey') || '';
+  const turnstile = (window as unknown as { turnstile?: { render: Function; reset: Function } }).turnstile;
+  if (!box || !sitekey || !turnstile || form.dataset.widget) return;
+  form.dataset.widget = turnstile.render(box, {
+    sitekey,
+    action: 'replace_12mo',
+    callback: () => {
+      if (form.dataset.pending === '1') {
+        form.dataset.pending = '';
+        form.requestSubmit();
+      }
+    },
+  });
+}
+
+function ensureTurnstile(form: HTMLFormElement) {
+  const sitekey = form.getAttribute('data-sitekey') || '';
+  if (!sitekey || form.dataset.widget || form.dataset.loading) return;
+  const turnstile = (window as unknown as { turnstile?: unknown }).turnstile;
+  if (turnstile) {
+    renderWidget(form);
+    return;
+  }
+  form.dataset.loading = '1';
+  const existing = document.querySelector<HTMLScriptElement>('script[data-replace-turnstile]');
+  if (existing) {
+    if ((window as unknown as { turnstile?: unknown }).turnstile || existing.dataset.loaded === '1') renderWidget(form);
+    else existing.addEventListener('load', () => renderWidget(form), { once: true });
+    return;
+  }
+  const script = document.createElement('script');
+  script.src = SCRIPT;
+  script.async = true;
+  script.dataset.replaceTurnstile = '1';
+  script.onload = () => {
+    script.dataset.loaded = '1';
+    document.querySelectorAll<HTMLFormElement>('[data-replace-signup][data-loading]').forEach(renderWidget);
+  };
+  document.head.appendChild(script);
+}
+
+function track(partId: string) {
+  const event = reminderEvent(partId);
+  if (!event) return;
+  const w = window as unknown as { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void };
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({ event: event.name, part_id: event.params.part_id });
+  if (typeof w.gtag === 'function') w.gtag('event', event.name, event.params);
+}
+
+document.addEventListener('focusin', (event) => {
+  const form = (event.target as Element | null)?.closest?.('form[data-replace-signup]') as HTMLFormElement | null;
+  if (form) ensureTurnstile(form);
+});
+document.addEventListener('pointerdown', (event) => {
+  const form = (event.target as Element | null)?.closest?.('form[data-replace-signup]') as HTMLFormElement | null;
+  if (form) ensureTurnstile(form);
+});
+document.addEventListener('submit', (event) => {
+  const form = event.target;
+  if (!(form instanceof HTMLFormElement) || !form.hasAttribute('data-replace-signup')) return;
+  event.preventDefault();
+  const status = form.querySelector<HTMLElement>('[data-status]');
+  const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+  if (!status || !button) return;
+  status.textContent = '';
+  const sitekey = form.getAttribute('data-sitekey') || '';
+  if (sitekey && !tokenOf(form)) {
+    form.dataset.pending = '1';
+    ensureTurnstile(form);
+    status.textContent = 'Confirming this is a person. Wait a moment, then the request will store.';
+    return;
+  }
+  button.disabled = true;
+  const partId = (form.querySelector<HTMLInputElement>('[name="part_id"]')?.value || '');
+  const payload = {
+    email: (form.querySelector<HTMLInputElement>('[name="email"]')?.value || ''),
+    page_url: (form.querySelector<HTMLInputElement>('[name="page_url"]')?.value || ''),
+    purpose: (form.querySelector<HTMLInputElement>('[name="purpose"]')?.value || ''),
+    consent_text: (form.querySelector<HTMLInputElement>('[name="consent_text"]')?.value || ''),
+    company: (form.querySelector<HTMLInputElement>('[name="company"]')?.value || ''),
+    part_id: partId,
+    oem: (form.querySelector<HTMLInputElement>('[name="oem"]')?.value || ''),
+    unicel: (form.querySelector<HTMLInputElement>('[name="unicel"]')?.value || ''),
+    pleatco: (form.querySelector<HTMLInputElement>('[name="pleatco"]')?.value || ''),
+    filbur: (form.querySelector<HTMLInputElement>('[name="filbur"]')?.value || ''),
+    'cf-turnstile-response': tokenOf(form),
+  };
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', accept: 'application/json' },
+    body: JSON.stringify(payload),
+  }).then((response) => response.json().then((body) => ({ ok: response.ok, body }))).then((result) => {
+    status.textContent = (result.body && result.body.message) || (result.ok ? 'Stored.' : 'Could not store the request.');
+    if (result.ok) track(partId);
+    const widget = form.dataset.widget;
+    const turnstile = (window as unknown as { turnstile?: { reset: Function } }).turnstile;
+    if (widget && turnstile) turnstile.reset(widget);
+  }).catch(() => {
+    status.textContent = 'Could not store the request. Try again.';
+  }).then(() => {
+    button.disabled = false;
+    form.dataset.pending = '';
+  });
+});
+</script>
+<style>
+.replace-signup{position:relative}
+.replace-signup p:last-child{margin-bottom:0}
+.replace-part{font-weight:650;color:var(--ink);margin-bottom:.7rem}
+.replace-note{font-size:.92rem;color:var(--mut);max-width:62ch}
+.replace-signup input[type="email"]{display:block;width:100%;max-width:26rem;margin-top:.3rem;font:inherit}
+.replace-signup .hp{position:absolute;left:-9999px;top:0;height:0;overflow:hidden}
+.replace-signup [data-status]{min-height:1.4em;font-weight:650}
+</style>

@@ -8,7 +8,8 @@ import BuyLinks from '../../../components/BuyLinks.astro';
 import { rowDate } from '../../../lib/lastmod';
 import { SITE, publisherRef } from '../../../lib/schema';
 import HolidayCta from '../../../components/HolidayCta.astro';
-import ReminderForm from '../../../components/ReminderForm.astro';
+import ReplaceSignup from '../../../components/ReplaceSignup.astro';
+import { exactFromFilter } from '../../../lib/exact-part.mjs';
 import { holidayOnCartridge } from '../../../lib/holiday';
 import { pages as fitPages } from '../../../lib/fitment';
 import { cartridgeParagraphs } from '../../../lib/cartridgeNote.mjs';
@@ -16,8 +17,7 @@ export function getStaticPaths(){ return filters.map(f=>({params:{brand:f.brandS
 const { f } = Astro.props as { f: Filter };
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
 const eq = f.equivalents||{}; const d:any = f.dimensions; const pk = partLabel(f);
-const reminderModel = `${f.brand} ${f.model}`;
-const reminderLabel = pk && !reminderModel.includes(pk) ? `${reminderModel} (${pk})` : reminderModel;
+const exact = exactFromFilter(f);
 const oems = (f.oemAll||f.oem||'').split(';').map(s=>s.trim()).filter(Boolean);
 const sameBrand = filters.filter(x=>x.brandSlug===f.brandSlug);
 // "Other cartridges for this brand": nearest sizes first, indexable pages only, capped so the block stays a short, useful list.
@@ -85,7 +85,7 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
 <tr><th>Top</th><td>{d.topCore||'not listed'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore||'not listed'}</td></tr></table>
 </div><Cartridge d={d} /></div></section>
 {holidayOnCartridge(f.brandSlug, f.modelSlug) && <HolidayCta />}
-<ReminderForm filterModel={reminderLabel} />
+<ReplaceSignup partId={exact.partId} oem={exact.oem} unicel={exact.unicel} pleatco={exact.pleatco} filbur={exact.filbur} />
 {brief.map((p) => <p set:html={p} />)}
 {fit.length>0 && <>
 <h2>Hot tubs listed for this cartridge</h2>

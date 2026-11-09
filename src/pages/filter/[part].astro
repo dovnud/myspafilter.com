@@ -4,25 +4,24 @@ import Sources from '../../components/Sources.astro';
 import { allParts } from '../../lib/data';
 import BuyLinks from '../../components/BuyLinks.astro';
 import HolidayCta from '../../components/HolidayCta.astro';
-import ReminderForm from '../../components/ReminderForm.astro';
+import ReplaceSignup from '../../components/ReplaceSignup.astro';
+import { exactFromFilter } from '../../lib/exact-part.mjs';
 import { holidayOnPart } from '../../lib/holiday';
 export function getStaticPaths(){ return [...allParts().entries()].map(([part,list])=>({params:{part},props:{list}})); }
 const { list } = Astro.props; const { part } = Astro.params;
 const label = part!.toUpperCase(); const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
-const models = [...new Set(list.map((f: any) => `${f.brand} ${f.model}`))];
-const only = models.length === 1 ? models[0] : '';
-const filterModel = only ? (only.toUpperCase().includes(label) ? only : `${only} (${label})`) : label;
 const ld=[{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:label,item:url}]}];
 ---
 <Base title={`${label} Spa Filter Equivalents – Hot Tub Filter Cross Reference`} description={`Cross-reference for spa filter / hot tub filter part ${label}: OEM, Unicel, Pleatco and Filbur equivalents.`} jsonld={ld} noindex>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">{label}</span></nav><h1>{label} spa filter equivalents</h1><p>Part number {label} appears in {list.length} cross-reference row{list.length>1?'s':''} below. Each row lists the OEM, Unicel and Pleatco numbers that the source documents treat as interchangeable, plus the cartridge size so you can confirm against your old filter.</p>
 {holidayOnPart(part!, list) && <HolidayCta />}
 <p>The same numbers, on one page, are in the <a href={`/tools/cross-reference/?q=${encodeURIComponent(label)}`}>cross-reference lookup</a>. A schedule for this part number, and the buy link, are on the <a href={`/tools/filter-reorder/?part=${encodeURIComponent(label)}`}>replacement schedule and reorder</a> page. Published intervals by brand are in the <a href="/tools/filter-schedule/">replace and clean calculator</a>.</p>
-{list.map((f:any)=>(<section class="answer"><p><strong>{f.brand} {f.model}</strong>, {f.dimensions.diameterText} × {f.dimensions.lengthText}{f.dimensions.sqft!=null ? `, ${f.dimensions.sqft} sq ft` : ''}. Unicel {f.equivalents?.unicel||'not listed'}, Pleatco {f.equivalents?.pleatco||'not listed'}.</p>
+{list.map((f:any)=>{ const exact = exactFromFilter(f); return (<section class="answer"><p><strong>{f.brand} {f.model}</strong>, {f.dimensions.diameterText} × {f.dimensions.lengthText}{f.dimensions.sqft!=null ? `, ${f.dimensions.sqft} sq ft` : ''}. Unicel {f.equivalents?.unicel||'not listed'}, Pleatco {f.equivalents?.pleatco||'not listed'}.</p>
 <BuyLinks filter={f} />
 <table>
 <tr><th>OEM</th><td>{f.oem}</td></tr><tr><th>Unicel</th><td>{f.equivalents?.unicel||'not listed'}</td></tr><tr><th>Pleatco</th><td>{f.equivalents?.pleatco||'not listed'}</td></tr><tr><th>Filbur</th><td>{f.equivalents?.filbur||'not listed'}</td></tr>
 <tr><th>Size</th><td>{f.dimensions.diameterText} × {f.dimensions.lengthText}{f.dimensions.sqft!=null ? `, ${f.dimensions.sqft} sq ft` : ''}</td></tr></table>
-<Sources f={f} /><p><a href={`/${f.brandSlug}/${f.modelSlug}/`}>Full details →</a> · <a href={`/${f.brandSlug}/`}>All {f.brand} spa filters</a> · <a href="/guides/open-end-vs-threaded-hot-tub-filters/">Which fitting you need</a> · <a href="/guides/how-to-install-a-hot-tub-filter/">How to install it</a></p></section>))}
-<ReminderForm filterModel={filterModel} />
+<Sources f={f} /><p><a href={`/${f.brandSlug}/${f.modelSlug}/`}>Full details →</a> · <a href={`/${f.brandSlug}/`}>All {f.brand} spa filters</a> · <a href="/guides/open-end-vs-threaded-hot-tub-filters/">Which fitting you need</a> · <a href="/guides/how-to-install-a-hot-tub-filter/">How to install it</a></p>
+<ReplaceSignup partId={exact.partId} oem={exact.oem} unicel={exact.unicel} pleatco={exact.pleatco} filbur={exact.filbur} />
+</section>); })}
 </Base>

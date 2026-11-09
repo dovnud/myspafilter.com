@@ -1,5 +1,7 @@
 export const PURPOSE = 'filter_reminder';
 export const CONSENT_TEXT = "We'll only use your email for this request.";
+export const REPLACE_PURPOSE = 'replace_12mo';
+export const REPLACE_CONSENT = "We'll only use your email for this reminder. This stores the request and does not send email.";
 export const INTERVALS = ['4 weeks', '8 weeks', '3 months', '6 months', '12 months', '24 months'];
 
 const EMAIL = /^[a-z0-9](?:[a-z0-9._%+-]{0,62}[a-z0-9])?@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$/;
@@ -53,6 +55,27 @@ export function honeypotFilled(fields) {
   return String(fields?.company ?? '').trim() !== '';
 }
 
+/** Calendar month 12 months after the request. The signup's only month choice is that interval. */
+export function remindMonth(now) {
+  const target = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 12, 1));
+  return `${target.getUTCFullYear()}-${String(target.getUTCMonth() + 1).padStart(2, '0')}`;
+}
+
+export function validPartId(raw) {
+  const id = String(raw ?? '').trim().toLowerCase();
+  if (!/^[a-z0-9][a-z0-9./_-]{0,119}$/.test(id)) return null;
+  if (id.includes('@') || id.includes('..')) return null;
+  return id;
+}
+
+export function validPartText(raw) {
+  const text = String(raw ?? '').trim().replace(/\s+/g, ' ');
+  if (!text) return '';
+  if (text.length > 160) return null;
+  if (/[\u0000-\u001F\u007F<>]/.test(text)) return null;
+  return text;
+}
+
 export function normalize(fields) {
   const extra = fields?.extra && typeof fields.extra === 'object' && !Array.isArray(fields.extra) ? fields.extra : {};
   return {
@@ -65,10 +88,45 @@ export function normalize(fields) {
     filter_model: extra.filter_model ?? fields?.filter_model ?? '',
     install_date: extra.install_date ?? fields?.install_date ?? '',
     interval: extra.interval ?? fields?.interval ?? '',
+    part_id: extra.part_id ?? fields?.part_id ?? '',
+    oem: extra.oem ?? fields?.oem ?? '',
+    unicel: extra.unicel ?? fields?.unicel ?? '',
+    pleatco: extra.pleatco ?? fields?.pleatco ?? '',
+    filbur: extra.filbur ?? fields?.filbur ?? '',
+  };
+}
+
+function validateReplace(input, now) {
+  const email = validEmail(input.email);
+  if (!email) return { ok: false, error: 'email' };
+  const page_url = validPageUrl(input.page_url);
+  if (!page_url) return { ok: false, error: 'page' };
+  const part_id = validPartId(input.part_id);
+  if (!part_id) return { ok: false, error: 'part' };
+  const oem = validPartText(input.oem);
+  const unicel = validPartText(input.unicel);
+  const pleatco = validPartText(input.pleatco);
+  const filbur = validPartText(input.filbur);
+  if (oem === null || unicel === null || pleatco === null || filbur === null) return { ok: false, error: 'part' };
+  if (!oem && !unicel && !pleatco && !filbur) return { ok: false, error: 'part' };
+  if (input.consent_text !== REPLACE_CONSENT) return { ok: false, error: 'consent' };
+  const remind_month = remindMonth(now);
+  return {
+    ok: true,
+    record: {
+      email,
+      page_url,
+      purpose: REPLACE_PURPOSE,
+      part_id,
+      remind_month,
+      extra: JSON.stringify({ part_id, oem, unicel, pleatco, filbur, remind_month }),
+      consent_text: REPLACE_CONSENT,
+    },
   };
 }
 
 export function validate(input, now) {
+  if (input.purpose === REPLACE_PURPOSE) return validateReplace(input, now);
   if (input.purpose !== PURPOSE) return { ok: false, error: 'purpose' };
   const email = validEmail(input.email);
   if (!email) return { ok: false, error: 'email' };
@@ -85,6 +143,8 @@ export function validate(input, now) {
       email,
       page_url,
       purpose: PURPOSE,
+      part_id: '',
+      remind_month: '',
       extra: JSON.stringify({ filter_model, install_date: input.install_date, interval: input.interval }),
       consent_text: CONSENT_TEXT,
     },

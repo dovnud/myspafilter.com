@@ -16,13 +16,13 @@ The Amazon tag is set to `myspafilter-20` (this tag belongs to myspafilter.com o
 
 ```ts
 export const affiliate = {
-  amazonTag: '',        // Amazon Associates tag, e.g. 'yourname-20'  -> appended to every Amazon link (?tag= on /dp/ links, &tag= on search links)
+  amazonTag: 'myspafilter-20', // Amazon Associates tag for myspafilter.com only -> appended to every Amazon link (?tag= on /dp/ links, &tag= on search links)
   awinFiltersFast: '',  // Awin publisher ID for FiltersFast (merchant 73760) -> Awin deeplink
   dohenyId: '',         // Doheny's tracking ID from Ascend/Pepperjam -> pjtra.com/t/<id>?url=...
 };
 ```
 
-- **Amazon (the one-line tag swap)**: set `amazonTag: 'yourname-20'` in `src/config/affiliate.ts` and push. Direct links become `https://www.amazon.com/dp/<ASIN>?tag=yourname-20`; search links become `https://www.amazon.com/s?k=...&tag=yourname-20`. `npm run check:amazon` fails the build if the tag is set but malformed (must look like `name-20`).
+- **Amazon (the one-line tag swap)**: `amazonTag` in `src/config/affiliate.ts` is `myspafilter-20`. Direct links are `https://www.amazon.com/dp/<ASIN>?tag=myspafilter-20`; search links are `https://www.amazon.com/s?k=...&tag=myspafilter-20`. `npm run check:amazon` fails the build if the tag is set but malformed (must look like `myspafilter-20`).
 - **FiltersFast**: set `awinFiltersFast` to your Awin publisher ID. Links become `https://www.awin1.com/cread.php?awinmid=73760&awinaffid=<id>&ued=<encoded filtersfast url>`.
 - **Doheny's**: set `dohenyId`. The `pjtra.com/t/<id>?url=` pattern is the usual Ascend/Pepperjam deep-link form, but confirm the exact link format in your Ascend dashboard before relying on it (edit `dohenysLink()` if it differs).
 - Do not invent IDs. Leave a value empty until you have the real one.

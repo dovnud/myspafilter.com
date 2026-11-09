@@ -1,7 +1,9 @@
 ---
 import { brands, filters } from '../lib/data';
+import { gaMeasurementId, GA_ID_RE } from '../config/analytics';
 interface Props { title:string; description:string; jsonld?: object[]; noindex?: boolean; ogType?: 'website'|'article'; ogImage?: string; ogImageAlt?: string; modified?: string; canonical?: boolean }
 const { title, description, jsonld = [], noindex = false, ogType = 'website', ogImage, ogImageAlt, modified, canonical: withCanonical = true } = Astro.props;
+const gaId = GA_ID_RE.test(gaMeasurementId) ? gaMeasurementId : '';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const path = Astro.url.pathname;
 // Default share image, with a section variant by URL (all 1200x630 PNG in /public/og/, made by scripts/gen-og.py)
@@ -23,6 +25,16 @@ const nav = [['/','Home'],['/size/','Size lookup'],['/tools/','Tools'],['/guides
 {ogType==='article' && <><meta property="article:author" content="MySpaFilter Editorial Team">{modified && <meta property="article:modified_time" content={modified}>}</>}
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content={title}><meta name="twitter:description" content={description}><meta name="twitter:image" content={image}><meta name="twitter:image:alt" content={imageAlt}>
 {jsonld.map(j => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
+{gaId && <>
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+<script is:inline define:vars={{ gaId }}>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', gaId);
+</script>
+</>}
 <style is:global>
 @font-face{font-family:"Young Serif";src:url(/fonts/young-serif-latin.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Public Sans Variable";src:url(/fonts/public-sans-latin-var.woff2) format("woff2-variations");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}

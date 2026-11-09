@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import { handlePost, onRequest } from './api/subscribe.js';
-import { CONSENT_TEXT, originAllowed, siteHost, validate, validEmail, validInstallDate, validPageUrl } from './lib/validate.mjs';
+import { CONSENT_TEXT, REPLACE_CONSENT, remindMonth, originAllowed, siteHost, validate, validEmail, validInstallDate, validPageUrl } from './lib/validate.mjs';
 
 const now = new Date('2026-10-31T12:00:00.000Z');
 const salt = 'test-salt-value-0123456789';
@@ -21,7 +21,7 @@ function validBody(overrides = {}) {
   };
 }
 
-function memoryDb() {
+function memoryDb(options = {}) {
   const subscribers = [];
   const attempts = [];
   let id = 1;
@@ -34,16 +34,19 @@ function memoryDb() {
         bind(...params) {
           return {
             async first() {
+              if (options.legacy && text.includes('part_id')) throw new Error('no such column: part_id');
               if (text.startsWith('SELECT COUNT(*)')) {
                 const [ipHash, since] = params;
                 return { n: attempts.filter((row) => row.ip_hash === ipHash && row.created_at > since).length };
               }
               if (text.startsWith('SELECT id FROM subscribers')) {
+                if (text.includes('part_id')) return subscribers.find((row) => row.email === params[0] && row.purpose === params[1] && (row.part_id || '') === params[2]) || null;
                 return subscribers.find((row) => row.email === params[0] && row.purpose === params[1]) || null;
               }
               throw new Error(`unexpected first: ${text}`);
             },
             async run() {
+              if (options.legacy && text.includes('part_id')) throw new Error('no such column: part_id');
               if (text.startsWith('DELETE FROM submit_attempts')) {
                 for (let i = attempts.length - 1; i >= 0; i -= 1) if (attempts[i].created_at < params[0]) attempts.splice(i, 1);
                 return { success: true };
@@ -53,14 +56,19 @@ function memoryDb() {
                 return { success: true };
               }
               if (text.startsWith('INSERT INTO subscribers')) {
-                const row = { id: id++, email: params[0], page_url: params[1], purpose: params[2], extra: params[3], consent_text: params[4], created_at: params[5], ip_hash: params[6] };
-                if (subscribers.some((item) => item.email === row.email && item.purpose === row.purpose)) throw new Error('UNIQUE constraint failed: subscribers.email');
+                const row = { id: id++, email: params[0], page_url: params[1], purpose: params[2], extra: params[3], consent_text: params[4], created_at: params[5], ip_hash: params[6], part_id: params[7] || '', remind_month: params[8] || '' };
+                if (subscribers.some((item) => item.email === row.email && item.purpose === row.purpose && item.part_id === row.part_id)) throw new Error('UNIQUE constraint failed: subscribers.email');
                 subscribers.push(row);
                 return { success: true };
               }
               if (text.startsWith('UPDATE subscribers')) {
-                const row = subscribers.find((item) => item.email === params[4] && item.purpose === params[5]);
-                if (row) Object.assign(row, { page_url: params[0], extra: params[1], consent_text: params[2], ip_hash: params[3] });
+                if (text.includes('part_id')) {
+                  const row = subscribers.find((item) => item.email === params[5] && item.purpose === params[6] && (item.part_id || '') === params[7]);
+                  if (row) Object.assign(row, { page_url: params[0], extra: params[1], consent_text: params[2], ip_hash: params[3], remind_month: params[4] });
+                } else {
+                  const row = subscribers.find((item) => item.email === params[4] && item.purpose === params[5]);
+                  if (row) Object.assign(row, { page_url: params[0], extra: params[1], consent_text: params[2], ip_hash: params[3] });
+                }
                 return { success: true };
               }
               throw new Error(`unexpected run: ${text}`);
@@ -179,19 +187,95 @@ test('rejects cross-origin, missing storage, and failed turnstile', async () => 
   assert.equal(method.status, 405);
 });
 
+test('12-month signup stores the exact part and month and does not return the email', async () => {
+  const db = memoryDb();
+  const env = { DB: db, IP_HASH_SALT: salt };
+  const body = {
+    email: 'Owner@Example.com',
+    page_url: 'https://myspafilter.com/fitment/hot-spring-filter-by-model-year/',
+    purpose: 'replace_12mo',
+    consent_text: REPLACE_CONSENT,
+    company: '',
+    part_id: 'Hot-Spring/C-6430',
+    oem: '71825',
+    unicel: 'C-6430',
+    pleatco: 'PWK30-4',
+    filbur: 'FC-2390',
+  };
+  const first = await handlePost(post(body), env, now);
+  const created = await first.json();
+  assert.equal(first.status, 200);
+  assert.equal(created.stored, 'created');
+  assert.equal(JSON.stringify(created).toLowerCase().includes('owner@example.com'), false);
+  assert.equal(JSON.stringify(created).includes('@'), false);
+  assert.equal(remindMonth(now), '2027-10');
+  const extra = JSON.parse(db.subscribers[0].extra);
+  assert.deepEqual(extra, { part_id: 'hot-spring/c-6430', oem: '71825', unicel: 'C-6430', pleatco: 'PWK30-4', filbur: 'FC-2390', remind_month: '2027-10' });
+  assert.equal(db.subscribers[0].part_id, 'hot-spring/c-6430');
+  assert.equal(db.subscribers[0].remind_month, '2027-10');
+  const second = await handlePost(post({ ...body, part_id: 'hot-spring/c-8465', oem: '71827', unicel: 'C-8465', pleatco: '', filbur: '' }), env, now);
+  assert.equal((await second.json()).stored, 'created');
+  assert.equal(db.subscribers.length, 2);
+  const again = await handlePost(post({ ...body, filbur: 'FC-0000' }), env, new Date('2026-10-31T13:00:00.000Z'));
+  assert.equal((await again.json()).stored, 'updated');
+  assert.equal(db.subscribers.length, 2);
+  assert.equal(JSON.parse(db.subscribers.find((row) => row.part_id === 'hot-spring/c-6430').extra).filbur, 'FC-0000');
+  const rejected = await handlePost(post({ ...body, oem: '', unicel: '', pleatco: '', filbur: '', part_id: 'hot-spring/empty' }), env, now);
+  assert.equal(rejected.status, 400);
+});
+
+test('before the part columns exist, the request still lands in extra', async () => {
+  const db = memoryDb({ legacy: true });
+  const env = { DB: db, IP_HASH_SALT: salt };
+  const body = {
+    email: 'owner@example.com',
+    page_url: 'https://myspafilter.com/filter/c-6430/',
+    purpose: 'replace_12mo',
+    consent_text: REPLACE_CONSENT,
+    part_id: 'hot-spring/c-6430',
+    oem: '71825',
+    unicel: 'C-6430',
+    pleatco: 'PWK30-4',
+    filbur: 'FC-3915',
+  };
+  const first = await handlePost(post(body), env, now);
+  assert.equal((await first.json()).stored, 'created');
+  assert.equal(JSON.parse(db.subscribers[0].extra).remind_month, '2027-10');
+  const second = await handlePost(post({ ...body, part_id: 'hot-spring/c-8465', oem: '71827', unicel: 'C-8465' }), env, now);
+  assert.equal((await second.json()).stored, 'updated');
+  assert.equal(db.subscribers.length, 1);
+  assert.equal(JSON.parse(db.subscribers[0].extra).unicel, 'C-8465');
+});
+
 test('form and privacy copy stay honest and off filter mailto links', () => {
   const form = readFileSync(new URL('../src/components/ReminderForm.astro', import.meta.url), 'utf8');
+  const signup = readFileSync(new URL('../src/components/ReplaceSignup.astro', import.meta.url), 'utf8');
   const privacy = readFileSync(new URL('../src/pages/privacy.astro', import.meta.url), 'utf8');
   const model = readFileSync(new URL('../src/pages/[brand]/[model]/index.astro', import.meta.url), 'utf8');
   const part = readFileSync(new URL('../src/pages/filter/[part].astro', import.meta.url), 'utf8');
+  const fitment = readFileSync(new URL('../src/pages/fitment/[slug].astro', import.meta.url), 'utf8');
+  const xref = readFileSync(new URL('../src/pages/tools/cross-reference.astro', import.meta.url), 'utf8');
+  const schedule = readFileSync(new URL('../src/pages/tools/filter-schedule.astro', import.meta.url), 'utf8');
   assert.match(form, /Request a filter replacement reminder/);
   assert.match(form, /We'll only use your email for this request\./);
   assert.equal(form.includes('mailto:'), false);
   assert.equal(form.includes('newsletter'), false);
+  assert.match(signup, /Email me in 12 months to replace this exact filter/);
+  assert.match(signup, /\{REPLACE_CONSENT\}/);
+  assert.equal(REPLACE_CONSENT, "We'll only use your email for this reminder. This stores the request and does not send email.");
+  assert.match(signup, /reminderEvent\(partId\)/);
+  assert.equal(signup.includes('mailto:'), false);
+  assert.equal(signup.includes('gtag(\'event\', event.name, event.params)'), true);
+  assert.equal(signup.includes('newsletter'), false);
   assert.match(privacy, /We'll only use your email for this request\./);
   assert.match(privacy, /contact@myspafilter.com/);
   assert.match(privacy, /do not sell/);
+  assert.match(privacy, /reminder_signup/);
   assert.equal(privacy.includes('gmail.com'), false);
-  assert.match(model, /ReminderForm/);
-  assert.match(part, /ReminderForm/);
+  assert.equal(model.includes('ReminderForm'), false);
+  assert.match(model, /ReplaceSignup/);
+  assert.match(schedule, /ReminderForm/);
+  assert.match(part, /ReplaceSignup/);
+  assert.match(fitment, /ReplaceSignup/);
+  assert.match(xref, /ReplaceSignup/);
 });

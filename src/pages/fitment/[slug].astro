@@ -1,6 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
+import ReplaceSignup from '../../components/ReplaceSignup.astro';
 import { pages, FITMENT_DATE } from '../../lib/fitment';
+import { filters } from '../../lib/data';
+import { signupsForFitment } from '../../lib/exact-part.mjs';
 import { SITE, publisherRef } from '../../lib/schema';
 export function getStaticPaths(){ return pages.map(p=>({params:{slug:p.slug},props:{p}})); }
 const { p } = Astro.props as any;
@@ -11,6 +14,7 @@ const strip=(s:string)=>s.replace(/<[^>]+>/g,'');
 const ld=[{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#webpage`,name:p.title,description:p.desc,url,inLanguage:"en-US",datePublished:D,dateModified:D,isPartOf:{"@type":"WebSite",name:"MySpaFilter",url:SITE},publisher:publisherRef,breadcrumb:{"@id":`${url}#breadcrumb`}},
 {"@context":"https://schema.org","@type":"BreadcrumbList","@id":`${url}#breadcrumb`,itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:`${p.crumbBrand} filters`,item:new URL(`/${p.brandSlug}/`,site).href},{"@type":"ListItem",position:3,name:p.h1,item:url}]}];
 const notes=[...new Set(p.notes as string[])];
+const signups = signupsForFitment(p, filters);
 const fmt=(r:any)=>r.fits.map((f:any)=>`${[...new Set(f.oems)].join(' or ')}: ${f.years}`);
 const colls=(p.collections as string[]).filter(c=>p.rows.some((r:any)=>r.collection===c));
 ---
@@ -24,6 +28,10 @@ const colls=(p.collections as string[]).filter(c=>p.rows.some((r:any)=>r.collect
 <div class="tbl"><table><thead><tr><th>Factory part</th><th>What it is</th><th>{p.aftHead || 'Unicel equivalent'}</th><th>Rated area</th><th>Our page</th></tr></thead><tbody>
 {p.parts.map((x:any)=><tr><td><strong>{x.oem}</strong></td><td>{x.what}{x.note && <><br /><small>{x.note}</small></>}</td><td>{x.unicel}</td><td>{x.size}</td><td>{x.href ? x.href.map((h:string,i:number)=><Fragment>{i>0 && ', '}<a href={h}>{h.split('/')[2].toUpperCase()}</a></Fragment>) : 'not listed'}</td></tr>)}
 </tbody></table></div>
+{signups.length > 0 && <>
+<h2>Replace this exact filter in 12 months</h2>
+{signups.map((s) => <ReplaceSignup partId={s.partId} oem={s.oem} unicel={s.unicel} pleatco={s.pleatco} filbur={s.filbur} />)}
+</>}
 <p set:html={p.partsNote || 'Equivalents and sizes are from the Unicel 2026 Replacement Guide unless the table says otherwise. A part number in brackets is another factory number for the same cartridge in Unicel’s cross-reference.'} />
 {colls.length>0 && <><h2>Find your model</h2>
 <p>Rows show the factory part number, then the model years it is listed for. Where two part numbers are joined by “or”, the dealer table lists both for those years. Years are from one dealer’s table and are the least certain part of this page; the part number on your old cartridge wins.</p>
