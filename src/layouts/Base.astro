@@ -14,15 +14,6 @@ const prose = proseRe.test(path);
 const nav = [['/','Home'],['/size/','Size lookup'],['/tools/','Tools'],['/guides/','Guides'],['/supplies/','Supplies'],['/data/','Data'],['/about/','About'],['/contact/','Contact']];
 ---
 <!doctype html><html lang="en"><head>
-<!-- Google tag (gtag.js) -->
-<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-5YMF808QCZ"></script>
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5YMF808QCZ');
-</script>
 <meta charset="utf-8"><link rel="preload" href="/fonts/young-serif-latin.woff2" as="font" type="font/woff2" crossorigin><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content={description}>
 <meta name="robots" content={noindex?"noindex,follow":"index,follow"}>{withCanonical && <link rel="canonical" href={canonical}>}<meta name="theme-color" content="#0b3c40">
