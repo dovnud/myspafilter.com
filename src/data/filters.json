@@ -8973,6 +8973,882 @@
      "where": "Coleman Spas section PDF p.17: FC-3320, OEM 100594, C-8475, 75 sq ft"
     }
    ]
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "6CH-940 cartridge (OEM 817-0050)",
+   "modelSlug": "6ch-940",
+   "series": "Front access skim filter",
+   "oem": "817-0050",
+   "equivalents": {
+    "unicel": "6CH-940",
+    "pleatco": "PWW50P3",
+    "filbur": "FC-0359"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 8.25,
+    "diameterText": "6\"",
+    "lengthText": "8-1/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\" SAE",
+    "sqft": 45
+   },
+   "notes": "Front-access cartridge. Waterway's Service Logic table (fetched 2026-11-09) calls 817-0050 a 50 sq ft, 6\" x 8-1/4\" F/A skimmer cartridge. Unicel's Waterway list prints the same 50 sq ft, and a second line at 100 sq ft with the note that two cartridges are used side by side. The spec table and Unicel's own product list print 6CH-940 at 45 sq ft, 225 pleats. The 45 stored here is the spec-table figure. Pleatco PWW50P3 is 6\" x 7-5/8\", 50 sq ft, and says two are required. Filbur FC-0359's sq ft column is 40.",
+   "gaps": "Area 50 (Waterway table and Unicel Waterway line) vs 45 (Unicel spec table and Unicel product list) vs 40 (Filbur sq ft column). Length 8-1/4\" vs Pleatco 7-5/8\".",
+   "pleatcoNote": "Spec table PDF p.33: PWW50P3, 6\" x 7-5/8\", 1-1/2\" SAE, 50 sq ft, OEM 817-0050, 03FIL1400, 25252, 378902, and PWW50, '2 required.' Cross-reference PDF p.47: 6CH-940 = PWW50P3.",
+   "filburNote": "Waterway section PDF p.28: FC-0359, 6 x 8-1/4, 1-1/2\" SAE, OEM 817-0050, PWW50P3, 6CH-940, sq ft column 40, two cartridges side by side.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-0050 = 6CH-940, 6\" x 8-1/4\", 50 sq ft, and a second line at 100 sq ft with two cartridges side by side. Spec table PDF p.12: 45 sq ft, 225 pleats, 1-1/2\" SAE. Product list PDF p.61: 45 sq ft."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-0050, 50SF, 6\" x 8-1/4\", F/A skimmer"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.33: PWW50P3, 6\" x 7-5/8\", 50 sq ft, OEM 817-0050. Cross-reference PDF p.47: 6CH-940 = PWW50P3."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway Plastics section PDF p.28: FC-0359, OEM 817-0050, 6CH-940, sq ft column 40"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "6CH-941 cartridge (OEM 817-0011)",
+   "modelSlug": "6ch-941",
+   "series": "Front access, stacked upper",
+   "oem": "817-0011",
+   "equivalents": {
+    "unicel": "6CH-941",
+    "filbur": "FC-0360"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 8.25,
+    "diameterText": "6\"",
+    "lengthText": "8-1/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-3/4\" male slip",
+    "sqft": 45
+   },
+   "notes": "Upper half of the stacked front-access pair. Unicel says 6CH-941 must be used with 6CH-942. Waterway's table calls 817-0011 a 50 sq ft upper cartridge. The spec table prints 45 sq ft and 225 pleats, which is the figure stored here. The bottom is a 1-3/4\" male slip, not the 1-1/2\" SAE of 817-0050. Pleatco's live number is the pair, PWW100P3-SET, 6\" x 16-1/2\" and 100 sq ft, so it is not stored as the equivalent of this one cartridge. Filbur's description says 40 sq ft and the Waterway sq ft column prints 80.",
+   "gaps": "Per cartridge: 50 (Waterway) vs 45 (Unicel spec) vs 40 (Filbur description). Filbur's Waterway column prints 80. Pleatco rates the pair, not this cartridge alone, at 100 sq ft.",
+   "pleatcoNote": "Spec table PDF p.33: PWW100P3-SET, 6\" x 16-1/2\", handle, 1-1/2\" SAE, 100 sq ft, OEM 817-0011 / 817-0012 and CMP 25253 / 25254. Cross-reference PDF p.47 sends both 6CH-941 and 6CH-942 to that set. Not stored as this row's Pleatco equivalent because it is the pair.",
+   "filburNote": "Waterway section PDF p.28: FC-0360, 6 x 8-1/4, 1-3/4\" male slip, OEM 817-0011, PWW100ST-P3, 6CH-941, sq ft column 80, stacked with FC-0361.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-0011 = 6CH-941, stacked with 817-0012; the 100 and 200 lines are housing totals. Spec table PDF p.12: 45 sq ft, 225 pleats, 1-3/4\" male slip, must be used with 6CH-942."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-0011, 50 sq ft upper cartridge (extension)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.33 and cross-reference PDF p.47: the set PWW100P3-SET covers 817-0011 and 817-0012"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-0360, OEM 817-0011, 6CH-941"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "6CH-942 cartridge (OEM 817-0012)",
+   "modelSlug": "6ch-942",
+   "series": "Front access, stacked lower",
+   "oem": "817-0012",
+   "equivalents": {
+    "unicel": "6CH-942",
+    "filbur": "FC-0361"
+   },
+   "dimensions": {
+    "diameterIn": 6,
+    "lengthIn": 8.25,
+    "diameterText": "6\"",
+    "lengthText": "8-1/4\"",
+    "topCore": "1-3/4\" open",
+    "bottomCore": "1-1/2\" SAE",
+    "sqft": 45
+   },
+   "notes": "Lower half of the stacked front-access pair. Top is 1-3/4\" open so the upper cartridge's slip can enter it. Bottom is 1-1/2\" SAE. Unicel says it must be used with 6CH-941. Waterway's table calls 817-0012 a 50 sq ft lower cartridge. The spec table prints 45 sq ft, stored here. Filbur's description says 40 and the Waterway column prints 80. Pleatco's PWW100P3-SET is the pair, not this cartridge alone.",
+   "gaps": "Same area split as 817-0011: 50, 45, or 40 per cartridge, and 80 in Filbur's Waterway column. The Pleatco set is 100 sq ft for both cartridges together.",
+   "pleatcoNote": "The set PWW100P3-SET (PDF p.33, cross-reference PDF p.47) names 817-0012 together with 817-0011. Not stored on this row.",
+   "filburNote": "Waterway section PDF p.28: FC-0361, 6 x 8-1/4, 1-3/4\" open top, 1-1/2\" SAE bottom, OEM 817-0012, 6CH-942, sq ft column 80.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-0012 = 6CH-942, 1-1/2\" SAE, stacked with 817-0011. Spec table PDF p.12: 45 sq ft, 1-3/4\" open top, must be used with 6CH-941."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-0012, 50 sq ft lower cartridge (extension)"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "PWW100P3-SET spec, PDF p.33, includes OEM 817-0012"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-0361, OEM 817-0012, 6CH-942"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "4CH-926 cartridge (OEM 817-4025)",
+   "modelSlug": "4ch-926",
+   "series": "Teleweir",
+   "oem": "817-4025",
+   "equivalents": {
+    "unicel": "4CH-926",
+    "pleatco": "PWW25L",
+    "filbur": "FC-0168"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.5,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-1/2\"",
+    "topCore": "v-groove handle",
+    "bottomCore": "2\" female SAE",
+    "sqft": 25
+   },
+   "notes": "Teleweir 25. Unicel and Waterway's table agree: 4-15/16\" x 13-1/2\", 25 sq ft, SAE thread. Unicel's spec table says 2\" female SAE, 105 pleats, for a 1-1/2\" male SAE standpipe (the standpipe note is printed on the 4CH-935 and 4CH-949 spec lines). Pleatco PWW25L is 5\" x 13-3/16\", 1-1/2\" female SAE, 25 sq ft, and that spec line does not print 817-4025. The cross-reference does: 4CH-926 = PWW25L. Filbur FC-0168 is 13-1/16\" long and 1-1/2\" female SAE. Same length as 817-4050, half the area.",
+   "gaps": "Length 13-1/2\" (Unicel, Waterway) vs 13-3/16\" (Pleatco) vs 13-1/16\" (Filbur). Female thread 2\" (Unicel) vs 1-1/2\" (Pleatco and Filbur). Pleatco's spec line does not print OEM 817-4025.",
+   "pleatcoNote": "Spec table PDF p.32: PWW25L, 5\" x 13-3/16\", handle, 1-1/2\" female SAE, 25 sq ft, Waterway Teleweir 25. No 817-4025 on that line. Cross-reference PDF p.47: 4CH-926 = PWW25L.",
+   "filburNote": "Dimensional listing: FC-0168, 4-15/16\" x 13-1/16\", handle, 1-1/2\" female SAE, Waterway Teleweir 25, PWW25L, 4CH-926, 25 sq ft. The Waterway manufacturer section does not print 817-4025.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-4025 = 4CH-926, Teleweir, 4-15/16\" x 13-1/2\", 25 sq ft, 2\" female SAE. Spec table PDF p.9: 105 pleats."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-4025, 25 sq ft, 4-15/16\" x 13-1/2\", SAE thread"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PWW25L. Cross-reference PDF p.47: 4CH-926 = PWW25L."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Dimensional listing: FC-0168, 4CH-926, PWW25L, 13-1/16\" long, 25 sq ft"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "4CH-935 cartridge (OEM 817-4035)",
+   "modelSlug": "4ch-935",
+   "series": "Teleweir",
+   "oem": "817-4035",
+   "equivalents": {
+    "unicel": "4CH-935",
+    "pleatco": "PWW35L",
+    "filbur": "FC-0170"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 9.25,
+    "diameterText": "4-15/16\"",
+    "lengthText": "9-1/4\"",
+    "topCore": "v-groove handle",
+    "bottomCore": "2\" female SAE",
+    "sqft": 35
+   },
+   "notes": "Short Teleweir. Unicel and Waterway's table: 4-15/16\" x 9-1/4\", 35 sq ft, 2\" female SAE, 219 pleats, for a 1-1/2\" male SAE standpipe. Pleatco PWW35L is 5\" x 8-1/2\", 35 sq ft, OEM 817-4035, 1-1/2\" female SAE. Filbur's Waterway row FC-0170 prints 817-4035 at 4-15/16\" x 9-1/4\" and 30 sq ft, with Unicel N/A. Nordic's chart uses this Waterway number as CARTRIDGE-T35. The 35 stored here is Unicel's and Waterway's figure.",
+   "gaps": "Length 9-1/4\" (Unicel, Waterway, Filbur) vs 8-1/2\" (Pleatco). Area 35 vs Filbur's 30. Filbur prints no Unicel number on the 817-4035 row. Thread 2\" female SAE (Unicel) vs 1-1/2\" female SAE (Pleatco).",
+   "pleatcoNote": "Spec table PDF p.32: PWW35L, 5\" x 8-1/2\", 1-1/2\" female SAE, 35 sq ft, OEM 817-4035. Cross-reference PDF p.47: 4CH-935 = PWW35L.",
+   "filburNote": "Waterway section PDF p.28: FC-0170, 4-15/16\" x 9-1/4\", 1-1/2\" female SAE, OEM 817-4035, Unicel N/A, 30 sq ft.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-4035 = 4CH-935, 4-15/16\" x 9-1/4\", 35 sq ft. Spec table PDF p.8: 219 pleats, 2\" female SAE, standpipe note."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-4035, 35 sq ft, 4-15/16\" x 9-1/4\", SAE thread"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PWW35L, OEM 817-4035, 5\" x 8-1/2\", 35 sq ft. Cross-reference PDF p.47: 4CH-935 = PWW35L."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-0170, OEM 817-4035, 30 sq ft, Unicel N/A"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "4CH-949 cartridge (OEM 817-4050)",
+   "modelSlug": "4ch-949",
+   "series": "Teleweir",
+   "oem": "817-4050",
+   "equivalents": {
+    "unicel": "4CH-949",
+    "pleatco": "PWW50L",
+    "filbur": "FC-0172"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.5,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-1/2\"",
+    "topCore": "v-groove handle",
+    "bottomCore": "2\" female SAE",
+    "sqft": 50
+   },
+   "notes": "Teleweir 50. Same 13-1/2\" length as 817-4025. Unicel and Waterway's table: 4-15/16\" x 13-1/2\", 50 sq ft, 2\" female SAE, 210 pleats, for a 1-1/2\" male SAE standpipe. Pleatco PWW50L is 5\" x 13-3/16\", 1-1/2\" female SAE, 50 sq ft, OEM 817-4050. Filbur FC-0172 matches Unicel's length and 2\" female SAE and 50 sq ft, in the Rising Dragon section, and that row does not print 817-4050.",
+   "gaps": "Outside diameter 4-15/16\" vs Pleatco 5\". Length 13-1/2\" vs Pleatco 13-3/16\". Female thread 2\" (Unicel, Filbur) vs 1-1/2\" (Pleatco). Filbur's 4CH-949 row does not print 817-4050.",
+   "pleatcoNote": "Spec table PDF p.32: PWW50L, 5\" x 13-3/16\", 1-1/2\" female SAE, 50 sq ft, OEM 817-4050. Cross-reference PDF p.47: 4CH-949 = PWW50L.",
+   "filburNote": "Rising Dragon section: FC-0172, 4-15/16\" x 13-1/2\", 2\" female SAE, 4CH-949, 50 sq ft. OEM cell does not print 817-4050.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-4050 = 4CH-949, Teleweir, 4-15/16\" x 13-1/2\", 50 sq ft. Spec table PDF p.9: 210 pleats, 2\" female SAE, standpipe note."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-4050, 50 sq ft, 4-15/16\" x 13-1/2\", SAE thread"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PWW50L, OEM 817-4050. Cross-reference PDF p.47: 4CH-949 = PWW50L."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "FC-0172 in the Rising Dragon section: 4CH-949, 4-15/16\" x 13-1/2\", 2\" female SAE, 50 sq ft"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "C-4310 cartridge (OEM 817-0010)",
+   "modelSlug": "c-4310",
+   "series": "Skim filter 10",
+   "oem": "817-0010",
+   "equivalents": {
+    "unicel": "C-4310",
+    "pleatco": "PWW10",
+    "filbur": "FC-3077"
+   },
+   "dimensions": {
+    "diameterIn": 4.25,
+    "lengthIn": 4,
+    "diameterText": "4-1/4\"",
+    "lengthText": "4\"",
+    "topCore": "2-1/16\" open",
+    "bottomCore": "2-1/16\" open",
+    "sqft": 10
+   },
+   "notes": "10 sq ft skim filter, open both ends. Unicel, Pleatco, and Waterway's table agree on 10 sq ft and on 4-1/4\" x 4\". Unicel and Pleatco print 2-1/16\" openings and 216 pleats in Unicel's spec table. Filbur FC-3077 prints the top opening as 1-15/16\". Pleatco also lists PWW10PAIR at 20 sq ft for two of this cartridge. That pair is not a different body.",
+   "gaps": "Top opening 2-1/16\" (Unicel, Pleatco) vs 1-15/16\" (Filbur).",
+   "pleatcoNote": "Spec table: PWW10, 4-1/4\" x 4\", 2-1/16\" open, 10 sq ft, OEM 817-0010. PWW10PAIR is 20 sq ft. Cross-reference PDF p.47: C-4310 = PWW10.",
+   "filburNote": "Waterway section PDF p.28: FC-3077, 4-1/4\" x 4\", top opening 1-15/16\", OEM 817-0010, PWW10, C-4310, 10 sq ft.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-0010 = C-4310, 4-1/4\" x 4\", 10 sq ft. Spec table PDF p.6: open 2-1/16\", 216 pleats."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-0010, 10 sq ft skim filter"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "PWW10 spec: 4-1/4\" x 4\", 2-1/16\" open, 10 sq ft, OEM 817-0010. Cross-reference PDF p.47: C-4310 = PWW10."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-3077, OEM 817-0010, C-4310, 10 sq ft, top opening 1-15/16\""
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "C-4326 cartridge (OEM 817-2500)",
+   "modelSlug": "c-4326",
+   "series": "Top load 25",
+   "oem": "817-2500",
+   "equivalents": {
+    "unicel": "C-4326",
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" open",
+    "bottomCore": "2-1/8\" open",
+    "sqft": 25
+   },
+   "notes": "25 sq ft open top-load. Unicel: 4-15/16\" x 13-5/16\", open 2-1/8\", 106 pleats, 25 sq ft. Pleatco PRB25-IN lists OEM 817-2500 at 5\" outside diameter and the same length. Filbur prints this OEM on two rows: FC-2375 at 13-5/16\" (PRB25-IN, C-4326) and FC-2910, which the size table lengths at 13-1/4\" and the Waterway section lengths at 12-1/4\", with no Pleatco number. The size stored here is Unicel's. The 50 sq ft cartridge of the same length is 817-5000.",
+   "gaps": "Outside diameter 4-15/16\" vs Pleatco 5\". Filbur FC-2910 length 13-1/4\" in the size table and 12-1/4\" in the Waterway section, against 13-5/16\" on FC-2375, Unicel, and Pleatco.",
+   "pleatcoNote": "Spec table PDF p.32: PRB25-IN, 5\" x 13-5/16\", open 2-1/8\", 25 sq ft, OEM list includes 817-2500.",
+   "filburNote": "Waterway section PDF p.28: FC-2375 at 13-5/16\" and FC-2910 at 12-1/4\", both OEM 817-2500 and Unicel C-4326. Size table: FC-2910 at 13-1/4\".",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-2500 = C-4326, 4-15/16\" x 13-5/16\", 25 sq ft. Spec table PDF p.9: open 2-1/8\", 106 pleats."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-2500, 25 sq ft, in-line top-load"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PRB25-IN includes OEM 817-2500, 5\" x 13-5/16\", 25 sq ft"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-2375 and FC-2910 both list OEM 817-2500. Size table lengths FC-2910 at 13-1/4\"."
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "C-4950 cartridge (OEM 817-5000)",
+   "modelSlug": "c-4950",
+   "series": "Top load 50",
+   "oem": "817-5000",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" open",
+    "bottomCore": "2-1/8\" open",
+    "sqft": 50
+   },
+   "notes": "50 sq ft open top-load. Same outside size as 817-2500. Unicel's spec note calls C-4950 an upgrade of the 25 sq ft C-4326: 212 pleats against 106, same 4-15/16\" x 13-5/16\" body. Pleatco PRB50-IN lists OEM 817-5000 at 5\" outside diameter. Filbur FC-2390 agrees with Unicel's size and 50 sq ft. Waterway's table calls 817-5000 a 50 sq ft in-line top-load cartridge.",
+   "gaps": "Outside diameter 4-15/16\" (Unicel, Filbur) vs 5\" (Pleatco).",
+   "pleatcoNote": "Spec table PDF p.32: PRB50-IN, 5\" x 13-5/16\", open 2-1/8\", 50 sq ft, OEM list includes 817-5000.",
+   "filburNote": "Waterway section PDF p.28: FC-2390, 4-15/16\" x 13-5/16\", open 2-1/8\", OEM 817-5000, C-4950, 50 sq ft.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-5000 = C-4950, 4-15/16\" x 13-5/16\", 50 sq ft. Spec table PDF p.9: 212 pleats, and the note that C-4950 is an upgrade of C-4326."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-5000, 50 sq ft, in-line top-load"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PRB50-IN includes OEM 817-5000, 5\" x 13-5/16\", 50 sq ft"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-2390, OEM 817-5000, C-4950, 50 sq ft"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "C-4970 cartridge (OEM 817-7500)",
+   "modelSlug": "c-4970",
+   "series": "Top load 75, discontinued by Unicel",
+   "oem": "817-7500",
+   "equivalents": {
+    "unicel": "C-4970",
+    "filbur": "FC-2930"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 23.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "23-5/8\"",
+    "topCore": "2-1/8\" open",
+    "bottomCore": "2-1/8\" open",
+    "sqft": 75
+   },
+   "notes": "75 sq ft top-load. Unicel's Waterway line prints 817-7500 = C-4970 at 75 sq ft and says C-4970 is discontinued: use C-4995. C-4995 is 817-1000, which Unicel rates at 95 sq ft, so the named replacement is not a 75. Waterway's current table still lists 817-7500 at 75 sq ft. Filbur FC-2930 still prints C-4970, PCAL75, and 817-7500 at 75 sq ft. Pleatco's deactivated list sends PCAL75 to PCAL100 and does not print 817-7500. PCAL100 is not stored here; it is the equivalent on the 817-1000 row.",
+   "gaps": "Unicel says to stop using this number. Waterway's table and Filbur still list it at 75 sq ft. The replacement Unicel names is a different area.",
+   "pleatcoNote": "Deactivated list PDF p.21: PCAL75 replacement PCAL100. No 817-7500 and no C-4970 in the 2023 spec table or Unicel cross-reference.",
+   "filburNote": "Waterway section PDF p.28: FC-2930, 4-15/16\" x 23-5/8\", OEM 817-7500, PCAL75, C-4970, 75 sq ft.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-7500 = C-4970, 75 sq ft, 4-15/16\" x 23-5/8\", discontinued, use C-4995. Spec table PDF p.9: 178 pleats, same discontinued note."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-7500 still listed, 75 sq ft, in-line top-load"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated list PDF p.21: PCAL75 replacement PCAL100"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-2930, OEM 817-7500, C-4970, 75 sq ft"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "C-4995 cartridge (OEM 817-1000)",
+   "modelSlug": "c-4995",
+   "series": "Top load, the C-4970 replacement",
+   "oem": "817-1000",
+   "equivalents": {
+    "unicel": "C-4995",
+    "pleatco": "PCAL100",
+    "filbur": "FC-2940"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 23.625,
+    "diameterText": "4-15/16\"",
+    "lengthText": "23-5/8\"",
+    "topCore": "2-1/8\" open",
+    "bottomCore": "2-1/8\" open",
+    "sqft": 95
+   },
+   "notes": "The cartridge Unicel names in place of discontinued C-4970. Unicel's spec table and Waterway OEM line: 4-15/16\" x 23-5/8\", open 2-1/8\", 222 pleats, 95 sq ft. That 95 is what is stored. Waterway's own table calls 817-1000 a 100 sq ft in-line cartridge. Pleatco PCAL100 is 5\" x 23-5/8\", 100 sq ft, OEM 817-1000. Filbur's Waterway section prints FC-2940 at 100 sq ft, and another FC-2940 row prints 95. Same length as the 75 sq ft cartridge it replaces.",
+   "gaps": "Area 95 (Unicel spec and Unicel Waterway line) vs 100 (Waterway's table, Pleatco, Filbur Waterway section). A second Filbur row prints 95. Outside diameter 4-15/16\" vs Pleatco 5\".",
+   "pleatcoNote": "Spec table PDF p.32: PCAL100, 5\" x 23-5/8\", open 2-1/8\", 100 sq ft, OEM 817-1000. Cross-reference PDF p.47: C-4995 = PCAL100. Deactivated PCAL75 points here.",
+   "filburNote": "Waterway section PDF p.28: FC-2940, OEM 817-1000, PCAL100, C-4995, sq ft column 100. A later size-table row prints FC-2940 / C-4995 at 95.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-1000 = C-4995, 95 sq ft, and the C-4970 note that says to use it. Spec table PDF p.9: 222 pleats, 95 sq ft."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-1000, 100 sq ft, in-line top mount"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PCAL100, 100 sq ft, OEM 817-1000. Cross-reference PDF p.47: C-4995 = PCAL100."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-2940 at 100 sq ft. Another FC-2940 row prints 95 sq ft."
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Waterway Plastics",
+   "brandSlug": "waterway-plastics",
+   "model": "C-6375 cartridge (OEM 817-0018)",
+   "modelSlug": "c-6375",
+   "series": "Dyna-Flo XL",
+   "oem": "817-0018",
+   "equivalents": {
+    "unicel": "C-6375",
+    "filbur": "FC-3754"
+   },
+   "dimensions": {
+    "diameterIn": 6.5625,
+    "lengthIn": 13.3125,
+    "diameterText": "6-9/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-3/8\" open",
+    "bottomCore": "2-3/8\" open",
+    "sqft": 75
+   },
+   "notes": "Dyna-Flo XL, 75 sq ft. Waterway's table writes 2-3/8\" x 6-9/16\" x 13-5/16\", which is the open end, the outside diameter, and the length. Unicel's spec table prints the same three numbers, 224 pleats, 75 sq ft. Filbur FC-3754 agrees and names 817-0018. The 2023 Pleatco cross-reference has no C-6375 line. The longer Dyna-Flo, 817-0019 / C-6310, is a different cartridge and is not this row.",
+   "gaps": "No Pleatco equivalent in the 2023 cross-reference.",
+   "pleatcoNote": "No C-6375 line in the 2023 Unicel cross-reference.",
+   "filburNote": "Waterway section PDF p.28: FC-3754, 6-9/16\" x 13-5/16\", open 2-3/8\", OEM 817-0018, C-6375, 75 sq ft.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Waterway list PDF p.64: 817-0018 = C-6375, Dyna-Flo XL, 6-9/16\" x 13-5/16\", 75 sq ft. Spec table PDF p.13: open 2-3/8\", 224 pleats."
+    },
+    {
+     "source": "Waterway Plastics Service Logic cartridge table",
+     "url": "https://waterwayplastics.com/product/skimmer-and-skim-filter-options/",
+     "where": "Fetched 2026-11-09: 817-0018, 75 sq ft Dyna-Flo XL, 2-3/8\" x 6-9/16\" x 13-5/16\""
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Waterway section PDF p.28: FC-3754, OEM 817-0018, C-6375, 75 sq ft"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Saratoga Spas",
+   "brandSlug": "saratoga-spas",
+   "model": "4CH-20 cartridge (OEM 20241-238)",
+   "modelSlug": "4ch-20",
+   "series": "Saratoga Spas",
+   "oem": "20241-238",
+   "equivalents": {
+    "unicel": "4CH-20",
+    "pleatco": "PSG25P4",
+    "filbur": "FC-0125"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 6.75,
+    "diameterText": "4-5/8\"",
+    "lengthText": "6-3/4\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2\" MPT",
+    "sqft": 20
+   },
+   "notes": "Short Saratoga top-load, 1-1/2\" MPT. Unicel's spec table, price index, and Saratoga line all say 4-5/8\" x 6-3/4\", 204 pleats, 20 sq ft, for OEM 20241-238. That 20 is what is stored. Unicel's Vita line prints the same 4CH-20 as PVT 25 at 25 sq ft. Pleatco PSG25P4 is 4-3/4\" x 6-1/2\", 25 sq ft, OEM 20241-238. The 2023 Unicel cross-reference has no 4CH-20 line. Filbur's Saratoga section prints FC-0125 at 15 sq ft and names the Pleatco cell PHC25, which Pleatco deactivates with replacement N/A. Filbur's size-table description says 20 sq ft and its column says 25. Filbur's Vita section prints 25 sq ft for OEM PVT-25. The 1-1/4\" SAE cartridge of this length is 4CH-920, not this one.",
+   "gaps": "Area 20 (Unicel spec, price index, Saratoga line) vs 25 (Unicel Vita line, Pleatco, Filbur Vita section, Filbur size-table column) vs 15 (Filbur Saratoga section). Length 6-3/4\" vs Pleatco 6-1/2\". Outside diameter 4-5/8\" vs Pleatco 4-3/4\".",
+   "pleatcoNote": "Spec table PDF p.31: PSG25P4, 4-3/4\" x 6-1/2\", 1-1/2\" MPT, 25 sq ft, OEM 20241-238. PSG25-XP4 is the no-adapter twin, same OEM and size. Cross-reference PDF p.47 has no 4CH-20 line. Deactivated list: PHC25 and PHC25P4 replacement N/A.",
+   "filburNote": "Saratoga section PDF p.25: FC-0125, 4-5/8\" x 6-3/4\", 1-1/2\" MPT, PHC25, 4CH-20, 15 sq ft. Size table: description '20 sq. ft. Top Load,' column 25. Vita section PDF p.28: 25 sq ft, OEM PVT-25.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Saratoga list PDF p.55: 20241-238 = 4CH-20, 4-5/8\" x 6-3/4\", 20 sq ft, 1-1/2\" MPT. Spec table PDF p.7: 204 pleats, 20 sq ft. Price index PDF p.88: 20 sq ft. Vita list PDF p.63: PVT 25 = 4CH-20 at 25 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.31: PSG25P4, OEM 20241-238, 4-3/4\" x 6-1/2\", 25 sq ft. Deactivated list: PHC25 replacement N/A."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Saratoga section PDF p.25: FC-0125 at 15 sq ft. Size table column 25. Vita section PDF p.28: 25 sq ft for PVT-25."
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Saratoga Spas",
+   "brandSlug": "saratoga-spas",
+   "model": "4CH-920 cartridge (1-1/4\" SAE)",
+   "modelSlug": "4ch-920",
+   "series": "Saratoga Spas",
+   "oem": "",
+   "equivalents": {
+    "unicel": "4CH-920",
+    "filbur": "FC-0124"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 6.75,
+    "diameterText": "4-5/8\"",
+    "lengthText": "6-3/4\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/4\" SAE",
+    "sqft": 20
+   },
+   "notes": "Same 4-5/8\" x 6-3/4\" body as 4CH-20, with a 1-1/4\" SAE bottom instead of 1-1/2\" MPT. Unicel's Saratoga line prints no OEM number. Spec table and price index: 204 pleats, 20 sq ft. Filbur FC-0124 prints 15 sq ft and the Pleatco cell PSG13.5. Pleatco's PSG13.5P4 is 4-3/4\" x 5-15/16\" and 14 sq ft, OEM 303575, which is not this length and is not on Unicel's Saratoga list, so it is not stored as the equivalent. The 2023 cross-reference has no 4CH-920 line. Filbur's footnote says to remove Saratoga's adapter and match the replacement to the fitting that remains.",
+   "gaps": "No OEM number in Unicel or Filbur. Area 20 (Unicel) vs 15 (Filbur). No Pleatco cross-reference line. Filbur's PSG13.5 cell is a different length in Pleatco's own spec.",
+   "pleatcoNote": "No 4CH-920 line in the 2023 Unicel cross-reference. PSG13.5P4 (PDF p.31) is 4-3/4\" x 5-15/16\", 14 sq ft, OEM 303575.",
+   "filburNote": "Saratoga section PDF p.25: FC-0124, 4-5/8\" x 6-3/4\", 1-1/4\" SAE, PSG13.5, 4CH-920, 15 sq ft. The adapter footnote is on this section.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Saratoga list PDF p.55: 4CH-920, 4-5/8\" x 6-3/4\", 1-1/4\" SAE, 20 sq ft, no OEM. Spec table PDF p.7: 204 pleats. Price index PDF p.88: 20 sq ft."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Saratoga section PDF p.25: FC-0124, 4CH-920, 15 sq ft, and the adapter footnote"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Cross-reference PDF p.47 has no 4CH-920 line. Spec table PDF p.31: PSG13.5P4 is a shorter cartridge, OEM 303575."
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Saratoga Spas",
+   "brandSlug": "saratoga-spas",
+   "model": "4CH-21 cartridge (OEM 20245-238)",
+   "modelSlug": "4ch-21",
+   "series": "Saratoga Spas",
+   "oem": "20245-238",
+   "equivalents": {
+    "unicel": "4CH-21",
+    "pleatco": "PTL18P4",
+    "filbur": "FC-0121"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 8,
+    "diameterText": "4-5/8\"",
+    "lengthText": "8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2\" MPT",
+    "sqft": 19
+   },
+   "notes": "1-1/2\" MPT, 4-5/8\" x 8\". Unicel's spec table: 158 pleats, 19 sq ft. The Saratoga line names OEM 20245-238. Pleatco PTL18P4 is the same length and 18 sq ft, and the spec line also names Vita PVT-25N. Filbur FC-0121 agrees with Unicel's 19 sq ft. The 19 stored here is Unicel's and Filbur's figure.",
+   "gaps": "Area 19 (Unicel, Filbur) vs 18 (Pleatco). Length agrees at 8\".",
+   "pleatcoNote": "Spec table PDF p.31: PTL18P4, 4-5/8\" x 8\", 1-1/2\" MPT, 18 sq ft, OEM 20245-238 and PVT-25N. Cross-reference PDF p.47: 4CH-21 = PTL18P4.",
+   "filburNote": "Saratoga section PDF p.25: FC-0121, 4-5/8\" x 8\", 1-1/2\" MPT, PTL18-4, 4CH-21, 19 sq ft.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Saratoga list PDF p.55: 20245-238 = 4CH-21, 4-5/8\" x 8\", 19 sq ft. Spec table PDF p.7: 158 pleats, 19 sq ft. Price index PDF p.88: 19 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.31: PTL18P4, OEM 20245-238, 18 sq ft. Cross-reference PDF p.47: 4CH-21 = PTL18P4."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Saratoga section PDF p.25: FC-0121, 4CH-21, 19 sq ft"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Saratoga Spas",
+   "brandSlug": "saratoga-spas",
+   "model": "4CH-24 cartridge (OEM 20254-238)",
+   "modelSlug": "4ch-24",
+   "series": "Saratoga Spas",
+   "oem": "20254-238",
+   "equivalents": {
+    "unicel": "4CH-24",
+    "pleatco": "PGS25P4",
+    "filbur": "FC-0131"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 9.75,
+    "diameterText": "4-5/8\"",
+    "lengthText": "9-3/4\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2\" MPT",
+    "sqft": 25
+   },
+   "notes": "1-1/2\" MPT, 4-5/8\" x 9-3/4\", 25 sq ft. Unicel's spec table gives 173 pleats. Pleatco PGS25P4 and Filbur FC-0131 print the same size and 25 sq ft for OEM 20254-238. This is the Saratoga cartridge the three catalogs agree on.",
+   "gaps": "",
+   "pleatcoNote": "Spec table PDF p.31: PGS25P4, 4-5/8\" x 9-3/4\", 1-1/2\" MPT, 25 sq ft, OEM 20254-238. Cross-reference PDF p.47: 4CH-24 = PGS25P4.",
+   "filburNote": "Saratoga section PDF p.25: FC-0131, 4-5/8\" x 9-3/4\", 1-1/2\" MPT, PGS25P4, 4CH-24, 25 sq ft.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Saratoga list PDF p.55: 20254-238 = 4CH-24, 4-5/8\" x 9-3/4\", 25 sq ft. Spec table PDF p.7: 173 pleats. Price index PDF p.88: 25 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.31: PGS25P4, OEM 20254-238, 25 sq ft. Cross-reference PDF p.47: 4CH-24 = PGS25P4."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Saratoga section PDF p.25: FC-0131, 4CH-24, 25 sq ft"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Saratoga Spas",
+   "brandSlug": "saratoga-spas",
+   "model": "4CH-30 cartridge (OEM 74407-98)",
+   "modelSlug": "4ch-30",
+   "series": "Saratoga Spas",
+   "oem": "74407-98",
+   "equivalents": {
+    "unicel": "4CH-30",
+    "filbur": "FC-0141"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 11.875,
+    "diameterText": "4-5/8\"",
+    "lengthText": "11-7/8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "1-1/2\" MPT",
+    "sqft": 30
+   },
+   "notes": "Longest of the Saratoga 1-1/2\" MPT cartridges. Unicel: 4-5/8\" x 11-7/8\", 158 pleats, 4 oz media, 30 sq ft, OEM 74407-98. Filbur FC-0141 is the same length and prints 27 sq ft. The Pleatco cell on that Filbur row, PTL25P-4, is on Pleatco's deactivated list and is sent to PSG27.5P4. PSG27.5P4's own spec is 4-3/4\" x 11-3/8\", 28 sq ft, 'Saratoga Spas Circulation Pump,' and it does not print 74407-98 or 4CH-30, so it is not stored as the equivalent. The 2023 cross-reference has no 4CH-30 line. The 30 stored here is Unicel's.",
+   "gaps": "Area 30 (Unicel) vs 27 (Filbur Saratoga section). No live Pleatco number that prints this OEM. The deactivated-list replacement PSG27.5P4 is 11-3/8\" and 28 sq ft and does not name 74407-98.",
+   "pleatcoNote": "No 4CH-30 line in the 2023 Unicel cross-reference. Deactivated list: PTL25P4 replacement PSG27.5P4. PSG27.5P4 spec, PDF p.31, does not print 74407-98.",
+   "filburNote": "Saratoga section PDF p.25: FC-0141, 4-5/8\" x 11-7/8\", 1-1/2\" MPT, PTL25P-4, 4CH-30, 27 sq ft.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Saratoga list PDF p.55: 74407-98 = 4CH-30, 4-5/8\" x 11-7/8\", 30 sq ft, 1-1/2\" MPT. Spec table PDF p.7: 158 pleats, 4 oz, 30 sq ft. Price index PDF p.88: 30 sq ft."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Saratoga section PDF p.25: FC-0141, 4CH-30, 27 sq ft, cell PTL25P-4"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated list: PTL25P4 replacement PSG27.5P4. Spec table PDF p.31: PSG27.5P4 does not name 74407-98. Cross-reference PDF p.47 has no 4CH-30 line."
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
+  },
+  {
+   "brand": "Saratoga Spas",
+   "brandSlug": "saratoga-spas",
+   "model": "4CH-950 cartridge (OEM 74408-99)",
+   "modelSlug": "4ch-950",
+   "series": "Saratoga Spas",
+   "oem": "74408-99",
+   "equivalents": {
+    "unicel": "4CH-950",
+    "filbur": "FC-0173"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 12,
+    "diameterText": "4-5/8\"",
+    "lengthText": "12\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/4\" SAE",
+    "sqft": 25
+   },
+   "notes": "1-1/4\" SAE, not MPT. Unicel's Saratoga line: OEM 74408-99, 4-5/8\" x 12\", 25 sq ft. Spec table: 139 pleats, and the description also names Dimension One. Filbur FC-0173 is 11-7/8\" long. The Saratoga section's sq ft column is 27; the size table says 25 sq ft. The Pleatco cell PDO-UF25P2 is deactivated with replacement N/A, so no Pleatco number is stored. Dimension One's OEM for this Unicel number is 1561-04. The 25 and 12\" stored here are Unicel's.",
+   "gaps": "Length 12\" (Unicel) vs 11-7/8\" (Filbur). Filbur Saratoga section 27 sq ft vs Unicel and Filbur's size table at 25. Pleatco cell deactivated, replacement N/A.",
+   "pleatcoNote": "Deactivated list: PDO-UF25 replacement N/A. No 4CH-950 line found in the 2023 Unicel cross-reference.",
+   "filburNote": "Saratoga section PDF p.25: FC-0173, 4-5/8\" x 11-7/8\", 1-1/4\" SAE, PDO-UF25P2, 4CH-950, 27 sq ft. Size table: '25 sq. ft. Top Load,' column 25.",
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Saratoga list PDF p.55: 74408-99 = 4CH-950, 4-5/8\" x 12\", 25 sq ft, 1-1/4\" SAE. Spec table PDF p.8: 139 pleats, 25 sq ft. Price index PDF p.88: 25 sq ft."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Saratoga section PDF p.25: FC-0173 at 27 sq ft and 11-7/8\". Size table: 25 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated list: PDO-UF25 replacement N/A"
+    }
+   ],
+   "fitment": [],
+   "status": "verified",
+   "index": true
   }
  ]
 }

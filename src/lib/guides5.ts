@@ -322,7 +322,7 @@ picks:search('Part-number searches','These are the same Hot Spring cartridge und
 ['Filbur FC-3915','FC-3915 spa filter','Filbur’s number for that same cartridge.'],
 ])},
 
-{slug:'spas-that-use-more-than-one-filter',published:D,reviewed:D,
+{slug:'spas-that-use-more-than-one-filter',published:D,reviewed:'2026-11-09',
 title:'Spas that use more than one filter cartridge at the same time',
 desc:'When a hot tub holds two or three cartridges at once, when a slim insert sits inside a pleated filter, and when a second cartridge is only a spare on the shelf.',
 answer:`Some housings are built for more than one cartridge. Leisure Time’s listing for Hot Spring OEM 71825 says many of those models take <strong>three</strong> of the 6" cartridges${c('lt71825')}. Unicel says Master Spas Eco-Pur systems from 2006 on require <strong>two</strong> C-8341 cartridges, and a separate inner element is used with them${c('unicel26')}. Sundance’s 680 and 780 manuals describe a pleated filter plus a disposable MicroClean insert, on two different replacement clocks${c('sd680','sd780')}. A second set you rotate while one soaks is a spare, which Unicel, Pleatco and Jacuzzi recommend, and it is not the same as a housing that holds two${c('unicel','pleatcoCat','jac')}.`,
@@ -334,6 +334,7 @@ body:`<h2>Three different meanings of “two filters”</h2>
 <li><strong>A spare set</strong> waits while the set in the spa gets dirty. The spare is not installed on top of a full housing.</li>
 </ol>
 <p>A retail “2-pack” is usually the third meaning, or simply how the manufacturer boxes the part. Intex 29001E is a two-pack of Type S1 cartridges. Intex’s pages do not say a PureSpa holds an S1 and an S2 together. They say which set numbers take which type. That split is in <a href="/guides/intex-and-bestway-inflatable-spa-filters/">Intex and Bestway filters</a>.</p>
+<p>Unicel’s Waterway list is another housing count${c('unicel26')}. It prints 817-0050 once as a single front-access cartridge and again with the note that two are used side by side, and it prints 817-0011 stacked on 817-0012. How the catalogs rate those bodies is on the <a href="/fitment/waterway-filter-by-model-year/">Waterway filter lookup</a>.</p>
 
 <h2>Hot Spring wells that hold three</h2>
 <p>The 6" × 10-1/2" open cartridge <a href="/hot-spring/c-6430/">C-6430</a> (OEM 31489 / 71825 / 71826) is the Highlife size. The Leisure Time listing for 71825 says many of these models take three cartridges, and that some models of the same footprint use a Tri-X ceramic filter instead of pleated media. Use the pleated cartridge only where the spa specifies 71825 or a listed equivalent${c('lt71825')}.</p>
