@@ -3898,7 +3898,7 @@
    },
    "notes": "",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Checked 2026-11-04: Unicel's Cal Spas section still prints FIL11700016 as 6CH-975 (6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft). A search of the Filbur catalog the same day found no FIL11700016. Unresolved. Checked 2026-11-06: Unicel PDF p.30 (printed p.26) still prints FIL11700016 as 6CH-975, 6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft. No new manufacturer model chart and no Filbur row for FIL11700016. Checked 2026-11-07: Unicel’s Cal Spas line still prints FIL11700016 as 6CH-975, 6-3/4\" × 15-1/2\", 2\" SAE, 75 sq ft. No model-to-cartridge chart was found. Still unresolved.",
+   "gaps": "no Pleatco equivalent in Pleatco 2023 cross reference; no Filbur equivalent found in Filbur catalog; no model/model-year fitment in sources Checked 2026-11-03: ezhottubparts still crosses FIL11700016 to Unicel 6CH-960 (52 sq ft); a Spa Parts Warehouse listing for FIL75-7D155H2MCT-3 / FIL11700016 gives 75 sq ft, 7\" x 15\", 2\" MPT, which matches 6CH-975's area but neither catalog's thread wording. Checked 2026-11-04: Unicel's Cal Spas section still prints FIL11700016 as 6CH-975 (6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft). A search of the Filbur catalog the same day found no FIL11700016. Unresolved. Checked 2026-11-06: Unicel PDF p.30 (printed p.26) still prints FIL11700016 as 6CH-975, 6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft. No new manufacturer model chart and no Filbur row for FIL11700016. Checked 2026-11-07: Unicel’s Cal Spas line still prints FIL11700016 as 6CH-975, 6-3/4\" × 15-1/2\", 2\" SAE, 75 sq ft. No model-to-cartridge chart was found. Still unresolved. Checked 2026-11-08: Unicel PDF p.30 still prints FIL11700016 as 6CH-975, 6-3/4\" x 15-1/2\", 2\" SAE, 75 sq ft. A text search of the Pleatco 2023 PDF and the Filbur PDF found no 6CH-975 and no FIL11700016. Still unresolved.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -5236,7 +5236,7 @@
    },
    "notes": "Made with antimicrobial filter media (Unicel spec note). Only the Unicel 2026 guide lists it among the catalogs. Two spa dealers sell OEM 20499 for Marquis ATV swim spas with matching area, length and handle, but a slightly larger diameter.",
    "status": "needs_verification",
-   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT Checked 2026-11-04: Filbur's Marquis section does not list 20499 or 5CH-902AM. OGS Pool and Spa's listing prints 5-3/16\" x 30\", handle, a 2\" bottom and 90 sq ft, matching Unicel's diameter and length, but it does not say whether that 2\" bottom is MPT or the fine thread Mastercraft describes. Checked 2026-11-06: Parts4tubs lists 5CH-902AM as a Unicel cartridge for Marquis Spas and reprints the catalog line \"Cartridge, 90sqft, Bar ht, 2\"mpt b, 5-3/16\", 30\", 4oz\" (UPC 678285250115). That matches Unicel's diameter, length and 2\" MPT wording. It is not a separate measurement of the fine thread. Checked 2026-11-07: no new measurement of the thread. A listing that reprints Unicel’s 2\" MPT line does not settle the fine-thread description from 2026-11-01. Still unresolved.",
+   "gaps": "no Pleatco equivalent; no Filbur equivalent; no Marquis document found. Checked 2026-11-01: two spa dealers confirm OEM 20499 as a 90 sq ft, ~30\" threaded swim-spa cartridge with a handle (one also gives 20496 as the earlier number), but give the outside diameter as about 5-1/4\" to 5-1/2\" against Unicel's 5-3/16\", and one describes a fine ~1.85\" thread rather than 2\" MPT Checked 2026-11-04: Filbur's Marquis section does not list 20499 or 5CH-902AM. OGS Pool and Spa's listing prints 5-3/16\" x 30\", handle, a 2\" bottom and 90 sq ft, matching Unicel's diameter and length, but it does not say whether that 2\" bottom is MPT or the fine thread Mastercraft describes. Checked 2026-11-06: Parts4tubs lists 5CH-902AM as a Unicel cartridge for Marquis Spas and reprints the catalog line \"Cartridge, 90sqft, Bar ht, 2\"mpt b, 5-3/16\", 30\", 4oz\" (UPC 678285250115). That matches Unicel's diameter, length and 2\" MPT wording. It is not a separate measurement of the fine thread. Checked 2026-11-07: no new measurement of the thread. A listing that reprints Unicel’s 2\" MPT line does not settle the fine-thread description from 2026-11-01. Still unresolved. Checked 2026-11-08: Unicel PDF p.10 (spec) and PDF p.44 (Marquis OEM) still print 5CH-902AM at 5-3/16\" x 30\", 2\" MPT, 90 sq ft, OEM 20499 and 370-0694. Pleatco 2023 and Filbur have no 5CH-902 and no 20499. No new measurement of the fine thread. Still unresolved.",
    "fitment": [
     {
      "model": "Marquis ATV 14 and ATV 17 swim spas (ATV 14 Sport, ATV 14 Slash, ATV 17 Sport, ATV 17 Kona)",
@@ -6493,7 +6493,7 @@
    },
    "notes": "Unicel lists this 4-5/8\" x 6-3/4\" top-load cartridge for Softub. No OEM number is given, and neither Pleatco nor Filbur mentions Softub for it.",
    "status": "needs_verification",
-   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source. Checked 2026-11-04: Filbur lists FC-0125 / 4CH-20 under Saratoga (that row prints 15 sq ft), Leisure Bay (20 sq ft), Softsider (20 sq ft) and Vita (25 sq ft, OEM PVT-25), not under Softub. Pleatco lists Unicel's Saratoga OEM 20241-238 as PSG25P4 at 25 sq ft, not as a Softub part. Still no second source for the Softub application. Checked 2026-11-06: a pass over the Filbur catalog PDF found no row that prints Softub next to FC-0125 / 4CH-20. The size table still prints that Filbur number at 20 sq ft (Pleatco cell PHC25), and one brand row still prints Vita OEM PVT-25 at 25 sq ft. Checked 2026-11-07: Filbur still does not print Softub on an FC-0125 / 4CH-20 row. A Filbur brand row still pairs 4CH-20 with Vita OEM PVT-25. Still unresolved.",
+   "gaps": "single source (Unicel only); no OEM part number; no Pleatco equivalent; no Filbur equivalent; no model/model-year fitment in sources. Checked 2026-10-31: Softub's 2025 owner's manual and Softub dealers (SoftubDirect, SpaStore, Simply Spas, ezhottubparts) describe snap-on 5020/5015/5010 filters, and the threaded replacement SoftubDirect sells is 4CH-23DF; retailer tables that list 4CH-20 for Softub repeat the Unicel size with no OEM number. Checked 2026-11-03: Hot Tub Essentials (ProAqua 4CH-20) and Hot Tub Outpost (ProLine P4CH-20) list Softub among the brands for this size with no Softub OEM number, in wording that matches Unicel's own listing; not an independent source. Checked 2026-11-04: Filbur lists FC-0125 / 4CH-20 under Saratoga (that row prints 15 sq ft), Leisure Bay (20 sq ft), Softsider (20 sq ft) and Vita (25 sq ft, OEM PVT-25), not under Softub. Pleatco lists Unicel's Saratoga OEM 20241-238 as PSG25P4 at 25 sq ft, not as a Softub part. Still no second source for the Softub application. Checked 2026-11-06: a pass over the Filbur catalog PDF found no row that prints Softub next to FC-0125 / 4CH-20. The size table still prints that Filbur number at 20 sq ft (Pleatco cell PHC25), and one brand row still prints Vita OEM PVT-25 at 25 sq ft. Checked 2026-11-07: Filbur still does not print Softub on an FC-0125 / 4CH-20 row. A Filbur brand row still pairs 4CH-20 with Vita OEM PVT-25. Still unresolved. Checked 2026-11-08: Unicel's Softub section still lists only this 20 sq ft 4-5/8\" x 6-3/4\" 1-1/2\" MPT cartridge, with no OEM. Pleatco's Softub spec line is PTL20W-SV-P4 for OEM 90-802, not 4CH-20. Filbur's text contains no Softub. Still unresolved.",
    "fitment": [],
    "pleatcoNote": "",
    "filburNote": "",
@@ -6529,7 +6529,7 @@
    },
    "notes": "Intex sells this cartridge as Type S1: 29001E (twin pack), 29011E (six-pack) and single replacement part 11692. Unicel prints OEM 29001 and 11692; Pleatco prints 29001E for PIN4PAIR (a two-cartridge set). The end-cap openings differ between sources: Unicel gives 2-1/16\" top and bottom, Pleatco 1-5/8\". Body size (4-1/4\" x 2-15/16\") agrees. The model list is Intex's own compatible-item list for part 11692 (Intex names five of them as 2019 sets); the years shown are the model-year folders Intex's replacement-parts archive files part 11692 under. A Home Depot listing for 29001E also names 28413E, 28423E and 28443E, which are not on Intex's list. The EG/EH versions of 28425, 28427, 28439 and 28441 take the newer Type S2 cartridge instead.",
    "status": "needs_verification",
-   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved Checked 2026-11-04: Pleatco's spec table still prints PIN4PAIR (OEM 29001E) with 1-5/8\" openings, and Unicel's C-4317 spec is still 2-1/16\". No new measurement. Unresolved. Checked 2026-11-06: All Filters' SpiroPure SP-PS-IT-S1 listing prints 1-5/8\" top and bottom holes for Intex 29001E / C-4317 / PIN4PAIR, which repeats Pleatco's figure rather than measuring Unicel's 2-1/16\". Checked 2026-11-07: Pleatco spec table PDF p.31 still prints PIN4PAIR (OEM 29001E) at 4-1/4\" × 2-15/16\" with 1-5/8\" openings. Unicel’s C-4317 spec still prints 2-1/16\" both ends. Still unresolved.",
+   "gaps": "end-cap opening differs between Unicel (2-1/16\") and Pleatco (1-5/8\"); no Filbur equivalent found; checked 2026-11-01: retailer listings repeat either Unicel's or Pleatco's figure without their own measurement, so the conflict is unresolved Checked 2026-11-04: Pleatco's spec table still prints PIN4PAIR (OEM 29001E) with 1-5/8\" openings, and Unicel's C-4317 spec is still 2-1/16\". No new measurement. Unresolved. Checked 2026-11-06: All Filters' SpiroPure SP-PS-IT-S1 listing prints 1-5/8\" top and bottom holes for Intex 29001E / C-4317 / PIN4PAIR, which repeats Pleatco's figure rather than measuring Unicel's 2-1/16\". Checked 2026-11-07: Pleatco spec table PDF p.31 still prints PIN4PAIR (OEM 29001E) at 4-1/4\" × 2-15/16\" with 1-5/8\" openings. Unicel’s C-4317 spec still prints 2-1/16\" both ends. Still unresolved. Checked 2026-11-08: Pleatco spec table PDF p.31 still prints PIN4PAIR (OEM 29001E) at 4-1/4\" x 2-15/16\" with 1-5/8\" openings. Unicel's C-4317 spec still prints 2-1/16\" both ends. Filbur's text has no C-4317. Still unresolved.",
    "fitment": [
     {
      "model": "Intex PureSpa 28403E",
@@ -8127,6 +8127,850 @@
      "source": "Filbur Catalog & Reference Guide",
      "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
      "where": "PDF p.9 (printed p.17): FC-2395 = C-4975, 4-15/16\" × 20-1/8\", 2-1/8\" open, 75 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "4CH-252 cartridge (OEM FIL11100303)",
+   "modelSlug": "4ch-252",
+   "series": "Coleman Spas",
+   "oem": "FIL11100303",
+   "oemAll": "FIL11100303",
+   "equivalents": {
+    "unicel": "4CH-252",
+    "pleatco": "PMA20-F2M"
+   },
+   "dimensions": {
+    "diameterIn": 4.625,
+    "lengthIn": 8,
+    "diameterText": "4-5/8\"",
+    "lengthText": "8\"",
+    "topCore": "molded cone handle",
+    "bottomCore": "2\" male thread/MPT",
+    "sqft": 25
+   },
+   "notes": "Unicel's Coleman block prints OEM FIL11100303 as 4CH-252, 25 sq ft, 4-5/8\" x 8\", 2\" MPT, and notes that the Coleman original is 4-3/4\" OD. There is no 3301 twin on this row. The same OEM is also on Unicel's Cal Spas line. Pleatco's cross-reference sends 4CH-252 to PMA20-F2M. Filbur's Coleman section does not list FIL11100303.",
+   "status": "verified",
+   "gaps": "No Filbur row in the Coleman section. No Coleman model name. Pleatco's PMA20-F2M spec line does not print FIL11100303.",
+   "fitment": [],
+   "pleatcoNote": "Unicel cross-reference PDF p.47: 4CH-252 = PMA20-F2M. The Coleman OEM is not on that Pleatco spec line.",
+   "filburNote": "Coleman Spas section, PDF pp.16-17, has no FIL11100303 and no 4CH-252.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman Spas OEM block, PDF p.32 (printed p.28): FIL11100303 = 4CH-252, 25 sq ft, 2\" MPT; original OD noted as 4-3/4\". Spec table: 4-5/8\" x 8\", cone handle, 213 pleats, 3 oz, 25 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Unicel cross-reference PDF p.47: 4CH-252 = PMA20-F2M"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "7CH-32 cartridge (OEM 100432)",
+   "modelSlug": "7ch-32",
+   "series": "Coleman Spas",
+   "oem": "100432",
+   "oemAll": "100432; 3301-1018",
+   "equivalents": {
+    "unicel": "7CH-32",
+    "filbur": "FC-0425"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 8,
+    "diameterText": "7\"",
+    "lengthText": "8\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\" male thread/MPT",
+    "sqft": 32
+   },
+   "notes": "This is the 1-1/2\" MPT half of Coleman's 7\" x 8\" pair. Unicel prints OEM 100432 and, for the through-2001 format, 3301-1018. The spec table gives 175 pleats, 3 oz and 32 sq ft. Filbur's Coleman section prints FC-0425, OEM 100432, Pleatco cell PCS32P, 32 sq ft. Pleatco's 2023 Unicel cross-reference has no 7CH-32 line. A Filbur Water's Edge row prints the same FC-0425 at 35 sq ft; the Coleman row is the 32.",
+   "status": "verified",
+   "gaps": "No live Pleatco equivalent. PCS32P is Filbur's cell, and Pleatco's deactivated list sends PCS32P4 to N/A. No Coleman model name.",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "Coleman Spas section PDF p.16: FC-0425, 7 x 8, OEM 100432, PCS32P, 7CH-32, 32 sq ft. Dimensional listing PDF p.11 also prints 32 sq ft. A Water's Edge Spas row prints 35 sq ft for the same Filbur number.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32 (printed p.28): 100432 and 3301-1018 = 7CH-32, 7\" x 8\", 1-1/2\" MPT, 32 sq ft. Spec table PDF p.14 (printed p.10): 175 pleats, 3 oz, 32 sq ft."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16 and dimensional listing PDF p.11: FC-0425 = 7CH-32 = PCS32P, 32 sq ft, OEM 100432"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "7CH-322 cartridge (OEM 100520)",
+   "modelSlug": "7ch-322",
+   "series": "Coleman Spas",
+   "oem": "100520",
+   "oemAll": "100520; 3301-2109",
+   "equivalents": {
+    "unicel": "7CH-322",
+    "pleatco": "PAS35-F2M",
+    "filbur": "FC-0420"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 8,
+    "diameterText": "7\"",
+    "lengthText": "8\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2\" male thread/MPT",
+    "sqft": 32
+   },
+   "notes": "This is the 2\" MPT twin of OEM 100432. Unicel's spec table and Filbur print 7\" x 8\", 175 pleats, 32 sq ft, for OEM 100520, and Unicel also prints 3301-2109. Pleatco PAS35-F2M prints those same OEM numbers at 7-1/8\" x 7-9/16\", 2\" MPT, 35 sq ft. Unicel's Artesian line prints 7CH-322 at 35 sq ft and says the original is 7-7/8\" OD and 7-5/8\" overall. The dimensions stored here are the Coleman spec-table figures. Filbur's Pleatco cell says PAS35-2; Pleatco's own number is PAS35-F2M.",
+   "status": "verified",
+   "gaps": "Area 32 sq ft (Unicel spec table and Filbur) versus 35 sq ft (Pleatco PAS35-F2M, and Unicel's Artesian line). Length 8\" versus Pleatco's 7-9/16\". No Coleman model name.",
+   "fitment": [],
+   "pleatcoNote": "Cross-reference PDF p.47 and spec table PDF p.34: 7CH-322 = PAS35-F2M, 7-1/8\" x 7-9/16\", 35 sq ft, OEM 100520 and 3301-2109. The deactivated list sends PCS32-2 (with a 2\" adapter) to PAS35-F2M.",
+   "filburNote": "Coleman section PDF p.16: FC-0420, 7 x 8, OEM 100520, cell PAS35-2, 7CH-322, 32 sq ft. Dimensional listing PDF p.11 agrees on 32 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100520 and 3301-2109 = 7CH-322, 7\" x 8\", 2\" MPT, 32 sq ft. Spec table PDF p.14: 175 pleats, 32 sq ft. Artesian block PDF p.29 (printed p.25): 7CH-322 at 35 sq ft, original 7-7/8\" OD and 7-5/8\" overall."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.34: PAS35-F2M, 7-1/8\" x 7-9/16\", 2\" MPT, 35 sq ft, OEM 100520 and 3301-2109. Cross-reference PDF p.47: 7CH-322 = PAS35-F2M."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16 and dimensional listing PDF p.11: FC-0420, 7 x 8, 32 sq ft, OEM 100520, Pleatco cell PAS35-2, Unicel 7CH-322"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "7CH-40 cartridge (OEM 100433)",
+   "modelSlug": "7ch-40",
+   "series": "Coleman Spas",
+   "oem": "100433",
+   "oemAll": "100433; 3301-1019",
+   "equivalents": {
+    "unicel": "7CH-40",
+    "filbur": "FC-0435"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 9.75,
+    "diameterText": "7\"",
+    "lengthText": "9-3/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\" male thread/MPT",
+    "sqft": 40
+   },
+   "notes": "This is the 1-1/2\" MPT half of the 7\" x 9-3/4\" pair. Unicel prints OEM 100433 and 3301-1019. The spec table gives 178 pleats, 3 oz and 40 sq ft, and that line also names Vita Spas. Filbur's Coleman section prints FC-0435, OEM 100433, cell PCS40P, 40 sq ft. Pleatco's Unicel cross-reference has no 7CH-40 line.",
+   "status": "verified",
+   "gaps": "No live Pleatco equivalent. No Coleman model name. Vita is named on Unicel's spec line, not as a Coleman model.",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "Coleman section PDF p.16: FC-0435, 7 x 9-3/4, OEM 100433, PCS40P, 7CH-40, 40 sq ft, 1-1/2\" MPT.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100433 and 3301-1019 = 7CH-40, 7\" x 9-3/4\", 1-1/2\" MPT, 40 sq ft. Spec table PDF p.14: 178 pleats, 40 sq ft, Coleman and Vita."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-0435 = 7CH-40 = PCS40P, OEM 100433, 40 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "7CH-402 cartridge (OEM 100521)",
+   "modelSlug": "7ch-402",
+   "series": "Coleman Spas",
+   "oem": "100521",
+   "oemAll": "100521; 3301-2110",
+   "equivalents": {
+    "unicel": "7CH-402",
+    "filbur": "FC-0430"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 9.75,
+    "diameterText": "7\"",
+    "lengthText": "9-3/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2\" male thread/MPT",
+    "sqft": 40
+   },
+   "notes": "This is the 2\" MPT twin of OEM 100433. Same 7\" x 9-3/4\" body, 178 pleats, 40 sq ft. Unicel prints OEM 100521 and 3301-2110. Filbur prints FC-0430 and cell PCS40-F2M. Pleatco's 2023 deactivated list sends PCS40-F2M to N/A, and the Unicel cross-reference has no 7CH-402 line. 7CH-40 is not a substitute: the thread is the difference.",
+   "status": "verified",
+   "gaps": "No live Pleatco equivalent. PCS40-F2M is deactivated with replacement N/A. No Coleman model name.",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "Coleman section PDF p.16: FC-0430, 7 x 9-3/4, 2\" MPT, OEM 100521, PCS40-F2M, 7CH-402, 40 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100521 and 3301-2110 = 7CH-402, 7\" x 9-3/4\", 2\" MPT, 40 sq ft. Spec table PDF p.14: 178 pleats, 40 sq ft."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-0430 = 7CH-402 = PCS40-F2M, OEM 100521, 40 sq ft"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated list PDF p.22: PCS40-F2M replacement N/A. Unicel cross-reference PDF p.47 has no 7CH-402 line."
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "7CH-50 cartridge (OEM 100434)",
+   "modelSlug": "7ch-50",
+   "series": "Coleman Spas",
+   "oem": "100434",
+   "oemAll": "100434; 3301-1020",
+   "equivalents": {
+    "unicel": "7CH-50",
+    "filbur": "FC-0463"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 14.75,
+    "diameterText": "7\"",
+    "lengthText": "14-3/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\" male thread/MPT",
+    "sqft": 50
+   },
+   "notes": "This is the 1-1/2\" MPT half of the 7\" x 14-3/4\" pair. Unicel prints OEM 100434 and 3301-1020. The spec table gives 144 pleats, 3 oz and 50 sq ft, and that line also names Vita Spas. Filbur prints FC-0463, cell PVT50P, 50 sq ft. Pleatco deactivates PVT50P4 with replacement N/A and does not list 7CH-50 in the Unicel cross-reference.",
+   "status": "verified",
+   "gaps": "No live Pleatco equivalent. No Coleman model name.",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "Coleman section PDF p.16: FC-0463, 7 x 14-3/4, OEM 100434, PVT50P, 7CH-50, 50 sq ft, 1-1/2\" MPT.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100434 and 3301-1020 = 7CH-50, 7\" x 14-3/4\", 1-1/2\" MPT, 50 sq ft. Spec table PDF p.15 (printed p.11): 144 pleats, 50 sq ft, Coleman and Vita."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-0463 = 7CH-50 = PVT50P, OEM 100434, 50 sq ft"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated list PDF p.24: PVT50P4 replacement N/A. Unicel cross-reference has no 7CH-50 line."
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "7CH-502 cartridge (OEM 100522)",
+   "modelSlug": "7ch-502",
+   "series": "Coleman Spas",
+   "oem": "100522",
+   "oemAll": "100522; 3301-2111",
+   "equivalents": {
+    "unicel": "7CH-502",
+    "filbur": "FC-0460"
+   },
+   "dimensions": {
+    "diameterIn": 7,
+    "lengthIn": 14.75,
+    "diameterText": "7\"",
+    "lengthText": "14-3/4\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "2\" male thread/MPT",
+    "sqft": 50
+   },
+   "notes": "This is the 2\" MPT twin of OEM 100434. Same 7\" x 14-3/4\" body, 144 pleats, 50 sq ft. Unicel prints OEM 100522 and 3301-2111. Filbur prints FC-0460 and cell PCS50-F2M. Pleatco deactivates PCS50-F2M with replacement N/A. The 1-1/2\" cartridge 7CH-50 is not a substitute.",
+   "status": "verified",
+   "gaps": "No live Pleatco equivalent. PCS50-F2M replacement is N/A. No Coleman model name.",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "Coleman section PDF p.16: FC-0460, 7 x 14-3/4, 2\" MPT, OEM 100522, PCS50-F2M, 7CH-502, 50 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100522 and 3301-2111 = 7CH-502, 7\" x 14-3/4\", 2\" MPT, 50 sq ft. Spec table PDF p.15: 144 pleats, 50 sq ft."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-0460 = 7CH-502 = PCS50-F2M, OEM 100522, 50 sq ft"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated list PDF p.22: PCS50-F2M replacement N/A"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "C-4326 cartridge (OEM 100586)",
+   "modelSlug": "c-4326",
+   "series": "Coleman Spas",
+   "oem": "100586",
+   "oemAll": "100586; 3301-2242",
+   "equivalents": {
+    "unicel": "C-4326",
+    "pleatco": "PRB25-IN",
+    "filbur": "FC-2375"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 25
+   },
+   "notes": "Coleman's 25 sq ft open cartridge. Unicel prints OEM 100586 and 3301-2242 at 4-15/16\" x 13-5/16\". Filbur's Coleman section prints FC-2375, OEM 100586, PRB25-IN, C-4326, 25 sq ft. Pleatco's PRB25-IN spec lists OEM 100586 among other brands and prints the outside diameter as 5\". There is no Coleman model name. This is not the 50 sq ft C-4950, which is the same length.",
+   "status": "verified",
+   "gaps": "Outside diameter 4-15/16\" (Unicel and Filbur) versus 5\" (Pleatco). No model name.",
+   "fitment": [],
+   "pleatcoNote": "Spec table PDF p.32: PRB25-IN, 5\" x 13-5/16\", open 2-1/8\", 25 sq ft; the OEM list includes 100586.",
+   "filburNote": "Coleman section PDF p.16: FC-2375, 4-15/16\" x 13-5/16\", OEM 100586, PRB25-IN, C-4326, 25 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100586 and 3301-2242 = C-4326, 25 sq ft, 4-15/16\" x 13-5/16\""
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PRB25-IN lists OEM 100586, 5\" x 13-5/16\", open 2-1/8\", 25 sq ft"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-2375, OEM 100586, PRB25-IN, C-4326, 25 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "C-4339 cartridge (OEM 100585)",
+   "modelSlug": "c-4339",
+   "series": "Coleman Spas",
+   "oem": "100585",
+   "oemAll": "100585; 3301-2241",
+   "equivalents": {
+    "unicel": "C-4339",
+    "filbur": "FC-2915"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 11.25,
+    "diameterText": "4-15/16\"",
+    "lengthText": "11-1/4\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 40
+   },
+   "notes": "Coleman's 40 sq ft open cartridge, shorter than the 13-5/16\" pair. Unicel prints OEM 100585 and 3301-2241. The spec table gives 4-15/16\" x 11-1/4\", open 2-1/8\", 216 pleats, 3 oz, 40 sq ft, and describes it as Waterway. Filbur's Coleman section repeats OEM 100585, calls the row Waterway 40, and prints Pleatco cell PWW40. Pleatco deactivates PWW40 with replacement N/A.",
+   "status": "verified",
+   "gaps": "No live Pleatco equivalent. PWW40 replacement is N/A. No Coleman model name.",
+   "fitment": [],
+   "pleatcoNote": "",
+   "filburNote": "Coleman section PDF p.16: FC-2915, 4-15/16\" x 11-1/4\", open, OEM 100585, PWW40, C-4339, 40 sq ft, described as Waterway 40.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100585 and 3301-2241 = C-4339, 40 sq ft, 4-15/16\" x 11-1/4\". Spec table: 216 pleats, open 2-1/8\", 40 sq ft."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-2915, OEM 100585, PWW40, C-4339, 40 sq ft"
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Deactivated list PDF p.25: PWW40 replacement N/A"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "C-4950 cartridge (OEM 100533)",
+   "modelSlug": "c-4950",
+   "series": "Coleman Spas",
+   "oem": "100533",
+   "oemAll": "100533; 3301-2145",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50
+   },
+   "notes": "Coleman's 50 sq ft open cartridge, the same length as the 25 sq ft OEM 100586. Unicel prints OEM 100533 and 3301-2145. The same 100533 is on the Maax Spas of AZ list with no model name. Filbur prints FC-2390 and cell PRB50-IN. Pleatco prints the outside diameter as 5\".",
+   "status": "verified",
+   "gaps": "Outside diameter 4-15/16\" (Unicel and Filbur) versus 5\" (Pleatco). No model name on the Coleman row or the Maax row.",
+   "fitment": [],
+   "pleatcoNote": "Spec table PDF p.32: PRB50-IN lists OEM 100533, 5\" x 13-5/16\", open 2-1/8\", 50 sq ft.",
+   "filburNote": "Coleman section PDF p.16: FC-2390, OEM 100533, PRB50-IN, C-4950, 50 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100533 and 3301-2145 = C-4950, 50 sq ft, 4-15/16\" x 13-5/16\". Maax Spas of AZ, PDF p.44, repeats OEM 100533 with no model name."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PRB50-IN lists OEM 100533, 5\" OD, 50 sq ft"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-2390, OEM 100533, PRB50-IN, C-4950, 50 sq ft"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "C-8450 cartridge (OEM 100593)",
+   "modelSlug": "c-8450",
+   "series": "Coleman Spas",
+   "oem": "100593",
+   "oemAll": "100593; 3301-2261",
+   "equivalents": {
+    "unicel": "C-8450",
+    "pleatco": "PCS50N",
+    "filbur": "FC-3310"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 9,
+    "diameterText": "8\"",
+    "lengthText": "9\"",
+    "topCore": "2-1/16\" / open",
+    "bottomCore": "2\" male slip fitting",
+    "sqft": 50
+   },
+   "notes": "Coleman's 50 sq ft slip cartridge. The note under Unicel's row says the model is dated after 1992. OEM numbers are 100593 and 3301-2261. The spec table gives 8\" x 9\", a 2-1/16\" opening, a 2\" male slip, 193 pleats, 3 oz and 50 sq ft. Pleatco PCS50N prints the opening as 2-1/8\" and lists both OEM numbers. Filbur repeats the after-1992 note. Maax lists 100593 and does not repeat that date.",
+   "status": "verified",
+   "gaps": "Opening 2-1/16\" (Unicel and Filbur) versus 2-1/8\" (Pleatco). The after-1992 note is on the Coleman row. Maax's copy of OEM 100593 does not repeat it. No model name.",
+   "fitment": [],
+   "pleatcoNote": "Spec table PDF p.35: PCS50N, 8\" x 9\", 2-1/8\" open, 2\" slip, 50 sq ft, OEM 100593 and 3301-2261.",
+   "filburNote": "Coleman section PDF p.16: FC-3310, 8 x 9, 2-1/16\" open, male slip, OEM 100593, PCS50N, C-8450, 50 sq ft, model dated after 1992.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100593 and 3301-2261 = C-8450, 50 sq ft, 8\" x 9\", 2\" male slip, note \"Model dated after 1992.\" Spec table PDF p.20 (printed p.16): 2-1/16\" open, 193 pleats, 50 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.35: PCS50N, 8\" x 9\", 2-1/8\" open, 2\" slip, OEM 100593 and 3301-2261, 50 sq ft"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-3310, OEM 100593, PCS50N, C-8450, 50 sq ft, model dated after 1992"
+    }
+   ]
+  },
+  {
+   "brand": "Coleman Spas",
+   "brandSlug": "coleman-spas",
+   "model": "C-8475 cartridge (OEM 100594)",
+   "modelSlug": "c-8475",
+   "series": "Coleman Spas",
+   "oem": "100594",
+   "oemAll": "100594; 3301-2262",
+   "equivalents": {
+    "unicel": "C-8475",
+    "pleatco": "PCS75N",
+    "filbur": "FC-3320"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 13,
+    "diameterText": "8\"",
+    "lengthText": "13\"",
+    "topCore": "2-1/16\" / open",
+    "bottomCore": "2\" male slip fitting",
+    "sqft": 75
+   },
+   "notes": "Coleman's 75 sq ft slip cartridge, the longer partner of OEM 100593. Unicel's note says the model is dated after 1992. OEM numbers are 100594 and 3301-2262. The spec table gives 8\" x 13\", a 2-1/16\" opening, a 2\" male slip, 197 pleats and 75 sq ft. Pleatco PCS75N prints a 2-1/8\" opening. A 2\" slip is not the 2\" MPT used on 7CH-322, 7CH-402 or 7CH-502.",
+   "status": "verified",
+   "gaps": "Opening 2-1/16\" (Unicel and Filbur) versus 2-1/8\" (Pleatco). The after-1992 note is Coleman's. No model name.",
+   "fitment": [],
+   "pleatcoNote": "Spec table PDF p.35: PCS75N, 8\" x 13\", 2-1/8\" open, 2\" slip, 75 sq ft, OEM 100594 and 3301-2262.",
+   "filburNote": "Coleman section PDF p.17: FC-3320, OEM 100594, PCS75N, C-8475, 75 sq ft, model dated after 1992.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Coleman OEM block PDF p.32: 100594 and 3301-2262 = C-8475, 75 sq ft, 8\" x 13\", 2\" male slip, note \"Model dated after 1992.\" Spec table PDF p.20: 2-1/16\" open, 197 pleats, 75 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.35: PCS75N, 8\" x 13\", 2-1/8\" open, 2\" slip, OEM 100594 and 3301-2262, 75 sq ft"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.17: FC-3320, OEM 100594, PCS75N, C-8475, 75 sq ft, model dated after 1992"
+    }
+   ]
+  },
+  {
+   "brand": "Maax Spas",
+   "brandSlug": "maax-spas",
+   "model": "5CH-25 cartridge (OEM 108868)",
+   "modelSlug": "5ch-25",
+   "series": "Maax Spas of AZ",
+   "oem": "108868",
+   "oemAll": "108868",
+   "equivalents": {
+    "unicel": "5CH-25",
+    "pleatco": "PMAX25P4"
+   },
+   "dimensions": {
+    "diameterIn": 5.625,
+    "lengthIn": 6,
+    "diameterText": "5-5/8\"",
+    "lengthText": "6\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\" male thread/MPT",
+    "sqft": 25
+   },
+   "notes": "Unicel's Maax Spas of AZ list puts Elegant, Intrigue and Joli on one cartridge: 25 sq ft, 5-5/8\" x 6\", 1-1/2\" MPT, OEM 108868, 5CH-25. The spec table adds 201 pleats and 3 oz. Pleatco PMAX25P4 lists OEM 108868 at 5-3/4\" x 6\", still 25 sq ft and still 1-1/2\" MPT. A text search of the Filbur catalog found no 5CH-25, no PMAX25 and no 108868.",
+   "status": "verified",
+   "gaps": "Diameter 5-5/8\" (Unicel) versus 5-3/4\" (Pleatco). No Filbur equivalent found.",
+   "fitment": [
+    {
+     "model": "Elegant",
+     "years": "",
+     "note": "OEM 108868, 25 sq ft, on the same line as Intrigue and Joli",
+     "src": "unicel"
+    },
+    {
+     "model": "Intrigue",
+     "years": "",
+     "note": "Same cartridge as Elegant and Joli",
+     "src": "unicel"
+    },
+    {
+     "model": "Joli",
+     "years": "",
+     "note": "Same cartridge as Elegant and Intrigue. Not the Elite cartridge.",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "Spec table PDF p.32 and cross-reference PDF p.47: 5CH-25 = PMAX25P4, OEM 108868, 5-3/4\" x 6\", 1-1/2\" MPT, 25 sq ft. Application index PDF p.27: Maax Spas 25 (1.50\" MPT).",
+   "filburNote": "No 5CH-25, PMAX25 or 108868 row found in the Filbur catalog text.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Maax Spas of AZ, PDF p.44 (printed p.40): Elegant, Intrigue and Joli = 108868 = 5CH-25, 25 sq ft, 5-5/8\" x 6\", 1-1/2\" MPT. Spec table PDF p.11 (printed p.7): 201 pleats, 3 oz, 25 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PMAX25P4, OEM 108868, 5-3/4\" x 6\", 1-1/2\" MPT, 25 sq ft. Cross-reference PDF p.47: 5CH-25 = PMAX25P4."
+    }
+   ]
+  },
+  {
+   "brand": "Maax Spas",
+   "brandSlug": "maax-spas",
+   "model": "5CH-35 cartridge (OEM 104309)",
+   "modelSlug": "5ch-35",
+   "series": "Maax Spas of AZ",
+   "oem": "104309",
+   "oemAll": "104309",
+   "equivalents": {
+    "unicel": "5CH-35",
+    "pleatco": "PMAX50P4",
+    "filbur": "FC-0300"
+   },
+   "dimensions": {
+    "diameterIn": 5.625,
+    "lengthIn": 8,
+    "diameterText": "5-5/8\"",
+    "lengthText": "8\"",
+    "topCore": "semi-circular handle",
+    "bottomCore": "1-1/2\" male thread/MPT",
+    "sqft": 35
+   },
+   "notes": "Unicel's Maax of AZ line names Elite Spas on OEM 104309, 5CH-35, 35 sq ft, 5-5/8\" x 8\", 1-1/2\" MPT. The spec table agrees: 203 pleats, 3 oz, 35 sq ft. A separate heading, Elite Spas by Maax, prints 50 sq ft for the same diameter, length, thread and Unicel number, and prints no OEM. Pleatco's cross-reference sends 5CH-35 to PMAX50P4, specified at 5-3/4\" x 8\", 50 sq ft, for Maax Spas of Canada, with no OEM. Pleatco also prints PAS35P4 for Elite Spas (Coleman) at 5-7/8\" x 7-3/4\", 35 sq ft, with no OEM. Filbur FC-0300 is 5-5/8\" x 8\", 35 sq ft, and its Pleatco cell is PAS35P. The square feet stored here are the spec table's 35. PMAX50P4 is not that 35 sq ft cartridge.",
+   "status": "verified",
+   "gaps": "Unicel prints 35 sq ft on the spec table and the Maax of AZ line (with OEM 104309) and 50 sq ft on the Elite Spas by Maax heading (no OEM). Pleatco's cross-reference number PMAX50P4 is 50 sq ft. PAS35P4 is 35 sq ft at 5-7/8\" x 7-3/4\". Filbur is 35 sq ft and does not print OEM 104309.",
+   "fitment": [
+    {
+     "model": "Elite Spas",
+     "years": "",
+     "note": "Maax of AZ line: OEM 104309 at 35 sq ft. A separate Unicel heading prints 50 sq ft and no OEM.",
+     "src": "unicel"
+    }
+   ],
+   "pleatcoNote": "Cross-reference PDF p.47: 5CH-35 = PMAX50P4. Spec PDF p.32: PMAX50P4 is 5-3/4\" x 8\", 1-1/2\" MPT, 50 sq ft, Maax Spas of Canada, no OEM. The same page prints PAS35P4 at 5-7/8\" x 7-3/4\", 35 sq ft, Elite Spas (Coleman), no OEM.",
+   "filburNote": "PDF p.16, Coleman section: FC-0300, 5-5/8\" x 8\", 1-1/2\" MPT, 35 sq ft, PAS35P, 5CH-35, Elite Spa by Coleman. PDF p.18: Maax/Coleman Spas, same size, 35 sq ft. OEM 104309 is not in those cells.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Maax Spas of AZ PDF p.44: Elite Spas, 104309, 5CH-35, 35 sq ft, 5-5/8\" x 8\", 1-1/2\" MPT. Spec table PDF p.11: 203 pleats, 35 sq ft. Heading Elite Spas by Maax, PDF p.34 (printed p.30): 50 sq ft, same body, no OEM."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "PDF p.47: 5CH-35 = PMAX50P4. PDF p.32: PMAX50P4 at 50 sq ft (Maax of Canada) and PAS35P4 at 35 sq ft (Elite Spas, Coleman), 5-7/8\" x 7-3/4\"."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "FC-0300, PDF p.16 and p.18: 5-5/8\" x 8\", 35 sq ft, PAS35P, 5CH-35, Elite Spa by Coleman / Maax/Coleman Spas"
+    }
+   ]
+  },
+  {
+   "brand": "Maax Spas",
+   "brandSlug": "maax-spas",
+   "model": "C-4950 cartridge (OEM 100533)",
+   "modelSlug": "c-4950",
+   "series": "Maax Spas of AZ",
+   "oem": "100533",
+   "oemAll": "100533",
+   "equivalents": {
+    "unicel": "C-4950",
+    "pleatco": "PRB50-IN",
+    "filbur": "FC-2390"
+   },
+   "dimensions": {
+    "diameterIn": 4.9375,
+    "lengthIn": 13.3125,
+    "diameterText": "4-15/16\"",
+    "lengthText": "13-5/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 50
+   },
+   "notes": "Maax of AZ prints OEM 100533 on a 50 sq ft, 4-15/16\" x 13-5/16\" line and names no model. The heading says see also Coleman Spas. Coleman's block pairs 100533 with 3301-2145. This Maax row does not add the 3301 number, because Unicel does not print it under Maax. Pleatco's outside diameter for PRB50-IN is 5\".",
+   "status": "verified",
+   "gaps": "No model name. Outside diameter 4-15/16\" versus Pleatco's 5\". The 3301-2145 twin is on the Coleman row only.",
+   "fitment": [],
+   "pleatcoNote": "Spec table PDF p.32: PRB50-IN lists OEM 100533 at 5\" OD, 50 sq ft.",
+   "filburNote": "Filed under Coleman Spas, PDF p.16, not under a Maax heading: FC-2390, OEM 100533, C-4950, 50 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Maax Spas of AZ PDF p.44: 100533 = C-4950, 50 sq ft, 4-15/16\" x 13-5/16\", no model name. The heading says see also Coleman Spas."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.32: PRB50-IN includes OEM 100533"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-2390, OEM 100533, C-4950. No separate Maax heading for this OEM."
+    }
+   ]
+  },
+  {
+   "brand": "Maax Spas",
+   "brandSlug": "maax-spas",
+   "model": "C-5374 cartridge (OEM 107092)",
+   "modelSlug": "c-5374",
+   "series": "Maax Spas of AZ",
+   "oem": "107092",
+   "oemAll": "107092",
+   "equivalents": {
+    "unicel": "C-5374",
+    "pleatco": "PLBS75",
+    "filbur": "FC-2971"
+   },
+   "dimensions": {
+    "diameterIn": 5.3125,
+    "lengthIn": 14.8125,
+    "diameterText": "5-5/16\"",
+    "lengthText": "14-13/16\"",
+    "topCore": "2-1/8\" / open",
+    "bottomCore": "2-1/8\" / open",
+    "sqft": 65
+   },
+   "notes": "Maax of AZ prints OEM 107092 as C-5374, 65 sq ft, 5-5/16\" x 14-13/16\", with no model name. Unicel's spec table gives 223 pleats, 3 oz, 65 sq ft, open 2-1/8\", for Rec Warehouse S2/G2, Rainbow and Waterway. The S2/G2 OEM line in the same guide prints 75 sq ft for C-5374. Pleatco's cross-reference says C-5374 = PLBS75, and the PLBS75 spec is 5-5/16\" x 14-3/4\", 75 sq ft, with OEM 817-0015, 303433 and R173600, not 107092. Filbur FC-2971 is 5-5/16\" x 14-11/16\" and 65 sq ft. The size stored here is Unicel's spec table.",
+   "status": "verified",
+   "gaps": "Area 65 sq ft (Unicel spec table, the Maax line, and Filbur) versus 75 sq ft (Pleatco's PLBS75 spec, and Unicel's S2/G2 line). Length 14-13/16\" (Unicel), 14-3/4\" (Pleatco) or 14-11/16\" (Filbur). No Maax model name. 107092 is not on the Pleatco spec line.",
+   "fitment": [],
+   "pleatcoNote": "Cross-reference PDF p.47: C-5374 = PLBS75. Spec table PDF p.32: PLBS75, 5-5/16\" x 14-3/4\", 75 sq ft, OEM 817-0015, 303433, R173600.",
+   "filburNote": "Dimensional listing: FC-2971, 5-5/16\" x 14-11/16\", open 2-1/8\", PLBS75, C-5374, 65 sq ft.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Maax Spas of AZ PDF p.44: 107092 = C-5374, 65 sq ft, 5-5/16\" x 14-13/16\". Spec table PDF p.11: 223 pleats, 65 sq ft. S2/G2 line PDF p.43 (printed p.39): C-5374 at 75 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "PDF p.47: C-5374 = PLBS75. PDF p.32: PLBS75 at 75 sq ft, 5-5/16\" x 14-3/4\", OEM 817-0015, 303433, R173600."
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "FC-2971: 5-5/16\" x 14-11/16\", 65 sq ft, PLBS75, C-5374"
+    }
+   ]
+  },
+  {
+   "brand": "Maax Spas",
+   "brandSlug": "maax-spas",
+   "model": "C-8450 cartridge (OEM 100593)",
+   "modelSlug": "c-8450",
+   "series": "Maax Spas of AZ",
+   "oem": "100593",
+   "oemAll": "100593",
+   "equivalents": {
+    "unicel": "C-8450",
+    "pleatco": "PCS50N",
+    "filbur": "FC-3310"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 9,
+    "diameterText": "8\"",
+    "lengthText": "9\"",
+    "topCore": "2-1/16\" / open",
+    "bottomCore": "2\" male slip fitting",
+    "sqft": 50
+   },
+   "notes": "Maax of AZ lists OEM 100593 as C-8450, 50 sq ft, 8\" x 9\", 2\" male slip, and names no model. It does not print the model-dated-after-1992 sentence. That sentence is under Coleman's copy of the same OEM, which also prints 3301-2261. This row does not copy the date or the 3301 number onto Maax. Pleatco's opening is 2-1/8\". Unicel and Filbur print 2-1/16\".",
+   "status": "verified",
+   "gaps": "No model name. Opening 2-1/16\" versus 2-1/8\". The after-1992 note and 3301-2261 are on the Coleman row only.",
+   "fitment": [],
+   "pleatcoNote": "Spec table PDF p.35: PCS50N lists OEM 100593 and 3301-2261, 2-1/8\" open, 2\" slip, 50 sq ft.",
+   "filburNote": "Coleman section PDF p.16, not a Maax heading: FC-3310, OEM 100593, PCS50N, C-8450, 50 sq ft, with the after-1992 note.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Maax Spas of AZ PDF p.44: 100593 = C-8450, 50 sq ft, 8\" x 9\", 2\" male slip, no model and no year note. Spec table PDF p.20: 2-1/16\" open, 193 pleats."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.35: PCS50N, OEM 100593 and 3301-2261, 2-1/8\" opening"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.16: FC-3310, OEM 100593, after-1992 note"
+    }
+   ]
+  },
+  {
+   "brand": "Maax Spas",
+   "brandSlug": "maax-spas",
+   "model": "C-8475 cartridge (OEM 100594)",
+   "modelSlug": "c-8475",
+   "series": "Maax Spas of AZ",
+   "oem": "100594",
+   "oemAll": "100594",
+   "equivalents": {
+    "unicel": "C-8475",
+    "pleatco": "PCS75N",
+    "filbur": "FC-3320"
+   },
+   "dimensions": {
+    "diameterIn": 8,
+    "lengthIn": 13,
+    "diameterText": "8\"",
+    "lengthText": "13\"",
+    "topCore": "2-1/16\" / open",
+    "bottomCore": "2\" male slip fitting",
+    "sqft": 75
+   },
+   "notes": "Maax of AZ lists OEM 100594 as C-8475, 75 sq ft, 8\" x 13\", 2\" male slip, with no model name and without Coleman's after-1992 note or the 3301-2262 twin. The spec table gives a 2-1/16\" opening and 197 pleats. Pleatco PCS75N prints 2-1/8\". This is the longer slip cartridge, not the 9\" OEM 100593.",
+   "status": "verified",
+   "gaps": "No model name. Opening 2-1/16\" versus 2-1/8\". The year note and 3301-2262 stay on the Coleman row.",
+   "fitment": [],
+   "pleatcoNote": "Spec table PDF p.35: PCS75N, OEM 100594 and 3301-2262, 8\" x 13\", 2-1/8\" open, 2\" slip, 75 sq ft.",
+   "filburNote": "Coleman section PDF p.17: FC-3320, OEM 100594, PCS75N, C-8475, 75 sq ft, after-1992 note. No Maax heading for this OEM.",
+   "index": true,
+   "sources": [
+    {
+     "source": "Unicel 2026 Replacement Guide",
+     "url": "https://www.unicelfilters.com/wp-content/uploads/2026/02/2026-Unicel-Replacement-Guide.pdf",
+     "where": "Maax Spas of AZ PDF p.44: 100594 = C-8475, 75 sq ft, 8\" x 13\", 2\" male slip, no model. Spec table PDF p.20: 2-1/16\" open, 197 pleats, 75 sq ft."
+    },
+    {
+     "source": "Pleatco 2023 Catalog",
+     "url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/catalogs/pleatco/Pleatco-Catalog-2023-PRINT-Master.pdf",
+     "where": "Spec table PDF p.35: PCS75N lists OEM 100594 and 3301-2262"
+    },
+    {
+     "source": "Filbur Catalog & Reference Guide",
+     "url": "https://filbur.com/wp-content/uploads/2024/11/Filbur-Catalog-Reference-Guide.pdf",
+     "where": "Coleman Spas section PDF p.17: FC-3320, OEM 100594, C-8475, 75 sq ft"
     }
    ]
   }

@@ -7,6 +7,7 @@ import { pages6 } from './fitment6';
 import { pages7 } from './fitment7';
 import { pages8 } from './fitment8';
 import { pages9 } from './fitment9';
+import { pages10 } from './fitment10';
 /** Model-year lookup pages (/fitment/…). Model/year rows are parsed from the Leisure Time Inc. fitment guide (a single dealer table, fetched 2026-10-25);
  *  cross-references and sizes come from the Unicel 2026 Replacement Guide. Nothing here is estimated. */
 export const FITMENT_DATE = '2026-10-25';
@@ -100,5 +101,6 @@ export const pages: Page[] = [
 ...pages7,
 ...pages8,
 ...pages9,
+...pages10,
 ];
 export const fitmentPage = (slug: string) => pages.find((p) => p.slug === slug);
