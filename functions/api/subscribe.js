@@ -1,4 +1,4 @@
-import { honeypotFilled, normalize, originAllowed, PURPOSE, siteHost, validate } from '../lib/validate.mjs';
+import { honeypotFilled, normalize, originAllowed, siteHost, validate } from '../lib/validate.mjs';
 
 const HOUR_LIMIT = 8;
 const DAY_LIMIT = 24;
@@ -9,7 +9,8 @@ const MESSAGES = {
   model: 'Enter the filter model.',
   date: 'Enter an install date.',
   interval: 'Choose a replacement interval.',
-  consent: "Check the box to confirm we'll only use your email for this request.",
+  part: 'That filter could not be stored.',
+  consent: 'Confirm the privacy note on the form.',
   bad_body: 'Could not read that submission.',
   too_large: 'That submission is too large.',
   forbidden: "We couldn't confirm this submission. Reload the page and try again.",
@@ -77,7 +78,7 @@ function requestHost(request) {
   return header || urlHost;
 }
 
-async function turnstileOk(secret, token, ip) {
+async function turnstileOk(secret, token, ip, action) {
   if (typeof token !== 'string' || token.length === 0 || token.length > 2048) return false;
   let result;
   try {
@@ -92,7 +93,7 @@ async function turnstileOk(secret, token, ip) {
   } catch {
     return false;
   }
-  return result?.success === true && result.action === PURPOSE && siteHost(result.hostname);
+  return result?.success === true && result.action === action && siteHost(result.hostname);
 }
 
 async function rateLimited(db, ipHash, now) {
@@ -107,19 +108,42 @@ async function rateLimited(db, ipHash, now) {
   return false;
 }
 
-async function store(db, record, ipHash, now) {
+async function writeRow(db, record, ipHash, now, legacy) {
   const createdAt = now.toISOString();
-  const existing = await db.prepare('SELECT id FROM subscribers WHERE email = ? AND purpose = ?').bind(record.email, record.purpose).first();
+  const partId = record.part_id || '';
+  const remindMonth = record.remind_month || '';
+  const existingSql = legacy
+    ? 'SELECT id FROM subscribers WHERE email = ? AND purpose = ?'
+    : 'SELECT id FROM subscribers WHERE email = ? AND purpose = ? AND part_id = ?';
+  const existingParams = legacy ? [record.email, record.purpose] : [record.email, record.purpose, partId];
+  const existing = await db.prepare(existingSql).bind(...existingParams).first();
   if (!existing) {
     try {
-      await db.prepare('INSERT INTO subscribers (email, page_url, purpose, extra, consent_text, created_at, ip_hash) VALUES (?, ?, ?, ?, ?, ?, ?)').bind(record.email, record.page_url, record.purpose, record.extra, record.consent_text, createdAt, ipHash).run();
+      if (legacy) {
+        await db.prepare('INSERT INTO subscribers (email, page_url, purpose, extra, consent_text, created_at, ip_hash) VALUES (?, ?, ?, ?, ?, ?, ?)').bind(record.email, record.page_url, record.purpose, record.extra, record.consent_text, createdAt, ipHash).run();
+      } else {
+        await db.prepare('INSERT INTO subscribers (email, page_url, purpose, extra, consent_text, created_at, ip_hash, part_id, remind_month) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)').bind(record.email, record.page_url, record.purpose, record.extra, record.consent_text, createdAt, ipHash, partId, remindMonth).run();
+      }
       return 'created';
     } catch (error) {
       if (!String(error?.message || error).includes('UNIQUE')) throw error;
     }
   }
-  await db.prepare('UPDATE subscribers SET page_url = ?, extra = ?, consent_text = ?, ip_hash = ? WHERE email = ? AND purpose = ?').bind(record.page_url, record.extra, record.consent_text, ipHash, record.email, record.purpose).run();
+  if (legacy) {
+    await db.prepare('UPDATE subscribers SET page_url = ?, extra = ?, consent_text = ?, ip_hash = ? WHERE email = ? AND purpose = ?').bind(record.page_url, record.extra, record.consent_text, ipHash, record.email, record.purpose).run();
+  } else {
+    await db.prepare('UPDATE subscribers SET page_url = ?, extra = ?, consent_text = ?, ip_hash = ?, remind_month = ? WHERE email = ? AND purpose = ? AND part_id = ?').bind(record.page_url, record.extra, record.consent_text, ipHash, remindMonth, record.email, record.purpose, partId).run();
+  }
   return 'updated';
+}
+
+async function store(db, record, ipHash, now) {
+  try {
+    return await writeRow(db, record, ipHash, now, false);
+  } catch (error) {
+    if (!/no such column/i.test(String(error?.message || error))) throw error;
+    return writeRow(db, record, ipHash, now, true);
+  }
 }
 
 export async function handlePost(request, env, now = new Date()) {
@@ -136,7 +160,7 @@ export async function handlePost(request, env, now = new Date()) {
   const ipHash = await hashIp(ip, env.IP_HASH_SALT);
   if (await rateLimited(env.DB, ipHash, now)) return respond(request, 429, MESSAGES.rate);
   if (env.TURNSTILE_SECRET) {
-    const ok = await turnstileOk(env.TURNSTILE_SECRET, input.turnstile, ip === 'local' ? '' : ip);
+    const ok = await turnstileOk(env.TURNSTILE_SECRET, input.turnstile, ip === 'local' ? '' : ip, input.purpose);
     if (!ok) return respond(request, 403, MESSAGES.forbidden);
   }
   if (honeypotFilled(input)) return respond(request, 200, MESSAGES.created, { stored: 'created' });

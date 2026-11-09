@@ -1,6 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import HolidayCta from '../../components/HolidayCta.astro';
+import ReplaceSignup from '../../components/ReplaceSignup.astro';
+import { exactFromFilter } from '../../lib/exact-part.mjs';
 import { filters, slug, allParts, sqftText, modelHref } from '../../lib/data';
 import { indexParts } from '../../lib/xref.mjs';
 import { SRC } from '../../lib/guidesrc';
@@ -34,6 +36,7 @@ const rows = filters.map((f) => {
     fittings: [d.topCore, d.bottomCore].filter(Boolean).join(' / ') || 'not listed',
     wholes: indexed.wholes.join(' '),
     tokens: indexed.tokens.join(' '),
+    exact: exactFromFilter(f),
   };
 });
 const faqs: [string, string][] = [
@@ -66,7 +69,8 @@ const ld = [
 <table id="xref">
 <thead><tr><th>Match</th><th>Filter page</th><th>OEM</th><th>Unicel</th><th>Pleatco</th><th>Filbur</th><th>Size</th><th>Top / bottom</th></tr></thead>
 <tbody>
-{rows.map((r) => <tr hidden data-wholes={r.wholes} data-tokens={r.tokens}>
+{rows.map((r) => <Fragment>
+<tr hidden data-wholes={r.wholes} data-tokens={r.tokens}>
 <td class="xref-match"></td>
 <td><a href={r.href}>{r.name}</a>{r.verified ? '' : ' (unverified)'}</td>
 <td>{r.oem.length ? r.oem.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : 'not listed'}</td>
@@ -75,7 +79,9 @@ const ld = [
 <td>{r.filbur.length ? r.filbur.map((p, i) => <>{i ? ', ' : ''}{p.href ? <a href={p.href}>{p.text}</a> : p.text}</>) : 'not listed'}{r.filburNote && <small> ({r.filburNote})</small>}</td>
 <td>{r.size}</td>
 <td>{r.fittings}</td>
-</tr>)}
+</tr>
+<tr hidden class="xref-remind"><td colspan="8"><ReplaceSignup partId={r.exact.partId} oem={r.exact.oem} unicel={r.exact.unicel} pleatco={r.exact.pleatco} filbur={r.exact.filbur} /></td></tr>
+</Fragment>)}
 </tbody>
 </table>
 </div>
@@ -93,7 +99,7 @@ const input = document.getElementById('q') as HTMLInputElement;
 const msg = document.getElementById('xref-msg');
 const wrap = document.getElementById('xref')?.closest('.tbl') as HTMLElement | null;
 const empty = document.getElementById('xref-empty');
-const trs = [...document.querySelectorAll<HTMLTableRowElement>('#xref tbody tr')].map((tr) => ({
+const trs = [...document.querySelectorAll<HTMLTableRowElement>('#xref tbody tr[data-wholes]')].map((tr) => ({
   tr,
   wholes: (tr.dataset.wholes || '').split(' ').filter(Boolean),
   tokens: (tr.dataset.tokens || '').split(' ').filter(Boolean),
@@ -101,7 +107,11 @@ const trs = [...document.querySelectorAll<HTMLTableRowElement>('#xref tbody tr')
 const run = () => {
   const typed = input.value.trim();
   if (!typed) {
-    for (const row of trs) row.tr.hidden = true;
+    for (const row of trs) {
+      row.tr.hidden = true;
+      const remind = row.tr.nextElementSibling as HTMLTableRowElement | null;
+      if (remind?.classList.contains('xref-remind')) remind.hidden = true;
+    }
     if (wrap) wrap.hidden = true;
     if (empty) empty.hidden = false;
     if (msg) msg.textContent = 'Type a part number. Matches from this dataset are listed under the box, each linking to its filter page.';
@@ -112,6 +122,8 @@ const run = () => {
   for (const row of trs) {
     const hit = result.exact.includes(row) ? 'Exact' : result.token.includes(row) ? 'Inside a longer number' : result.partial.includes(row) ? 'Partial' : '';
     row.tr.hidden = !hit;
+    const remind = row.tr.nextElementSibling as HTMLTableRowElement | null;
+    if (remind?.classList.contains('xref-remind')) remind.hidden = !hit;
     const cell = row.tr.querySelector('.xref-match');
     if (cell) cell.textContent = hit;
   }
