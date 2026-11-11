@@ -1,24 +1,41 @@
 ---
+// Drawn only from the row's own numbers: diameter, length, and the top/bottom fitting text. Nothing is drawn when a size is missing.
+import { inMm, leadInch, fitKind, fitMm } from '../lib/units.mjs';
 const { d } = Astro.props as any;
-const dia = d.diameterIn||7, len = d.lengthIn||10;
-const scale = Math.min(260/len, 150/dia);
-const W = dia*scale, H = len*scale, x = 200-W/2, y = 40;
+const dia = +d.diameterIn, len = +d.lengthIn;
+const ok = Number.isFinite(dia) && dia > 0 && Number.isFinite(len) && len > 0;
+const s = ok ? Math.min(230/len, 150/dia) : 1;
+const W = dia*s, H = len*s, cx = 165, x = cx-W/2, y = 16;
 const pleats = Math.max(8, Math.round(W/9));
+const diaT = inMm(d.diameterText, dia), lenT = inMm(d.lengthText, len);
+const R = W/2, ey = y+H+86+R; // end-view centres
+const ends = [['Top', d.topCore, 107], ['Bottom', d.bottomCore, 323]].map(([label, txt, cx]) => {
+  const kind = fitKind(txt); const v = leadInch(txt);
+  const scaled = kind === 'open' && v != null && v < dia;
+  return { label, txt: txt ? fitMm(txt) : 'not listed', cx: +cx, kind, r: scaled ? v*s/2 : R*.22, scaled };
+});
+const anyScaled = ends.some(e=>e.scaled);
+const totalH = ey + R + 34;
 ---
-<figure class="diagram" aria-label={`Cartridge diagram: ${d.diameterText} diameter, ${d.lengthText} long`}>
-<svg viewBox={`-10 0 430 ${H+134}`} role="img" aria-label={`Cartridge diagram: ${d.diameterText} diameter, ${d.lengthText} long`}>
-<rect x={x+W*.32} y={y-14} width={W*.36} height="14" rx="3" fill="#0b3c40"/>
+{ok && <figure class="diagram" aria-label={`Cartridge diagram: ${diaT} diameter, ${lenT} long`}>
+<svg viewBox={`0 0 430 ${totalH}`} role="img" aria-label={`Side view ${diaT} diameter by ${lenT} long; top: ${ends[0].txt}; bottom: ${ends[1].txt}`}>
 <rect x={x} y={y} width={W} height="12" rx="4" fill="#135e63"/>
 <rect x={x} y={y+12} width={W} height={H-24} fill="#efe4cf"/>
 {Array.from({length:pleats}).map((_,i)=><line x1={x+(i+0.5)*W/pleats} x2={x+(i+0.5)*W/pleats} y1={y+12} y2={y+H-12} stroke="#c9b48e" stroke-width="1.2" class="pleat"/>)}
 <rect x={x} y={y+H-12} width={W} height="12" rx="4" fill="#135e63"/>
-<rect x={x+W*.32} y={y+H} width={W*.36} height="14" rx="3" fill="#0b3c40"/>
-<g class="dim" stroke="#a5532a" stroke-width="1.5" fill="#a5532a" font-family="Public Sans Variable,system-ui" font-size="19" font-weight="700">
-<line x1={x} x2={x+W} y1={y+H+34} y2={y+H+34}/><line x1={x} x2={x} y1={y+H+28} y2={y+H+40}/><line x1={x+W} x2={x+W} y1={y+H+28} y2={y+H+40}/>
-<text x="200" y={y+H+56} text-anchor="middle" stroke="none">Ø {d.diameterText}</text>
-<line x1={x+W+22} x2={x+W+22} y1={y} y2={y+H}/><line x1={x+W+16} x2={x+W+28} y1={y} y2={y}/><line x1={x+W+16} x2={x+W+28} y1={y+H} y2={y+H}/>
-<text x={x+W+32} y={y+H/2+6} stroke="none">{d.lengthText}</text></g>
-<g font-family="Public Sans Variable,system-ui" font-size="15.5" font-weight="500" fill="#3f5557" text-anchor="middle">
-<text x="200" y="14">Top: {d.topCore||'not listed'}</text>
-<text x="200" y={y+H+84}>Bottom: {d.bottomCore||'not listed'}</text></g>
-</svg><figcaption class="crumbs" style="text-align:center">Diagram drawn to scale from the listed dimensions{d.sqft!=null ? ` · ${d.sqft} sq ft media` : ''}</figcaption></figure>
+<g class="dim" stroke="#a5532a" stroke-width="1.5" fill="#a5532a" font-family="Public Sans Variable,system-ui" font-size="16" font-weight="700">
+<line x1={x} x2={x+W} y1={y+H+22} y2={y+H+22}/><line x1={x} x2={x} y1={y+H+16} y2={y+H+28}/><line x1={x+W} x2={x+W} y1={y+H+16} y2={y+H+28}/>
+<text x={cx} y={y+H+44} text-anchor="middle" stroke="none">Ø {diaT}</text>
+<line x1={x+W+18} x2={x+W+18} y1={y} y2={y+H}/><line x1={x+W+12} x2={x+W+24} y1={y} y2={y}/><line x1={x+W+12} x2={x+W+24} y1={y+H} y2={y+H}/>
+<text x={x+W+28} y={y+H/2+6} stroke="none">{lenT}</text></g>
+<text x="215" y={y+H+70} text-anchor="middle" font-family="Public Sans Variable,system-ui" font-size="13" fill="#3f5557">Side view · end views below</text>
+{ends.map(e=><g>
+<circle cx={e.cx} cy={ey} r={R} fill="#135e63"/>
+<circle cx={e.cx} cy={ey} r={R-5} fill="none" stroke="#0b3c40" stroke-width="1"/>
+{e.kind==='open' && <circle cx={e.cx} cy={ey} r={e.r} fill="#f4f7f6" stroke="#0b3c40" stroke-width="1.5" stroke-dasharray={e.scaled?undefined:'4 3'}/>}
+{e.kind==='closed' && <circle cx={e.cx} cy={ey} r={R*.22} fill="#0f4a4f" stroke="#e8d6b5" stroke-width="1"/>}
+{(e.kind==='thread'||e.kind==='slip') && <><circle cx={e.cx} cy={ey} r={R*.24} fill="#e8d6b5" stroke="#0b3c40" stroke-width="1.5"/><circle cx={e.cx} cy={ey} r={R*.14} fill="#0b3c40"/>{e.kind==='thread' && <circle cx={e.cx} cy={ey} r={R*.19} fill="none" stroke="#0b3c40" stroke-width="1" stroke-dasharray="2 2"/>}</>}
+{e.kind==='handle' && <rect x={e.cx-R*.62} y={ey-6} width={R*1.24} height="12" rx="6" fill="#e8d6b5" stroke="#0b3c40" stroke-width="1"/>}
+<text x={e.cx} y={ey+R+22} text-anchor="middle" font-family="Public Sans Variable,system-ui" font-size="15" font-weight="600" fill="#3f5557">{e.label}</text>
+</g>)}
+</svg><figcaption class="crumbs"><span class="dl"><b>Top:</b>{" "}{ends[0].txt}</span><br><span class="dl"><b>Bottom:</b>{" "}{ends[1].txt}</span><br>Drawn to scale from the listed diameter and length{anyScaled ? ' and open-end sizes' : ''}. Handles, threads and closed ends are drawn as symbols, not to scale.{d.sqft!=null ? ` ${d.sqft} sq ft media.` : ''}</figcaption></figure>}

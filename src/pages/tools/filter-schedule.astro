@@ -20,13 +20,13 @@ const used = [...new Set(comparison.map((row) => row.sourceKey))];
 const ld = [
   { '@context': 'https://schema.org', '@type': 'WebPage', name: 'When to replace or clean a hot tub filter', url, description: 'Turn manufacturer-published hot tub filter cleaning and replacement intervals into dates. Where the sources disagree, the range is shown.', inLanguage: 'en-US', dateModified: mod, isPartOf: { '@type': 'WebSite', name: 'MySpaFilter', url: site }, publisher: publisherRef },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
-  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Tools', item: new URL('/tools/', site).href }, { '@type': 'ListItem', position: 3, name: 'When to replace or clean', item: url }] },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'When to replace or clean', item: url }] },
 ];
 ---
 <Base title="When to Replace or Clean a Hot Tub Filter | MySpaFilter" description="Turn manufacturer-published hot tub filter cleaning and replacement intervals into dates. Where the sources disagree, the range is shown." jsonld={ld}>
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › <span aria-current="page">When to replace or clean</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">When to replace or clean</span></nav>
 <h1>When to replace or clean a hot tub filter</h1>
-<p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={reviewed}>November 1, 2026</time></p>
+<p class="crumbs byline">Last reviewed <time datetime={reviewed}>November 1, 2026</time></p>
 <p class="answer" style="font-size:1.12rem">There is no single replacement date. Jacuzzi says 12–24 months for a pleated cartridge. Hot Spring’s filter article says 2–3 years for a polyester cartridge and 4–6 years for TRI-X, while its maintenance page says every three years. Sundance’s 2024 manuals use 12 months and 4 months on the 680 Series and 3 months, or earlier, on the 780 Series disposable cartridge. Unicel gives no end date. Cleaning varies too: Jacuzzi’s regular-use deep clean is 4–6 weeks, Hot Spring’s rinse is monthly, and Pleatco’s note on most spa makers is monthly or every two weeks with heavy use. The calculator counts those published figures from a date you enter. Where the sources do not match, it shows the range and says so.</p>
 <p>Unicel’s maintenance page and Jacuzzi’s filter page both say to keep a second set, so one cartridge can be cleaned while the other is in the spa. A spare is what those pages describe. It is not a sale. The dates on this page are calendar readings of published intervals.</p>
 <HolidayCta />

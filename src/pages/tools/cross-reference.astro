@@ -1,4 +1,5 @@
 ---
+import { inMm } from '../../lib/units.mjs';
 import Base from '../../layouts/Base.astro';
 import HolidayCta from '../../components/HolidayCta.astro';
 import { filters, slug, allParts, sqftText, modelHref } from '../../lib/data';
@@ -30,7 +31,7 @@ const rows = filters.map((f) => {
     filbur: bits(eq.filbur),
     pleatcoNote: f.pleatcoNote || '',
     filburNote: f.filburNote || '',
-    size: `${d.diameterText || 'not listed'} × ${d.lengthText || 'not listed'}${sq ? `, ${sq}` : ''}`,
+    size: `${inMm(d.diameterText, (d as any).diameterIn) || 'not listed'} × ${inMm(d.lengthText, (d as any).lengthIn) || 'not listed'}${sq ? `, ${sq}` : ''}`,
     fittings: [d.topCore, d.bottomCore].filter(Boolean).join(' / ') || 'not listed',
     wholes: indexed.wholes.join(' '),
     tokens: indexed.tokens.join(' '),
@@ -45,13 +46,13 @@ const sources = ['unicel26', 'pleatco23', 'filburCat', 'hsMaint', 'jac'] as cons
 const ld = [
   { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Filter cross-reference lookup', url, description: 'Enter a Unicel, Pleatco, Filbur, or OEM spa filter part number and see the equivalent numbers, dimensions, and filter pages already in this dataset.', inLanguage: 'en-US', dateModified: mod, isPartOf: { '@type': 'WebSite', name: 'MySpaFilter', url: site }, publisher: publisherRef },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
-  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Tools', item: new URL('/tools/', site).href }, { '@type': 'ListItem', position: 3, name: 'Cross-reference lookup', item: url }] },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Cross-reference lookup', item: url }] },
 ];
 ---
 <Base title="Spa Filter Cross-Reference Lookup | MySpaFilter" description="Enter a Unicel, Pleatco, Filbur, or OEM spa filter part number and see the equivalent numbers, dimensions, and filter pages already in this dataset." jsonld={ld}>
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › <span aria-current="page">Cross-reference lookup</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">Cross-reference lookup</span></nav>
 <h1>Filter cross-reference lookup</h1>
-<p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={reviewed}>November 1, 2026</time></p>
+<p class="crumbs byline">Last reviewed <time datetime={reviewed}>November 1, 2026</time></p>
 <p>Type the number on the end cap or the box. This page lists every cartridge in the dataset that carries it, with the OEM, Unicel, Pleatco, and Filbur numbers already on that row, plus diameter, length, and fittings. Each name links to that filter page. The homepage search opens one part-number page and leaves this step out. The <a href="/size/">size lookup</a> is the other tool, for when the number is gone. This one does not add a number the catalogs do not already have.</p>
 <p>Retailer buttons stay on the filter page. A listing this site has opened is labeled there, and a search is labeled as a search. This page does not print a price.</p>
 <HolidayCta />
