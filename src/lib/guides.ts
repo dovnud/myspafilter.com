@@ -8,6 +8,7 @@ import { holidayGuides } from './guides6';
 import { drainGuides } from './guides7';
 import { mediaGuides } from './guides8';
 import { stormGuides } from './guides9';
+import { dayGuides } from './guides10';
 export { SRC, REVIEWED };
 export type Guide={slug:string;title:string;desc:string;answer:string;body:string;faq:[string,string][];src:string[];picks?:PickGroup[];pickHeading?:string;related?:string[];reviewed?:string;intro?:string;published?:string};
 const baseGuides: Guide[] = [
@@ -145,17 +146,20 @@ src:['unicel','pleatcoCat','jac']},
 
 {slug:'can-you-put-a-hot-tub-filter-in-the-dishwasher',title:'Can you put a hot tub filter in the dishwasher or use a pressure washer?',
 desc:'What Jacuzzi, Pleatco and Sundance say about dishwashers, washing machines, pressure washers and stiff brushes on spa filter cartridges.',
-answer:`No to the dishwasher: Jacuzzi says dishwashers and washing machines aren’t recommended because high heat and aggressive spray can warp end caps and don’t clean deep between the pleats${c('jac')}. For rinsing, use a garden hose; Jacuzzi says to avoid pressure washers that can tear fibers${c('jac')}.`,
+answer:`Only one cartridge in these sources is cleared for a dishwasher. Hot Spring’s 2025 Highlife manual says the <strong>Tri-X</strong> filter can be cleaned in the dishwasher with <strong>no soap and no dry cycle</strong>, and the same section tells you to clean a standard filter with degreaser and a hose${c('hsHighlife25')}. Jacuzzi’s filter article says dishwashers and washing machines are not recommended, because high heat and aggressive spray can warp end caps and do not clean deep between the pleats${c('jac')}.`,
 body:`<h2>Quick answers</h2><div class="tbl"><table><thead><tr><th>Method</th><th>Verdict</th></tr></thead><tbody>
-<tr><td>Dishwasher / washing machine</td><td>Not recommended${c('jac')}</td></tr>
-<tr><td>Pressure washer</td><td>Avoid, can tear fibers or damage seams${c('jac')}</td></tr>
-<tr><td>Garden hose, top-down at ~45°</td><td>Recommended${c('unicel','pleatcoCat')}</td></tr>
+<tr><td>Dishwasher, Hot Spring Tri-X</td><td>Allowed: no soap, no dry cycle, in the 2025 Highlife manual${c('hsHighlife25')}</td></tr>
+<tr><td>Dishwasher / washing machine, pleated cartridges</td><td>Not recommended on Jacuzzi’s filter article${c('jac')}</td></tr>
+<tr><td>Pressure washer</td><td>Jacuzzi’s article says avoid them; they can tear fibers or damage seams${c('jac')}</td></tr>
+<tr><td>Garden hose with a high-pressure nozzle</td><td>What the 2025 J-400, 2026 J-4, and 2025 J-300 manuals print for pleat rinsing${c('jacJ400e','jacJ4a','jacJ300e')}</td></tr>
+<tr><td>Garden hose, top-down at ~45°</td><td>Unicel and Pleatco’s general rinse${c('unicel','pleatcoCat')}</td></tr>
 <tr><td>Stiff brush</td><td>Never on the media${c('pleatcoCat')}</td></tr>
 <tr><td>Dishwasher detergent as a bucket soak</td><td>Allowed by Unicel/Pleatco (1 cup per 5 gal)${c('unicel','pleatcoCat')}</td></tr></tbody></table></div>
-<p>Note the difference: putting dishwasher <em>detergent</em> in a soaking bucket is a published option; running the cartridge through a dishwasher is not. Sundance’s 2024 680 manual specifies a high-pressure hose nozzle for its outer pleated filter but a low-pressure nozzle and no chemicals for the insert${c('sd680')}, follow your own spa’s manual. Full steps in <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean a hot tub filter</a>.</p>`,
-faq:[['Will a dishwasher damage a hot tub filter?','Jacuzzi says high heat and aggressive spray can warp end caps, and dishwashers don’t clean deep between the pleats.'],
-['What about filter-cleaning wands?','Unicel and Pleatco describe a garden hose with a straight-flow nozzle. Jacuzzi warns against high-pressure tools that can tear fibers, so avoid anything aggressive on the media.']],
-src:['jac','unicel','pleatcoCat','sd680']},
+<p>A dishwasher load and a bucket of dishwasher detergent are different jobs. Unicel and Pleatco allow the detergent in a soak. Jacuzzi’s article does not allow the machine. Hot Spring’s Highlife manual allows the machine for Tri-X only, and it says no soap. The steps, and the Limelight manual that does not mention a dishwasher, are in <a href="/guides/hot-spring-trix-filter-care/">Hot Spring Tri-X filter care</a>.</p>
+<p>Jacuzzi’s article also says to avoid pressure washers. The collection manuals are a different sentence: they tell you to rinse pleats with a garden hose and a high-pressure nozzle. That split, and which Jacuzzi piece must not be washed at all, is in <a href="/guides/jacuzzi-proclarity-and-proclear-filters/">Jacuzzi ProClarity and ProClear filters</a>. Sundance’s 2024 680 manual specifies a high-pressure hose nozzle for its outer pleated filter and a low-pressure nozzle, with no chemicals, for the insert${c('sd680')}. Full pleated-cartridge steps are in <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean a hot tub filter</a>.</p>`,
+faq:[['Will a dishwasher damage a hot tub filter?','Jacuzzi’s filter article says high heat and aggressive spray can warp end caps, and that a dishwasher does not clean deep between the pleats. Hot Spring’s 2025 Highlife manual is the exception in these sources: Tri-X may go in the dishwasher with no soap and no dry cycle. The same Highlife section does not give that instruction for a standard filter.'],
+['What about filter-cleaning wands?','Unicel and Pleatco describe a garden hose with a straight-flow nozzle. Jacuzzi’s article warns against pressure washers that can tear fibers. Jacuzzi’s J-400, J-4, and J-300 manuals still tell you to rinse pleats with a garden hose and a high-pressure nozzle. Those are two different tools in two different Jacuzzi documents.']],
+src:['jac','unicel','pleatcoCat','sd680','hsHighlife25','jacJ400e','jacJ4a','jacJ300e']},
 ];
 // Product picks attached to the original filter-care guides (all links built in src/config/affiliate.ts).
 const attach: Record<string, PickGroup[]> = {
@@ -177,4 +181,6 @@ const attach: Record<string, PickGroup[]> = {
 };
 for (const g of baseGuides) if (attach[g.slug]) { g.picks = attach[g.slug]; g.reviewed = REVIEWED_NEW; }
 
-export const guides: Guide[] = [...baseGuides,...extraGuides,...newGuides,...batchGuides,...moreGuides,...holidayGuides,...drainGuides,...mediaGuides,...stormGuides];
+for (const g of baseGuides) if (g.slug === 'can-you-put-a-hot-tub-filter-in-the-dishwasher') g.reviewed = '2026-11-11';
+
+export const guides: Guide[] = [...baseGuides,...extraGuides,...newGuides,...batchGuides,...moreGuides,...holidayGuides,...drainGuides,...mediaGuides,...stormGuides,...dayGuides];

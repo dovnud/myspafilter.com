@@ -29,15 +29,16 @@ const srcTxt = srcList.length>1 ? `${srcList.slice(0,-1).join(', ')} and ${srcLi
 const hasCat = cats.length>0;
 const indexed = list.filter(isIndexable);
 const brandGuides: Record<string, [string, string][]> = {
-  'hot-spring': [['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring filter sizes by collection'],['/guides/spas-that-use-more-than-one-filter/','Spas that hold more than one cartridge']],
-  'hot-spot': [['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring and Hot Spot filter sizes'],['/guides/spas-that-use-more-than-one-filter/','Spas that hold more than one cartridge']],
-  'solana': [['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring family filter sizes']],
+  'hot-spring': [['/guides/hot-spring-trix-filter-care/','Hot Spring Tri-X care: dishwasher vs a standard cartridge'],['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring filter sizes by collection'],['/guides/spas-that-use-more-than-one-filter/','Spas that hold more than one cartridge']],
+  'hot-spot': [['/guides/hot-spring-trix-filter-care/','Tri-X care is a Highlife manual instruction; the sizes page covers Hot Spot'],['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring and Hot Spot filter sizes'],['/guides/spas-that-use-more-than-one-filter/','Spas that hold more than one cartridge']],
+  'solana': [['/guides/hot-spring-trix-filter-care/','Tri-X care is a Highlife manual instruction'],['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring family filter sizes']],
   'caldera': [['/guides/caldera-filter-bottom-fittings/','Caldera filter bottoms: male slip vs open end'],['/guides/hot-spring-filter-sizes-by-collection/','Hot Spring sizes, including Vacanza cartridges shared with Caldera']],
   'bullfrog': [['/guides/bullfrog-threaded-and-coreless-filters/','Bullfrog threaded and coreless filters']],
   'intex': [['/guides/intex-and-bestway-inflatable-spa-filters/','Intex PureSpa S1 and S2 filters']],
   'bestway': [['/guides/intex-and-bestway-inflatable-spa-filters/','Bestway Type VI and Lay-Z-Spa filters']],
   'sundance': [['/guides/sundance-and-jacuzzi-look-alike-filters/','Sundance and Jacuzzi look-alike filters'],['/guides/spas-that-use-more-than-one-filter/','Pleated cartridges plus a MicroClean insert']],
-  'jacuzzi': [['/guides/sundance-and-jacuzzi-look-alike-filters/','Sundance and Jacuzzi look-alike filters']],
+  'jacuzzi': [['/guides/jacuzzi-proclarity-and-proclear-filters/','Jacuzzi ProClarity and ProClear: what not to wash'],['/guides/sundance-and-jacuzzi-look-alike-filters/','Sundance and Jacuzzi look-alike filters']],
+  'cal-spas': [['/guides/how-to-clean-a-cal-spas-filter/','How to clean a Cal Spas filter, and the 2026 manual’s part numbers'],['/guides/open-end-vs-threaded-hot-tub-filters/','Open-end vs threaded hot tub filters']],
   'master-spas': [['/guides/master-spas-eco-pur-filters/','Master Spas Eco-Pur filters'],['/guides/spas-that-use-more-than-one-filter/','Spas that hold more than one cartridge']],
   'softub': [['/guides/how-filbur-unicel-and-pleatco-numbers-compare/','How Filbur, Unicel and Pleatco numbers compare']],
   beachcomber: [['/guides/why-same-size-spa-filters-have-different-square-feet/','Why the same size can be 25 or 50 sq ft']],
