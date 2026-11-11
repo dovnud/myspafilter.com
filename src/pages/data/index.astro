@@ -3,13 +3,13 @@ import Base from '../../layouts/Base.astro';
 import { filters, modelHref, sqftText } from '../../lib/data';
 import { dataDate, dataFirstDate, fileDate } from '../../lib/lastmod';
 import { distinctSources } from '../../lib/dataset';
-import { SITE, citeAs, DATASET_KEYWORDS, editorialTeam, publisherRef } from '../../lib/schema';
+import { SITE, citeAs, DATASET_KEYWORDS, publisherRef } from '../../lib/schema';
 const url = `${SITE}data/`;
 const updated = [dataDate(), fileDate('src/pages/data/index.astro')].sort().at(-1) as string;
 const dataUpdated = dataDate();
 const nice = (d:string) => new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'});
 const cite = citeAs(dataUpdated);
-const bibtex = `@misc{myspafilter_spa_filters,\n  author       = {{MySpaFilter Editorial Team}},\n  title        = {Spa filter cartridge cross-reference dataset},\n  year         = {${dataUpdated.slice(0,4)}},\n  howpublished = {\\url{${url}}},\n  note         = {MySpaFilter.com, updated ${dataUpdated}}\n}`;
+const bibtex = `@misc{myspafilter_spa_filters,\n  author       = {{MySpaFilter}},\n  title        = {Spa filter cartridge cross-reference dataset},\n  year         = {${dataUpdated.slice(0,4)}},\n  howpublished = {\\url{${url}}},\n  note         = {MySpaFilter.com, updated ${dataUpdated}}\n}`;
 const sorted = [...filters].sort((a,b)=>a.brand.localeCompare(b.brand)||a.model.localeCompare(b.model,'en',{numeric:true}));
 const nVer = filters.filter(f=>f.status==='verified').length;
 const nBrands = new Set(filters.map(f=>f.brandSlug)).size;
@@ -20,7 +20,7 @@ const desc = `All ${filters.length} spa and hot tub filter cartridges we track f
 const ld = [
  { '@context':'https://schema.org', '@type':'Dataset', '@id':`${url}#dataset`, name:'MySpaFilter spa filter cartridge cross-reference dataset', url, mainEntityOfPage:url, inLanguage:'en-US',
    description:`A table of ${filters.length} replacement spa and hot tub filter cartridges from ${nBrands} spa brands. Each row gives the OEM part number(s) with the Unicel, Pleatco and Filbur equivalents, diameter and length in inches, top and bottom fittings, filter media area in square feet where a source gives one, a verified or unverified status, and the catalog or listing pages the row comes from. Compiled by hand from the Unicel 2026 Replacement Guide, the Pleatco 2023 catalog, the Filbur Catalog & Reference Guide and cited manufacturer and dealer pages.`,
-   keywords:DATASET_KEYWORDS, creator:editorialTeam, publisher:publisherRef, isAccessibleForFree:true, creditText:'MySpaFilter Editorial Team, myspafilter.com',
+   keywords:DATASET_KEYWORDS, creator:publisherRef, publisher:publisherRef, isAccessibleForFree:true, creditText:'MySpaFilter, myspafilter.com',
    datePublished:dataFirstDate(), dateModified:dataUpdated, temporalCoverage:'2023/2026',
    measurementTechnique:'Transcribed from published catalog pages and cited listings; rows marked unverified lack a second source or contain a conflict.',
    variableMeasured:['Brand','Model','OEM part number','Unicel part number','Pleatco part number','Filbur part number','Diameter (in)','Length (in)','Top fitting','Bottom fitting','Filter media area (sq ft)','Status'],

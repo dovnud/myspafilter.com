@@ -17,7 +17,7 @@ const colls=(p.collections as string[]).filter(c=>p.rows.some((r:any)=>r.collect
 <Base title={`${p.title} | MySpaFilter`} description={p.desc} jsonld={ld} >
 <p class="crumbs"><a href="/">Home</a> › <a href={`/${p.brandSlug}/`}>{p.crumbBrand} filters</a></p>
 <article><h1>{p.h1}</h1>
-<p class="crumbs byline">Compiled by <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Reviewed <time datetime={D}>{dt}</time></p>
+<p class="crumbs byline">Reviewed <time datetime={D}>{dt}</time></p>
 <p class="answer" style="font-size:1.12rem" set:html={p.answer} />
 <p><small>Affiliate disclosure: this page has no retailer links. Some cartridge pages it links to do, and we may earn a commission from qualifying purchases made through them at no cost to you. <a href="/affiliate-disclosure/">Read our affiliate disclosure</a>.</small></p>
 <h2>The cartridges, with equivalents</h2>

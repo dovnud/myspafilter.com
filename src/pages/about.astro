@@ -2,15 +2,14 @@
 import Base from '../layouts/Base.astro';
 import { filters, brands } from '../lib/data';
 import { guides } from '../lib/guides';
-import { organization, editorialTeam, CONTACT_EMAIL, SAME_AS, SITE } from '../lib/schema';
+import { organization, CONTACT_EMAIL, SAME_AS, SITE } from '../lib/schema';
 import { fileDate, dataDate } from '../lib/lastmod';
 const url = `${SITE}about/`;
 const mod = [fileDate('src/pages/about.astro'), dataDate()].sort().at(-1);
 const nVerified = filters.filter(f=>f.status==='verified').length;
 const ld = [
  { '@context':'https://schema.org', '@type':'AboutPage', '@id':`${url}#webpage`, url, name:'About MySpaFilter', inLanguage:'en-US', dateModified:mod, isPartOf:{ '@type':'WebSite', name:'MySpaFilter', url:SITE }, mainEntity:{ '@id':organization['@id'] }, about:{ '@id':organization['@id'] } },
- { '@context':'https://schema.org', ...organization, contactPoint:{ '@type':'ContactPoint', contactType:'corrections and general questions', email:CONTACT_EMAIL, url:`${SITE}contact/` }, member:{ '@id':editorialTeam['@id'] } },
- { '@context':'https://schema.org', ...editorialTeam },
+ { '@context':'https://schema.org', ...organization, contactPoint:{ '@type':'ContactPoint', contactType:'corrections and general questions', email:CONTACT_EMAIL, url:`${SITE}contact/` } },
  { '@context':'https://schema.org', '@type':'BreadcrumbList', itemListElement:[{ '@type':'ListItem', position:1, name:'Home', item:SITE },{ '@type':'ListItem', position:2, name:'About', item:url }] },
 ];
 ---
@@ -20,7 +19,7 @@ const ld = [
 <p>MySpaFilter is an independent reference for matching a hot tub filter cartridge to its replacement. Spa owners usually know their tub's brand and can read a part number off the old cartridge, but retailers list the same cartridge under several different numbers. This site puts the manufacturer (OEM) part number next to its Unicel, Pleatco and Filbur equivalents, along with the measurements you need to confirm fit. It currently covers {filters.length} cartridges from {brands().length} spa brands and {guides.length} guides.</p>
 
 <h2 id="who">Who runs the site</h2>
-<p>MySpaFilter is run by the <strong>MySpaFilter Editorial Team</strong>, an independent team that builds the data set, writes the guides and answers reader corrections. The pages are published under the team name, not under an individual's name, and we do not claim professional credentials for the team: we are not a spa manufacturer, filter maker or licensed technician, and we are not affiliated with Unicel, Pleatco, Filbur or any spa brand. What we do is read the published catalogs and manufacturer guidance, line them up, and show our work.</p>
+<p>MySpaFilter is an independent site that builds the data set, writes the guides and answers reader corrections. Pages are published under the site name, and we do not claim professional credentials: we are not a spa manufacturer, filter maker or licensed technician, and we are not affiliated with Unicel, Pleatco, Filbur or any spa brand. What we do is read the published catalogs and manufacturer guidance, line them up, and show our work.</p>
 
 <h2 id="methodology">How we research and review</h2>
 <ol>

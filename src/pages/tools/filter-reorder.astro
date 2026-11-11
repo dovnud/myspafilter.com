@@ -1,4 +1,5 @@
 ---
+import { inMm } from '../../lib/units.mjs';
 import Base from '../../layouts/Base.astro';
 import BuyLinks from '../../components/BuyLinks.astro';
 import ProductPicks from '../../components/ProductPicks.astro';
@@ -34,7 +35,7 @@ const catalog = filters.map((f) => {
     model: f.model,
     href: `/${f.brandSlug}/${f.modelSlug}/`,
     verified: f.status === 'verified',
-    size: `${d.diameterText || 'not listed'} × ${d.lengthText || 'not listed'}${sq ? `, ${sq}` : ''}`,
+    size: `${inMm(d.diameterText, (d as any).diameterIn) || 'not listed'} × ${inMm(d.lengthText, (d as any).lengthIn) || 'not listed'}${sq ? `, ${sq}` : ''}`,
     fittings: [d.topCore, d.bottomCore].filter(Boolean).join(' / ') || 'not listed',
     parts: [
       { label: 'OEM', items: bits(f.oemAll || f.oem) },
@@ -62,14 +63,14 @@ const sources = ['jac', 'hsBlog', 'hsMaint', 'sd680', 'sd780', 'sdNo', 'unicel',
 const ld = [
   { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Filter replacement schedule and reorder', url, description: 'Pick a cartridge already in this dataset. See the manufacturer clean and replace interval that applies to it, and the cross-reference numbers with a buy link. Where brands disagree, each interval stays with the brand that printed it.', inLanguage: 'en-US', dateModified: mod, isPartOf: { '@type': 'WebSite', name: 'MySpaFilter', url: site }, publisher: publisherRef },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
-  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Tools', item: new URL('/tools/', site).href }, { '@type': 'ListItem', position: 3, name: 'Replacement schedule and reorder', item: url }] },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: site }, { '@type': 'ListItem', position: 2, name: 'Replacement schedule and reorder', item: url }] },
 ];
 const catalogJson = JSON.stringify(catalog).replace(/</g, '\\u003c');
 ---
 <Base title="Filter Replacement Schedule and Reorder | MySpaFilter" description="Pick a spa brand, model, or part number already in this dataset. See the manufacturer clean and replace interval that applies, and the cross-reference numbers with a buy link." jsonld={ld}>
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › <span aria-current="page">Replacement schedule and reorder</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">Replacement schedule and reorder</span></nav>
 <h1>Filter replacement schedule and reorder</h1>
-<p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={reviewed}>November 4, 2026</time></p>
+<p class="crumbs byline">Last reviewed <time datetime={reviewed}>November 4, 2026</time></p>
 <p class="answer" style="font-size:1.12rem">Pick the cartridge that is already in this dataset. The schedule that follows is the one that manufacturer printed for that kind of cartridge. Jacuzzi’s pleated range is 12–24 months. Hot Spring’s article says 2–3 years for polyester and 4–6 years for TRI-X, and its maintenance page says three years. Sundance’s 2024 manuals use 12 months and 4 months on the 680 Series MicroClean Mini pieces, and 3 months, or earlier, on the 780 Series disposable cartridge. Those are different products. A brand with no month count on the sources below does not inherit one of those numbers. The result also lists the OEM, Unicel, Pleatco and Filbur numbers stored for that row, with a buy link. It does not print a price.</p>
 <p>Unicel, Pleatco and Jacuzzi say to keep a second set, so one cartridge can be cleaned while the other is in the spa. The spare-set line is that second set, in the count you enter. It is not a bundle and not a sale. Dates are calendar readings of published intervals. Gift ideas through December 24, 2026 are in the <a href="#holiday">holiday note</a>.</p>
 <h2>What each manufacturer prints</h2>

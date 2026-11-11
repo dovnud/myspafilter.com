@@ -1,4 +1,5 @@
 ---
+import { inMm } from '../../lib/units.mjs';
 import Base from '../../layouts/Base.astro';
 import ProductPicks from '../../components/ProductPicks.astro';
 import { filters, partLabel } from '../../lib/data';
@@ -23,7 +24,7 @@ for (const f of filters) {
 <div class="card"><label>Diameter (in) <input id="d" type="number" step="0.01" inputmode="decimal"></label> <label>Length (in) <input id="l" type="number" step="0.01" inputmode="decimal"></label> <small>±0.25″ tolerance</small></div>
 <p id="size-empty" hidden>Type a diameter or a length above. Matches within 0.25 inches are listed here, each linking to its cartridge page.</p>
 <div class="tbl"><table id="t"><thead><tr><th>Filter</th><th>OEM</th><th>Dia</th><th>Length</th></tr></thead><tbody>
-{rows.map(r=><tr data-d={r.d} data-l={r.l}><td><a href={r.href}>{r.name}</a></td><td>{r.oem}</td><td>{r.dt}</td><td>{r.lt}</td></tr>)}</tbody></table></div>
+{rows.map(r=><tr data-d={r.d} data-l={r.l}><td><a href={r.href}>{r.name}</a></td><td>{r.oem}</td><td>{inMm(r.dt, r.d)}</td><td>{inMm(r.lt, r.l)}</td></tr>)}</tbody></table></div>
 <p>A match in the table is a shortlist. Open the cartridge page for the OEM, Unicel, Pleatco and Filbur numbers, and for the retailer buttons. Brand guides that explain the common mix-ups: <a href="/guides/hot-spring-filter-sizes-by-collection/">Hot Spring</a>, <a href="/guides/caldera-filter-bottom-fittings/">Caldera</a>, <a href="/guides/bullfrog-threaded-and-coreless-filters/">Bullfrog</a>, <a href="/guides/sundance-and-jacuzzi-look-alike-filters/">Sundance and Jacuzzi</a>, <a href="/guides/intex-and-bestway-inflatable-spa-filters/">Intex and Bestway</a>. The full table is the <a href="/data/">dataset</a>.</p>
 <ProductPicks heading="Search a few common sizes on Amazon" lead="These are examples of part numbers in this table, not a recommendation based on your measurement. Search only after the row you opened matches your diameter, length and ends." groups={[{h:'Part numbers from common sizes', search: examples}]} />
 <script>

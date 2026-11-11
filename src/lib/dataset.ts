@@ -11,7 +11,7 @@ export const csvRow = (f: Filter): Record<(typeof csvColumns)[number], string | 
 const esc = (v: string | number) => { const s = String(v); return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
 export const toCsv = () => [csvColumns.join(','), ...filters.map((f) => csvColumns.map((c) => esc(csvRow(f)[c])).join(','))].join('\r\n') + '\r\n';
 export const toJson = (updated: string, cite: string) => JSON.stringify({
-  name: 'MySpaFilter spa filter cartridge cross-reference dataset', url: `${SITE}data/`, publisher: 'MySpaFilter Editorial Team', cite_as: cite, dateModified: updated, count: filters.length,
+  name: 'MySpaFilter spa filter cartridge cross-reference dataset', url: `${SITE}data/`, publisher: 'MySpaFilter', cite_as: cite, dateModified: updated, count: filters.length,
   note: 'Part numbers, dimensions and fittings are transcribed from the cited catalog pages; a row marked unverified lacks a second source or has a conflict. Measure your old cartridge before ordering.',
   filters: filters.map((f) => ({ ...csvRowJson(f) })) }, null, 1) + '\n';
 const csvRowJson = (f: Filter) => { const d: any = f.dimensions; return {

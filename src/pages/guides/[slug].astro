@@ -5,13 +5,13 @@ import ProductCard from '../../components/ProductCard.astro';
 import { products, productLink, productImage, searchLink } from '../../config/affiliate';
 import { guides, SRC, REVIEWED } from '../../lib/guides';
 import { guidePublished } from '../../lib/lastmod';
-import { editorialTeam, publisherRef } from '../../lib/schema';
+import { publisherRef } from '../../lib/schema';
 export function getStaticPaths(){ return guides.map(g=>({params:{slug:g.slug},props:{g}})); }
 const { g } = Astro.props as any; const rev = g.reviewed || REVIEWED; const revText = new Date(rev+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}); const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
 const strip=(s:string)=>s.replace(/<[^>]+>/g,'').replace(/\[\d+\]/g,'');
 const keys = Object.keys(SRC);
 const img = new URL('/og/guides.png', site).href;
-const ld=[{"@context":"https://schema.org","@type":"Article","@id":`${url}#article`,headline:g.title,description:g.desc,url,inLanguage:"en-US",image:img,datePublished:guidePublished(g),dateModified:rev,author:editorialTeam,publisher:publisherRef,mainEntityOfPage:url,isPartOf:{"@type":"WebSite",name:"MySpaFilter",url:site}},
+const ld=[{"@context":"https://schema.org","@type":"Article","@id":`${url}#article`,headline:g.title,description:g.desc,url,inLanguage:"en-US",image:img,datePublished:guidePublished(g),dateModified:rev,publisher:publisherRef,mainEntityOfPage:url,isPartOf:{"@type":"WebSite",name:"MySpaFilter",url:site}},
 {"@context":"https://schema.org","@type":"FAQPage",mainEntity:g.faq.map(([q,a]:any)=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:strip(a)}}))},
 {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:site},{"@type":"ListItem",position:2,name:"Guides",item:new URL('/guides/',site).href},{"@type":"ListItem",position:3,name:g.title,item:url}]}];
 const RELATED: Record<string, string[]> = {
@@ -47,13 +47,13 @@ const leadPick = (() => {
 <Base title={`${g.title} | MySpaFilter`} description={g.desc} jsonld={ld} ogType="article" modified={rev}>
 <p class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a></p>
 <article><h1>{g.title}</h1>
-<p class="crumbs byline">By <a href="/about/" rel="author">MySpaFilter Editorial Team</a> · Last reviewed <time datetime={rev}>{revText}</time></p>
+<p class="crumbs byline">Last reviewed <time datetime={rev}>{revText}</time></p>
 <p class="answer" style="font-size:1.12rem" set:html={g.answer} />
 {leadPick && <section class="quick-pick"><p><strong>One product this answer points to</strong></p><ProductCard name={leadPick.name} note={leadPick.says} href={leadPick.href} button={leadPick.kind === 'direct' ? 'Check price on Amazon' : 'Search on Amazon'} image={leadPick.kind === 'direct' && leadPick.key ? productImage(leadPick.key) : null} /><p class="amz-note" data-amazon-disclosure><small>As an Amazon Associate I earn from qualifying purchases. {leadPick.kind === 'direct' ? 'Check price on Amazon opens a listing whose title we checked. The line under the name repeats only that title.' : 'Search on Amazon opens an Amazon search for this name, not one listing we pre-checked.'} See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</small></p><p><a href="#picks">Products we checked</a></p></section>}
 <Fragment set:html={g.body} />
 {g.picks && <ProductPicks id="picks" groups={g.picks} heading={g.pickHeading || 'Products worth considering'} />}
 <h2>Questions</h2>{g.faq.map(([q,a]:any)=><section><h3>{q}</h3><p>{a}</p></section>)}
-<aside id="how-we-review"><h2>How we research and review</h2><p>The MySpaFilter Editorial Team writes each guide from published manufacturer, Unicel, Pleatco, CDC and CPSC sources, linked below, and checks that every number or safety claim traces to one of them. Guides are re-read when a source changes or a reader reports a problem. The review date above is the last time we did. Retailer commissions never change the cross-reference data. Product links are Amazon affiliate links, which we disclose. Details: <a href="/about/#methodology">our methodology and corrections policy</a>.</p></aside>
+<aside id="how-we-review"><h2>How we research and review</h2><p>Each guide is written from published manufacturer, Unicel, Pleatco, CDC and CPSC sources, linked below, and checks that every number or safety claim traces to one of them. Guides are re-read when a source changes or a reader reports a problem. The review date above is the last time we did. Retailer commissions never change the cross-reference data. Product links are Amazon affiliate links, which we disclose. Details: <a href="/about/#methodology">our methodology and corrections policy</a>.</p></aside>
 <h2>Sources</h2><ol>{keys.map(k=>g.src.includes(k)||g.answer.includes(`#src-${k}`)||g.body.includes(`#src-${k}`)?<li id={`src-${k}`} value={keys.indexOf(k)+1}><a href={SRC[k].u} rel="nofollow">{SRC[k].t}</a></li>:null)}</ol>
 <p><small>This guide summarizes published manufacturer and public-health guidance; always follow your own spa’s owner’s manual. See our <a href="/disclaimer/">disclaimer</a>.</small></p>
 </article>

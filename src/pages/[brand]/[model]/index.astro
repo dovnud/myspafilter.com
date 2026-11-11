@@ -12,6 +12,7 @@ import ReminderForm from '../../../components/ReminderForm.astro';
 import { holidayOnCartridge } from '../../../lib/holiday';
 import { pages as fitPages } from '../../../lib/fitment';
 import { cartridgeParagraphs } from '../../../lib/cartridgeNote.mjs';
+import { inMm, fitMm } from '../../../lib/units.mjs';
 export function getStaticPaths(){ return filters.map(f=>({params:{brand:f.brandSlug,model:f.modelSlug},props:{f}})); }
 const { f } = Astro.props as { f: Filter };
 const site = Astro.site!.href; const url = new URL(Astro.url.pathname, site).href;
@@ -77,12 +78,12 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
 <p class="lead-label">Replacement numbers</p>
 <div class="big">{names.slice(0,2).join(', ')}</div>
 <p style="margin:.2rem 0 .6rem">Fits {oems.length?`${f.brand} OEM ${oems.join(', ')}`:f.series}.</p>
-<span class="pill">Diameter {d.diameterText}</span><span class="pill">Length {d.lengthText}</span>{sq && <span class="pill">{sq}</span>}{fit.length>0 && <span class="pill">{fit.length} model{fit.length>1?'s':''} listed</span>}
+<span class="pill">Diameter {inMm(d.diameterText, d.diameterIn)}</span><span class="pill">Length {inMm(d.lengthText, d.lengthIn)}</span>{sq && <span class="pill">{sq}</span>}{fit.length>0 && <span class="pill">{fit.length} model{fit.length>1?'s':''} listed</span>}
 <BuyLinks filter={f} />
 <table style="margin-top:1rem"><tr><th>Unicel</th><td>{eq.unicel ? <a href={`/filter/${slug(eq.unicel)}/`}>{eq.unicel}</a> : 'not listed in Unicel 2026 guide'}</td></tr>
 <tr><th>Pleatco</th><td>{eq.pleatco ? <a href={`/filter/${slug(eq.pleatco.split('/')[0])}/`}>{eq.pleatco}</a> : 'not found in source'}{f.pleatcoNote && <small> ({f.pleatcoNote})</small>}</td></tr>
 <tr><th>Filbur</th><td>{eq.filbur ? <a href={`/filter/${slug(eq.filbur)}/`}>{eq.filbur}</a> : 'not found in Filbur catalog'}</td></tr>
-<tr><th>Top</th><td>{d.topCore||'not listed'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore||'not listed'}</td></tr></table>
+<tr><th>Top</th><td>{d.topCore?fitMm(d.topCore):'not listed'}</td></tr><tr><th>Bottom</th><td>{d.bottomCore?fitMm(d.bottomCore):'not listed'}</td></tr></table>
 </div><Cartridge d={d} /></div></section>
 {holidayOnCartridge(f.brandSlug, f.modelSlug) && <HolidayCta />}
 <ReminderForm filterModel={reminderLabel} />
@@ -98,7 +99,7 @@ const ld = [{"@context":"https://schema.org","@type":"WebPage","@id":`${url}#web
 <h2>Check the cartridge you removed</h2>
 <p>Measure diameter, length, and both ends, then compare them with the figures above. The steps are in the <a href="/guide/">measuring guide</a>. Why the bottom decides whether it seals: <a href="/guides/open-end-vs-threaded-hot-tub-filters/">open-end vs threaded filters</a>. Power, the retainer, and not running the spa empty: <a href="/guides/how-to-install-a-hot-tub-filter/">how to install a cartridge</a>.{fg && <> Brand notes: <a href={fg[0]}>{fg[1]}</a>.</>} Number formats: <a href="/guides/how-filbur-unicel-and-pleatco-numbers-compare/">how Filbur, Unicel and Pleatco numbers compare</a>.</p>
 {others.length>0 && <p>The same {pk} number is also on the {others.map((x,i)=><>{i>0?', ':''}<a href={modelHref(x)}>{x.brand}</a></>)} page{others.length>1?'s':''}.</p>}
-{moreBrand.length>0 && <><h2>Other {f.brand} cartridges</h2><ul>{moreBrand.map(x=><li><a href={modelHref(x)}>{x.model}</a>, {(x.dimensions as any).diameterText} × {(x.dimensions as any).lengthText}</li>)}</ul>
+{moreBrand.length>0 && <><h2>Other {f.brand} cartridges</h2><ul>{moreBrand.map(x=><li><a href={modelHref(x)}>{x.model}</a>, {inMm((x.dimensions as any).diameterText, x.dimensions.diameterIn)} × {inMm((x.dimensions as any).lengthText, x.dimensions.lengthIn)}</li>)}</ul>
 <p><a href={`/${f.brandSlug}/`}>All {sameBrand.length} {f.brand} spa filters</a></p></>}
 <p>Every number on this row, on one screen: <a href={`/tools/cross-reference/?q=${encodeURIComponent(pk || f.oem || '')}`}>cross-reference lookup</a>. Published clean and replace intervals for this cartridge, and a buy link for the numbers above: <a href={`/tools/filter-reorder/?brand=${f.brandSlug}&model=${f.modelSlug}`}>replacement schedule and reorder</a>. The interval comparison by brand: <a href="/tools/filter-schedule/">calculator</a>.</p>
 <ProductPicks heading="Cleaner and test strips" lead={`Hose rinse and soak steps are in <a href="/guides/how-to-clean-a-hot-tub-filter/">how to clean a cartridge</a>. Named cleaners and strips are in <a href="/guides/best-hot-tub-filter-cleaners/">filter cleaners</a> and <a href="/guides/best-hot-tub-test-strips/">test strips</a>.`} groups={[{h:'Filter cleaner and test strips',keys:['lt-filter-clean-o','spaguard-filter-cleaner','aquachek-spa-6in1']}]} />

@@ -4,7 +4,7 @@
  *  - every JSON-LD block parses; no Product/Offer/Review/AggregateRating types anywhere (we have no prices or ratings)
  *  - every HTML page has og:image/og:image:alt/og:site_name/og:type and twitter:card=summary_large_image; og:image files exist and are 1200x630-sized PNGs under 120 KB
  *  - dist/404.html exists, is noindex, and has a search box
- *  - guides carry Article with author (Organization "MySpaFilter Editorial Team" -> /about/), publisher and dateModified
+ *  - guides carry Article with publisher and dateModified (no generic author entity)
  *  - about has Organization JSON-LD whose sameAs only lists allow-listed profiles
  *  - sitemap: every <url> has a lastmod, dates are not all identical, none is in the future; /data/ is listed
  *  - /data/ has a full table, Dataset JSON-LD, and CSV/JSON downloads with the same row count
@@ -36,8 +36,8 @@ for (const p of pages) {
   if (rel.startsWith('/guides/') && rel !== '/guides/index.html') {
     const art = parsed.flat().find((j) => [].concat(j['@type']).includes('Article'));
     if (!art) fail(`${rel}: no Article JSON-LD`);
-    else { if (art.author?.name !== 'MySpaFilter Editorial Team' || art.author?.['@type'] !== 'Organization' || art.author?.url !== 'https://myspafilter.com/about/') fail(`${rel}: Article author wrong`); if (!art.publisher?.name) fail(`${rel}: Article publisher missing`); if (!/^\d{4}-\d{2}-\d{2}/.test(art.dateModified || '')) fail(`${rel}: Article dateModified missing`); if (art.datePublished > art.dateModified) fail(`${rel}: datePublished after dateModified`); }
-    if (!html.includes('By <a href="/about/"')) fail(`${rel}: missing visible byline`); if (!html.includes('How we research and review')) fail(`${rel}: missing research note`);
+    else { if (art.author) fail(`${rel}: Article author set without a real named author`); if (!art.publisher?.name) fail(`${rel}: Article publisher missing`); if (!/^\d{4}-\d{2}-\d{2}/.test(art.dateModified || '')) fail(`${rel}: Article dateModified missing`); if (art.datePublished > art.dateModified) fail(`${rel}: datePublished after dateModified`); }
+    if (!/Last reviewed <time/.test(html)) fail(`${rel}: missing review date`); if (!html.includes('How we research and review')) fail(`${rel}: missing research note`);
   }
 }
 // 404
